@@ -673,24 +673,24 @@
       background: var(--navy);
       color: #fff;
     }
-    .geo-inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 70px;
-      align-items: center;
-    }
-    @media (max-width: 900px) { .geo-inner { grid-template-columns: 1fr; } }
-
-    .geo-image-wrap { position: relative; }
-    .geo-image-wrap img {
+    /* Full-width stacked layout */
+    .geo-image-full {
       width: 100%;
-      border-radius: 12px;
+      max-width: 1100px;
+      margin: 0 auto 56px;
+      position: relative;
+      text-align: center;
+    }
+    .geo-image-full img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
       border: 1px solid rgba(255,255,255,0.1);
-      box-shadow: 0 24px 64px rgba(0,0,0,0.5);
+      box-shadow: 0 32px 80px rgba(0,0,0,0.6);
+      display: block;
     }
     .geo-badge {
-      position: absolute;
-      top: -16px; right: -16px;
+      display: inline-block;
       background: var(--neon-lime);
       color: var(--navy);
       font-family: 'Barlow Condensed', sans-serif;
@@ -698,37 +698,50 @@
       font-weight: 800;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      padding: 8px 16px;
+      padding: 8px 18px;
       border-radius: 4px;
       box-shadow: 0 8px 24px rgba(163,230,53,0.4);
+      margin-bottom: 24px;
     }
-
-    .geo-points { list-style: none; padding: 0; margin: 0 0 32px; }
-    .geo-points li {
+    /* Content below image: 2-col points grid */
+    .geo-content-below {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .geo-content-top {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .geo-points-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    @media (max-width: 700px) { .geo-points-grid { grid-template-columns: 1fr; } }
+    .geo-point-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 10px;
+      padding: 24px;
       display: flex;
       align-items: flex-start;
       gap: 14px;
-      padding: 16px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      font-size: 16px;
-      color: #94a3b8;
-      line-height: 1.6;
     }
-    .geo-points li:last-child { border-bottom: none; }
     .geo-point-icon {
-      width: 36px;
-      height: 36px;
-      border-radius: 6px;
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
       background: rgba(249,115,22,0.15);
       border: 1px solid rgba(249,115,22,0.35);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 18px;
+      font-size: 20px;
       flex-shrink: 0;
-      margin-top: 2px;
     }
-    .geo-points li strong { color: #fff; display: block; margin-bottom: 2px; }
+    .geo-point-card strong { color: #fff; display: block; margin-bottom: 6px; font-size: 16px; }
+    .geo-point-card p { color: #94a3b8; font-size: 15px; line-height: 1.6; margin: 0; }
 
     /* ══ PLAN BUILDER TEASER — white/cream ══ */
     .planner-teaser {
@@ -1165,7 +1178,7 @@
 <header class="site-header">
   <div class="header-inner">
     <a href="/" class="header-logo" aria-label="Search Converts Home">
-      <img src="/images/Logo-google-transparent-background-PNG.png"
+      <img src="/images/search-converts-logo-color.avif"
            alt="Search Converts - Digital Marketing Agency Denver"
            width="200" height="200">
     </a>
@@ -1497,58 +1510,65 @@
 <!-- NEON DIVIDER -->
 <div class="neon-divider"></div>
 
-<!-- GEO / AIO — dark section -->
+<!-- GEO / AIO — dark section, full-width image -->
 <section class="section geo-section" aria-labelledby="geo-h2">
   <div class="section-inner">
-    <div class="geo-inner">
-      <div class="geo-image-wrap reveal">
-        <div class="geo-badge">New in 2025–2026</div>
-        <img src="/images/Generative-engine-optimization-experts.png"
-             alt="Generative Engine Optimization - AIO Infographic - Search Converts Denver"
-             loading="lazy" width="600" height="400">
-      </div>
-      <div class="reveal">
-        <div class="section-eyebrow">AIO + GEO Explained</div>
-        <h2 class="section-h2 light" id="geo-h2">AI Is Changing How Customers Find You. <span style="color:var(--neon-lime);">Are You Showing Up?</span></h2>
-        <p style="color:#94a3b8;font-size:17px;margin-bottom:28px;line-height:1.75;">
-          Generative Engine Optimization (GEO) and AI-Powered Optimization (AIO) are the new frontier of search. Moreover, ChatGPT, Gemini, Perplexity, and Claude are answering millions of buyer questions every day — and they're citing specific businesses. Therefore, the question isn't whether to optimize for AI search. It's whether you want to be the brand they recommend.
-        </p>
-        <ul class="geo-points">
-          <li>
-            <span class="geo-point-icon">🤖</span>
-            <div>
-              <strong>AI Engines Are Replacing Traditional Search</strong>
-              ChatGPT alone handles over 100 million queries daily. Furthermore, a growing percentage are buyer-intent questions about local services, products, and vendors.
-            </div>
-          </li>
-          <li>
-            <span class="geo-point-icon">📍</span>
-            <div>
-              <strong>Local Businesses Are Being Cited — Or Ignored</strong>
-              AI engines pull from authoritative, well-structured content. Consequently, if your website doesn't answer questions clearly, your competitor's does.
-            </div>
-          </li>
-          <li>
-            <span class="geo-point-icon">🔗</span>
-            <div>
-              <strong>E-E-A-T + Schema + Topical Authority = AIO Success</strong>
-              Our AIO framework structures your content so AI engines understand, trust, and recommend your business. Additionally, this strengthens traditional SEO simultaneously.
-            </div>
-          </li>
-          <li>
-            <span class="geo-point-icon">📈</span>
-            <div>
-              <strong>Early Movers Win. Late Movers Catch Up. Non-Movers Disappear.</strong>
-              The businesses investing in AIO today are building moats that will be very difficult to breach in 2026 and beyond.
-            </div>
-          </li>
-        </ul>
-        <div class="btn-row">
-          <a href="/traffic-generation/" class="sc-btn-primary">Get Your AIO Strategy →</a>
-          <a href="/growth-system/" class="sc-btn-outline white">Learn More</a>
+
+    <!-- Header centered above image -->
+    <div style="text-align:center;margin-bottom:32px;" class="reveal">
+      <div class="section-eyebrow" style="justify-content:center;">AIO + GEO Explained</div>
+      <h2 class="section-h2 light" id="geo-h2">AI Is Changing How Customers Find You.<br><span style="color:var(--neon-lime);">Are You Showing Up?</span></h2>
+      <p style="color:#94a3b8;font-size:18px;line-height:1.75;max-width:780px;margin:16px auto 0;">
+        ChatGPT, Gemini, Perplexity, and Claude answer millions of buyer questions every day — and they cite specific businesses. Therefore, the question isn't whether to optimize for AI search. It's whether you want to be the brand they recommend.
+      </p>
+    </div>
+
+    <!-- Full-width image -->
+    <div class="geo-image-full reveal">
+      <div class="geo-badge">New in 2025–2026</div>
+      <img src="/images/Generative-engine-optimization-experts.png"
+           alt="Generative Engine Optimization AIO Infographic - Search Converts Denver"
+           loading="lazy">
+    </div>
+
+    <!-- 2-col points grid below image -->
+    <div class="geo-content-below reveal">
+      <div class="geo-points-grid">
+        <div class="geo-point-card">
+          <span class="geo-point-icon">🤖</span>
+          <div>
+            <strong>AI Engines Are Replacing Traditional Search</strong>
+            <p>ChatGPT alone handles over 100 million queries daily. Furthermore, a growing percentage are buyer-intent questions about local services, products, and vendors.</p>
+          </div>
+        </div>
+        <div class="geo-point-card">
+          <span class="geo-point-icon">📍</span>
+          <div>
+            <strong>Local Businesses Are Being Cited — Or Ignored</strong>
+            <p>AI engines pull from authoritative, well-structured content. Consequently, if your website doesn't answer questions clearly, your competitor's does.</p>
+          </div>
+        </div>
+        <div class="geo-point-card">
+          <span class="geo-point-icon">🔗</span>
+          <div>
+            <strong>E-E-A-T + Schema + Topical Authority = AIO Success</strong>
+            <p>Our AIO framework structures your content so AI engines understand, trust, and recommend your business. Additionally, this strengthens traditional SEO simultaneously.</p>
+          </div>
+        </div>
+        <div class="geo-point-card">
+          <span class="geo-point-icon">📈</span>
+          <div>
+            <strong>Early Movers Win. Late Movers Catch Up. Non-Movers Disappear.</strong>
+            <p>The businesses investing in AIO today are building moats that will be very difficult to breach in 2026 and beyond.</p>
+          </div>
         </div>
       </div>
+      <div style="text-align:center;">
+        <a href="/traffic-generation/" class="sc-btn-primary" style="margin-right:16px;">Get Your AIO Strategy →</a>
+        <a href="/growth-system/" class="sc-btn-outline white">Learn More</a>
+      </div>
     </div>
+
   </div>
 </section>
 
@@ -1750,7 +1770,7 @@
     <div class="footer-top">
       <div>
         <div class="footer-brand-logo">
-          <img src="/images/Logo-google-transparent-background-PNG.png"
+          <img src="/images/search-converts-logo-color.avif"
                alt="Search Converts" width="120" height="50">
         </div>
         <p class="footer-brand-desc">Denver's full-service digital marketing agency. We build growth systems — not campaigns. SEO, AIO, ads, web design, branding, video, AI agents, and more.</p>
@@ -1821,7 +1841,7 @@
       "@id": "https://www.searchconverts.com/#organization",
       "name": "Search Converts",
       "url": "https://www.searchconverts.com",
-      "logo": "https://searchconverts.com/images/Logo-google-transparent-background-PNG.png",
+      "logo": "https://searchconverts.com/images/search-converts-logo-color.avif",
       "telephone": "+17207128615",
       "email": "hello@searchconverts.com",
       "address": {
