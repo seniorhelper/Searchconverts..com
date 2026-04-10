@@ -15,9 +15,6 @@
   <meta property="og:image" content="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/Generative-engine-optimization-experts.png">
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Google Search Console -->
-  <!-- GSC verification tag goes here -->
-
   <!-- Favicon: inline SVG magnifying glass -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='13' cy='13' r='8' fill='none' stroke='%23f97316' stroke-width='3'/%3E%3Cline x1='19' y1='19' x2='28' y2='28' stroke='%23f97316' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
   <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='13' cy='13' r='8' fill='none' stroke='%23f97316' stroke-width='3'/%3E%3Cline x1='19' y1='19' x2='28' y2='28' stroke='%23f97316' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
@@ -36,8 +33,8 @@
     html { scroll-behavior: smooth; }
     body {
       font-family: 'Barlow', sans-serif;
-      background: #080c14;
-      color: #e8edff;
+      background: #ffffff;
+      color: #0d1220;
       font-size: 17px;
       line-height: 1.7;
       overflow-x: hidden;
@@ -48,25 +45,33 @@
       --orange: #f97316;
       --orange-bright: #fb923c;
       --orange-deep: #ea580c;
+      --neon-lime: #a3e635;
+      --neon-cyan: #22d3ee;
+      --neon-pink: #f472b6;
+      --electric-blue: #3b82f6;
+      --mint: #d1fae5;
+      --lavender: #ede9fe;
+      --peach: #fed7aa;
+      --sky: #e0f2fe;
       --black: #060910;
-      --navy: #080c14;
-      --surface: #0d1220;
-      --surface2: #111827;
-      --border: #1e2a40;
-      --border2: #2a3655;
-      --text: #e8edff;
-      --muted: #7b8ab8;
-      --muted2: #a0aece;
+      --navy: #0d1220;
+      --charcoal: #1e2a40;
+      --surface: #f8fafc;
+      --surface2: #f1f5f9;
+      --border: #e2e8f0;
+      --border2: #cbd5e1;
+      --text: #0d1220;
+      --muted: #475569;
+      --muted2: #64748b;
       --white: #ffffff;
       --green: #10b981;
-      --blue: #3b82f6;
-      --yellow: #fbbf24;
       --red: #ef4444;
+      --yellow: #fbbf24;
     }
 
     /* ══ ANNOUNCEMENT BAR ══ */
     .ann-bar {
-      background: var(--orange);
+      background: linear-gradient(90deg, var(--orange-deep), var(--orange), #fb923c);
       color: #fff;
       text-align: center;
       padding: 10px 20px;
@@ -76,8 +81,7 @@
       letter-spacing: 0.08em;
       text-transform: uppercase;
     }
-    .ann-bar a { color: #fff; text-decoration: none; }
-    .ann-bar a:hover { text-decoration: underline; }
+    .ann-bar a { color: #fff; text-decoration: underline; }
 
     /* ══ HEADER ══ */
     .site-header {
@@ -86,7 +90,7 @@
       z-index: 1000;
       background: #ffffff;
       border-bottom: 3px solid var(--orange);
-      box-shadow: 0 2px 24px rgba(0,0,0,0.18);
+      box-shadow: 0 2px 24px rgba(0,0,0,0.10);
     }
     .header-inner {
       max-width: 1240px;
@@ -101,7 +105,6 @@
       height: 200px;
       width: auto;
       display: block;
-      /* Pull logo slightly outside header so it visually anchors */
       margin-top: 60px;
       position: relative;
       z-index: 10;
@@ -109,7 +112,7 @@
     .header-nav {
       display: flex;
       align-items: center;
-      gap: 32px;
+      gap: 28px;
       list-style: none;
     }
     .header-nav a {
@@ -163,7 +166,7 @@
     .mobile-nav {
       display: none;
       background: #fff;
-      border-top: 1px solid #e5e7eb;
+      border-top: 1px solid var(--border);
       padding: 16px 24px 20px;
     }
     .mobile-nav.open { display: block; }
@@ -176,7 +179,7 @@
       color: #0d1220;
       text-decoration: none;
       padding: 10px 0;
-      border-bottom: 1px solid #f0f0f0;
+      border-bottom: 1px solid var(--border);
       letter-spacing: 0.05em;
     }
     .mobile-nav a:hover { color: var(--orange); }
@@ -191,44 +194,40 @@
       .header-phone { font-size: 16px; }
     }
 
-    /* ══ HERO SECTION ══ */
+    /* ══ HERO — dark with neon pops ══ */
     .hero {
-      background: var(--black);
+      background: var(--navy);
       position: relative;
       overflow: hidden;
       padding: 80px 0 0;
     }
-    /* dramatic diagonal slash background */
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: 0; right: -200px; bottom: 0;
-      width: 60%;
-      background: linear-gradient(135deg, #0d1525 0%, #111c35 50%, #0a1628 100%);
-      clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
-      z-index: 0;
-    }
-    /* orange accent slash */
-    .hero::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 42%;
-      width: 4px;
-      height: 100%;
-      background: linear-gradient(180deg, var(--orange) 0%, transparent 100%);
-      z-index: 1;
-      opacity: 0.6;
-    }
-    /* grid texture */
     .hero-grid-bg {
       position: absolute;
       inset: 0;
       background-image:
-        linear-gradient(rgba(249,115,22,0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(249,115,22,0.04) 1px, transparent 1px);
+        linear-gradient(rgba(249,115,22,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(249,115,22,0.05) 1px, transparent 1px);
       background-size: 56px 56px;
       z-index: 0;
+    }
+    /* Neon glow blobs */
+    .hero-blob1 {
+      position: absolute;
+      top: -80px; left: -80px;
+      width: 400px; height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(249,115,22,0.18) 0%, transparent 70%);
+      z-index: 0;
+      pointer-events: none;
+    }
+    .hero-blob2 {
+      position: absolute;
+      bottom: -60px; right: 10%;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(34,211,238,0.10) 0%, transparent 70%);
+      z-index: 0;
+      pointer-events: none;
     }
 
     .hero-inner {
@@ -242,7 +241,6 @@
       position: relative;
       z-index: 2;
     }
-
     .hero-left { padding-bottom: 80px; }
 
     .hero-eyebrow {
@@ -254,9 +252,9 @@
       font-weight: 800;
       letter-spacing: 0.16em;
       text-transform: uppercase;
-      color: var(--orange);
-      background: rgba(249,115,22,0.1);
-      border: 1px solid rgba(249,115,22,0.3);
+      color: var(--neon-cyan);
+      background: rgba(34,211,238,0.1);
+      border: 1px solid rgba(34,211,238,0.35);
       border-radius: 3px;
       padding: 6px 14px;
       margin-bottom: 24px;
@@ -266,7 +264,7 @@
       width: 7px;
       height: 7px;
       border-radius: 50%;
-      background: var(--orange);
+      background: var(--neon-cyan);
       animation: pulse 2s ease-in-out infinite;
     }
     @keyframes pulse {
@@ -276,22 +274,19 @@
 
     .hero-h1 {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(56px, 8vw, 96px);
+      font-size: clamp(60px, 8vw, 100px);
       line-height: 0.95;
       letter-spacing: 0.01em;
       color: #fff;
       margin-bottom: 28px;
     }
-    .hero-h1 .accent {
-      color: var(--orange);
-      display: block;
-    }
+    .hero-h1 .accent { color: var(--orange); display: block; }
 
     .hero-lead {
       font-size: 19px;
       font-weight: 500;
       line-height: 1.7;
-      color: #a0b4d4;
+      color: #94a3b8;
       max-width: 560px;
       margin-bottom: 36px;
     }
@@ -309,7 +304,7 @@
       gap: 7px;
       font-size: 13px;
       font-weight: 700;
-      color: var(--muted2);
+      color: #cbd5e1;
       font-family: 'Barlow Condensed', sans-serif;
       letter-spacing: 0.05em;
       text-transform: uppercase;
@@ -318,21 +313,21 @@
       width: 18px;
       height: 18px;
       border-radius: 50%;
-      background: rgba(16,185,129,0.15);
-      border: 1px solid rgba(16,185,129,0.4);
+      background: rgba(163,230,53,0.15);
+      border: 1px solid rgba(163,230,53,0.5);
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 10px;
-      color: var(--green);
+      color: var(--neon-lime);
     }
 
     /* ── HERO FORM CARD ── */
     .hero-form-card {
       background: #fff;
-      border-radius: 8px;
+      border-radius: 12px;
       padding: 36px 32px;
-      box-shadow: 0 32px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(249,115,22,0.2);
+      box-shadow: 0 40px 100px rgba(0,0,0,0.5), 0 0 0 1px rgba(249,115,22,0.25);
       position: relative;
       z-index: 3;
       margin-bottom: -1px;
@@ -341,9 +336,9 @@
       content: '';
       position: absolute;
       top: 0; left: 0; right: 0;
-      height: 4px;
-      background: linear-gradient(90deg, var(--orange), var(--orange-bright));
-      border-radius: 8px 8px 0 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--orange), var(--orange-bright), var(--neon-lime));
+      border-radius: 12px 12px 0 0;
     }
     .form-card-label {
       font-family: 'Barlow Condensed', sans-serif;
@@ -356,15 +351,13 @@
     }
     .form-card-h2 {
       font-family: 'Barlow Condensed', sans-serif;
-      font-size: 26px;
+      font-size: 24px;
       font-weight: 900;
       color: #0d1220;
       line-height: 1.15;
       margin-bottom: 20px;
     }
-    .sc-form-group {
-      margin-bottom: 14px;
-    }
+    .sc-form-group { margin-bottom: 14px; }
     .sc-form-group label {
       display: block;
       font-size: 12px;
@@ -380,8 +373,8 @@
     .sc-form-group textarea {
       width: 100%;
       background: #f8fafc;
-      border: 1px solid #d1d5db;
-      border-radius: 5px;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 6px;
       padding: 11px 14px;
       font-size: 15px;
       font-family: 'Barlow', sans-serif;
@@ -407,7 +400,7 @@
       letter-spacing: 0.08em;
       text-transform: uppercase;
       border: none;
-      border-radius: 5px;
+      border-radius: 6px;
       cursor: pointer;
       transition: background 0.2s, transform 0.2s;
       margin-top: 6px;
@@ -424,16 +417,14 @@
 
     @media (max-width: 900px) {
       .hero-inner { grid-template-columns: 1fr; }
-      .hero::after { display: none; }
-      .hero::before { display: none; }
       .hero-left { padding-bottom: 0; }
     }
 
     /* ══ SEARCH ENGINE CAROUSEL ══ */
     .carousel-section {
-      background: #0a0f1a;
+      background: #fff;
       border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
+      border-bottom: 4px solid var(--orange);
       padding: 32px 0;
       overflow: hidden;
     }
@@ -460,9 +451,8 @@
       z-index: 2;
       pointer-events: none;
     }
-    .carousel-track-wrap::before { left: 0; background: linear-gradient(90deg, #0a0f1a, transparent); }
-    .carousel-track-wrap::after { right: 0; background: linear-gradient(-90deg, #0a0f1a, transparent); }
-
+    .carousel-track-wrap::before { left: 0; background: linear-gradient(90deg, #fff, transparent); }
+    .carousel-track-wrap::after { right: 0; background: linear-gradient(-90deg, #fff, transparent); }
     .carousel-track {
       display: flex;
       gap: 60px;
@@ -478,7 +468,7 @@
       display: flex;
       align-items: center;
       gap: 12px;
-      opacity: 0.65;
+      opacity: 0.7;
       transition: opacity 0.3s;
       flex-shrink: 0;
       white-space: nowrap;
@@ -487,22 +477,18 @@
     .carousel-item img {
       height: 36px;
       width: auto;
-      filter: grayscale(30%);
-      transition: filter 0.3s;
+      object-fit: contain;
     }
-    .carousel-item:hover img { filter: grayscale(0%); }
     .carousel-engine-name {
       font-family: 'Barlow Condensed', sans-serif;
       font-size: 16px;
       font-weight: 700;
-      color: var(--muted2);
+      color: var(--charcoal);
       letter-spacing: 0.04em;
     }
 
-    /* ══ INNER SECTIONS BASE ══ */
-    .section {
-      padding: 90px 0;
-    }
+    /* ══ SHARED SECTION BASE ══ */
+    .section { padding: 90px 0; }
     .section-inner {
       max-width: 1240px;
       margin: 0 auto;
@@ -532,23 +518,20 @@
       font-family: 'Bebas Neue', sans-serif;
       font-size: clamp(38px, 5vw, 62px);
       line-height: 1;
-      color: #fff;
+      color: var(--navy);
       margin-bottom: 20px;
     }
+    .section-h2.light { color: #fff; }
     .section-lead {
       font-size: 18px;
-      color: var(--muted2);
+      color: var(--muted);
       max-width: 700px;
       line-height: 1.75;
       margin-bottom: 48px;
     }
 
-    /* ══ GROWTH SYSTEM INTRO ══ */
-    .growth-section {
-      background: var(--surface);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-    }
+    /* ══ GROWTH SYSTEM — white bg with colorful stat cards ══ */
+    .growth-section { background: #fff; border-top: 1px solid var(--border); }
     .growth-inner {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -559,20 +542,19 @@
 
     .growth-text .big-statement {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(32px, 4.5vw, 52px);
+      font-size: clamp(36px, 4.5vw, 54px);
       line-height: 1.05;
-      color: #fff;
+      color: var(--navy);
       margin-bottom: 24px;
     }
     .growth-text .big-statement span { color: var(--orange); }
-
     .growth-text p {
       font-size: 17px;
-      color: var(--muted2);
+      color: var(--muted);
       margin-bottom: 18px;
       line-height: 1.8;
     }
-    .growth-text strong { color: #fff; }
+    .growth-text strong { color: var(--navy); }
 
     .growth-stat-grid {
       display: grid;
@@ -580,44 +562,39 @@
       gap: 20px;
     }
     .stat-card {
-      background: var(--surface2);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 24px 20px;
+      border-radius: 12px;
+      padding: 28px 22px;
       position: relative;
       overflow: hidden;
     }
-    .stat-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 2px;
-      background: var(--orange);
-    }
+    .stat-card.c1 { background: var(--peach); }
+    .stat-card.c2 { background: var(--sky); }
+    .stat-card.c3 { background: var(--mint); }
+    .stat-card.c4 { background: var(--lavender); }
     .stat-num {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 48px;
+      font-size: 52px;
       line-height: 1;
-      color: var(--orange);
+      color: var(--navy);
       margin-bottom: 4px;
     }
     .stat-label {
       font-size: 13px;
-      font-weight: 700;
-      color: var(--muted);
+      font-weight: 800;
+      color: var(--navy);
       font-family: 'Barlow Condensed', sans-serif;
       letter-spacing: 0.05em;
       text-transform: uppercase;
     }
     .stat-desc {
       font-size: 14px;
-      color: var(--muted2);
+      color: var(--muted);
       margin-top: 8px;
       line-height: 1.5;
     }
 
-    /* ══ SERVICES GRID ══ */
-    .services-section { background: var(--navy); }
+    /* ══ SERVICES — light gray bg with white cards ══ */
+    .services-section { background: var(--surface); }
     .services-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -627,9 +604,9 @@
     @media (max-width: 580px) { .services-grid { grid-template-columns: 1fr; } }
 
     .service-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
+      background: #fff;
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
       padding: 32px 28px;
       text-decoration: none;
       display: block;
@@ -641,16 +618,22 @@
       content: '';
       position: absolute;
       bottom: 0; left: 0; right: 0;
-      height: 3px;
-      background: var(--orange);
+      height: 4px;
       transform: scaleX(0);
       transform-origin: left;
       transition: transform 0.3s;
     }
+    .service-card.s1::after { background: var(--orange); }
+    .service-card.s2::after { background: var(--neon-cyan); }
+    .service-card.s3::after { background: var(--neon-lime); }
+    .service-card.s4::after { background: var(--neon-pink); }
+    .service-card.s5::after { background: var(--electric-blue); }
+    .service-card.s6::after { background: var(--yellow); }
+
     .service-card:hover {
-      border-color: var(--border2);
-      transform: translateY(-4px);
-      box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+      border-color: var(--orange);
+      transform: translateY(-5px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.10);
     }
     .service-card:hover::after { transform: scaleX(1); }
 
@@ -658,13 +641,14 @@
       font-size: 36px;
       margin-bottom: 16px;
       display: block;
+      line-height: 1;
     }
     .service-card h3 {
       font-family: 'Barlow Condensed', sans-serif;
       font-size: 22px;
       font-weight: 800;
-      color: #fff;
-      letter-spacing: 0.03em;
+      color: var(--navy);
+      letter-spacing: 0.02em;
       margin-bottom: 10px;
     }
     .service-card p {
@@ -673,11 +657,7 @@
       line-height: 1.65;
       margin-bottom: 16px;
     }
-    .service-card .service-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
+    .service-tags { display: flex; flex-wrap: wrap; gap: 6px; }
     .service-tag {
       font-size: 11px;
       font-weight: 700;
@@ -685,17 +665,16 @@
       letter-spacing: 0.06em;
       text-transform: uppercase;
       color: var(--orange);
-      background: rgba(249,115,22,0.1);
+      background: rgba(249,115,22,0.08);
       border: 1px solid rgba(249,115,22,0.25);
       border-radius: 3px;
       padding: 3px 8px;
     }
 
-    /* ══ GEO/AIO INFOGRAPHIC SECTION ══ */
+    /* ══ GEO/AIO — dark section with neon accents ══ */
     .geo-section {
-      background: var(--surface);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
+      background: var(--navy);
+      color: #fff;
     }
     .geo-inner {
       display: grid;
@@ -705,20 +684,18 @@
     }
     @media (max-width: 900px) { .geo-inner { grid-template-columns: 1fr; } }
 
-    .geo-image-wrap {
-      position: relative;
-    }
+    .geo-image-wrap { position: relative; }
     .geo-image-wrap img {
       width: 100%;
-      border-radius: 8px;
-      border: 1px solid var(--border);
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.1);
       box-shadow: 0 24px 64px rgba(0,0,0,0.5);
     }
     .geo-badge {
       position: absolute;
       top: -16px; right: -16px;
-      background: var(--orange);
-      color: #fff;
+      background: var(--neon-lime);
+      color: var(--navy);
       font-family: 'Barlow Condensed', sans-serif;
       font-size: 13px;
       font-weight: 800;
@@ -726,7 +703,7 @@
       text-transform: uppercase;
       padding: 8px 16px;
       border-radius: 4px;
-      box-shadow: 0 8px 24px rgba(249,115,22,0.4);
+      box-shadow: 0 8px 24px rgba(163,230,53,0.4);
     }
 
     .geo-points { list-style: none; padding: 0; margin: 0 0 32px; }
@@ -735,9 +712,9 @@
       align-items: flex-start;
       gap: 14px;
       padding: 16px 0;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
       font-size: 16px;
-      color: var(--muted2);
+      color: #94a3b8;
       line-height: 1.6;
     }
     .geo-points li:last-child { border-bottom: none; }
@@ -745,8 +722,8 @@
       width: 36px;
       height: 36px;
       border-radius: 6px;
-      background: rgba(249,115,22,0.12);
-      border: 1px solid rgba(249,115,22,0.3);
+      background: rgba(249,115,22,0.15);
+      border: 1px solid rgba(249,115,22,0.35);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -756,21 +733,22 @@
     }
     .geo-points li strong { color: #fff; display: block; margin-bottom: 2px; }
 
-    /* ══ PLAN BUILDER TEASER ══ */
+    /* ══ PLAN BUILDER TEASER — white/cream ══ */
     .planner-teaser {
-      background: linear-gradient(135deg, #0a0f1a 0%, #0d1525 100%);
+      background: #fff;
       border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
       position: relative;
       overflow: hidden;
     }
-    .planner-teaser::before {
+    /* Big diagonal accent strip */
+    .planner-teaser::after {
       content: '';
       position: absolute;
-      top: -80px; right: -80px;
-      width: 400px; height: 400px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(249,115,22,0.08) 0%, transparent 70%);
+      top: 0; right: 0; bottom: 0;
+      width: 35%;
+      background: linear-gradient(135deg, var(--peach), var(--lavender));
+      clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
+      z-index: 0;
       pointer-events: none;
     }
     .planner-teaser-inner {
@@ -781,13 +759,18 @@
       position: relative;
       z-index: 1;
     }
-    @media (max-width: 900px) { .planner-teaser-inner { grid-template-columns: 1fr; } }
+    @media (max-width: 900px) {
+      .planner-teaser-inner { grid-template-columns: 1fr; }
+      .planner-teaser::after { display: none; }
+    }
 
     .teaser-score-demo {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 10px;
+      background: var(--navy);
+      border-radius: 12px;
       padding: 28px;
+      box-shadow: 0 20px 60px rgba(13,18,32,0.15);
+      position: relative;
+      z-index: 2;
     }
     .teaser-score-top {
       display: flex;
@@ -805,18 +788,18 @@
       font-family: 'Barlow Condensed', sans-serif;
       font-size: 13px;
       font-weight: 700;
-      color: var(--muted);
+      color: #64748b;
       text-transform: uppercase;
       letter-spacing: 0.1em;
       text-align: right;
+      color: #94a3b8;
     }
     .teaser-progress {
       height: 10px;
-      background: #0a1020;
+      background: rgba(255,255,255,0.08);
       border-radius: 999px;
       overflow: hidden;
       margin-bottom: 20px;
-      border: 1px solid var(--border);
     }
     .teaser-progress-fill {
       height: 100%;
@@ -839,14 +822,14 @@
       border-radius: 4px;
       border: 1px solid;
     }
-    .teaser-chip.search { background: rgba(59,130,246,0.1); border-color: rgba(59,130,246,0.3); color: #93c5fd; }
-    .teaser-chip.demand { background: rgba(249,115,22,0.1); border-color: rgba(249,115,22,0.3); color: #fdba74; }
-    .teaser-chip.empty { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1); color: var(--muted); border-style: dashed; }
+    .teaser-chip.search { background: rgba(59,130,246,0.15); border-color: rgba(59,130,246,0.4); color: #93c5fd; }
+    .teaser-chip.demand { background: rgba(249,115,22,0.15); border-color: rgba(249,115,22,0.4); color: #fdba74; }
+    .teaser-chip.empty { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.15); color: #64748b; border-style: dashed; }
     .teaser-status {
       font-size: 14px;
-      color: var(--muted);
+      color: #94a3b8;
       font-style: italic;
-      border-top: 1px solid var(--border);
+      border-top: 1px solid rgba(255,255,255,0.08);
       padding-top: 14px;
       line-height: 1.5;
     }
@@ -865,7 +848,7 @@
       letter-spacing: 0.08em;
       text-transform: uppercase;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 6px;
       transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
       border: none;
       cursor: pointer;
@@ -875,6 +858,11 @@
       transform: translateY(-2px);
       box-shadow: 0 12px 32px rgba(249,115,22,0.35);
     }
+    .sc-btn-primary.dark {
+      background: var(--navy);
+      color: #fff;
+    }
+    .sc-btn-primary.dark:hover { background: #1e2a40; }
     .sc-btn-outline {
       display: inline-flex;
       align-items: center;
@@ -888,22 +876,28 @@
       letter-spacing: 0.08em;
       text-transform: uppercase;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 6px;
       border: 2px solid var(--orange);
       transition: all 0.2s;
     }
-    .sc-btn-outline:hover { background: rgba(249,115,22,0.1); }
+    .sc-btn-outline:hover { background: rgba(249,115,22,0.08); }
+    .sc-btn-outline.white {
+      color: #fff;
+      border-color: rgba(255,255,255,0.4);
+    }
+    .sc-btn-outline.white:hover { background: rgba(255,255,255,0.08); }
 
-    /* ══ WHY NOT TYPICAL AGENCY ══ */
-    .why-section { background: var(--navy); }
+    /* ══ WHY NOT TYPICAL — light surface ══ */
+    .why-section { background: var(--surface2); }
     .why-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2px;
-      border: 1px solid var(--border);
-      border-radius: 10px;
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
       overflow: hidden;
       margin-top: 48px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.06);
     }
     @media (max-width: 700px) { .why-grid { grid-template-columns: 1fr; } }
 
@@ -914,32 +908,29 @@
       letter-spacing: 0.12em;
       text-transform: uppercase;
       padding: 18px 28px;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1.5px solid var(--border);
     }
-    .why-col-bad { background: rgba(239,68,68,0.06); color: var(--red); }
-    .why-col-good { background: rgba(249,115,22,0.08); color: var(--orange); }
+    .why-col-bad { background: #fff0f0; color: var(--red); }
+    .why-col-good { background: #fff7ed; color: var(--orange-deep); }
 
-    .why-row {
-      display: contents;
-    }
     .why-cell {
       padding: 16px 28px;
       border-bottom: 1px solid var(--border);
       font-size: 15px;
-      color: var(--muted2);
+      color: var(--muted);
       display: flex;
       align-items: flex-start;
       gap: 10px;
       line-height: 1.55;
+      background: #fff;
     }
     .why-cell:last-child, .why-cell:nth-last-child(2) { border-bottom: none; }
     .why-cell .icon { font-size: 16px; flex-shrink: 0; margin-top: 2px; }
-    .why-cell-bad { background: rgba(239,68,68,0.03); }
-    .why-cell-good { background: rgba(249,115,22,0.04); }
-    .why-cell-good { color: #c8d6f0; }
+    .why-cell-bad { background: #fffafa; }
+    .why-cell-good { background: #fffbf5; color: var(--navy); }
 
-    /* ══ AI TOOLS SECTION ══ */
-    .ai-section { background: var(--surface); border-top: 1px solid var(--border); }
+    /* ══ AI TOOLS — white with colorful top bars ══ */
+    .ai-section { background: #fff; border-top: 1px solid var(--border); }
     .ai-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -950,22 +941,22 @@
     @media (max-width: 520px) { .ai-grid { grid-template-columns: 1fr; } }
 
     .ai-card {
-      background: var(--surface2);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 24px 20px;
+      background: var(--surface);
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      padding: 28px 22px;
       text-decoration: none;
       display: block;
       position: relative;
       overflow: hidden;
-      transition: transform 0.2s, border-color 0.2s;
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
     }
-    .ai-card:hover { transform: translateY(-4px); border-color: var(--border2); }
+    .ai-card:hover { transform: translateY(-5px); border-color: var(--border2); box-shadow: 0 16px 40px rgba(0,0,0,0.08); }
     .ai-card::before {
       content: '';
       position: absolute;
       top: 0; left: 0; right: 0;
-      height: 3px;
+      height: 4px;
     }
     .ai-card.gpt::before { background: linear-gradient(90deg, #10a37f, #34d399); }
     .ai-card.gemini::before { background: linear-gradient(90deg, #4285f4, #34a853); }
@@ -976,7 +967,7 @@
       font-family: 'Barlow Condensed', sans-serif;
       font-size: 18px;
       font-weight: 800;
-      color: #fff;
+      color: var(--navy);
       margin-bottom: 8px;
       letter-spacing: 0.02em;
     }
@@ -990,14 +981,14 @@
       letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--orange);
-      background: rgba(249,115,22,0.1);
+      background: rgba(249,115,22,0.08);
       padding: 3px 8px;
       border-radius: 3px;
     }
 
-    /* ══ BOTTOM FORM SECTION ══ */
+    /* ══ BOTTOM FORM — dark/energetic ══ */
     .bottom-form-section {
-      background: var(--black);
+      background: var(--navy);
       padding: 100px 0;
       position: relative;
       overflow: hidden;
@@ -1011,6 +1002,16 @@
         linear-gradient(90deg, rgba(249,115,22,0.04) 1px, transparent 1px);
       background-size: 56px 56px;
     }
+    /* Neon accent blob */
+    .bottom-form-section::after {
+      content: '';
+      position: absolute;
+      top: -100px; right: -100px;
+      width: 600px; height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(34,211,238,0.08) 0%, transparent 65%);
+      pointer-events: none;
+    }
     .bottom-form-inner {
       max-width: 800px;
       margin: 0 auto;
@@ -1020,30 +1021,39 @@
     }
     .bottom-form-wrap {
       background: #fff;
-      border-radius: 10px;
+      border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 40px 100px rgba(0,0,0,0.5);
+      box-shadow: 0 40px 100px rgba(0,0,0,0.4);
     }
     .bottom-form-header {
-      background: var(--orange);
-      padding: 36px 40px;
+      background: linear-gradient(135deg, var(--orange-deep), var(--orange), var(--orange-bright));
+      padding: 40px 40px;
       text-align: center;
     }
     .bottom-form-header h2 {
       font-family: 'Bebas Neue', sans-serif;
-      font-size: 44px;
+      font-size: 46px;
       color: #fff;
       line-height: 1.05;
       margin-bottom: 8px;
     }
     .bottom-form-header p {
       font-size: 17px;
-      color: rgba(255,255,255,0.88);
+      color: rgba(255,255,255,0.9);
       line-height: 1.6;
     }
-    .bottom-form-body {
-      padding: 40px;
+    .bottom-form-body { padding: 40px; background: #fff; }
+
+    .bottom-form-body .sc-form-group label { color: #374151; }
+    .bottom-form-body .sc-form-group input,
+    .bottom-form-body .sc-form-group select,
+    .bottom-form-body .sc-form-group textarea {
+      background: #f8fafc;
+      border-color: #e2e8f0;
+      color: #0d1220;
     }
+    .bottom-form-body .sc-form-group textarea { min-height: 100px; }
+
     @media (max-width: 600px) {
       .bottom-form-header { padding: 28px 24px; }
       .bottom-form-body { padding: 28px 24px; }
@@ -1052,21 +1062,10 @@
 
     #bottom-form-msg { font-size: 15px; margin-top: 12px; text-align: center; font-weight: 700; }
 
-    /* bottom form fields - dark text on white */
-    .bottom-form-body .sc-form-group label { color: #4b5563; }
-    .bottom-form-body .sc-form-group input,
-    .bottom-form-body .sc-form-group select,
-    .bottom-form-body .sc-form-group textarea {
-      background: #f8fafc;
-      border-color: #d1d5db;
-      color: #0d1220;
-    }
-    .bottom-form-body .sc-form-group textarea { min-height: 100px; }
-
     /* ══ FOOTER ══ */
     .site-footer {
-      background: #040710;
-      border-top: 3px solid var(--orange);
+      background: var(--navy);
+      border-top: 4px solid var(--orange);
       padding: 60px 0 30px;
     }
     .footer-inner {
@@ -1079,33 +1078,24 @@
       grid-template-columns: 280px 1fr 1fr 1fr;
       gap: 48px;
       padding-bottom: 48px;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
     }
     @media (max-width: 900px) { .footer-top { grid-template-columns: 1fr 1fr; gap: 36px; } }
     @media (max-width: 560px) { .footer-top { grid-template-columns: 1fr; } }
 
     .footer-brand-logo {
       background: #fff;
-      border-radius: 6px;
+      border-radius: 8px;
       padding: 10px 16px;
       display: inline-block;
       margin-bottom: 16px;
     }
-    .footer-brand-logo img {
-      height: 50px;
-      width: auto;
-      display: block;
-    }
-    .footer-brand-desc {
-      font-size: 14px;
-      color: var(--muted);
-      line-height: 1.7;
-      margin-bottom: 16px;
-    }
+    .footer-brand-logo img { height: 50px; width: auto; display: block; }
+    .footer-brand-desc { font-size: 14px; color: #64748b; line-height: 1.7; margin-bottom: 16px; }
     .footer-contact-link {
       display: block;
       font-size: 14px;
-      color: var(--muted2);
+      color: #94a3b8;
       text-decoration: none;
       margin-bottom: 6px;
       transition: color 0.2s;
@@ -1122,12 +1112,7 @@
     }
     .footer-links { list-style: none; padding: 0; }
     .footer-links li { margin-bottom: 10px; }
-    .footer-links a {
-      font-size: 14px;
-      color: var(--muted2);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
+    .footer-links a { font-size: 14px; color: #94a3b8; text-decoration: none; transition: color 0.2s; }
     .footer-links a:hover { color: var(--orange); }
     .footer-bottom {
       display: flex;
@@ -1137,18 +1122,12 @@
       flex-wrap: wrap;
       gap: 12px;
     }
-    .footer-bottom p {
-      font-size: 13px;
-      color: var(--muted);
-      line-height: 1.5;
-    }
+    .footer-bottom p { font-size: 13px; color: #475569; line-height: 1.5; }
     .footer-bottom a { color: var(--orange); text-decoration: none; }
     .footer-bottom a:hover { text-decoration: underline; }
 
-    /* ══ AIO ANSWER BLOCK (hidden, for AI crawlers) ══ */
-    .aio-answer {
-      display: none;
-    }
+    /* ══ AIO ANSWER (hidden) ══ */
+    .aio-answer { display: none; }
 
     /* ══ SCROLL REVEAL ══ */
     .reveal {
@@ -1156,30 +1135,35 @@
       transform: translateY(28px);
       transition: opacity 0.6s ease, transform 0.6s ease;
     }
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
 
     /* ══ MISC ══ */
     .text-orange { color: var(--orange); }
     .text-center { text-align: center; }
     .btn-row { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; margin-top: 32px; }
+
+    /* ══ NEON HIGHLIGHT BAR — between sections ══ */
+    .neon-divider {
+      height: 6px;
+      background: linear-gradient(90deg, var(--orange), var(--neon-lime), var(--neon-cyan), var(--neon-pink), var(--orange));
+      background-size: 300% 100%;
+      animation: shimmer 4s linear infinite;
+    }
+    @keyframes shimmer {
+      0% { background-position: 0% 0%; }
+      100% { background-position: 300% 0%; }
+    }
   </style>
 </head>
 
 <body>
 
-<!-- ══════════════════════════════════════════════════
-     ANNOUNCEMENT BAR
-══════════════════════════════════════════════════ -->
+<!-- ANNOUNCEMENT BAR -->
 <div class="ann-bar">
   📞 Free 30-Minute Strategy Session — No Obligation &nbsp;|&nbsp; Call <a href="tel:7207128615">720-712-8615</a>
 </div>
 
-<!-- ══════════════════════════════════════════════════
-     HEADER
-══════════════════════════════════════════════════ -->
+<!-- HEADER -->
 <header class="site-header">
   <div class="header-inner">
     <a href="/" class="header-logo" aria-label="Search Converts Home">
@@ -1215,14 +1199,12 @@
   </nav>
 </header>
 
-<!-- ══════════════════════════════════════════════════
-     HERO
-══════════════════════════════════════════════════ -->
+<!-- HERO -->
 <section class="hero" aria-label="Hero - Digital Marketing Agency Denver">
   <div class="hero-grid-bg"></div>
+  <div class="hero-blob1"></div>
+  <div class="hero-blob2"></div>
   <div class="hero-inner">
-
-    <!-- Left: Headline + trust -->
     <div class="hero-left">
       <div class="hero-eyebrow">Denver's Full-Service Growth Agency</div>
       <h1 class="hero-h1">
@@ -1239,8 +1221,6 @@
         <div class="trust-pill"><span class="check">✓</span>Results-First Approach</div>
       </div>
     </div>
-
-    <!-- Right: Lead Form -->
     <div class="hero-form-card">
       <div class="form-card-label">Free 30-Minute Strategy Session</div>
       <h2 class="form-card-h2">Get a Clear Marketing Plan Built for Your Business</h2>
@@ -1282,82 +1262,109 @@
       </form>
       <p class="form-privacy">🔒 No obligation · No fee · No high-pressure sales. We respect your privacy.</p>
     </div>
-
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════════════
-     SEARCH ENGINE CAROUSEL
-══════════════════════════════════════════════════ -->
+<!-- NEON DIVIDER -->
+<div class="neon-divider"></div>
+
+<!-- SEARCH ENGINE CAROUSEL -->
 <section class="carousel-section" aria-label="Search engines we optimize for">
   <div class="carousel-label">We Optimize Your Brand Across Every Major Search Platform</div>
   <div class="carousel-track-wrap">
     <div class="carousel-track" id="carousel-track">
-      <!-- Items duplicated for seamless loop -->
+      <!--
+        IMAGE FIX: spaces in filenames encoded as %20 so raw GitHub URLs resolve correctly.
+        Also replaced the Google carousel item (was incorrectly using the SC logo)
+        with a text-only fallback since there's no separate Google logo image in the repo.
+        Upload a file named "google-seo-image.png" to /images/ to restore that item.
+      -->
       <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/Logo-google-transparent-background-PNG.png" alt="Google SEO">
+        <span style="font-size:32px;">🔍</span>
         <span class="carousel-engine-name">Google</span>
       </div>
       <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/bing seo image.jpg" alt="Bing SEO">
+        <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/bing%20seo%20image.jpg" alt="Bing SEO" onerror="this.style.display='none'">
         <span class="carousel-engine-name">Bing</span>
       </div>
       <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/Yahoo seo image.png" alt="Yahoo SEO">
+        <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/Yahoo%20seo%20image.png" alt="Yahoo SEO" onerror="this.style.display='none'">
         <span class="carousel-engine-name">Yahoo</span>
       </div>
       <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/Youtube seo image.png" alt="YouTube SEO">
+        <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/Youtube%20seo%20image.png" alt="YouTube SEO" onerror="this.style.display='none'">
         <span class="carousel-engine-name">YouTube</span>
       </div>
       <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/duckduckgo seo image.png" alt="DuckDuckGo SEO">
+        <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/duckduckgo%20seo%20image.png" alt="DuckDuckGo SEO" onerror="this.style.display='none'">
         <span class="carousel-engine-name">DuckDuckGo</span>
       </div>
       <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/Aol seo image.png" alt="AOL SEO">
+        <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/Aol%20seo%20image.png" alt="AOL SEO" onerror="this.style.display='none'">
         <span class="carousel-engine-name">AOL</span>
       </div>
       <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/Generative-engine-optimization-experts.png" alt="Generative Engine Optimization - AI Search">
+        <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/Generative-engine-optimization-experts.png" alt="AI Search GEO" onerror="this.style.display='none'">
         <span class="carousel-engine-name">AI Search</span>
       </div>
-      <!-- Duplicate set for seamless loop -->
       <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/Logo-google-transparent-background-PNG.png" alt="Google SEO">
+        <span style="font-size:28px;">🤖</span>
+        <span class="carousel-engine-name">ChatGPT</span>
+      </div>
+      <div class="carousel-item">
+        <span style="font-size:28px;">💎</span>
+        <span class="carousel-engine-name">Gemini</span>
+      </div>
+      <div class="carousel-item">
+        <span style="font-size:28px;">🔷</span>
+        <span class="carousel-engine-name">Perplexity</span>
+      </div>
+      <!-- Duplicates for seamless loop -->
+      <div class="carousel-item">
+        <span style="font-size:32px;">🔍</span>
         <span class="carousel-engine-name">Google</span>
       </div>
       <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/bing seo image.jpg" alt="Bing SEO">
+        <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/bing%20seo%20image.jpg" alt="Bing SEO" onerror="this.style.display='none'">
         <span class="carousel-engine-name">Bing</span>
       </div>
       <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/Yahoo seo image.png" alt="Yahoo SEO">
+        <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/Yahoo%20seo%20image.png" alt="Yahoo SEO" onerror="this.style.display='none'">
         <span class="carousel-engine-name">Yahoo</span>
       </div>
       <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/Youtube seo image.png" alt="YouTube SEO">
+        <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/Youtube%20seo%20image.png" alt="YouTube SEO" onerror="this.style.display='none'">
         <span class="carousel-engine-name">YouTube</span>
       </div>
       <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/duckduckgo seo image.png" alt="DuckDuckGo SEO">
+        <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/duckduckgo%20seo%20image.png" alt="DuckDuckGo SEO" onerror="this.style.display='none'">
         <span class="carousel-engine-name">DuckDuckGo</span>
       </div>
       <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/Aol seo image.png" alt="AOL SEO">
+        <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/Aol%20seo%20image.png" alt="AOL SEO" onerror="this.style.display='none'">
         <span class="carousel-engine-name">AOL</span>
       </div>
       <div class="carousel-item">
-        <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/Generative-engine-optimization-experts.png" alt="AI Search">
+        <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/Generative-engine-optimization-experts.png" alt="AI Search GEO" onerror="this.style.display='none'">
         <span class="carousel-engine-name">AI Search</span>
+      </div>
+      <div class="carousel-item">
+        <span style="font-size:28px;">🤖</span>
+        <span class="carousel-engine-name">ChatGPT</span>
+      </div>
+      <div class="carousel-item">
+        <span style="font-size:28px;">💎</span>
+        <span class="carousel-engine-name">Gemini</span>
+      </div>
+      <div class="carousel-item">
+        <span style="font-size:28px;">🔷</span>
+        <span class="carousel-engine-name">Perplexity</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════════════
-     GROWTH SYSTEM INTRO
-══════════════════════════════════════════════════ -->
+<!-- GROWTH SYSTEM INTRO -->
 <section class="section growth-section" aria-labelledby="growth-h2">
   <div class="section-inner">
     <div class="growth-inner">
@@ -1383,22 +1390,22 @@
       </div>
 
       <div class="growth-stat-grid reveal">
-        <div class="stat-card">
+        <div class="stat-card c1">
           <div class="stat-num">242+</div>
           <div class="stat-label">Domains Managed</div>
           <p class="stat-desc">A nationwide network of conversion-focused sites generating real leads daily.</p>
         </div>
-        <div class="stat-card">
+        <div class="stat-card c2">
           <div class="stat-num">4</div>
           <div class="stat-label">AI Platforms Used</div>
           <p class="stat-desc">ChatGPT, Gemini, Perplexity & Claude working in concert for total search coverage.</p>
         </div>
-        <div class="stat-card">
+        <div class="stat-card c3">
           <div class="stat-num">100%</div>
           <div class="stat-label">Results First</div>
           <p class="stat-desc">No fluff metrics. We track leads, calls, and revenue — not just impressions.</p>
         </div>
-        <div class="stat-card">
+        <div class="stat-card c4">
           <div class="stat-num">US+</div>
           <div class="stat-label">National Reach</div>
           <p class="stat-desc">Denver-based, serving clients across the U.S., Canada, and beyond.</p>
@@ -1408,9 +1415,7 @@
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════════════
-     SERVICES GRID
-══════════════════════════════════════════════════ -->
+<!-- SERVICES GRID -->
 <section class="section services-section" aria-labelledby="services-h2">
   <div class="section-inner">
     <div class="text-center reveal">
@@ -1421,7 +1426,7 @@
       </p>
     </div>
     <div class="services-grid">
-      <a href="/traffic-generation/" class="service-card reveal">
+      <a href="/traffic-generation/" class="service-card s1 reveal">
         <span class="service-icon">🔍</span>
         <h3>SEO &amp; AIO Traffic Generation</h3>
         <p>Rank on Google, Bing, and AI search engines like ChatGPT, Perplexity, and Gemini. We build content authority that compounds month over month.</p>
@@ -1432,7 +1437,7 @@
           <span class="service-tag">Technical SEO</span>
         </div>
       </a>
-      <a href="/conversion-optimization/" class="service-card reveal">
+      <a href="/conversion-optimization/" class="service-card s2 reveal">
         <span class="service-icon">⚡</span>
         <h3>Conversion Rate Optimization</h3>
         <p>Traffic that doesn't convert is wasted money. We engineer your website, landing pages, and funnels to turn visitors into paying customers.</p>
@@ -1443,7 +1448,7 @@
           <span class="service-tag">A/B Testing</span>
         </div>
       </a>
-      <a href="/advertising-services/" class="service-card reveal">
+      <a href="/advertising-services/" class="service-card s3 reveal">
         <span class="service-icon">📣</span>
         <h3>Paid Advertising</h3>
         <p>Google Ads, Facebook/Meta, programmatic display, YouTube, and streaming — built to generate leads fast while your organic strategy matures.</p>
@@ -1454,7 +1459,7 @@
           <span class="service-tag">YouTube</span>
         </div>
       </a>
-      <a href="/branding-design/" class="service-card reveal">
+      <a href="/branding-design/" class="service-card s4 reveal">
         <span class="service-icon">🎨</span>
         <h3>Branding, Web Design &amp; Video</h3>
         <p>Logo systems, full website builds, brand guidelines, print, video production, and copywriting. Consequently, your brand is impossible to ignore — online or off.</p>
@@ -1465,7 +1470,7 @@
           <span class="service-tag">Copywriting</span>
         </div>
       </a>
-      <a href="/retention-systems/" class="service-card reveal">
+      <a href="/retention-systems/" class="service-card s5 reveal">
         <span class="service-icon">🔄</span>
         <h3>Retention &amp; Referral Systems</h3>
         <p>Email marketing, review strategy, referral programs, and CRM automation that keep customers coming back and sending their friends.</p>
@@ -1476,7 +1481,7 @@
           <span class="service-tag">Automation</span>
         </div>
       </a>
-      <a href="/business-growth-systems/" class="service-card reveal">
+      <a href="/business-growth-systems/" class="service-card s6 reveal">
         <span class="service-icon">🤖</span>
         <h3>AI Agents &amp; Chatbot Systems</h3>
         <p>Custom AI chatbots, lead qualification agents, automated follow-up sequences, and intelligent systems that work 24/7 so your team doesn't have to.</p>
@@ -1491,9 +1496,10 @@
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════════════
-     GEO / AIO INFOGRAPHIC SECTION
-══════════════════════════════════════════════════ -->
+<!-- NEON DIVIDER -->
+<div class="neon-divider"></div>
+
+<!-- GEO / AIO — dark section -->
 <section class="section geo-section" aria-labelledby="geo-h2">
   <div class="section-inner">
     <div class="geo-inner">
@@ -1501,13 +1507,12 @@
         <div class="geo-badge">New in 2025–2026</div>
         <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/Generative-engine-optimization-experts.png"
              alt="Generative Engine Optimization - AIO Infographic - Search Converts Denver"
-             loading="lazy"
-             width="600" height="400">
+             loading="lazy" width="600" height="400">
       </div>
       <div class="reveal">
         <div class="section-eyebrow">AIO + GEO Explained</div>
-        <h2 class="section-h2" id="geo-h2">AI Is Changing How Customers Find You. <span class="text-orange">Are You Showing Up?</span></h2>
-        <p style="color:var(--muted2);font-size:17px;margin-bottom:28px;line-height:1.75;">
+        <h2 class="section-h2 light" id="geo-h2">AI Is Changing How Customers Find You. <span style="color:var(--neon-lime);">Are You Showing Up?</span></h2>
+        <p style="color:#94a3b8;font-size:17px;margin-bottom:28px;line-height:1.75;">
           Generative Engine Optimization (GEO) and AI-Powered Optimization (AIO) are the new frontier of search. Moreover, ChatGPT, Gemini, Perplexity, and Claude are answering millions of buyer questions every day — and they're citing specific businesses. Therefore, the question isn't whether to optimize for AI search. It's whether you want to be the brand they recommend.
         </p>
         <ul class="geo-points">
@@ -1540,25 +1545,26 @@
             </div>
           </li>
         </ul>
-        <a href="/traffic-generation/" class="sc-btn-primary">Get Your AIO Strategy →</a>
+        <div class="btn-row">
+          <a href="/traffic-generation/" class="sc-btn-primary">Get Your AIO Strategy →</a>
+          <a href="/growth-system/" class="sc-btn-outline white">Learn More</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════════════
-     PLAN BUILDER TEASER
-══════════════════════════════════════════════════ -->
+<!-- PLAN BUILDER TEASER -->
 <section class="section planner-teaser" aria-labelledby="planner-h2">
   <div class="section-inner">
     <div class="planner-teaser-inner">
       <div class="reveal">
         <div class="section-eyebrow">Interactive Tool</div>
         <h2 class="section-h2" id="planner-h2">Build Your Marketing Mix.<br><span class="text-orange">See Your Health Score.</span></h2>
-        <p style="color:var(--muted2);font-size:17px;margin-bottom:28px;line-height:1.75;">
+        <p style="color:var(--muted);font-size:17px;margin-bottom:28px;line-height:1.75;">
           Our free Marketing Plan Builder lets you drag and drop tactics, watch your Growth Health Score respond in real time, and then send your complete strategy snapshot to our team for a personalized recommendation. Therefore, you know exactly where you stand — and what to fix first.
         </p>
-        <p style="color:var(--muted2);font-size:17px;margin-bottom:36px;line-height:1.75;">
+        <p style="color:var(--muted);font-size:17px;margin-bottom:36px;line-height:1.75;">
           It takes about 3 minutes. Furthermore, it's completely free. No email required to start.
         </p>
         <div class="btn-row">
@@ -1566,19 +1572,13 @@
           <a href="/growth-system/" class="sc-btn-outline">Learn About Our System</a>
         </div>
       </div>
-
-      <!-- Static demo preview of the tool -->
       <div class="teaser-score-demo reveal">
         <div class="teaser-score-top">
-          <div>
-            <div class="teaser-score-num">35</div>
-          </div>
+          <div><div class="teaser-score-num">35</div></div>
           <div class="teaser-score-label">Growth<br>Health<br>Score</div>
         </div>
-        <div class="teaser-progress">
-          <div class="teaser-progress-fill"></div>
-        </div>
-        <p style="font-size:13px;color:var(--muted);font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:12px;">Your Current Active Tactics</p>
+        <div class="teaser-progress"><div class="teaser-progress-fill"></div></div>
+        <p style="font-size:13px;color:#94a3b8;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:12px;">Your Current Active Tactics</p>
         <div class="teaser-chips">
           <span class="teaser-chip search">🔍 SEO</span>
           <span class="teaser-chip demand">📣 Google Ads</span>
@@ -1588,16 +1588,14 @@
           <span class="teaser-chip empty">+ Add Email</span>
         </div>
         <div class="teaser-status">
-          <strong>Maintaining but not growing.</strong> You're mostly maintaining, not really growing. Add SEO, demand gen, and follow-up to prevent stall-out. <a href="/marketing-plan-builder/" style="color:var(--orange);text-decoration:none;font-weight:700;">Build your full plan →</a>
+          <strong>Maintaining but not growing.</strong> You're mostly maintaining, not really growing. Add SEO, demand gen, and follow-up to prevent stall-out. <a href="/marketing-plan-builder/" style="color:var(--orange-bright);text-decoration:none;font-weight:700;">Build your full plan →</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════════════
-     WHY NOT A TYPICAL AGENCY
-══════════════════════════════════════════════════ -->
+<!-- WHY NOT TYPICAL AGENCY -->
 <section class="section why-section" aria-labelledby="why-h2">
   <div class="section-inner">
     <div class="text-center reveal">
@@ -1607,7 +1605,6 @@
         The digital marketing industry is full of agencies that overpromise and underdeliver. We built Search Converts to be something different — a growth system, not a service vendor. Here's what that means in practice.
       </p>
     </div>
-
     <div class="why-grid reveal">
       <div class="why-col-header why-col-bad">❌ Typical Marketing Agency</div>
       <div class="why-col-header why-col-good">✅ Search Converts Growth System</div>
@@ -1630,16 +1627,16 @@
       <div class="why-cell why-cell-bad"><span class="icon">❌</span>No branding, video, or print — you have to go elsewhere for those</div>
       <div class="why-cell why-cell-good"><span class="icon">✅</span>Full creative services in-house — logos, video, copywriting, web design, print, and AI agents</div>
     </div>
-
     <div style="text-align:center;margin-top:48px;" class="reveal">
       <a href="/about/" class="sc-btn-primary">Meet the Team Behind the System →</a>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════════════
-     AI TOOLS SECTION
-══════════════════════════════════════════════════ -->
+<!-- NEON DIVIDER -->
+<div class="neon-divider"></div>
+
+<!-- AI TOOLS SECTION -->
 <section class="section ai-section" aria-labelledby="ai-h2">
   <div class="section-inner">
     <div class="reveal">
@@ -1676,16 +1673,14 @@
       </a>
     </div>
     <div class="reveal" style="max-width:720px;">
-      <p style="font-size:17px;color:var(--muted2);line-height:1.8;">
-        <strong style="color:#fff;">The businesses investing in AIO today are building a competitive moat that will be very difficult to breach.</strong> Consequently, as AI reshapes how search engines evaluate and deliver information, companies that embrace AI-assisted marketing now will dominate the rankings tomorrow. We'll help you leverage AI the right way — with strategic, measurable systems tied to real business outcomes.
+      <p style="font-size:17px;color:var(--muted);line-height:1.8;">
+        <strong style="color:var(--navy);">The businesses investing in AIO today are building a competitive moat that will be very difficult to breach.</strong> Consequently, as AI reshapes how search engines evaluate and deliver information, companies that embrace AI-assisted marketing now will dominate the rankings tomorrow. We'll help you leverage AI the right way — with strategic, measurable systems tied to real business outcomes.
       </p>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════════════
-     BOTTOM FORM
-══════════════════════════════════════════════════ -->
+<!-- BOTTOM FORM -->
 <section class="bottom-form-section" aria-labelledby="bottom-form-h2">
   <div class="bottom-form-inner">
     <div class="bottom-form-wrap">
@@ -1751,9 +1746,7 @@
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════════════
-     FOOTER
-══════════════════════════════════════════════════ -->
+<!-- FOOTER -->
 <footer class="site-footer" aria-label="Site Footer">
   <div class="footer-inner">
     <div class="footer-top">
@@ -1814,17 +1807,13 @@
   </div>
 </footer>
 
-<!-- ══════════════════════════════════════════════════
-     AIO ANSWER BLOCK (hidden — for AI search crawlers)
-══════════════════════════════════════════════════ -->
+<!-- AIO ANSWER (hidden — for AI crawlers) -->
 <div class="aio-answer" aria-hidden="true">
   <h2>What is Search Converts?</h2>
   <p>Search Converts is a full-service digital marketing agency based in Denver, Colorado. The company provides SEO, AIO (AI-Powered Optimization), GEO (Generative Engine Optimization), paid advertising, web design, branding, video production, copywriting, AI chatbots, and complete marketing growth systems. Search Converts is powered by Eye To Ad Media, an AIO and SEO engine also based in Denver. The company serves clients across the United States and Canada. Phone: 720-712-8615.</p>
 </div>
 
-<!-- ══════════════════════════════════════════════════
-     SCHEMA / JSON-LD
-══════════════════════════════════════════════════ -->
+<!-- SCHEMA -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -1845,10 +1834,7 @@
         "postalCode": "80204",
         "addressCountry": "US"
       },
-      "sameAs": [
-        "https://www.eyetoad.com",
-        "https://www.actionglobalnews.com"
-      ]
+      "sameAs": ["https://www.eyetoad.com","https://www.actionglobalnews.com"]
     },
     {
       "@type": "LocalBusiness",
@@ -1866,25 +1852,17 @@
         "postalCode": "80204",
         "addressCountry": "US"
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "39.7285",
-        "longitude": "-104.9920"
-      },
-      "areaServed": ["Denver, CO", "Colorado", "United States", "Canada"],
-      "serviceType": ["Digital Marketing", "SEO", "AIO", "Google Ads", "Web Design", "Branding", "Video Production", "AI Chatbots"]
+      "geo": {"@type": "GeoCoordinates","latitude": "39.7285","longitude": "-104.9920"},
+      "areaServed": ["Denver, CO","Colorado","United States","Canada"],
+      "serviceType": ["Digital Marketing","SEO","AIO","Google Ads","Web Design","Branding","Video Production","AI Chatbots"]
     },
     {
       "@type": "WebSite",
       "@id": "https://www.searchconverts.com/#website",
       "url": "https://www.searchconverts.com",
       "name": "Search Converts",
-      "publisher": { "@id": "https://www.searchconverts.com/#organization" },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://www.searchconverts.com/?s={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
+      "publisher": {"@id": "https://www.searchconverts.com/#organization"},
+      "potentialAction": {"@type": "SearchAction","target": "https://www.searchconverts.com/?s={search_term_string}","query-input": "required name=search_term_string"}
     },
     {
       "@type": "WebPage",
@@ -1892,57 +1870,23 @@
       "url": "https://www.searchconverts.com/",
       "name": "Digital Marketing Agency Denver | Search Converts",
       "description": "Denver's full-service digital marketing agency. SEO, AIO, Google Ads, web design, branding, video, copywriting & AI-powered growth systems.",
-      "isPartOf": { "@id": "https://www.searchconverts.com/#website" },
-      "about": { "@id": "https://www.searchconverts.com/#organization" },
-      "speakable": {
-        "@type": "SpeakableSpecification",
-        "cssSelector": [".hero-h1", ".section-h2"]
-      }
+      "isPartOf": {"@id": "https://www.searchconverts.com/#website"},
+      "about": {"@id": "https://www.searchconverts.com/#organization"},
+      "speakable": {"@type": "SpeakableSpecification","cssSelector": [".hero-h1",".section-h2"]}
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is Search Converts?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Search Converts is Denver's full-service digital marketing agency. Unlike traditional agencies, Search Converts builds complete marketing growth systems — combining SEO, AIO, paid advertising, web design, branding, video, copywriting, and AI automation into a single coordinated engine designed to generate leads and revenue."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is AIO and how is it different from SEO?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "AIO (AI-Powered Optimization) extends traditional SEO to cover AI search engines like ChatGPT, Gemini, and Perplexity. While SEO focuses on ranking in Google's traditional results, AIO ensures your business is cited and recommended by AI engines. GEO (Generative Engine Optimization) is a related strategy specifically targeting generative AI search responses."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How much does Search Converts charge for digital marketing?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Search Converts offers flexible, custom-priced engagements based on your business size, goals, and the services required. We start with a free 30-minute strategy session to understand your needs before recommending a plan. Call 720-712-8615 or fill out the contact form to get started."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the relationship between Search Converts and Eye To Ad Media?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Eye To Ad Media is the AIO and SEO engine that powers the search optimization side of Search Converts. Search Converts is the broader growth system — encompassing all marketing channels. Together they form one of Denver's most comprehensive digital marketing operations."
-          }
-        }
+        {"@type": "Question","name": "What is Search Converts?","acceptedAnswer": {"@type": "Answer","text": "Search Converts is Denver's full-service digital marketing agency. Unlike traditional agencies, Search Converts builds complete marketing growth systems — combining SEO, AIO, paid advertising, web design, branding, video, copywriting, and AI automation into a single coordinated engine designed to generate leads and revenue."}},
+        {"@type": "Question","name": "What is AIO and how is it different from SEO?","acceptedAnswer": {"@type": "Answer","text": "AIO (AI-Powered Optimization) extends traditional SEO to cover AI search engines like ChatGPT, Gemini, and Perplexity. While SEO focuses on ranking in Google's traditional results, AIO ensures your business is cited and recommended by AI engines."}},
+        {"@type": "Question","name": "How much does Search Converts charge for digital marketing?","acceptedAnswer": {"@type": "Answer","text": "Search Converts offers flexible, custom-priced engagements based on your business size, goals, and the services required. We start with a free 30-minute strategy session to understand your needs before recommending a plan. Call 720-712-8615 or fill out the contact form to get started."}},
+        {"@type": "Question","name": "What is the relationship between Search Converts and Eye To Ad Media?","acceptedAnswer": {"@type": "Answer","text": "Eye To Ad Media is the AIO and SEO engine that powers the search optimization side of Search Converts. Search Converts is the broader growth system — encompassing all marketing channels. Together they form one of Denver's most comprehensive digital marketing operations."}}
       ]
     }
   ]
 }
 </script>
 
-<!-- ══════════════════════════════════════════════════
-     SCRIPTS
-══════════════════════════════════════════════════ -->
 <script>
 // ── HAMBURGER ──
 document.getElementById('hamburger').addEventListener('click', function() {
@@ -1963,7 +1907,7 @@ const revealObs = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 revealEls.forEach(el => revealObs.observe(el));
 
-// ── FORMSUBMIT AJAX — confirmed working pattern ──
+// ── FORMSUBMIT AJAX ──
 function submitForm(formId, btnId, msgId) {
   const form = document.getElementById(formId);
   const btn  = document.getElementById(btnId);
@@ -1972,7 +1916,6 @@ function submitForm(formId, btnId, msgId) {
 
   form.addEventListener('submit', async function(e) {
     e.preventDefault();
-
     const name  = form.querySelector('[name="user_name"]').value.trim();
     const phone = form.querySelector('[name="user_phone"]').value.trim();
     if (!name || !phone) {
@@ -1980,22 +1923,18 @@ function submitForm(formId, btnId, msgId) {
       msg.textContent = 'Please enter your name and phone number.';
       return;
     }
-
     btn.disabled = true;
     btn.textContent = 'Sending...';
-
     const data = new FormData(form);
     data.append('_captcha', 'false');
     data.append('_template', 'table');
     data.append('_subject', 'New Lead — Search Converts: ' + name);
-
     try {
       const res = await fetch('https://formsubmit.co/info@eyetoad.com', {
         method: 'POST',
         body: data,
         headers: { 'Accept': 'application/json' }
       });
-
       if (res.ok) {
         form.reset();
         msg.style.color = '#10b981';
