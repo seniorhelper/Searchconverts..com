@@ -1,1 +1,1553 @@
-keep
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Marketing Plan Builder | Build Your Business Roadmap | Search Converts</title>
+  <meta name="description" content="Build your free marketing plan in 3 minutes. See your Growth Health Score, identify gaps in your strategy, and get a personalized roadmap to beat the competition. Denver's #1 marketing plan tool.">
+  <link rel="canonical" href="https://www.searchconverts.com/marketing-plan-builder/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Free Marketing Plan Builder | Search Converts Denver">
+  <meta property="og:description" content="Drag-and-drop your marketing tactics, see your Growth Health Score in real time, and get a free personalized strategy snapshot from our team.">
+  <meta property="og:url" content="https://www.searchconverts.com/marketing-plan-builder/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='13' cy='13' r='8' fill='none' stroke='%23f97316' stroke-width='3'/%3E%3Cline x1='19' y1='19' x2='28' y2='28' stroke='%23f97316' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='13' cy='13' r='8' fill='none' stroke='%23f97316' stroke-width='3'/%3E%3Cline x1='19' y1='19' x2='28' y2='28' stroke='%23f97316' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700;800&family=Barlow+Condensed:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  <style>
+    /* ══ RESET ══ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Barlow', sans-serif;
+      background: #080c14;
+      color: #e8edff;
+      font-size: 17px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    :root {
+      --orange: #f97316;
+      --orange-deep: #ea580c;
+      --orange-bright: #fb923c;
+      --black: #060910;
+      --navy: #080c14;
+      --surface: #0d1220;
+      --surface2: #111827;
+      --border: #1e2a40;
+      --border2: #2a3655;
+      --text: #e8edff;
+      --muted: #7b8ab8;
+      --muted2: #a0aece;
+      --white: #ffffff;
+      --green: #10b981;
+      --blue: #3b82f6;
+      --red: #ef4444;
+      --yellow: #fbbf24;
+      --purple: #8b5cf6;
+    }
+
+    /* ══ ANNOUNCEMENT BAR ══ */
+    .ann-bar {
+      background: var(--orange);
+      color: #fff;
+      text-align: center;
+      padding: 10px 20px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .ann-bar a { color: #fff; text-decoration: none; }
+    .ann-bar a:hover { text-decoration: underline; }
+
+    /* ══ HEADER ══ */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #ffffff;
+      border-bottom: 3px solid var(--orange);
+      box-shadow: 0 2px 24px rgba(0,0,0,0.18);
+    }
+    .header-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+    .header-logo img { height: 200px; width: auto; display: block; margin-top: 60px; position: relative; z-index: 10; }
+    .header-nav { display: flex; align-items: center; gap: 28px; list-style: none; }
+    .header-nav a {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 15px; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      color: #0d1220; text-decoration: none; transition: color 0.2s;
+    }
+    .header-nav a:hover, .header-nav a.active { color: var(--orange); }
+    .header-nav .nav-cta {
+      background: var(--orange); color: #fff !important;
+      padding: 9px 18px; border-radius: 4px; transition: background 0.2s !important;
+    }
+    .header-nav .nav-cta:hover { background: var(--orange-deep); }
+    .header-phone {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 20px; font-weight: 800;
+      color: var(--orange); text-decoration: none; white-space: nowrap;
+    }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+    .hamburger span { display: block; width: 26px; height: 3px; background: #0d1220; border-radius: 2px; transition: all 0.3s; }
+    .mobile-nav { display: none; background: #fff; border-top: 1px solid #e5e7eb; padding: 16px 24px 20px; }
+    .mobile-nav.open { display: block; }
+    .mobile-nav a { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 18px; font-weight: 700; text-transform: uppercase; color: #0d1220; text-decoration: none; padding: 10px 0; border-bottom: 1px solid #f0f0f0; }
+    .mobile-nav a:hover { color: var(--orange); }
+    @media (max-width: 960px) { .header-nav { display: none; } .hamburger { display: flex; } .header-logo img { height: 120px; margin-top: 30px; } }
+    @media (max-width: 600px) { .header-logo img { height: 80px; margin-top: 16px; } .header-phone { font-size: 16px; } }
+
+    /* ══ BREADCRUMB ══ */
+    .breadcrumb {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 0;
+    }
+    .breadcrumb-inner {
+      max-width: 1240px; margin: 0 auto; padding: 0 24px;
+      display: flex; align-items: center; gap: 8px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.06em; color: var(--muted);
+    }
+    .breadcrumb a { color: var(--muted); text-decoration: none; transition: color 0.2s; }
+    .breadcrumb a:hover { color: var(--orange); }
+    .breadcrumb .sep { color: var(--border2); }
+    .breadcrumb .current { color: var(--orange); }
+
+    /* ══ PAGE HERO ══ */
+    .page-hero {
+      background: var(--black);
+      padding: 72px 0 60px;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(249,115,22,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(249,115,22,0.05) 1px, transparent 1px);
+      background-size: 56px 56px;
+    }
+    /* Orange glow behind headline */
+    .page-hero::after {
+      content: '';
+      position: absolute;
+      top: -100px; left: 50%; transform: translateX(-50%);
+      width: 600px; height: 400px;
+      background: radial-gradient(ellipse, rgba(249,115,22,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .page-hero-inner {
+      max-width: 900px; margin: 0 auto; padding: 0 24px;
+      position: relative; z-index: 1;
+    }
+    .page-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px; font-weight: 800; letter-spacing: 0.16em;
+      text-transform: uppercase; color: var(--orange);
+      background: rgba(249,115,22,0.1); border: 1px solid rgba(249,115,22,0.3);
+      border-radius: 3px; padding: 6px 14px; margin-bottom: 24px;
+    }
+    .page-eyebrow::before {
+      content: ''; width: 7px; height: 7px; border-radius: 50%;
+      background: var(--orange); animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.4;transform:scale(.6)} }
+    .page-hero h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(52px, 8vw, 88px);
+      line-height: 0.95; color: #fff;
+      letter-spacing: 0.01em; margin-bottom: 24px;
+    }
+    .page-hero h1 .accent { color: var(--orange); }
+    .page-hero-lead {
+      font-size: 20px; font-weight: 500; color: var(--muted2);
+      max-width: 680px; margin: 0 auto 36px; line-height: 1.7;
+    }
+    .hero-stats-row {
+      display: flex; justify-content: center; gap: 48px; flex-wrap: wrap;
+    }
+    .hero-stat { text-align: center; }
+    .hero-stat-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 42px; color: var(--orange); line-height: 1;
+    }
+    .hero-stat-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--muted); margin-top: 4px;
+    }
+
+    /* ══ INTRO COPY SECTION ══ */
+    .intro-section {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 80px 0;
+    }
+    .intro-inner {
+      max-width: 1240px; margin: 0 auto; padding: 0 24px;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start;
+    }
+    @media (max-width: 860px) { .intro-inner { grid-template-columns: 1fr; gap: 48px; } }
+
+    .intro-text h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(36px, 5vw, 54px); line-height: 1;
+      color: #fff; margin-bottom: 20px;
+    }
+    .intro-text h2 .accent { color: var(--orange); }
+    .intro-text p { font-size: 17px; color: var(--muted2); line-height: 1.8; margin-bottom: 18px; }
+    .intro-text p strong { color: #fff; }
+    .intro-text p:last-child { margin-bottom: 0; }
+
+    .intro-why-list { list-style: none; padding: 0; }
+    .intro-why-list li {
+      display: flex; align-items: flex-start; gap: 14px;
+      padding: 18px 0; border-bottom: 1px solid var(--border);
+      font-size: 16px; color: var(--muted2); line-height: 1.6;
+    }
+    .intro-why-list li:last-child { border-bottom: none; }
+    .why-icon {
+      width: 40px; height: 40px; border-radius: 8px; flex-shrink: 0;
+      background: rgba(249,115,22,0.12); border: 1px solid rgba(249,115,22,0.3);
+      display: flex; align-items: center; justify-content: center; font-size: 20px; margin-top: 2px;
+    }
+    .intro-why-list li strong { color: #fff; display: block; margin-bottom: 4px; font-size: 16px; }
+
+    /* ══ TOOL SECTION ══ */
+    .tool-section {
+      background: var(--navy);
+      padding: 80px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .tool-inner { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+
+    .tool-header { text-align: center; margin-bottom: 48px; }
+    .section-eyebrow {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px; font-weight: 800; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--orange);
+      margin-bottom: 12px; display: block;
+    }
+    .tool-header h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(36px, 5vw, 56px); line-height: 1; color: #fff; margin-bottom: 16px;
+    }
+    .tool-header h2 .accent { color: var(--orange); }
+    .tool-header p { font-size: 17px; color: var(--muted2); max-width: 620px; margin: 0 auto; line-height: 1.7; }
+
+    /* ── SCORE BAR ── */
+    .score-bar {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px 28px;
+      margin-bottom: 28px;
+      display: flex; align-items: center; gap: 24px; flex-wrap: wrap;
+    }
+    .score-label {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 28px; color: #fff; white-space: nowrap; min-width: 110px;
+    }
+    .score-label span { color: var(--orange); }
+    .score-track {
+      flex: 1; min-width: 160px; height: 14px;
+      background: #0a1020; border-radius: 999px;
+      overflow: hidden; border: 1px solid var(--border);
+    }
+    .score-fill {
+      height: 100%; width: 0%; border-radius: 999px;
+      background: linear-gradient(90deg, var(--red), var(--orange));
+      transition: width 0.5s cubic-bezier(.4,0,.2,1), background 0.5s ease;
+    }
+    .score-status { flex: 1; min-width: 180px; }
+    .score-status strong { display: block; color: #c9d6f5; font-size: 16px; margin-bottom: 3px; }
+    .score-status span { font-size: 14px; color: var(--muted); line-height: 1.5; }
+
+    /* ── FILTER TABS ── */
+    .cat-tabs { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; align-items: center; }
+    .cat-tab-label { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 700; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; margin-right: 4px; }
+    .cat-tab {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px; font-weight: 700; letter-spacing: 0.05em;
+      padding: 5px 14px; border-radius: 100px;
+      border: 1px solid var(--border); cursor: pointer;
+      transition: all 0.15s; background: var(--surface); color: var(--muted);
+    }
+    .cat-tab.active, .cat-tab:hover { color: #fff; }
+    .cat-tab[data-filter="all"].active { background: #1a2240; border-color: #2a3460; }
+    .cat-tab[data-filter="search"].active { background: rgba(59,130,246,0.15); border-color: rgba(59,130,246,0.4); color: #93c5fd; }
+    .cat-tab[data-filter="demand"].active { background: rgba(249,115,22,0.15); border-color: rgba(249,115,22,0.4); color: #fdba74; }
+    .cat-tab[data-filter="retention"].active { background: rgba(16,185,129,0.15); border-color: rgba(16,185,129,0.4); color: #6ee7b7; }
+    .cat-tab[data-filter="ops"].active { background: rgba(139,92,246,0.15); border-color: rgba(139,92,246,0.4); color: #c4b5fd; }
+
+    .mobile-hint {
+      display: none; text-align: center; font-size: 13px;
+      color: var(--muted); padding: 8px 0 12px;
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 600; letter-spacing: 0.05em;
+    }
+    @media (max-width: 700px) { .mobile-hint { display: block; } }
+
+    /* ── PLANNER GRID ── */
+    .planner-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1.1fr 0.8fr;
+      gap: 20px; align-items: start;
+    }
+    @media (max-width: 1000px) { .planner-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 680px) { .planner-grid { grid-template-columns: 1fr; } }
+
+    .col-head {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px; font-weight: 800; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--muted);
+      margin-bottom: 10px; display: flex; align-items: center; gap: 8px;
+    }
+    .col-head::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+    /* ── POOL + DROP ZONE ── */
+    .tactic-pool, .drop-zone {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 10px; padding: 14px; min-height: 320px;
+    }
+    .drop-zone {
+      border-style: dashed; border-color: #222d55;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .drop-zone.drag-over { border-color: var(--orange); background: #100e08; }
+    .drop-empty {
+      color: #3a4870; font-size: 14px; text-align: center;
+      padding: 36px 10px; user-select: none; line-height: 1.6;
+    }
+    .drop-empty span { display: block; font-size: 36px; margin-bottom: 10px; opacity: 0.4; }
+
+    /* ── CHIPS ── */
+    .chip {
+      display: flex; align-items: center; gap: 8px;
+      padding: 9px 12px; border-radius: 7px; margin-bottom: 6px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px; font-weight: 700; letter-spacing: 0.03em;
+      cursor: grab; user-select: none;
+      transition: transform 0.15s, box-shadow 0.15s, opacity 0.15s;
+      border: 1px solid transparent; position: relative;
+    }
+    .chip:active { cursor: grabbing; }
+    .chip:hover { transform: translateX(3px); box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+    .chip.dragging { opacity: 0.35; transform: scale(0.97); }
+    .chip[data-category="search"] { background: rgba(59,130,246,0.1); border-color: rgba(59,130,246,0.28); color: #93c5fd; }
+    .chip[data-category="demand"] { background: rgba(249,115,22,0.09); border-color: rgba(249,115,22,0.26); color: #fdba74; }
+    .chip[data-category="retention"] { background: rgba(16,185,129,0.09); border-color: rgba(16,185,129,0.26); color: #6ee7b7; }
+    .chip[data-category="ops"] { background: rgba(139,92,246,0.09); border-color: rgba(139,92,246,0.26); color: #c4b5fd; }
+    .drop-zone .chip[data-category="search"] { background: rgba(59,130,246,0.2); border-color: rgba(59,130,246,0.5); }
+    .drop-zone .chip[data-category="demand"] { background: rgba(249,115,22,0.18); border-color: rgba(249,115,22,0.48); }
+    .drop-zone .chip[data-category="retention"] { background: rgba(16,185,129,0.18); border-color: rgba(16,185,129,0.48); }
+    .drop-zone .chip[data-category="ops"] { background: rgba(139,92,246,0.18); border-color: rgba(139,92,246,0.48); }
+    .chip-icon { font-size: 15px; flex-shrink: 0; }
+    .chip-remove {
+      margin-left: auto; font-size: 14px; opacity: 0;
+      cursor: pointer; color: #fff; transition: opacity 0.15s; padding: 0 2px; flex-shrink: 0;
+    }
+    .drop-zone .chip:hover .chip-remove { opacity: 0.6; }
+    .drop-zone .chip .chip-remove:hover { opacity: 1; }
+
+    /* ── RIGHT COLUMN ── */
+    .right-col { display: flex; flex-direction: column; gap: 16px; }
+    @media (max-width: 1000px) { .right-col { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; } }
+    @media (max-width: 680px) { .right-col { grid-template-columns: 1fr; } }
+
+    /* ── DONUT CARD ── */
+    .donut-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 10px; padding: 20px; text-align: center;
+    }
+    .donut-card h3 {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 14px; font-weight: 800;
+      color: #fff; margin-bottom: 14px; letter-spacing: 0.08em; text-transform: uppercase;
+    }
+    .donut-wrap { position: relative; display: inline-block; width: 100%; max-width: 190px; margin: 0 auto; }
+    .donut-center {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+    }
+    .donut-num { font-family: 'Bebas Neue', sans-serif; font-size: 38px; color: #fff; line-height: 1; }
+    .donut-lbl { font-size: 11px; color: var(--muted); margin-top: 2px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+
+    /* ── METERS ── */
+    .meters-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 10px; padding: 18px;
+    }
+    .meters-title { font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
+    .meter-row { margin-bottom: 13px; }
+    .meter-row:last-child { margin-bottom: 0; }
+    .meter-info { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 5px; }
+    .meter-name { color: var(--muted2); font-weight: 600; }
+    .meter-pct { color: #fff; font-weight: 800; font-family: 'Barlow Condensed', sans-serif; }
+    .meter-track { height: 7px; background: #0a1020; border-radius: 999px; overflow: hidden; }
+    .meter-fill { height: 100%; border-radius: 999px; width: 0%; transition: width 0.5s cubic-bezier(.4,0,.2,1); }
+    .mf-search { background: linear-gradient(90deg, #2563eb, #60a5fa); }
+    .mf-demand { background: linear-gradient(90deg, #f97316, #fb923c); }
+    .mf-retention { background: linear-gradient(90deg, #10b981, #34d399); }
+    .mf-ops { background: linear-gradient(90deg, #8b5cf6, #a78bfa); }
+
+    /* ── LEAD FORM CARD ── */
+    .lead-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 10px; overflow: hidden;
+      grid-column: 1 / -1;
+    }
+    .lead-card-header {
+      background: var(--orange); padding: 20px 24px;
+    }
+    .lead-card-header h3 {
+      font-family: 'Bebas Neue', sans-serif; font-size: 24px;
+      color: #fff; margin-bottom: 4px;
+    }
+    .lead-card-header p { font-size: 14px; color: rgba(255,255,255,0.85); line-height: 1.5; }
+    .lead-card-body { padding: 24px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    @media (max-width: 560px) { .form-row { grid-template-columns: 1fr; } }
+    .f-group { margin-bottom: 12px; }
+    .f-group label {
+      display: block; font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px; font-weight: 800; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--muted); margin-bottom: 5px;
+    }
+    .f-group input, .f-group select, .f-group textarea {
+      width: 100%; background: #06091a; border: 1px solid #1e2a4a;
+      border-radius: 6px; padding: 10px 13px; color: var(--text);
+      font-size: 15px; font-family: 'Barlow', sans-serif;
+      transition: border-color 0.15s;
+    }
+    .f-group input:focus, .f-group select:focus, .f-group textarea:focus {
+      outline: none; border-color: var(--orange); box-shadow: 0 0 0 3px rgba(249,115,22,0.12);
+    }
+    .f-group select option { background: #080d1e; }
+    .f-group textarea { min-height: 80px; resize: vertical; }
+    .form-btns { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+    .btn-send {
+      flex: 1; padding: 13px 20px; background: var(--orange); color: #fff;
+      font-family: 'Barlow Condensed', sans-serif; font-size: 17px; font-weight: 900;
+      letter-spacing: 0.08em; text-transform: uppercase; border: none; border-radius: 6px;
+      cursor: pointer; transition: background 0.2s, transform 0.2s;
+    }
+    .btn-send:hover { background: var(--orange-deep); transform: translateY(-1px); }
+    .btn-dl {
+      padding: 13px 18px; background: rgba(16,185,129,0.12); color: #6ee7b7;
+      font-family: 'Barlow Condensed', sans-serif; font-size: 15px; font-weight: 800;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      border: 1px solid rgba(16,185,129,0.3); border-radius: 6px; cursor: pointer; transition: background 0.2s;
+    }
+    .btn-dl:hover { background: rgba(16,185,129,0.2); }
+    #form-msg { font-size: 14px; margin-top: 10px; text-align: center; font-weight: 700; display: block; }
+
+    /* ══ HOW IT WORKS ══ */
+    .how-section { background: var(--surface); padding: 80px 0; border-bottom: 1px solid var(--border); }
+    .section-inner { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+    .section-h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(36px, 5vw, 56px); line-height: 1; color: #fff; margin-bottom: 16px;
+    }
+    .section-h2 .accent { color: var(--orange); }
+    .how-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 48px; }
+    @media (max-width: 860px) { .how-steps { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 520px) { .how-steps { grid-template-columns: 1fr; } }
+
+    .how-step {
+      background: var(--surface2); border: 1px solid var(--border);
+      border-radius: 10px; padding: 28px 24px; position: relative;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .how-step:hover { border-color: var(--border2); transform: translateY(-3px); }
+    .step-num {
+      font-family: 'Bebas Neue', sans-serif; font-size: 56px; line-height: 1;
+      color: rgba(249,115,22,0.2); position: absolute; top: 16px; right: 20px;
+    }
+    .step-icon { font-size: 32px; margin-bottom: 14px; display: block; }
+    .how-step h3 {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 20px; font-weight: 800;
+      color: #fff; margin-bottom: 10px; letter-spacing: 0.02em;
+    }
+    .how-step p { font-size: 15px; color: var(--muted); line-height: 1.65; }
+
+    /* ══ ROADMAP / WHY SECTION ══ */
+    .roadmap-section { background: var(--navy); padding: 80px 0; border-bottom: 1px solid var(--border); }
+    .roadmap-inner { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+    .roadmap-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
+    @media (max-width: 860px) { .roadmap-grid { grid-template-columns: 1fr; gap: 48px; } }
+
+    .roadmap-text h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(36px, 4.5vw, 52px); line-height: 1.05; color: #fff; margin-bottom: 20px; }
+    .roadmap-text h2 .accent { color: var(--orange); }
+    .roadmap-text p { font-size: 17px; color: var(--muted2); line-height: 1.8; margin-bottom: 18px; }
+    .roadmap-text p strong { color: #fff; }
+
+    .pillars-list { list-style: none; padding: 0; }
+    .pillars-list li {
+      display: flex; gap: 16px; align-items: flex-start;
+      padding: 18px 0; border-bottom: 1px solid var(--border);
+    }
+    .pillars-list li:last-child { border-bottom: none; }
+    .pillar-icon {
+      width: 44px; height: 44px; border-radius: 8px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px; border: 1px solid transparent;
+    }
+    .pi-search { background: rgba(59,130,246,0.12); border-color: rgba(59,130,246,0.3); }
+    .pi-demand { background: rgba(249,115,22,0.12); border-color: rgba(249,115,22,0.3); }
+    .pi-retention { background: rgba(16,185,129,0.12); border-color: rgba(16,185,129,0.3); }
+    .pi-ops { background: rgba(139,92,246,0.12); border-color: rgba(139,92,246,0.3); }
+    .pillar-text strong { color: #fff; display: block; margin-bottom: 4px; font-size: 17px; font-weight: 700; }
+    .pillar-text p { font-size: 15px; color: var(--muted); line-height: 1.6; margin: 0; }
+
+    /* ══ FAQ ══ */
+    .faq-section { background: var(--surface); padding: 80px 0; border-bottom: 1px solid var(--border); }
+    .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 48px; }
+    @media (max-width: 760px) { .faq-grid { grid-template-columns: 1fr; } }
+
+    .faq-item {
+      background: var(--surface2); border: 1px solid var(--border);
+      border-radius: 10px; overflow: hidden;
+    }
+    .faq-q {
+      padding: 20px 24px; cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 12px; transition: background 0.2s;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 18px; font-weight: 800; color: #fff; letter-spacing: 0.02em;
+      list-style: none; user-select: none;
+    }
+    .faq-q:hover { background: rgba(249,115,22,0.05); }
+    .faq-q .faq-arrow {
+      color: var(--orange); font-size: 18px; flex-shrink: 0;
+      transition: transform 0.3s; font-style: normal;
+    }
+    .faq-item.open .faq-arrow { transform: rotate(45deg); }
+    .faq-a {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+      padding: 0 24px;
+    }
+    .faq-item.open .faq-a { max-height: 400px; padding: 0 24px 20px; }
+    .faq-a p { font-size: 16px; color: var(--muted2); line-height: 1.75; }
+    .faq-a p + p { margin-top: 12px; }
+    .faq-a a { color: var(--orange); text-decoration: none; }
+    .faq-a a:hover { text-decoration: underline; }
+
+    /* ══ BOTTOM CTA ══ */
+    .bottom-cta {
+      background: var(--black); padding: 90px 0;
+      position: relative; overflow: hidden;
+    }
+    .bottom-cta::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(249,115,22,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(249,115,22,0.05) 1px, transparent 1px);
+      background-size: 56px 56px;
+    }
+    .bottom-cta-inner { max-width: 800px; margin: 0 auto; padding: 0 24px; text-align: center; position: relative; z-index: 1; }
+    .bottom-cta h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(40px, 6vw, 72px); line-height: 1; color: #fff; margin-bottom: 20px; }
+    .bottom-cta h2 .accent { color: var(--orange); }
+    .bottom-cta p { font-size: 18px; color: var(--muted2); line-height: 1.75; margin-bottom: 36px; max-width: 600px; margin-left: auto; margin-right: auto; }
+    .cta-btn-group { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 17px 34px; background: var(--orange); color: #fff;
+      font-family: 'Barlow Condensed', sans-serif; font-size: 18px; font-weight: 900;
+      letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none;
+      border-radius: 5px; transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-primary:hover { background: var(--orange-deep); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(249,115,22,0.35); }
+    .btn-outline {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 16px 32px; background: transparent; color: var(--orange);
+      font-family: 'Barlow Condensed', sans-serif; font-size: 18px; font-weight: 900;
+      letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none;
+      border-radius: 5px; border: 2px solid var(--orange); transition: all 0.2s;
+    }
+    .btn-outline:hover { background: rgba(249,115,22,0.1); }
+
+    /* ══ FOOTER ══ */
+    .site-footer { background: #040710; border-top: 3px solid var(--orange); padding: 60px 0 30px; }
+    .footer-inner { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+    .footer-top { display: grid; grid-template-columns: 260px 1fr 1fr 1fr; gap: 48px; padding-bottom: 40px; border-bottom: 1px solid var(--border); }
+    @media (max-width: 900px) { .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; } }
+    @media (max-width: 560px) { .footer-top { grid-template-columns: 1fr; } }
+    .footer-logo-wrap { background: #fff; border-radius: 6px; padding: 10px 14px; display: inline-block; margin-bottom: 14px; }
+    .footer-logo-wrap img { height: 44px; width: auto; display: block; }
+    .footer-desc { font-size: 14px; color: var(--muted); line-height: 1.7; margin-bottom: 14px; }
+    .footer-contact a { display: block; font-size: 14px; color: var(--muted2); text-decoration: none; margin-bottom: 5px; transition: color 0.2s; }
+    .footer-contact a:hover { color: var(--orange); }
+    .footer-col-title { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--orange); margin-bottom: 14px; }
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: 9px; }
+    .footer-links a { font-size: 14px; color: var(--muted2); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--orange); }
+    .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 24px; flex-wrap: wrap; gap: 10px; }
+    .footer-bottom p { font-size: 13px; color: var(--muted); line-height: 1.5; }
+    .footer-bottom a { color: var(--orange); text-decoration: none; }
+
+    /* ══ SCROLL REVEAL ══ */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ══ AIO HIDDEN ══ */
+    .aio-answer { display: none; }
+  </style>
+</head>
+<body>
+
+<!-- ANN BAR -->
+<div class="ann-bar">
+  📞 Free 30-Minute Strategy Session — No Obligation &nbsp;|&nbsp; Call <a href="tel:7207128615">720-712-8615</a>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="header-logo" aria-label="Search Converts Home">
+      <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/Logo-google-transparent-background-PNG.png"
+           alt="Search Converts - Digital Marketing Agency Denver" width="200" height="200">
+    </a>
+    <nav aria-label="Main Navigation">
+      <ul class="header-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/growth-system/">Growth System</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/marketing-plan-builder/" class="active">Plan Builder</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="https://www.eyetoad.com" target="_blank" rel="noopener">Denver SEO</a></li>
+        <li><a href="/free-strategy-session/" class="nav-cta">Free Strategy Session</a></li>
+      </ul>
+    </nav>
+    <a href="tel:7207128615" class="header-phone">720-712-8615</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav">
+    <a href="/">Home</a>
+    <a href="/growth-system/">Growth System</a>
+    <a href="/services/">Services</a>
+    <a href="/marketing-plan-builder/">Plan Builder</a>
+    <a href="/about/">About</a>
+    <a href="https://www.eyetoad.com" target="_blank" rel="noopener">Denver SEO</a>
+    <a href="/free-strategy-session/">Free Strategy Session →</a>
+    <a href="tel:7207128615" style="color:var(--orange);">📞 720-712-8615</a>
+  </nav>
+</header>
+
+<!-- BREADCRUMB -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="/">Home</a>
+    <span class="sep">›</span>
+    <span class="current">Marketing Plan Builder</span>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero" aria-labelledby="page-h1">
+  <div class="page-hero-inner">
+    <div class="page-eyebrow">Free Interactive Tool — No Login Required</div>
+    <h1 id="page-h1">
+      Your Business<br>
+      <span class="accent">Roadmap</span> Starts Here.
+    </h1>
+    <p class="page-hero-lead">
+      Build your marketing plan in 3 minutes. See your Growth Health Score, identify exactly where you're bleeding revenue, and get a personalized strategy to outpace the competition.
+    </p>
+    <div class="hero-stats-row">
+      <div class="hero-stat">
+        <div class="hero-stat-num">29</div>
+        <div class="hero-stat-label">Tactics to Choose From</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">4</div>
+        <div class="hero-stat-label">Growth Pillars Scored</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">100</div>
+        <div class="hero-stat-label">Point Health Score</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">0</div>
+        <div class="hero-stat-label">Cost to Build Your Plan</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO COPY -->
+<section class="intro-section" aria-labelledby="intro-h2">
+  <div class="intro-inner">
+    <div class="intro-text reveal">
+      <h2>Most Businesses Don't Have a Marketing Plan. <span class="accent">They Have a Marketing Panic.</span></h2>
+      <p>
+        Here's the uncomfortable truth: most business owners are not running a marketing strategy — they're reacting. They try an ad campaign here, a new website there, maybe some SEO when a competitor starts ranking above them. <strong>The result is wasted budget, inconsistent lead flow, and zero compounding growth.</strong>
+      </p>
+      <p>
+        A real marketing plan changes everything. Moreover, it doesn't need to be a 50-page document. It needs to answer three questions clearly: where are your best customers coming from, what's stopping them from choosing you, and what system do you have to capture and keep them once they find you?
+      </p>
+      <p>
+        Therefore, we built this free Marketing Plan Builder so you can answer those questions in minutes — not weeks. Furthermore, the tool shows you exactly where your growth engine is strong and where it's broken, so you can fix the right things first.
+      </p>
+    </div>
+
+    <ul class="intro-why-list reveal">
+      <li>
+        <span class="why-icon">🗺️</span>
+        <div>
+          <strong>A Plan Gives You a Competitive Moat</strong>
+          Businesses with documented marketing strategies grow 313% faster than those without one. Consequently, your competitors who are planning will outpace those who are reacting — every single time.
+        </div>
+      </li>
+      <li>
+        <span class="why-icon">⚡</span>
+        <div>
+          <strong>You Stop Wasting Budget on the Wrong Channels</strong>
+          Additionally, a plan tells you which channels to invest in first — based on your industry, market, and where your buyers actually spend their time. No more guessing.
+        </div>
+      </li>
+      <li>
+        <span class="why-icon">📈</span>
+        <div>
+          <strong>Marketing Compounds When Systems Work Together</strong>
+          SEO builds authority. Ads bring immediate traffic. Retention turns customers into advocates. Furthermore, when these three pillars connect, your cost per lead drops and your revenue per customer rises.
+        </div>
+      </li>
+      <li>
+        <span class="why-icon">🎯</span>
+        <div>
+          <strong>Your Team Executes Faster With Clear Direction</strong>
+          Moreover, a marketing plan removes ambiguity. Everyone — whether that's you, a contractor, or a full agency — knows the priorities, the order of operations, and what success looks like.
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     THE INTERACTIVE TOOL
+════════════════════════════════════════ -->
+<section class="tool-section" id="builder" aria-labelledby="tool-h2">
+  <div class="tool-inner">
+
+    <div class="tool-header reveal">
+      <span class="section-eyebrow">Interactive Marketing Plan Builder</span>
+      <h2 id="tool-h2">Build Your Mix. <span class="accent">See Your Score.</span></h2>
+      <p>Select or drag the tactics that match your current marketing. Your Growth Health Score updates in real time. Then send your snapshot to our team for a free personalized review.</p>
+    </div>
+
+    <!-- SCORE BAR -->
+    <div class="score-bar">
+      <div class="score-label">Score: <span id="score-num">0</span></div>
+      <div class="score-track"><div class="score-fill" id="score-fill"></div></div>
+      <div class="score-status">
+        <strong id="status-short">Add tactics to build your engine</strong>
+        <span id="status-long">Start with SEO, AIO, and a clear website experience.</span>
+      </div>
+    </div>
+
+    <!-- FILTER TABS -->
+    <div class="cat-tabs">
+      <span class="cat-tab-label">Filter:</span>
+      <button class="cat-tab active" data-filter="all">All Tactics</button>
+      <button class="cat-tab" data-filter="search">🔍 Search & SEO</button>
+      <button class="cat-tab" data-filter="demand">📣 Demand Gen</button>
+      <button class="cat-tab" data-filter="retention">💚 Retention</button>
+      <button class="cat-tab" data-filter="ops">⚙️ Ops & Systems</button>
+    </div>
+
+    <p class="mobile-hint">📱 Tap a tactic to add it to your plan — tap it again to remove</p>
+
+    <!-- PLANNER GRID -->
+    <div class="planner-grid">
+
+      <!-- COL 1: TACTIC POOL -->
+      <div>
+        <div class="col-head">Available Tactics</div>
+        <div class="tactic-pool" id="pool">
+          <div class="chip" draggable="true" data-category="search" data-weight="10"><span class="chip-icon">🔍</span>SEO (Organic Search)</div>
+          <div class="chip" draggable="true" data-category="search" data-weight="8"><span class="chip-icon">🤖</span>AIO (AI-Powered Optimization)</div>
+          <div class="chip" draggable="true" data-category="search" data-weight="8"><span class="chip-icon">🖥️</span>Website UX & Conversion Optimization</div>
+          <div class="chip" draggable="true" data-category="search" data-weight="6"><span class="chip-icon">✍️</span>Content Strategy & Blogging</div>
+          <div class="chip" draggable="true" data-category="search" data-weight="9"><span class="chip-icon">📍</span>Local SEO & Map Pack Optimization</div>
+          <div class="chip" draggable="true" data-category="search" data-weight="7"><span class="chip-icon">🛠️</span>Technical SEO Audit & Fixes</div>
+          <div class="chip" draggable="true" data-category="demand" data-weight="9"><span class="chip-icon">📣</span>PPC — Google Ads</div>
+          <div class="chip" draggable="true" data-category="demand" data-weight="8"><span class="chip-icon">🎯</span>Remarketing & Retargeting</div>
+          <div class="chip" draggable="true" data-category="demand" data-weight="6"><span class="chip-icon">📱</span>Social Media Campaigns</div>
+          <div class="chip" draggable="true" data-category="demand" data-weight="7"><span class="chip-icon">🎥</span>Video Marketing & YouTube Ads</div>
+          <div class="chip" draggable="true" data-category="demand" data-weight="5"><span class="chip-icon">📺</span>TV & Streaming Media</div>
+          <div class="chip" draggable="true" data-category="demand" data-weight="4"><span class="chip-icon">📻</span>Radio & Audio Advertising</div>
+          <div class="chip" draggable="true" data-category="demand" data-weight="5"><span class="chip-icon">📬</span>Direct Mail & Flyers</div>
+          <div class="chip" draggable="true" data-category="demand" data-weight="3"><span class="chip-icon">🏙️</span>Billboards & Outdoor Advertising</div>
+          <div class="chip" draggable="true" data-category="demand" data-weight="6"><span class="chip-icon">🤝</span>Events, Trade Shows & Expos</div>
+          <div class="chip" draggable="true" data-category="retention" data-weight="8"><span class="chip-icon">📧</span>Email Marketing & Nurture Sequences</div>
+          <div class="chip" draggable="true" data-category="retention" data-weight="7"><span class="chip-icon">🔗</span>Referral Program</div>
+          <div class="chip" draggable="true" data-category="retention" data-weight="6"><span class="chip-icon">💸</span>Affiliate Program</div>
+          <div class="chip" draggable="true" data-category="retention" data-weight="8"><span class="chip-icon">⭐</span>Review & Reputation Strategy</div>
+          <div class="chip" draggable="true" data-category="retention" data-weight="7"><span class="chip-icon">🔄</span>Client Retention Processes</div>
+          <div class="chip" draggable="true" data-category="ops" data-weight="4"><span class="chip-icon">🎨</span>Strong Brand & Logo System</div>
+          <div class="chip" draggable="true" data-category="ops" data-weight="4"><span class="chip-icon">📋</span>Company Handbook & Ops Manual</div>
+          <div class="chip" draggable="true" data-category="ops" data-weight="3"><span class="chip-icon">📊</span>PowerPoint & Pitch Deck</div>
+          <div class="chip" draggable="true" data-category="ops" data-weight="7"><span class="chip-icon">💼</span>Documented Sales Process</div>
+          <div class="chip" draggable="true" data-category="ops" data-weight="7"><span class="chip-icon">🗂️</span>CRM & Lead Tracking System</div>
+          <div class="chip" draggable="true" data-category="ops" data-weight="5"><span class="chip-icon">📞</span>Call Handling Scripts</div>
+          <div class="chip" draggable="true" data-category="ops" data-weight="5"><span class="chip-icon">✅</span>Onboarding & Follow-Up Checklist</div>
+          <div class="chip" draggable="true" data-category="ops" data-weight="5"><span class="chip-icon">📄</span>Standardized Proposals & Quotes</div>
+          <div class="chip" draggable="true" data-category="ops" data-weight="6"><span class="chip-icon">🎓</span>Staff Training & Coaching</div>
+        </div>
+      </div>
+
+      <!-- COL 2: ACTIVE STRATEGY + METERS -->
+      <div>
+        <div class="col-head">Your Active Strategy</div>
+        <div class="drop-zone" id="dropzone">
+          <div class="drop-empty" id="drop-empty">
+            <span>🎯</span>
+            Drag tactics here<br>or tap them in the list
+          </div>
+        </div>
+        <div class="meters-card" style="margin-top:16px;">
+          <div class="meters-title">Category Balance</div>
+          <div class="meter-row">
+            <div class="meter-info"><span class="meter-name">🔍 Search & SEO</span><span class="meter-pct" id="pct-search">0%</span></div>
+            <div class="meter-track"><div class="meter-fill mf-search" id="bar-search"></div></div>
+          </div>
+          <div class="meter-row">
+            <div class="meter-info"><span class="meter-name">📣 Demand Gen</span><span class="meter-pct" id="pct-demand">0%</span></div>
+            <div class="meter-track"><div class="meter-fill mf-demand" id="bar-demand"></div></div>
+          </div>
+          <div class="meter-row">
+            <div class="meter-info"><span class="meter-name">💚 Retention</span><span class="meter-pct" id="pct-retention">0%</span></div>
+            <div class="meter-track"><div class="meter-fill mf-retention" id="bar-retention"></div></div>
+          </div>
+          <div class="meter-row">
+            <div class="meter-info"><span class="meter-name">⚙️ Ops & Systems</span><span class="meter-pct" id="pct-ops">0%</span></div>
+            <div class="meter-track"><div class="meter-fill mf-ops" id="bar-ops"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COL 3: CHART -->
+      <div class="right-col">
+        <div class="donut-card">
+          <h3>Strategy Mix</h3>
+          <div class="donut-wrap">
+            <canvas id="donut-chart" width="190" height="190"></canvas>
+            <div class="donut-center">
+              <div class="donut-num" id="donut-num">0</div>
+              <div class="donut-lbl">Health Score</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FULL-WIDTH LEAD FORM -->
+      <div class="lead-card" style="grid-column: 1 / -1; margin-top: 8px;">
+        <div class="lead-card-header">
+          <h3>Send Your Strategy Snapshot</h3>
+          <p>Fill in your details and we'll package your selected tactics + Health Score into a personalized strategy brief — reviewed by a real human on our team.</p>
+        </div>
+        <div class="lead-card-body">
+          <form id="builder-form" novalidate>
+            <input type="hidden" name="source_site" value="searchconverts.com - Marketing Plan Builder">
+            <input type="hidden" name="tactics_snapshot" id="tactics-snapshot" value="">
+            <input type="hidden" name="health_score" id="health-score-hidden" value="0">
+            <input type="text" name="_honey" style="display:none" tabindex="-1">
+            <div class="form-row">
+              <div class="f-group">
+                <label for="b-name">Your Name *</label>
+                <input id="b-name" name="user_name" type="text" placeholder="Full name" required>
+              </div>
+              <div class="f-group">
+                <label for="b-biz">Business Name</label>
+                <input id="b-biz" name="business_name" type="text" placeholder="Company">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="f-group">
+                <label for="b-phone">Phone *</label>
+                <input id="b-phone" name="user_phone" type="tel" placeholder="720-000-0000" required>
+              </div>
+              <div class="f-group">
+                <label for="b-email">Email</label>
+                <input id="b-email" name="user_email" type="email" placeholder="you@company.com">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="f-group">
+                <label for="b-zip">ZIP Code</label>
+                <input id="b-zip" name="user_zip" type="text" placeholder="80204">
+              </div>
+              <div class="f-group">
+                <label for="b-goal">Biggest Marketing Challenge</label>
+                <input id="b-goal" name="user_message" type="text" placeholder="e.g. Not enough leads, poor rankings...">
+              </div>
+            </div>
+            <div class="form-btns">
+              <button type="submit" class="btn-send" id="submit-btn">📨 Send My Strategy Snapshot</button>
+              <button type="button" class="btn-dl" id="dl-btn">⬇ Download .txt</button>
+            </div>
+            <span id="form-msg"></span>
+          </form>
+        </div>
+      </div>
+
+    </div><!-- /planner-grid -->
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-section" aria-labelledby="how-h2">
+  <div class="section-inner">
+    <div class="reveal">
+      <span class="section-eyebrow">How the Builder Works</span>
+      <h2 class="section-h2" id="how-h2">Four Steps to Your <span class="accent">Growth Roadmap</span></h2>
+      <p style="font-size:17px;color:var(--muted2);max-width:640px;line-height:1.75;">Most marketing "audits" are automated PDFs that tell you what you already know. This tool is different — it's a strategic framework built around the four pillars of sustainable business growth.</p>
+    </div>
+    <div class="how-steps">
+      <div class="how-step reveal">
+        <div class="step-num">01</div>
+        <span class="step-icon">🎯</span>
+        <h3>Select Your Current Tactics</h3>
+        <p>Drag or tap every marketing tactic your business currently uses. Be honest — adding tactics you don't actually execute will give you an inflated score that won't help you.</p>
+      </div>
+      <div class="how-step reveal">
+        <div class="step-num">02</div>
+        <span class="step-icon">📊</span>
+        <h3>Watch Your Health Score</h3>
+        <p>Your Growth Health Score updates in real time. It rewards balance across all four pillars — search, demand generation, retention, and operational systems. Furthermore, it penalizes over-reliance on a single channel.</p>
+      </div>
+      <div class="how-step reveal">
+        <div class="step-num">03</div>
+        <span class="step-icon">🔍</span>
+        <h3>Identify Your Gaps</h3>
+        <p>The category balance meters show you exactly which pillar is weakest. Consequently, you'll immediately see whether your problem is traffic, conversion, retention, or systems — and therefore where to invest next.</p>
+      </div>
+      <div class="how-step reveal">
+        <div class="step-num">04</div>
+        <span class="step-icon">🚀</span>
+        <h3>Get Your Free Review</h3>
+        <p>Send your snapshot to our team. A real human — not a bot — reviews your mix, compares it to businesses in your industry, and responds with a prioritized recommendation within one business day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROADMAP / WHY MARKETING PLANS MATTER -->
+<section class="roadmap-section" aria-labelledby="roadmap-h2">
+  <div class="roadmap-inner">
+    <div class="roadmap-grid">
+      <div class="roadmap-text reveal">
+        <h2>Your Marketing Plan Is Your <span class="accent">Competitive Weapon.</span> Not a Nice-to-Have.</h2>
+        <p>
+          Think about the businesses in your market that consistently show up — on Google, in ads, in your customers' email inboxes. They're not doing that by accident. <strong>They have a plan, and they execute it systematically.</strong>
+        </p>
+        <p>
+          Moreover, the businesses without a plan are easy to beat. They're running on instinct, copying competitors, and spending budget without measurement. Therefore, a clear marketing roadmap doesn't just organize your thinking — it becomes your primary competitive advantage.
+        </p>
+        <p>
+          Additionally, a great marketing plan identifies the correct order of operations. Most businesses invest in paid ads before fixing their website. They run social media before establishing organic authority. They hire salespeople before building a lead follow-up system. Consequently, they waste enormous amounts of money solving the wrong problem first.
+        </p>
+        <p>
+          The four pillars below represent the correct framework — in priority order. Furthermore, each pillar reinforces the others. Therefore, when all four are firing together, your cost per lead drops dramatically and your revenue per customer rises.
+        </p>
+        <a href="/free-strategy-session/" class="btn-primary" style="margin-top:8px;display:inline-flex;">Get a Free Strategy Session →</a>
+      </div>
+
+      <ul class="pillars-list reveal">
+        <li>
+          <span class="pillar-icon pi-search">🔍</span>
+          <div class="pillar-text">
+            <strong>Pillar 1 — Search & AIO Foundation</strong>
+            <p>SEO, AIO, local maps, technical optimization, and content authority. This is your long-term asset — the channel that compounds month over month and doesn't disappear when you stop paying. Furthermore, AI search engines like ChatGPT and Perplexity are now citing businesses in answers to buyer questions. Therefore, being visible here is no longer optional.</p>
+          </div>
+        </li>
+        <li>
+          <span class="pillar-icon pi-demand">📣</span>
+          <div class="pillar-text">
+            <strong>Pillar 2 — Demand Generation</strong>
+            <p>Google Ads, Meta, remarketing, video, and outbound channels. These produce leads fast while your organic strategy matures. Additionally, remarketing is one of the highest-ROI tactics available — your website visitors already know you, so consequently they convert at 3–5x the rate of cold traffic.</p>
+          </div>
+        </li>
+        <li>
+          <span class="pillar-icon pi-retention">💚</span>
+          <div class="pillar-text">
+            <strong>Pillar 3 — Retention & Referrals</strong>
+            <p>Email marketing, review strategy, referral programs, and client retention systems. Acquiring a new customer costs 5–7x more than retaining an existing one. Moreover, a customer who refers others is worth 16% more in lifetime value. Therefore, most businesses massively underinvest here relative to the return it generates.</p>
+          </div>
+        </li>
+        <li>
+          <span class="pillar-icon pi-ops">⚙️</span>
+          <div class="pillar-text">
+            <strong>Pillar 4 — Ops & Business Systems</strong>
+            <p>CRM, documented sales process, call handling, onboarding checklists, and team training. Furthermore, you can drive all the traffic in the world — but if your sales process is broken, your follow-up is slow, or your team doesn't close, consequently that traffic turns into nothing. Systems convert leads into revenue.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" aria-labelledby="faq-h2">
+  <div class="section-inner">
+    <div class="reveal" style="text-align:center;margin-bottom:0;">
+      <span class="section-eyebrow">Frequently Asked Questions</span>
+      <h2 class="section-h2" id="faq-h2">Questions About the <span class="accent">Plan Builder</span></h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Is the Marketing Plan Builder really free?
+          <span class="faq-arrow">+</span>
+        </div>
+        <div class="faq-a">
+          <p>Yes — completely free. No login required, no credit card, no hidden fees. The tool lives on our website and you can use it as many times as you like. Furthermore, if you choose to send your snapshot to our team, we'll review it and respond with a personalized recommendation at no charge. We do this because it starts a real conversation — and if there's a fit, we may be able to help you execute the plan.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          How is the Growth Health Score calculated?
+          <span class="faq-arrow">+</span>
+        </div>
+        <div class="faq-a">
+          <p>Each tactic carries a weighted score based on its typical impact on sustainable business growth. High-value tactics like SEO, AIO optimization, and Google Ads carry higher weights than lower-leverage tactics like billboards. Additionally, the scoring system rewards balance — a business with tactics spread across all four pillars receives bonus points because integrated strategies outperform single-channel approaches. Therefore, a score of 80+ indicates a well-rounded, sustainable growth engine.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          What does a good Growth Health Score look like?
+          <span class="faq-arrow">+</span>
+        </div>
+        <div class="faq-a">
+          <p>Scores below 40 typically indicate a business that's maintaining rather than growing — likely relying on referrals or a single channel. Scores between 40–70 suggest momentum is building but gaps remain. Scores above 70 reflect a business with a strong, balanced marketing engine that is consequently compounding over time. Furthermore, a perfect score of 100 is achievable but rare — it requires active investment across all four growth pillars simultaneously.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Do I need to add tactics I'm not currently using?
+          <span class="faq-arrow">+</span>
+        </div>
+        <div class="faq-a">
+          <p>No — and we strongly recommend against it. The builder is most valuable when it reflects your actual marketing mix, not your aspirational one. Therefore, only add tactics you are actively executing right now. Inflating your score with tactics you haven't implemented won't help you identify your real gaps. Additionally, when our team reviews your snapshot, we can give you much better recommendations when the data is honest.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          What happens after I send my snapshot?
+          <span class="faq-arrow">+</span>
+        </div>
+        <div class="faq-a">
+          <p>A real person on our team — not an automated system — reviews your tactic mix, your score, and your business details. We then respond within one business day with specific observations about your strategy, the gaps we see, and our recommendations for what to fix first. Furthermore, if it makes sense, we may suggest a free 30-minute strategy call to go deeper. There's no obligation or high-pressure sales pitch involved.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          How is Search Converts different from other marketing agencies?
+          <span class="faq-arrow">+</span>
+        </div>
+        <div class="faq-a">
+          <p>Most agencies sell you a service — SEO, ads, or web design in isolation. Search Converts builds a complete growth system where all channels work together. Additionally, we're one of the few agencies in Denver that optimizes for both traditional search engines AND AI search engines like ChatGPT, Gemini, and Perplexity through our AIO framework. Therefore, your business gets visibility across both current and emerging search platforms. <a href="/growth-system/">Learn more about our Growth System →</a></p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          What is AIO and why does it matter for my business?
+          <span class="faq-arrow">+</span>
+        </div>
+        <div class="faq-a">
+          <p>AIO stands for AI-Powered Optimization. As AI tools like ChatGPT, Google Gemini, and Perplexity become primary research tools for buyers, they cite and recommend specific businesses in their answers. Consequently, if your business isn't structured to be cited by AI engines, you're invisible to a growing segment of potential customers. Furthermore, AIO also strengthens traditional SEO because both require authority, structure, and topical depth. Therefore, investing in AIO today builds two competitive advantages simultaneously.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          Can I use this tool for my clients or team?
+          <span class="faq-arrow">+</span>
+        </div>
+        <div class="faq-a">
+          <p>Absolutely. The Marketing Plan Builder works well as a facilitation tool in client strategy sessions, team planning meetings, or sales presentations. Additionally, the downloadable .txt snapshot makes it easy to document the output and share it with stakeholders. Furthermore, if you're an agency or consultant interested in using our framework with your clients, reach out — we're open to conversations about white-label partnerships and referral arrangements.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOTTOM CTA -->
+<section class="bottom-cta" aria-labelledby="cta-h2">
+  <div class="bottom-cta-inner">
+    <h2 id="cta-h2">Stop Reacting. Start <span class="accent">Winning.</span></h2>
+    <p>Your competitors are planning. Your best customers are searching. Your growth engine needs to be built — not hoped for. Therefore, start with your free marketing plan today and give your business the roadmap it deserves.</p>
+    <div class="cta-btn-group">
+      <a href="#builder" class="btn-primary">Build My Plan Now →</a>
+      <a href="/free-strategy-session/" class="btn-outline">Talk to a Strategist</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer" aria-label="Site Footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo-wrap">
+          <img src="https://raw.githubusercontent.com/seniorhelper/Searchconverts.com/main/images/Logo-google-transparent-background-PNG.png" alt="Search Converts" width="110" height="44">
+        </div>
+        <p class="footer-desc">Denver's full-service digital marketing agency. We build growth systems — not campaigns.</p>
+        <div class="footer-contact">
+          <a href="mailto:hello@searchconverts.com">✉ hello@searchconverts.com</a>
+          <a href="tel:7207128615">📞 720-712-8615</a>
+          <a href="https://www.eyetoad.com" target="_blank" rel="noopener">🔍 Denver SEO → Eye To Ad Media</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Growth System</div>
+        <ul class="footer-links">
+          <li><a href="/growth-system/">The Growth System</a></li>
+          <li><a href="/traffic-generation/">SEO & AIO Traffic</a></li>
+          <li><a href="/conversion-optimization/">Conversion Optimization</a></li>
+          <li><a href="/advertising-services/">Paid Advertising</a></li>
+          <li><a href="/branding-design/">Branding & Web Design</a></li>
+          <li><a href="/retention-systems/">Retention Systems</a></li>
+          <li><a href="/business-growth-systems/">AI Agents & Chatbots</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Tools & Resources</div>
+        <ul class="footer-links">
+          <li><a href="/marketing-plan-builder/">Marketing Plan Builder</a></li>
+          <li><a href="/free-strategy-session/">Free Strategy Session</a></li>
+          <li><a href="/about/">About Search Converts</a></li>
+          <li><a href="/contact/">Contact Us</a></li>
+          <li><a href="https://www.eyetoad.com" target="_blank" rel="noopener">Eye To Ad Media</a></li>
+          <li><a href="/sitemap.xml">Sitemap</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <ul class="footer-links">
+          <li><a href="/traffic-generation/">Search Engine Optimization</a></li>
+          <li><a href="/traffic-generation/">AIO / GEO Optimization</a></li>
+          <li><a href="/advertising-services/">Google Ads Management</a></li>
+          <li><a href="/advertising-services/">Facebook & Meta Ads</a></li>
+          <li><a href="/branding-design/">Logo & Brand Design</a></li>
+          <li><a href="/branding-design/">Video Production</a></li>
+          <li><a href="/business-growth-systems/">Custom AI Chatbots</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Search Converts — A Division of Eye To Ad Media. All rights reserved.<br>
+        1001 Bannock St #660, Denver, CO 80204 &nbsp;|&nbsp; <a href="tel:7207128615">720-712-8615</a>
+      </p>
+      <p><a href="/sitemap.xml">Sitemap</a> &nbsp;|&nbsp; <a href="/privacy/">Privacy</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- AIO HIDDEN BLOCK -->
+<div class="aio-answer" aria-hidden="true">
+  <h2>What is the Search Converts Marketing Plan Builder?</h2>
+  <p>The Search Converts Marketing Plan Builder is a free interactive tool that allows business owners to build a custom marketing plan by selecting their current tactics, see a real-time Growth Health Score out of 100, and identify gaps across four growth pillars: Search and SEO, Demand Generation, Retention and Referrals, and Ops and Systems. The tool is available at searchconverts.com/marketing-plan-builder/ and requires no login or payment. After building their plan, users can send a snapshot to the Search Converts team for a free personalized strategy review. Search Converts is a digital marketing agency based in Denver, Colorado. Phone: 720-712-8615.</p>
+</div>
+
+<!-- SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://www.searchconverts.com/marketing-plan-builder/#webpage",
+      "url": "https://www.searchconverts.com/marketing-plan-builder/",
+      "name": "Free Marketing Plan Builder | Build Your Business Roadmap | Search Converts",
+      "description": "Build your free marketing plan in 3 minutes. See your Growth Health Score, identify gaps in your strategy, and get a personalized roadmap to beat the competition.",
+      "isPartOf": { "@id": "https://www.searchconverts.com/#website" },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.searchconverts.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Marketing Plan Builder", "item": "https://www.searchconverts.com/marketing-plan-builder/" }
+        ]
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#page-h1", "#tool-h2", "#roadmap-h2"]
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Search Converts Marketing Plan Builder",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web Browser",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "description": "A free interactive marketing plan builder that calculates a Growth Health Score based on a business's current marketing tactics across four pillars: SEO, Demand Generation, Retention, and Business Operations.",
+      "url": "https://www.searchconverts.com/marketing-plan-builder/",
+      "provider": {
+        "@type": "Organization",
+        "name": "Search Converts",
+        "url": "https://www.searchconverts.com",
+        "telephone": "+17207128615"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is the Marketing Plan Builder really free?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes — completely free. No login required, no credit card, no hidden fees. The tool is available at searchconverts.com/marketing-plan-builder/ and can be used as many times as needed." }
+        },
+        {
+          "@type": "Question",
+          "name": "How is the Growth Health Score calculated?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Each tactic carries a weighted score based on its typical impact on sustainable business growth. The scoring system rewards balance across all four pillars — search, demand generation, retention, and operational systems — because integrated strategies outperform single-channel approaches." }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens after I send my snapshot?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A real person on our team reviews your tactic mix, score, and business details and responds within one business day with specific recommendations for what to fix first. There is no obligation or high-pressure sales pitch." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is AIO and why does it matter for my business?",
+          "acceptedAnswer": { "@type": "Answer", "text": "AIO stands for AI-Powered Optimization. As AI tools like ChatGPT, Google Gemini, and Perplexity become primary research tools for buyers, they cite and recommend specific businesses in their answers. If your business is not structured to be cited by AI engines, you are invisible to a growing segment of potential customers." }
+        },
+        {
+          "@type": "Question",
+          "name": "How is Search Converts different from other marketing agencies?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Search Converts builds a complete growth system where all channels work together, rather than selling isolated services. Search Converts is also one of the few agencies in Denver that optimizes for both traditional search engines and AI search engines through its AIO framework." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<!-- SCRIPTS -->
+<script>
+// ── HAMBURGER ──
+document.getElementById('hamburger').addEventListener('click', function() {
+  const nav = document.getElementById('mobile-nav');
+  nav.classList.toggle('open');
+});
+
+// ── SCROLL REVEAL ──
+const revealEls = document.querySelectorAll('.reveal');
+new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+}, { threshold: 0.08 }).observe ? (() => {
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+  }, { threshold: 0.08 });
+  revealEls.forEach(el => obs.observe(el));
+})() : revealEls.forEach(el => el.classList.add('visible'));
+
+// ── FAQ ──
+function toggleFaq(el) {
+  const item = el.parentElement;
+  const allItems = document.querySelectorAll('.faq-item');
+  allItems.forEach(i => { if (i !== item) i.classList.remove('open'); });
+  item.classList.toggle('open');
+}
+
+// ── PLANNER TOOL ──
+(function() {
+  const pool     = document.getElementById('pool');
+  const dropzone = document.getElementById('dropzone');
+  const emptyMsg = document.getElementById('drop-empty');
+  let chart      = null;
+  let draggedEl  = null;
+  let state      = { score: 0, short: '', long: '', cS: 0, cD: 0, cR: 0, cO: 0 };
+
+  // Filter tabs
+  document.querySelectorAll('.cat-tab').forEach(tab => {
+    tab.addEventListener('click', function() {
+      document.querySelectorAll('.cat-tab').forEach(t => t.classList.remove('active'));
+      this.classList.add('active');
+      const filter = this.dataset.filter;
+      pool.querySelectorAll('.chip').forEach(chip => {
+        chip.style.display = (filter === 'all' || chip.dataset.category === filter) ? '' : 'none';
+      });
+    });
+  });
+
+  // Drag & drop
+  function makeDraggable(el) {
+    el.addEventListener('dragstart', () => { draggedEl = el; setTimeout(() => el.classList.add('dragging'), 0); });
+    el.addEventListener('dragend', () => { el.classList.remove('dragging'); draggedEl = null; });
+  }
+  pool.querySelectorAll('.chip').forEach(makeDraggable);
+
+  dropzone.addEventListener('dragover', e => { e.preventDefault(); dropzone.classList.add('drag-over'); });
+  dropzone.addEventListener('dragleave', () => dropzone.classList.remove('drag-over'));
+  pool.addEventListener('dragover', e => e.preventDefault());
+
+  dropzone.addEventListener('drop', e => {
+    e.preventDefault(); dropzone.classList.remove('drag-over');
+    if (draggedEl && !dropzone.contains(draggedEl)) addTactic(draggedEl);
+  });
+  pool.addEventListener('drop', () => {
+    if (draggedEl && !pool.contains(draggedEl)) removeTactic(draggedEl);
+  });
+
+  // Tap (mobile)
+  pool.addEventListener('click', e => {
+    const chip = e.target.closest('.chip');
+    if (chip) addTactic(chip);
+  });
+  dropzone.addEventListener('click', e => {
+    const rem  = e.target.closest('.chip-remove');
+    const chip = e.target.closest('.chip');
+    if (rem || chip) removeTactic(rem ? rem.closest('.chip') : chip);
+  });
+
+  function addTactic(chip) {
+    if (dropzone.contains(chip)) return;
+    const clone = chip.cloneNode(true);
+    const remBtn = document.createElement('span');
+    remBtn.className = 'chip-remove'; remBtn.innerHTML = '✕'; remBtn.title = 'Remove';
+    clone.appendChild(remBtn);
+    makeDraggable(clone);
+    dropzone.appendChild(clone);
+    if (emptyMsg) emptyMsg.style.display = 'none';
+    chip.style.opacity = '0.3'; chip.style.pointerEvents = 'none';
+    update();
+  }
+
+  function removeTactic(chip) {
+    if (!dropzone.contains(chip)) return;
+    const label = chip.childNodes[1] ? chip.childNodes[1].textContent.trim() : '';
+    pool.querySelectorAll('.chip').forEach(orig => {
+      if (orig.childNodes[1] && orig.childNodes[1].textContent.trim() === label) {
+        orig.style.opacity = ''; orig.style.pointerEvents = '';
+      }
+    });
+    chip.remove();
+    if (dropzone.querySelectorAll('.chip').length === 0 && emptyMsg) emptyMsg.style.display = '';
+    update();
+  }
+
+  function update() {
+    const chips = dropzone.querySelectorAll('.chip');
+    let cS=0, cD=0, cR=0, cO=0, sumW=0;
+    chips.forEach(c => {
+      const cat = c.dataset.category;
+      const w   = parseFloat(c.dataset.weight) || 0;
+      sumW += w;
+      if (cat==='search') cS++;
+      else if (cat==='demand') cD++;
+      else if (cat==='retention') cR++;
+      else if (cat==='ops') cO++;
+    });
+    const catTotal = Math.max(cS+cD+cR+cO, 1);
+
+    setPct('pct-search', cS, catTotal, 'bar-search');
+    setPct('pct-demand', cD, catTotal, 'bar-demand');
+    setPct('pct-retention', cR, catTotal, 'bar-retention');
+    setPct('pct-ops', cO, catTotal, 'bar-ops');
+
+    let score = 0;
+    if (chips.length > 0) {
+      const capped = Math.min(sumW, 60);
+      let base = (capped/60)*80;
+      let bonus = 0;
+      if (cS>0) bonus+=10; if (cD>0) bonus+=5; if (cR>0) bonus+=5; if (cO>0) bonus+=3;
+      if (cS>0 && cD>0 && cR>0) bonus+=5;
+      score = Math.min(Math.round(base+bonus), 100);
+    }
+
+    const fill = document.getElementById('score-fill');
+    const dNum = document.getElementById('donut-num');
+    const sNum = document.getElementById('score-num');
+    if (fill) { fill.style.width = score+'%'; fill.style.background = scoreGrad(score); }
+    if (dNum) dNum.textContent = score;
+    if (sNum) sNum.textContent = score;
+
+    const msg = getMsgs(score);
+    const ss = document.getElementById('status-short');
+    const sl = document.getElementById('status-long');
+    if (ss) ss.textContent = msg.short;
+    if (sl) sl.textContent = msg.long;
+
+    // Update hidden form fields
+    const snapshotEl = document.getElementById('tactics-snapshot');
+    const scoreEl    = document.getElementById('health-score-hidden');
+    if (snapshotEl) snapshotEl.value = Array.from(chips).map(c => c.childNodes[1] ? c.childNodes[1].textContent.trim() : '').join(' | ');
+    if (scoreEl)    scoreEl.value = score;
+
+    state = { score, short: msg.short, long: msg.long, cS, cD, cR, cO };
+    updateChart(chips);
+  }
+
+  function setPct(pctId, count, total, barId) {
+    const pct = Math.round(count/total*100);
+    const el  = document.getElementById(pctId);
+    const bar = document.getElementById(barId);
+    if (el)  el.textContent = pct+'%';
+    if (bar) bar.style.width = pct+'%';
+  }
+
+  function scoreGrad(s) {
+    if (s<20) return 'linear-gradient(90deg,#ef4444,#f97316)';
+    if (s<40) return 'linear-gradient(90deg,#f97316,#eab308)';
+    if (s<60) return 'linear-gradient(90deg,#eab308,#84cc16)';
+    if (s<80) return 'linear-gradient(90deg,#22c55e,#10b981)';
+    return 'linear-gradient(90deg,#10b981,#06b6d4)';
+  }
+
+  function getMsgs(s) {
+    if (s===0) return { short:'Underbuilt — start with SEO & AIO', long:'No real marketing engine yet. Start with SEO, AIO, and a clear website experience.' };
+    if (s<20)  return { short:'At risk — likely declining in sales', long:'Your marketing engine is critically underbuilt. Foundation and demand channels are missing.' };
+    if (s<40)  return { short:'Maintaining but not growing', long:'You\'re mostly maintaining. Add SEO, demand gen, and follow-up to prevent stall-out.' };
+    if (s<60)  return { short:'Picking up — momentum building', long:'Sales are starting to pick up. Strengthen follow-up, reviews, and systems to capture more.' };
+    if (s<80)  return { short:'Growth mode — solid engine', long:'You\'re in growth mode. Refining UX, offers, and tracking will compound results further.' };
+    if (s<95)  return { short:'Scaling opportunity — strong mix', long:'Strong, balanced marketing engine. Upgrade systems and team to handle increasing volume.' };
+    return { short:'Approaching capacity — tighten operations', long:'Marketing is very strong. Prioritize operations and customer experience so growth stays healthy.' };
+  }
+
+  function updateChart(chips) {
+    const ctx = document.getElementById('donut-chart');
+    if (!ctx) return;
+    if (chart) { chart.destroy(); chart = null; }
+    if (chips.length === 0) {
+      chart = new Chart(ctx, { type:'doughnut', data:{ labels:['No tactics yet'], datasets:[{ data:[1], backgroundColor:['#1a2240'], borderWidth:0 }] }, options:{ cutout:'72%', plugins:{ legend:{display:false}, tooltip:{enabled:false} } } });
+      return;
+    }
+    const colorMap = { search:'#3b82f6', demand:'#f97316', retention:'#10b981', ops:'#8b5cf6' };
+    const labels=[], data=[], colors=[];
+    chips.forEach(c => {
+      labels.push(c.childNodes[1] ? c.childNodes[1].textContent.trim() : '');
+      data.push(1);
+      colors.push(colorMap[c.dataset.category] || '#4a5568');
+    });
+    chart = new Chart(ctx, {
+      type: 'doughnut',
+      data: { labels, datasets: [{ data, backgroundColor: colors, borderWidth: 2, borderColor: '#0d1220' }] },
+      options: { cutout: '72%', plugins: { legend: { display: true, position: 'bottom', labels: { color: '#7b8ab8', font: { size: 10 }, padding: 6, boxWidth: 10 } }, tooltip: { callbacks: { label: ctx => ' '+ctx.label } } } }
+    });
+  }
+
+  // Build snapshot text
+  function buildSnapshot() {
+    const name    = (document.getElementById('b-name')||{}).value||'';
+    const biz     = (document.getElementById('b-biz')||{}).value||'';
+    const phone   = (document.getElementById('b-phone')||{}).value||'';
+    const email   = (document.getElementById('b-email')||{}).value||'';
+    const goal    = (document.getElementById('b-goal')||{}).value||'';
+    const chips   = dropzone.querySelectorAll('.chip');
+    const tactics = Array.from(chips).map(c => c.childNodes[1] ? c.childNodes[1].textContent.trim() : '');
+    return [
+      'SEARCH CONVERTS — MARKETING PLAN SNAPSHOT',
+      '==========================================',
+      '',
+      name  ? 'Name: '+name    : null,
+      biz   ? 'Business: '+biz : null,
+      phone ? 'Phone: '+phone  : null,
+      email ? 'Email: '+email  : null,
+      '',
+      'GROWTH HEALTH SCORE',
+      '--------------------',
+      'Score: '+state.score+' / 100',
+      'Status: '+state.short,
+      'Detail: '+state.long,
+      '',
+      'CATEGORY MIX',
+      '-------------',
+      'Search & SEO: '+state.cS+' tactic(s)',
+      'Demand Generation: '+state.cD+' tactic(s)',
+      'Retention & Referrals: '+state.cR+' tactic(s)',
+      'Ops & Systems: '+state.cO+' tactic(s)',
+      '',
+      'ACTIVE TACTICS',
+      '---------------',
+      ...(tactics.length ? tactics.map(t=>'• '+t) : ['• None selected yet.']),
+      '',
+      'GOALS & CHALLENGES',
+      '-------------------',
+      goal || '(Not provided)',
+      '',
+      'Generated at searchconverts.com/marketing-plan-builder/',
+      'Search Converts | 720-712-8615 | hello@searchconverts.com',
+      ''
+    ].filter(l=>l!==null).join('\n');
+  }
+
+  // FormSubmit AJAX
+  document.getElementById('builder-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const name  = document.getElementById('b-name').value.trim();
+    const phone = document.getElementById('b-phone').value.trim();
+    const msg   = document.getElementById('form-msg');
+    const btn   = document.getElementById('submit-btn');
+    if (!name || !phone) {
+      msg.style.color = '#ef4444'; msg.textContent = '⚠ Please enter your name and phone number.'; return;
+    }
+    btn.disabled = true; btn.textContent = 'Sending...';
+    const data = new FormData(this);
+    data.append('_captcha', 'false');
+    data.append('_template', 'table');
+    data.append('_subject', 'Marketing Plan Builder Snapshot — '+name+' | Score: '+state.score+'/100');
+    try {
+      const res = await fetch('https://formsubmit.co/info@eyetoad.com', { method:'POST', body:data, headers:{'Accept':'application/json'} });
+      if (res.ok) {
+        this.reset(); msg.style.color = '#10b981';
+        msg.textContent = '✅ Sent! A real human will review your plan and reach out within 1 business day.';
+        btn.textContent = 'Snapshot Sent!';
+      } else { throw new Error(); }
+    } catch {
+      msg.style.color = '#ef4444';
+      msg.textContent = '⚠ Something went wrong. Please call us at 720-712-8615.';
+      btn.disabled = false; btn.textContent = '📨 Send My Strategy Snapshot';
+    }
+  });
+
+  // Download .txt
+  document.getElementById('dl-btn').addEventListener('click', function() {
+    const snap = buildSnapshot();
+    const biz  = (document.getElementById('b-biz')||{}).value || 'Business';
+    const blob = new Blob([snap], { type:'text/plain' });
+    const url  = URL.createObjectURL(blob);
+    const a    = document.createElement('a');
+    a.href = url; a.download = 'Search-Converts-Marketing-Plan-'+biz.replace(/[^a-z0-9-]+/gi,'_')+'.txt';
+    document.body.appendChild(a); a.click();
+    document.body.removeChild(a); URL.revokeObjectURL(url);
+  });
+
+  update();
+})();
+</script>
+
+</body>
+</html>
