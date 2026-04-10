@@ -191,7 +191,7 @@
       .header-phone { font-size: 16px; }
     }
 
-    /* ══ HERO — dark with neon pops ══ */
+    /* ══ HERO ══ */
     .hero {
       background: var(--navy);
       position: relative;
@@ -207,7 +207,6 @@
       background-size: 56px 56px;
       z-index: 0;
     }
-    /* Neon glow blobs */
     .hero-blob1 {
       position: absolute;
       top: -80px; left: -80px;
@@ -226,7 +225,6 @@
       z-index: 0;
       pointer-events: none;
     }
-
     .hero-inner {
       max-width: 1240px;
       margin: 0 auto;
@@ -239,7 +237,6 @@
       z-index: 2;
     }
     .hero-left { padding-bottom: 80px; }
-
     .hero-eyebrow {
       display: inline-flex;
       align-items: center;
@@ -268,7 +265,6 @@
       0%,100% { opacity: 1; transform: scale(1); }
       50% { opacity: 0.4; transform: scale(0.6); }
     }
-
     .hero-h1 {
       font-family: 'Bebas Neue', sans-serif;
       font-size: clamp(60px, 8vw, 100px);
@@ -278,7 +274,6 @@
       margin-bottom: 28px;
     }
     .hero-h1 .accent { color: var(--orange); display: block; }
-
     .hero-lead {
       font-size: 19px;
       font-weight: 500;
@@ -287,7 +282,6 @@
       max-width: 560px;
       margin-bottom: 36px;
     }
-
     .hero-trust-row {
       display: flex;
       align-items: center;
@@ -410,7 +404,7 @@
       margin-top: 10px;
       line-height: 1.5;
     }
-    #hero-form-msg { font-size: 14px; margin-top: 10px; text-align: center; font-weight: 700; }
+    #hero-form-msg { font-size: 14px; margin-top: 10px; text-align: center; font-weight: 700; min-height: 20px; }
 
     @media (max-width: 900px) {
       .hero-inner { grid-template-columns: 1fr; }
@@ -527,7 +521,7 @@
       margin-bottom: 48px;
     }
 
-    /* ══ GROWTH SYSTEM — white bg with colorful stat cards ══ */
+    /* ══ GROWTH SYSTEM ══ */
     .growth-section { background: #fff; border-top: 1px solid var(--border); }
     .growth-inner {
       display: grid;
@@ -536,7 +530,6 @@
       align-items: center;
     }
     @media (max-width: 900px) { .growth-inner { grid-template-columns: 1fr; gap: 48px; } }
-
     .growth-text .big-statement {
       font-family: 'Bebas Neue', sans-serif;
       font-size: clamp(36px, 4.5vw, 54px);
@@ -552,7 +545,6 @@
       line-height: 1.8;
     }
     .growth-text strong { color: var(--navy); }
-
     .growth-stat-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -590,7 +582,7 @@
       line-height: 1.5;
     }
 
-    /* ══ SERVICES — light gray bg with white cards ══ */
+    /* ══ SERVICES ══ */
     .services-section { background: var(--surface); }
     .services-grid {
       display: grid;
@@ -599,7 +591,6 @@
     }
     @media (max-width: 900px) { .services-grid { grid-template-columns: 1fr 1fr; } }
     @media (max-width: 580px) { .services-grid { grid-template-columns: 1fr; } }
-
     .service-card {
       background: #fff;
       border: 1.5px solid var(--border);
@@ -626,14 +617,12 @@
     .service-card.s4::after { background: var(--neon-pink); }
     .service-card.s5::after { background: var(--electric-blue); }
     .service-card.s6::after { background: var(--yellow); }
-
     .service-card:hover {
       border-color: var(--orange);
       transform: translateY(-5px);
       box-shadow: 0 20px 50px rgba(0,0,0,0.10);
     }
     .service-card:hover::after { transform: scaleX(1); }
-
     .service-icon {
       font-size: 36px;
       margin-bottom: 16px;
@@ -668,12 +657,11 @@
       padding: 3px 8px;
     }
 
-    /* ══ GEO/AIO — dark section with neon accents ══ */
+    /* ══ GEO/AIO ══ */
     .geo-section {
       background: var(--navy);
       color: #fff;
     }
-    /* Full-width stacked layout */
     .geo-image-full {
       width: 100%;
       max-width: 1100px;
@@ -703,14 +691,9 @@
       box-shadow: 0 8px 24px rgba(163,230,53,0.4);
       margin-bottom: 24px;
     }
-    /* Content below image: 2-col points grid */
     .geo-content-below {
       max-width: 1100px;
       margin: 0 auto;
-    }
-    .geo-content-top {
-      text-align: center;
-      margin-bottom: 48px;
     }
     .geo-points-grid {
       display: grid;
@@ -743,14 +726,13 @@
     .geo-point-card strong { color: #fff; display: block; margin-bottom: 6px; font-size: 16px; }
     .geo-point-card p { color: #94a3b8; font-size: 15px; line-height: 1.6; margin: 0; }
 
-    /* ══ PLAN BUILDER TEASER — white/cream ══ */
+    /* ══ PLAN BUILDER TEASER ══ */
     .planner-teaser {
       background: #fff;
       border-top: 1px solid var(--border);
       position: relative;
       overflow: hidden;
     }
-    /* Big diagonal accent strip */
     .planner-teaser::after {
       content: '';
       position: absolute;
@@ -773,7 +755,6 @@
       .planner-teaser-inner { grid-template-columns: 1fr; }
       .planner-teaser::after { display: none; }
     }
-
     .teaser-score-demo {
       background: var(--navy);
       border-radius: 12px;
@@ -798,7 +779,6 @@
       font-family: 'Barlow Condensed', sans-serif;
       font-size: 13px;
       font-weight: 700;
-      color: #64748b;
       text-transform: uppercase;
       letter-spacing: 0.1em;
       text-align: right;
@@ -845,6 +825,7 @@
     }
     .teaser-status strong { color: var(--orange-bright); font-style: normal; }
 
+    /* ══ BUTTONS ══ */
     .sc-btn-primary {
       display: inline-flex;
       align-items: center;
@@ -868,11 +849,6 @@
       transform: translateY(-2px);
       box-shadow: 0 12px 32px rgba(249,115,22,0.35);
     }
-    .sc-btn-primary.dark {
-      background: var(--navy);
-      color: #fff;
-    }
-    .sc-btn-primary.dark:hover { background: #1e2a40; }
     .sc-btn-outline {
       display: inline-flex;
       align-items: center;
@@ -897,7 +873,7 @@
     }
     .sc-btn-outline.white:hover { background: rgba(255,255,255,0.08); }
 
-    /* ══ WHY NOT TYPICAL — light surface ══ */
+    /* ══ WHY NOT TYPICAL ══ */
     .why-section { background: var(--surface2); }
     .why-grid {
       display: grid;
@@ -910,7 +886,6 @@
       box-shadow: 0 8px 32px rgba(0,0,0,0.06);
     }
     @media (max-width: 700px) { .why-grid { grid-template-columns: 1fr; } }
-
     .why-col-header {
       font-family: 'Barlow Condensed', sans-serif;
       font-size: 14px;
@@ -922,7 +897,6 @@
     }
     .why-col-bad { background: #fff0f0; color: var(--red); }
     .why-col-good { background: #fff7ed; color: var(--orange-deep); }
-
     .why-cell {
       padding: 16px 28px;
       border-bottom: 1px solid var(--border);
@@ -939,7 +913,7 @@
     .why-cell-bad { background: #fffafa; }
     .why-cell-good { background: #fffbf5; color: var(--navy); }
 
-    /* ══ AI TOOLS — white with colorful top bars ══ */
+    /* ══ AI TOOLS ══ */
     .ai-section { background: #fff; border-top: 1px solid var(--border); }
     .ai-grid {
       display: grid;
@@ -949,7 +923,6 @@
     }
     @media (max-width: 900px) { .ai-grid { grid-template-columns: 1fr 1fr; } }
     @media (max-width: 520px) { .ai-grid { grid-template-columns: 1fr; } }
-
     .ai-card {
       background: var(--surface);
       border: 1.5px solid var(--border);
@@ -996,7 +969,7 @@
       border-radius: 3px;
     }
 
-    /* ══ BOTTOM FORM — dark/energetic ══ */
+    /* ══ BOTTOM FORM ══ */
     .bottom-form-section {
       background: var(--navy);
       padding: 100px 0;
@@ -1012,7 +985,6 @@
         linear-gradient(90deg, rgba(249,115,22,0.04) 1px, transparent 1px);
       background-size: 56px 56px;
     }
-    /* Neon accent blob */
     .bottom-form-section::after {
       content: '';
       position: absolute;
@@ -1053,7 +1025,6 @@
       line-height: 1.6;
     }
     .bottom-form-body { padding: 40px; background: #fff; }
-
     .bottom-form-body .sc-form-group label { color: #374151; }
     .bottom-form-body .sc-form-group input,
     .bottom-form-body .sc-form-group select,
@@ -1063,14 +1034,12 @@
       color: #0d1220;
     }
     .bottom-form-body .sc-form-group textarea { min-height: 100px; }
-
     @media (max-width: 600px) {
       .bottom-form-header { padding: 28px 24px; }
       .bottom-form-body { padding: 28px 24px; }
       .bottom-form-header h2 { font-size: 34px; }
     }
-
-    #bottom-form-msg { font-size: 15px; margin-top: 12px; text-align: center; font-weight: 700; }
+    #bottom-form-msg { font-size: 15px; margin-top: 12px; text-align: center; font-weight: 700; min-height: 20px; }
 
     /* ══ FOOTER ══ */
     .site-footer {
@@ -1092,7 +1061,6 @@
     }
     @media (max-width: 900px) { .footer-top { grid-template-columns: 1fr 1fr; gap: 36px; } }
     @media (max-width: 560px) { .footer-top { grid-template-columns: 1fr; } }
-
     .footer-brand-logo {
       background: #fff;
       border-radius: 8px;
@@ -1140,7 +1108,6 @@
     .aio-answer { display: none; }
 
     /* ══ SCROLL REVEAL ══ */
-    /* Elements are visible by default — JS adds .will-reveal class first, then .visible */
     .will-reveal {
       opacity: 0;
       transform: translateY(28px);
@@ -1153,7 +1120,7 @@
     .text-center { text-align: center; }
     .btn-row { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; margin-top: 32px; }
 
-    /* ══ NEON HIGHLIGHT BAR — between sections ══ */
+    /* ══ NEON DIVIDER ══ */
     .neon-divider {
       height: 6px;
       background: linear-gradient(90deg, var(--orange), var(--neon-lime), var(--neon-cyan), var(--neon-pink), var(--orange));
@@ -1284,12 +1251,6 @@
   <div class="carousel-label">We Optimize Your Brand Across Every Major Search Platform</div>
   <div class="carousel-track-wrap">
     <div class="carousel-track" id="carousel-track">
-      <!--
-        IMAGE FIX: spaces in filenames encoded as %20 so raw GitHub URLs resolve correctly.
-        Also replaced the Google carousel item (was incorrectly using the SC logo)
-        with a text-only fallback since there's no separate Google logo image in the repo.
-        Upload a file named "google-seo-image.png" to /images/ to restore that item.
-      -->
       <div class="carousel-item">
         <span style="font-size:32px;">🔍</span>
         <span class="carousel-engine-name">Google</span>
@@ -1510,11 +1471,9 @@
 <!-- NEON DIVIDER -->
 <div class="neon-divider"></div>
 
-<!-- GEO / AIO — dark section, full-width image -->
+<!-- GEO / AIO -->
 <section class="section geo-section" aria-labelledby="geo-h2">
   <div class="section-inner">
-
-    <!-- Header centered above image -->
     <div style="text-align:center;margin-bottom:32px;" class="reveal">
       <div class="section-eyebrow" style="justify-content:center;">AIO + GEO Explained</div>
       <h2 class="section-h2 light" id="geo-h2">AI Is Changing How Customers Find You.<br><span style="color:var(--neon-lime);">Are You Showing Up?</span></h2>
@@ -1522,16 +1481,12 @@
         ChatGPT, Gemini, Perplexity, and Claude answer millions of buyer questions every day — and they cite specific businesses. Therefore, the question isn't whether to optimize for AI search. It's whether you want to be the brand they recommend.
       </p>
     </div>
-
-    <!-- Full-width image -->
     <div class="geo-image-full reveal">
       <div class="geo-badge">New in 2025–2026</div>
       <img src="/images/Generative-engine-optimization-experts.png"
            alt="Generative Engine Optimization AIO Infographic - Search Converts Denver"
            loading="lazy">
     </div>
-
-    <!-- 2-col points grid below image -->
     <div class="geo-content-below reveal">
       <div class="geo-points-grid">
         <div class="geo-point-card">
@@ -1568,7 +1523,6 @@
         <a href="/growth-system/" class="sc-btn-outline white">Learn More</a>
       </div>
     </div>
-
   </div>
 </section>
 
@@ -1626,22 +1580,16 @@
     <div class="why-grid reveal">
       <div class="why-col-header why-col-bad">❌ Typical Marketing Agency</div>
       <div class="why-col-header why-col-good">✅ Search Converts Growth System</div>
-
       <div class="why-cell why-cell-bad"><span class="icon">❌</span>Sells you SEO, ads, or web design as isolated services</div>
       <div class="why-cell why-cell-good"><span class="icon">✅</span>Builds a complete marketing ecosystem where every channel reinforces the others</div>
-
       <div class="why-cell why-cell-bad"><span class="icon">❌</span>Reports on rankings and impressions with no connection to revenue</div>
       <div class="why-cell why-cell-good"><span class="icon">✅</span>Tracks leads, calls, and closed sales — therefore you always know your ROI</div>
-
       <div class="why-cell why-cell-bad"><span class="icon">❌</span>Ignores AI search — ChatGPT, Gemini, Perplexity aren't on their radar</div>
       <div class="why-cell why-cell-good"><span class="icon">✅</span>Optimizes for traditional AND AI search simultaneously through our AIO framework</div>
-
       <div class="why-cell why-cell-bad"><span class="icon">❌</span>Locks you into 12-month contracts with unclear deliverables</div>
       <div class="why-cell why-cell-good"><span class="icon">✅</span>Flexible engagements built on transparency, results, and mutual trust</div>
-
       <div class="why-cell why-cell-bad"><span class="icon">❌</span>Sends cookie-cutter content to every client in every industry</div>
       <div class="why-cell why-cell-good"><span class="icon">✅</span>Custom strategy built around your market, your buyers, and your competitive landscape</div>
-
       <div class="why-cell why-cell-bad"><span class="icon">❌</span>No branding, video, or print — you have to go elsewhere for those</div>
       <div class="why-cell why-cell-good"><span class="icon">✅</span>Full creative services in-house — logos, video, copywriting, web design, print, and AI agents</div>
     </div>
@@ -1774,7 +1722,7 @@
                alt="Search Converts" width="120" height="50">
         </div>
         <p class="footer-brand-desc">Denver's full-service digital marketing agency. We build growth systems — not campaigns. SEO, AIO, ads, web design, branding, video, AI agents, and more.</p>
-        <a href="/cdn-cgi/l/email-protection#94fcf1f8f8fbd4e7f1f5e6f7fcf7fbfae2f1e6e0e7baf7fbf9" class="footer-contact-link">✉ <span class="__cf_email__" data-cfemail="e189848d8d8ea1928480938289828e8f9784939592cf828e8c">[email&#160;protected]</span></a>
+        <a href="mailto:hello@searchconverts.com" class="footer-contact-link">✉ hello@searchconverts.com</a>
         <a href="tel:7207128615" class="footer-contact-link">📞 720-712-8615</a>
         <a href="https://www.eyetoad.com" class="footer-contact-link" target="_blank" rel="noopener">🔍 Denver SEO → Eye To Ad Media</a>
       </div>
@@ -1818,7 +1766,7 @@
     </div>
     <div class="footer-bottom">
       <p>© 2026 Search Converts — A Division of Eye To Ad Media. All rights reserved.<br>
-        1001 Bannock St #660, Denver, CO 80204 &nbsp;|&nbsp; <a href="tel:7207128615">720-712-8615</a> &nbsp;|&nbsp; <a href="/cdn-cgi/l/email-protection#e28a878e8e8da291878390818a818d8c9487909691cc818d8f"><span class="__cf_email__" data-cfemail="167e737a7a795665737764757e75797860736462653875797b">[email&#160;protected]</span></a>
+        1001 Bannock St #660, Denver, CO 80204 &nbsp;|&nbsp; <a href="tel:7207128615">720-712-8615</a> &nbsp;|&nbsp; <a href="mailto:hello@searchconverts.com">hello@searchconverts.com</a>
       </p>
       <p><a href="/privacy/">Privacy Policy</a> &nbsp;|&nbsp; <a href="/terms/">Terms of Service</a> &nbsp;|&nbsp; <a href="/sitemap.xml">Sitemap</a></p>
     </div>
@@ -1832,7 +1780,7 @@
 </div>
 
 <!-- SCHEMA -->
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -1905,60 +1853,92 @@
 }
 </script>
 
+<!-- ALL JAVASCRIPT — hamburger, scroll reveal, form submissions -->
 <script>
-// ── HAMBURGER ──
-document.getElementById('hamburger').addEventListener('click', function() {
-  const nav = document.getElementById('mobile-nav');
-  const open = nav.classList.toggle('open');
-  this.setAttribute('aria-expanded', open);
-});
-
-// ── SCROLL REVEAL ──
-// Add will-reveal class via JS so elements are always visible if JS fails
-const revealEls = document.querySelectorAll('.reveal');
-revealEls.forEach(el => el.classList.add('will-reveal'));
-const revealObs = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.classList.add('visible');
-      revealObs.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.05 });
-revealEls.forEach(el => revealObs.observe(el));
-
-// ── FORMSUBMIT AJAX ──
-function submitForm(formId, btnId, msgId) {
-  const form = document.getElementById(formId);
-  const btn  = document.getElementById(btnId);
-  const msg  = document.getElementById(msgId);
-  if (!form) return;
-
-  form.addEventListener('submit', async function(e) {
-    e.preventDefault();
-    const name  = form.querySelector('[name="user_name"]').value.trim();
-    const phone = form.querySelector('[name="user_phone"]').value.trim();
-    if (!name || !phone) {
-      msg.style.color = '#ef4444';
-      msg.textContent = 'Please enter your name and phone number.';
-      return;
-    }
-    btn.disabled = true;
-    btn.textContent = 'Sending...';
-    const data = new FormData(form);
-    data.append('_captcha', 'false');
-    data.append('_template', 'table');
-    data.append('_subject', 'New Lead — Search Converts: ' + name);
-    try {
-      const res = await fetch('https://formsubmit.co/info@eyetoad.com', {
-        method: 'POST',
-        body: data,
-        headers: { 'Accept': 'application/json' }
+  // ── HAMBURGER MENU ──
+  (function() {
+    var btn = document.getElementById('hamburger');
+    var nav = document.getElementById('mobile-nav');
+    if (btn && nav) {
+      btn.addEventListener('click', function() {
+        var isOpen = nav.classList.toggle('open');
+        btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
       });
-      if (res.ok) {
-        form.reset();
-        msg.style.color = '#10b981';
-        msg.textContent = '✅ Got it! We\'ll reach out within 1 business day.';
-        btn.textContent = 'Message Sent!';
-      } else {
-        throw new Error('Serve
+    }
+  })();
+
+  // ── SCROLL REVEAL ──
+  (function() {
+    var els = document.querySelectorAll('.reveal');
+    els.forEach(function(el) { el.classList.add('will-reveal'); });
+    if ('IntersectionObserver' in window) {
+      var obs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            obs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.05 });
+      els.forEach(function(el) { obs.observe(el); });
+    } else {
+      // Fallback for old browsers
+      els.forEach(function(el) { el.classList.add('visible'); });
+    }
+  })();
+
+  // ── FORM SUBMISSION ──
+  function submitForm(formId, btnId, msgId) {
+    var form = document.getElementById(formId);
+    var btn  = document.getElementById(btnId);
+    var msg  = document.getElementById(msgId);
+    if (!form || !btn || !msg) return;
+
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      var name  = form.querySelector('[name="user_name"]').value.trim();
+      var phone = form.querySelector('[name="user_phone"]').value.trim();
+      if (!name || !phone) {
+        msg.style.color = '#ef4444';
+        msg.textContent = 'Please enter your name and phone number.';
+        return;
+      }
+      var originalText = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+      msg.textContent = '';
+
+      var data = new FormData(form);
+      data.append('_captcha', 'false');
+      data.append('_template', 'table');
+      data.append('_subject', 'New Lead — Search Converts: ' + name);
+
+      try {
+        var res = await fetch('https://formsubmit.co/info@eyetoad.com', {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          form.reset();
+          msg.style.color = '#10b981';
+          msg.textContent = '✅ Got it! We\'ll reach out within 1 business day.';
+          btn.textContent = 'Message Sent!';
+        } else {
+          throw new Error('Server error ' + res.status);
+        }
+      } catch(err) {
+        msg.style.color = '#ef4444';
+        msg.textContent = '❌ Something went wrong. Please call us at 720-712-8615.';
+        btn.disabled = false;
+        btn.textContent = originalText;
+      }
+    });
+  }
+
+  submitForm('hero-form',   'hero-submit-btn',   'hero-form-msg');
+  submitForm('bottom-form', 'bottom-submit-btn', 'bottom-form-msg');
+</script>
+
+</body>
+</html>
