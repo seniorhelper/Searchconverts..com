@@ -77,9 +77,9 @@
     }
     .header-inner {
       max-width: 1240px; margin: 0 auto; padding: 0 24px;
-      display: flex; align-items: center; justify-content: space-between; height: 90px;
+      display: flex; align-items: center; justify-content: space-between; height: 110px;
     }
-    .header-logo img { height: 70px; width: auto; display: block; }
+    .header-logo img { height: 200px; width: auto; display: block; }
     .header-nav { display: flex; align-items: center; gap: 28px; list-style: none; }
     .header-nav a {
       font-family: 'Barlow Condensed', sans-serif; font-size: 15px; font-weight: 700;
@@ -109,8 +109,8 @@
       border-bottom: 1px solid var(--border); letter-spacing: 0.05em;
     }
     .mobile-nav a:hover, .mobile-nav a.active { color: var(--orange); }
-    @media (max-width: 960px) { .header-nav { display: none; } .hamburger { display: flex; } .header-logo img { height: 60px; } }
-    @media (max-width: 600px) { .header-logo img { height: 50px; } .header-phone { font-size: 16px; } }
+    @media (max-width: 960px) { .header-nav { display: none; } .hamburger { display: flex; } .header-logo img { height: 80px; } .header-inner { height: 100px; } }
+    @media (max-width: 600px) { .header-logo img { height: 65px; } .header-inner { height: 85px; } .header-phone { font-size: 16px; } }
 
     /* ══ HERO ══ */
     .hero {
@@ -686,30 +686,36 @@
     @media (max-width: 520px) { .cf-row { grid-template-columns: 1fr; } }
 
     /* ══ FOOTER ══ */
-    .site-footer { background: var(--navy); border-top: 4px solid var(--orange); padding: 60px 0 30px; }
+    .site-footer { background: #ffffff; border-top: 4px solid var(--orange); padding: 60px 0 30px; }
     .footer-inner { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
     .footer-top {
       display: grid; grid-template-columns: 280px 1fr 1fr 1fr; gap: 48px;
-      padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding-bottom: 48px; border-bottom: 1px solid var(--border);
     }
     @media (max-width: 900px) { .footer-top { grid-template-columns: 1fr 1fr; gap: 36px; } }
     @media (max-width: 560px) { .footer-top { grid-template-columns: 1fr; } }
-    .footer-brand-logo { background: #fff; border-radius: 8px; padding: 10px 16px; display: inline-block; margin-bottom: 16px; }
-    .footer-brand-logo img { height: 50px; width: auto; display: block; }
-    .footer-brand-desc { font-size: 14px; color: #64748b; line-height: 1.7; margin-bottom: 16px; }
-    .footer-contact-link { display: block; font-size: 14px; color: #94a3b8; text-decoration: none; margin-bottom: 6px; transition: color 0.2s; }
+    .footer-brand-logo { display: inline-block; margin-bottom: 16px; }
+    .footer-brand-logo img { height: 80px; width: auto; display: block; }
+    .footer-brand-desc { font-size: 14px; color: #374151; line-height: 1.7; margin-bottom: 16px; }
+    .footer-contact-link { display: block; font-size: 14px; color: #374151; text-decoration: none; margin-bottom: 6px; transition: color 0.2s; }
     .footer-contact-link:hover { color: var(--orange); }
-    .footer-col-title { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--orange); margin-bottom: 16px; }
+    .footer-col-title { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--orange-deep); margin-bottom: 16px; }
     .footer-links { list-style: none; padding: 0; }
     .footer-links li { margin-bottom: 10px; }
-    .footer-links a { font-size: 14px; color: #94a3b8; text-decoration: none; transition: color 0.2s; }
+    .footer-links a { font-size: 14px; color: #374151; text-decoration: none; transition: color 0.2s; }
     .footer-links a:hover { color: var(--orange); }
-    .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 28px; flex-wrap: wrap; gap: 12px; }
-    .footer-bottom p { font-size: 13px; color: #475569; line-height: 1.5; }
-    .footer-bottom a { color: var(--orange); text-decoration: none; }
+    .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 28px; flex-wrap: wrap; gap: 12px; border-top: 1px solid var(--border); }
+    .footer-bottom p { font-size: 13px; color: #374151; line-height: 1.5; }
+    .footer-bottom a { color: var(--orange-deep); text-decoration: none; }
+    .footer-bottom a:hover { text-decoration: underline; }
 
     /* ══ MISC ══ */
-    .aio-answer { display: none; }
+    .aio-answer {
+      position: absolute;
+      width: 1px; height: 1px;
+      overflow: hidden; clip: rect(0,0,0,0);
+      white-space: nowrap; border: 0;
+    }
     .will-reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.65s ease, transform 0.65s ease; }
     .will-reveal.visible { opacity: 1; transform: translateY(0); }
     .neon-divider {
@@ -1117,7 +1123,7 @@
       <div class="proof-card reveal">
         <div class="proof-stat">242+</div>
         <div class="proof-stat-label">Domains in the Network</div>
-        <p class="proof-card-text">We manage a nationwide portfolio of <strong>242+ conversion-focused websites</strong> across multiple verticals — all running on the Growth System. It's not theory. We eat our own cooking.</p>
+        <p class="proof-card-text">We manage a nationwide portfolio of <strong>242+ conversion-focused websites</strong> across multiple verticals — all running on the Growth System. The SEO and AIO backbone is powered by our <a href="https://www.eyetoad.com" target="_blank" rel="noopener" style="color:var(--orange-bright);font-weight:700;">Denver SEO specialists at Eye To Ad Media</a>.</p>
         <div class="proof-industry">Eye To Ad Media Network</div>
       </div>
       <div class="proof-card reveal">
@@ -1168,25 +1174,26 @@
       <div class="cta-form-body">
         <form id="gs-lead-form" novalidate>
           <input type="hidden" name="source_site" value="searchconverts.com - Growth System Page">
-          <input type="text" name="_honey" style="display:none" tabindex="-1">
+          <input type="hidden" name="_form_loaded" id="gs-form-loaded" value="">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
           <div class="cf-row">
             <div class="cf-group">
               <label for="gs-name">Your Name *</label>
-              <input id="gs-name" name="user_name" type="text" placeholder="Full name" required>
+              <input id="gs-name" name="user_name" type="text" placeholder="Full name" required autocomplete="name">
             </div>
             <div class="cf-group">
               <label for="gs-biz">Business Name</label>
-              <input id="gs-biz" name="business_name" type="text" placeholder="Your company">
+              <input id="gs-biz" name="business_name" type="text" placeholder="Your company" autocomplete="organization">
             </div>
           </div>
           <div class="cf-row">
             <div class="cf-group">
               <label for="gs-phone">Phone *</label>
-              <input id="gs-phone" name="user_phone" type="tel" placeholder="720-000-0000" required>
+              <input id="gs-phone" name="user_phone" type="tel" placeholder="720-000-0000" required autocomplete="tel">
             </div>
             <div class="cf-group">
               <label for="gs-email">Email</label>
-              <input id="gs-email" name="user_email" type="email" placeholder="you@company.com">
+              <input id="gs-email" name="user_email" type="email" placeholder="you@company.com" autocomplete="email">
             </div>
           </div>
           <div class="cf-row">
@@ -1205,7 +1212,7 @@
             </div>
             <div class="cf-group">
               <label for="gs-zip">ZIP Code</label>
-              <input id="gs-zip" name="user_zip" type="text" placeholder="80204">
+              <input id="gs-zip" name="user_zip" type="text" placeholder="80204" autocomplete="postal-code">
             </div>
           </div>
           <div class="cf-group">
@@ -1228,13 +1235,16 @@
   <div class="footer-inner">
     <div class="footer-top">
       <div>
-        <div class="footer-brand-logo">
-          <img src="/images/search-converts-logo-color.avif" alt="Search Converts" width="120" height="50">
-        </div>
+        <a href="/" class="footer-brand-logo" aria-label="Search Converts Home">
+          <img src="/images/search-converts-logo-color.avif" alt="Search Converts - Digital Marketing Agency Denver" width="200" height="200">
+        </a>
         <p class="footer-brand-desc">Denver's full-service digital marketing agency. We build growth systems — not campaigns. SEO, AIO, ads, web design, branding, video, AI agents, and more.</p>
-        <a href="mailto:hello@searchconverts.com" class="footer-contact-link">✉ hello@searchconverts.com</a>
-        <a href="tel:7207128615" class="footer-contact-link">📞 720-712-8615</a>
-        <a href="https://www.eyetoad.com" class="footer-contact-link" target="_blank" rel="noopener">🔍 Denver SEO → Eye To Ad Media</a>
+        <address style="font-style:normal;">
+          <a href="mailto:hello@searchconverts.com" class="footer-contact-link">✉ hello@searchconverts.com</a>
+          <a href="tel:7207128615" class="footer-contact-link">📞 720-712-8615</a>
+          <span class="footer-contact-link">📍 1001 Bannock St #660, Denver, CO 80204</span>
+        </address>
+        <a href="https://www.eyetoad.com" class="footer-contact-link" target="_blank" rel="noopener" style="margin-top:8px;">🔍 Denver SEO → Eye To Ad Media</a>
       </div>
       <div>
         <div class="footer-col-title">Growth System</div>
@@ -1267,10 +1277,10 @@
           <li><a href="https://www.eyetoad.com" target="_blank" rel="noopener">Eye To Ad Media</a></li>
           <li><a href="https://www.actionglobalnews.com" target="_blank" rel="noopener">Action Global News</a></li>
         </ul>
-        <div style="margin-top:20px;padding:16px;background:rgba(249,115,22,0.1);border:1px solid rgba(249,115,22,0.25);border-radius:8px;">
-          <div style="font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--orange);margin-bottom:6px;">Call Direct</div>
-          <a href="tel:7207128615" style="font-family:'Bebas Neue',sans-serif;font-size:22px;color:#fff;text-decoration:none;display:block;letter-spacing:0.04em;">720-712-8615</a>
-          <div style="font-size:12px;color:rgba(255,255,255,0.35);margin-top:4px;">Mon–Fri · 9am–6pm MT</div>
+        <div style="margin-top:20px;padding:16px;background:rgba(249,115,22,0.08);border:1px solid rgba(249,115,22,0.25);border-radius:8px;">
+          <div style="font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--orange-deep);margin-bottom:6px;">Call Direct</div>
+          <a href="tel:7207128615" style="font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--navy);text-decoration:none;display:block;letter-spacing:0.04em;">720-712-8615</a>
+          <div style="font-size:12px;color:#5a6a85;margin-top:4px;">Mon–Fri · 9am–6pm MT</div>
         </div>
       </div>
     </div>
@@ -1295,12 +1305,60 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Organization",
+      "@id": "https://www.searchconverts.com/#organization",
+      "name": "Search Converts",
+      "url": "https://www.searchconverts.com",
+      "logo": "https://searchconverts.com/images/search-converts-logo-color.avif",
+      "telephone": "+17207128615",
+      "email": "hello@searchconverts.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1001 Bannock St #660",
+        "addressLocality": "Denver",
+        "addressRegion": "CO",
+        "postalCode": "80204",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.searchconverts.com/#localbusiness",
+      "name": "Search Converts — Digital Marketing Agency Denver",
+      "url": "https://www.searchconverts.com",
+      "telephone": "+17207128615",
+      "priceRange": "$$",
+      "description": "Denver's full-service digital marketing agency specializing in SEO, AIO, GEO, paid advertising, web design, branding, video, copywriting, AI chatbots, and complete growth systems.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1001 Bannock St #660",
+        "addressLocality": "Denver",
+        "addressRegion": "CO",
+        "postalCode": "80204",
+        "addressCountry": "US"
+      },
+      "geo": {"@type": "GeoCoordinates","latitude": "39.7285","longitude": "-104.9920"},
+      "openingHoursSpecification": [
+        {"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens": "09:00","closes": "18:00"}
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "24",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "areaServed": ["Denver, CO","Colorado","United States","Canada"],
+      "serviceType": ["Digital Marketing","SEO","AIO","Google Ads","Web Design","Branding","Video Production","AI Chatbots"]
+    },
+    {
       "@type": "WebPage",
       "@id": "https://www.searchconverts.com/growth-system/#webpage",
       "url": "https://www.searchconverts.com/growth-system/",
       "name": "The Search Converts Growth System | Denver Digital Marketing",
       "description": "A proprietary marketing methodology connecting SEO, AIO, paid ads, branding, conversion, and retention into one compounding growth engine.",
       "isPartOf": {"@id": "https://www.searchconverts.com/#website"},
+      "speakable": {"@type": "SpeakableSpecification","cssSelector": [".hero-h1",".section-h2"]},
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
@@ -1312,10 +1370,12 @@
     {
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type":"Question","name":"What is the Search Converts Growth System?","acceptedAnswer":{"@type":"Answer","text":"The Search Converts Growth System is a proprietary six-pillar marketing methodology that connects SEO, AIO, paid advertising, branding, conversion optimization, and retention into one coordinated, compounding growth engine. Each pillar feeds the others, creating multiplied results vs. isolated services."}},
+        {"@type":"Question","name":"What is the Search Converts Growth System?","acceptedAnswer":{"@type":"Answer","text":"The Search Converts Growth System is a proprietary six-pillar digital marketing methodology that connects SEO, AIO, paid advertising, branding, conversion optimization, and retention into one coordinated, compounding growth engine. Each pillar feeds the others, creating multiplied results compared to isolated services."}},
         {"@type":"Question","name":"How is the Growth System different from hiring a typical marketing agency?","acceptedAnswer":{"@type":"Answer","text":"A typical agency sells isolated services — SEO, or ads, or a website — with no coordination between them. The Growth System connects every channel so each one amplifies the others. SEO authority lowers ad costs. Ads retarget organic visitors. AI agents convert leads 24/7. Retention keeps customers coming back. The results compound rather than cancel out."}},
         {"@type":"Question","name":"How long does it take to see results from the Growth System?","acceptedAnswer":{"@type":"Answer","text":"Paid advertising generates leads immediately. SEO and content authority typically compound over 3–6 months. Retention and referral systems activate within 30–60 days. By month 6, all six pillars are working in concert and results compound significantly — month 12 typically outperforms month 1 by a factor of 3–9x depending on the market."}},
-        {"@type":"Question","name":"Does Search Converts require long-term contracts for the Growth System?","acceptedAnswer":{"@type":"Answer","text":"No. Search Converts builds flexible, transparent engagements. They earn continued investment by producing measurable results — not by trapping clients in long-term contracts."}}
+        {"@type":"Question","name":"Does Search Converts require long-term contracts for the Growth System?","acceptedAnswer":{"@type":"Answer","text":"No. Search Converts builds flexible, transparent engagements. They earn continued investment by producing measurable results — not by trapping clients in long-term contracts."}},
+        {"@type":"Question","name":"What is AIO and why does it matter for Denver businesses?","acceptedAnswer":{"@type":"Answer","text":"AIO stands for AI-Powered Optimization. It ensures your Denver business is cited and recommended by AI search engines like ChatGPT, Gemini, and Perplexity — which now handle hundreds of millions of buyer queries daily. Search Converts combines AIO with traditional SEO so clients win on every platform simultaneously."}},
+        {"@type":"Question","name":"What does the Search Converts Growth System cost?","acceptedAnswer":{"@type":"Answer","text":"Search Converts offers custom-priced engagements based on business size, competitive landscape, and services required. They start with a free 30-minute strategy session. Call 720-712-8615 or complete the contact form on the website to get started."}}
       ]
     }
   ]
@@ -1351,27 +1411,92 @@
     }
   })();
 
+  // ── TIMESTAMP TRAP (set on page load) ──
+  (function() {
+    var field = document.getElementById('gs-form-loaded');
+    if (field) field.value = Date.now().toString();
+  })();
+
+  // ── RATE LIMITER ──
+  var _submitTimes = [];
+  function _isRateLimited() {
+    var now = Date.now();
+    _submitTimes = _submitTimes.filter(function(t) { return now - t < 60000; });
+    if (_submitTimes.length >= 3) return true;
+    _submitTimes.push(now);
+    return false;
+  }
+
+  // ── SPAM CONTENT FILTER ──
+  function _isSpamContent(text) {
+    if (!text) return false;
+    var patterns = [
+      /https?:\/\//i,
+      /\bviagra\b/i,
+      /\bcasino\b/i,
+      /\bbitcoin\b/i,
+      /\bcrypto\b/i,
+      /\bseo (services|package|cheap)\b/i,
+      /\bguaranteed (rankings|results)\b/i,
+      /(.)\1{6,}/,
+      /[^\x00-\x7F]{8,}/
+    ];
+    return patterns.some(function(p) { return p.test(text); });
+  }
+
   // ── FORM SUBMISSION ──
   (function() {
     var form = document.getElementById('gs-lead-form');
     var btn  = document.getElementById('gs-submit-btn');
     var msg  = document.getElementById('gs-form-msg');
     if (!form || !btn || !msg) return;
+
     form.addEventListener('submit', async function(e) {
       e.preventDefault();
-      var name  = form.querySelector('[name="user_name"]').value.trim();
-      var phone = form.querySelector('[name="user_phone"]').value.trim();
+
+      // Layer 1: Rate limit
+      if (_isRateLimited()) {
+        msg.style.color = '#ef4444';
+        msg.textContent = 'Too many requests. Please wait a moment and try again.';
+        return;
+      }
+
+      // Layer 2: Honeypot
+      var honey = form.querySelector('[name="_honey"]');
+      if (honey && honey.value !== '') return; // silent reject
+
+      // Layer 3: Timestamp (bots submit instantly)
+      var loadedField = document.getElementById('gs-form-loaded');
+      if (loadedField && loadedField.value) {
+        var elapsed = Date.now() - parseInt(loadedField.value, 10);
+        if (elapsed < 2000) return; // silent reject
+      }
+
+      // Layer 4: Content filter
+      var message = (form.querySelector('[name="user_message"]') || {}).value || '';
+      var bizName = (form.querySelector('[name="business_name"]') || {}).value || '';
+      if (_isSpamContent(message) || _isSpamContent(bizName)) {
+        msg.style.color = '#ef4444';
+        msg.textContent = 'Your message was flagged as spam. Please remove any URLs and try again.';
+        return;
+      }
+
+      // Layer 5: Required field validation
+      var name  = (form.querySelector('[name="user_name"]') || {}).value.trim();
+      var phone = (form.querySelector('[name="user_phone"]') || {}).value.trim();
       if (!name || !phone) {
         msg.style.color = '#ef4444';
         msg.textContent = 'Please enter your name and phone number.';
         return;
       }
+
       var orig = btn.textContent;
       btn.disabled = true; btn.textContent = 'Sending...'; msg.textContent = '';
       var data = new FormData(form);
-      data.append('_captcha','false');
-      data.append('_template','table');
-      data.append('_subject','New Growth System Lead — Search Converts: ' + name);
+      data.append('_template', 'table');
+      data.append('_subject', 'New Growth System Lead — Search Converts: ' + name);
+      // Note: _captcha:false removed — FormSubmit protection stays active
+
       try {
         var res = await fetch('https://formsubmit.co/info@eyetoad.com', {
           method: 'POST', body: data, headers: { 'Accept': 'application/json' }
