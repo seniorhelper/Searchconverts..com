@@ -6,7 +6,10 @@
   <title>Conversion Rate Optimization Agency | Search Converts</title>
   <meta name="description" content="Search Converts is a full-service conversion rate optimization agency. We turn existing traffic into revenue with CRO, PPC, programmatic, CTV, video, email and AI marketing. Free 30-minute strategy session.">
   <link rel="canonical" href="https://searchconverts.com/">
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="author" content="Search Converts">
+  <meta name="geo.region" content="US-CO">
+  <meta name="geo.placename" content="Denver">
 
   <meta property="og:title" content="Conversion Rate Optimization Agency | Search Converts">
   <meta property="og:description" content="A full-service conversion rate optimization agency. We fix what your traffic does after it arrives — then scale it with paid media, CTV, video and AI marketing.">
@@ -34,8 +37,8 @@
       font-family: 'Barlow', sans-serif;
       background: #ffffff;
       color: #0d1220;
-      font-size: 17px;
-      line-height: 1.7;
+      font-size: 18px;
+      line-height: 1.72;
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
     }
@@ -331,9 +334,26 @@
       color: #fff; margin-bottom: 26px;
     }
     .hero-h1 .accent { color: var(--orange); display: block; }
+    .hero-h1 .kw {
+      display: flex; width: fit-content; align-items: center; gap: 8px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 15px; font-weight: 800;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--neon-cyan);
+      background: rgba(34,211,238,0.1);
+      border: 1px solid rgba(34,211,238,0.35);
+      border-radius: 3px; padding: 7px 14px;
+      margin-bottom: 26px; line-height: 1.35;
+    }
+    .hero-h1 .kw::before {
+      content: ''; width: 7px; height: 7px; border-radius: 50%;
+      background: var(--neon-cyan); flex-shrink: 0;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @media (max-width: 520px) { .hero-h1 .kw { font-size: 13px; letter-spacing: 0.1em; } }
     .hero-lead {
-      font-size: 19px; font-weight: 500; line-height: 1.7;
-      color: #94a3b8; max-width: 560px; margin-bottom: 26px;
+      font-size: 21px; font-weight: 500; line-height: 1.68;
+      color: #a8b6c8; max-width: 580px; margin-bottom: 26px;
     }
     .hero-lead strong { color: #e2e8f0; font-weight: 700; }
     .hero-trust-row {
@@ -356,7 +376,7 @@
 
     /* ── HERO FORM CARD ── */
     .hero-form-card {
-      background: #fff; border-radius: 12px; padding: 36px 32px;
+      background: #fff; border-radius: 12px; padding: 34px 32px 30px;
       box-shadow: 0 40px 100px rgba(0,0,0,0.5), 0 0 0 1px rgba(249,115,22,0.25);
       position: relative; z-index: 3; margin-bottom: -1px;
     }
@@ -436,8 +456,8 @@
     }
     .section-h2.light { color: #fff; }
     .section-lead {
-      font-size: 18px; color: var(--muted);
-      max-width: 700px; line-height: 1.75; margin-bottom: 48px;
+      font-size: 19px; color: var(--muted);
+      max-width: 720px; line-height: 1.75; margin-bottom: 48px;
     }
     .section-h3 {
       font-family: 'Barlow Condensed', sans-serif;
@@ -725,9 +745,9 @@
       line-height: 1.05; color: var(--navy); margin-bottom: 24px;
     }
     .growth-text .big-statement span { color: var(--orange); }
-    .growth-text p { font-size: 17px; color: var(--muted); margin-bottom: 18px; line-height: 1.8; }
+    .growth-text p { font-size: 18px; color: var(--muted); margin-bottom: 18px; line-height: 1.8; }
     .growth-text strong { color: var(--navy); }
-    .growth-text a { color: var(--orange-deep); font-weight: 700; }
+    .growth-text p a { color: var(--orange-deep); font-weight: 700; }
     .growth-stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
     .stat-card { border-radius: 12px; padding: 28px 22px; position: relative; overflow: hidden; }
     .stat-card.c1 { background: var(--peach); }
@@ -743,7 +763,7 @@
       font-family: 'Barlow Condensed', sans-serif;
       letter-spacing: 0.05em; text-transform: uppercase;
     }
-    .stat-desc { font-size: 14px; color: var(--muted); margin-top: 8px; line-height: 1.5; }
+    .stat-desc { font-size: 15px; color: var(--muted); margin-top: 8px; line-height: 1.5; }
 
     /* ══ SERVICES ══ */
     .services-section { background: #fff; border-top: 1px solid var(--border); }
@@ -777,7 +797,7 @@
       font-size: 22px; font-weight: 800; color: var(--navy);
       letter-spacing: 0.02em; margin-bottom: 10px;
     }
-    .service-card p { font-size: 15px; color: var(--muted); line-height: 1.65; margin-bottom: 16px; }
+    .service-card p { font-size: 16px; color: var(--muted); line-height: 1.65; margin-bottom: 16px; }
     .service-tags { display: flex; flex-wrap: wrap; gap: 6px; }
     .service-tag {
       font-size: 11px; font-weight: 700;
@@ -816,7 +836,7 @@
       display: block; color: var(--navy); font-size: 16px;
       margin-bottom: 4px; font-weight: 700;
     }
-    .anatomy-item p { font-size: 14.5px; color: var(--muted); line-height: 1.6; }
+    .anatomy-item p { font-size: 15.5px; color: var(--muted); line-height: 1.6; }
 
     /* ══ GEO / AIO ══ */
     .geo-section { background: var(--navy); color: #fff; }
@@ -849,7 +869,7 @@
       font-size: 20px; flex-shrink: 0;
     }
     .geo-point-card strong { color: #fff; display: block; margin-bottom: 6px; font-size: 16px; }
-    .geo-point-card p { color: #94a3b8; font-size: 15px; line-height: 1.6; margin: 0; }
+    .geo-point-card p { color: #a3b0c2; font-size: 16px; line-height: 1.6; margin: 0; }
     .geo-point-card a { color: var(--orange-bright); font-weight: 700; }
 
     /* ══ PLANNER TEASER ══ */
@@ -944,7 +964,7 @@
     .why-col-good { background: #fff7ed; color: var(--orange-deep); }
     .why-cell {
       padding: 16px 28px; border-bottom: 1px solid var(--border);
-      font-size: 15px; color: var(--muted);
+      font-size: 16px; color: var(--muted);
       display: flex; align-items: flex-start; gap: 10px;
       line-height: 1.55; background: #fff;
     }
@@ -976,7 +996,7 @@
       font-size: 18px; font-weight: 800; color: var(--navy);
       margin-bottom: 8px; letter-spacing: 0.02em;
     }
-    .ai-desc { font-size: 14px; color: var(--muted); line-height: 1.6; }
+    .ai-desc { font-size: 15px; color: var(--muted); line-height: 1.6; }
     .ai-role {
       display: inline-block; margin-top: 12px; font-size: 11px;
       font-family: 'Barlow Condensed', sans-serif;
@@ -1031,7 +1051,7 @@
       font-size: 18px; font-weight: 800; color: var(--navy);
       display: block; margin-bottom: 5px; letter-spacing: 0.02em;
     }
-    .ind-card p { font-size: 13.5px; color: var(--muted); line-height: 1.5; }
+    .ind-card p { font-size: 14.5px; color: var(--muted); line-height: 1.5; }
 
     /* ══ FAQ ══ */
     .faq-section { background: var(--surface2); }
@@ -1057,7 +1077,7 @@
     .faq-item.open .faq-icon { transform: rotate(45deg); }
     .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.2s; padding: 0 24px; }
     .faq-item.open .faq-answer { max-height: 700px; padding: 0 24px 20px; }
-    .faq-answer p { font-size: 15px; color: var(--muted); line-height: 1.75; }
+    .faq-answer p { font-size: 16px; color: var(--muted); line-height: 1.75; }
     .faq-answer a { color: var(--orange-deep); text-decoration: none; font-weight: 700; }
     .faq-answer a:hover { text-decoration: underline; }
 
@@ -1108,9 +1128,9 @@
     @media (max-width: 560px) { .footer-top { grid-template-columns: 1fr; } }
     .footer-brand-logo { display: inline-block; margin-bottom: 16px; }
     .footer-brand-logo img { height: 80px; width: auto; display: block; }
-    .footer-brand-desc { font-size: 14px; color: #374151; line-height: 1.7; margin-bottom: 16px; }
+    .footer-brand-desc { font-size: 15px; color: #374151; line-height: 1.7; margin-bottom: 16px; }
     .footer-contact-link {
-      display: block; font-size: 14px; color: #374151;
+      display: block; font-size: 15px; color: #374151;
       text-decoration: none; margin-bottom: 6px; transition: color 0.2s;
     }
     .footer-contact-link:hover { color: var(--orange); }
@@ -1121,7 +1141,7 @@
     }
     .footer-links { list-style: none; padding: 0; }
     .footer-links li { margin-bottom: 9px; }
-    .footer-links a { font-size: 14px; color: #374151; text-decoration: none; transition: color 0.2s; }
+    .footer-links a { font-size: 15px; color: #374151; text-decoration: none; transition: color 0.2s; }
     .footer-links a:hover { color: var(--orange); }
     .footer-bottom {
       display: flex; justify-content: space-between; align-items: center;
@@ -1320,8 +1340,8 @@
   <div class="hero-blob2"></div>
   <div class="hero-inner">
     <div class="hero-left">
-      <div class="hero-eyebrow">Full-Service Conversion Rate Optimization Agency</div>
       <h1 class="hero-h1">
+        <span class="kw">Full-Service Conversion Rate Optimization Agency</span>
         You Already Have
         <span class="accent">The Traffic.</span>
         Now Convert It.
@@ -1334,46 +1354,31 @@
         <div class="trust-pill"><span class="check">&#10003;</span>Revenue, not impressions</div>
         <div class="trust-pill"><span class="check">&#10003;</span>Every channel under one roof</div>
       </div>
-      <p style="color:#64748b;font-size:15px;line-height:1.7;max-width:540px;">
+      <p style="color:#7d8ea3;font-size:17px;line-height:1.65;max-width:560px;">
         Doubling your conversion rate has the same effect on revenue as doubling your ad budget &mdash; except it costs you nothing every month after you fix it.
       </p>
     </div>
     <div class="hero-form-card">
       <div class="form-card-label">Free 30-minute strategy session</div>
-      <h2 class="form-card-h2">Find out what your current traffic should be earning</h2>
+      <h3 class="form-card-h2">Find out what your current traffic should be earning</h3>
+      <p style="font-size:15px;color:#6b7280;margin:-10px 0 18px;line-height:1.55;">Three fields. We ask the rest on the call, because every field we add here costs us leads &mdash; which is rather the point.</p>
       <form id="hero-form" novalidate>
         <input type="hidden" name="source_site" value="searchconverts.com - Hero Form">
         <input type="hidden" name="_form_loaded" id="h-form-loaded" value="">
         <div style="display:none;" aria-hidden="true">
           <input type="text" name="_honey" tabindex="-1" autocomplete="off">
         </div>
-        <div class="sc-form-row">
-          <div class="sc-form-group">
-            <label for="h-name">Your name *</label>
-            <input id="h-name" name="user_name" type="text" placeholder="Full name" required autocomplete="name">
-          </div>
-          <div class="sc-form-group">
-            <label for="h-biz">Business name</label>
-            <input id="h-biz" name="business_name" type="text" placeholder="Company" autocomplete="organization">
-          </div>
-        </div>
-        <div class="sc-form-row">
-          <div class="sc-form-group">
-            <label for="h-phone">Phone *</label>
-            <input id="h-phone" name="user_phone" type="tel" placeholder="720-000-0000" required autocomplete="tel">
-          </div>
-          <div class="sc-form-group">
-            <label for="h-zip">ZIP code</label>
-            <input id="h-zip" name="user_zip" type="text" placeholder="80204" autocomplete="postal-code">
-          </div>
+        <div class="sc-form-group">
+          <label for="h-name">Your name *</label>
+          <input id="h-name" name="user_name" type="text" placeholder="Full name" required autocomplete="name">
         </div>
         <div class="sc-form-group">
-          <label for="h-email">Email address</label>
+          <label for="h-phone">Phone *</label>
+          <input id="h-phone" name="user_phone" type="tel" placeholder="720-000-0000" required autocomplete="tel">
+        </div>
+        <div class="sc-form-group">
+          <label for="h-email">Email</label>
           <input id="h-email" name="user_email" type="email" placeholder="you@company.com" autocomplete="email">
-        </div>
-        <div class="sc-form-group">
-          <label for="h-goal">Biggest marketing challenge</label>
-          <input id="h-goal" name="user_message" type="text" placeholder="Traffic but no leads, low close rate, rising ad costs...">
         </div>
         <button type="submit" class="sc-submit-btn" id="hero-submit-btn">Get my conversion plan</button>
         <div id="hero-form-msg" role="status" aria-live="polite"></div>
@@ -1591,7 +1596,7 @@
           That is the difference between a vendor and a growth partner. When the same team owns the ad, the landing page, the form, the follow-up sequence and the sales conversation, nobody gets to blame the other guy for the drop-off. <strong>The whole chain is measured, and the whole chain is ours.</strong>
         </p>
         <p>
-          Search Converts operates as a performance marketing agency across the United States and Canada. Our sister company <a href="https://eyetoad.com" rel="noopener">Eye To Ad Media</a> handles search engine and AI-search optimization, and <a href="https://denver-webdesign.com" rel="noopener">Denver Web Design</a> handles regional website builds. Three specialist teams, one system.
+          Search Converts operates as a performance marketing agency and growth marketing agency across the United States and Canada. Our sister company <a href="https://eyetoad.com" rel="noopener">Eye To Ad Media</a> handles search engine and AI-search optimization, and <a href="https://denver-webdesign.com" rel="noopener">Denver Web Design</a> handles regional website builds. Three specialist teams, one system.
         </p>
         <div class="btn-row">
           <a href="/growth-system/" class="sc-btn-primary">See the full growth system</a>
@@ -1632,7 +1637,7 @@
       <div class="section-eyebrow" style="justify-content:center;">The total marketing solution</div>
       <h2 class="section-h2" id="services-h2">Every channel that reaches a buyer.<br><span class="text-orange">One team that owns the result.</span></h2>
       <p class="section-lead" style="margin:0 auto 48px;">
-        Digital and traditional media under one roof is rare. It is also why we can tell you honestly which channel deserves your next dollar &mdash; we make money either way.
+        Digital and traditional media under one roof is rare for a performance marketing agency. It is also why we can tell you honestly which channel deserves your next dollar &mdash; we make money either way.
       </p>
     </div>
     <div class="services-grid">
@@ -1915,7 +1920,7 @@
       <div class="section-eyebrow" style="justify-content:center;">The difference in practice</div>
       <h2 class="section-h2" id="why-h2">Why we are not your<br><span class="text-orange">typical marketing agency</span></h2>
       <p class="section-lead" style="margin:0 auto;">
-        Plenty of agencies will sell you traffic. Very few will tell you your website cannot handle the traffic you already have. Here is what working with a conversion-first team actually changes.
+        Plenty of agencies will sell you traffic. Very few will tell you your website cannot handle the traffic you already have. That is the difference between a growth marketing agency that simply adds budget and one that fixes what the budget is being poured into. Here is what working with a conversion-first team actually changes.
       </p>
     </div>
     <div class="why-grid reveal">
@@ -2015,7 +2020,7 @@
 
       <h3 class="whatis-sub">CRO, SEO and paid media are not competitors</h3>
       <p>
-        Search optimization and advertising decide how many people arrive. Conversion optimization decides what share of them become customers. Improving the conversion rate raises the return on every other channel simultaneously, which is why we start there and why it makes the paid media that follows cheaper per acquisition. <a href="/conversion-optimization/" style="color:var(--orange-bright);font-weight:700;text-decoration:none;">Read the full guide to conversion optimization &rarr;</a>
+        Search optimization and advertising decide how many people arrive. Conversion optimization decides what share of them become customers. Improving the conversion rate raises the return on every other channel simultaneously, which is why we start there and why it makes the paid media that follows cheaper per acquisition. It is also why performance marketing agencies that ignore the landing page tend to plateau: at some point you cannot buy your way past a page that does not convert. <a href="/conversion-optimization/" style="color:var(--orange-bright);font-weight:700;text-decoration:none;">Read the full guide to conversion optimization &rarr;</a>
       </p>
     </div>
   </div>
@@ -2320,6 +2325,13 @@
         <li><a href="https://mysaleshelp.com" rel="noopener">My Sales Help &mdash; free sales tools</a></li>
         <li><a href="https://actionglobalnews.com" rel="noopener">Action Global News</a></li>
       </ul>
+      <div class="footer-col-title" style="margin-top:26px;">Sites We Built &amp; Operate</div>
+      <p style="font-size:14.5px;color:#64748b;line-height:1.6;margin-bottom:10px;max-width:760px;">We do not just build these for clients. We run them ourselves, on our own money, which is where most of what we know about conversion actually came from.</p>
+      <ul class="footer-links" style="display:flex;flex-wrap:wrap;gap:8px 32px;">
+        <li><a href="https://agingsafelybaths.com" rel="noopener">Aging Safely Baths</a></li>
+        <li><a href="https://showers4less.com" rel="noopener">Showers4Less</a></li>
+        <li><a href="https://mysaleshelp.com" rel="noopener">My Sales Help</a></li>
+      </ul>
     </div>
 
     <div class="footer-bottom">
@@ -2364,6 +2376,31 @@
         "postalCode": "80204",
         "addressCountry": "US"
       },
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+17207128615",
+        "contactType": "sales",
+        "areaServed": ["US","CA"],
+        "availableLanguage": ["English"]
+      }],
+      "knowsAbout": [
+        "Conversion rate optimization",
+        "A/B testing",
+        "Landing page optimization",
+        "Pay-per-click advertising",
+        "Google Ads management",
+        "Programmatic advertising",
+        "Connected TV advertising",
+        "Retargeting",
+        "Social media marketing",
+        "Video production",
+        "Email marketing",
+        "Marketing automation",
+        "Direct mail marketing",
+        "Radio and television advertising",
+        "AI marketing",
+        "Web application development"
+      ],
       "sameAs": [
         "https://eyetoad.com/",
         "https://denver-webdesign.com/",
@@ -2446,11 +2483,34 @@
       "description": "Search Converts is a full-service conversion rate optimization agency. We turn existing traffic into revenue with CRO, PPC, programmatic, CTV, video, email and AI marketing.",
       "isPartOf": { "@id": "https://searchconverts.com/#website" },
       "about": { "@id": "https://searchconverts.com/#organization" },
+      "hasPart": { "@id": "https://searchconverts.com/#faq" },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://searchconverts.com/images/Generative-engine-optimization-experts.png"
+      },
       "inLanguage": "en-US",
       "speakable": {
         "@type": "SpeakableSpecification",
         "cssSelector": [".hero-h1", ".whatis-def", ".section-h2"]
-      }
+      },
+      "mentions": [{
+        "@type": "DefinedTerm",
+        "name": "Conversion rate optimization",
+        "alternateName": ["CRO", "Conversion optimization"],
+        "description": "The practice of increasing the percentage of website visitors who complete a desired action, such as submitting a form, calling, booking or purchasing, by improving the page, offer and user experience rather than by increasing traffic.",
+        "sameAs": "https://en.wikipedia.org/wiki/Conversion_rate_optimization"
+      }],
+      "significantLink": [
+        "https://searchconverts.com/conversion-optimization/",
+        "https://searchconverts.com/ppc-management/",
+        "https://searchconverts.com/marketing-plan-builder/",
+        "https://searchconverts.com/contact/"
+      ],
+      "potentialAction": [{
+        "@type": "CommunicateAction",
+        "name": "Book a free 30-minute strategy session",
+        "target": "https://searchconverts.com/contact/"
+      }]
     },
     {
       "@type": "BreadcrumbList",
