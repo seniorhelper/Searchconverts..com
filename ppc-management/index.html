@@ -74,6 +74,7 @@
 
     /* ══ ANNOUNCEMENT BAR ══ */
     .ann-bar {
+      position: relative; z-index: 1;
       background: linear-gradient(90deg, var(--orange-deep), var(--orange), #fb923c);
       color: #fff;
       text-align: center;
@@ -106,7 +107,11 @@
       height: 110px;
       flex-wrap: nowrap;
     }
-    .header-logo img { height: 200px; width: auto; max-width: 250px; object-fit: contain; display: block; }
+        .header-logo { position: relative; z-index: 30; display: block; line-height: 0; }
+    .header-logo img {
+      height: 200px; width: auto; max-width: 250px; object-fit: contain; display: block;
+      filter: drop-shadow(0 5px 10px rgba(0,0,0,0.30)) drop-shadow(0 1px 2px rgba(0,0,0,0.18));
+    }
     .header-nav {
       display: flex;
       align-items: center;
@@ -220,11 +225,20 @@
     .wa-link svg { width: 23px; height: 23px; display: block; }
     @media (max-width: 1340px) { .header-phone { font-size: 28px; } .wa-link { width: 36px; height: 36px; } .wa-link svg { width: 21px; height: 21px; } }
     @media (max-width: 600px) {
-      .header-phone { font-size: 25px; }
-      .wa-link { width: 33px; height: 33px; } .wa-link svg { width: 19px; height: 19px; }
-      .header-call { gap: 7px; }
+      .header-phone { font-size: 22px; }
+      .wa-link { width: 32px; height: 32px; } .wa-link svg { width: 18px; height: 18px; }
+      .header-call { gap: 6px; }
     }
-    @media (max-width: 380px) { .header-phone { font-size: 21px; } }
+    @media (max-width: 430px) {
+      .header-logo img { height: 104px; max-width: 164px; }
+      .header-inner { height: 86px; }
+      .header-phone { font-size: 19px; }
+      .wa-link { width: 29px; height: 29px; } .wa-link svg { width: 17px; height: 17px; }
+    }
+    @media (max-width: 360px) {
+      .header-logo img { height: 88px; max-width: 138px; }
+      .header-phone { font-size: 17px; }
+    }
 
     .hamburger {
       display: none;
@@ -286,12 +300,12 @@
     @media (max-width: 1360px) {
       .header-nav { display: none; }
       .hamburger { display: flex; }
-      .header-logo img { height: 80px; }
-      .header-inner { height: 100px; }
+      .header-logo img { height: 150px; }
+      .header-inner { height: 112px; }
     }
     @media (max-width: 600px) {
-      .header-logo img { height: 62px; }
-      .header-inner { height: 84px; }
+      .header-logo img { height: 124px; max-width: 196px; }
+      .header-inner { height: 96px; padding: 0 14px; }
       .header-phone { font-size: 16px; }
       .ann-bar { font-size: 13px; }
     }
@@ -1456,6 +1470,76 @@
     .ppc-cta p { color: rgba(255,255,255,.94); font-size: 17.5px; margin-bottom: 24px; }
     .ppc-cta .sc-btn-primary { background: #0d1220; color: #fff; }
     .ppc-cta .sc-btn-primary:hover { background: #fff; color: var(--orange-deep); }
+
+    /* ══════ MOBILE FIXES — PPC PAGE ══════ */
+    @media (max-width: 760px) {
+      .ppc-sec { padding: 56px 0; }
+      .auction { padding: 18px 16px; margin: 28px 0; }
+      .pcalc { padding: 20px 16px; }
+      .ppc-cta { padding: 32px 22px; }
+      .ppc-cta h3 { font-size: 31px; }
+      .ppc-hero { padding: 44px 0 52px; }
+      .ppc-lede { font-size: 18px; }
+      .ppc-stats { gap: 20px; }
+      .ppc-sec p, .guide-ol li { font-size: 17px; }
+      .definition { padding: 20px 18px; }
+      .definition p { font-size: 17.5px; }
+    }
+
+    /* auction board: keep all five columns, shrink to fit */
+    @media (max-width: 640px) {
+      .auc-hd, .auc-rw {
+        grid-template-columns: 26px minmax(0,1fr) 54px 38px 68px;
+        gap: 6px;
+      }
+      .auc-hd { font-size: 9.5px; letter-spacing: 0.05em; }
+      .auc-rw { font-size: 13px; padding: 11px 0; }
+      .auc-rw .rank { font-size: 19px; padding-left: 0; }
+      .auc-rw .nm { font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+      .auc-rw .cpc { font-size: 14px; }
+      .auc-verdict { padding: 16px 16px; font-size: 15px; }
+      .auc-you { padding: 14px 14px 2px; }
+    }
+
+    /* ledger tables restack as rows instead of scrolling off screen */
+    @media (max-width: 720px) {
+      .led, .led tbody, .led tr, .led td { display: block; width: 100%; }
+      .led thead { display: none; }
+      .led tr {
+        padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,0.09);
+      }
+      .ppc-sec.light .led tr { border-bottom-color: var(--border); }
+      .led td { border: none; padding: 0 0 7px; width: auto !important; }
+      .led td:first-child {
+        font-family: 'Barlow Condensed', sans-serif; font-size: 20px;
+        font-weight: 900; letter-spacing: 0.02em; margin-bottom: 3px;
+      }
+      .led td:last-child {
+        text-align: left; padding-bottom: 0; font-size: 13px;
+        letter-spacing: 0.09em; text-transform: uppercase;
+      }
+      .led td:empty { display: none; }
+    }
+
+    /* channel rows + profit calc */
+    @media (max-width: 560px) {
+      .chan-row { grid-template-columns: 40px minmax(0,1fr); gap: 14px; padding: 18px 0; }
+      .chan-ico { width: 40px; height: 40px; }
+      .chan-t { font-size: 20px; }
+      .chan-d { font-size: 15px; }
+      .chan-cpc { grid-column: 2; text-align: left; margin-top: 6px; }
+      .pcalc-out { grid-template-columns: 1fr 1fr; }
+      .pcalc-cell { padding: 16px 10px; }
+      .pcalc-cell strong { font-size: 27px; }
+      .pcalc-verdict { padding: 18px 16px; font-size: 15.5px; }
+      .serp-body { padding: 12px 12px 14px; }
+      .serp-title { font-size: 14.5px; }
+      .serp-pos { font-size: 10px; }
+    }
+
+    /* nothing may exceed the viewport */
+    .ppc-sec table, .ppc-sec svg, .ppc-sec img { max-width: 100%; }
+    .auction, .pcalc, .serp { max-width: 100%; overflow-x: hidden; }
   </style>
 </head>
 
