@@ -99,30 +99,34 @@
       box-shadow: 0 2px 24px rgba(0,0,0,0.10);
     }
     .header-inner {
-      max-width: 1240px;
+      max-width: 1460px;
       margin: 0 auto;
-      padding: 0 24px;
+      padding: 0 22px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 18px;
       height: 110px;
+      flex-wrap: nowrap;
     }
-    .header-logo img { height: 200px; width: auto; display: block; }
+    .header-logo img { height: 200px; width: auto; max-width: 250px; object-fit: contain; display: block; }
     .header-nav {
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: 15px;
       list-style: none;
+      flex-wrap: nowrap;
     }
     .header-nav > li { position: relative; }
     .header-nav a, .nav-toggle {
       font-family: 'Barlow Condensed', sans-serif;
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 700;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
       color: #0d1220;
       text-decoration: none;
+      white-space: nowrap;
       transition: color 0.2s;
       background: none;
       border: none;
@@ -144,7 +148,8 @@
     .header-nav .nav-cta {
       background: var(--orange);
       color: #fff !important;
-      padding: 9px 18px;
+      padding: 10px 15px;
+      white-space: nowrap;
       border-radius: 4px;
       transition: background 0.2s, transform 0.2s !important;
     }
@@ -201,7 +206,7 @@
     }
     .header-phone {
       font-family: 'Barlow Condensed', sans-serif;
-      font-size: 36px; font-weight: 900;
+      font-size: 31px; font-weight: 900;
       color: var(--orange); text-decoration: none;
       letter-spacing: 0.01em; white-space: nowrap;
       line-height: 1; transition: color 0.2s, transform 0.2s;
@@ -216,7 +221,7 @@
     }
     .wa-link:hover { transform: translateY(-2px) scale(1.05); box-shadow: 0 8px 22px rgba(37,211,102,0.5); }
     .wa-link svg { width: 23px; height: 23px; display: block; }
-    @media (max-width: 1240px) { .header-phone { font-size: 30px; } .wa-link { width: 36px; height: 36px; } .wa-link svg { width: 21px; height: 21px; } }
+    @media (max-width: 1340px) { .header-phone { font-size: 28px; } .wa-link { width: 36px; height: 36px; } .wa-link svg { width: 21px; height: 21px; } }
     @media (max-width: 600px) {
       .header-phone { font-size: 25px; }
       .wa-link { width: 33px; height: 33px; } .wa-link svg { width: 19px; height: 19px; }
@@ -281,7 +286,7 @@
       padding: 6px 0;
     }
 
-    @media (max-width: 1280px) {
+    @media (max-width: 1360px) {
       .header-nav { display: none; }
       .hamburger { display: flex; }
       .header-logo img { height: 80px; }
@@ -1217,7 +1222,60 @@
       background: radial-gradient(circle, rgba(34,211,238,0.10) 0%, transparent 70%);
       pointer-events: none;
     }
-    .page-hero-inner { max-width: 900px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2; }
+    .page-hero-inner {
+      max-width: 1240px; margin: 0 auto; padding: 0 24px;
+      position: relative; z-index: 2;
+      display: grid; grid-template-columns: 1fr 420px; gap: 56px; align-items: center;
+    }
+    @media (max-width: 980px) { .page-hero-inner { grid-template-columns: 1fr; gap: 38px; } }
+
+    /* hero tools panel */
+    .tools-panel {
+      background: rgba(255,255,255,0.035);
+      border: 1px solid rgba(255,255,255,0.11);
+      border-radius: 14px; padding: 8px;
+      backdrop-filter: blur(4px);
+    }
+    .tools-panel-head {
+      padding: 16px 18px 14px;
+      border-bottom: 1px solid rgba(255,255,255,0.09);
+      display: flex; align-items: center; gap: 10px;
+    }
+    .tools-panel-head .tp-dot {
+      width: 9px; height: 9px; border-radius: 50%;
+      background: var(--neon-lime); flex-shrink: 0;
+      box-shadow: 0 0 0 4px rgba(163,230,53,0.16);
+      animation: pulse 2.4s ease-in-out infinite;
+    }
+    .tools-panel-head span {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px; font-weight: 800; letter-spacing: 0.14em;
+      text-transform: uppercase; color: #a3e635;
+    }
+    .tool-link {
+      display: flex; align-items: center; gap: 14px;
+      padding: 15px 18px; text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      transition: background 0.2s, padding-left 0.2s;
+    }
+    .tool-link:last-of-type { border-bottom: none; }
+    .tool-link:hover { background: rgba(249,115,22,0.1); padding-left: 24px; }
+    .tool-ico {
+      width: 38px; height: 38px; border-radius: 9px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(249,115,22,0.14); border: 1px solid rgba(249,115,22,0.32);
+    }
+    .tool-ico svg { width: 19px; height: 19px; stroke: #fdba74; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .tool-txt strong {
+      display: block; color: #fff; font-size: 16px;
+      font-weight: 700; line-height: 1.25; margin-bottom: 2px;
+    }
+    .tool-txt em { font-style: normal; color: #7d8ea3; font-size: 13.5px; line-height: 1.4; }
+    .tools-panel-foot {
+      padding: 14px 18px; text-align: center;
+      font-size: 13px; color: #64748b;
+      border-top: 1px solid rgba(255,255,255,0.09);
+    }
     .crumb {
       font-family: 'Barlow Condensed', sans-serif;
       font-size: 13px; font-weight: 700; letter-spacing: 0.09em;
@@ -1366,19 +1424,55 @@
     .mini-out .verdict { color: #94a3b8; font-size: 16px; line-height: 1.6; max-width: 420px; }
     .mini-out .verdict strong { color: #fff; }
 
-    .killer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 26px; }
-    @media (max-width: 640px) { .killer-grid { grid-template-columns: 1fr; } }
-    .killer {
-      background: #fff; border: 1.5px solid var(--border);
-      border-radius: 10px; padding: 22px 22px 20px;
-      border-left: 5px solid var(--red);
+    /* audit checklist */
+    .audit { border-top: 3px solid var(--navy); margin: 8px 0 24px; }
+    .audit-row {
+      display: grid; grid-template-columns: 44px 1fr auto;
+      gap: 16px; align-items: start;
+      padding: 18px 4px 18px 0;
+      border-bottom: 1px solid var(--border);
+      cursor: pointer; transition: background 0.18s;
     }
-    .killer strong {
+    .audit-row:hover { background: #fffaf5; }
+    .audit-box {
+      width: 26px; height: 26px; margin-top: 2px;
+      border: 2.5px solid var(--border2); border-radius: 5px;
+      display: flex; align-items: center; justify-content: center;
+      transition: all 0.2s; flex-shrink: 0;
+    }
+    .audit-box svg { width: 15px; height: 15px; stroke: #fff; fill: none; stroke-width: 3.4; stroke-linecap: round; stroke-linejoin: round; opacity: 0; transition: opacity 0.15s; }
+    .audit-row.checked .audit-box { background: var(--red); border-color: var(--red); }
+    .audit-row.checked .audit-box svg { opacity: 1; }
+    .audit-row.checked .audit-title { color: var(--red); }
+    .audit-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 21px; font-weight: 900; color: var(--navy);
+      letter-spacing: 0.02em; line-height: 1.2; margin-bottom: 5px;
+      transition: color 0.2s;
+    }
+    .audit-desc { font-size: 16px; color: var(--muted); line-height: 1.6; margin: 0; }
+    .audit-meta { text-align: right; padding-top: 3px; min-width: 92px; }
+    .audit-meta span {
       display: block; font-family: 'Barlow Condensed', sans-serif;
-      font-size: 19px; font-weight: 900; color: var(--navy);
-      margin-bottom: 7px; letter-spacing: 0.02em;
+      font-size: 11px; font-weight: 800; letter-spacing: 0.11em;
+      text-transform: uppercase; line-height: 1.7;
     }
-    .killer p { font-size: 16px; margin: 0; line-height: 1.65; }
+    .audit-meta .sev-high { color: var(--red); }
+    .audit-meta .sev-med { color: #d97706; }
+    .audit-meta .eff { color: var(--muted2); }
+    .audit-score {
+      background: var(--navy); border-radius: 12px;
+      padding: 26px 30px; margin-bottom: 30px;
+      display: flex; align-items: center; gap: 26px; flex-wrap: wrap;
+    }
+    .audit-score .as-num {
+      font-family: 'Bebas Neue', sans-serif; font-size: 66px;
+      line-height: 1; color: var(--neon-lime); min-width: 90px;
+    }
+    .audit-score .as-num.warn { color: var(--yellow); }
+    .audit-score .as-num.bad { color: #f87171; }
+    .audit-score .as-txt { color: #94a3b8; font-size: 16.5px; line-height: 1.6; flex: 1; min-width: 240px; }
+    .audit-score .as-txt strong { color: #fff; display: block; font-size: 19px; margin-bottom: 5px; font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.02em; }
 
     .inline-cta {
       background: linear-gradient(135deg, var(--orange-deep), var(--orange));
@@ -1636,7 +1730,7 @@
 
 <!-- ANNOUNCEMENT BAR -->
 <div class="ann-bar">
-  Free 30-minute strategy session &mdash; no obligation &nbsp;|&nbsp; Call <a href="tel:7207128615">720-712-8615</a>
+  Free 30-minute strategy session &mdash; no obligation &nbsp;|&nbsp; Call <a href="tel:+17207128615">+1 720-712-8615</a>
 </div>
 
 <!-- HEADER -->
@@ -1791,6 +1885,7 @@
     <nav class="crumb" aria-label="Breadcrumb">
       <a href="/">Home</a> &nbsp;/&nbsp; <a href="/services/">Services</a> &nbsp;/&nbsp; <span>Conversion Optimization</span>
     </nav>
+    <div>
     <h1 class="page-h1">
       <span class="kw">The Complete Guide</span>
       What Is Conversion
@@ -1799,6 +1894,27 @@
     <p class="lede">
       A plain-English explanation of what conversion optimization is, how the process actually works, what a good conversion rate looks like, and how to tell whether it is worth doing before you spend a dollar on it.
     </p>
+    </div>
+    <aside class="tools-panel" aria-label="Free tools on this page">
+      <div class="tools-panel-head"><i class="tp-dot"></i><span>Four free tools on this page</span></div>
+      <a href="#calculator" class="tool-link">
+        <span class="tool-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="12" x2="10" y2="12"/><line x1="14" y1="12" x2="16" y2="12"/><line x1="8" y1="17" x2="10" y2="17"/><line x1="14" y1="17" x2="16" y2="17"/></svg></span>
+        <span class="tool-txt"><strong>Conversion rate calculator</strong><em>See your rate against 1,000 visitors</em></span>
+      </a>
+      <a href="#significance" class="tool-link">
+        <span class="tool-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-6 3 4 4-7"/></svg></span>
+        <span class="tool-txt"><strong>A/B test significance checker</strong><em>Is your winning test actually real?</em></span>
+      </a>
+      <a href="#friction" class="tool-link">
+        <span class="tool-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><circle cx="9" cy="7" r="2.4"/><line x1="4" y1="14" x2="20" y2="14"/><circle cx="15" cy="14" r="2.4"/><line x1="4" y1="21" x2="20" y2="21"/><circle cx="11" cy="21" r="2.4"/></svg></span>
+        <span class="tool-txt"><strong>Form friction simulator</strong><em>Watch every extra field compound</em></span>
+      </a>
+      <a href="#quiz" class="tool-link">
+        <span class="tool-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9.2"/><path d="M9.2 9.2a2.9 2.9 0 015.6 1c0 1.9-2.8 2.4-2.8 2.4"/><line x1="12" y1="17" x2="12" y2="17.01"/></svg></span>
+        <span class="tool-txt"><strong>Spot the conversion killer</strong><em>Five real audit scenarios</em></span>
+      </a>
+      <div class="tools-panel-foot">No signup. Nothing leaves your browser.</div>
+    </aside>
   </div>
 </section>
 
@@ -1823,6 +1939,7 @@
         <li><a href="#friction">See form friction compound</a></li>
         <li><a href="#quiz">Test yourself: spot the conversion killer</a></li>
         <li><a href="#vs">Conversion optimization vs SEO vs paid advertising</a></li>
+        <li><a href="#ai-traffic">Why AI search traffic converts better</a></li>
         <li><a href="#specialist">What a conversion rate optimization specialist does</a></li>
         <li><a href="#diy">When to do it yourself and when to hire</a></li>
         <li><a href="#faq">Frequently asked questions</a></li>
@@ -2032,23 +2149,40 @@
       After what is conversion rate optimization, this is the most frequently asked question in the discipline and the one with the least useful answer. Published benchmarks average wildly different traffic sources, offers, industries and definitions of a conversion, which makes them close to meaningless as a target.
     </p>
     <p>
-      That said, the general ranges below reflect what is commonly observed and are useful for one purpose only: telling you whether you are roughly in the expected neighborhood or dramatically outside it.
+      The most widely cited figure comes from Contentsquare's Digital Experience Benchmark, which analyses tens of billions of sessions and puts the <strong>global average at roughly 2.35%</strong>. The more revealing number in the same data is the spread: top-decile sites convert at close to 11%, which is somewhere near five times the median. That gap is not explained by traffic quality alone.
+    </p>
+    <p>
+      Ranges by segment, drawn from 2026 industry reporting, are more useful than any single average:
     </p>
     <div class="gtable-wrap">
       <table class="gtable">
-        <caption>Commonly observed conversion rate ranges by site type</caption>
+        <caption>Reported conversion rate ranges by segment, 2026</caption>
         <thead>
-          <tr><th>Site type</th><th>Typical range</th><th>What counts as a conversion</th></tr>
+          <tr><th>Segment</th><th>Reported range</th><th>Worth knowing</th></tr>
         </thead>
         <tbody>
-          <tr><td>Lead generation site</td><td>1% &ndash; 3%</td><td>Form submission or phone call</td></tr>
-          <tr><td>Paid landing page</td><td>3% &ndash; 10%+</td><td>Form submission</td></tr>
-          <tr><td>Ecommerce</td><td>1% &ndash; 3%</td><td>Completed purchase</td></tr>
-          <tr><td>SaaS free trial</td><td>2% &ndash; 5%</td><td>Trial signup</td></tr>
-          <tr><td>Local service business</td><td>2% &ndash; 6%</td><td>Call, booking or quote request</td></tr>
+          <tr><td>All sites, global median</td><td>~2.35%</td><td>Top decile reaches roughly 11%</td></tr>
+          <tr><td>Lead generation</td><td>3% &ndash; 5%</td><td>Lower friction than a purchase</td></tr>
+          <tr><td>Paid landing pages</td><td>5% &ndash; 15%</td><td>Benchmark these separately from your site</td></tr>
+          <tr><td>Ecommerce, all industries</td><td>2.5% &ndash; 3%</td><td>Food and drink runs far higher than luxury</td></tr>
+          <tr><td>SaaS free trial</td><td>3% &ndash; 7%</td><td>Pricing pages should beat this substantially</td></tr>
+          <tr><td>Desktop vs mobile</td><td>~3.1% vs ~1.8%</td><td>Mobile is most traffic and the worst rate</td></tr>
+          <tr><td>Email traffic</td><td>4% &ndash; 5%</td><td>Highest-converting channel in most reporting</td></tr>
+          <tr><td>Paid social</td><td>0.7% &ndash; 1.2%</td><td>Lowest intent of any major source</td></tr>
         </tbody>
       </table>
     </div>
+    <p style="font-size:15px;color:var(--muted2);margin-top:-8px;">
+      Ranges compiled from 2026 reporting including Contentsquare's Digital Experience Benchmark, IRP Commerce and Unbounce landing page data. Methodologies differ, so treat these as neighborhoods rather than targets.
+    </p>
+
+    <h3>The two splits that matter more than your industry</h3>
+    <p>
+      <strong>Device.</strong> Mobile carries roughly two thirds of all web traffic and converts at about 1.8%, against roughly 3.1% on desktop. More striking is that the gap has been widening &mdash; from around 38% to 42% over the last two years &mdash; despite a decade of mobile-first design. Current reporting attributes that to checkout friction, form complexity and payment integration rather than layout, which matches what we find in audits. Another round of visual redesign is rarely the fix.
+    </p>
+    <p>
+      <strong>Traffic source.</strong> Email consistently converts several times better than paid social. If you are comparing your blended sitewide rate against a benchmark, you are mostly comparing traffic mixes, not site quality. A site that shifts spend from email to paid social will watch its conversion rate fall while nothing about the site has changed.
+    </p>
     <div class="keytake">
       <div class="kt-label">The only benchmark that matters</div>
       <p>Your site against your own baseline, over time. A 4% conversion rate on customers who never pay is worse than 1.5% on customers who do. Before chasing a benchmark, make sure the thing you are counting as a conversion is actually correlated with revenue &mdash; a great many sites optimize themselves into more leads and less money.</p>
@@ -2087,38 +2221,74 @@
     <p>
       These come up in audit after audit. None of them are exotic, and most are fixable in days rather than months, which is why a competent audit usually finds something worth acting on immediately.
     </p>
-    <div class="killer-grid">
-      <div class="killer">
-        <strong>Slow loading</strong>
-        <p>Load time is the first thing every visitor experiences. People leave before a single word is read, and it never shows up in your content analysis because they were never counted as engaged.</p>
+    <div class="audit-score" id="audit-score">
+      <div class="as-num" id="as-num">0</div>
+      <div class="as-txt"><strong id="as-head">Tick anything you recognise</strong><span id="as-body">Eight problems that turn up in audit after audit. None are exotic and most are fixable in days. Check the ones that sound like your site.</span></div>
+    </div>
+    <div class="audit" id="audit-list">
+      <div class="audit-row" role="button" tabindex="0" aria-pressed="false">
+        <div class="audit-box"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg></div>
+        <div>
+          <div class="audit-title">Slow loading</div>
+          <p class="audit-desc">Load time is the first thing every visitor experiences. People leave before a word is read, and it never shows up in your content analysis because they were never counted as engaged.</p>
+        </div>
+        <div class="audit-meta"><span class="sev-high">High cost</span><span class="eff">Fast fix</span></div>
       </div>
-      <div class="killer">
-        <strong>Too many form fields</strong>
-        <p>Every additional field costs completions. Most forms ask for information the business does not need until much later in the process, or ever.</p>
+      <div class="audit-row" role="button" tabindex="0" aria-pressed="false">
+        <div class="audit-box"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg></div>
+        <div>
+          <div class="audit-title">Too many form fields</div>
+          <p class="audit-desc">Every extra field costs completions. Most forms ask for information the business does not need until much later in the process, or ever.</p>
+        </div>
+        <div class="audit-meta"><span class="sev-high">High cost</span><span class="eff">Fast fix</span></div>
       </div>
-      <div class="killer">
-        <strong>Message mismatch</strong>
-        <p>The ad promises one thing and the landing page talks about something else. The visitor does not investigate the discrepancy. They leave.</p>
+      <div class="audit-row" role="button" tabindex="0" aria-pressed="false">
+        <div class="audit-box"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg></div>
+        <div>
+          <div class="audit-title">Message mismatch</div>
+          <p class="audit-desc">The ad promises one thing and the landing page talks about something else. The visitor does not investigate the discrepancy. They leave.</p>
+        </div>
+        <div class="audit-meta"><span class="sev-high">High cost</span><span class="eff">Fast fix</span></div>
       </div>
-      <div class="killer">
-        <strong>No obvious next step</strong>
-        <p>Three buttons of equal weight is a decision, and decisions are friction. One dominant action outperforms a menu almost every time.</p>
+      <div class="audit-row" role="button" tabindex="0" aria-pressed="false">
+        <div class="audit-box"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg></div>
+        <div>
+          <div class="audit-title">No obvious next step</div>
+          <p class="audit-desc">Three buttons of equal weight is a decision, and decisions are friction. One dominant action outperforms a menu almost every time.</p>
+        </div>
+        <div class="audit-meta"><span class="sev-med">Medium cost</span><span class="eff">Fast fix</span></div>
       </div>
-      <div class="killer">
-        <strong>Missing trust signals</strong>
-        <p>Reviews, credentials, guarantees and real names answer the objection before it forms. Their absence is felt even when it is not consciously noticed.</p>
+      <div class="audit-row" role="button" tabindex="0" aria-pressed="false">
+        <div class="audit-box"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg></div>
+        <div>
+          <div class="audit-title">Missing trust signals</div>
+          <p class="audit-desc">Reviews, credentials, guarantees and real names answer the objection before it forms. Their absence is felt even when it is not consciously noticed.</p>
+        </div>
+        <div class="audit-meta"><span class="sev-med">Medium cost</span><span class="eff">Medium</span></div>
       </div>
-      <div class="killer">
-        <strong>Broken on mobile</strong>
-        <p>Not merely ugly &mdash; genuinely broken. Untappable buttons, zoom-on-focus inputs and fixed elements covering the form. Most teams never test on a real phone.</p>
+      <div class="audit-row" role="button" tabindex="0" aria-pressed="false">
+        <div class="audit-box"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg></div>
+        <div>
+          <div class="audit-title">Broken on mobile</div>
+          <p class="audit-desc">Not merely ugly, genuinely broken. Untappable buttons, zoom-on-focus inputs, fixed elements covering the form. Most teams never test on a real phone.</p>
+        </div>
+        <div class="audit-meta"><span class="sev-high">High cost</span><span class="eff">Medium</span></div>
       </div>
-      <div class="killer">
-        <strong>Hidden or surprise costs</strong>
-        <p>Shipping, fees or a price revealed only at the final step. This is the single most cited reason for cart abandonment and it is entirely self-inflicted.</p>
+      <div class="audit-row" role="button" tabindex="0" aria-pressed="false">
+        <div class="audit-box"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg></div>
+        <div>
+          <div class="audit-title">Hidden or surprise costs</div>
+          <p class="audit-desc">Shipping, fees or a price revealed only at the final step. The most cited reason for cart abandonment, and entirely self-inflicted.</p>
+        </div>
+        <div class="audit-meta"><span class="sev-high">High cost</span><span class="eff">Fast fix</span></div>
       </div>
-      <div class="killer">
-        <strong>Slow human follow-up</strong>
-        <p>The form worked perfectly and nobody called for two days. The best-optimized funnel in the world cannot survive the sales process behind it.</p>
+      <div class="audit-row" role="button" tabindex="0" aria-pressed="false">
+        <div class="audit-box"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="4,13 9,18 20,6"/></svg></div>
+        <div>
+          <div class="audit-title">Slow human follow-up</div>
+          <p class="audit-desc">The form worked perfectly and nobody called for two days. The best-optimized funnel cannot survive the sales process behind it.</p>
+        </div>
+        <div class="audit-meta"><span class="sev-high">High cost</span><span class="eff">Process</span></div>
       </div>
     </div>
 
@@ -2399,6 +2569,46 @@
       There is also a direct relationship between conversion and search performance. Search engines increasingly weigh how people behave after they click, so many of the same fixes &mdash; faster pages, clearer answers, better mobile experience &mdash; improve rankings as a side effect. Our sister company <a href="https://eyetoad.com" rel="noopener">Eye To Ad Media</a> handles the search and AI-search side, which is why the two disciplines are coordinated here rather than working against each other.
     </p>
 
+    <h2 id="ai-traffic">AI search traffic converts better than organic search</h2>
+    <p>
+      This is the most useful new finding in conversion data, and almost nobody has adjusted for it yet. Traffic arriving from AI assistants &mdash; ChatGPT, Perplexity and similar &mdash; is reported to convert at around <strong>3.49%</strong>, against roughly <strong>2.86%</strong> from traditional organic search. That is a premium of about 22% on the same kind of visitor.
+    </p>
+    <figure class="figure reveal">
+      <svg viewBox="0 0 860 240" role="img" aria-labelledby="fig4-t" class="fig-draw">
+        <title id="fig4-t">Bar comparison showing AI search referral traffic converting at 3.49 percent versus 2.86 percent for traditional organic search</title>
+        <g class="fig-pop">
+          <rect x="90" y="80" width="150" height="103" rx="8" fill="#e2e8f0"/>
+          <text x="165" y="130" text-anchor="middle" font-family="Bebas Neue, sans-serif" font-size="42" fill="#475569">2.86%</text>
+          <text x="165" y="205" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="16" font-weight="800" letter-spacing="1.2" fill="#64748b">TRADITIONAL ORGANIC</text>
+        </g>
+        <g class="fig-pop d1">
+          <rect x="290" y="58" width="150" height="125" rx="8" fill="#f97316"/>
+          <text x="365" y="120" text-anchor="middle" font-family="Bebas Neue, sans-serif" font-size="46" fill="#ffffff">3.49%</text>
+          <text x="365" y="205" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="16" font-weight="800" letter-spacing="1.2" fill="#ea580c">AI SEARCH REFERRAL</text>
+        </g>
+        <g stroke="#a3e635" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="fig-draw">
+          <path d="M470 105 H520"/><polyline points="513,99 523,105 513,111"/>
+        </g>
+        <g class="fig-pop d2">
+          <rect x="536" y="62" width="240" height="88" rx="10" fill="#0d1220"/>
+          <text x="656" y="98" text-anchor="middle" font-family="Bebas Neue, sans-serif" font-size="38" fill="#a3e635">+22%</text>
+          <text x="656" y="126" text-anchor="middle" font-family="Barlow, sans-serif" font-size="14.5" fill="#94a3b8">higher conversion, same effort</text>
+        </g>
+        <text x="430" y="34" text-anchor="middle" font-family="Barlow, sans-serif" font-size="14" font-style="italic" fill="#64748b">Reported 2026 conversion rates by referral source</text>
+      </svg>
+      <figcaption>Figures reported in 2026 conversion benchmark analyses. The likely explanation is qualification: an assistant has already answered the general question and filtered the options, so the person who clicks through has fewer doubts left to resolve.</figcaption>
+    </figure>
+    <p>
+      The explanation is straightforward once you think about the behaviour. Someone who arrives from a list of ten blue links is still comparing. Someone who arrives because an assistant recommended you specifically has already had the category explained, the options narrowed, and a degree of trust transferred. They land further down the funnel than an organic visitor, so they convert at a higher rate.
+    </p>
+    <div class="keytake">
+      <div class="kt-label">What this changes</div>
+      <p>If you measure AI referral traffic against your blended sitewide conversion rate, it will look like a small, unimportant channel because the volume is low. Measured on conversion rate and value per visitor, it is currently the best-qualified traffic most sites receive. Segment it before you decide what it is worth &mdash; and make sure your analytics is separating it at all, because many setups still bucket it as direct or generic referral.</p>
+    </div>
+    <p>
+      This is also where conversion work and AI-search visibility stop being separate projects. The same things that get you cited by an assistant &mdash; clear direct answers, structured content, fast pages, honest specifics rather than marketing adjectives &mdash; are the things that convert a human once they arrive. Our sister company <a href="https://eyetoad.com" rel="noopener">Eye To Ad Media</a> handles the visibility half; this page is the other half.
+    </p>
+
     <h2 id="specialist">What a conversion rate optimization specialist does</h2>
     <p>
       A conversion rate optimization specialist is part analyst, part researcher and part builder. The role is less about design taste than most people assume and much more about being comfortable with evidence that contradicts your own opinion.
@@ -2488,7 +2698,7 @@
 
       <div class="faq-item reveal">
         <button class="faq-question" aria-expanded="false">How much does conversion optimization cost?<span class="faq-icon" aria-hidden="true">+</span></button>
-        <div class="faq-answer" hidden><p>It varies with the scope and the size of the site. A focused audit of a single funnel is a very different engagement from an ongoing testing program across a large ecommerce catalogue. Search Converts prices every engagement to the work rather than publishing package tiers, and gives you a real number on the first call instead of three rounds of discovery. The more useful question is what the improvement is worth: if you know your traffic, your current rate and your average customer value, you can calculate the return before you spend anything. Call <a href="tel:7207128615">720-712-8615</a> and we will run it with you.</p></div>
+        <div class="faq-answer" hidden><p>It varies with the scope and the size of the site. A focused audit of a single funnel is a very different engagement from an ongoing testing program across a large ecommerce catalogue. Search Converts prices every engagement to the work rather than publishing package tiers, and gives you a real number on the first call instead of three rounds of discovery. The more useful question is what the improvement is worth: if you know your traffic, your current rate and your average customer value, you can calculate the return before you spend anything. Call <a href="tel:+17207128615">+1 720-712-8615</a> and we will run it with you.</p></div>
       </div>
 
     </div>
@@ -2825,7 +3035,7 @@
         if (!e.isIntersecting) return;
         e.target.classList.add('visible');
         e.target.querySelectorAll('.countup').forEach(countUp);
-        e.target.querySelectorAll('.draw-arrow').forEach(function (a) { a.classList.add('drawn'); });
+        e.target.querySelectorAll('.draw-arrow, .fig-draw').forEach(function (a) { a.classList.add('drawn'); });
         obs.unobserve(e.target);
       });
     }, { threshold: 0.08 });
@@ -2841,9 +3051,14 @@
   } else {
     els.forEach(function (el) { el.classList.add('visible'); });
     document.querySelectorAll('.countup').forEach(countUp);
-    document.querySelectorAll('.draw-arrow').forEach(function (a) { a.classList.add('drawn'); });
+    document.querySelectorAll('.draw-arrow, .fig-draw').forEach(function (a) { a.classList.add('drawn'); });
     var f2 = document.getElementById('teaser-fill'); if (f2) f2.style.width = '35%';
   }
+
+  /* ── SAFETY NET: never leave a figure permanently invisible ── */
+  window.setTimeout(function () {
+    document.querySelectorAll('.draw-arrow, .fig-draw').forEach(function (a) { a.classList.add('drawn'); });
+  }, 2600);
 
   /* ── A/B DEMO ── */
   var abDone = false;
@@ -3272,6 +3487,52 @@
     frF.addEventListener('input', runFric);
     frD.addEventListener('input', runFric);
     runFric();
+  }
+
+  /* ── SAFETY NET: never leave a figure permanently invisible ── */
+  window.setTimeout(function () {
+    document.querySelectorAll('.draw-arrow, .fig-draw').forEach(function (a) { a.classList.add('drawn'); });
+  }, 2600);
+
+  /* ── AUDIT CHECKLIST ── */
+  var auditRows = document.querySelectorAll('.audit-row');
+  if (auditRows.length) {
+    var asNum = document.getElementById('as-num');
+    var asHead = document.getElementById('as-head');
+    var asBody = document.getElementById('as-body');
+    function tally() {
+      var n = document.querySelectorAll('.audit-row.checked').length;
+      asNum.textContent = n;
+      asNum.className = 'as-num' + (n >= 5 ? ' bad' : n >= 2 ? ' warn' : '');
+      if (n === 0) {
+        asHead.textContent = 'Tick anything you recognise';
+        asBody.textContent = 'Eight problems that turn up in audit after audit. None are exotic and most are fixable in days. Check the ones that sound like your site.';
+      } else if (n === 1) {
+        asHead.textContent = 'One found';
+        asBody.textContent = 'Worth fixing on its own. Single issues like this are usually a week of work and the result shows up in the numbers quickly.';
+      } else if (n < 4) {
+        asHead.textContent = n + ' found';
+        asBody.textContent = 'These compound rather than add. Fix them in order of the cost column on the right, not in the order you noticed them.';
+      } else if (n < 7) {
+        asHead.textContent = n + ' found';
+        asBody.textContent = 'At this count the issue is not any single problem, it is that nobody currently owns the path from click to customer. That is worth a conversation before you spend another dollar on traffic.';
+      } else {
+        asHead.textContent = n + ' found';
+        asBody.textContent = 'Almost everything on the list. The good news is that sites in this position usually see the largest and fastest gains, because nothing has been optimized yet.';
+      }
+    }
+    auditRows.forEach(function (row) {
+      function toggle() {
+        var on = row.classList.toggle('checked');
+        row.setAttribute('aria-pressed', on ? 'true' : 'false');
+        tally();
+      }
+      row.addEventListener('click', toggle);
+      row.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+      });
+    });
+    tally();
   }
 
   /* ── QUIZ ── */
