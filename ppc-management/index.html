@@ -1,0 +1,2758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PPC Agency &amp; PPC Management | Search Converts</title>
+  <meta name="description" content="A PPC agency that manages pay-per-click advertising across Google Ads, Meta, programmatic and CTV. Live ad auction simulator, break-even cost-per-click calculator, and a free PPC account audit.">
+  <link rel="canonical" href="https://searchconverts.com/ppc-management/">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="author" content="Search Converts">
+  <meta property="og:title" content="PPC Agency &amp; PPC Management | Search Converts">
+  <meta property="og:description" content="The highest bid does not win. A PPC agency built around relevance, not just bidding. Free account audit.">
+  <meta property="og:url" content="https://searchconverts.com/ppc-management/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Search Converts">
+  <meta property="og:image" content="https://searchconverts.com/images/Generative-engine-optimization-experts.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PPC Agency &amp; PPC Management | Search Converts">
+  <meta name="twitter:description" content="The highest bid does not win. Live auction simulator and break-even CPC calculator.">
+  <link rel="icon" type="image/png" href="/images/search-converts-favicon.png">
+  <link rel="apple-touch-icon" href="/images/search-converts-favicon.png">
+  <link rel="shortcut icon" type="image/png" href="/images/search-converts-favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&family=Barlow+Condensed:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    /* ══ RESET & BASE ══ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Barlow', sans-serif;
+      background: #ffffff;
+      color: #0d1220;
+      font-size: 18px;
+      line-height: 1.72;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; }
+    a:focus-visible, button:focus-visible, input:focus-visible,
+    select:focus-visible, textarea:focus-visible {
+      outline: 3px solid #22d3ee;
+      outline-offset: 2px;
+    }
+
+    :root {
+      --orange: #f97316;
+      --orange-bright: #fb923c;
+      --orange-deep: #ea580c;
+      --neon-lime: #a3e635;
+      --neon-cyan: #22d3ee;
+      --neon-pink: #f472b6;
+      --electric-blue: #3b82f6;
+      --mint: #d1fae5;
+      --lavender: #ede9fe;
+      --peach: #fed7aa;
+      --sky: #e0f2fe;
+      --black: #060910;
+      --navy: #0d1220;
+      --charcoal: #1e2a40;
+      --surface: #f8fafc;
+      --surface2: #f1f5f9;
+      --border: #e2e8f0;
+      --border2: #cbd5e1;
+      --text: #0d1220;
+      --muted: #475569;
+      --muted2: #64748b;
+      --white: #ffffff;
+      --green: #10b981;
+      --red: #ef4444;
+      --yellow: #fbbf24;
+    }
+
+    /* ══ ANNOUNCEMENT BAR ══ */
+    .ann-bar {
+      background: linear-gradient(90deg, var(--orange-deep), var(--orange), #fb923c);
+      color: #fff;
+      text-align: center;
+      padding: 10px 20px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .ann-bar a { color: #fff; text-decoration: underline; }
+
+    /* ══ HEADER ══ */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #ffffff;
+      border-bottom: 3px solid var(--orange);
+      box-shadow: 0 2px 24px rgba(0,0,0,0.10);
+    }
+    .header-inner {
+      max-width: 1460px;
+      margin: 0 auto;
+      padding: 0 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      height: 110px;
+      flex-wrap: nowrap;
+    }
+    .header-logo img { height: 200px; width: auto; max-width: 250px; object-fit: contain; display: block; }
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      list-style: none;
+      flex-wrap: nowrap;
+    }
+    .header-nav > li { position: relative; }
+    .header-nav a, .nav-toggle {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #0d1220;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: color 0.2s;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: 'Barlow Condensed', sans-serif;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .header-nav a:hover, .nav-toggle:hover { color: var(--orange); }
+    .nav-toggle .caret {
+      width: 0; height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 5px solid currentColor;
+      transition: transform 0.25s;
+    }
+    .header-nav li.open .nav-toggle .caret { transform: rotate(180deg); }
+    .header-nav .nav-cta {
+      background: var(--orange);
+      color: #fff !important;
+      padding: 10px 15px;
+      white-space: nowrap;
+      border-radius: 4px;
+      transition: background 0.2s, transform 0.2s !important;
+    }
+    .header-nav .nav-cta:hover { background: var(--orange-deep); transform: translateY(-1px); }
+
+    /* ── MEGA DROPDOWN ── */
+    .nav-drop {
+      position: absolute;
+      top: calc(100% + 14px);
+      left: 50%;
+      transform: translateX(-50%) translateY(-8px);
+      background: #fff;
+      border: 1.5px solid var(--border);
+      border-top: 4px solid var(--orange);
+      border-radius: 10px;
+      box-shadow: 0 28px 70px rgba(13,18,32,0.22);
+      padding: 24px 26px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
+      z-index: 1200;
+    }
+    .header-nav li.open .nav-drop { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
+    .nav-drop-cols { display: flex; gap: 34px; }
+    .nav-drop-col { min-width: 176px; }
+    .nav-drop-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--orange-deep);
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-drop a {
+      display: block;
+      font-family: 'Barlow', sans-serif;
+      font-size: 14.5px;
+      font-weight: 600;
+      text-transform: none;
+      letter-spacing: 0;
+      color: #334155;
+      padding: 6px 0;
+      white-space: nowrap;
+    }
+    .nav-drop a:hover { color: var(--orange); }
+    .nav-drop a .ext { font-size: 11px; color: var(--muted2); }
+    .nav-drop-wide { min-width: 640px; }
+
+    .header-call {
+      display: flex; align-items: center; gap: 10px; white-space: nowrap;
+    }
+    .header-phone {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 31px; font-weight: 900;
+      color: var(--orange); text-decoration: none;
+      letter-spacing: 0.01em; white-space: nowrap;
+      line-height: 1; transition: color 0.2s, transform 0.2s;
+    }
+    .header-phone:hover { color: var(--orange-deep); transform: translateY(-1px); }
+    .wa-link {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 40px; height: 40px; border-radius: 50%;
+      background: #25D366; flex-shrink: 0;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 14px rgba(37,211,102,0.35);
+    }
+    .wa-link:hover { transform: translateY(-2px) scale(1.05); box-shadow: 0 8px 22px rgba(37,211,102,0.5); }
+    .wa-link svg { width: 23px; height: 23px; display: block; }
+    @media (max-width: 1340px) { .header-phone { font-size: 28px; } .wa-link { width: 36px; height: 36px; } .wa-link svg { width: 21px; height: 21px; } }
+    @media (max-width: 600px) {
+      .header-phone { font-size: 25px; }
+      .wa-link { width: 33px; height: 33px; } .wa-link svg { width: 19px; height: 19px; }
+      .header-call { gap: 7px; }
+    }
+    @media (max-width: 380px) { .header-phone { font-size: 21px; } }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+      background: none;
+      border: none;
+    }
+    .hamburger span {
+      display: block;
+      width: 26px; height: 3px;
+      background: #0d1220;
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+    .mobile-nav {
+      display: none;
+      background: #fff;
+      border-top: 1px solid var(--border);
+      padding: 12px 24px 20px;
+      max-height: 78vh;
+      overflow-y: auto;
+    }
+    .mobile-nav.open { display: block; }
+    .mobile-nav a {
+      display: block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #0d1220;
+      text-decoration: none;
+      padding: 9px 0;
+      border-bottom: 1px solid var(--border);
+      letter-spacing: 0.05em;
+    }
+    .mobile-nav a:hover { color: var(--orange); }
+    .mobile-nav .m-group {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--orange-deep);
+      margin: 16px 0 4px;
+    }
+    .mobile-nav .m-sub {
+      font-family: 'Barlow', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      text-transform: none;
+      letter-spacing: 0;
+      color: #334155;
+      padding: 6px 0;
+    }
+
+    @media (max-width: 1360px) {
+      .header-nav { display: none; }
+      .hamburger { display: flex; }
+      .header-logo img { height: 80px; }
+      .header-inner { height: 100px; }
+    }
+    @media (max-width: 600px) {
+      .header-logo img { height: 62px; }
+      .header-inner { height: 84px; }
+      .header-phone { font-size: 16px; }
+      .ann-bar { font-size: 13px; }
+    }
+
+    /* ══ HERO ══ */
+    .hero { background: var(--navy); position: relative; overflow: hidden; padding: 80px 0 0; }
+    .hero-grid-bg {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(249,115,22,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(249,115,22,0.05) 1px, transparent 1px);
+      background-size: 56px 56px;
+      z-index: 0;
+    }
+    .hero-blob1 {
+      position: absolute; top: -80px; left: -80px;
+      width: 400px; height: 400px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(249,115,22,0.18) 0%, transparent 70%);
+      z-index: 0; pointer-events: none;
+    }
+    .hero-blob2 {
+      position: absolute; bottom: -60px; right: 10%;
+      width: 500px; height: 500px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(34,211,238,0.10) 0%, transparent 70%);
+      z-index: 0; pointer-events: none;
+    }
+    .hero-inner {
+      max-width: 1240px; margin: 0 auto;
+      padding: 0 24px 0;
+      display: grid; grid-template-columns: 1fr 480px;
+      gap: 60px; align-items: center;
+      position: relative; z-index: 2;
+    }
+    .hero-left { padding-bottom: 80px; }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px; font-weight: 800;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--neon-cyan);
+      background: rgba(34,211,238,0.1);
+      border: 1px solid rgba(34,211,238,0.35);
+      border-radius: 3px; padding: 6px 14px; margin-bottom: 24px;
+    }
+    .hero-eyebrow::before {
+      content: ''; width: 7px; height: 7px; border-radius: 50%;
+      background: var(--neon-cyan); animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%,100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.6); }
+    }
+    .hero-h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(52px, 7.2vw, 92px);
+      line-height: 0.95; letter-spacing: 0.01em;
+      color: #fff; margin-bottom: 26px;
+    }
+    .hero-h1 .accent { color: var(--orange); display: block; }
+    .hero-h1 .kw {
+      display: flex; width: fit-content; align-items: center; gap: 8px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 15px; font-weight: 800;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--neon-cyan);
+      background: rgba(34,211,238,0.1);
+      border: 1px solid rgba(34,211,238,0.35);
+      border-radius: 3px; padding: 7px 14px;
+      margin-bottom: 26px; line-height: 1.35;
+    }
+    .hero-h1 .kw::before {
+      content: ''; width: 7px; height: 7px; border-radius: 50%;
+      background: var(--neon-cyan); flex-shrink: 0;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @media (max-width: 520px) { .hero-h1 .kw { font-size: 13px; letter-spacing: 0.1em; } }
+    .hero-lead {
+      font-size: 21px; font-weight: 500; line-height: 1.68;
+      color: #a8b6c8; max-width: 580px; margin-bottom: 26px;
+    }
+    .hero-lead strong { color: #e2e8f0; font-weight: 700; }
+    .hero-trust-row {
+      display: flex; align-items: center; gap: 20px;
+      flex-wrap: wrap; margin-bottom: 20px;
+    }
+    .trust-pill {
+      display: flex; align-items: center; gap: 7px;
+      font-size: 13px; font-weight: 700; color: #cbd5e1;
+      font-family: 'Barlow Condensed', sans-serif;
+      letter-spacing: 0.05em; text-transform: uppercase;
+    }
+    .trust-pill .check {
+      width: 18px; height: 18px; border-radius: 50%;
+      background: rgba(163,230,53,0.15);
+      border: 1px solid rgba(163,230,53,0.5);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 10px; color: var(--neon-lime);
+    }
+
+    /* ── HERO FORM CARD ── */
+    .hero-form-card {
+      background: #fff; border-radius: 12px; padding: 34px 32px 30px;
+      box-shadow: 0 40px 100px rgba(0,0,0,0.5), 0 0 0 1px rgba(249,115,22,0.25);
+      position: relative; z-index: 3; margin-bottom: -1px;
+    }
+    .hero-form-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 5px;
+      background: linear-gradient(90deg, var(--orange), var(--orange-bright), var(--neon-lime));
+      border-radius: 12px 12px 0 0;
+    }
+    .form-card-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px; font-weight: 800; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--orange); margin-bottom: 8px;
+    }
+    .form-card-h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 24px; font-weight: 900; color: #0d1220;
+      line-height: 1.15; margin-bottom: 20px;
+    }
+    .sc-form-group { margin-bottom: 14px; }
+    .sc-form-group label {
+      display: block; font-size: 12px; font-weight: 700;
+      color: #4b5563; text-transform: uppercase; letter-spacing: 0.06em;
+      margin-bottom: 5px; font-family: 'Barlow Condensed', sans-serif;
+    }
+    .sc-form-group input, .sc-form-group select, .sc-form-group textarea {
+      width: 100%; background: #f8fafc;
+      border: 1.5px solid #e2e8f0; border-radius: 6px;
+      padding: 11px 14px; font-size: 15px;
+      font-family: 'Barlow', sans-serif; color: #0d1220;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .sc-form-group input:focus, .sc-form-group select:focus, .sc-form-group textarea:focus {
+      outline: none; border-color: var(--orange);
+      box-shadow: 0 0 0 3px rgba(249,115,22,0.12);
+    }
+    .sc-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .sc-submit-btn {
+      width: 100%; padding: 16px; background: var(--orange); color: #fff;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 18px; font-weight: 900; letter-spacing: 0.08em;
+      text-transform: uppercase; border: none; border-radius: 6px;
+      cursor: pointer; transition: background 0.2s, transform 0.2s; margin-top: 6px;
+    }
+    .sc-submit-btn:hover { background: var(--orange-deep); transform: translateY(-1px); }
+    .sc-submit-btn:disabled { opacity: 0.65; cursor: not-allowed; transform: none; }
+    .form-privacy {
+      font-size: 12px; color: #9ca3af; text-align: center;
+      margin-top: 10px; line-height: 1.5;
+    }
+    #hero-form-msg, #bottom-form-msg {
+      font-size: 14px; margin-top: 10px; text-align: center;
+      font-weight: 700; min-height: 20px; line-height: 1.5;
+    }
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-left { padding-bottom: 0; }
+      .hero { padding-top: 56px; }
+    }
+
+    /* ══ SHARED SECTION BASE ══ */
+    .section { padding: 90px 0; }
+    .section-inner { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+    .section-eyebrow {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px; font-weight: 800; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--orange);
+      margin-bottom: 14px; display: flex; align-items: center; gap: 10px;
+    }
+    .section-eyebrow::after {
+      content: ''; flex: 1; max-width: 60px; height: 2px;
+      background: var(--orange); opacity: 0.5;
+    }
+    .section-h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(38px, 5vw, 62px);
+      line-height: 1; color: var(--navy); margin-bottom: 20px;
+    }
+    .section-h2.light { color: #fff; }
+    .section-lead {
+      font-size: 19px; color: var(--muted);
+      max-width: 720px; line-height: 1.75; margin-bottom: 48px;
+    }
+    .section-h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 26px; font-weight: 900; color: var(--navy);
+      letter-spacing: 0.02em; margin-bottom: 12px;
+    }
+
+    /* ══ LIVE A/B TEST DEMO ══ */
+    .abdemo-section {
+      background: linear-gradient(180deg, var(--navy) 0%, #131c30 100%);
+      padding: 80px 0; position: relative; overflow: hidden;
+    }
+    .abdemo-section::before {
+      content: ''; position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(163,230,53,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(163,230,53,0.035) 1px, transparent 1px);
+      background-size: 48px 48px;
+    }
+    .abdemo-inner { max-width: 940px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+    .abdemo-head { text-align: center; margin-bottom: 40px; }
+    .abdemo-head h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(34px, 4.4vw, 54px); line-height: 1;
+      color: #fff; margin-bottom: 14px;
+    }
+    .abdemo-head p { color: #94a3b8; font-size: 17px; max-width: 620px; margin: 0 auto; line-height: 1.7; }
+    .abdemo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    @media (max-width: 700px) { .abdemo-grid { grid-template-columns: 1fr; } }
+    .ab-variant {
+      background: rgba(255,255,255,0.04);
+      border: 1.5px solid rgba(255,255,255,0.10);
+      border-radius: 12px; padding: 30px 26px;
+      text-align: center; transition: border-color 0.25s, background 0.25s, transform 0.25s;
+    }
+    .ab-variant:hover { border-color: rgba(249,115,22,0.5); background: rgba(255,255,255,0.06); }
+    .ab-variant.chosen { border-color: var(--neon-lime); background: rgba(163,230,53,0.07); }
+    .ab-tag {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px; font-weight: 800; letter-spacing: 0.16em;
+      text-transform: uppercase; color: #64748b; margin-bottom: 18px;
+    }
+    .ab-mock-a, .ab-mock-b {
+      display: inline-block; text-decoration: none;
+      border: none; cursor: pointer; font-family: 'Barlow', sans-serif;
+    }
+    .ab-mock-a {
+      background: #475569; color: #fff;
+      padding: 13px 30px; border-radius: 4px;
+      font-size: 15px; font-weight: 600;
+    }
+    .ab-mock-b {
+      background: var(--orange); color: #fff;
+      padding: 17px 36px; border-radius: 6px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 19px; font-weight: 900;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      box-shadow: 0 10px 28px rgba(249,115,22,0.35);
+    }
+    .ab-sub { font-size: 13px; color: #64748b; margin-top: 14px; min-height: 20px; }
+    .ab-reveal {
+      margin-top: 30px; background: rgba(249,115,22,0.07);
+      border: 1.5px solid rgba(249,115,22,0.3); border-left: 5px solid var(--orange);
+      border-radius: 10px; padding: 26px 28px;
+      max-height: 0; overflow: hidden; opacity: 0;
+      transition: max-height 0.5s ease, opacity 0.4s ease, padding 0.4s ease;
+      padding-top: 0; padding-bottom: 0;
+    }
+    .ab-reveal.show { max-height: 620px; opacity: 1; padding-top: 26px; padding-bottom: 26px; }
+    .ab-reveal h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 22px; font-weight: 900; color: var(--orange-bright); margin-bottom: 12px;
+    }
+    .ab-reveal p { color: #cbd5e1; font-size: 15.5px; line-height: 1.75; margin-bottom: 12px; }
+    .ab-reveal ul { list-style: none; margin: 14px 0 4px; }
+    .ab-reveal li {
+      color: #cbd5e1; font-size: 15px; line-height: 1.6;
+      padding-left: 26px; position: relative; margin-bottom: 9px;
+    }
+    .ab-reveal li::before {
+      content: ''; position: absolute; left: 4px; top: 9px;
+      width: 7px; height: 7px; border-radius: 50%; background: var(--neon-lime);
+    }
+
+    /* ══ ANIMATED ARROW ══ */
+    .draw-arrow path, .draw-arrow line, .draw-arrow polyline {
+      stroke-dasharray: 400; stroke-dashoffset: 400;
+      transition: stroke-dashoffset 1.1s cubic-bezier(.5,0,.2,1);
+    }
+    .draw-arrow.drawn path, .draw-arrow.drawn line, .draw-arrow.drawn polyline { stroke-dashoffset: 0; }
+    .arrow-note {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px; font-weight: 800; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--orange);
+    }
+
+    /* ══ CAROUSEL ══ */
+    .carousel-section {
+      background: #fff; border-top: 1px solid var(--border);
+      border-bottom: 4px solid var(--orange);
+      padding: 32px 0; overflow: hidden;
+    }
+    .carousel-label {
+      text-align: center; font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px; font-weight: 800; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--muted); margin-bottom: 20px;
+    }
+    .carousel-track-wrap { overflow: hidden; position: relative; }
+    .carousel-track-wrap::before, .carousel-track-wrap::after {
+      content: ''; position: absolute; top: 0; bottom: 0;
+      width: 120px; z-index: 2; pointer-events: none;
+    }
+    .carousel-track-wrap::before { left: 0; background: linear-gradient(90deg, #fff, transparent); }
+    .carousel-track-wrap::after { right: 0; background: linear-gradient(-90deg, #fff, transparent); }
+    .carousel-track {
+      display: flex; gap: 60px;
+      animation: scrollLeft 26s linear infinite; width: max-content;
+    }
+    .carousel-track:hover { animation-play-state: paused; }
+    @keyframes scrollLeft {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .carousel-item {
+      display: flex; align-items: center; gap: 12px;
+      opacity: 0.7; transition: opacity 0.3s; flex-shrink: 0; white-space: nowrap;
+    }
+    .carousel-item:hover { opacity: 1; }
+    .carousel-item img { height: 34px; width: auto; object-fit: contain; }
+    .carousel-engine-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 16px; font-weight: 700; color: var(--charcoal); letter-spacing: 0.04em;
+    }
+
+    /* ══ CONVERSION CALCULATOR ══ */
+    .calc-section { background: var(--surface); border-top: 1px solid var(--border); }
+    .calc-wrap {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 60px; align-items: center;
+    }
+    @media (max-width: 900px) { .calc-wrap { grid-template-columns: 1fr; gap: 40px; } }
+    .calc-panel {
+      background: #fff; border: 1.5px solid var(--border);
+      border-top: 5px solid var(--orange);
+      border-radius: 12px; padding: 32px 30px;
+      box-shadow: 0 18px 48px rgba(13,18,32,0.09);
+    }
+    .calc-field { margin-bottom: 22px; }
+    .calc-field-top {
+      display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px;
+    }
+    .calc-field label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px; font-weight: 800; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--muted);
+    }
+    .calc-value {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 26px; color: var(--navy); line-height: 1;
+    }
+    input[type="range"].calc-slider {
+      -webkit-appearance: none; appearance: none;
+      width: 100%; height: 8px; border-radius: 999px;
+      background: linear-gradient(90deg, var(--orange) 0%, var(--orange) 50%, #e2e8f0 50%, #e2e8f0 100%);
+      outline: none; cursor: pointer;
+    }
+    input[type="range"].calc-slider::-webkit-slider-thumb {
+      -webkit-appearance: none; appearance: none;
+      width: 24px; height: 24px; border-radius: 50%;
+      background: #fff; border: 4px solid var(--orange);
+      box-shadow: 0 3px 10px rgba(13,18,32,0.22); cursor: grab;
+    }
+    input[type="range"].calc-slider::-moz-range-thumb {
+      width: 22px; height: 22px; border-radius: 50%;
+      background: #fff; border: 4px solid var(--orange);
+      box-shadow: 0 3px 10px rgba(13,18,32,0.22); cursor: grab;
+    }
+    .calc-result {
+      background: var(--navy); border-radius: 12px;
+      padding: 34px 30px; color: #fff; position: relative; overflow: hidden;
+    }
+    .calc-result::after {
+      content: ''; position: absolute; top: -60px; right: -60px;
+      width: 260px; height: 260px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(163,230,53,0.14) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .calc-result-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px; font-weight: 800; letter-spacing: 0.14em;
+      text-transform: uppercase; color: #94a3b8; margin-bottom: 6px;
+    }
+    .calc-big {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(46px, 6vw, 72px); line-height: 1;
+      color: var(--neon-lime); margin-bottom: 4px; word-break: break-word;
+    }
+    .calc-sub { font-size: 15px; color: #94a3b8; line-height: 1.6; margin-bottom: 22px; }
+    .calc-split {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+      border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;
+    }
+    .calc-split div span {
+      display: block; font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px; font-weight: 800; letter-spacing: 0.1em;
+      text-transform: uppercase; color: #64748b; margin-bottom: 3px;
+    }
+    .calc-split div strong {
+      font-family: 'Bebas Neue', sans-serif; font-weight: 400;
+      font-size: 28px; color: #fff; line-height: 1;
+    }
+
+    /* ══ FUNNEL ══ */
+    .funnel-section { background: #fff; border-top: 1px solid var(--border); }
+    .funnel-stage {
+      display: grid; grid-template-columns: 190px 1fr 128px;
+      gap: 20px; align-items: center; margin-bottom: 14px;
+    }
+    @media (max-width: 640px) {
+      .funnel-stage { grid-template-columns: 1fr; gap: 6px; margin-bottom: 22px; }
+    }
+    .funnel-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 16px; font-weight: 800; color: var(--navy);
+      letter-spacing: 0.04em; text-transform: uppercase;
+    }
+    .funnel-label small {
+      display: block; font-size: 12.5px; font-weight: 600;
+      color: var(--muted2); text-transform: none; letter-spacing: 0;
+    }
+    .funnel-bar-track { height: 42px; background: var(--surface2); border-radius: 6px; overflow: hidden; }
+    .funnel-bar {
+      height: 100%; width: 0;
+      border-radius: 6px;
+      transition: width 1.3s cubic-bezier(.4,0,.2,1);
+      display: flex; align-items: center; justify-content: flex-end;
+      padding-right: 12px; color: #fff;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 15px; font-weight: 800;
+    }
+    .funnel-bar.f1 { background: linear-gradient(90deg, #1e2a40, #334155); }
+    .funnel-bar.f2 { background: linear-gradient(90deg, var(--electric-blue), #60a5fa); }
+    .funnel-bar.f3 { background: linear-gradient(90deg, var(--neon-cyan), #67e8f9); }
+    .funnel-bar.f4 { background: linear-gradient(90deg, var(--orange-deep), var(--orange)); }
+    .funnel-bar.f5 { background: linear-gradient(90deg, #65a30d, var(--neon-lime)); }
+    .funnel-loss {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px; font-weight: 800; color: var(--red);
+      letter-spacing: 0.04em; text-align: right;
+    }
+    .funnel-loss.gain { color: var(--green); }
+    @media (max-width: 640px) { .funnel-loss { text-align: left; } }
+    .funnel-toggle-row {
+      display: flex; gap: 10px; flex-wrap: wrap;
+      margin: 0 0 34px; align-items: center;
+    }
+    .funnel-toggle {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 15px; font-weight: 800; letter-spacing: 0.06em;
+      text-transform: uppercase; padding: 11px 22px;
+      border-radius: 6px; border: 2px solid var(--border2);
+      background: #fff; color: var(--muted); cursor: pointer;
+      transition: all 0.2s;
+    }
+    .funnel-toggle:hover { border-color: var(--orange); color: var(--orange); }
+    .funnel-toggle.active {
+      background: var(--orange); border-color: var(--orange); color: #fff;
+    }
+    .funnel-readout {
+      margin-top: 30px; padding: 22px 26px;
+      background: var(--surface); border-radius: 10px;
+      border-left: 5px solid var(--orange);
+      font-size: 16px; color: var(--muted); line-height: 1.7;
+    }
+    .funnel-readout strong { color: var(--navy); }
+
+    /* ══ GROWTH SYSTEM ══ */
+    .growth-section { background: var(--surface2); border-top: 1px solid var(--border); }
+    .growth-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    @media (max-width: 900px) { .growth-inner { grid-template-columns: 1fr; gap: 48px; } }
+    .growth-text .big-statement {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(36px, 4.5vw, 54px);
+      line-height: 1.05; color: var(--navy); margin-bottom: 24px;
+    }
+    .growth-text .big-statement span { color: var(--orange); }
+    .growth-text p { font-size: 18px; color: var(--muted); margin-bottom: 18px; line-height: 1.8; }
+    .growth-text strong { color: var(--navy); }
+    .growth-text p a { color: var(--orange-deep); font-weight: 700; }
+    .growth-stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .stat-card { border-radius: 12px; padding: 28px 22px; position: relative; overflow: hidden; }
+    .stat-card.c1 { background: var(--peach); }
+    .stat-card.c2 { background: var(--sky); }
+    .stat-card.c3 { background: var(--mint); }
+    .stat-card.c4 { background: var(--lavender); }
+    .stat-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 52px; line-height: 1; color: var(--navy); margin-bottom: 4px;
+    }
+    .stat-label {
+      font-size: 13px; font-weight: 800; color: var(--navy);
+      font-family: 'Barlow Condensed', sans-serif;
+      letter-spacing: 0.05em; text-transform: uppercase;
+    }
+    .stat-desc { font-size: 15px; color: var(--muted); margin-top: 8px; line-height: 1.5; }
+
+    /* ══ SERVICES ══ */
+    .services-section { background: #fff; border-top: 1px solid var(--border); }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    @media (max-width: 900px) { .services-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 580px) { .services-grid { grid-template-columns: 1fr; } }
+    .service-card {
+      background: #fff; border: 1.5px solid var(--border);
+      border-radius: 12px; padding: 32px 28px;
+      text-decoration: none; display: block; position: relative; overflow: hidden;
+      transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+    }
+    .service-card::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+      height: 4px; transform: scaleX(0); transform-origin: left; transition: transform 0.3s;
+    }
+    .service-card.s1::after { background: var(--orange); }
+    .service-card.s2::after { background: var(--neon-cyan); }
+    .service-card.s3::after { background: var(--neon-lime); }
+    .service-card.s4::after { background: var(--neon-pink); }
+    .service-card.s5::after { background: var(--electric-blue); }
+    .service-card.s6::after { background: var(--yellow); }
+    .service-card:hover {
+      border-color: var(--orange); transform: translateY(-5px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.10);
+    }
+    .service-card:hover::after { transform: scaleX(1); }
+    .service-icon { font-size: 34px; margin-bottom: 14px; display: block; line-height: 1; }
+    .service-card h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 22px; font-weight: 800; color: var(--navy);
+      letter-spacing: 0.02em; margin-bottom: 10px;
+    }
+    .service-card p { font-size: 16px; color: var(--muted); line-height: 1.65; margin-bottom: 16px; }
+    .service-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .service-tag {
+      font-size: 11px; font-weight: 700;
+      font-family: 'Barlow Condensed', sans-serif;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--orange); background: rgba(249,115,22,0.08);
+      border: 1px solid rgba(249,115,22,0.25);
+      border-radius: 3px; padding: 3px 8px;
+    }
+
+    /* ══ ANATOMY ══ */
+    .anatomy-section { background: var(--surface); border-top: 1px solid var(--border); }
+    .anatomy-frame {
+      max-width: 1000px; margin: 0 auto;
+      background: #fff; border: 1.5px solid var(--border);
+      border-radius: 14px; padding: 20px;
+      box-shadow: 0 22px 60px rgba(13,18,32,0.10);
+    }
+    .anatomy-frame svg { width: 100%; height: auto; display: block; }
+    .anatomy-legend {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 20px; max-width: 1000px; margin: 40px auto 0;
+    }
+    @media (max-width: 800px) { .anatomy-legend { grid-template-columns: 1fr; } }
+    .anatomy-item {
+      display: flex; gap: 14px; align-items: flex-start;
+    }
+    .anatomy-num {
+      width: 30px; height: 30px; flex-shrink: 0;
+      border-radius: 50%; background: var(--orange); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 15px; font-weight: 900;
+    }
+    .anatomy-item strong {
+      display: block; color: var(--navy); font-size: 16px;
+      margin-bottom: 4px; font-weight: 700;
+    }
+    .anatomy-item p { font-size: 15.5px; color: var(--muted); line-height: 1.6; }
+
+    /* ══ GEO / AIO ══ */
+    .geo-section { background: var(--navy); color: #fff; }
+    .geo-image-full { width: 100%; max-width: 1100px; margin: 0 auto 56px; text-align: center; }
+    .geo-image-full img {
+      width: 100%; height: auto; border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 32px 80px rgba(0,0,0,0.6); display: block;
+    }
+    .geo-badge {
+      display: inline-block; background: var(--neon-lime); color: var(--navy);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px; font-weight: 800; letter-spacing: 0.08em;
+      text-transform: uppercase; padding: 8px 18px; border-radius: 4px;
+      box-shadow: 0 8px 24px rgba(163,230,53,0.4); margin-bottom: 24px;
+    }
+    .geo-content-below { max-width: 1100px; margin: 0 auto; }
+    .geo-points-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 40px; }
+    @media (max-width: 700px) { .geo-points-grid { grid-template-columns: 1fr; } }
+    .geo-point-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 10px; padding: 24px;
+      display: flex; align-items: flex-start; gap: 14px;
+    }
+    .geo-point-icon {
+      width: 40px; height: 40px; border-radius: 8px;
+      background: rgba(249,115,22,0.15); border: 1px solid rgba(249,115,22,0.35);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; flex-shrink: 0;
+    }
+    .geo-point-card strong { color: #fff; display: block; margin-bottom: 6px; font-size: 16px; }
+    .geo-point-card p { color: #a3b0c2; font-size: 16px; line-height: 1.6; margin: 0; }
+    .geo-point-card a { color: var(--orange-bright); font-weight: 700; }
+
+    /* ══ PLANNER TEASER ══ */
+    .planner-teaser { background: #fff; border-top: 1px solid var(--border); position: relative; overflow: hidden; }
+    .planner-teaser::after {
+      content: ''; position: absolute; top: 0; right: 0; bottom: 0; width: 35%;
+      background: linear-gradient(135deg, var(--peach), var(--lavender));
+      clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
+      z-index: 0; pointer-events: none;
+    }
+    .planner-teaser-inner {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 70px;
+      align-items: center; position: relative; z-index: 1;
+    }
+    @media (max-width: 900px) {
+      .planner-teaser-inner { grid-template-columns: 1fr; gap: 44px; }
+      .planner-teaser::after { display: none; }
+    }
+    .teaser-score-demo {
+      background: var(--navy); border-radius: 12px; padding: 28px;
+      box-shadow: 0 20px 60px rgba(13,18,32,0.15); position: relative; z-index: 2;
+    }
+    .teaser-score-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+    .teaser-score-num { font-family: 'Bebas Neue', sans-serif; font-size: 72px; line-height: 1; color: var(--orange); }
+    .teaser-score-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.1em; text-align: right; color: #94a3b8;
+    }
+    .teaser-progress { height: 10px; background: rgba(255,255,255,0.08); border-radius: 999px; overflow: hidden; margin-bottom: 20px; }
+    .teaser-progress-fill {
+      height: 100%; width: 0;
+      background: linear-gradient(90deg, var(--red), var(--orange));
+      border-radius: 999px; transition: width 1.4s cubic-bezier(.4,0,.2,1);
+    }
+    .teaser-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+    .teaser-chip {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px; font-weight: 700; letter-spacing: 0.04em;
+      padding: 5px 12px; border-radius: 4px; border: 1px solid;
+    }
+    .teaser-chip.search { background: rgba(59,130,246,0.15); border-color: rgba(59,130,246,0.4); color: #93c5fd; }
+    .teaser-chip.demand { background: rgba(249,115,22,0.15); border-color: rgba(249,115,22,0.4); color: #fdba74; }
+    .teaser-chip.empty { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.15); color: #64748b; border-style: dashed; }
+    .teaser-status {
+      font-size: 14px; color: #94a3b8; font-style: italic;
+      border-top: 1px solid rgba(255,255,255,0.08); padding-top: 14px; line-height: 1.5;
+    }
+    .teaser-status strong { color: var(--orange-bright); font-style: normal; }
+
+    /* ══ BUTTONS ══ */
+    .sc-btn-primary {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 16px 32px; background: var(--orange); color: #fff;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 18px; font-weight: 900; letter-spacing: 0.08em;
+      text-transform: uppercase; text-decoration: none; border-radius: 6px;
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+      border: none; cursor: pointer;
+    }
+    .sc-btn-primary:hover {
+      background: var(--orange-deep); transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(249,115,22,0.35);
+    }
+    .sc-btn-outline {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 15px 30px; background: transparent; color: var(--orange);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 18px; font-weight: 900; letter-spacing: 0.08em;
+      text-transform: uppercase; text-decoration: none;
+      border-radius: 6px; border: 2px solid var(--orange); transition: all 0.2s;
+    }
+    .sc-btn-outline:hover { background: rgba(249,115,22,0.08); }
+    .sc-btn-outline.white { color: #fff; border-color: rgba(255,255,255,0.4); }
+    .sc-btn-outline.white:hover { background: rgba(255,255,255,0.08); }
+    .btn-row { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; margin-top: 32px; }
+
+    /* ══ WHY NOT TYPICAL ══ */
+    .why-section { background: var(--surface2); }
+    .why-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 2px;
+      border: 1.5px solid var(--border); border-radius: 12px;
+      overflow: hidden; margin-top: 48px; box-shadow: 0 8px 32px rgba(0,0,0,0.06);
+    }
+    @media (max-width: 700px) { .why-grid { grid-template-columns: 1fr; } }
+    .why-col-header {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px; font-weight: 800; letter-spacing: 0.12em;
+      text-transform: uppercase; padding: 18px 28px; border-bottom: 1.5px solid var(--border);
+    }
+    .why-col-bad { background: #fff0f0; color: var(--red); }
+    .why-col-good { background: #fff7ed; color: var(--orange-deep); }
+    .why-cell {
+      padding: 16px 28px; border-bottom: 1px solid var(--border);
+      font-size: 16px; color: var(--muted);
+      display: flex; align-items: flex-start; gap: 10px;
+      line-height: 1.55; background: #fff;
+    }
+    .why-cell:last-child, .why-cell:nth-last-child(2) { border-bottom: none; }
+    .why-cell .icon { font-size: 16px; flex-shrink: 0; margin-top: 2px; }
+    .why-cell-bad { background: #fffafa; }
+    .why-cell-good { background: #fffbf5; color: var(--navy); }
+
+    /* ══ AI TOOLS ══ */
+    .ai-section { background: #fff; border-top: 1px solid var(--border); }
+    .ai-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 40px; }
+    @media (max-width: 900px) { .ai-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 520px) { .ai-grid { grid-template-columns: 1fr; } }
+    .ai-card {
+      background: var(--surface); border: 1.5px solid var(--border);
+      border-radius: 12px; padding: 28px 22px;
+      text-decoration: none; display: block; position: relative; overflow: hidden;
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+    .ai-card:hover { transform: translateY(-5px); border-color: var(--border2); box-shadow: 0 16px 40px rgba(0,0,0,0.08); }
+    .ai-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; }
+    .ai-card.gpt::before { background: linear-gradient(90deg, #10a37f, #34d399); }
+    .ai-card.gemini::before { background: linear-gradient(90deg, #4285f4, #34a853); }
+    .ai-card.perplexity::before { background: linear-gradient(90deg, #20b2aa, #3b82f6); }
+    .ai-card.claude::before { background: linear-gradient(90deg, #d4704a, #f97316); }
+    .ai-icon { font-size: 28px; margin-bottom: 12px; display: block; }
+    .ai-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 18px; font-weight: 800; color: var(--navy);
+      margin-bottom: 8px; letter-spacing: 0.02em;
+    }
+    .ai-desc { font-size: 15px; color: var(--muted); line-height: 1.6; }
+    .ai-role {
+      display: inline-block; margin-top: 12px; font-size: 11px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--orange); background: rgba(249,115,22,0.08);
+      padding: 3px 8px; border-radius: 3px;
+    }
+
+    /* ══ WHAT IS CRO (visible AIO block) ══ */
+    .whatis-section { background: var(--navy); color: #fff; }
+    .whatis-inner { max-width: 880px; margin: 0 auto; }
+    .whatis-inner .section-h2 { color: #fff; }
+    .whatis-inner > p { color: #cbd5e1; font-size: 17.5px; line-height: 1.85; margin-bottom: 20px; }
+    .whatis-inner > p strong { color: #fff; }
+    .whatis-def {
+      background: rgba(249,115,22,0.08);
+      border: 1.5px solid rgba(249,115,22,0.28);
+      border-left: 5px solid var(--orange);
+      border-radius: 10px; padding: 26px 28px; margin-bottom: 30px;
+    }
+    .whatis-def p { color: #e2e8f0; font-size: 17px; line-height: 1.8; margin: 0; }
+    .whatis-sub {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 21px; font-weight: 900; color: var(--orange-bright);
+      margin: 30px 0 12px; letter-spacing: 0.02em;
+    }
+    .whatis-list { list-style: none; }
+    .whatis-list li {
+      color: #cbd5e1; font-size: 16px; line-height: 1.7;
+      padding-left: 28px; position: relative; margin-bottom: 12px;
+    }
+    .whatis-list li::before {
+      content: ''; position: absolute; left: 4px; top: 10px;
+      width: 8px; height: 8px; border-radius: 50%; background: var(--neon-lime);
+    }
+    .whatis-list li strong { color: #fff; }
+
+    /* ══ INDUSTRIES ══ */
+    .ind-section { background: var(--surface); border-top: 1px solid var(--border); }
+    .ind-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    @media (max-width: 900px) { .ind-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 520px) { .ind-grid { grid-template-columns: 1fr; } }
+    .ind-card {
+      background: #fff; border: 1.5px solid var(--border);
+      border-radius: 10px; padding: 22px 20px; text-decoration: none;
+      display: block; transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .ind-card:hover { border-color: var(--orange); transform: translateY(-4px); box-shadow: 0 14px 34px rgba(0,0,0,0.08); }
+    .ind-card span { font-size: 24px; display: block; margin-bottom: 10px; line-height: 1; }
+    .ind-card strong {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 18px; font-weight: 800; color: var(--navy);
+      display: block; margin-bottom: 5px; letter-spacing: 0.02em;
+    }
+    .ind-card p { font-size: 14.5px; color: var(--muted); line-height: 1.5; }
+
+    /* ══ FAQ ══ */
+    .faq-section { background: var(--surface2); }
+    .faq-list { max-width: 860px; margin: 0 auto; }
+    .faq-item {
+      border: 1.5px solid var(--border); border-radius: 10px;
+      margin-bottom: 12px; background: #fff; overflow: hidden; transition: box-shadow 0.2s;
+    }
+    .faq-item:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.07); }
+    .faq-question {
+      width: 100%; background: none; border: none;
+      padding: 20px 24px; text-align: left;
+      font-family: 'Barlow', sans-serif;
+      font-size: 16px; font-weight: 700; color: var(--navy);
+      cursor: pointer; display: flex; justify-content: space-between;
+      align-items: center; gap: 16px; line-height: 1.4;
+    }
+    .faq-question:hover { color: var(--orange); }
+    .faq-icon {
+      font-size: 22px; color: var(--orange); flex-shrink: 0;
+      transition: transform 0.3s; line-height: 1;
+    }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.2s; padding: 0 24px; }
+    .faq-item.open .faq-answer { max-height: 700px; padding: 0 24px 20px; }
+    .faq-answer p { font-size: 16px; color: var(--muted); line-height: 1.75; }
+    .faq-answer a { color: var(--orange-deep); text-decoration: none; font-weight: 700; }
+    .faq-answer a:hover { text-decoration: underline; }
+
+    /* ══ BOTTOM FORM ══ */
+    .bottom-form-section { background: var(--navy); padding: 100px 0; position: relative; overflow: hidden; }
+    .bottom-form-section::before {
+      content: ''; position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(249,115,22,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(249,115,22,0.04) 1px, transparent 1px);
+      background-size: 56px 56px;
+    }
+    .bottom-form-section::after {
+      content: ''; position: absolute; top: -100px; right: -100px;
+      width: 600px; height: 600px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(34,211,238,0.08) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .bottom-form-inner { max-width: 800px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+    .bottom-form-wrap { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 40px 100px rgba(0,0,0,0.4); }
+    .bottom-form-header {
+      background: linear-gradient(135deg, var(--orange-deep), var(--orange), var(--orange-bright));
+      padding: 40px; text-align: center;
+    }
+    .bottom-form-header h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 46px; color: #fff; line-height: 1.05; margin-bottom: 8px;
+    }
+    .bottom-form-header p { font-size: 17px; color: rgba(255,255,255,0.92); line-height: 1.6; }
+    .bottom-form-body { padding: 40px; background: #fff; }
+    .bottom-form-body .sc-form-group label { color: #374151; }
+    .bottom-form-body .sc-form-group textarea { min-height: 100px; }
+    @media (max-width: 600px) {
+      .bottom-form-header { padding: 28px 24px; }
+      .bottom-form-body { padding: 28px 24px; }
+      .bottom-form-header h2 { font-size: 34px; }
+      .sc-form-row { grid-template-columns: 1fr; }
+    }
+
+    /* ══ FOOTER ══ */
+    .site-footer { background: #ffffff; border-top: 4px solid var(--orange); padding: 60px 0 30px; }
+    .footer-inner { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+    .footer-top {
+      display: grid; grid-template-columns: 260px 1fr 1fr 1fr;
+      gap: 44px; padding-bottom: 48px; border-bottom: 1px solid var(--border);
+    }
+    @media (max-width: 900px) { .footer-top { grid-template-columns: 1fr 1fr; gap: 36px; } }
+    @media (max-width: 560px) { .footer-top { grid-template-columns: 1fr; } }
+    .footer-brand-logo { display: inline-block; margin-bottom: 16px; }
+    .footer-brand-logo img { height: 80px; width: auto; display: block; }
+    .footer-brand-desc { font-size: 15px; color: #374151; line-height: 1.7; margin-bottom: 16px; }
+    .footer-contact-link {
+      display: block; font-size: 15px; color: #374151;
+      text-decoration: none; margin-bottom: 6px; transition: color 0.2s;
+    }
+    .footer-contact-link:hover { color: var(--orange); }
+    .footer-col-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px; font-weight: 800; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--orange-deep); margin-bottom: 16px;
+    }
+    .footer-links { list-style: none; padding: 0; }
+    .footer-links li { margin-bottom: 9px; }
+    .footer-links a { font-size: 15px; color: #374151; text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--orange); }
+    .footer-bottom {
+      display: flex; justify-content: space-between; align-items: center;
+      padding-top: 28px; flex-wrap: wrap; gap: 12px; border-top: 1px solid var(--border);
+    }
+    .footer-bottom p { font-size: 13px; color: #374151; line-height: 1.5; }
+    .footer-bottom a { color: var(--orange-deep); text-decoration: none; }
+    .footer-bottom a:hover { text-decoration: underline; }
+
+    /* ══ REVEAL ══ */
+    .will-reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .will-reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ══ MISC ══ */
+    .text-orange { color: var(--orange); }
+    .text-center { text-align: center; }
+    .neon-divider {
+      height: 6px;
+      background: linear-gradient(90deg, var(--orange), var(--neon-lime), var(--neon-cyan), var(--neon-pink), var(--orange));
+      background-size: 300% 100%; animation: shimmer 5s linear infinite;
+    }
+    @keyframes shimmer {
+      0% { background-position: 0% 0%; }
+      100% { background-position: 300% 0%; }
+    }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px;
+      padding: 0; margin: -1px; overflow: hidden;
+      clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .will-reveal { opacity: 1; transform: none; }
+      .draw-arrow path, .draw-arrow line, .draw-arrow polyline { stroke-dashoffset: 0; }
+    }
+  
+    /* definition + ordered list reused from guide styling */
+    .definition { background: linear-gradient(135deg,#fff7ed,#ffedd5); border: 1.5px solid rgba(249,115,22,.3); border-left: 6px solid var(--orange); border-radius: 12px; padding: 28px 30px; }
+    .definition p { font-size: 19px; color: var(--navy); line-height: 1.78; margin: 0; font-weight: 500; }
+    .guide-ol { counter-reset: g; list-style: none; padding: 0; margin: 0 0 20px; }
+    .guide-ol li { font-size: 18px; color: var(--muted); line-height: 1.75; padding-left: 46px; position: relative; margin-bottom: 20px; counter-increment: g; }
+    .guide-ol li strong { color: var(--navy); }
+    .guide-ol li::before { content: counter(g); position: absolute; left: 0; top: 2px; width: 30px; height: 30px; border-radius: 50%; background: var(--orange); color: #fff; font-family: 'Barlow Condensed', sans-serif; font-size: 15px; font-weight: 900; display: flex; align-items: center; justify-content: center; }
+    .ind-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; }
+    @media (max-width: 900px) { .ind-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 520px) { .ind-grid { grid-template-columns: 1fr; } }
+    .ind-card { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.1); border-radius: 0; padding: 22px 20px; text-decoration: none; display: block; transition: border-color .2s, background .2s, transform .2s; }
+    .ind-card:hover { border-color: var(--orange); background: rgba(249,115,22,.07); transform: translateY(-3px); }
+    .ind-card span { font-size: 24px; display: block; margin-bottom: 10px; line-height: 1; }
+    .ind-card strong { font-family: 'Barlow Condensed', sans-serif; font-size: 18px; font-weight: 800; color: #fff; display: block; margin-bottom: 5px; letter-spacing: .02em; }
+    .ind-card p { font-size: 14.5px; color: #94a3b8; line-height: 1.5; margin: 0; }
+
+    /* ══════ PPC PAGE — AUCTION FLOOR ══════ */
+    .ppc-hero {
+      background: #080c16; position: relative; overflow: hidden; padding: 64px 0 70px;
+    }
+    .ppc-hero::before {
+      content: ''; position: absolute; inset: 0;
+      background-image: linear-gradient(rgba(34,211,238,0.045) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(34,211,238,0.045) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+    .ppc-hero::after {
+      content: ''; position: absolute; top: -160px; left: 28%;
+      width: 620px; height: 620px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(249,115,22,0.13) 0%, transparent 68%);
+      pointer-events: none;
+    }
+    .ppc-hero-inner {
+      max-width: 1240px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2;
+      display: grid; grid-template-columns: 1fr 452px; gap: 54px; align-items: center;
+    }
+    @media (max-width: 1000px) { .ppc-hero-inner { grid-template-columns: 1fr; gap: 40px; } }
+    .ppc-crumb {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase; color: #475569; margin-bottom: 20px;
+    }
+    .ppc-crumb a { color: #64748b; text-decoration: none; }
+    .ppc-crumb a:hover { color: var(--orange); }
+    .ppc-tick {
+      display: inline-flex; align-items: center; gap: 9px;
+      font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 800;
+      letter-spacing: 0.15em; text-transform: uppercase; color: #22d3ee;
+      border: 1px solid rgba(34,211,238,0.3); background: rgba(34,211,238,0.07);
+      padding: 7px 14px; margin-bottom: 22px; border-radius: 2px;
+    }
+    .ppc-tick::before {
+      content: ''; width: 7px; height: 7px; border-radius: 50%;
+      background: #22d3ee; animation: pulse 2s ease-in-out infinite;
+    }
+    .ppc-h1 {
+      font-family: 'Bebas Neue', sans-serif; font-size: clamp(46px, 6.4vw, 84px);
+      line-height: 0.96; color: #fff; margin-bottom: 22px; letter-spacing: 0.01em;
+    }
+    .ppc-h1 .amber { color: var(--orange); display: block; }
+    .ppc-lede { font-size: 20px; color: #94a3b8; line-height: 1.65; max-width: 620px; margin-bottom: 26px; }
+    .ppc-lede strong { color: #e2e8f0; }
+    .ppc-stats { display: flex; gap: 34px; flex-wrap: wrap; border-top: 1px solid rgba(255,255,255,0.09); padding-top: 22px; }
+    .ppc-stat span {
+      display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 11.5px;
+      font-weight: 800; letter-spacing: 0.13em; text-transform: uppercase; color: #475569; margin-bottom: 3px;
+    }
+    .ppc-stat strong {
+      font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 32px;
+      color: var(--neon-lime); line-height: 1; display: block;
+    }
+    .ppc-stat em { font-style: normal; color: #64748b; font-size: 13px; }
+
+    /* ── SERP mockup ── */
+    .serp {
+      background: #fff; border-radius: 10px; overflow: hidden;
+      box-shadow: 0 34px 90px rgba(0,0,0,0.6), 0 0 0 1px rgba(249,115,22,0.22);
+    }
+    .serp-bar { background: #f1f5f9; padding: 11px 14px; display: flex; align-items: center; gap: 9px; border-bottom: 1px solid #e2e8f0; }
+    .serp-dot { width: 9px; height: 9px; border-radius: 50%; background: #cbd5e1; }
+    .serp-url {
+      flex: 1; background: #fff; border: 1px solid #e2e8f0; border-radius: 20px;
+      padding: 5px 13px; font-size: 12.5px; color: #64748b; font-family: 'Barlow', sans-serif;
+    }
+    .serp-body { padding: 16px 18px 20px; }
+    .serp-row { padding: 12px 12px; border-radius: 7px; margin-bottom: 6px; position: relative; transition: background .25s, box-shadow .25s; }
+    .serp-row.ad { background: #fff7ed; box-shadow: inset 3px 0 0 var(--orange); }
+    .serp-row.ad.top { background: #ffedd5; }
+    .serp-badge {
+      display: inline-block; font-family: 'Barlow Condensed', sans-serif; font-size: 10.5px;
+      font-weight: 900; letter-spacing: 0.11em; text-transform: uppercase;
+      background: var(--orange); color: #fff; padding: 2px 7px; border-radius: 3px; margin-right: 7px;
+    }
+    .serp-pos {
+      position: absolute; right: 10px; top: 11px;
+      font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 800;
+      letter-spacing: 0.09em; color: #c2410c; text-transform: uppercase;
+    }
+    .serp-title { font-size: 15.5px; color: #1a56db; font-weight: 600; line-height: 1.35; margin: 4px 0 2px; }
+    .serp-link { font-size: 12.5px; color: #15803d; }
+    .serp-desc { font-size: 13px; color: #64748b; line-height: 1.45; margin-top: 3px; }
+    .serp-org .serp-title { color: #1a56db; }
+    .serp-note {
+      background: #0d1220; padding: 13px 18px; font-size: 13px; color: #94a3b8;
+      line-height: 1.55; text-align: center;
+    }
+    .serp-note strong { color: var(--orange-bright); }
+
+    /* ══ AUCTION SIMULATOR ══ */
+    .auction {
+      background: #080c16; border: 1px solid rgba(255,255,255,0.1);
+      border-top: 3px solid var(--orange); padding: 34px; margin: 40px 0;
+    }
+    .auction-grid { display: grid; grid-template-columns: 300px 1fr; gap: 34px; }
+    @media (max-width: 860px) { .auction-grid { grid-template-columns: 1fr; gap: 26px; } }
+    .auc-ctrl { margin-bottom: 26px; }
+    .auc-ctrl label {
+      display: flex; justify-content: space-between; align-items: baseline;
+      font-family: 'Barlow Condensed', sans-serif; font-size: 12.5px; font-weight: 800;
+      letter-spacing: 0.11em; text-transform: uppercase; color: #64748b; margin-bottom: 9px;
+    }
+    .auc-ctrl label b { font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 26px; color: var(--orange); }
+    .auc-you {
+      background: rgba(249,115,22,0.07); border: 1px solid rgba(249,115,22,0.28);
+      padding: 18px 18px 4px; margin-bottom: 20px;
+    }
+    .auc-you-head {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 900;
+      letter-spacing: 0.14em; text-transform: uppercase; color: var(--orange-bright); margin-bottom: 14px;
+    }
+    .auc-board { border-top: 1px solid rgba(255,255,255,0.11); }
+    .auc-hd {
+      display: grid; grid-template-columns: 46px 1fr 78px 78px 92px; gap: 10px;
+      padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.11);
+      font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 800;
+      letter-spacing: 0.11em; text-transform: uppercase; color: #475569;
+    }
+    .auc-hd span:nth-child(n+3), .auc-rw span:nth-child(n+3) { text-align: right; }
+    .auc-rw {
+      display: grid; grid-template-columns: 46px 1fr 78px 78px 92px; gap: 10px;
+      padding: 13px 0; border-bottom: 1px solid rgba(255,255,255,0.07);
+      align-items: center; font-size: 15px; color: #94a3b8;
+      transition: background .3s;
+    }
+    .auc-rw.me { background: rgba(249,115,22,0.11); color: #fff; }
+    .auc-rw.out { opacity: 0.4; }
+    .auc-rw .rank {
+      font-family: 'Bebas Neue', sans-serif; font-size: 24px; color: #475569; line-height: 1; padding-left: 4px;
+    }
+    .auc-rw.me .rank { color: var(--orange); }
+    .auc-rw .nm { font-weight: 600; }
+    .auc-rw .cpc { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 17px; color: var(--neon-lime); }
+    .auc-rw.out .cpc { color: #475569; }
+    .auc-verdict {
+      margin-top: 22px; padding: 20px 22px; background: rgba(255,255,255,0.04);
+      border-left: 4px solid var(--orange); font-size: 16px; color: #94a3b8; line-height: 1.65;
+    }
+    .auc-verdict strong { color: #fff; display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 19px; margin-bottom: 5px; letter-spacing: 0.02em; }
+
+    /* ══ dark article shell ══ */
+    .ppc-sec { background: #0b111d; color: #cbd5e1; padding: 84px 0; }
+    .ppc-sec.light { background: #fff; color: var(--muted); }
+    .ppc-wrap { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+    .ppc-wrap.wide { max-width: 1180px; }
+    .ppc-h2 {
+      font-family: 'Bebas Neue', sans-serif; font-size: clamp(34px, 4.4vw, 56px);
+      line-height: 1.0; color: #fff; margin-bottom: 20px; letter-spacing: 0.01em;
+    }
+    .ppc-sec.light .ppc-h2 { color: var(--navy); }
+    .ppc-h2 .amber { color: var(--orange); }
+    .ppc-h3 {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 25px; font-weight: 900;
+      color: #fff; margin: 36px 0 12px; letter-spacing: 0.02em;
+    }
+    .ppc-sec.light .ppc-h3 { color: var(--navy); }
+    .ppc-sec p { font-size: 18px; line-height: 1.8; margin-bottom: 20px; }
+    .ppc-sec p strong { color: #fff; }
+    .ppc-sec.light p strong { color: var(--navy); }
+    .ppc-sec a { color: var(--orange-bright); font-weight: 700; }
+    .ppc-sec.light a { color: var(--orange-deep); }
+    .ppc-eyebrow {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 800;
+      letter-spacing: 0.18em; text-transform: uppercase; color: var(--orange);
+      margin-bottom: 12px; display: flex; align-items: center; gap: 10px;
+    }
+    .ppc-eyebrow::after { content: ''; flex: 1; max-width: 54px; height: 1px; background: var(--orange); opacity: .5; }
+
+    /* ledger table */
+    .led { width: 100%; border-collapse: collapse; margin: 8px 0 26px; font-size: 16.5px; }
+    .led th {
+      text-align: left; font-family: 'Barlow Condensed', sans-serif; font-size: 12px;
+      font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #475569;
+      padding: 0 14px 11px 0; border-bottom: 1px solid rgba(255,255,255,0.14);
+    }
+    .ppc-sec.light .led th { color: var(--muted2); border-bottom-color: var(--border2); }
+    .led td { padding: 15px 14px 15px 0; border-bottom: 1px solid rgba(255,255,255,0.07); vertical-align: top; line-height: 1.55; }
+    .ppc-sec.light .led td { border-bottom-color: var(--border); }
+    .led td:first-child { color: #fff; font-weight: 700; width: 30%; }
+    .ppc-sec.light .led td:first-child { color: var(--navy); }
+    .led td:last-child { text-align: right; white-space: nowrap; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; letter-spacing: .04em; }
+    .led .cost { color: #f87171; }
+    .led .gain { color: var(--neon-lime); }
+    .ppc-sec.light .led .gain { color: #15803d; }
+
+    /* channel rows */
+    .chan { border-top: 2px solid rgba(255,255,255,0.14); }
+    .chan-row {
+      display: grid; grid-template-columns: 56px 1fr 200px; gap: 20px;
+      padding: 22px 0; border-bottom: 1px solid rgba(255,255,255,0.08); align-items: center;
+      text-decoration: none; transition: padding-left .2s, background .2s;
+    }
+    .chan-row:hover { background: rgba(249,115,22,0.06); padding-left: 12px; }
+    @media (max-width: 700px) { .chan-row { grid-template-columns: 46px 1fr; } .chan-cpc { grid-column: 2; } }
+    .chan-ico {
+      width: 46px; height: 46px; border: 1px solid rgba(249,115,22,0.34);
+      background: rgba(249,115,22,0.11); display: flex; align-items: center; justify-content: center;
+    }
+    .chan-ico svg { width: 22px; height: 22px; stroke: #fdba74; fill: none; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
+    .chan-t { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 900; color: #fff; letter-spacing: .02em; margin-bottom: 3px; }
+    .chan-d { font-size: 15.5px; color: #94a3b8; line-height: 1.5; }
+    .chan-cpc { text-align: right; }
+    .chan-cpc span { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; color: #475569; }
+    .chan-cpc strong { font-family: 'Barlow Condensed', sans-serif; font-size: 16px; color: var(--neon-lime); font-weight: 800; }
+    @media (max-width: 700px) { .chan-cpc { text-align: left; } }
+
+    /* profit calc */
+    .pcalc { background: #0d1220; border: 1px solid rgba(255,255,255,0.1); padding: 32px; margin: 36px 0; }
+    .pcalc-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 18px 24px; margin-bottom: 26px; }
+    @media (max-width: 620px) { .pcalc-grid { grid-template-columns: 1fr; } }
+    .pcalc label {
+      display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 800;
+      letter-spacing: .1em; text-transform: uppercase; color: #64748b; margin-bottom: 6px;
+    }
+    .pcalc input {
+      width: 100%; background: #060910; border: 1px solid rgba(255,255,255,0.16);
+      padding: 11px 13px; color: #fff; font-size: 17px; font-family: 'Barlow', sans-serif; border-radius: 4px;
+    }
+    .pcalc input:focus { outline: none; border-color: var(--orange); box-shadow: 0 0 0 3px rgba(249,115,22,.14); }
+    .pcalc-out { display: grid; grid-template-columns: repeat(4,1fr); gap: 2px; background: rgba(255,255,255,0.09); }
+    @media (max-width: 760px) { .pcalc-out { grid-template-columns: 1fr 1fr; } }
+    .pcalc-cell { background: #080c16; padding: 20px 16px; text-align: center; }
+    .pcalc-cell span { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; color: #475569; margin-bottom: 6px; }
+    .pcalc-cell strong { font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 34px; color: #fff; line-height: 1; }
+    .pcalc-cell strong.good { color: var(--neon-lime); }
+    .pcalc-cell strong.bad { color: #f87171; }
+    .pcalc-verdict { margin-top: 2px; background: #080c16; padding: 22px; font-size: 16.5px; color: #94a3b8; line-height: 1.65; border-top: 3px solid var(--orange); }
+    .pcalc-verdict strong { color: #fff; }
+
+    .ppc-cta {
+      background: linear-gradient(135deg, var(--orange-deep), var(--orange)); padding: 44px 40px;
+      text-align: center; margin: 52px 0;
+    }
+    .ppc-cta h3 { font-family: 'Bebas Neue', sans-serif; font-size: 40px; color: #fff; margin-bottom: 10px; line-height: 1.04; }
+    .ppc-cta p { color: rgba(255,255,255,.94); font-size: 17.5px; margin-bottom: 24px; }
+    .ppc-cta .sc-btn-primary { background: #0d1220; color: #fff; }
+    .ppc-cta .sc-btn-primary:hover { background: #fff; color: var(--orange-deep); }
+  </style>
+</head>
+
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="ann-bar">
+  Free 30-minute strategy session &mdash; no obligation &nbsp;|&nbsp; Call <a href="tel:+17207128615">+1 720-712-8615</a>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="header-logo" aria-label="Search Converts home">
+      <img src="/images/search-converts-logo-color.avif"
+           alt="Search Converts &mdash; conversion rate optimization agency"
+           width="200" height="200">
+    </a>
+    <nav aria-label="Main navigation">
+      <ul class="header-nav">
+        <li>
+          <button class="nav-toggle" aria-expanded="false" aria-haspopup="true">Services <i class="caret"></i></button>
+          <div class="nav-drop nav-drop-wide">
+            <div class="nav-drop-cols">
+              <div class="nav-drop-col">
+                <div class="nav-drop-title">Paid Media</div>
+                <a href="/ppc-management/">PPC Management</a>
+                <a href="/google-ads-management/">Google Ads Management</a>
+                <a href="/facebook-ads-management/">Facebook &amp; Meta Ads</a>
+                <a href="/social-media-marketing/">Social Media Marketing</a>
+                <a href="/programmatic-advertising/">Programmatic Display</a>
+                <a href="/ctv-advertising/">CTV &amp; Streaming Ads</a>
+                <a href="/retargeting/">Retargeting</a>
+              </div>
+              <div class="nav-drop-col">
+                <div class="nav-drop-title">Traditional Media</div>
+                <a href="/radio-tv-advertising/">Radio &amp; TV Advertising</a>
+                <a href="/direct-mail-marketing/">Direct Mail Marketing</a>
+                <div class="nav-drop-title" style="margin-top:20px;">Creative &amp; Build</div>
+                <a href="/video-production/">Video Production</a>
+                <a href="/youtube-promotion/">YouTube Promotion</a>
+                <a href="/branding-design/">Branding &amp; Design</a>
+              </div>
+              <div class="nav-drop-col">
+                <div class="nav-drop-title">Build &amp; Convert</div>
+                <a href="/app-development-company/">App Development</a>
+                <a href="/web-app-development/">Web App Development</a>
+                <a href="/ai-website-design/">AI Website Design</a>
+                <a href="/conversion-optimization/">Conversion Optimization</a>
+                <a href="/lead-generation/">Lead Generation</a>
+                <a href="/email-marketing/">Email Marketing</a>
+                <a href="/retention-systems/">Marketing Automation</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button class="nav-toggle" aria-expanded="false" aria-haspopup="true">Industries <i class="caret"></i></button>
+          <div class="nav-drop">
+            <div class="nav-drop-cols">
+              <div class="nav-drop-col">
+                <div class="nav-drop-title">Who We Serve</div>
+                <a href="/law-firm-marketing/">Law Firms</a>
+                <a href="/saas-marketing/">SaaS Companies</a>
+                <a href="/b2b-marketing/">B2B &amp; Enterprise</a>
+                <a href="/healthcare-marketing/">Healthcare</a>
+              </div>
+              <div class="nav-drop-col">
+                <div class="nav-drop-title">&nbsp;</div>
+                <a href="/ecommerce-marketing/">Ecommerce</a>
+                <a href="/dental-marketing/">Dental Practices</a>
+                <a href="/real-estate-marketing/">Real Estate</a>
+                <a href="/restaurant-marketing/">Restaurants</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button class="nav-toggle" aria-expanded="false" aria-haspopup="true">Consulting <i class="caret"></i></button>
+          <div class="nav-drop">
+            <div class="nav-drop-cols">
+              <div class="nav-drop-col">
+                <div class="nav-drop-title">Advisory</div>
+                <a href="/sales-training/">Sales Training</a>
+                <a href="/business-consulting/">Business Consulting</a>
+                <a href="/marketing-consulting/">Marketing Consulting</a>
+                <a href="/growth-system/">The Growth System</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="/ai-marketing-agency/">AI Marketing</a></li>
+        <li><a href="/marketing-plan-builder/">Plan Builder</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/" class="nav-cta">Free Strategy Session</a></li>
+      </ul>
+    </nav>
+    <div class="header-call">
+      <a href="https://wa.me/17207128615" class="wa-link" target="_blank" rel="noopener" aria-label="Message Search Converts on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M17.47 14.38c-.29-.15-1.71-.85-1.98-.94-.27-.1-.46-.15-.65.14-.19.29-.75.94-.92 1.13-.17.19-.34.22-.63.07-.29-.15-1.22-.45-2.33-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.65-1.57-.89-2.15-.23-.56-.47-.49-.65-.5-.17-.01-.36-.01-.55-.01-.19 0-.51.07-.77.36-.27.29-1.01.99-1.01 2.41s1.04 2.8 1.18 2.99c.15.19 2.04 3.12 4.95 4.38.69.3 1.23.48 1.65.61.69.22 1.33.19 1.83.12.56-.08 1.71-.7 1.96-1.38.24-.68.24-1.26.17-1.38-.07-.12-.26-.19-.55-.34zM12.05 21.8h-.02c-1.77 0-3.51-.48-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 01-1.51-5.26c0-5.45 4.44-9.89 9.9-9.89 2.64 0 5.13 1.03 7 2.9a9.82 9.82 0 012.9 6.99c0 5.46-4.44 9.89-9.9 9.89zM20.52 3.45A11.78 11.78 0 0012.05 0C5.5 0 .17 5.33.17 11.88c0 2.09.55 4.14 1.59 5.94L.07 24l6.33-1.66a11.87 11.87 0 005.65 1.44h.01c6.55 0 11.88-5.33 11.88-11.88 0-3.17-1.24-6.16-3.48-8.4z"/></svg>
+      </a>
+      <a href="tel:+17207128615" class="header-phone" aria-label="Call Search Converts at plus 1 720-712-8615">+1 720-712-8615</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <div class="m-group">Paid Media</div>
+    <a class="m-sub" href="/ppc-management/">PPC Management</a>
+    <a class="m-sub" href="/google-ads-management/">Google Ads Management</a>
+    <a class="m-sub" href="/facebook-ads-management/">Facebook &amp; Meta Ads</a>
+    <a class="m-sub" href="/social-media-marketing/">Social Media Marketing</a>
+    <a class="m-sub" href="/programmatic-advertising/">Programmatic Display</a>
+    <a class="m-sub" href="/ctv-advertising/">CTV &amp; Streaming Ads</a>
+    <a class="m-sub" href="/retargeting/">Retargeting</a>
+    <div class="m-group">Traditional Media</div>
+    <a class="m-sub" href="/radio-tv-advertising/">Radio &amp; TV Advertising</a>
+    <a class="m-sub" href="/direct-mail-marketing/">Direct Mail Marketing</a>
+    <div class="m-group">Creative &amp; Build</div>
+    <a class="m-sub" href="/video-production/">Video Production</a>
+    <a class="m-sub" href="/youtube-promotion/">YouTube Promotion</a>
+    <a class="m-sub" href="/branding-design/">Branding &amp; Design</a>
+    <a class="m-sub" href="/app-development-company/">App Development</a>
+    <a class="m-sub" href="/web-app-development/">Web App Development</a>
+    <a class="m-sub" href="/ai-website-design/">AI Website Design</a>
+    <div class="m-group">Convert &amp; Retain</div>
+    <a class="m-sub" href="/conversion-optimization/">Conversion Optimization</a>
+    <a class="m-sub" href="/lead-generation/">Lead Generation</a>
+    <a class="m-sub" href="/email-marketing/">Email Marketing</a>
+    <a class="m-sub" href="/retention-systems/">Marketing Automation</a>
+    <div class="m-group">Industries</div>
+    <a class="m-sub" href="/law-firm-marketing/">Law Firms</a>
+    <a class="m-sub" href="/saas-marketing/">SaaS Companies</a>
+    <a class="m-sub" href="/b2b-marketing/">B2B &amp; Enterprise</a>
+    <a class="m-sub" href="/healthcare-marketing/">Healthcare</a>
+    <a class="m-sub" href="/ecommerce-marketing/">Ecommerce</a>
+    <a class="m-sub" href="/dental-marketing/">Dental Practices</a>
+    <a class="m-sub" href="/real-estate-marketing/">Real Estate</a>
+    <a class="m-sub" href="/restaurant-marketing/">Restaurants</a>
+    <div class="m-group">Consulting</div>
+    <a class="m-sub" href="/sales-training/">Sales Training</a>
+    <a class="m-sub" href="/business-consulting/">Business Consulting</a>
+    <a class="m-sub" href="/marketing-consulting/">Marketing Consulting</a>
+    <a class="m-sub" href="/growth-system/">The Growth System</a>
+    <div class="m-group">More</div>
+    <a href="/ai-marketing-agency/">AI Marketing</a>
+    <a href="/marketing-plan-builder/">Plan Builder</a>
+    <a href="/about/">About</a>
+    <a href="/contact/">Free Strategy Session</a>
+    <a href="tel:+17207128615" style="color:var(--orange);font-size:23px;">Call +1 720-712-8615</a>
+    <a href="https://wa.me/17207128615" target="_blank" rel="noopener" style="color:#128C4A;">WhatsApp +1 720-712-8615</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="ppc-hero">
+  <div class="ppc-hero-inner">
+    <div>
+      <nav class="ppc-crumb" aria-label="Breadcrumb">
+        <a href="/">Home</a> / <a href="/services/">Services</a> / <span>PPC Management</span>
+      </nav>
+      <div class="ppc-tick">PPC Agency &mdash; Every Major Platform</div>
+      <h1 class="ppc-h1">
+        The Highest Bid
+        <span class="amber">Does Not Win.</span>
+      </h1>
+      <p class="ppc-lede">
+        PPC advertising runs a live auction on every single search, and position is decided by bid <strong>multiplied by relevance</strong>. Advertisers who understand that pay less than their competitors for better placement. Everyone else just raises the bid. We are a PPC agency built around the half most accounts ignore.
+      </p>
+      <div class="ppc-stats">
+        <div class="ppc-stat"><span>Managed</span><strong>All platforms</strong><em>Search, social, shopping, retail</em></div>
+        <div class="ppc-stat"><span>Reported on</span><strong>Revenue</strong><em>Not impressions or clicks</em></div>
+        <div class="ppc-stat"><span>Contracts</span><strong>None</strong><em>Month to month</em></div>
+      </div>
+    </div>
+
+    <div class="serp" aria-hidden="true">
+      <div class="serp-bar">
+        <i class="serp-dot"></i><i class="serp-dot"></i><i class="serp-dot"></i>
+        <div class="serp-url">emergency plumber near me</div>
+      </div>
+      <div class="serp-body">
+        <div class="serp-row ad top">
+          <span class="serp-pos">Position 1</span>
+          <span class="serp-badge">Ad</span>
+          <div class="serp-title">Emergency Plumber &mdash; 90 Minute Response</div>
+          <div class="serp-link">example-plumbing.com/emergency</div>
+          <div class="serp-desc">Licensed, insured, upfront pricing. Call now.</div>
+        </div>
+        <div class="serp-row ad">
+          <span class="serp-pos">Position 2</span>
+          <span class="serp-badge">Ad</span>
+          <div class="serp-title">24/7 Plumbing Services In Your Area</div>
+          <div class="serp-link">competitor-two.com</div>
+          <div class="serp-desc">Fast, friendly service from local plumbers.</div>
+        </div>
+        <div class="serp-row ad">
+          <span class="serp-pos">Position 3</span>
+          <span class="serp-badge">Ad</span>
+          <div class="serp-title">Plumbing Repair Specialists</div>
+          <div class="serp-link">competitor-three.com</div>
+        </div>
+        <div class="serp-row serp-org">
+          <div class="serp-title">Local Plumbers &mdash; Directory Listing</div>
+          <div class="serp-link">directory-site.com/plumbers</div>
+          <div class="serp-desc">First organic result, below three paid positions.</div>
+        </div>
+      </div>
+      <div class="serp-note">Three paid positions sit above the first organic result. <strong>Who fills them is decided in about 200 milliseconds.</strong></div>
+    </div>
+  </div>
+</section>
+
+<div class="neon-divider"></div>
+
+<!-- THE AUCTION -->
+<section class="ppc-sec">
+  <div class="ppc-wrap wide">
+    <div class="ppc-eyebrow">How the auction actually works</div>
+    <h2 class="ppc-h2">Bid &times; relevance.<br><span class="amber">Move the second number and the first one matters less.</span></h2>
+    <p style="max-width:860px;">
+      Search platforms do not sell position to the highest bidder. They rank advertisers on a score that combines the bid with how relevant and useful the ad is expected to be &mdash; Google calls its version Quality Score. A well-built account with a high score can outrank a competitor bidding significantly more, and pay less per click while doing it.
+    </p>
+    <p style="max-width:860px;">
+      That is the entire arbitrage in paid search, and it is where a competent PPC agency or PPC company earns its fee. Drag the sliders below and watch what happens to your position and your actual cost per click.
+    </p>
+
+    <div class="auction">
+      <div class="auction-grid">
+        <div>
+          <div class="auc-you">
+            <div class="auc-you-head">Your account</div>
+            <div class="auc-ctrl">
+              <label for="au-bid">Max bid <b id="au-bid-out">$8.00</b></label>
+              <input class="calc-slider" type="range" id="au-bid" min="10" max="4000" step="10" value="800">
+            </div>
+            <div class="auc-ctrl" style="margin-bottom:18px;">
+              <label for="au-qs">Quality score <b id="au-qs-out">5</b></label>
+              <input class="calc-slider" type="range" id="au-qs" min="1" max="10" step="1" value="5">
+            </div>
+          </div>
+          <p style="font-size:15px;color:#64748b;line-height:1.6;margin:0;">
+            Competitors hold steady. Only your two numbers change. Try raising quality score without touching the bid, then try the reverse.
+          </p>
+        </div>
+
+        <div>
+          <div class="auc-board">
+            <div class="auc-hd">
+              <span>Pos</span><span>Advertiser</span><span>Bid</span><span>Score</span><span>Pays / click</span>
+            </div>
+            <div id="auc-rows"></div>
+          </div>
+          <div class="auc-verdict" id="auc-verdict">
+            <strong>Position 3 at $6.40 a click</strong>
+            You are mid-pack. Raising the bid buys position, and you pay for every click of it forever. Raising the score buys the same position and lowers the price at the same time.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p style="max-width:860px;font-size:15.5px;color:#64748b;">
+      Simplified for teaching: real auctions also weigh ad format, device, location and competitor behaviour, and the exact formulas are proprietary. The relationship shown here &mdash; that relevance discounts your cost and multiplies your bid &mdash; is the part that holds true everywhere and the part most accounts leave on the table.
+    </p>
+
+    <h3 class="ppc-h3">Why this is the whole argument for hiring a PPC company</h3>
+    <p style="max-width:860px;">
+      A PPC company that only knows how to raise bids has one lever, and it costs money every time they pull it. An advertiser who can lift relevance has a lever that <em>reduces</em> cost while improving position. That difference does not show up in a monthly report as anything dramatic. It shows up as a competitor quietly acquiring the same customers for 40% less, month after month, and eventually being able to outspend you on a smaller budget.
+    </p>
+    <p style="max-width:860px;">
+      Relevance is built from tight keyword grouping, ad copy that matches the search rather than the brand, and a landing page that delivers what the ad promised. That last one is why we run <a href="/conversion-optimization/">conversion optimization</a> alongside every paid account &mdash; the landing page is not downstream of the ad auction, it is an input to it.
+    </p>
+  </div>
+</section>
+
+<!-- WHAT PPC MANAGEMENT IS -->
+<section class="ppc-sec light">
+  <div class="ppc-wrap">
+    <div class="ppc-eyebrow">Plain English</div>
+    <h2 class="ppc-h2">What is PPC management?</h2>
+    <div class="definition" style="margin-bottom:30px;">
+      <p><strong>PPC management</strong> is the ongoing work of planning, building, running and improving pay-per-click advertising campaigns so that the money spent on clicks produces profitable customers. It covers keyword and audience research, account structure, ad creation, bidding strategy, negative keywords, landing page alignment, conversion tracking and continuous testing.</p>
+    </div>
+    <p>
+      Pay per click advertising means exactly what it says: you pay only when someone clicks. That sounds low risk and is the reason so much money gets wasted on it. Nobody notices the cost of a click. They notice the invoice at the end of the month, by which point the account has bought several thousand of them and nobody can say which ones led to revenue.
+    </p>
+    <p>
+      A PPC agency exists to close that gap. Not to run ads &mdash; the platforms will happily run ads for you, and their automated recommendations are designed to increase your spend, not your profit. The job is to make every click accountable to a number that appears in your bank account.
+    </p>
+
+    <h3 class="ppc-h3">What actually gets managed</h3>
+    <table class="led">
+      <thead><tr><th>Area</th><th>What it involves</th><th>Reviewed</th></tr></thead>
+      <tbody>
+        <tr><td>Account structure</td><td>Campaign and ad group architecture tight enough that each ad matches a narrow set of searches</td><td>Monthly</td></tr>
+        <tr><td>Keyword and audience research</td><td>Finding the searches with buying intent and the audiences worth paying to reach</td><td>Ongoing</td></tr>
+        <tr><td>Negative keywords</td><td>Blocking the searches that look relevant and never convert. The single most neglected task in paid search</td><td>Weekly</td></tr>
+        <tr><td>Ad copy and assets</td><td>Writing and testing headlines, descriptions, extensions and creative against each other</td><td>Ongoing</td></tr>
+        <tr><td>Bidding and budget</td><td>Choosing the strategy, setting targets, and shifting budget toward what is producing revenue</td><td>Weekly</td></tr>
+        <tr><td>Landing pages</td><td>Making the page deliver what the ad promised, which improves both conversion and quality score</td><td>Ongoing</td></tr>
+        <tr><td>Conversion tracking</td><td>Making sure the platform is optimizing toward real sales rather than form loads or phantom events</td><td>Continuously</td></tr>
+        <tr><td>Reporting</td><td>Cost per lead, cost per sale, and return &mdash; not impressions, clicks or position</td><td>Monthly</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- THE FIVE LEAKS -->
+<section class="ppc-sec">
+  <div class="ppc-wrap">
+    <div class="ppc-eyebrow">Where the budget goes</div>
+    <h2 class="ppc-h2">Five ways a PPC account<br><span class="amber">quietly burns money</span></h2>
+    <p>
+      These are what we find in nearly every PPC advertising audit of an account that was set up once and left running. None of them look like a problem on the dashboard, which is exactly why they persist.
+    </p>
+    <table class="led">
+      <thead><tr><th>The leak</th><th>What is happening</th><th>Typical cost</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>No negative keywords</td>
+          <td>Broad match is showing your ads on searches containing the words "free", "jobs", "DIY", "salary" and your competitors' brand names. Every one of those clicks is billed.</td>
+          <td class="cost">High</td>
+        </tr>
+        <tr>
+          <td>Tracking that lies</td>
+          <td>The platform is counting page loads, thank-you page visits that fire twice, or form starts as conversions. It then optimizes hard toward producing more of them.</td>
+          <td class="cost">Severe</td>
+        </tr>
+        <tr>
+          <td>One ad group, forty keywords</td>
+          <td>A single generic ad serving dozens of different searches. Relevance drops, quality score follows, and the cost per click rises across the whole account.</td>
+          <td class="cost">High</td>
+        </tr>
+        <tr>
+          <td>Ads pointing at the homepage</td>
+          <td>Someone searched for a specific service and landed on a page about the company. They have to navigate to what they wanted, and most of them do not.</td>
+          <td class="cost">High</td>
+        </tr>
+        <tr>
+          <td>Automation left unsupervised</td>
+          <td>Auto-applied recommendations expanding match types and raising budgets. The platform's incentive is spend; yours is profit. They are not the same incentive.</td>
+          <td class="cost">Severe</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      Note what is missing from that list: bid amount. Almost nobody's core problem is that they are bidding too little. The money is lost before bidding is even the relevant question, and raising the budget on an account leaking in five places simply loses money faster.
+    </p>
+  </div>
+</section>
+
+<!-- PROFIT CALCULATOR -->
+<section class="ppc-sec light">
+  <div class="ppc-wrap">
+    <div class="ppc-eyebrow">Run your numbers</div>
+    <h2 class="ppc-h2">What can you actually<br><span class="amber">afford to pay per click?</span></h2>
+    <p>
+      This is the calculation that should precede every paid search decision and rarely does. Work backwards from what a customer is worth and the maximum viable cost per click falls out of it. If your current CPC is above that number, no amount of optimization saves the campaign &mdash; the economics do not work and something upstream has to change.
+    </p>
+
+    <div class="pcalc">
+      <div class="pcalc-grid">
+        <div>
+          <label for="pc-cpc">Average cost per click</label>
+          <input type="number" id="pc-cpc" value="6.50" min="0.05" step="0.05" inputmode="decimal">
+        </div>
+        <div>
+          <label for="pc-cvr">Landing page conversion rate (%)</label>
+          <input type="number" id="pc-cvr" value="4" min="0.1" step="0.1" inputmode="decimal">
+        </div>
+        <div>
+          <label for="pc-close">Lead to sale close rate (%)</label>
+          <input type="number" id="pc-close" value="25" min="1" step="1" inputmode="numeric">
+        </div>
+        <div>
+          <label for="pc-value">Gross profit per customer ($)</label>
+          <input type="number" id="pc-value" value="1200" min="1" step="10" inputmode="numeric">
+        </div>
+      </div>
+      <div class="pcalc-out">
+        <div class="pcalc-cell"><span>Cost per lead</span><strong id="pc-cpl">$163</strong></div>
+        <div class="pcalc-cell"><span>Cost per sale</span><strong id="pc-cpa">$650</strong></div>
+        <div class="pcalc-cell"><span>Profit per sale</span><strong id="pc-profit" class="good">$550</strong></div>
+        <div class="pcalc-cell"><span>Break-even CPC</span><strong id="pc-break">$12.00</strong></div>
+      </div>
+      <div class="pcalc-verdict" id="pc-verdict">
+        <strong>Profitable, with room to bid.</strong> You break even at $12.00 a click and you are paying $6.50, so there is headroom to compete harder for better positions. The constraint here is volume, not economics.
+      </div>
+    </div>
+
+    <h3 class="ppc-h3">Why this changes the strategy</h3>
+    <p>
+      Two businesses in the same industry can face completely different correct answers. One with a 2% conversion rate and a $400 profit per customer cannot afford $6 clicks at all and should fix the landing page before spending another dollar. One with an 8% conversion rate and a $3,000 profit can outbid nearly everyone and should be worried about volume, not cost.
+    </p>
+    <p>
+      Notice which input moves the break-even number fastest: the conversion rate. Doubling it doubles what you can afford to pay per click, which means you can buy positions your competitors cannot reach. This is why we treat <a href="/conversion-optimization/">conversion optimization</a> and paid media as one engagement rather than two, and why an agency that only touches the ad account is working with one hand tied.
+    </p>
+  </div>
+</section>
+
+<!-- CHANNELS -->
+<section class="ppc-sec">
+  <div class="ppc-wrap wide">
+    <div class="ppc-eyebrow">Platforms we run</div>
+    <h2 class="ppc-h2">Pay-per-click is not one channel.<br><span class="amber">It is a dozen with different rules.</span></h2>
+    <p style="max-width:860px;margin-bottom:34px;">
+      Each platform has its own auction, its own intent level and its own economics. Running them from one account with one strategy is how budgets get spread evenly across channels that deserve wildly different treatment.
+    </p>
+    <div class="chan">
+      <a href="/google-ads-management/" class="chan-row">
+        <span class="chan-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.2" y1="16.2" x2="21" y2="21"/></svg></span>
+        <span><span class="chan-t">Google Ads</span><span class="chan-d">Search, Shopping, Performance Max and Display. The highest-intent traffic available and the most competitive auction.</span></span>
+        <span class="chan-cpc"><span>Intent</span><strong>Highest</strong></span>
+      </a>
+      <a href="/facebook-ads-management/" class="chan-row">
+        <span class="chan-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 3h-3.5A4.5 4.5 0 0010 7.5V11H7v4h3v6h4v-6h3l1-4h-4V7.5A.5.5 0 0114.5 7H18z"/></svg></span>
+        <span><span class="chan-t">Facebook &amp; Meta Ads</span><span class="chan-d">Interest and lookalike targeting across Facebook and Instagram. Demand creation rather than demand capture.</span></span>
+        <span class="chan-cpc"><span>Intent</span><strong>Lower, cheaper</strong></span>
+      </a>
+      <a href="/programmatic-advertising/" class="chan-row">
+        <span class="chan-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="8" y1="21" x2="16" y2="21"/></svg></span>
+        <span><span class="chan-t">Programmatic display</span><span class="chan-d">Audience-targeted banner and native inventory bought in real time across the open web.</span></span>
+        <span class="chan-cpc"><span>Best for</span><strong>Reach</strong></span>
+      </a>
+      <a href="/ctv-advertising/" class="chan-row">
+        <span class="chan-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12" rx="2"/><polygon points="10.5,10 15,12 10.5,14"/></svg></span>
+        <span><span class="chan-t">CTV &amp; streaming</span><span class="chan-d">Connected TV and streaming audio. Television reach with digital targeting and measurement.</span></span>
+        <span class="chan-cpc"><span>Growth</span><strong>Fastest</strong></span>
+      </a>
+      <a href="/retargeting/" class="chan-row">
+        <span class="chan-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1"/></svg></span>
+        <span><span class="chan-t">Retargeting</span><span class="chan-d">Reaching the people who already visited and left. Usually the cheapest conversions in the whole account.</span></span>
+        <span class="chan-cpc"><span>Cost per sale</span><strong>Lowest</strong></span>
+      </a>
+      <a href="/social-media-marketing/" class="chan-row">
+        <span class="chan-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="17" cy="6" r="2.6"/><circle cx="6.5" cy="12" r="2.6"/><circle cx="17" cy="18" r="2.6"/><line x1="8.9" y1="10.7" x2="14.6" y2="7.3"/><line x1="8.9" y1="13.3" x2="14.6" y2="16.7"/></svg></span>
+        <span><span class="chan-t">Paid social &amp; TikTok</span><span class="chan-d">Short-form video and feed placements. Cheap attention, low intent, needs strong creative to work.</span></span>
+        <span class="chan-cpc"><span>Depends on</span><strong>Creative</strong></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PPC VS SEO -->
+<section class="ppc-sec light">
+  <div class="ppc-wrap">
+    <div class="ppc-eyebrow">The honest comparison</div>
+    <h2 class="ppc-h2">PPC or SEO?<br><span class="amber">The question is usually the wrong one.</span></h2>
+    <p>
+      Agencies that sell only one of these will tell you theirs is better. We run both, so we have no reason to. The truthful answer is that they solve different problems on different timelines and the right split depends on how urgently you need customers and how long you plan to be in business.
+    </p>
+    <table class="led">
+      <thead><tr><th></th><th>Pay-per-click</th><th>Organic search</th></tr></thead>
+      <tbody>
+        <tr><td>Time to first customer</td><td>Days</td><td class="gain">Months</td></tr>
+        <tr><td>Cost behaviour</td><td>Per click, forever</td><td class="gain">Front-loaded, then cheap</td></tr>
+        <tr><td>When you stop paying</td><td>Traffic stops that day</td><td class="gain">Decays slowly</td></tr>
+        <tr><td>Control over messaging</td><td>Total, changes in minutes</td><td class="gain">Indirect, slow</td></tr>
+        <tr><td>Testing speed</td><td>Fast &mdash; a week of data</td><td class="gain">Slow</td></tr>
+        <tr><td>Ceiling</td><td>Your budget</td><td class="gain">Your authority</td></tr>
+      </tbody>
+    </table>
+    <p>
+      The usual right answer for a business that needs revenue now is to run paid to generate customers immediately while organic search is built underneath it, then let the organic results gradually take over the head terms so the paid budget can be redeployed to the searches organic will never win.
+    </p>
+    <p>
+      Search engine optimization and AI-search optimization run through <a href="https://eyetoad.com" rel="noopener">Eye To Ad Media</a>, which specializes in that side of the work. If you are a local business and organic visibility is the priority, their <a href="https://eyetoad.com" rel="noopener">Denver SEO</a> team is the better first call. Paid media, conversion and creative are handled here.
+    </p>
+    <p>
+      There is a practical reason to run them together rather than at separate agencies. Paid search data tells you within weeks which keywords convert and which merely attract clicks &mdash; information that would take organic search a year to reveal. Feeding that back into the <a href="https://eyetoad.com" rel="noopener">search optimization</a> roadmap means the organic work targets proven terms instead of guesses.
+    </p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="ppc-sec" style="padding-top:0;">
+  <div class="ppc-wrap">
+    <div class="ppc-cta">
+      <h3>Free PPC account audit</h3>
+      <p>We will look at your account, find the leaks, and tell you what we would change &mdash; whether or not you hire us. No obligation, and you keep the findings.</p>
+      <a href="/contact/" class="sc-btn-primary">Get my free audit</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="ppc-sec light" style="padding-top:0;">
+  <div class="ppc-wrap">
+    <div class="ppc-eyebrow">How we work</div>
+    <h2 class="ppc-h2">What happens when you<br><span class="amber">hand us an account</span></h2>
+    <ol class="guide-ol">
+      <li><strong>Audit before anything changes.</strong> We look at search terms, negative keyword coverage, tracking accuracy, account structure and landing page alignment. Roughly half the value we deliver in the first quarter is found in this step.</li>
+      <li><strong>Fix the tracking first.</strong> If conversions are being counted wrong, every decision after this point is wrong too, including the platform's own automated bidding. Nothing else starts until the numbers are trustworthy.</li>
+      <li><strong>Stop the bleeding.</strong> Negative keywords, pausing the searches that have never converted, and switching off auto-applied recommendations. This usually cuts waste before it improves anything.</li>
+      <li><strong>Rebuild structure.</strong> Tighter ad groups, ads written to the search rather than the brand, landing pages matched to the promise. This is where quality score and cost per click start moving.</li>
+      <li><strong>Then bid.</strong> Only once the account deserves cheap clicks do we start pushing for volume and position. Bidding aggressively into a badly built account is how budgets disappear.</li>
+      <li><strong>Test continuously.</strong> Ads, landing pages and offers, measured properly. Our approach to that is set out on the <a href="/ab-testing/">A/B testing</a> page.</li>
+      <li><strong>Report on money.</strong> Cost per lead, cost per sale, return on ad spend. If a report cannot be connected to revenue, it does not go in the report.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="ppc-sec">
+  <div class="ppc-wrap wide">
+    <div class="ppc-eyebrow">Sector experience</div>
+    <h2 class="ppc-h2">Different industries,<br><span class="amber">very different auctions</span></h2>
+    <p style="max-width:860px;margin-bottom:30px;">
+      A click that costs three dollars in one sector costs ninety in another, and the account that works in one would bankrupt a business in the other. Cost per click only means something next to what a customer is worth.
+    </p>
+    <div class="ind-grid">
+      <a href="/law-firm-marketing/" class="ind-card"><span>&#9878;</span><strong>Law Firms</strong><p>Among the most expensive clicks in paid search. Intake quality decides everything.</p></a>
+      <a href="/saas-marketing/" class="ind-card"><span>&#128187;</span><strong>SaaS</strong><p>Trial signups are cheap, trial-to-paid is the real metric. Optimize for the second one.</p></a>
+      <a href="/b2b-marketing/" class="ind-card"><span>&#127970;</span><strong>B2B</strong><p>Long cycles, several stakeholders, and attribution that spans months.</p></a>
+      <a href="/healthcare-marketing/" class="ind-card"><span>&#127973;</span><strong>Healthcare</strong><p>Restricted targeting and compliance rules that change what you can bid on.</p></a>
+      <a href="/ecommerce-marketing/" class="ind-card"><span>&#128722;</span><strong>Ecommerce</strong><p>Shopping feeds and margin per product decide the ceiling, not keywords.</p></a>
+      <a href="/dental-marketing/" class="ind-card"><span>&#129463;</span><strong>Dental</strong><p>Local intent, phone conversion, and new-patient offer design.</p></a>
+      <a href="/real-estate-marketing/" class="ind-card"><span>&#127968;</span><strong>Real Estate</strong><p>Lead volume is easy. Lead quality and speed to contact are not.</p></a>
+      <a href="/restaurant-marketing/" class="ind-card"><span>&#127869;</span><strong>Restaurants</strong><p>Thin margins mean paid only works on repeat visits and catering.</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq-section" id="faq" aria-labelledby="faq-h2">
+  <div class="section-inner">
+    <div class="text-center reveal" style="margin-bottom:48px;">
+      <div class="section-eyebrow" style="justify-content:center;">Questions we get asked</div>
+      <h2 class="section-h2" id="faq-h2">PPC management<br><span class="text-orange">questions, answered</span></h2>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">What does a PPC agency actually do?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>A PPC agency plans, builds and continuously improves your pay-per-click advertising so the money spent on clicks produces profitable customers. That covers keyword and audience research, account structure, writing and testing ads, negative keyword management, bidding strategy, landing page alignment, conversion tracking and reporting. The platforms will run ads without any of this &mdash; what they will not do is tell you when your account is buying clicks that never become revenue, because their automated recommendations are built to increase spend rather than profit.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">What is pay per click advertising?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Pay-per-click advertising is a model where you bid to appear in a placement and pay only when someone clicks your ad. It runs on search engines, social platforms, retail sites and across the open web through programmatic display. The appeal is that you pay for attention rather than exposure. The risk is that a click costs so little individually that waste accumulates invisibly until the monthly invoice arrives and nobody can say which clicks led to revenue.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">Does the highest bidder always get the top position?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>No, and this is the most valuable thing most advertisers never learn. Position is determined by a combination of your bid and how relevant and useful your ad and landing page are expected to be. Google calls its version Quality Score. An advertiser with strong relevance can outrank someone bidding considerably more while paying less per click. That is why account structure, ad copy and landing pages are not cosmetic concerns &mdash; they are direct inputs into what you pay. Use the auction simulator on this page to see the effect.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">How much should I spend on PPC?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Work backwards rather than picking a number. Take your gross profit per customer, multiply by your close rate to get what a lead is worth, then multiply by your landing page conversion rate to get your break-even cost per click. If your break-even CPC comfortably exceeds market rates in your sector, spend as much as you can profitably absorb. If it does not, more budget will only lose money faster and the fix is upstream &mdash; in your conversion rate, your offer, or your pricing. The calculator on this page runs that math with your own numbers.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">How much does PPC management cost?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Most PPC company and PPC agency fees are structured as a percentage of ad spend, a flat monthly retainer, or a hybrid. We price to the work rather than publishing tiers, because a single-location service business with one campaign and a national ecommerce account with thousands of products are not the same job. What we will do is give you a real number on the first call. Be wary of any arrangement where the agency's fee rises automatically with your spend and nothing else &mdash; it rewards spending more rather than earning more.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">How long before PPC produces results?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Clicks and leads can arrive within days of launch, which is the main advantage of paid over organic search. Reliable performance takes longer. Expect two to four weeks before there is enough conversion data to judge anything, and roughly 90 days before an account that needed restructuring is genuinely optimized. Anyone promising stable profitable results in week one is describing luck rather than a process.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">Should I do PPC or SEO?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Usually both, in that order. Paid search produces customers within days and gives you conversion data fast; organic search takes months but keeps working after you stop paying. The common sequence is to run paid for immediate revenue while organic is built underneath, then redeploy paid budget toward searches organic will never win. Search and AI-search optimization runs through <a href="https://eyetoad.com" rel="noopener">Eye To Ad Media</a> rather than being treated here as an add-on. One practical benefit of running them together is that paid data reveals which keywords actually convert within weeks, which stops the organic roadmap being built on guesses.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">Do you require a long-term contract?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>No. Paid media is month to month. We do ask that you give a restructured account a fair run &mdash; roughly 90 days &mdash; because judging a rebuild at week three tells you nothing except that data was still accumulating. But that is a request, not a clause, and you own your ad accounts throughout. Any agency that will not give you administrative ownership of your own advertising accounts is telling you something important about how they expect the relationship to end.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">What is a PPC audit and is it really free?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>An audit is a review of your existing account looking for wasted spend, tracking errors, structural problems and landing page mismatches. Ours is genuinely free and you keep the findings whether or not you work with us. The reason we can offer it is straightforward: accounts with real problems are accounts we can help, and accounts that are already well run get told so. Call <a href="tel:+17207128615">+1 720-712-8615</a> or use the form below.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">Do you work with businesses outside Colorado?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Yes. We are based in Denver and manage paid media for clients across the United States and Canada. Paid advertising is delivered entirely remotely, and most client relationships run over calls and shared dashboards. You keep ownership of your accounts regardless of where you are.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="bottom-form-section" aria-labelledby="bf-h2">
+  <div class="bottom-form-inner">
+    <div class="bottom-form-wrap">
+      <div class="bottom-form-header">
+        <h2 id="bf-h2">Get a free PPC account audit</h2>
+        <p>Tell us what you are spending and where. We come back within one business day with the leaks we found and what we would do about them.</p>
+      </div>
+      <div class="bottom-form-body">
+        <form id="bottom-form" novalidate>
+          <input type="hidden" name="source_site" value="searchconverts.com - PPC Management Page">
+          <input type="hidden" name="_form_loaded" id="b-form-loaded" value="">
+          <div style="display:none;" aria-hidden="true"><input type="text" name="_honey" tabindex="-1" autocomplete="off"></div>
+          <div class="sc-form-row">
+            <div class="sc-form-group"><label for="b-name">Your name *</label><input id="b-name" name="user_name" type="text" placeholder="Full name" required autocomplete="name"></div>
+            <div class="sc-form-group"><label for="b-biz">Business name</label><input id="b-biz" name="business_name" type="text" placeholder="Company" autocomplete="organization"></div>
+          </div>
+          <div class="sc-form-row">
+            <div class="sc-form-group"><label for="b-phone">Phone *</label><input id="b-phone" name="user_phone" type="tel" placeholder="720-000-0000" required autocomplete="tel"></div>
+            <div class="sc-form-group"><label for="b-email">Email</label><input id="b-email" name="user_email" type="email" placeholder="you@company.com" autocomplete="email"></div>
+          </div>
+          <div class="sc-form-row">
+            <div class="sc-form-group"><label for="b-spend">Monthly ad spend</label><input id="b-spend" name="monthly_spend" type="text" placeholder="e.g. $8,000 or not running yet"></div>
+            <div class="sc-form-group">
+              <label for="b-plat">Platforms running</label>
+              <select id="b-plat" name="platforms">
+                <option value="">Select</option>
+                <option>Google Ads only</option>
+                <option>Google + Meta</option>
+                <option>Meta / social only</option>
+                <option>Multiple platforms</option>
+                <option>Nothing running yet</option>
+              </select>
+            </div>
+          </div>
+          <div class="sc-form-group">
+            <label for="b-msg">What is not working?</label>
+            <textarea id="b-msg" name="user_message" placeholder="Leads too expensive? Volume too low? Not sure whether it is profitable? Tell us what prompted the search."></textarea>
+          </div>
+          <button type="submit" class="sc-submit-btn" id="bottom-submit-btn">Send my audit request</button>
+          <div id="bottom-form-msg" role="status" aria-live="polite"></div>
+        </form>
+        <p class="form-privacy" style="color:#6b7280;margin-top:14px;">Your information is never sold or shared. We respond within one business day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer" aria-label="Site footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <a href="/" class="footer-brand-logo" aria-label="Search Converts home">
+          <img src="/images/search-converts-logo-color.avif"
+               alt="Search Converts" width="200" height="200" loading="lazy">
+        </a>
+        <p class="footer-brand-desc">A full-service conversion rate optimization agency. We turn the traffic you already pay for into revenue &mdash; then scale it across every channel that reaches a buyer.</p>
+        <address style="font-style:normal;">
+          <a href="#" class="footer-contact-link js-email" data-email="footer">Email us</a>
+          <a href="tel:7207128615" class="footer-contact-link">720-712-8615</a>
+          <span class="footer-contact-link" style="color:#374151;">1001 Bannock St #660, Denver, CO 80204</span>
+        </address>
+      </div>
+      <div>
+        <div class="footer-col-title">Convert</div>
+        <ul class="footer-links">
+          <li><a href="/conversion-optimization/">Conversion Optimization</a></li>
+          <li><a href="/conversion-optimization-ideas/">Conversion Optimization Ideas</a></li>
+          <li><a href="/ab-testing/">A/B Testing</a></li>
+          <li><a href="/lead-generation/">Lead Generation</a></li>
+          <li><a href="/email-marketing/">Email Marketing</a></li>
+          <li><a href="/retention-systems/">Marketing Automation</a></li>
+          <li><a href="/marketing-plan-builder/">Marketing Plan Builder</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Advertise</div>
+        <ul class="footer-links">
+          <li><a href="/ppc-management/">PPC Management</a></li>
+          <li><a href="/google-ads-management/">Google Ads Management</a></li>
+          <li><a href="/facebook-ads-management/">Facebook &amp; Meta Ads</a></li>
+          <li><a href="/social-media-marketing/">Social Media Marketing</a></li>
+          <li><a href="/programmatic-advertising/">Programmatic Display</a></li>
+          <li><a href="/ctv-advertising/">CTV &amp; Streaming Ads</a></li>
+          <li><a href="/retargeting/">Retargeting</a></li>
+          <li><a href="/radio-tv-advertising/">Radio &amp; TV Advertising</a></li>
+          <li><a href="/direct-mail-marketing/">Direct Mail Marketing</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Build &amp; Grow</div>
+        <ul class="footer-links">
+          <li><a href="/video-production/">Video Production</a></li>
+          <li><a href="/youtube-promotion/">YouTube Promotion</a></li>
+          <li><a href="/branding-design/">Branding &amp; Design</a></li>
+          <li><a href="/app-development-company/">App Development</a></li>
+          <li><a href="/web-app-development/">Web App Development</a></li>
+          <li><a href="/ai-website-design/">AI Website Design</a></li>
+          <li><a href="/ai-marketing-agency/">AI Marketing Agency</a></li>
+          <li><a href="/sales-training/">Sales Training</a></li>
+          <li><a href="/business-consulting/">Business Consulting</a></li>
+          <li><a href="/marketing-consulting/">Marketing Consulting</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="padding:28px 0 4px;border-bottom:1px solid var(--border);">
+      <div class="footer-col-title">Our Network</div>
+      <ul class="footer-links" style="display:flex;flex-wrap:wrap;gap:8px 32px;">
+        <li><a href="https://eyetoad.com" rel="noopener">Eye To Ad Media &mdash; SEO &amp; AI search optimization</a></li>
+        <li><a href="https://denver-webdesign.com" rel="noopener">Denver Web Design</a></li>
+        <li><a href="https://mysaleshelp.com" rel="noopener">My Sales Help &mdash; free sales tools</a></li>
+        <li><a href="https://actionglobalnews.com" rel="noopener">Action Global News</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Search Converts LLC. All rights reserved.<br>
+        1001 Bannock St #660, Denver, CO 80204 &nbsp;|&nbsp; <a href="tel:7207128615">720-712-8615</a>
+      </p>
+      <p>
+        <a href="/about/">About</a> &nbsp;|&nbsp;
+        <a href="/services/">Services</a> &nbsp;|&nbsp;
+        <a href="/contact/">Contact</a> &nbsp;|&nbsp;
+        <a href="/privacy/">Privacy</a> &nbsp;|&nbsp;
+        <a href="/terms/">Terms</a> &nbsp;|&nbsp;
+        <a href="/sitemap.xml">Sitemap</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://searchconverts.com/#organization",
+      "name": "Search Converts",
+      "legalName": "Search Converts LLC",
+      "url": "https://searchconverts.com/",
+      "logo": { "@type": "ImageObject", "url": "https://searchconverts.com/images/search-converts-logo-color.avif" },
+      "telephone": "+17207128615",
+      "foundingDate": "2012",
+      "address": { "@type": "PostalAddress", "streetAddress": "1001 Bannock St #660", "addressLocality": "Denver", "addressRegion": "CO", "postalCode": "80204", "addressCountry": "US" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://searchconverts.com/#website",
+      "url": "https://searchconverts.com/",
+      "name": "Search Converts",
+      "inLanguage": "en-US",
+      "publisher": { "@id": "https://searchconverts.com/#organization" }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://searchconverts.com/ppc-management/#service",
+      "serviceType": "PPC Management",
+      "name": "PPC Management Services",
+      "description": "Pay-per-click advertising management covering keyword and audience research, account structure, ad creation, negative keyword management, bidding strategy, landing page alignment, conversion tracking and revenue reporting across Google Ads, Meta, programmatic, CTV and retail platforms.",
+      "provider": { "@id": "https://searchconverts.com/#organization" },
+      "areaServed": [ { "@type": "Country", "name": "United States" }, { "@type": "Country", "name": "Canada" } ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Paid media channels",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Google Ads Management", "url": "https://searchconverts.com/google-ads-management/" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Facebook and Meta Ads", "url": "https://searchconverts.com/facebook-ads-management/" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Programmatic Display Advertising", "url": "https://searchconverts.com/programmatic-advertising/" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CTV Advertising", "url": "https://searchconverts.com/ctv-advertising/" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Retargeting", "url": "https://searchconverts.com/retargeting/" } }
+        ]
+      }
+    },
+    {
+      "@type": ["WebPage","Article"],
+      "@id": "https://searchconverts.com/ppc-management/#webpage",
+      "url": "https://searchconverts.com/ppc-management/",
+      "name": "PPC Agency & Management | Search Converts",
+      "headline": "PPC Management: The Highest Bid Does Not Win",
+      "description": "A PPC agency that manages pay-per-click advertising across Google Ads, Meta, programmatic and CTV. Includes a live ad auction simulator and a break-even cost-per-click calculator.",
+      "isPartOf": { "@id": "https://searchconverts.com/#website" },
+      "inLanguage": "en-US",
+      "author": { "@id": "https://searchconverts.com/#organization" },
+      "publisher": { "@id": "https://searchconverts.com/#organization" },
+      "hasPart": { "@id": "https://searchconverts.com/ppc-management/#faq" },
+      "speakable": { "@type": "SpeakableSpecification", "cssSelector": [".definition", ".ppc-h1"] },
+      "about": {
+        "@type": "DefinedTerm",
+        "name": "Pay-per-click advertising",
+        "alternateName": ["PPC","PPC management","Paid search"],
+        "description": "An online advertising model in which advertisers bid to appear in a placement and pay a fee each time their ad is clicked, with position determined by a combination of bid amount and expected ad relevance.",
+        "sameAs": "https://en.wikipedia.org/wiki/Pay-per-click"
+      },
+      "mentions": [
+        { "@type": "DefinedTerm", "name": "Quality Score", "sameAs": "https://en.wikipedia.org/wiki/Quality_Score" },
+        { "@type": "DefinedTerm", "name": "Google Ads", "sameAs": "https://en.wikipedia.org/wiki/Google_Ads" },
+        { "@type": "DefinedTerm", "name": "Real-time bidding", "sameAs": "https://en.wikipedia.org/wiki/Real-time_bidding" }
+      ],
+      "significantLink": [
+        "https://searchconverts.com/",
+        "https://searchconverts.com/conversion-optimization/",
+        "https://searchconverts.com/google-ads-management/",
+        "https://searchconverts.com/contact/"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://searchconverts.com/ppc-management/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://searchconverts.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://searchconverts.com/services/" },
+        { "@type": "ListItem", "position": 3, "name": "PPC Management", "item": "https://searchconverts.com/ppc-management/" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://searchconverts.com/ppc-management/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "What does a PPC agency actually do?", "acceptedAnswer": { "@type": "Answer", "text": "A PPC agency plans, builds and continuously improves your pay-per-click advertising so the money spent on clicks produces profitable customers. That covers keyword and audience research, account structure, writing and testing ads, negative keyword management, bidding strategy, landing page alignment, conversion tracking and reporting. The platforms will run ads without any of this, but they will not tell you when your account is buying clicks that never become revenue, because their automated recommendations are built to increase spend rather than profit." } },
+        { "@type": "Question", "name": "What is pay per click advertising?", "acceptedAnswer": { "@type": "Answer", "text": "Pay-per-click advertising is a model where you bid to appear in a placement and pay only when someone clicks your ad. It runs on search engines, social platforms, retail sites and across the open web through programmatic display. The appeal is paying for attention rather than exposure. The risk is that a click costs so little individually that waste accumulates invisibly until the monthly invoice arrives." } },
+        { "@type": "Question", "name": "Does the highest bidder always get the top position?", "acceptedAnswer": { "@type": "Answer", "text": "No. Position is determined by a combination of your bid and how relevant and useful your ad and landing page are expected to be, which Google calls Quality Score. An advertiser with strong relevance can outrank someone bidding considerably more while paying less per click. Account structure, ad copy and landing pages are therefore direct inputs into what you pay, not cosmetic concerns." } },
+        { "@type": "Question", "name": "How much should I spend on PPC?", "acceptedAnswer": { "@type": "Answer", "text": "Work backwards rather than picking a number. Take gross profit per customer, multiply by close rate to get what a lead is worth, then multiply by landing page conversion rate to get break-even cost per click. If break-even CPC comfortably exceeds market rates in your sector, spend as much as you can profitably absorb. If it does not, more budget loses money faster and the fix is upstream in conversion rate, offer or pricing." } },
+        { "@type": "Question", "name": "How much does PPC management cost?", "acceptedAnswer": { "@type": "Answer", "text": "Industry management fees are usually a percentage of ad spend, a flat monthly retainer, or a hybrid. Search Converts prices to the work rather than publishing tiers, because a single-location service business and a national ecommerce account are not the same job, and gives a real number on the first call. Be wary of arrangements where the fee rises automatically with spend and nothing else, since that rewards spending more rather than earning more." } },
+        { "@type": "Question", "name": "How long before PPC produces results?", "acceptedAnswer": { "@type": "Answer", "text": "Clicks and leads can arrive within days of launch, which is the main advantage of paid over organic search. Reliable performance takes longer: expect two to four weeks before there is enough conversion data to judge anything, and roughly 90 days before an account that needed restructuring is genuinely optimized." } },
+        { "@type": "Question", "name": "Should I do PPC or SEO?", "acceptedAnswer": { "@type": "Answer", "text": "Usually both, in that order. Paid search produces customers within days and generates conversion data fast; organic search takes months but keeps working after you stop paying. The common sequence is to run paid for immediate revenue while organic is built underneath, then redeploy paid budget toward searches organic will never win. Running them together also means paid data reveals which keywords actually convert within weeks, so the organic roadmap is not built on guesses." } },
+        { "@type": "Question", "name": "Do you require a long-term contract?", "acceptedAnswer": { "@type": "Answer", "text": "No. Paid media is month to month. Search Converts asks that a restructured account is given roughly 90 days because judging a rebuild at week three tells you nothing, but that is a request rather than a clause, and clients retain administrative ownership of their own ad accounts throughout." } },
+        { "@type": "Question", "name": "What is a PPC audit and is it really free?", "acceptedAnswer": { "@type": "Answer", "text": "A PPC audit is a review of an existing account looking for wasted spend, tracking errors, structural problems and landing page mismatches. The Search Converts audit is free and the client keeps the findings whether or not they engage. Accounts with real problems are accounts that can be helped, and accounts already well run are told so." } },
+        { "@type": "Question", "name": "Do you work with businesses outside Colorado?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Search Converts is based in Denver and manages paid media for clients across the United States and Canada. Paid advertising is delivered remotely, and clients retain ownership of their accounts regardless of location." } }
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ── OBFUSCATED ADDRESSES (offset cipher, assembled at runtime) ── */
+  var _L = [112,117,109,118,71,108,128,108,123,118,104,107,53,106,118,116];
+  var _P = [111,108,115,115,118,71,122,108,104,121,106,111,106,118,117,125,108,121,123,122,53,106,118,116];
+  function _d(a) { var s = '', i; for (i = 0; i < a.length; i++) { s += String.fromCharCode(a[i] - 7); } return s; }
+
+  /* ── PUBLIC EMAIL LINKS ── */
+  document.querySelectorAll('.js-email').forEach(function (el) {
+    var addr = _d(_P);
+    el.setAttribute('href', 'mai' + 'lto:' + addr);
+    el.textContent = addr;
+  });
+
+  /* ── HAMBURGER ── */
+  var burger = document.getElementById('hamburger');
+  var mnav = document.getElementById('mobile-nav');
+  if (burger && mnav) {
+    burger.addEventListener('click', function () {
+      var open = mnav.classList.toggle('open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+
+  /* ── DESKTOP DROPDOWNS ── */
+  var navItems = document.querySelectorAll('.header-nav > li');
+  navItems.forEach(function (li) {
+    var btn = li.querySelector('.nav-toggle');
+    if (!btn) return;
+    function close() { li.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); }
+    function open() {
+      navItems.forEach(function (o) {
+        var b = o.querySelector('.nav-toggle');
+        if (b) { o.classList.remove('open'); b.setAttribute('aria-expanded', 'false'); }
+      });
+      li.classList.add('open'); btn.setAttribute('aria-expanded', 'true');
+    }
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      li.classList.contains('open') ? close() : open();
+    });
+    li.addEventListener('mouseenter', open);
+    li.addEventListener('mouseleave', close);
+    li.addEventListener('keydown', function (e) { if (e.key === 'Escape') { close(); btn.focus(); } });
+  });
+  document.addEventListener('click', function () {
+    navItems.forEach(function (o) {
+      var b = o.querySelector('.nav-toggle');
+      if (b) { o.classList.remove('open'); b.setAttribute('aria-expanded', 'false'); }
+    });
+  });
+
+  /* ── SCROLL REVEAL + ONE-SHOT ANIMATIONS ── */
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els = document.querySelectorAll('.reveal');
+  els.forEach(function (el) { el.classList.add('will-reveal'); });
+
+  function countUp(el) {
+    var target = parseInt(el.getAttribute('data-target'), 10) || 0;
+    if (reduce) { el.textContent = target.toLocaleString('en-US'); return; }
+    var start = null, dur = 1400;
+    function step(ts) {
+      if (!start) start = ts;
+      var p = Math.min((ts - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(target * eased).toLocaleString('en-US');
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        e.target.classList.add('visible');
+        e.target.querySelectorAll('.countup').forEach(countUp);
+        e.target.querySelectorAll('.draw-arrow, .fig-draw').forEach(function (a) { a.classList.add('drawn'); });
+        obs.unobserve(e.target);
+      });
+    }, { threshold: 0.08 });
+    els.forEach(function (el) { obs.observe(el); });
+
+    var fill = document.getElementById('teaser-fill');
+    if (fill) {
+      var fo = new IntersectionObserver(function (en) {
+        en.forEach(function (e) { if (e.isIntersecting) { fill.style.width = '35%'; fo.unobserve(e.target); } });
+      }, { threshold: 0.4 });
+      fo.observe(fill);
+    }
+  } else {
+    els.forEach(function (el) { el.classList.add('visible'); });
+    document.querySelectorAll('.countup').forEach(countUp);
+    document.querySelectorAll('.draw-arrow, .fig-draw').forEach(function (a) { a.classList.add('drawn'); });
+    var f2 = document.getElementById('teaser-fill'); if (f2) f2.style.width = '35%';
+  }
+
+  /* ── SAFETY NET: never leave a figure permanently invisible ── */
+  window.setTimeout(function () {
+    document.querySelectorAll('.draw-arrow, .fig-draw').forEach(function (a) { a.classList.add('drawn'); });
+  }, 2600);
+
+  /* ── A/B DEMO ── */
+  var abDone = false;
+  document.querySelectorAll('[data-ab]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var pick = btn.getAttribute('data-ab');
+      document.getElementById('ab-var-a').classList.toggle('chosen', pick === 'a');
+      document.getElementById('ab-var-b').classList.toggle('chosen', pick === 'b');
+      var t = document.getElementById('ab-reveal-title');
+      var b = document.getElementById('ab-reveal-body');
+      if (pick === 'b') {
+        t.textContent = 'That is conversion rate optimization in one click.';
+        b.textContent = 'Most people pick Version B, and the reasons are not aesthetic. Four separate, well-documented conversion principles are working at once:';
+      } else {
+        t.textContent = 'Interesting pick. Here is why most people go the other way.';
+        b.textContent = 'Version A is not wrong, it is just doing less work. Four documented conversion principles are missing from it, and each one costs a small percentage of the people who would otherwise have acted:';
+      }
+      document.getElementById('ab-reveal').classList.add('show');
+      if (!abDone) { abDone = true; }
+    });
+  });
+
+  /* ── CONVERSION CALCULATOR ── */
+  var cT = document.getElementById('calc-traffic');
+  var cR = document.getElementById('calc-rate');
+  var cV = document.getElementById('calc-value');
+  var cL = document.getElementById('calc-lift');
+
+  function money(n) {
+    return '$' + Math.round(n).toLocaleString('en-US');
+  }
+  function paintSlider(el) {
+    var pct = ((el.value - el.min) / (el.max - el.min)) * 100;
+    el.style.background = 'linear-gradient(90deg, #f97316 0%, #f97316 ' + pct + '%, #e2e8f0 ' + pct + '%, #e2e8f0 100%)';
+  }
+  function calc() {
+    if (!cT) return;
+    var traffic = +cT.value;
+    var rate = +cR.value / 10;
+    var val = +cV.value;
+    var lift = +cL.value / 10;
+
+    document.getElementById('out-traffic').textContent = traffic.toLocaleString('en-US');
+    document.getElementById('out-rate').textContent = rate.toFixed(1) + '%';
+    document.getElementById('out-value').textContent = money(val);
+    document.getElementById('out-lift').textContent = '+' + lift.toFixed(1) + ' pt';
+
+    var now = traffic * (rate / 100) * 12;
+    var after = traffic * ((rate + lift) / 100) * 12;
+    var delta = (after - now) * val;
+
+    document.getElementById('out-now').textContent = Math.round(now).toLocaleString('en-US');
+    document.getElementById('out-after').textContent = Math.round(after).toLocaleString('en-US');
+    document.getElementById('out-annual').textContent = money(delta);
+    document.getElementById('out-explainer').textContent =
+      'Same traffic. Same ad spend. Same team. That is what moving your conversion rate from ' +
+      rate.toFixed(1) + '% to ' + (rate + lift).toFixed(1) + '% is worth over twelve months.';
+
+    [cT, cR, cV, cL].forEach(paintSlider);
+  }
+  [cT, cR, cV, cL].forEach(function (el) { if (el) el.addEventListener('input', calc); });
+  calc();
+
+  /* ── FUNNEL ── */
+  var funnelData = {
+    before: {
+      counts: [1000, 550, 220, 48, 15],
+      note: '<strong>15 leads from 1,000 visitors.</strong> A 1.5% conversion rate, which is roughly average for a lead-generation site. The 985 people who left were not bad traffic &mdash; you already paid to bring every one of them here.'
+    },
+    after: {
+      counts: [1000, 760, 410, 132, 47],
+      note: '<strong>47 leads from the same 1,000 visitors.</strong> No extra ad spend, no new channel, no more traffic. Faster pages kept more people past the first five seconds, clearer navigation got more of them to the offer, and a shorter form let more of them finish. This is what the work looks like on a scoreboard.'
+    }
+  };
+  var funnelBars = document.querySelectorAll('.funnel-bar');
+  var funnelLosses = document.querySelectorAll('.funnel-loss');
+  var funnelReadout = document.getElementById('funnel-readout');
+  var funnelPainted = false;
+
+  function paintFunnel(mode) {
+    var d = funnelData[mode];
+    funnelBars.forEach(function (bar, i) {
+      var c = d.counts[i];
+      bar.style.width = (c / d.counts[0] * 100) + '%';
+      bar.textContent = c.toLocaleString('en-US');
+    });
+    funnelLosses.forEach(function (l, i) {
+      if (i === 0) { l.textContent = '\u2014'; l.classList.remove('gain'); return; }
+      var loss = d.counts[i - 1] - d.counts[i];
+      l.textContent = '\u2212' + loss.toLocaleString('en-US');
+      l.classList.remove('gain');
+    });
+    if (funnelReadout) funnelReadout.innerHTML = d.note;
+  }
+  document.querySelectorAll('.funnel-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('.funnel-toggle').forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      paintFunnel(btn.getAttribute('data-funnel'));
+    });
+  });
+  if ('IntersectionObserver' in window && funnelBars.length) {
+    var fnObs = new IntersectionObserver(function (en) {
+      en.forEach(function (e) {
+        if (e.isIntersecting && !funnelPainted) { funnelPainted = true; paintFunnel('before'); fnObs.unobserve(e.target); }
+      });
+    }, { threshold: 0.25 });
+    fnObs.observe(document.getElementById('funnel-stages'));
+  } else {
+    paintFunnel('before');
+  }
+
+  /* ── FAQ ACCORDION ── */
+  var faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(function (item) {
+    var btn = item.querySelector('.faq-question');
+    var ans = item.querySelector('.faq-answer');
+    if (!btn || !ans) return;
+    btn.addEventListener('click', function () {
+      var wasOpen = item.classList.contains('open');
+      faqItems.forEach(function (i) {
+        i.classList.remove('open');
+        var q = i.querySelector('.faq-question'), a = i.querySelector('.faq-answer');
+        if (q) q.setAttribute('aria-expanded', 'false');
+        if (a) a.hidden = true;
+      });
+      if (!wasOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+        ans.hidden = false;
+      }
+    });
+  });
+
+  /* ── FORM TIME TRAP ── */
+  var loadedAt = Date.now().toString();
+  ['h-form-loaded', 'b-form-loaded'].forEach(function (id) {
+    var f = document.getElementById(id); if (f) f.value = loadedAt;
+  });
+
+  /* ── RATE LIMITER ── */
+  var submitTimes = [];
+  function rateLimited() {
+    var now = Date.now();
+    submitTimes = submitTimes.filter(function (t) { return now - t < 60000; });
+    if (submitTimes.length >= 3) return true;
+    submitTimes.push(now);
+    return false;
+  }
+
+  /* ── SPAM CONTENT FILTER ── */
+  var spamPatterns = [
+    /https?:\/\//i, /www\./i, /\[url/i, /<a\s/i,
+    /\bviagra\b/i, /\bcialis\b/i, /\bcasino\b/i, /\bpoker\b/i,
+    /\bbitcoin\b/i, /\bcrypto\b/i, /\bforex\b/i, /\bloan offer\b/i,
+    /\bseo (services|package|packages|cheap|expert)\b/i,
+    /\bguaranteed (rankings|results|first page)\b/i,
+    /\bbacklinks?\b/i, /\bfirst page of google\b/i,
+    /(.)\1{6,}/, /[^\x00-\x7F]{8,}/
+  ];
+  function isSpam(text) {
+    if (!text) return false;
+    return spamPatterns.some(function (p) { return p.test(text); });
+  }
+
+  /* ── FORM SUBMISSION ── */
+  function wireForm(formId, btnId, msgId, loadedId) {
+    var form = document.getElementById(formId);
+    var btn = document.getElementById(btnId);
+    var msg = document.getElementById(msgId);
+    if (!form || !btn || !msg) return;
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      if (rateLimited()) {
+        msg.style.color = '#ef4444';
+        msg.textContent = 'Too many attempts. Wait a minute and try again, or call 720-712-8615.';
+        return;
+      }
+
+      var honey = form.querySelector('[name="_honey"]');
+      if (honey && honey.value !== '') return;
+
+      var lf = document.getElementById(loadedId);
+      if (lf && lf.value) {
+        if (Date.now() - parseInt(lf.value, 10) < 3500) return;
+      }
+
+      var message = (form.querySelector('[name="user_message"]') || {}).value || '';
+      var bizName = (form.querySelector('[name="business_name"]') || {}).value || '';
+      if (isSpam(message) || isSpam(bizName)) {
+        msg.style.color = '#ef4444';
+        msg.textContent = 'That message was flagged as spam. Remove any links and try again, or call 720-712-8615.';
+        return;
+      }
+
+      var nameEl = form.querySelector('[name="user_name"]');
+      var phoneEl = form.querySelector('[name="user_phone"]');
+      var name = nameEl ? nameEl.value.trim() : '';
+      var phone = phoneEl ? phoneEl.value.trim() : '';
+      if (!name || !phone) {
+        msg.style.color = '#ef4444';
+        msg.textContent = 'Enter your name and phone number so we can reach you.';
+        if (!name && nameEl) { nameEl.focus(); } else if (phoneEl) { phoneEl.focus(); }
+        return;
+      }
+      if (phone.replace(/\D/g, '').length < 10) {
+        msg.style.color = '#ef4444';
+        msg.textContent = 'That phone number looks incomplete. Include the area code.';
+        if (phoneEl) phoneEl.focus();
+        return;
+      }
+
+      var originalText = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+      msg.style.color = '#64748b';
+      msg.textContent = 'Sending your request...';
+
+      var data = new FormData(form);
+      data.append('_template', 'table');
+      data.append('_subject', 'New lead - Search Converts: ' + name);
+
+      var endpoint = 'ht' + 'tps://for' + 'msubmit.co/' + _d(_L);
+
+      fetch(endpoint, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(function (res) {
+        if (res.ok) {
+          form.reset();
+          msg.style.color = '#10b981';
+          msg.textContent = 'Received. We will get back to you within one business day.';
+          btn.textContent = 'Request sent';
+        } else {
+          throw new Error('status ' + res.status);
+        }
+      }).catch(function () {
+        msg.style.color = '#f59e0b';
+        msg.innerHTML = 'We could not confirm delivery. Your request may not have gone through &mdash; please call <a href="tel:7207128615" style="color:#ea580c;font-weight:700;">720-712-8615</a> or try again.';
+        btn.disabled = false;
+        btn.textContent = originalText;
+      });
+    });
+  }
+
+  wireForm('hero-form', 'hero-submit-btn', 'hero-form-msg', 'h-form-loaded');
+  wireForm('bottom-form', 'bottom-submit-btn', 'bottom-form-msg', 'b-form-loaded');
+})();
+</script>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ── AD AUCTION SIMULATOR ── */
+  var bidEl = document.getElementById('au-bid');
+  var qsEl  = document.getElementById('au-qs');
+  if (bidEl && qsEl) {
+    var rivals = [
+      { name: 'Competitor A', bid: 14.00, qs: 4 },
+      { name: 'Competitor B', bid: 9.50,  qs: 7 },
+      { name: 'Competitor C', bid: 6.00,  qs: 9 },
+      { name: 'Competitor D', bid: 4.25,  qs: 6 }
+    ];
+    function money(n) { return '$' + n.toFixed(2); }
+    function paint(el) {
+      var p = ((el.value - el.min) / (el.max - el.min)) * 100;
+      el.style.background = 'linear-gradient(90deg,#f97316 0%,#f97316 ' + p + '%,rgba(255,255,255,.14) ' + p + '%,rgba(255,255,255,.14) 100%)';
+    }
+    function run() {
+      var myBid = +bidEl.value / 100, myQs = +qsEl.value;
+      document.getElementById('au-bid-out').textContent = money(myBid);
+      document.getElementById('au-qs-out').textContent = myQs;
+
+      var field = rivals.map(function (r) { return { name: r.name, bid: r.bid, qs: r.qs, rank: r.bid * r.qs, me: false }; });
+      field.push({ name: 'You', bid: myBid, qs: myQs, rank: myBid * myQs, me: true });
+      field.sort(function (a, b) { return b.rank - a.rank; });
+
+      var html = '', myPos = 0, myCpc = 0;
+      field.forEach(function (f, i) {
+        var below = field[i + 1];
+        // second-price style: you pay just enough to beat the next advertiser's rank, given your own score
+        var cpc = below ? Math.min(f.bid, (below.rank / f.qs) + 0.01) : Math.min(f.bid, 0.5);
+        var out = i > 2;
+        if (f.me) { myPos = i + 1; myCpc = cpc; }
+        html += '<div class="auc-rw' + (f.me ? ' me' : '') + (out ? ' out' : '') + '">' +
+                '<span class="rank">' + (out ? '&mdash;' : (i + 1)) + '</span>' +
+                '<span class="nm">' + f.name + '</span>' +
+                '<span>' + money(f.bid) + '</span>' +
+                '<span>' + f.qs + '</span>' +
+                '<span class="cpc">' + (out ? 'No placement' : money(cpc)) + '</span>' +
+                '</div>';
+      });
+      document.getElementById('auc-rows').innerHTML = html;
+
+      var v = document.getElementById('auc-verdict');
+      var headline, body;
+      if (myPos > 3) {
+        headline = 'No placement';
+        body = 'Your ad rank is below the last paid position, so you are not shown at all and you pay nothing &mdash; because you get nothing. Note that raising quality score gets you back in the auction just as effectively as raising the bid, and it does not cost you anything per click.';
+      } else if (myPos === 1) {
+        headline = 'Position 1 at ' + money(myCpc) + ' a click';
+        body = myQs >= 8
+          ? 'Top position, and look at the price. A high quality score means you clear the competition on rank while paying near the bottom of the range. This is what a well-built account buys you, and it is not something a competitor can copy by raising their bid.'
+          : 'Top position, but you are paying for it with bid rather than relevance. Lift the quality score and watch the cost per click fall while your position stays exactly where it is. That saving compounds across every click for as long as the account runs.';
+      } else {
+        headline = 'Position ' + myPos + ' at ' + money(myCpc) + ' a click';
+        body = 'Mid-pack. You have two ways up. Raising the bid buys position and you pay for it on every click, forever. Raising the quality score buys the same position and lowers the price at the same time &mdash; which is the entire reason account structure, ad copy and landing pages matter.';
+      }
+      v.innerHTML = '<strong>' + headline + '</strong>' + body;
+      paint(bidEl); paint(qsEl);
+    }
+    bidEl.addEventListener('input', run);
+    qsEl.addEventListener('input', run);
+    run();
+  }
+
+  /* ── BREAK-EVEN CPC CALCULATOR ── */
+  var pc = ['pc-cpc','pc-cvr','pc-close','pc-value'].map(function (i) { return document.getElementById(i); });
+  if (pc[0]) {
+    function m0(n) { return '$' + Math.round(n).toLocaleString('en-US'); }
+    function runPc() {
+      var cpc = parseFloat(pc[0].value) || 0;
+      var cvr = (parseFloat(pc[1].value) || 0) / 100;
+      var cls = (parseFloat(pc[2].value) || 0) / 100;
+      var val = parseFloat(pc[3].value) || 0;
+      var cplEl = document.getElementById('pc-cpl'), cpaEl = document.getElementById('pc-cpa');
+      var prEl = document.getElementById('pc-profit'), bkEl = document.getElementById('pc-break');
+      var vd = document.getElementById('pc-verdict');
+
+      if (cvr <= 0 || cls <= 0 || cpc <= 0) {
+        cplEl.textContent = cpaEl.textContent = prEl.textContent = bkEl.textContent = '\u2014';
+        vd.innerHTML = '<strong>Enter your numbers.</strong> Cost per click, conversion rate and close rate all need to be above zero.';
+        return;
+      }
+      var cpl = cpc / cvr;
+      var cpa = cpl / cls;
+      var profit = val - cpa;
+      var breakeven = val * cls * cvr;
+
+      cplEl.textContent = m0(cpl);
+      cpaEl.textContent = m0(cpa);
+      prEl.textContent = (profit < 0 ? '-' : '') + m0(Math.abs(profit));
+      prEl.className = profit > 0 ? 'good' : 'bad';
+      bkEl.textContent = '$' + breakeven.toFixed(2);
+
+      var ratio = breakeven / cpc;
+      if (profit <= 0) {
+        vd.innerHTML = '<strong>Losing money on every sale.</strong> You break even at $' + breakeven.toFixed(2) +
+          ' a click and you are paying $' + cpc.toFixed(2) + '. More budget will only lose money faster. The fix is upstream: raise the landing page conversion rate, improve the close rate, or increase what a customer is worth. Doubling the conversion rate alone doubles what you can afford to bid.';
+      } else if (ratio < 1.4) {
+        vd.innerHTML = '<strong>Profitable, but thin.</strong> Break-even is $' + breakeven.toFixed(2) +
+          ' and you are paying $' + cpc.toFixed(2) + ', which leaves very little margin for a bad month or a rising auction. Worth improving <a href="/conversion-optimization/">conversion rate</a> before scaling spend, since that widens the gap without touching the auction at all.';
+      } else if (ratio < 2.5) {
+        vd.innerHTML = '<strong>Profitable, with room to bid.</strong> You break even at $' + breakeven.toFixed(2) +
+          ' a click and you are paying $' + cpc.toFixed(2) + ', so there is headroom to compete harder for better positions. The constraint here is volume, not economics.';
+      } else {
+        vd.innerHTML = '<strong>Strong economics. You are probably under-spending.</strong> Break-even is $' + breakeven.toFixed(2) +
+          ' against an actual cost of $' + cpc.toFixed(2) + '. At that margin you can outbid nearly anyone in the auction, and the question stops being cost and becomes how much qualified volume exists to buy.';
+      }
+    }
+    pc.forEach(function (el) { el.addEventListener('input', runPc); });
+    runPc();
+  }
+})();
+</script>
+
+</body>
+</html>
