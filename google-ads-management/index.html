@@ -1,0 +1,2801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Ads Management &amp; Google PPC Agency | Search Converts</title>
+  <meta name="description" content="Google Ads management from a Google PPC agency that fixes account structure before bidding. Free match type simulator, campaign type selector, Quality Score diagnostic and a free account audit.">
+  <link rel="canonical" href="https://searchconverts.com/google-ads-management/">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="author" content="Search Converts">
+  <meta property="og:title" content="Google Ads Management &amp; Google PPC Agency | Search Converts">
+  <meta property="og:description" content="Most Google PPC waste is structural, not a bidding problem. Match type simulator, campaign selector and Quality Score diagnostic inside.">
+  <meta property="og:url" content="https://searchconverts.com/google-ads-management/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Search Converts">
+  <meta property="og:image" content="https://searchconverts.com/images/Generative-engine-optimization-experts.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Google Ads Management &amp; Google PPC Agency">
+  <meta name="twitter:description" content="Most Google PPC waste is structural. Free tools and a free account audit.">
+  <link rel="icon" type="image/png" href="/images/search-converts-favicon.png">
+  <link rel="apple-touch-icon" href="/images/search-converts-favicon.png">
+  <link rel="shortcut icon" type="image/png" href="/images/search-converts-favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&family=Barlow+Condensed:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    /* ══ RESET & BASE ══ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Barlow', sans-serif;
+      background: #ffffff;
+      color: #0d1220;
+      font-size: 18px;
+      line-height: 1.72;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; }
+    a:focus-visible, button:focus-visible, input:focus-visible,
+    select:focus-visible, textarea:focus-visible {
+      outline: 3px solid #22d3ee;
+      outline-offset: 2px;
+    }
+
+    :root {
+      --orange: #f97316;
+      --orange-bright: #fb923c;
+      --orange-deep: #ea580c;
+      --neon-lime: #a3e635;
+      --neon-cyan: #22d3ee;
+      --neon-pink: #f472b6;
+      --electric-blue: #3b82f6;
+      --mint: #d1fae5;
+      --lavender: #ede9fe;
+      --peach: #fed7aa;
+      --sky: #e0f2fe;
+      --black: #060910;
+      --navy: #0d1220;
+      --charcoal: #1e2a40;
+      --surface: #f8fafc;
+      --surface2: #f1f5f9;
+      --border: #e2e8f0;
+      --border2: #cbd5e1;
+      --text: #0d1220;
+      --muted: #475569;
+      --muted2: #64748b;
+      --white: #ffffff;
+      --green: #10b981;
+      --red: #ef4444;
+      --yellow: #fbbf24;
+    }
+
+    /* ══ ANNOUNCEMENT BAR ══ */
+    .ann-bar {
+      position: relative; z-index: 1;
+      background: linear-gradient(90deg, var(--orange-deep), var(--orange), #fb923c);
+      color: #fff;
+      text-align: center;
+      padding: 10px 20px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .ann-bar a { color: #fff; text-decoration: underline; }
+
+    /* ══ HEADER ══ */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #ffffff;
+      border-bottom: 3px solid var(--orange);
+      box-shadow: 0 2px 24px rgba(0,0,0,0.10);
+    }
+    .header-inner {
+      max-width: 1460px;
+      margin: 0 auto;
+      padding: 0 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      height: 110px;
+      flex-wrap: nowrap;
+    }
+        .header-logo { position: relative; z-index: 30; display: block; line-height: 0; }
+    .header-logo img {
+      height: 200px; width: auto; max-width: 250px; object-fit: contain; display: block;
+      filter: drop-shadow(0 5px 10px rgba(0,0,0,0.30)) drop-shadow(0 1px 2px rgba(0,0,0,0.18));
+    }
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      list-style: none;
+      flex-wrap: nowrap;
+    }
+    .header-nav > li { position: relative; }
+    .header-nav a, .nav-toggle {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #0d1220;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: color 0.2s;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: 'Barlow Condensed', sans-serif;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .header-nav a:hover, .nav-toggle:hover { color: var(--orange); }
+    .nav-toggle .caret {
+      width: 0; height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 5px solid currentColor;
+      transition: transform 0.25s;
+    }
+    .header-nav li.open .nav-toggle .caret { transform: rotate(180deg); }
+    .header-nav .nav-cta {
+      background: var(--orange);
+      color: #fff !important;
+      padding: 10px 15px;
+      white-space: nowrap;
+      border-radius: 4px;
+      transition: background 0.2s, transform 0.2s !important;
+    }
+    .header-nav .nav-cta:hover { background: var(--orange-deep); transform: translateY(-1px); }
+
+    /* ── MEGA DROPDOWN ── */
+    .nav-drop {
+      position: absolute;
+      top: calc(100% + 14px);
+      left: 50%;
+      transform: translateX(-50%) translateY(-8px);
+      background: #fff;
+      border: 1.5px solid var(--border);
+      border-top: 4px solid var(--orange);
+      border-radius: 10px;
+      box-shadow: 0 28px 70px rgba(13,18,32,0.22);
+      padding: 24px 26px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
+      z-index: 1200;
+    }
+    .header-nav li.open .nav-drop { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
+    .nav-drop-cols { display: flex; gap: 34px; }
+    .nav-drop-col { min-width: 176px; }
+    .nav-drop-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--orange-deep);
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-drop a {
+      display: block;
+      font-family: 'Barlow', sans-serif;
+      font-size: 14.5px;
+      font-weight: 600;
+      text-transform: none;
+      letter-spacing: 0;
+      color: #334155;
+      padding: 6px 0;
+      white-space: nowrap;
+    }
+    .nav-drop a:hover { color: var(--orange); }
+    .nav-drop a .ext { font-size: 11px; color: var(--muted2); }
+    .nav-drop-wide { min-width: 640px; }
+
+    .header-call {
+      display: flex; align-items: center; gap: 10px; white-space: nowrap;
+    }
+    .header-phone {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 31px; font-weight: 900;
+      color: var(--orange); text-decoration: none;
+      letter-spacing: 0.01em; white-space: nowrap;
+      line-height: 1; transition: color 0.2s, transform 0.2s;
+    }
+    .header-phone:hover { color: var(--orange-deep); transform: translateY(-1px); }
+    .wa-link {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 40px; height: 40px; border-radius: 50%;
+      background: #25D366; flex-shrink: 0;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 14px rgba(37,211,102,0.35);
+    }
+    .wa-link:hover { transform: translateY(-2px) scale(1.05); box-shadow: 0 8px 22px rgba(37,211,102,0.5); }
+    .wa-link svg { width: 23px; height: 23px; display: block; }
+    @media (max-width: 1340px) { .header-phone { font-size: 28px; } .wa-link { width: 36px; height: 36px; } .wa-link svg { width: 21px; height: 21px; } }
+    @media (max-width: 600px) {
+      .header-phone { font-size: 22px; }
+      .wa-link { width: 32px; height: 32px; } .wa-link svg { width: 18px; height: 18px; }
+      .header-call { gap: 6px; }
+    }
+    @media (max-width: 430px) {
+      .header-logo img { height: 104px; max-width: 164px; }
+      .header-inner { height: 86px; }
+      .header-phone { font-size: 19px; }
+      .wa-link { width: 29px; height: 29px; } .wa-link svg { width: 17px; height: 17px; }
+    }
+    @media (max-width: 360px) {
+      .header-logo img { height: 88px; max-width: 138px; }
+      .header-phone { font-size: 17px; }
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+      background: none;
+      border: none;
+    }
+    .hamburger span {
+      display: block;
+      width: 26px; height: 3px;
+      background: #0d1220;
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+    .mobile-nav {
+      display: none;
+      background: #fff;
+      border-top: 1px solid var(--border);
+      padding: 12px 24px 20px;
+      max-height: 78vh;
+      overflow-y: auto;
+    }
+    .mobile-nav.open { display: block; }
+    .mobile-nav a {
+      display: block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #0d1220;
+      text-decoration: none;
+      padding: 9px 0;
+      border-bottom: 1px solid var(--border);
+      letter-spacing: 0.05em;
+    }
+    .mobile-nav a:hover { color: var(--orange); }
+    .mobile-nav .m-group {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--orange-deep);
+      margin: 16px 0 4px;
+    }
+    .mobile-nav .m-sub {
+      font-family: 'Barlow', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      text-transform: none;
+      letter-spacing: 0;
+      color: #334155;
+      padding: 6px 0;
+    }
+
+    @media (max-width: 1360px) {
+      .header-nav { display: none; }
+      .hamburger { display: flex; }
+      .header-logo img { height: 150px; }
+      .header-inner { height: 112px; }
+    }
+    @media (max-width: 600px) {
+      .header-logo img { height: 124px; max-width: 196px; }
+      .header-inner { height: 96px; padding: 0 14px; }
+      .header-phone { font-size: 16px; }
+      .ann-bar { font-size: 13px; }
+    }
+
+    /* ══ HERO ══ */
+    .hero { background: var(--navy); position: relative; overflow: hidden; padding: 80px 0 0; }
+    .hero-grid-bg {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(249,115,22,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(249,115,22,0.05) 1px, transparent 1px);
+      background-size: 56px 56px;
+      z-index: 0;
+    }
+    .hero-blob1 {
+      position: absolute; top: -80px; left: -80px;
+      width: 400px; height: 400px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(249,115,22,0.18) 0%, transparent 70%);
+      z-index: 0; pointer-events: none;
+    }
+    .hero-blob2 {
+      position: absolute; bottom: -60px; right: 10%;
+      width: 500px; height: 500px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(34,211,238,0.10) 0%, transparent 70%);
+      z-index: 0; pointer-events: none;
+    }
+    .hero-inner {
+      max-width: 1240px; margin: 0 auto;
+      padding: 0 24px 0;
+      display: grid; grid-template-columns: 1fr 480px;
+      gap: 60px; align-items: center;
+      position: relative; z-index: 2;
+    }
+    .hero-left { padding-bottom: 80px; }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px; font-weight: 800;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--neon-cyan);
+      background: rgba(34,211,238,0.1);
+      border: 1px solid rgba(34,211,238,0.35);
+      border-radius: 3px; padding: 6px 14px; margin-bottom: 24px;
+    }
+    .hero-eyebrow::before {
+      content: ''; width: 7px; height: 7px; border-radius: 50%;
+      background: var(--neon-cyan); animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%,100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.6); }
+    }
+    .hero-h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(52px, 7.2vw, 92px);
+      line-height: 0.95; letter-spacing: 0.01em;
+      color: #fff; margin-bottom: 26px;
+    }
+    .hero-h1 .accent { color: var(--orange); display: block; }
+    .hero-h1 .kw {
+      display: flex; width: fit-content; align-items: center; gap: 8px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 15px; font-weight: 800;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--neon-cyan);
+      background: rgba(34,211,238,0.1);
+      border: 1px solid rgba(34,211,238,0.35);
+      border-radius: 3px; padding: 7px 14px;
+      margin-bottom: 26px; line-height: 1.35;
+    }
+    .hero-h1 .kw::before {
+      content: ''; width: 7px; height: 7px; border-radius: 50%;
+      background: var(--neon-cyan); flex-shrink: 0;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @media (max-width: 520px) { .hero-h1 .kw { font-size: 13px; letter-spacing: 0.1em; } }
+    .hero-lead {
+      font-size: 21px; font-weight: 500; line-height: 1.68;
+      color: #a8b6c8; max-width: 580px; margin-bottom: 26px;
+    }
+    .hero-lead strong { color: #e2e8f0; font-weight: 700; }
+    .hero-trust-row {
+      display: flex; align-items: center; gap: 20px;
+      flex-wrap: wrap; margin-bottom: 20px;
+    }
+    .trust-pill {
+      display: flex; align-items: center; gap: 7px;
+      font-size: 13px; font-weight: 700; color: #cbd5e1;
+      font-family: 'Barlow Condensed', sans-serif;
+      letter-spacing: 0.05em; text-transform: uppercase;
+    }
+    .trust-pill .check {
+      width: 18px; height: 18px; border-radius: 50%;
+      background: rgba(163,230,53,0.15);
+      border: 1px solid rgba(163,230,53,0.5);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 10px; color: var(--neon-lime);
+    }
+
+    /* ── HERO FORM CARD ── */
+    .hero-form-card {
+      background: #fff; border-radius: 12px; padding: 34px 32px 30px;
+      box-shadow: 0 40px 100px rgba(0,0,0,0.5), 0 0 0 1px rgba(249,115,22,0.25);
+      position: relative; z-index: 3; margin-bottom: -1px;
+    }
+    .hero-form-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 5px;
+      background: linear-gradient(90deg, var(--orange), var(--orange-bright), var(--neon-lime));
+      border-radius: 12px 12px 0 0;
+    }
+    .form-card-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px; font-weight: 800; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--orange); margin-bottom: 8px;
+    }
+    .form-card-h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 24px; font-weight: 900; color: #0d1220;
+      line-height: 1.15; margin-bottom: 20px;
+    }
+    .sc-form-group { margin-bottom: 14px; }
+    .sc-form-group label {
+      display: block; font-size: 12px; font-weight: 700;
+      color: #4b5563; text-transform: uppercase; letter-spacing: 0.06em;
+      margin-bottom: 5px; font-family: 'Barlow Condensed', sans-serif;
+    }
+    .sc-form-group input, .sc-form-group select, .sc-form-group textarea {
+      width: 100%; background: #f8fafc;
+      border: 1.5px solid #e2e8f0; border-radius: 6px;
+      padding: 11px 14px; font-size: 15px;
+      font-family: 'Barlow', sans-serif; color: #0d1220;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .sc-form-group input:focus, .sc-form-group select:focus, .sc-form-group textarea:focus {
+      outline: none; border-color: var(--orange);
+      box-shadow: 0 0 0 3px rgba(249,115,22,0.12);
+    }
+    .sc-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .sc-submit-btn {
+      width: 100%; padding: 16px; background: var(--orange); color: #fff;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 18px; font-weight: 900; letter-spacing: 0.08em;
+      text-transform: uppercase; border: none; border-radius: 6px;
+      cursor: pointer; transition: background 0.2s, transform 0.2s; margin-top: 6px;
+    }
+    .sc-submit-btn:hover { background: var(--orange-deep); transform: translateY(-1px); }
+    .sc-submit-btn:disabled { opacity: 0.65; cursor: not-allowed; transform: none; }
+    .form-privacy {
+      font-size: 12px; color: #9ca3af; text-align: center;
+      margin-top: 10px; line-height: 1.5;
+    }
+    #hero-form-msg, #bottom-form-msg {
+      font-size: 14px; margin-top: 10px; text-align: center;
+      font-weight: 700; min-height: 20px; line-height: 1.5;
+    }
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-left { padding-bottom: 0; }
+      .hero { padding-top: 56px; }
+    }
+
+    /* ══ SHARED SECTION BASE ══ */
+    .section { padding: 90px 0; }
+    .section-inner { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+    .section-eyebrow {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px; font-weight: 800; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--orange);
+      margin-bottom: 14px; display: flex; align-items: center; gap: 10px;
+    }
+    .section-eyebrow::after {
+      content: ''; flex: 1; max-width: 60px; height: 2px;
+      background: var(--orange); opacity: 0.5;
+    }
+    .section-h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(38px, 5vw, 62px);
+      line-height: 1; color: var(--navy); margin-bottom: 20px;
+    }
+    .section-h2.light { color: #fff; }
+    .section-lead {
+      font-size: 19px; color: var(--muted);
+      max-width: 720px; line-height: 1.75; margin-bottom: 48px;
+    }
+    .section-h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 26px; font-weight: 900; color: var(--navy);
+      letter-spacing: 0.02em; margin-bottom: 12px;
+    }
+
+    /* ══ LIVE A/B TEST DEMO ══ */
+    .abdemo-section {
+      background: linear-gradient(180deg, var(--navy) 0%, #131c30 100%);
+      padding: 80px 0; position: relative; overflow: hidden;
+    }
+    .abdemo-section::before {
+      content: ''; position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(163,230,53,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(163,230,53,0.035) 1px, transparent 1px);
+      background-size: 48px 48px;
+    }
+    .abdemo-inner { max-width: 940px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+    .abdemo-head { text-align: center; margin-bottom: 40px; }
+    .abdemo-head h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(34px, 4.4vw, 54px); line-height: 1;
+      color: #fff; margin-bottom: 14px;
+    }
+    .abdemo-head p { color: #94a3b8; font-size: 17px; max-width: 620px; margin: 0 auto; line-height: 1.7; }
+    .abdemo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    @media (max-width: 700px) { .abdemo-grid { grid-template-columns: 1fr; } }
+    .ab-variant {
+      background: rgba(255,255,255,0.04);
+      border: 1.5px solid rgba(255,255,255,0.10);
+      border-radius: 12px; padding: 30px 26px;
+      text-align: center; transition: border-color 0.25s, background 0.25s, transform 0.25s;
+    }
+    .ab-variant:hover { border-color: rgba(249,115,22,0.5); background: rgba(255,255,255,0.06); }
+    .ab-variant.chosen { border-color: var(--neon-lime); background: rgba(163,230,53,0.07); }
+    .ab-tag {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px; font-weight: 800; letter-spacing: 0.16em;
+      text-transform: uppercase; color: #64748b; margin-bottom: 18px;
+    }
+    .ab-mock-a, .ab-mock-b {
+      display: inline-block; text-decoration: none;
+      border: none; cursor: pointer; font-family: 'Barlow', sans-serif;
+    }
+    .ab-mock-a {
+      background: #475569; color: #fff;
+      padding: 13px 30px; border-radius: 4px;
+      font-size: 15px; font-weight: 600;
+    }
+    .ab-mock-b {
+      background: var(--orange); color: #fff;
+      padding: 17px 36px; border-radius: 6px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 19px; font-weight: 900;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      box-shadow: 0 10px 28px rgba(249,115,22,0.35);
+    }
+    .ab-sub { font-size: 13px; color: #64748b; margin-top: 14px; min-height: 20px; }
+    .ab-reveal {
+      margin-top: 30px; background: rgba(249,115,22,0.07);
+      border: 1.5px solid rgba(249,115,22,0.3); border-left: 5px solid var(--orange);
+      border-radius: 10px; padding: 26px 28px;
+      max-height: 0; overflow: hidden; opacity: 0;
+      transition: max-height 0.5s ease, opacity 0.4s ease, padding 0.4s ease;
+      padding-top: 0; padding-bottom: 0;
+    }
+    .ab-reveal.show { max-height: 620px; opacity: 1; padding-top: 26px; padding-bottom: 26px; }
+    .ab-reveal h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 22px; font-weight: 900; color: var(--orange-bright); margin-bottom: 12px;
+    }
+    .ab-reveal p { color: #cbd5e1; font-size: 15.5px; line-height: 1.75; margin-bottom: 12px; }
+    .ab-reveal ul { list-style: none; margin: 14px 0 4px; }
+    .ab-reveal li {
+      color: #cbd5e1; font-size: 15px; line-height: 1.6;
+      padding-left: 26px; position: relative; margin-bottom: 9px;
+    }
+    .ab-reveal li::before {
+      content: ''; position: absolute; left: 4px; top: 9px;
+      width: 7px; height: 7px; border-radius: 50%; background: var(--neon-lime);
+    }
+
+    /* ══ ANIMATED ARROW ══ */
+    .draw-arrow path, .draw-arrow line, .draw-arrow polyline {
+      stroke-dasharray: 400; stroke-dashoffset: 400;
+      transition: stroke-dashoffset 1.1s cubic-bezier(.5,0,.2,1);
+    }
+    .draw-arrow.drawn path, .draw-arrow.drawn line, .draw-arrow.drawn polyline { stroke-dashoffset: 0; }
+    .arrow-note {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px; font-weight: 800; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--orange);
+    }
+
+    /* ══ CAROUSEL ══ */
+    .carousel-section {
+      background: #fff; border-top: 1px solid var(--border);
+      border-bottom: 4px solid var(--orange);
+      padding: 32px 0; overflow: hidden;
+    }
+    .carousel-label {
+      text-align: center; font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px; font-weight: 800; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--muted); margin-bottom: 20px;
+    }
+    .carousel-track-wrap { overflow: hidden; position: relative; }
+    .carousel-track-wrap::before, .carousel-track-wrap::after {
+      content: ''; position: absolute; top: 0; bottom: 0;
+      width: 120px; z-index: 2; pointer-events: none;
+    }
+    .carousel-track-wrap::before { left: 0; background: linear-gradient(90deg, #fff, transparent); }
+    .carousel-track-wrap::after { right: 0; background: linear-gradient(-90deg, #fff, transparent); }
+    .carousel-track {
+      display: flex; gap: 60px;
+      animation: scrollLeft 26s linear infinite; width: max-content;
+    }
+    .carousel-track:hover { animation-play-state: paused; }
+    @keyframes scrollLeft {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .carousel-item {
+      display: flex; align-items: center; gap: 12px;
+      opacity: 0.7; transition: opacity 0.3s; flex-shrink: 0; white-space: nowrap;
+    }
+    .carousel-item:hover { opacity: 1; }
+    .carousel-item img { height: 34px; width: auto; object-fit: contain; }
+    .carousel-engine-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 16px; font-weight: 700; color: var(--charcoal); letter-spacing: 0.04em;
+    }
+
+    /* ══ CONVERSION CALCULATOR ══ */
+    .calc-section { background: var(--surface); border-top: 1px solid var(--border); }
+    .calc-wrap {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 60px; align-items: center;
+    }
+    @media (max-width: 900px) { .calc-wrap { grid-template-columns: 1fr; gap: 40px; } }
+    .calc-panel {
+      background: #fff; border: 1.5px solid var(--border);
+      border-top: 5px solid var(--orange);
+      border-radius: 12px; padding: 32px 30px;
+      box-shadow: 0 18px 48px rgba(13,18,32,0.09);
+    }
+    .calc-field { margin-bottom: 22px; }
+    .calc-field-top {
+      display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px;
+    }
+    .calc-field label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px; font-weight: 800; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--muted);
+    }
+    .calc-value {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 26px; color: var(--navy); line-height: 1;
+    }
+    input[type="range"].calc-slider {
+      -webkit-appearance: none; appearance: none;
+      width: 100%; height: 8px; border-radius: 999px;
+      background: linear-gradient(90deg, var(--orange) 0%, var(--orange) 50%, #e2e8f0 50%, #e2e8f0 100%);
+      outline: none; cursor: pointer;
+    }
+    input[type="range"].calc-slider::-webkit-slider-thumb {
+      -webkit-appearance: none; appearance: none;
+      width: 24px; height: 24px; border-radius: 50%;
+      background: #fff; border: 4px solid var(--orange);
+      box-shadow: 0 3px 10px rgba(13,18,32,0.22); cursor: grab;
+    }
+    input[type="range"].calc-slider::-moz-range-thumb {
+      width: 22px; height: 22px; border-radius: 50%;
+      background: #fff; border: 4px solid var(--orange);
+      box-shadow: 0 3px 10px rgba(13,18,32,0.22); cursor: grab;
+    }
+    .calc-result {
+      background: var(--navy); border-radius: 12px;
+      padding: 34px 30px; color: #fff; position: relative; overflow: hidden;
+    }
+    .calc-result::after {
+      content: ''; position: absolute; top: -60px; right: -60px;
+      width: 260px; height: 260px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(163,230,53,0.14) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .calc-result-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px; font-weight: 800; letter-spacing: 0.14em;
+      text-transform: uppercase; color: #94a3b8; margin-bottom: 6px;
+    }
+    .calc-big {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(46px, 6vw, 72px); line-height: 1;
+      color: var(--neon-lime); margin-bottom: 4px; word-break: break-word;
+    }
+    .calc-sub { font-size: 15px; color: #94a3b8; line-height: 1.6; margin-bottom: 22px; }
+    .calc-split {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+      border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;
+    }
+    .calc-split div span {
+      display: block; font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px; font-weight: 800; letter-spacing: 0.1em;
+      text-transform: uppercase; color: #64748b; margin-bottom: 3px;
+    }
+    .calc-split div strong {
+      font-family: 'Bebas Neue', sans-serif; font-weight: 400;
+      font-size: 28px; color: #fff; line-height: 1;
+    }
+
+    /* ══ FUNNEL ══ */
+    .funnel-section { background: #fff; border-top: 1px solid var(--border); }
+    .funnel-stage {
+      display: grid; grid-template-columns: 190px 1fr 128px;
+      gap: 20px; align-items: center; margin-bottom: 14px;
+    }
+    @media (max-width: 640px) {
+      .funnel-stage { grid-template-columns: 1fr; gap: 6px; margin-bottom: 22px; }
+    }
+    .funnel-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 16px; font-weight: 800; color: var(--navy);
+      letter-spacing: 0.04em; text-transform: uppercase;
+    }
+    .funnel-label small {
+      display: block; font-size: 12.5px; font-weight: 600;
+      color: var(--muted2); text-transform: none; letter-spacing: 0;
+    }
+    .funnel-bar-track { height: 42px; background: var(--surface2); border-radius: 6px; overflow: hidden; }
+    .funnel-bar {
+      height: 100%; width: 0;
+      border-radius: 6px;
+      transition: width 1.3s cubic-bezier(.4,0,.2,1);
+      display: flex; align-items: center; justify-content: flex-end;
+      padding-right: 12px; color: #fff;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 15px; font-weight: 800;
+    }
+    .funnel-bar.f1 { background: linear-gradient(90deg, #1e2a40, #334155); }
+    .funnel-bar.f2 { background: linear-gradient(90deg, var(--electric-blue), #60a5fa); }
+    .funnel-bar.f3 { background: linear-gradient(90deg, var(--neon-cyan), #67e8f9); }
+    .funnel-bar.f4 { background: linear-gradient(90deg, var(--orange-deep), var(--orange)); }
+    .funnel-bar.f5 { background: linear-gradient(90deg, #65a30d, var(--neon-lime)); }
+    .funnel-loss {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px; font-weight: 800; color: var(--red);
+      letter-spacing: 0.04em; text-align: right;
+    }
+    .funnel-loss.gain { color: var(--green); }
+    @media (max-width: 640px) { .funnel-loss { text-align: left; } }
+    .funnel-toggle-row {
+      display: flex; gap: 10px; flex-wrap: wrap;
+      margin: 0 0 34px; align-items: center;
+    }
+    .funnel-toggle {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 15px; font-weight: 800; letter-spacing: 0.06em;
+      text-transform: uppercase; padding: 11px 22px;
+      border-radius: 6px; border: 2px solid var(--border2);
+      background: #fff; color: var(--muted); cursor: pointer;
+      transition: all 0.2s;
+    }
+    .funnel-toggle:hover { border-color: var(--orange); color: var(--orange); }
+    .funnel-toggle.active {
+      background: var(--orange); border-color: var(--orange); color: #fff;
+    }
+    .funnel-readout {
+      margin-top: 30px; padding: 22px 26px;
+      background: var(--surface); border-radius: 10px;
+      border-left: 5px solid var(--orange);
+      font-size: 16px; color: var(--muted); line-height: 1.7;
+    }
+    .funnel-readout strong { color: var(--navy); }
+
+    /* ══ GROWTH SYSTEM ══ */
+    .growth-section { background: var(--surface2); border-top: 1px solid var(--border); }
+    .growth-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    @media (max-width: 900px) { .growth-inner { grid-template-columns: 1fr; gap: 48px; } }
+    .growth-text .big-statement {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(36px, 4.5vw, 54px);
+      line-height: 1.05; color: var(--navy); margin-bottom: 24px;
+    }
+    .growth-text .big-statement span { color: var(--orange); }
+    .growth-text p { font-size: 18px; color: var(--muted); margin-bottom: 18px; line-height: 1.8; }
+    .growth-text strong { color: var(--navy); }
+    .growth-text p a { color: var(--orange-deep); font-weight: 700; }
+    .growth-stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .stat-card { border-radius: 12px; padding: 28px 22px; position: relative; overflow: hidden; }
+    .stat-card.c1 { background: var(--peach); }
+    .stat-card.c2 { background: var(--sky); }
+    .stat-card.c3 { background: var(--mint); }
+    .stat-card.c4 { background: var(--lavender); }
+    .stat-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 52px; line-height: 1; color: var(--navy); margin-bottom: 4px;
+    }
+    .stat-label {
+      font-size: 13px; font-weight: 800; color: var(--navy);
+      font-family: 'Barlow Condensed', sans-serif;
+      letter-spacing: 0.05em; text-transform: uppercase;
+    }
+    .stat-desc { font-size: 15px; color: var(--muted); margin-top: 8px; line-height: 1.5; }
+
+    /* ══ SERVICES ══ */
+    .services-section { background: #fff; border-top: 1px solid var(--border); }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    @media (max-width: 900px) { .services-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 580px) { .services-grid { grid-template-columns: 1fr; } }
+    .service-card {
+      background: #fff; border: 1.5px solid var(--border);
+      border-radius: 12px; padding: 32px 28px;
+      text-decoration: none; display: block; position: relative; overflow: hidden;
+      transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+    }
+    .service-card::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+      height: 4px; transform: scaleX(0); transform-origin: left; transition: transform 0.3s;
+    }
+    .service-card.s1::after { background: var(--orange); }
+    .service-card.s2::after { background: var(--neon-cyan); }
+    .service-card.s3::after { background: var(--neon-lime); }
+    .service-card.s4::after { background: var(--neon-pink); }
+    .service-card.s5::after { background: var(--electric-blue); }
+    .service-card.s6::after { background: var(--yellow); }
+    .service-card:hover {
+      border-color: var(--orange); transform: translateY(-5px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.10);
+    }
+    .service-card:hover::after { transform: scaleX(1); }
+    .service-icon { font-size: 34px; margin-bottom: 14px; display: block; line-height: 1; }
+    .service-card h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 22px; font-weight: 800; color: var(--navy);
+      letter-spacing: 0.02em; margin-bottom: 10px;
+    }
+    .service-card p { font-size: 16px; color: var(--muted); line-height: 1.65; margin-bottom: 16px; }
+    .service-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .service-tag {
+      font-size: 11px; font-weight: 700;
+      font-family: 'Barlow Condensed', sans-serif;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--orange); background: rgba(249,115,22,0.08);
+      border: 1px solid rgba(249,115,22,0.25);
+      border-radius: 3px; padding: 3px 8px;
+    }
+
+    /* ══ ANATOMY ══ */
+    .anatomy-section { background: var(--surface); border-top: 1px solid var(--border); }
+    .anatomy-frame {
+      max-width: 1000px; margin: 0 auto;
+      background: #fff; border: 1.5px solid var(--border);
+      border-radius: 14px; padding: 20px;
+      box-shadow: 0 22px 60px rgba(13,18,32,0.10);
+    }
+    .anatomy-frame svg { width: 100%; height: auto; display: block; }
+    .anatomy-legend {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 20px; max-width: 1000px; margin: 40px auto 0;
+    }
+    @media (max-width: 800px) { .anatomy-legend { grid-template-columns: 1fr; } }
+    .anatomy-item {
+      display: flex; gap: 14px; align-items: flex-start;
+    }
+    .anatomy-num {
+      width: 30px; height: 30px; flex-shrink: 0;
+      border-radius: 50%; background: var(--orange); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 15px; font-weight: 900;
+    }
+    .anatomy-item strong {
+      display: block; color: var(--navy); font-size: 16px;
+      margin-bottom: 4px; font-weight: 700;
+    }
+    .anatomy-item p { font-size: 15.5px; color: var(--muted); line-height: 1.6; }
+
+    /* ══ GEO / AIO ══ */
+    .geo-section { background: var(--navy); color: #fff; }
+    .geo-image-full { width: 100%; max-width: 1100px; margin: 0 auto 56px; text-align: center; }
+    .geo-image-full img {
+      width: 100%; height: auto; border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 32px 80px rgba(0,0,0,0.6); display: block;
+    }
+    .geo-badge {
+      display: inline-block; background: var(--neon-lime); color: var(--navy);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px; font-weight: 800; letter-spacing: 0.08em;
+      text-transform: uppercase; padding: 8px 18px; border-radius: 4px;
+      box-shadow: 0 8px 24px rgba(163,230,53,0.4); margin-bottom: 24px;
+    }
+    .geo-content-below { max-width: 1100px; margin: 0 auto; }
+    .geo-points-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 40px; }
+    @media (max-width: 700px) { .geo-points-grid { grid-template-columns: 1fr; } }
+    .geo-point-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 10px; padding: 24px;
+      display: flex; align-items: flex-start; gap: 14px;
+    }
+    .geo-point-icon {
+      width: 40px; height: 40px; border-radius: 8px;
+      background: rgba(249,115,22,0.15); border: 1px solid rgba(249,115,22,0.35);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; flex-shrink: 0;
+    }
+    .geo-point-card strong { color: #fff; display: block; margin-bottom: 6px; font-size: 16px; }
+    .geo-point-card p { color: #a3b0c2; font-size: 16px; line-height: 1.6; margin: 0; }
+    .geo-point-card a { color: var(--orange-bright); font-weight: 700; }
+
+    /* ══ PLANNER TEASER ══ */
+    .planner-teaser { background: #fff; border-top: 1px solid var(--border); position: relative; overflow: hidden; }
+    .planner-teaser::after {
+      content: ''; position: absolute; top: 0; right: 0; bottom: 0; width: 35%;
+      background: linear-gradient(135deg, var(--peach), var(--lavender));
+      clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
+      z-index: 0; pointer-events: none;
+    }
+    .planner-teaser-inner {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 70px;
+      align-items: center; position: relative; z-index: 1;
+    }
+    @media (max-width: 900px) {
+      .planner-teaser-inner { grid-template-columns: 1fr; gap: 44px; }
+      .planner-teaser::after { display: none; }
+    }
+    .teaser-score-demo {
+      background: var(--navy); border-radius: 12px; padding: 28px;
+      box-shadow: 0 20px 60px rgba(13,18,32,0.15); position: relative; z-index: 2;
+    }
+    .teaser-score-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+    .teaser-score-num { font-family: 'Bebas Neue', sans-serif; font-size: 72px; line-height: 1; color: var(--orange); }
+    .teaser-score-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.1em; text-align: right; color: #94a3b8;
+    }
+    .teaser-progress { height: 10px; background: rgba(255,255,255,0.08); border-radius: 999px; overflow: hidden; margin-bottom: 20px; }
+    .teaser-progress-fill {
+      height: 100%; width: 0;
+      background: linear-gradient(90deg, var(--red), var(--orange));
+      border-radius: 999px; transition: width 1.4s cubic-bezier(.4,0,.2,1);
+    }
+    .teaser-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+    .teaser-chip {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px; font-weight: 700; letter-spacing: 0.04em;
+      padding: 5px 12px; border-radius: 4px; border: 1px solid;
+    }
+    .teaser-chip.search { background: rgba(59,130,246,0.15); border-color: rgba(59,130,246,0.4); color: #93c5fd; }
+    .teaser-chip.demand { background: rgba(249,115,22,0.15); border-color: rgba(249,115,22,0.4); color: #fdba74; }
+    .teaser-chip.empty { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.15); color: #64748b; border-style: dashed; }
+    .teaser-status {
+      font-size: 14px; color: #94a3b8; font-style: italic;
+      border-top: 1px solid rgba(255,255,255,0.08); padding-top: 14px; line-height: 1.5;
+    }
+    .teaser-status strong { color: var(--orange-bright); font-style: normal; }
+
+    /* ══ BUTTONS ══ */
+    .sc-btn-primary {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 16px 32px; background: var(--orange); color: #fff;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 18px; font-weight: 900; letter-spacing: 0.08em;
+      text-transform: uppercase; text-decoration: none; border-radius: 6px;
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+      border: none; cursor: pointer;
+    }
+    .sc-btn-primary:hover {
+      background: var(--orange-deep); transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(249,115,22,0.35);
+    }
+    .sc-btn-outline {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 15px 30px; background: transparent; color: var(--orange);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 18px; font-weight: 900; letter-spacing: 0.08em;
+      text-transform: uppercase; text-decoration: none;
+      border-radius: 6px; border: 2px solid var(--orange); transition: all 0.2s;
+    }
+    .sc-btn-outline:hover { background: rgba(249,115,22,0.08); }
+    .sc-btn-outline.white { color: #fff; border-color: rgba(255,255,255,0.4); }
+    .sc-btn-outline.white:hover { background: rgba(255,255,255,0.08); }
+    .btn-row { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; margin-top: 32px; }
+
+    /* ══ WHY NOT TYPICAL ══ */
+    .why-section { background: var(--surface2); }
+    .why-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 2px;
+      border: 1.5px solid var(--border); border-radius: 12px;
+      overflow: hidden; margin-top: 48px; box-shadow: 0 8px 32px rgba(0,0,0,0.06);
+    }
+    @media (max-width: 700px) { .why-grid { grid-template-columns: 1fr; } }
+    .why-col-header {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px; font-weight: 800; letter-spacing: 0.12em;
+      text-transform: uppercase; padding: 18px 28px; border-bottom: 1.5px solid var(--border);
+    }
+    .why-col-bad { background: #fff0f0; color: var(--red); }
+    .why-col-good { background: #fff7ed; color: var(--orange-deep); }
+    .why-cell {
+      padding: 16px 28px; border-bottom: 1px solid var(--border);
+      font-size: 16px; color: var(--muted);
+      display: flex; align-items: flex-start; gap: 10px;
+      line-height: 1.55; background: #fff;
+    }
+    .why-cell:last-child, .why-cell:nth-last-child(2) { border-bottom: none; }
+    .why-cell .icon { font-size: 16px; flex-shrink: 0; margin-top: 2px; }
+    .why-cell-bad { background: #fffafa; }
+    .why-cell-good { background: #fffbf5; color: var(--navy); }
+
+    /* ══ AI TOOLS ══ */
+    .ai-section { background: #fff; border-top: 1px solid var(--border); }
+    .ai-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 40px; }
+    @media (max-width: 900px) { .ai-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 520px) { .ai-grid { grid-template-columns: 1fr; } }
+    .ai-card {
+      background: var(--surface); border: 1.5px solid var(--border);
+      border-radius: 12px; padding: 28px 22px;
+      text-decoration: none; display: block; position: relative; overflow: hidden;
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+    .ai-card:hover { transform: translateY(-5px); border-color: var(--border2); box-shadow: 0 16px 40px rgba(0,0,0,0.08); }
+    .ai-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; }
+    .ai-card.gpt::before { background: linear-gradient(90deg, #10a37f, #34d399); }
+    .ai-card.gemini::before { background: linear-gradient(90deg, #4285f4, #34a853); }
+    .ai-card.perplexity::before { background: linear-gradient(90deg, #20b2aa, #3b82f6); }
+    .ai-card.claude::before { background: linear-gradient(90deg, #d4704a, #f97316); }
+    .ai-icon { font-size: 28px; margin-bottom: 12px; display: block; }
+    .ai-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 18px; font-weight: 800; color: var(--navy);
+      margin-bottom: 8px; letter-spacing: 0.02em;
+    }
+    .ai-desc { font-size: 15px; color: var(--muted); line-height: 1.6; }
+    .ai-role {
+      display: inline-block; margin-top: 12px; font-size: 11px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--orange); background: rgba(249,115,22,0.08);
+      padding: 3px 8px; border-radius: 3px;
+    }
+
+    /* ══ WHAT IS CRO (visible AIO block) ══ */
+    .whatis-section { background: var(--navy); color: #fff; }
+    .whatis-inner { max-width: 880px; margin: 0 auto; }
+    .whatis-inner .section-h2 { color: #fff; }
+    .whatis-inner > p { color: #cbd5e1; font-size: 17.5px; line-height: 1.85; margin-bottom: 20px; }
+    .whatis-inner > p strong { color: #fff; }
+    .whatis-def {
+      background: rgba(249,115,22,0.08);
+      border: 1.5px solid rgba(249,115,22,0.28);
+      border-left: 5px solid var(--orange);
+      border-radius: 10px; padding: 26px 28px; margin-bottom: 30px;
+    }
+    .whatis-def p { color: #e2e8f0; font-size: 17px; line-height: 1.8; margin: 0; }
+    .whatis-sub {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 21px; font-weight: 900; color: var(--orange-bright);
+      margin: 30px 0 12px; letter-spacing: 0.02em;
+    }
+    .whatis-list { list-style: none; }
+    .whatis-list li {
+      color: #cbd5e1; font-size: 16px; line-height: 1.7;
+      padding-left: 28px; position: relative; margin-bottom: 12px;
+    }
+    .whatis-list li::before {
+      content: ''; position: absolute; left: 4px; top: 10px;
+      width: 8px; height: 8px; border-radius: 50%; background: var(--neon-lime);
+    }
+    .whatis-list li strong { color: #fff; }
+
+    /* ══ INDUSTRIES ══ */
+    .ind-section { background: var(--surface); border-top: 1px solid var(--border); }
+    .ind-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    @media (max-width: 900px) { .ind-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 520px) { .ind-grid { grid-template-columns: 1fr; } }
+    .ind-card {
+      background: #fff; border: 1.5px solid var(--border);
+      border-radius: 10px; padding: 22px 20px; text-decoration: none;
+      display: block; transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .ind-card:hover { border-color: var(--orange); transform: translateY(-4px); box-shadow: 0 14px 34px rgba(0,0,0,0.08); }
+    .ind-card span { font-size: 24px; display: block; margin-bottom: 10px; line-height: 1; }
+    .ind-card strong {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 18px; font-weight: 800; color: var(--navy);
+      display: block; margin-bottom: 5px; letter-spacing: 0.02em;
+    }
+    .ind-card p { font-size: 14.5px; color: var(--muted); line-height: 1.5; }
+
+    /* ══ FAQ ══ */
+    .faq-section { background: var(--surface2); }
+    .faq-list { max-width: 860px; margin: 0 auto; }
+    .faq-item {
+      border: 1.5px solid var(--border); border-radius: 10px;
+      margin-bottom: 12px; background: #fff; overflow: hidden; transition: box-shadow 0.2s;
+    }
+    .faq-item:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.07); }
+    .faq-question {
+      width: 100%; background: none; border: none;
+      padding: 20px 24px; text-align: left;
+      font-family: 'Barlow', sans-serif;
+      font-size: 16px; font-weight: 700; color: var(--navy);
+      cursor: pointer; display: flex; justify-content: space-between;
+      align-items: center; gap: 16px; line-height: 1.4;
+    }
+    .faq-question:hover { color: var(--orange); }
+    .faq-icon {
+      font-size: 22px; color: var(--orange); flex-shrink: 0;
+      transition: transform 0.3s; line-height: 1;
+    }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.2s; padding: 0 24px; }
+    .faq-item.open .faq-answer { max-height: 700px; padding: 0 24px 20px; }
+    .faq-answer p { font-size: 16px; color: var(--muted); line-height: 1.75; }
+    .faq-answer a { color: var(--orange-deep); text-decoration: none; font-weight: 700; }
+    .faq-answer a:hover { text-decoration: underline; }
+
+    /* ══ BOTTOM FORM ══ */
+    .bottom-form-section { background: var(--navy); padding: 100px 0; position: relative; overflow: hidden; }
+    .bottom-form-section::before {
+      content: ''; position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(249,115,22,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(249,115,22,0.04) 1px, transparent 1px);
+      background-size: 56px 56px;
+    }
+    .bottom-form-section::after {
+      content: ''; position: absolute; top: -100px; right: -100px;
+      width: 600px; height: 600px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(34,211,238,0.08) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .bottom-form-inner { max-width: 800px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+    .bottom-form-wrap { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 40px 100px rgba(0,0,0,0.4); }
+    .bottom-form-header {
+      background: linear-gradient(135deg, var(--orange-deep), var(--orange), var(--orange-bright));
+      padding: 40px; text-align: center;
+    }
+    .bottom-form-header h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 46px; color: #fff; line-height: 1.05; margin-bottom: 8px;
+    }
+    .bottom-form-header p { font-size: 17px; color: rgba(255,255,255,0.92); line-height: 1.6; }
+    .bottom-form-body { padding: 40px; background: #fff; }
+    .bottom-form-body .sc-form-group label { color: #374151; }
+    .bottom-form-body .sc-form-group textarea { min-height: 100px; }
+    @media (max-width: 600px) {
+      .bottom-form-header { padding: 28px 24px; }
+      .bottom-form-body { padding: 28px 24px; }
+      .bottom-form-header h2 { font-size: 34px; }
+      .sc-form-row { grid-template-columns: 1fr; }
+    }
+
+    /* ══ FOOTER ══ */
+    .site-footer { background: #ffffff; border-top: 4px solid var(--orange); padding: 60px 0 30px; }
+    .footer-inner { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+    .footer-top {
+      display: grid; grid-template-columns: 260px 1fr 1fr 1fr;
+      gap: 44px; padding-bottom: 48px; border-bottom: 1px solid var(--border);
+    }
+    @media (max-width: 900px) { .footer-top { grid-template-columns: 1fr 1fr; gap: 36px; } }
+    @media (max-width: 560px) { .footer-top { grid-template-columns: 1fr; } }
+    .footer-brand-logo { display: inline-block; margin-bottom: 16px; }
+    .footer-brand-logo img { height: 80px; width: auto; display: block; }
+    .footer-brand-desc { font-size: 15px; color: #374151; line-height: 1.7; margin-bottom: 16px; }
+    .footer-contact-link {
+      display: block; font-size: 15px; color: #374151;
+      text-decoration: none; margin-bottom: 6px; transition: color 0.2s;
+    }
+    .footer-contact-link:hover { color: var(--orange); }
+    .footer-col-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px; font-weight: 800; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--orange-deep); margin-bottom: 16px;
+    }
+    .footer-links { list-style: none; padding: 0; }
+    .footer-links li { margin-bottom: 9px; }
+    .footer-links a { font-size: 15px; color: #374151; text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--orange); }
+    .footer-bottom {
+      display: flex; justify-content: space-between; align-items: center;
+      padding-top: 28px; flex-wrap: wrap; gap: 12px; border-top: 1px solid var(--border);
+    }
+    .footer-bottom p { font-size: 13px; color: #374151; line-height: 1.5; }
+    .footer-bottom a { color: var(--orange-deep); text-decoration: none; }
+    .footer-bottom a:hover { text-decoration: underline; }
+
+    /* ══ REVEAL ══ */
+    .will-reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .will-reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ══ MISC ══ */
+    .text-orange { color: var(--orange); }
+    .text-center { text-align: center; }
+    .neon-divider {
+      height: 6px;
+      background: linear-gradient(90deg, var(--orange), var(--neon-lime), var(--neon-cyan), var(--neon-pink), var(--orange));
+      background-size: 300% 100%; animation: shimmer 5s linear infinite;
+    }
+    @keyframes shimmer {
+      0% { background-position: 0% 0%; }
+      100% { background-position: 300% 0%; }
+    }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px;
+      padding: 0; margin: -1px; overflow: hidden;
+      clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .will-reveal { opacity: 1; transform: none; }
+      .draw-arrow path, .draw-arrow line, .draw-arrow polyline { stroke-dashoffset: 0; }
+    }
+  
+    /* mobile safety */
+    @media (max-width: 760px) {
+      .bp-sec { padding: 54px 0; }
+      .bp-hero { padding: 38px 0 46px; }
+      .bp-lede { font-size: 18px; }
+      .bp-sec p, .bp-ol li { font-size: 17px; }
+      .cs, .qs, .mt, .bp-fig { margin-left: 0; margin-right: 0; }
+      .cs { padding: 18px 16px; }
+      .bp-cta { padding: 30px 20px; }
+      .bp-cta h3 { font-size: 30px; }
+      .qs-row { padding: 16px 16px; }
+      .qs-out, .cs-out { padding: 20px 16px; }
+      .mt-foot, .mt-note { padding-left: 16px; padding-right: 16px; }
+      .bp-fig { padding: 14px; }
+    }
+    .bp-sec table, .bp-sec svg, .mt, .cs, .qs { max-width: 100%; }
+    .bp-hero, .bp-sec { overflow-x: hidden; }
+
+    /* ══════ GOOGLE ADS — BLUEPRINT ══════ */
+    .bp { background: #fbfaf7; }
+    .bp-hero {
+      background: #fbfaf7; position: relative; overflow: hidden;
+      padding: 56px 0 66px; border-bottom: 1px solid #e6e2d9;
+    }
+    .bp-hero::before {
+      content: ''; position: absolute; inset: 0;
+      background-image: linear-gradient(rgba(13,18,32,0.045) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(13,18,32,0.045) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    .bp-hero::after {
+      content: ''; position: absolute; inset: 0;
+      background-image: linear-gradient(rgba(13,18,32,0.085) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(13,18,32,0.085) 1px, transparent 1px);
+      background-size: 160px 160px;
+    }
+    .bp-inner { max-width: 1240px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2; }
+    .bp-hero-grid { display: grid; grid-template-columns: 1fr 430px; gap: 52px; align-items: center; }
+    @media (max-width: 1000px) { .bp-hero-grid { grid-template-columns: 1fr; gap: 36px; } }
+    .bp-crumb {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 700;
+      letter-spacing: 0.1em; text-transform: uppercase; color: #8a8577; margin-bottom: 18px;
+    }
+    .bp-crumb a { color: #6b675c; text-decoration: none; }
+    .bp-crumb a:hover { color: var(--orange-deep); }
+    .bp-tag {
+      display: inline-block; font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12.5px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase;
+      color: #0d1220; border: 1.5px solid #0d1220; padding: 6px 13px; margin-bottom: 20px;
+    }
+    .bp-h1 {
+      font-family: 'Bebas Neue', sans-serif; font-size: clamp(44px, 6.2vw, 82px);
+      line-height: 0.96; color: #0d1220; margin-bottom: 20px; letter-spacing: 0.01em;
+    }
+    .bp-h1 .amber { color: var(--orange-deep); display: block; }
+    .bp-lede { font-size: 20px; color: #4a463e; line-height: 1.68; max-width: 620px; margin-bottom: 24px; }
+    .bp-lede strong { color: #0d1220; }
+    .bp-specs { border-top: 1.5px solid #0d1220; padding-top: 16px; display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; max-width: 600px; }
+    @media (max-width: 560px) { .bp-specs { grid-template-columns: 1fr 1fr; } }
+    .bp-spec span {
+      display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 11px;
+      font-weight: 800; letter-spacing: 0.13em; text-transform: uppercase; color: #8a8577; margin-bottom: 3px;
+    }
+    .bp-spec strong { font-family: 'Barlow Condensed', sans-serif; font-size: 20px; font-weight: 900; color: #0d1220; letter-spacing: 0.01em; }
+
+    /* section shell */
+    .bp-sec { background: #fbfaf7; padding: 78px 0; border-bottom: 1px solid #e6e2d9; }
+    .bp-sec.ink { background: #0d1220; border-bottom-color: rgba(255,255,255,.1); }
+    .bp-sec.paper { background: #fff; }
+    .bp-wrap { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+    .bp-wrap.wide { max-width: 1180px; }
+    .bp-eye {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 11.5px; font-weight: 800;
+      letter-spacing: 0.19em; text-transform: uppercase; color: var(--orange-deep);
+      margin-bottom: 12px; display: flex; align-items: center; gap: 10px;
+    }
+    .bp-eye::before { content: ''; width: 22px; height: 1.5px; background: var(--orange-deep); }
+    .bp-sec.ink .bp-eye { color: var(--orange-bright); }
+    .bp-sec.ink .bp-eye::before { background: var(--orange-bright); }
+    .bp-h2 {
+      font-family: 'Bebas Neue', sans-serif; font-size: clamp(33px, 4.3vw, 54px);
+      line-height: 1.0; color: #0d1220; margin-bottom: 20px; letter-spacing: 0.01em;
+    }
+    .bp-sec.ink .bp-h2 { color: #fff; }
+    .bp-h2 .amber { color: var(--orange-deep); }
+    .bp-sec.ink .bp-h2 .amber { color: var(--orange-bright); }
+    .bp-h3 {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 24px; font-weight: 900;
+      color: #0d1220; margin: 34px 0 11px; letter-spacing: 0.02em;
+    }
+    .bp-sec.ink .bp-h3 { color: #fff; }
+    .bp-sec p { font-size: 18px; line-height: 1.8; color: #4a463e; margin-bottom: 19px; }
+    .bp-sec.ink p { color: #a3b0c2; }
+    .bp-sec p strong { color: #0d1220; }
+    .bp-sec.ink p strong { color: #fff; }
+    .bp-sec a { color: var(--orange-deep); font-weight: 700; }
+    .bp-sec.ink a { color: var(--orange-bright); }
+
+    .bp-def {
+      background: #fff; border: 1.5px solid #0d1220; border-left: 6px solid var(--orange);
+      padding: 26px 28px; margin-bottom: 28px;
+    }
+    .bp-def p { font-size: 19px; color: #0d1220; line-height: 1.78; margin: 0; font-weight: 500; }
+
+    /* spec table */
+    .spec { width: 100%; border-collapse: collapse; font-size: 16.5px; margin: 6px 0 26px; }
+    .spec th {
+      text-align: left; font-family: 'Barlow Condensed', sans-serif; font-size: 11.5px;
+      font-weight: 800; letter-spacing: 0.13em; text-transform: uppercase; color: #8a8577;
+      padding: 0 14px 10px 0; border-bottom: 1.5px solid #0d1220;
+    }
+    .bp-sec.ink .spec th { color: #64748b; border-bottom-color: rgba(255,255,255,.25); }
+    .spec td { padding: 14px 14px 14px 0; border-bottom: 1px solid #e6e2d9; color: #4a463e; line-height: 1.55; vertical-align: top; }
+    .bp-sec.ink .spec td { border-bottom-color: rgba(255,255,255,.08); color: #94a3b8; }
+    .spec td:first-child { color: #0d1220; font-weight: 700; }
+    .bp-sec.ink .spec td:first-child { color: #fff; }
+    @media (max-width: 720px) {
+      .spec, .spec tbody, .spec tr, .spec td { display: block; width: 100%; }
+      .spec thead { display: none; }
+      .spec tr { padding: 15px 0; border-bottom: 1px solid #e6e2d9; }
+      .bp-sec.ink .spec tr { border-bottom-color: rgba(255,255,255,.08); }
+      .spec td { border: none; padding: 0 0 6px; }
+      .spec td:first-child { font-family: 'Barlow Condensed', sans-serif; font-size: 20px; font-weight: 900; }
+    }
+
+    /* ══ MATCH TYPE SIMULATOR ══ */
+    .mt { background: #fff; border: 1.5px solid #0d1220; margin: 32px 0; }
+    .mt-head { padding: 22px 26px 20px; border-bottom: 1.5px solid #0d1220; }
+    .mt-kw {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 800;
+      letter-spacing: 0.14em; text-transform: uppercase; color: #8a8577; margin-bottom: 8px;
+    }
+    .mt-kw-val { font-family: 'Bebas Neue', sans-serif; font-size: 34px; color: #0d1220; line-height: 1; }
+    .mt-tabs { display: flex; gap: 0; border-bottom: 1.5px solid #0d1220; }
+    .mt-tab {
+      flex: 1; background: #f3f1ec; border: none; border-right: 1px solid #ddd8cd;
+      padding: 15px 8px; cursor: pointer; transition: background .18s, color .18s;
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 900; letter-spacing: .06em;
+      text-transform: uppercase; color: #6b675c; font-size: 15px;
+    }
+    .mt-tab:last-child { border-right: none; }
+    .mt-tab:hover { background: #ebe8e1; }
+    .mt-tab.on { background: #0d1220; color: #fff; }
+    .mt-tab small { display: block; font-family: 'Barlow', sans-serif; font-size: 12px; font-weight: 600; text-transform: none; letter-spacing: 0; opacity: .62; margin-top: 2px; }
+    .mt-body { padding: 8px 0 0; }
+    .mt-q {
+      display: grid; grid-template-columns: 1fr 96px; gap: 12px; align-items: center;
+      padding: 12px 26px; border-bottom: 1px solid #eeebe4;
+      transition: background .25s, opacity .25s;
+      font-size: 16.5px; color: #4a463e;
+    }
+    .mt-q.off { opacity: .3; }
+    .mt-q.on-waste { background: #fff5f5; }
+    .mt-q.on-good { background: #f6fdf8; }
+    .mt-verdict {
+      text-align: right; font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px; font-weight: 800; letter-spacing: .09em; text-transform: uppercase;
+    }
+    .mt-q.off .mt-verdict { color: #b6b1a5; }
+    .mt-q.on-waste .mt-verdict { color: var(--red); }
+    .mt-q.on-good .mt-verdict { color: #15803d; }
+    .mt-q.on-mixed .mt-verdict { color: #b45309; }
+    .mt-q.on-mixed { background: #fffbf0; }
+    .mt-foot { background: #0d1220; padding: 22px 26px; display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
+    @media (max-width: 560px) { .mt-foot { grid-template-columns: 1fr 1fr; } .mt-q { grid-template-columns: 1fr 78px; padding: 11px 16px; font-size: 15px; } .mt-head { padding: 18px 16px 16px; } }
+    .mt-stat span {
+      display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 10.5px;
+      font-weight: 800; letter-spacing: .13em; text-transform: uppercase; color: #64748b; margin-bottom: 3px;
+    }
+    .mt-stat strong { font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 31px; line-height: 1; color: #fff; }
+    .mt-stat strong.bad { color: #f87171; }
+    .mt-stat strong.good { color: var(--neon-lime); }
+    .mt-note { background: #0d1220; padding: 0 26px 22px; color: #94a3b8; font-size: 15.5px; line-height: 1.65; }
+    .mt-note strong { color: #fff; }
+
+    /* ══ CAMPAIGN SELECTOR ══ */
+    .cs { background: #fff; border: 1.5px solid #0d1220; padding: 28px; margin: 32px 0; }
+    .cs-q { margin-bottom: 24px; }
+    .cs-q > label {
+      display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 12.5px;
+      font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: #8a8577; margin-bottom: 10px;
+    }
+    .cs-opts { display: flex; flex-wrap: wrap; gap: 8px; }
+    .cs-opt {
+      background: #f6f4ef; border: 1.5px solid #ddd8cd; padding: 10px 16px;
+      font-family: 'Barlow', sans-serif; font-size: 15.5px; color: #4a463e;
+      cursor: pointer; transition: all .16s;
+    }
+    .cs-opt:hover { border-color: var(--orange); color: #0d1220; }
+    .cs-opt.on { background: #0d1220; border-color: #0d1220; color: #fff; font-weight: 600; }
+    .cs-out { background: #0d1220; padding: 26px 28px; margin-top: 6px; }
+    .cs-out .cs-label {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 800;
+      letter-spacing: .14em; text-transform: uppercase; color: #64748b; margin-bottom: 7px;
+    }
+    .cs-out .cs-name { font-family: 'Bebas Neue', sans-serif; font-size: 38px; color: var(--neon-lime); line-height: 1; margin-bottom: 12px; }
+    .cs-out p { color: #a3b0c2; font-size: 16.5px; line-height: 1.7; margin: 0; }
+    .cs-out p strong { color: #fff; }
+    .cs-out p + p { margin-top: 12px; }
+
+    /* ══ QUALITY SCORE DIAGNOSTIC ══ */
+    .qs { background: #fff; border: 1.5px solid #0d1220; margin: 32px 0; }
+    .qs-row {
+      display: grid; grid-template-columns: 1fr 300px; gap: 20px; align-items: center;
+      padding: 20px 26px; border-bottom: 1px solid #e6e2d9;
+    }
+    @media (max-width: 700px) { .qs-row { grid-template-columns: 1fr; gap: 12px; } }
+    .qs-name { font-family: 'Barlow Condensed', sans-serif; font-size: 21px; font-weight: 900; color: #0d1220; letter-spacing: .02em; margin-bottom: 4px; }
+    .qs-desc { font-size: 15.5px; color: #6b675c; line-height: 1.55; }
+    .qs-btns { display: flex; gap: 5px; }
+    .qs-btn {
+      flex: 1; background: #f6f4ef; border: 1.5px solid #ddd8cd; padding: 9px 4px;
+      font-family: 'Barlow Condensed', sans-serif; font-size: 12.5px; font-weight: 800;
+      letter-spacing: .05em; text-transform: uppercase; color: #6b675c; cursor: pointer; transition: all .16s;
+    }
+    .qs-btn:hover { border-color: var(--orange); }
+    .qs-btn.on.lo { background: var(--red); border-color: var(--red); color: #fff; }
+    .qs-btn.on.mid { background: #d97706; border-color: #d97706; color: #fff; }
+    .qs-btn.on.hi { background: #15803d; border-color: #15803d; color: #fff; }
+    .qs-out { background: #0d1220; padding: 26px 28px; }
+    .qs-out .qs-head { font-family: 'Bebas Neue', sans-serif; font-size: 32px; color: #fff; line-height: 1.06; margin-bottom: 10px; }
+    .qs-out p { color: #a3b0c2; font-size: 16.5px; line-height: 1.7; margin: 0; }
+    .qs-out p strong { color: var(--orange-bright); }
+
+    /* blueprint figure */
+    .bp-fig { background: #fff; border: 1.5px solid #0d1220; padding: 24px; margin: 32px 0; }
+    .bp-fig svg { width: 100%; height: auto; display: block; }
+    .bp-fig figcaption { font-size: 15.5px; color: #6b675c; line-height: 1.6; margin-top: 15px; padding-top: 13px; border-top: 1px solid #e6e2d9; }
+
+    .bp-cta { background: #0d1220; padding: 42px 38px; text-align: center; margin: 46px 0; }
+    .bp-cta h3 { font-family: 'Bebas Neue', sans-serif; font-size: 38px; color: #fff; margin-bottom: 10px; line-height: 1.05; }
+    .bp-cta p { color: #94a3b8; font-size: 17px; margin-bottom: 22px; }
+    .bp-ol { counter-reset: b; list-style: none; padding: 0; margin: 0 0 20px; }
+    .bp-ol li { font-size: 18px; color: #4a463e; line-height: 1.75; padding-left: 44px; position: relative; margin-bottom: 19px; counter-increment: b; }
+    .bp-ol li strong { color: #0d1220; }
+    .bp-ol li::before {
+      content: counter(b, decimal-leading-zero); position: absolute; left: 0; top: 3px;
+      font-family: 'Barlow Condensed', sans-serif; font-size: 15px; font-weight: 900;
+      color: var(--orange-deep); border-bottom: 2px solid var(--orange); padding-bottom: 1px;
+    }
+    .bp-grid4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: #ddd8cd; border: 1px solid #ddd8cd; }
+    @media (max-width: 900px) { .bp-grid4 { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 500px) { .bp-grid4 { grid-template-columns: 1fr; } }
+    .bp-cell { background: #fff; padding: 22px 20px; text-decoration: none; display: block; transition: background .18s; }
+    .bp-cell:hover { background: #fffaf3; }
+    .bp-cell span { font-size: 23px; display: block; margin-bottom: 9px; line-height: 1; }
+    .bp-cell strong { font-family: 'Barlow Condensed', sans-serif; font-size: 18px; font-weight: 900; color: #0d1220; display: block; margin-bottom: 4px; letter-spacing: .02em; }
+    .bp-cell p { font-size: 14.5px; color: #6b675c; line-height: 1.5; margin: 0; }
+  </style>
+</head>
+
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="ann-bar">
+  Free 30-minute strategy session &mdash; no obligation &nbsp;|&nbsp; Call <a href="tel:+17207128615">+1 720-712-8615</a>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="header-logo" aria-label="Search Converts home">
+      <img src="/images/search-converts-logo-color.avif"
+           alt="Search Converts &mdash; conversion rate optimization agency"
+           width="200" height="200">
+    </a>
+    <nav aria-label="Main navigation">
+      <ul class="header-nav">
+        <li>
+          <button class="nav-toggle" aria-expanded="false" aria-haspopup="true">Services <i class="caret"></i></button>
+          <div class="nav-drop nav-drop-wide">
+            <div class="nav-drop-cols">
+              <div class="nav-drop-col">
+                <div class="nav-drop-title">Paid Media</div>
+                <a href="/ppc-management/">PPC Management</a>
+                <a href="/google-ads-management/">Google Ads Management</a>
+                <a href="/facebook-ads-management/">Facebook &amp; Meta Ads</a>
+                <a href="/social-media-marketing/">Social Media Marketing</a>
+                <a href="/programmatic-advertising/">Programmatic Display</a>
+                <a href="/ctv-advertising/">CTV &amp; Streaming Ads</a>
+                <a href="/retargeting/">Retargeting</a>
+              </div>
+              <div class="nav-drop-col">
+                <div class="nav-drop-title">Traditional Media</div>
+                <a href="/radio-tv-advertising/">Radio &amp; TV Advertising</a>
+                <a href="/direct-mail-marketing/">Direct Mail Marketing</a>
+                <div class="nav-drop-title" style="margin-top:20px;">Creative &amp; Build</div>
+                <a href="/video-production/">Video Production</a>
+                <a href="/youtube-promotion/">YouTube Promotion</a>
+                <a href="/branding-design/">Branding &amp; Design</a>
+              </div>
+              <div class="nav-drop-col">
+                <div class="nav-drop-title">Build &amp; Convert</div>
+                <a href="/app-development-company/">App Development</a>
+                <a href="/web-app-development/">Web App Development</a>
+                <a href="/ai-website-design/">AI Website Design</a>
+                <a href="/conversion-optimization/">Conversion Optimization</a>
+                <a href="/lead-generation/">Lead Generation</a>
+                <a href="/email-marketing/">Email Marketing</a>
+                <a href="/retention-systems/">Marketing Automation</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button class="nav-toggle" aria-expanded="false" aria-haspopup="true">Industries <i class="caret"></i></button>
+          <div class="nav-drop">
+            <div class="nav-drop-cols">
+              <div class="nav-drop-col">
+                <div class="nav-drop-title">Who We Serve</div>
+                <a href="/law-firm-marketing/">Law Firms</a>
+                <a href="/saas-marketing/">SaaS Companies</a>
+                <a href="/b2b-marketing/">B2B &amp; Enterprise</a>
+                <a href="/healthcare-marketing/">Healthcare</a>
+              </div>
+              <div class="nav-drop-col">
+                <div class="nav-drop-title">&nbsp;</div>
+                <a href="/ecommerce-marketing/">Ecommerce</a>
+                <a href="/dental-marketing/">Dental Practices</a>
+                <a href="/real-estate-marketing/">Real Estate</a>
+                <a href="/restaurant-marketing/">Restaurants</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button class="nav-toggle" aria-expanded="false" aria-haspopup="true">Consulting <i class="caret"></i></button>
+          <div class="nav-drop">
+            <div class="nav-drop-cols">
+              <div class="nav-drop-col">
+                <div class="nav-drop-title">Advisory</div>
+                <a href="/sales-training/">Sales Training</a>
+                <a href="/business-consulting/">Business Consulting</a>
+                <a href="/marketing-consulting/">Marketing Consulting</a>
+                <a href="/growth-system/">The Growth System</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="/ai-marketing-agency/">AI Marketing</a></li>
+        <li><a href="/marketing-plan-builder/">Plan Builder</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/" class="nav-cta">Free Strategy Session</a></li>
+      </ul>
+    </nav>
+    <div class="header-call">
+      <a href="https://wa.me/17207128615" class="wa-link" target="_blank" rel="noopener" aria-label="Message Search Converts on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M17.47 14.38c-.29-.15-1.71-.85-1.98-.94-.27-.1-.46-.15-.65.14-.19.29-.75.94-.92 1.13-.17.19-.34.22-.63.07-.29-.15-1.22-.45-2.33-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.65-1.57-.89-2.15-.23-.56-.47-.49-.65-.5-.17-.01-.36-.01-.55-.01-.19 0-.51.07-.77.36-.27.29-1.01.99-1.01 2.41s1.04 2.8 1.18 2.99c.15.19 2.04 3.12 4.95 4.38.69.3 1.23.48 1.65.61.69.22 1.33.19 1.83.12.56-.08 1.71-.7 1.96-1.38.24-.68.24-1.26.17-1.38-.07-.12-.26-.19-.55-.34zM12.05 21.8h-.02c-1.77 0-3.51-.48-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 01-1.51-5.26c0-5.45 4.44-9.89 9.9-9.89 2.64 0 5.13 1.03 7 2.9a9.82 9.82 0 012.9 6.99c0 5.46-4.44 9.89-9.9 9.89zM20.52 3.45A11.78 11.78 0 0012.05 0C5.5 0 .17 5.33.17 11.88c0 2.09.55 4.14 1.59 5.94L.07 24l6.33-1.66a11.87 11.87 0 005.65 1.44h.01c6.55 0 11.88-5.33 11.88-11.88 0-3.17-1.24-6.16-3.48-8.4z"/></svg>
+      </a>
+      <a href="tel:+17207128615" class="header-phone" aria-label="Call Search Converts at plus 1 720-712-8615">+1 720-712-8615</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <div class="m-group">Paid Media</div>
+    <a class="m-sub" href="/ppc-management/">PPC Management</a>
+    <a class="m-sub" href="/google-ads-management/">Google Ads Management</a>
+    <a class="m-sub" href="/facebook-ads-management/">Facebook &amp; Meta Ads</a>
+    <a class="m-sub" href="/social-media-marketing/">Social Media Marketing</a>
+    <a class="m-sub" href="/programmatic-advertising/">Programmatic Display</a>
+    <a class="m-sub" href="/ctv-advertising/">CTV &amp; Streaming Ads</a>
+    <a class="m-sub" href="/retargeting/">Retargeting</a>
+    <div class="m-group">Traditional Media</div>
+    <a class="m-sub" href="/radio-tv-advertising/">Radio &amp; TV Advertising</a>
+    <a class="m-sub" href="/direct-mail-marketing/">Direct Mail Marketing</a>
+    <div class="m-group">Creative &amp; Build</div>
+    <a class="m-sub" href="/video-production/">Video Production</a>
+    <a class="m-sub" href="/youtube-promotion/">YouTube Promotion</a>
+    <a class="m-sub" href="/branding-design/">Branding &amp; Design</a>
+    <a class="m-sub" href="/app-development-company/">App Development</a>
+    <a class="m-sub" href="/web-app-development/">Web App Development</a>
+    <a class="m-sub" href="/ai-website-design/">AI Website Design</a>
+    <div class="m-group">Convert &amp; Retain</div>
+    <a class="m-sub" href="/conversion-optimization/">Conversion Optimization</a>
+    <a class="m-sub" href="/lead-generation/">Lead Generation</a>
+    <a class="m-sub" href="/email-marketing/">Email Marketing</a>
+    <a class="m-sub" href="/retention-systems/">Marketing Automation</a>
+    <div class="m-group">Industries</div>
+    <a class="m-sub" href="/law-firm-marketing/">Law Firms</a>
+    <a class="m-sub" href="/saas-marketing/">SaaS Companies</a>
+    <a class="m-sub" href="/b2b-marketing/">B2B &amp; Enterprise</a>
+    <a class="m-sub" href="/healthcare-marketing/">Healthcare</a>
+    <a class="m-sub" href="/ecommerce-marketing/">Ecommerce</a>
+    <a class="m-sub" href="/dental-marketing/">Dental Practices</a>
+    <a class="m-sub" href="/real-estate-marketing/">Real Estate</a>
+    <a class="m-sub" href="/restaurant-marketing/">Restaurants</a>
+    <div class="m-group">Consulting</div>
+    <a class="m-sub" href="/sales-training/">Sales Training</a>
+    <a class="m-sub" href="/business-consulting/">Business Consulting</a>
+    <a class="m-sub" href="/marketing-consulting/">Marketing Consulting</a>
+    <a class="m-sub" href="/growth-system/">The Growth System</a>
+    <div class="m-group">More</div>
+    <a href="/ai-marketing-agency/">AI Marketing</a>
+    <a href="/marketing-plan-builder/">Plan Builder</a>
+    <a href="/about/">About</a>
+    <a href="/contact/">Free Strategy Session</a>
+    <a href="tel:+17207128615" style="color:var(--orange);font-size:23px;">Call +1 720-712-8615</a>
+    <a href="https://wa.me/17207128615" target="_blank" rel="noopener" style="color:#128C4A;">WhatsApp +1 720-712-8615</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="bp-hero">
+  <div class="bp-inner">
+    <div class="bp-hero-grid">
+      <div>
+        <nav class="bp-crumb" aria-label="Breadcrumb">
+          <a href="/">Home</a> / <a href="/ppc-management/">PPC Management</a> / <span>Google Ads</span>
+        </nav>
+        <div class="bp-tag">Google Ads Management &amp; Google PPC</div>
+        <h1 class="bp-h1">
+          Most Google PPC Waste
+          <span class="amber">Is Structural.</span>
+        </h1>
+        <p class="bp-lede">
+          Broad match buying searches you would never pay for. Performance Max absorbing budget with no visibility. Auto-applied recommendations quietly rewriting your account. <strong>None of that is a bidding problem</strong>, and raising the budget makes every one of them worse.
+        </p>
+        <div class="bp-specs">
+          <div class="bp-spec"><span>Account ownership</span><strong>Always yours</strong></div>
+          <div class="bp-spec"><span>Reporting</span><strong>Cost per sale</strong></div>
+          <div class="bp-spec"><span>Commitment</span><strong>Month to month</strong></div>
+        </div>
+      </div>
+
+      <div class="bp-fig" style="margin:0;">
+        <svg viewBox="0 0 400 300" role="img" aria-labelledby="acct-t" class="fig-draw">
+          <title id="acct-t">Google Ads account architecture diagram showing account, campaign, ad group, keyword and ad layers</title>
+          <text x="200" y="20" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="12" font-weight="800" letter-spacing="2" fill="#8a8577">ACCOUNT ARCHITECTURE</text>
+          <g class="fig-pop">
+            <rect x="140" y="34" width="120" height="34" fill="#0d1220"/>
+            <text x="200" y="56" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="15" font-weight="900" letter-spacing="1" fill="#fff">ACCOUNT</text>
+          </g>
+          <g stroke="#0d1220" stroke-width="1.4" fill="none" class="fig-draw">
+            <path d="M200 68 V84 M70 84 H330 M70 84 V100 M200 84 V100 M330 84 V100"/>
+          </g>
+          <g class="fig-pop d1">
+            <rect x="18" y="100" width="104" height="30" fill="#fff" stroke="#0d1220" stroke-width="1.6"/>
+            <text x="70" y="120" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="13" font-weight="800" fill="#0d1220">SEARCH</text>
+            <rect x="148" y="100" width="104" height="30" fill="#fff7ed" stroke="var(--orange)" stroke-width="2"/>
+            <text x="200" y="120" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="13" font-weight="800" fill="#c2410c">SHOPPING</text>
+            <rect x="278" y="100" width="104" height="30" fill="#fff" stroke="#0d1220" stroke-width="1.6"/>
+            <text x="330" y="120" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="13" font-weight="800" fill="#0d1220">PMAX</text>
+          </g>
+          <text x="200" y="146" text-anchor="middle" font-family="Barlow, sans-serif" font-size="11" fill="#8a8577">campaigns</text>
+          <g stroke="#0d1220" stroke-width="1.4" fill="none" class="fig-draw">
+            <path d="M70 130 V158 M20 158 H120 M20 158 V174 M120 158 V174"/>
+          </g>
+          <g class="fig-pop d2">
+            <rect x="-6" y="174" width="52" height="26" fill="#fff" stroke="#0d1220" stroke-width="1.4"/>
+            <text x="20" y="191" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="11" font-weight="800" fill="#0d1220">AD GRP</text>
+            <rect x="94" y="174" width="52" height="26" fill="#fff" stroke="#0d1220" stroke-width="1.4"/>
+            <text x="120" y="191" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="11" font-weight="800" fill="#0d1220">AD GRP</text>
+          </g>
+          <g stroke="#0d1220" stroke-width="1.4" fill="none" class="fig-draw">
+            <path d="M20 200 V216 M20 216 H8 M20 216 H36"/>
+          </g>
+          <g class="fig-pop d3">
+            <rect x="-24" y="216" width="56" height="22" fill="#f6f4ef" stroke="#b6b1a5" stroke-width="1.2"/>
+            <text x="4" y="231" text-anchor="middle" font-family="Barlow, sans-serif" font-size="10" fill="#4a463e">keywords</text>
+            <rect x="40" y="216" width="42" height="22" fill="#f6f4ef" stroke="#b6b1a5" stroke-width="1.2"/>
+            <text x="61" y="231" text-anchor="middle" font-family="Barlow, sans-serif" font-size="10" fill="#4a463e">ads</text>
+          </g>
+          <g class="fig-pop d4">
+            <rect x="150" y="176" width="230" height="72" fill="#fff5f5" stroke="#ef4444" stroke-width="1.6" stroke-dasharray="5 4"/>
+            <text x="265" y="200" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="13" font-weight="900" letter-spacing="1" fill="#dc2626">THE USUAL ACCOUNT</text>
+            <text x="265" y="220" text-anchor="middle" font-family="Barlow, sans-serif" font-size="12" fill="#7f1d1d">One ad group. Forty keywords.</text>
+            <text x="265" y="238" text-anchor="middle" font-family="Barlow, sans-serif" font-size="12" fill="#7f1d1d">One generic ad serving all of them.</text>
+          </g>
+          <text x="200" y="278" text-anchor="middle" font-family="Barlow, sans-serif" font-size="12.5" font-style="italic" fill="#6b675c">Structure decides relevance. Relevance decides your cost per click.</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IS IT -->
+<section class="bp-sec paper">
+  <div class="bp-wrap">
+    <div class="bp-eye">Definition</div>
+    <h2 class="bp-h2">What is Google Ads management?</h2>
+    <div class="bp-def">
+      <p><strong>Google Ads management</strong> is the ongoing work of structuring, running and improving campaigns inside Google Ads so that spend produces profitable customers. It covers campaign type selection, account architecture, keyword and match type strategy, negative keywords, ad and asset creation, bidding, conversion tracking, and continuous review of the search terms your ads actually appeared for.</p>
+    </div>
+    <p>
+      Google PPC is the largest and most competitive advertising auction in the world, and also the easiest one to lose money in quietly. The platform is designed so that a campaign can be launched in about six minutes by someone who has never done it before. That is a genuine achievement of product design and a genuine problem for advertisers, because the default settings are tuned toward spending your budget rather than protecting your margin.
+    </p>
+    <p>
+      Nothing about that is malicious. Google's automated recommendations optimize for the outcomes Google can measure &mdash; clicks, conversions as you have defined them, budget utilisation. If your conversion tracking counts a page load as a sale, the system will diligently buy you thousands of page loads. It is doing exactly what it was asked.
+    </p>
+    <p>
+      A Google Ads company earns its fee by being the part of the system that knows what a customer is actually worth. The mechanics of the auction itself &mdash; why the highest bid does not win &mdash; are covered on our <a href="/ppc-management/">PPC management</a> page. This page is about the Google-specific execution that decides whether that auction works for you.
+    </p>
+  </div>
+</section>
+
+<!-- MATCH TYPE SIMULATOR -->
+<section class="bp-sec">
+  <div class="bp-inner" style="max-width:940px;">
+    <div class="bp-eye">Tool 01</div>
+    <h2 class="bp-h2">Match types:<br><span class="amber">what you are actually buying</span></h2>
+    <p style="max-width:760px;">
+      Match type is the setting that decides which real searches can trigger your ad. It is the single largest source of wasted Google PPC spend, and it is set once during setup by people who reasonably assume broad means "more people who want this."
+    </p>
+    <p style="max-width:760px;">
+      Below is one keyword and fourteen searches. Switch between the three match types and watch which searches become eligible to spend your money.
+    </p>
+
+    <div class="mt">
+      <div class="mt-head">
+        <div class="mt-kw">Your keyword</div>
+        <div class="mt-kw-val" id="mt-display">"emergency plumber"</div>
+      </div>
+      <div class="mt-tabs" role="tablist">
+        <button class="mt-tab" data-mt="1" type="button">Exact<small>[emergency plumber]</small></button>
+        <button class="mt-tab on" data-mt="2" type="button">Phrase<small>"emergency plumber"</small></button>
+        <button class="mt-tab" data-mt="3" type="button">Broad<small>emergency plumber</small></button>
+      </div>
+      <div class="mt-body" id="mt-list"></div>
+      <div class="mt-foot">
+        <div class="mt-stat"><span>Searches eligible</span><strong id="mt-elig">7</strong></div>
+        <div class="mt-stat"><span>Buyer intent</span><strong class="good" id="mt-good">6</strong></div>
+        <div class="mt-stat"><span>Wasted spend</span><strong class="bad" id="mt-waste">0</strong></div>
+      </div>
+      <div class="mt-note" id="mt-note"></div>
+    </div>
+
+    <p style="max-width:760px;font-size:15.5px;color:#6b675c;">
+      Example searches, chosen to illustrate how the three settings behave. Real accounts see hundreds of variations, which is why the search terms report is reviewed weekly rather than at setup. Google also matches close variants and same-meaning queries within every match type, so even exact is broader than the name suggests.
+    </p>
+
+    <h3 class="bp-h3">Why broad match is not simply wrong</h3>
+    <p>
+      Any competent Google ad agency will tell you that broad match, paired with a well-maintained negative keyword list and reliable conversion tracking, can find profitable searches nobody thought to add. Broad match without those two things is an open tab at the bar. The setting is not the problem &mdash; the setting without supervision is. That is the entire distinction between an account that is managed and one that is merely running.
+    </p>
+  </div>
+</section>
+
+<!-- CAMPAIGN TYPE SELECTOR -->
+<section class="bp-sec paper">
+  <div class="bp-wrap">
+    <div class="bp-eye">Tool 02</div>
+    <h2 class="bp-h2">Which Google Ads<br><span class="amber">campaign type do you need?</span></h2>
+    <p>
+      Google offers roughly a dozen campaign types and they are not interchangeable. Picking the wrong one is why plenty of accounts underperform despite a healthy budget and reasonable ads. Answer three questions.
+    </p>
+
+    <div class="cs">
+      <div class="cs-q">
+        <label>1. What are you selling?</label>
+        <div class="cs-opts" data-cs="what">
+          <button class="cs-opt on" data-v="services" type="button">A service</button>
+          <button class="cs-opt" data-v="products" type="button">Physical products</button>
+          <button class="cs-opt" data-v="software" type="button">Software or a subscription</button>
+          <button class="cs-opt" data-v="local" type="button">Local trade or home services</button>
+        </div>
+      </div>
+      <div class="cs-q">
+        <label>2. What do you need it to do?</label>
+        <div class="cs-opts" data-cs="goal">
+          <button class="cs-opt on" data-v="leads" type="button">Generate leads</button>
+          <button class="cs-opt" data-v="sales" type="button">Drive online sales</button>
+          <button class="cs-opt" data-v="calls" type="button">Make the phone ring</button>
+          <button class="cs-opt" data-v="aware" type="button">Build awareness</button>
+        </div>
+      </div>
+      <div class="cs-q" style="margin-bottom:20px;">
+        <label>3. Do people already search for what you do?</label>
+        <div class="cs-opts" data-cs="demand">
+          <button class="cs-opt on" data-v="yes" type="button">Yes, there is existing demand</button>
+          <button class="cs-opt" data-v="no" type="button">No, it needs explaining first</button>
+        </div>
+      </div>
+      <div class="cs-out">
+        <div class="cs-label">Recommended starting point</div>
+        <div class="cs-name" id="cs-name">Search campaign</div>
+        <div id="cs-body"></div>
+      </div>
+    </div>
+
+    <h3 class="bp-h3">The campaign types, honestly compared</h3>
+    <table class="spec">
+      <thead><tr><th>Type</th><th>What it is good for</th><th>The catch</th></tr></thead>
+      <tbody>
+        <tr><td>Search</td><td>Capturing people actively looking for what you sell. Highest intent available anywhere.</td><td>The most competitive and expensive auction. Needs tight structure to be affordable.</td></tr>
+        <tr><td>Performance Max</td><td>Running every Google surface from one campaign with heavy automation.</td><td>Very limited visibility into where money went. Needs strong conversion data to behave.</td></tr>
+        <tr><td>Shopping</td><td>Ecommerce. Product images and prices directly in results.</td><td>Performance is decided by your product feed quality, not your bidding.</td></tr>
+        <tr><td>Demand Gen</td><td>Visual, discovery-led placements across YouTube, Discover and Gmail.</td><td>Lower intent. Depends almost entirely on creative quality.</td></tr>
+        <tr><td>Video</td><td>YouTube reach and consideration at low cost per view.</td><td>Rarely a direct-response channel. Judge it on assisted conversions.</td></tr>
+        <tr><td>Local Services Ads</td><td>Trades and licensed local services. Pay per lead, not per click.</td><td>Separate product with its own verification. Not part of a standard account.</td></tr>
+        <tr><td>Display</td><td>Cheap reach and, more usefully, <a href="/retargeting/">retargeting</a> people who already visited.</td><td>Prospecting on Display without tight audience control burns budget fast.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- QUALITY SCORE -->
+<section class="bp-sec">
+  <div class="bp-wrap">
+    <div class="bp-eye">Tool 03</div>
+    <h2 class="bp-h2">Quality Score has three parts.<br><span class="amber">Only one is about your ads.</span></h2>
+    <p>
+      Google reports Quality Score as a number from 1 to 10, but the number itself is not actionable. What is actionable are the three components underneath it, each of which Google labels Below average, Average or Above average in the interface. Set yours below to see which one to fix first.
+    </p>
+
+    <div class="qs">
+      <div class="qs-row">
+        <div>
+          <div class="qs-name">Expected click-through rate</div>
+          <div class="qs-desc">How likely your ad is to be clicked when shown for this keyword, compared to competitors in the same position.</div>
+        </div>
+        <div class="qs-btns" data-qs="ctr">
+          <button class="qs-btn lo" data-v="1" type="button">Below</button>
+          <button class="qs-btn mid on" data-v="2" type="button">Average</button>
+          <button class="qs-btn hi" data-v="3" type="button">Above</button>
+        </div>
+      </div>
+      <div class="qs-row">
+        <div>
+          <div class="qs-name">Ad relevance</div>
+          <div class="qs-desc">How closely your ad text matches the intent behind the search. Driven almost entirely by account structure.</div>
+        </div>
+        <div class="qs-btns" data-qs="rel">
+          <button class="qs-btn lo" data-v="1" type="button">Below</button>
+          <button class="qs-btn mid on" data-v="2" type="button">Average</button>
+          <button class="qs-btn hi" data-v="3" type="button">Above</button>
+        </div>
+      </div>
+      <div class="qs-row">
+        <div>
+          <div class="qs-name">Landing page experience</div>
+          <div class="qs-desc">How useful and relevant the page is once they arrive. Speed, clarity, and whether it delivers what the ad promised.</div>
+        </div>
+        <div class="qs-btns" data-qs="lp">
+          <button class="qs-btn lo" data-v="1" type="button">Below</button>
+          <button class="qs-btn mid on" data-v="2" type="button">Average</button>
+          <button class="qs-btn hi" data-v="3" type="button">Above</button>
+        </div>
+      </div>
+      <div class="qs-out">
+        <div class="qs-head" id="qs-head">Fix ad relevance first</div>
+        <p id="qs-body"></p>
+      </div>
+    </div>
+
+    <p>
+      Notice that two of the three components have nothing to do with bidding and one of them is not even in the ad account. Landing page experience is a Google Ads setting in the same sense that weather is a travel setting &mdash; it governs your cost whether or not you think of it as part of the campaign. That is why <a href="/conversion-optimization/">conversion optimization</a> runs alongside every account we manage rather than being sold as a separate project.
+    </p>
+  </div>
+</section>
+
+<!-- LEAKS -->
+<section class="bp-sec ink">
+  <div class="bp-wrap">
+    <div class="bp-eye">Findings</div>
+    <h2 class="bp-h2">What we find in almost<br><span class="amber">every Google Ads audit</span></h2>
+    <p>
+      These are specific to Google rather than paid media generally. Every one of them is visible in the account within about twenty minutes of getting access.
+    </p>
+    <table class="spec">
+      <thead><tr><th>Finding</th><th>What is happening</th></tr></thead>
+      <tbody>
+        <tr><td>Search terms never reviewed</td><td>The report showing what people actually typed has not been opened. It is the single most useful screen in the platform and the most consistently ignored.</td></tr>
+        <tr><td>Auto-apply left on</td><td>Google is silently expanding match types, adding keywords and raising budgets. The recommendations are optimized for Google's measurable outcomes, which are not identical to your profit.</td></tr>
+        <tr><td>Performance Max with no feed control</td><td>PMax absorbing most of the budget while brand searches you would have won for free get counted as its conversions.</td></tr>
+        <tr><td>Conversions counting the wrong thing</td><td>Page loads, thank-you pages firing twice, form starts, or every phone call regardless of length. Smart bidding then optimizes hard toward producing more of them.</td></tr>
+        <tr><td>Brand and non-brand mixed</td><td>Brand keywords converting cheaply and hiding the fact that the rest of the account is unprofitable. Always separate them before judging anything.</td></tr>
+        <tr><td>Ads pointed at the homepage</td><td>Someone searched for one specific service and landed on a page about the company. Landing page experience drops, quality score follows, cost per click rises everywhere.</td></tr>
+        <tr><td>No negative keyword list</td><td>Paying for "free", "jobs", "salary", "DIY" and competitor brand searches. Weekly maintenance, not a one-time task.</td></tr>
+      </tbody>
+    </table>
+    <p>
+      What is not on that list is the bid. It almost never is. By the time bidding is the binding constraint, the account has already been structured properly, which describes very few of the accounts we are handed.
+    </p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bp-sec paper" style="padding-bottom:0;border-bottom:none;">
+  <div class="bp-wrap">
+    <div class="bp-cta">
+      <h3>Free Google Ads account audit</h3>
+      <p>We look at your search terms, your tracking, your structure and your landing pages, then tell you what we would change. You keep the findings either way.</p>
+      <a href="/contact/" class="sc-btn-primary">Get my free audit</a>
+    </div>
+  </div>
+</section>
+
+<!-- VS ORGANIC -->
+<section class="bp-sec paper" style="padding-top:24px;">
+  <div class="bp-wrap">
+    <div class="bp-eye">The honest comparison</div>
+    <h2 class="bp-h2">Google PPC and organic search<br><span class="amber">are not alternatives</span></h2>
+    <p>
+      An agency that only sells one of these has an incentive to tell you it is the better investment. We run paid here and search optimization runs through <a href="https://eyetoad.com" rel="noopener">Eye To Ad Media</a>, so the honest answer costs us nothing: they do different jobs and most businesses that can afford both should run both.
+    </p>
+    <table class="spec">
+      <thead><tr><th></th><th>Google Ads</th><th>Organic search</th></tr></thead>
+      <tbody>
+        <tr><td>First customer</td><td>Days</td><td>Months</td></tr>
+        <tr><td>Position control</td><td>Immediate, adjustable hourly</td><td>Earned slowly, never guaranteed</td></tr>
+        <tr><td>Cost pattern</td><td>Every click, indefinitely</td><td>Front-loaded, then marginal</td></tr>
+        <tr><td>If you stop</td><td>Traffic ends that day</td><td>Decays over months</td></tr>
+        <tr><td>Best used for</td><td>High-intent commercial searches and testing</td><td>Informational depth and long-tail coverage</td></tr>
+      </tbody>
+    </table>
+    <p>
+      There is a specific, practical reason to run them together rather than at unrelated agencies. Google Ads reveals within weeks which keywords convert into customers and which merely attract clicks &mdash; information organic search would take a year to surface. Handing that data to the <a href="https://eyetoad.com" rel="noopener">search engine optimization</a> roadmap means the organic work targets proven commercial terms instead of estimates from a keyword tool.
+    </p>
+    <p>
+      For local businesses where organic visibility matters more than paid reach, the <a href="https://eyetoad.com" rel="noopener">Denver SEO</a> team is usually the better first conversation. Paid media, conversion and creative are handled here.
+    </p>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="bp-sec">
+  <div class="bp-wrap">
+    <div class="bp-eye">How we work</div>
+    <h2 class="bp-h2">What happens in the<br><span class="amber">first ninety days</span></h2>
+    <ol class="bp-ol">
+      <li><strong>Read the search terms report before touching anything.</strong> It tells you what the account has really been buying, which is frequently not what anyone believed. Most of the value in an audit is found here.</li>
+      <li><strong>Verify every conversion action.</strong> We check what each one actually fires on. If the account has been optimizing toward a broken signal, nothing else can be trusted and nothing else gets changed until it is fixed.</li>
+      <li><strong>Turn off auto-apply and stop the bleeding.</strong> Negative keywords, pausing search terms that have never converted, separating brand from non-brand so the real numbers become visible.</li>
+      <li><strong>Rebuild structure.</strong> Tighter ad groups, ads written to the search rather than to the brand, match types chosen deliberately. This is where quality score and cost per click begin to move.</li>
+      <li><strong>Fix the landing pages.</strong> Message match, speed and form friction. It improves conversion rate and landing page experience simultaneously, which means it lowers cost per click as a side effect. Our approach is set out under <a href="/conversion-optimization/">conversion optimization</a>.</li>
+      <li><strong>Then compete on bids.</strong> Only once the account earns cheap clicks do we push for position and volume. Bidding aggressively into a badly built account is the fastest way to spend a budget with nothing to show.</li>
+      <li><strong>Test continuously.</strong> Ads, assets, landing pages and offers, judged with enough data to be real rather than on a hunch. See <a href="/ab-testing/">A/B testing</a>.</li>
+      <li><strong>Report on money.</strong> Cost per lead, cost per sale, return on ad spend. If a metric cannot be connected to revenue it does not appear in the report.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- OTHER CHANNELS -->
+<section class="bp-sec paper">
+  <div class="bp-wrap wide">
+    <div class="bp-eye">Beyond Google</div>
+    <h2 class="bp-h2">Google is the start,<br><span class="amber">not the whole plan</span></h2>
+    <p style="max-width:760px;margin-bottom:28px;">
+      Google captures people already looking. It cannot reach anyone who has not thought to search yet, and its auction gets more expensive every year. These run alongside it.
+    </p>
+    <div class="bp-grid4">
+      <a href="/facebook-ads-management/" class="bp-cell"><span>&#128241;</span><strong>Meta Ads</strong><p>Interest and lookalike targeting. Demand creation rather than capture.</p></a>
+      <a href="/retargeting/" class="bp-cell"><span>&#127919;</span><strong>Retargeting</strong><p>The people who already visited. Usually the cheapest conversions you will buy.</p></a>
+      <a href="/programmatic-advertising/" class="bp-cell"><span>&#128225;</span><strong>Programmatic</strong><p>Audience-targeted display across the open web, bought in real time.</p></a>
+      <a href="/ctv-advertising/" class="bp-cell"><span>&#128250;</span><strong>CTV &amp; streaming</strong><p>Television reach with digital targeting and measurement.</p></a>
+    </div>
+    <p style="margin-top:26px;">
+      How these fit together, and which deserves your next dollar, is covered on the <a href="/ppc-management/">PPC management</a> page. If the goal is simply more qualified enquiries regardless of channel, start with <a href="/lead-generation/">lead generation</a>.
+    </p>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="bp-sec">
+  <div class="bp-wrap wide">
+    <div class="bp-eye">Sector experience</div>
+    <h2 class="bp-h2">The same click costs<br><span class="amber">$3 or $300</span></h2>
+    <p style="max-width:760px;margin-bottom:28px;">
+      Google PPC economics differ enormously by sector. A cost per click only means something next to what a customer is worth and how many of them you can close.
+    </p>
+    <div class="bp-grid4">
+      <a href="/law-firm-marketing/" class="bp-cell"><span>&#9878;</span><strong>Law Firms</strong><p>Among the most expensive keywords anywhere. Intake speed decides the return.</p></a>
+      <a href="/saas-marketing/" class="bp-cell"><span>&#128187;</span><strong>SaaS</strong><p>Optimize toward trial-to-paid, not signups. The two diverge fast.</p></a>
+      <a href="/b2b-marketing/" class="bp-cell"><span>&#127970;</span><strong>B2B</strong><p>Long cycles and multi-touch attribution that Google alone will not show you.</p></a>
+      <a href="/healthcare-marketing/" class="bp-cell"><span>&#127973;</span><strong>Healthcare</strong><p>Restricted targeting and compliance rules that limit what you can bid on.</p></a>
+      <a href="/ecommerce-marketing/" class="bp-cell"><span>&#128722;</span><strong>Ecommerce</strong><p>Shopping feed quality and product margin set the ceiling, not keywords.</p></a>
+      <a href="/dental-marketing/" class="bp-cell"><span>&#129463;</span><strong>Dental</strong><p>Local intent and phone conversion. Call tracking is not optional here.</p></a>
+      <a href="/real-estate-marketing/" class="bp-cell"><span>&#127968;</span><strong>Real Estate</strong><p>Lead volume is easy and cheap. Lead quality is neither.</p></a>
+      <a href="/restaurant-marketing/" class="bp-cell"><span>&#127869;</span><strong>Restaurants</strong><p>Margins mean paid only works on catering, events and repeat visits.</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq-section" id="faq" aria-labelledby="faq-h2">
+  <div class="section-inner">
+    <div class="text-center reveal" style="margin-bottom:48px;">
+      <div class="section-eyebrow" style="justify-content:center;">Questions we get asked</div>
+      <h2 class="section-h2" id="faq-h2">Google Ads management<br><span class="text-orange">questions, answered</span></h2>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">What does a Google Ads agency actually do?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>A Google Ads agency structures, runs and continuously improves your campaigns so spend produces profitable customers. In practice that means choosing the right campaign types, building account architecture tight enough that each ad matches a narrow set of searches, managing match types and negative keywords, writing and testing ads, verifying conversion tracking, aligning landing pages, and reviewing the search terms report to see what the account is really buying. The platform will run ads without any of this. What it will not do is tell you when your budget is being spent on searches that never become revenue.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">What is Google PPC and how does it work?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Google PPC, or Google pay per click advertising, is a model where you bid to appear in Google's results and pay only when someone clicks. Every search triggers an auction that ranks advertisers using a combination of the bid and expected relevance, which means the highest bidder does not automatically win the top position. An advertiser with strong relevance can outrank a competitor bidding more while paying less per click. The mechanics of that auction are covered in detail on our <a href="/ppc-management/">PPC management</a> page.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">Why is broad match spending my budget on irrelevant searches?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Because broad match is designed to find related searches, and "related" is interpreted generously. A keyword like emergency plumber can become eligible for searches about plumbing jobs, salaries, DIY repairs and supply stores. Every one of those clicks is billed at full price. Broad match is not inherently wrong, but it requires an actively maintained negative keyword list and trustworthy conversion tracking to be safe. Without both, it is the single largest source of wasted Google PPC spend. Use the match type simulator on this page to see the effect.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">What is Quality Score and how do I improve it?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Quality Score is Google's 1 to 10 estimate of how relevant and useful your ads and landing pages are for a keyword. The score itself is a diagnostic rather than a lever. What matters are the three components beneath it, each labelled Below average, Average or Above average: expected click-through rate, ad relevance and landing page experience. Ad relevance is fixed with tighter account structure and ads written to the specific search. Landing page experience is fixed with speed, message match and a page that delivers the promise. Improving these lowers what you pay per click at the same position, which is why they matter more than bidding for most accounts.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">Should I use Performance Max?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Sometimes, and rarely as your only campaign. Performance Max runs across every Google surface from a single campaign with heavy automation, which suits ecommerce accounts with clean product feeds and plenty of conversion data. The trade-off is visibility: you get considerably less insight into where the money went and which searches produced results. It also has a habit of claiming credit for brand searches you would have won anyway. If you are running it, run brand as a separate Search campaign so you can see what PMax is actually contributing.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">How much does Google Ads management cost?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Fees in the industry are typically a percentage of ad spend, a flat monthly retainer, or a hybrid of both. Most Google Ads company pricing follows one of those three shapes. We price to the work rather than publishing tiers, because a single-location service business running one campaign and a national ecommerce account with thousands of products are not the same job. You get a real number on the first call. One thing worth watching in any proposal: an arrangement where the fee rises automatically with your spend and nothing else rewards spending more, not earning more.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">Do I get to keep my Google Ads account?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Yes, always, and you should insist on this with any agency. You retain administrative ownership of your Google Ads account, your conversion data and your historical performance throughout the relationship and after it ends. An agency that runs your advertising inside their own account is holding your data hostage, and you discover that at exactly the worst moment. Ask the question before you sign anything, with us or anyone else.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">How long before Google Ads produces results?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Clicks and enquiries can arrive within days of launch, which is the main advantage over organic search. Reliable, optimized performance takes longer. Expect two to four weeks before there is enough conversion data to judge anything, and roughly 90 days for an account that needed restructuring. Smart bidding strategies in particular need a meaningful volume of accurate conversions before they behave sensibly, which is why fixing tracking comes before anything else.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">Are you a Google Ads Partner?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Partner status is based on spend thresholds, certification and account performance criteria that Google sets and periodically changes. It is worth asking any Google ad agency about, but treat it as a baseline rather than a differentiator &mdash; it indicates an agency manages a certain volume of spend, not that they manage it well. The more useful questions are whether you keep ownership of your account, how they report results, and whether they can explain what your search terms report currently shows.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">Should I run Google Ads or invest in SEO?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Usually both, with paid first if you need revenue soon. Google Ads produces customers within days and reveals which keywords genuinely convert; organic search takes months but continues working after you stop paying. The common sequence is to run paid for immediate revenue while organic is built underneath, then redeploy paid budget toward the commercial searches organic will never win. Search engine optimization and AI-search optimization run through <a href="https://eyetoad.com" rel="noopener">Eye To Ad Media</a>. Running them together means the organic roadmap is built on proven conversion data rather than keyword tool estimates.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="bottom-form-section" aria-labelledby="bf-h2">
+  <div class="bottom-form-inner">
+    <div class="bottom-form-wrap">
+      <div class="bottom-form-header">
+        <h2 id="bf-h2">Free Google Ads account audit</h2>
+        <p>Tell us what you are running. We come back within one business day with what your search terms report shows and what we would change first.</p>
+      </div>
+      <div class="bottom-form-body">
+        <form id="bottom-form" novalidate>
+          <input type="hidden" name="source_site" value="searchconverts.com - Google Ads Management Page">
+          <input type="hidden" name="_form_loaded" id="b-form-loaded" value="">
+          <div style="display:none;" aria-hidden="true"><input type="text" name="_honey" tabindex="-1" autocomplete="off"></div>
+          <div class="sc-form-row">
+            <div class="sc-form-group"><label for="b-name">Your name *</label><input id="b-name" name="user_name" type="text" placeholder="Full name" required autocomplete="name"></div>
+            <div class="sc-form-group"><label for="b-biz">Business name</label><input id="b-biz" name="business_name" type="text" placeholder="Company" autocomplete="organization"></div>
+          </div>
+          <div class="sc-form-row">
+            <div class="sc-form-group"><label for="b-phone">Phone *</label><input id="b-phone" name="user_phone" type="tel" placeholder="720-000-0000" required autocomplete="tel"></div>
+            <div class="sc-form-group"><label for="b-email">Email</label><input id="b-email" name="user_email" type="email" placeholder="you@company.com" autocomplete="email"></div>
+          </div>
+          <div class="sc-form-row">
+            <div class="sc-form-group"><label for="b-spend">Monthly Google Ads spend</label><input id="b-spend" name="monthly_spend" type="text" placeholder="e.g. $9,000 or not running yet"></div>
+            <div class="sc-form-group">
+              <label for="b-camp">Campaign types running</label>
+              <select id="b-camp" name="campaign_types">
+                <option value="">Select</option>
+                <option>Search only</option>
+                <option>Search + Performance Max</option>
+                <option>Performance Max only</option>
+                <option>Shopping / ecommerce</option>
+                <option>Local Services Ads</option>
+                <option>Not sure what is running</option>
+                <option>Nothing running yet</option>
+              </select>
+            </div>
+          </div>
+          <div class="sc-form-group">
+            <label for="b-msg">What is not working?</label>
+            <textarea id="b-msg" name="user_message" placeholder="Cost per lead climbing? Leads not closing? Cannot tell whether it is profitable? Tell us what prompted the search."></textarea>
+          </div>
+          <button type="submit" class="sc-submit-btn" id="bottom-submit-btn">Send my audit request</button>
+          <div id="bottom-form-msg" role="status" aria-live="polite"></div>
+        </form>
+        <p class="form-privacy" style="color:#6b7280;margin-top:14px;">Your information is never sold or shared. We respond within one business day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer" aria-label="Site footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <a href="/" class="footer-brand-logo" aria-label="Search Converts home">
+          <img src="/images/search-converts-logo-color.avif"
+               alt="Search Converts" width="200" height="200" loading="lazy">
+        </a>
+        <p class="footer-brand-desc">A full-service conversion rate optimization agency. We turn the traffic you already pay for into revenue &mdash; then scale it across every channel that reaches a buyer.</p>
+        <address style="font-style:normal;">
+          <a href="#" class="footer-contact-link js-email" data-email="footer">Email us</a>
+          <a href="tel:7207128615" class="footer-contact-link">720-712-8615</a>
+          <span class="footer-contact-link" style="color:#374151;">1001 Bannock St #660, Denver, CO 80204</span>
+        </address>
+      </div>
+      <div>
+        <div class="footer-col-title">Convert</div>
+        <ul class="footer-links">
+          <li><a href="/conversion-optimization/">Conversion Optimization</a></li>
+          <li><a href="/conversion-optimization-ideas/">Conversion Optimization Ideas</a></li>
+          <li><a href="/ab-testing/">A/B Testing</a></li>
+          <li><a href="/lead-generation/">Lead Generation</a></li>
+          <li><a href="/email-marketing/">Email Marketing</a></li>
+          <li><a href="/retention-systems/">Marketing Automation</a></li>
+          <li><a href="/marketing-plan-builder/">Marketing Plan Builder</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Advertise</div>
+        <ul class="footer-links">
+          <li><a href="/ppc-management/">PPC Management</a></li>
+          <li><a href="/google-ads-management/">Google Ads Management</a></li>
+          <li><a href="/facebook-ads-management/">Facebook &amp; Meta Ads</a></li>
+          <li><a href="/social-media-marketing/">Social Media Marketing</a></li>
+          <li><a href="/programmatic-advertising/">Programmatic Display</a></li>
+          <li><a href="/ctv-advertising/">CTV &amp; Streaming Ads</a></li>
+          <li><a href="/retargeting/">Retargeting</a></li>
+          <li><a href="/radio-tv-advertising/">Radio &amp; TV Advertising</a></li>
+          <li><a href="/direct-mail-marketing/">Direct Mail Marketing</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Build &amp; Grow</div>
+        <ul class="footer-links">
+          <li><a href="/video-production/">Video Production</a></li>
+          <li><a href="/youtube-promotion/">YouTube Promotion</a></li>
+          <li><a href="/branding-design/">Branding &amp; Design</a></li>
+          <li><a href="/app-development-company/">App Development</a></li>
+          <li><a href="/web-app-development/">Web App Development</a></li>
+          <li><a href="/ai-website-design/">AI Website Design</a></li>
+          <li><a href="/ai-marketing-agency/">AI Marketing Agency</a></li>
+          <li><a href="/sales-training/">Sales Training</a></li>
+          <li><a href="/business-consulting/">Business Consulting</a></li>
+          <li><a href="/marketing-consulting/">Marketing Consulting</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="padding:28px 0 4px;border-bottom:1px solid var(--border);">
+      <div class="footer-col-title">Our Network</div>
+      <ul class="footer-links" style="display:flex;flex-wrap:wrap;gap:8px 32px;">
+        <li><a href="https://eyetoad.com" rel="noopener">Eye To Ad Media &mdash; SEO &amp; AI search optimization</a></li>
+        <li><a href="https://denver-webdesign.com" rel="noopener">Denver Web Design</a></li>
+        <li><a href="https://mysaleshelp.com" rel="noopener">My Sales Help &mdash; free sales tools</a></li>
+        <li><a href="https://actionglobalnews.com" rel="noopener">Action Global News</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Search Converts LLC. All rights reserved.<br>
+        1001 Bannock St #660, Denver, CO 80204 &nbsp;|&nbsp; <a href="tel:7207128615">720-712-8615</a>
+      </p>
+      <p>
+        <a href="/about/">About</a> &nbsp;|&nbsp;
+        <a href="/services/">Services</a> &nbsp;|&nbsp;
+        <a href="/contact/">Contact</a> &nbsp;|&nbsp;
+        <a href="/privacy/">Privacy</a> &nbsp;|&nbsp;
+        <a href="/terms/">Terms</a> &nbsp;|&nbsp;
+        <a href="/sitemap.xml">Sitemap</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://searchconverts.com/#organization",
+      "name": "Search Converts",
+      "legalName": "Search Converts LLC",
+      "url": "https://searchconverts.com/",
+      "logo": { "@type": "ImageObject", "url": "https://searchconverts.com/images/search-converts-logo-color.avif" },
+      "telephone": "+17207128615",
+      "foundingDate": "2012",
+      "address": { "@type": "PostalAddress", "streetAddress": "1001 Bannock St #660", "addressLocality": "Denver", "addressRegion": "CO", "postalCode": "80204", "addressCountry": "US" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://searchconverts.com/#website",
+      "url": "https://searchconverts.com/",
+      "name": "Search Converts",
+      "inLanguage": "en-US",
+      "publisher": { "@id": "https://searchconverts.com/#organization" }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://searchconverts.com/google-ads-management/#service",
+      "serviceType": "Google Ads Management",
+      "name": "Google Ads Management and Google PPC Services",
+      "description": "Google Ads management covering campaign type selection, account structure, match type and negative keyword strategy, ad and asset creation, Quality Score improvement, conversion tracking verification, landing page alignment and revenue reporting.",
+      "provider": { "@id": "https://searchconverts.com/#organization" },
+      "areaServed": [ { "@type": "Country", "name": "United States" }, { "@type": "Country", "name": "Canada" } ],
+      "isRelatedTo": { "@type": "Service", "name": "PPC Management", "url": "https://searchconverts.com/ppc-management/" }
+    },
+    {
+      "@type": ["WebPage","Article"],
+      "@id": "https://searchconverts.com/google-ads-management/#webpage",
+      "url": "https://searchconverts.com/google-ads-management/",
+      "name": "Google Ads Management & Google PPC Agency | Search Converts",
+      "headline": "Most Google PPC Waste Is Structural",
+      "description": "Google Ads management and Google PPC from an agency that fixes structure before bidding. Includes a match type simulator, campaign type selector and Quality Score diagnostic.",
+      "isPartOf": { "@id": "https://searchconverts.com/#website" },
+      "inLanguage": "en-US",
+      "author": { "@id": "https://searchconverts.com/#organization" },
+      "publisher": { "@id": "https://searchconverts.com/#organization" },
+      "hasPart": { "@id": "https://searchconverts.com/google-ads-management/#faq" },
+      "speakable": { "@type": "SpeakableSpecification", "cssSelector": [".bp-def", ".bp-h1"] },
+      "about": {
+        "@type": "DefinedTerm",
+        "name": "Google Ads",
+        "alternateName": ["Google PPC","Google pay per click","Google AdWords"],
+        "description": "Google's online advertising platform, in which advertisers bid on keywords and placements and pay when their ad is clicked, with position determined by a combination of bid and expected relevance.",
+        "sameAs": "https://en.wikipedia.org/wiki/Google_Ads"
+      },
+      "mentions": [
+        { "@type": "DefinedTerm", "name": "Quality Score", "sameAs": "https://en.wikipedia.org/wiki/Quality_Score" },
+        { "@type": "DefinedTerm", "name": "Keyword match types", "sameAs": "https://en.wikipedia.org/wiki/Pay-per-click" },
+        { "@type": "DefinedTerm", "name": "Search engine marketing", "sameAs": "https://en.wikipedia.org/wiki/Search_engine_marketing" }
+      ],
+      "significantLink": [
+        "https://searchconverts.com/ppc-management/",
+        "https://searchconverts.com/conversion-optimization/",
+        "https://searchconverts.com/retargeting/",
+        "https://searchconverts.com/contact/"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://searchconverts.com/google-ads-management/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://searchconverts.com/" },
+        { "@type": "ListItem", "position": 2, "name": "PPC Management", "item": "https://searchconverts.com/ppc-management/" },
+        { "@type": "ListItem", "position": 3, "name": "Google Ads Management", "item": "https://searchconverts.com/google-ads-management/" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://searchconverts.com/google-ads-management/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "What does a Google Ads agency actually do?", "acceptedAnswer": { "@type": "Answer", "text": "A Google Ads agency structures, runs and continuously improves your campaigns so spend produces profitable customers. That means choosing the right campaign types, building account architecture tight enough that each ad matches a narrow set of searches, managing match types and negative keywords, writing and testing ads, verifying conversion tracking, aligning landing pages, and reviewing the search terms report to see what the account is really buying." } },
+        { "@type": "Question", "name": "What is Google PPC and how does it work?", "acceptedAnswer": { "@type": "Answer", "text": "Google PPC, or Google pay per click advertising, is a model where you bid to appear in Google's results and pay only when someone clicks. Every search triggers an auction that ranks advertisers using a combination of bid and expected relevance, which means the highest bidder does not automatically win the top position. An advertiser with strong relevance can outrank a competitor bidding more while paying less per click." } },
+        { "@type": "Question", "name": "Why is broad match spending my budget on irrelevant searches?", "acceptedAnswer": { "@type": "Answer", "text": "Broad match is designed to find related searches and related is interpreted generously. A keyword like emergency plumber can become eligible for searches about plumbing jobs, salaries, DIY repairs and supply stores, and every one of those clicks is billed at full price. Broad match requires an actively maintained negative keyword list and trustworthy conversion tracking to be safe. Without both it is the single largest source of wasted Google PPC spend." } },
+        { "@type": "Question", "name": "What is Quality Score and how do I improve it?", "acceptedAnswer": { "@type": "Answer", "text": "Quality Score is Google's 1 to 10 estimate of how relevant and useful your ads and landing pages are for a keyword. What matters are the three components beneath it, each labelled Below average, Average or Above average: expected click-through rate, ad relevance and landing page experience. Ad relevance is fixed with tighter account structure and ads written to the specific search. Landing page experience is fixed with speed, message match and a page that delivers the promise. Improving these lowers what you pay per click at the same position." } },
+        { "@type": "Question", "name": "Should I use Performance Max?", "acceptedAnswer": { "@type": "Answer", "text": "Sometimes, and rarely as your only campaign. Performance Max runs across every Google surface from a single campaign with heavy automation, which suits ecommerce accounts with clean product feeds and plenty of conversion data. The trade-off is much less visibility into where money went and which searches produced results. It also tends to claim credit for brand searches you would have won anyway, so run brand as a separate Search campaign to see what PMax is actually contributing." } },
+        { "@type": "Question", "name": "How much does Google Ads management cost?", "acceptedAnswer": { "@type": "Answer", "text": "Fees are typically a percentage of ad spend, a flat monthly retainer, or a hybrid. Search Converts prices to the work rather than publishing tiers, because a single-location service business running one campaign and a national ecommerce account with thousands of products are not the same job, and gives a real number on the first call. Be cautious of arrangements where the fee rises automatically with spend and nothing else." } },
+        { "@type": "Question", "name": "Do I get to keep my Google Ads account?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Clients retain administrative ownership of their Google Ads account, conversion data and historical performance throughout the relationship and after it ends. An agency that runs your advertising inside their own account is holding your data, which becomes apparent at the worst possible moment. Ask this question before signing with any agency." } },
+        { "@type": "Question", "name": "How long before Google Ads produces results?", "acceptedAnswer": { "@type": "Answer", "text": "Clicks and enquiries can arrive within days of launch. Reliable optimized performance takes longer: expect two to four weeks before there is enough conversion data to judge anything, and roughly 90 days for an account that needed restructuring. Smart bidding strategies need a meaningful volume of accurate conversions before they behave sensibly, which is why fixing tracking comes first." } },
+        { "@type": "Question", "name": "Are you a Google Ads Partner?", "acceptedAnswer": { "@type": "Answer", "text": "Partner status is based on spend thresholds, certification and performance criteria that Google sets and periodically changes. It is worth asking any agency about but is a baseline rather than a differentiator, since it indicates an agency manages a certain volume of spend rather than managing it well. More useful questions are whether you keep ownership of your account, how results are reported, and whether they can explain what your search terms report currently shows." } },
+        { "@type": "Question", "name": "Should I run Google Ads or invest in SEO?", "acceptedAnswer": { "@type": "Answer", "text": "Usually both, with paid first if revenue is needed soon. Google Ads produces customers within days and reveals which keywords genuinely convert; organic search takes months but continues working after you stop paying. The common sequence is to run paid for immediate revenue while organic is built underneath, then redeploy paid budget toward commercial searches organic will never win. Search and AI-search optimization runs through Eye To Ad Media." } }
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ── OBFUSCATED ADDRESSES (offset cipher, assembled at runtime) ── */
+  var _L = [112,117,109,118,71,108,128,108,123,118,104,107,53,106,118,116];
+  var _P = [111,108,115,115,118,71,122,108,104,121,106,111,106,118,117,125,108,121,123,122,53,106,118,116];
+  function _d(a) { var s = '', i; for (i = 0; i < a.length; i++) { s += String.fromCharCode(a[i] - 7); } return s; }
+
+  /* ── PUBLIC EMAIL LINKS ── */
+  document.querySelectorAll('.js-email').forEach(function (el) {
+    var addr = _d(_P);
+    el.setAttribute('href', 'mai' + 'lto:' + addr);
+    el.textContent = addr;
+  });
+
+  /* ── HAMBURGER ── */
+  var burger = document.getElementById('hamburger');
+  var mnav = document.getElementById('mobile-nav');
+  if (burger && mnav) {
+    burger.addEventListener('click', function () {
+      var open = mnav.classList.toggle('open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+
+  /* ── DESKTOP DROPDOWNS ── */
+  var navItems = document.querySelectorAll('.header-nav > li');
+  navItems.forEach(function (li) {
+    var btn = li.querySelector('.nav-toggle');
+    if (!btn) return;
+    function close() { li.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); }
+    function open() {
+      navItems.forEach(function (o) {
+        var b = o.querySelector('.nav-toggle');
+        if (b) { o.classList.remove('open'); b.setAttribute('aria-expanded', 'false'); }
+      });
+      li.classList.add('open'); btn.setAttribute('aria-expanded', 'true');
+    }
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      li.classList.contains('open') ? close() : open();
+    });
+    li.addEventListener('mouseenter', open);
+    li.addEventListener('mouseleave', close);
+    li.addEventListener('keydown', function (e) { if (e.key === 'Escape') { close(); btn.focus(); } });
+  });
+  document.addEventListener('click', function () {
+    navItems.forEach(function (o) {
+      var b = o.querySelector('.nav-toggle');
+      if (b) { o.classList.remove('open'); b.setAttribute('aria-expanded', 'false'); }
+    });
+  });
+
+  /* ── SCROLL REVEAL + ONE-SHOT ANIMATIONS ── */
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els = document.querySelectorAll('.reveal');
+  els.forEach(function (el) { el.classList.add('will-reveal'); });
+
+  function countUp(el) {
+    var target = parseInt(el.getAttribute('data-target'), 10) || 0;
+    if (reduce) { el.textContent = target.toLocaleString('en-US'); return; }
+    var start = null, dur = 1400;
+    function step(ts) {
+      if (!start) start = ts;
+      var p = Math.min((ts - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(target * eased).toLocaleString('en-US');
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        e.target.classList.add('visible');
+        e.target.querySelectorAll('.countup').forEach(countUp);
+        e.target.querySelectorAll('.draw-arrow, .fig-draw').forEach(function (a) { a.classList.add('drawn'); });
+        obs.unobserve(e.target);
+      });
+    }, { threshold: 0.08 });
+    els.forEach(function (el) { obs.observe(el); });
+
+    var fill = document.getElementById('teaser-fill');
+    if (fill) {
+      var fo = new IntersectionObserver(function (en) {
+        en.forEach(function (e) { if (e.isIntersecting) { fill.style.width = '35%'; fo.unobserve(e.target); } });
+      }, { threshold: 0.4 });
+      fo.observe(fill);
+    }
+  } else {
+    els.forEach(function (el) { el.classList.add('visible'); });
+    document.querySelectorAll('.countup').forEach(countUp);
+    document.querySelectorAll('.draw-arrow, .fig-draw').forEach(function (a) { a.classList.add('drawn'); });
+    var f2 = document.getElementById('teaser-fill'); if (f2) f2.style.width = '35%';
+  }
+
+  /* ── SAFETY NET: never leave a figure permanently invisible ── */
+  window.setTimeout(function () {
+    document.querySelectorAll('.draw-arrow, .fig-draw').forEach(function (a) { a.classList.add('drawn'); });
+  }, 2600);
+
+  /* ── A/B DEMO ── */
+  var abDone = false;
+  document.querySelectorAll('[data-ab]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var pick = btn.getAttribute('data-ab');
+      document.getElementById('ab-var-a').classList.toggle('chosen', pick === 'a');
+      document.getElementById('ab-var-b').classList.toggle('chosen', pick === 'b');
+      var t = document.getElementById('ab-reveal-title');
+      var b = document.getElementById('ab-reveal-body');
+      if (pick === 'b') {
+        t.textContent = 'That is conversion rate optimization in one click.';
+        b.textContent = 'Most people pick Version B, and the reasons are not aesthetic. Four separate, well-documented conversion principles are working at once:';
+      } else {
+        t.textContent = 'Interesting pick. Here is why most people go the other way.';
+        b.textContent = 'Version A is not wrong, it is just doing less work. Four documented conversion principles are missing from it, and each one costs a small percentage of the people who would otherwise have acted:';
+      }
+      document.getElementById('ab-reveal').classList.add('show');
+      if (!abDone) { abDone = true; }
+    });
+  });
+
+  /* ── CONVERSION CALCULATOR ── */
+  var cT = document.getElementById('calc-traffic');
+  var cR = document.getElementById('calc-rate');
+  var cV = document.getElementById('calc-value');
+  var cL = document.getElementById('calc-lift');
+
+  function money(n) {
+    return '$' + Math.round(n).toLocaleString('en-US');
+  }
+  function paintSlider(el) {
+    var pct = ((el.value - el.min) / (el.max - el.min)) * 100;
+    el.style.background = 'linear-gradient(90deg, #f97316 0%, #f97316 ' + pct + '%, #e2e8f0 ' + pct + '%, #e2e8f0 100%)';
+  }
+  function calc() {
+    if (!cT) return;
+    var traffic = +cT.value;
+    var rate = +cR.value / 10;
+    var val = +cV.value;
+    var lift = +cL.value / 10;
+
+    document.getElementById('out-traffic').textContent = traffic.toLocaleString('en-US');
+    document.getElementById('out-rate').textContent = rate.toFixed(1) + '%';
+    document.getElementById('out-value').textContent = money(val);
+    document.getElementById('out-lift').textContent = '+' + lift.toFixed(1) + ' pt';
+
+    var now = traffic * (rate / 100) * 12;
+    var after = traffic * ((rate + lift) / 100) * 12;
+    var delta = (after - now) * val;
+
+    document.getElementById('out-now').textContent = Math.round(now).toLocaleString('en-US');
+    document.getElementById('out-after').textContent = Math.round(after).toLocaleString('en-US');
+    document.getElementById('out-annual').textContent = money(delta);
+    document.getElementById('out-explainer').textContent =
+      'Same traffic. Same ad spend. Same team. That is what moving your conversion rate from ' +
+      rate.toFixed(1) + '% to ' + (rate + lift).toFixed(1) + '% is worth over twelve months.';
+
+    [cT, cR, cV, cL].forEach(paintSlider);
+  }
+  [cT, cR, cV, cL].forEach(function (el) { if (el) el.addEventListener('input', calc); });
+  calc();
+
+  /* ── FUNNEL ── */
+  var funnelData = {
+    before: {
+      counts: [1000, 550, 220, 48, 15],
+      note: '<strong>15 leads from 1,000 visitors.</strong> A 1.5% conversion rate, which is roughly average for a lead-generation site. The 985 people who left were not bad traffic &mdash; you already paid to bring every one of them here.'
+    },
+    after: {
+      counts: [1000, 760, 410, 132, 47],
+      note: '<strong>47 leads from the same 1,000 visitors.</strong> No extra ad spend, no new channel, no more traffic. Faster pages kept more people past the first five seconds, clearer navigation got more of them to the offer, and a shorter form let more of them finish. This is what the work looks like on a scoreboard.'
+    }
+  };
+  var funnelBars = document.querySelectorAll('.funnel-bar');
+  var funnelLosses = document.querySelectorAll('.funnel-loss');
+  var funnelReadout = document.getElementById('funnel-readout');
+  var funnelPainted = false;
+
+  function paintFunnel(mode) {
+    var d = funnelData[mode];
+    funnelBars.forEach(function (bar, i) {
+      var c = d.counts[i];
+      bar.style.width = (c / d.counts[0] * 100) + '%';
+      bar.textContent = c.toLocaleString('en-US');
+    });
+    funnelLosses.forEach(function (l, i) {
+      if (i === 0) { l.textContent = '\u2014'; l.classList.remove('gain'); return; }
+      var loss = d.counts[i - 1] - d.counts[i];
+      l.textContent = '\u2212' + loss.toLocaleString('en-US');
+      l.classList.remove('gain');
+    });
+    if (funnelReadout) funnelReadout.innerHTML = d.note;
+  }
+  document.querySelectorAll('.funnel-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('.funnel-toggle').forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      paintFunnel(btn.getAttribute('data-funnel'));
+    });
+  });
+  if ('IntersectionObserver' in window && funnelBars.length) {
+    var fnObs = new IntersectionObserver(function (en) {
+      en.forEach(function (e) {
+        if (e.isIntersecting && !funnelPainted) { funnelPainted = true; paintFunnel('before'); fnObs.unobserve(e.target); }
+      });
+    }, { threshold: 0.25 });
+    fnObs.observe(document.getElementById('funnel-stages'));
+  } else {
+    paintFunnel('before');
+  }
+
+  /* ── FAQ ACCORDION ── */
+  var faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(function (item) {
+    var btn = item.querySelector('.faq-question');
+    var ans = item.querySelector('.faq-answer');
+    if (!btn || !ans) return;
+    btn.addEventListener('click', function () {
+      var wasOpen = item.classList.contains('open');
+      faqItems.forEach(function (i) {
+        i.classList.remove('open');
+        var q = i.querySelector('.faq-question'), a = i.querySelector('.faq-answer');
+        if (q) q.setAttribute('aria-expanded', 'false');
+        if (a) a.hidden = true;
+      });
+      if (!wasOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+        ans.hidden = false;
+      }
+    });
+  });
+
+  /* ── FORM TIME TRAP ── */
+  var loadedAt = Date.now().toString();
+  ['h-form-loaded', 'b-form-loaded'].forEach(function (id) {
+    var f = document.getElementById(id); if (f) f.value = loadedAt;
+  });
+
+  /* ── RATE LIMITER ── */
+  var submitTimes = [];
+  function rateLimited() {
+    var now = Date.now();
+    submitTimes = submitTimes.filter(function (t) { return now - t < 60000; });
+    if (submitTimes.length >= 3) return true;
+    submitTimes.push(now);
+    return false;
+  }
+
+  /* ── SPAM CONTENT FILTER ── */
+  var spamPatterns = [
+    /https?:\/\//i, /www\./i, /\[url/i, /<a\s/i,
+    /\bviagra\b/i, /\bcialis\b/i, /\bcasino\b/i, /\bpoker\b/i,
+    /\bbitcoin\b/i, /\bcrypto\b/i, /\bforex\b/i, /\bloan offer\b/i,
+    /\bseo (services|package|packages|cheap|expert)\b/i,
+    /\bguaranteed (rankings|results|first page)\b/i,
+    /\bbacklinks?\b/i, /\bfirst page of google\b/i,
+    /(.)\1{6,}/, /[^\x00-\x7F]{8,}/
+  ];
+  function isSpam(text) {
+    if (!text) return false;
+    return spamPatterns.some(function (p) { return p.test(text); });
+  }
+
+  /* ── FORM SUBMISSION ── */
+  function wireForm(formId, btnId, msgId, loadedId) {
+    var form = document.getElementById(formId);
+    var btn = document.getElementById(btnId);
+    var msg = document.getElementById(msgId);
+    if (!form || !btn || !msg) return;
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      if (rateLimited()) {
+        msg.style.color = '#ef4444';
+        msg.textContent = 'Too many attempts. Wait a minute and try again, or call 720-712-8615.';
+        return;
+      }
+
+      var honey = form.querySelector('[name="_honey"]');
+      if (honey && honey.value !== '') return;
+
+      var lf = document.getElementById(loadedId);
+      if (lf && lf.value) {
+        if (Date.now() - parseInt(lf.value, 10) < 3500) return;
+      }
+
+      var message = (form.querySelector('[name="user_message"]') || {}).value || '';
+      var bizName = (form.querySelector('[name="business_name"]') || {}).value || '';
+      if (isSpam(message) || isSpam(bizName)) {
+        msg.style.color = '#ef4444';
+        msg.textContent = 'That message was flagged as spam. Remove any links and try again, or call 720-712-8615.';
+        return;
+      }
+
+      var nameEl = form.querySelector('[name="user_name"]');
+      var phoneEl = form.querySelector('[name="user_phone"]');
+      var name = nameEl ? nameEl.value.trim() : '';
+      var phone = phoneEl ? phoneEl.value.trim() : '';
+      if (!name || !phone) {
+        msg.style.color = '#ef4444';
+        msg.textContent = 'Enter your name and phone number so we can reach you.';
+        if (!name && nameEl) { nameEl.focus(); } else if (phoneEl) { phoneEl.focus(); }
+        return;
+      }
+      if (phone.replace(/\D/g, '').length < 10) {
+        msg.style.color = '#ef4444';
+        msg.textContent = 'That phone number looks incomplete. Include the area code.';
+        if (phoneEl) phoneEl.focus();
+        return;
+      }
+
+      var originalText = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+      msg.style.color = '#64748b';
+      msg.textContent = 'Sending your request...';
+
+      var data = new FormData(form);
+      data.append('_template', 'table');
+      data.append('_subject', 'New lead - Search Converts: ' + name);
+
+      var endpoint = 'ht' + 'tps://for' + 'msubmit.co/' + _d(_L);
+
+      fetch(endpoint, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(function (res) {
+        if (res.ok) {
+          form.reset();
+          msg.style.color = '#10b981';
+          msg.textContent = 'Received. We will get back to you within one business day.';
+          btn.textContent = 'Request sent';
+        } else {
+          throw new Error('status ' + res.status);
+        }
+      }).catch(function () {
+        msg.style.color = '#f59e0b';
+        msg.innerHTML = 'We could not confirm delivery. Your request may not have gone through &mdash; please call <a href="tel:7207128615" style="color:#ea580c;font-weight:700;">720-712-8615</a> or try again.';
+        btn.disabled = false;
+        btn.textContent = originalText;
+      });
+    });
+  }
+
+  wireForm('hero-form', 'hero-submit-btn', 'hero-form-msg', 'h-form-loaded');
+  wireForm('bottom-form', 'bottom-submit-btn', 'bottom-form-msg', 'b-form-loaded');
+})();
+</script>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ── MATCH TYPE SIMULATOR ── */
+  // level: 1 = eligible on exact, 2 = phrase and broader, 3 = broad only
+  var QUERIES = [
+    { q: 'emergency plumber',                 lvl: 1, v: 'good'  },
+    { q: 'emergency plumbers',                lvl: 1, v: 'good'  },
+    { q: 'urgent plumber',                    lvl: 1, v: 'good'  },
+    { q: 'emergency plumber near me',         lvl: 2, v: 'good'  },
+    { q: '24 hour emergency plumber',         lvl: 2, v: 'good'  },
+    { q: 'weekend emergency plumber denver',  lvl: 2, v: 'good'  },
+    { q: 'emergency plumber cost',            lvl: 2, v: 'mixed' },
+    { q: 'burst pipe repair',                 lvl: 3, v: 'good'  },
+    { q: 'plumbing repair service',           lvl: 3, v: 'mixed' },
+    { q: 'how to fix a leaking pipe',         lvl: 3, v: 'waste' },
+    { q: 'plumber salary',                    lvl: 3, v: 'waste' },
+    { q: 'plumber jobs near me',              lvl: 3, v: 'waste' },
+    { q: 'diy drain unclog',                  lvl: 3, v: 'waste' },
+    { q: 'plumbing supply store',             lvl: 3, v: 'waste' }
+  ];
+  var LABEL = { good: 'Buyer', mixed: 'Maybe', waste: 'Waste' };
+  var mtList = document.getElementById('mt-list');
+
+  if (mtList) {
+    var NOTES = {
+      1: '<strong>Exact match.</strong> Only searches that mean what your keyword means. The tightest control available and the smallest reach &mdash; note that Google still matches close variants, so even this is broader than the brackets suggest. Start here when budget is limited and every click has to count.',
+      2: '<strong>Phrase match.</strong> Searches that contain your keyword\u2019s meaning plus additional words. This is where most qualified long-tail volume lives &mdash; "near me", "24 hour", city names &mdash; without opening the gates. For most lead-generation accounts this is the sensible default.',
+      3: '<strong>Broad match.</strong> Every search Google judges related, which now includes people researching salaries, looking for jobs, and trying to fix the problem themselves. Each of those clicks costs the same as a real buyer. Broad match works with a maintained negative keyword list and accurate conversion tracking. Without both, this is where budgets disappear.'
+    };
+    function renderMT(level) {
+      var html = '', elig = 0, good = 0, waste = 0;
+      QUERIES.forEach(function (item) {
+        var on = item.lvl <= level;
+        if (on) {
+          elig++;
+          if (item.v === 'waste') waste++; else if (item.v === 'good') good++;
+        }
+        html += '<div class="mt-q ' + (on ? 'on-' + item.v : 'off') + '">' +
+                '<span>' + item.q + '</span>' +
+                '<span class="mt-verdict">' + (on ? LABEL[item.v] : 'Blocked') + '</span>' +
+                '</div>';
+      });
+      mtList.innerHTML = html;
+      document.getElementById('mt-elig').textContent = elig;
+      document.getElementById('mt-good').textContent = good;
+      var w = document.getElementById('mt-waste');
+      w.textContent = waste;
+      w.className = waste > 0 ? 'bad' : 'good';
+      document.getElementById('mt-note').innerHTML = NOTES[level];
+      var disp = { 1: '[emergency plumber]', 2: '"emergency plumber"', 3: 'emergency plumber' };
+      document.getElementById('mt-display').textContent = disp[level];
+    }
+    document.querySelectorAll('.mt-tab').forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        document.querySelectorAll('.mt-tab').forEach(function (t) { t.classList.remove('on'); });
+        tab.classList.add('on');
+        renderMT(+tab.getAttribute('data-mt'));
+      });
+    });
+    renderMT(2);
+  }
+
+  /* ── CAMPAIGN TYPE SELECTOR ── */
+  var csState = { what: 'services', goal: 'leads', demand: 'yes' };
+  var csName = document.getElementById('cs-name');
+  if (csName) {
+    function recommend() {
+      var w = csState.what, g = csState.goal, d = csState.demand;
+      var name, body;
+
+      if (w === 'local' && (g === 'calls' || g === 'leads')) {
+        name = 'Local Services Ads + Search';
+        body = '<p><strong>Start with Local Services Ads.</strong> You pay per lead rather than per click, your listing appears above the standard ads, and Google handles the verification badge that local buyers look for. It is a separate product from your main account and worth the setup effort for trades and licensed services.</p><p>Run a small <strong>Search campaign</strong> alongside it for the service and location terms LSA does not cover. Keep them separate so you can see which is actually producing booked jobs, and make sure call tracking is in place before either goes live.</p>';
+      } else if (w === 'products' && g === 'sales') {
+        name = 'Shopping, then Performance Max';
+        body = '<p><strong>Standard Shopping first.</strong> Your results here are decided by product feed quality &mdash; titles, images, attributes and pricing &mdash; far more than by bidding. Fix the feed before spending on anything else, because every campaign type downstream reads from it.</p><p>Once Shopping has produced consistent conversion data, <strong>Performance Max</strong> can extend reach across other Google surfaces. Add it second, not first, and always keep a separate branded Search campaign so PMax cannot take credit for searches you would have won for free.</p>';
+      } else if (d === 'no') {
+        name = 'Demand Gen + Video';
+        body = '<p>If nobody is searching for what you sell yet, Search campaigns have almost nothing to bid on. <strong>Demand Gen and Video</strong> put your offer in front of relevant audiences on YouTube, Discover and Gmail before they know to look for it.</p><p>This is creative-led rather than keyword-led, so budget belongs in production. Judge it on assisted conversions and branded search volume rather than last-click, and pair it with <a href="/retargeting/">retargeting</a> to catch the interest it creates. <a href="/facebook-ads-management/">Meta Ads</a> often works alongside this for the same reason.</p>';
+      } else if (w === 'software') {
+        name = 'Search + Retargeting';
+        body = '<p><strong>Search</strong> for the problem-aware terms and competitor comparisons where intent is highest, kept in tight ad groups so each ad matches the specific search. Software buyers research heavily and compare, so the long tail matters more here than head terms.</p><p>Because evaluation cycles run long, <strong><a href="/retargeting/">retargeting</a></strong> does much of the real work. Optimize toward trial-to-paid rather than signups &mdash; those two numbers diverge quickly and cheap signups can look like success while revenue stays flat.</p>';
+      } else if (g === 'aware') {
+        name = 'Video + Display';
+        body = '<p><strong>Video</strong> on YouTube buys attention at a low cost per view, and <strong>Display</strong> extends reach cheaply across the open web. Neither is a direct-response channel and neither should be judged on last-click conversions.</p><p>Set the measurement expectation before launch: assisted conversions, branded search lift and view-through behaviour. If you need customers rather than awareness this month, a Search campaign will get you there faster.</p>';
+      } else {
+        name = 'Search campaign';
+        body = '<p><strong>Search is the right starting point.</strong> People are already looking for what you sell, which is the highest-intent traffic available anywhere. Build tight ad groups so each ad matches a narrow set of searches, start on phrase match rather than broad, and add negatives from week one.</p><p>Conversion tracking has to be verified before launch, not after. Once Search is profitable and stable, extend into <a href="/retargeting/">retargeting</a> for the people who visited and did not act &mdash; usually the cheapest conversions in the account.</p>';
+      }
+      csName.textContent = name;
+      document.getElementById('cs-body').innerHTML = body;
+    }
+    document.querySelectorAll('.cs-opts').forEach(function (group) {
+      var key = group.getAttribute('data-cs');
+      group.querySelectorAll('.cs-opt').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          group.querySelectorAll('.cs-opt').forEach(function (b) { b.classList.remove('on'); });
+          btn.classList.add('on');
+          csState[key] = btn.getAttribute('data-v');
+          recommend();
+        });
+      });
+    });
+    recommend();
+  }
+
+  /* ── QUALITY SCORE DIAGNOSTIC ── */
+  var qsState = { ctr: 2, rel: 2, lp: 2 };
+  var qsHead = document.getElementById('qs-head');
+  if (qsHead) {
+    var FIX = {
+      ctr: {
+        title: 'Fix expected click-through rate first',
+        body: 'Your ads are not being clicked as often as competitors in the same position. That is usually a headline problem: the ad describes the company rather than answering the search. Write the primary headline as the search term itself where it is honest to do so, put the outcome in the second headline, and use every available asset. Low expected CTR also frequently signals that the keyword does not belong in that ad group at all.'
+      },
+      rel: {
+        title: 'Fix ad relevance first',
+        body: 'This is nearly always a structure problem rather than a copywriting one. If one ad group holds forty loosely related keywords, no single ad can be relevant to all of them. Split them into tighter groups where every keyword shares an intent, then write ads to that specific intent. This is the cheapest of the three to fix and it moves fastest.'
+      },
+      lp: {
+        title: 'Fix landing page experience first',
+        body: 'Google is judging what happens after the click: load speed, mobile behaviour, and whether the page delivers what the ad promised. Sending traffic to a homepage is the most common cause. Build a page for the specific service being advertised, make it fast, and match its language to the ad. This lowers your cost per click and raises your conversion rate at the same time &mdash; see <a href="/conversion-optimization/">conversion optimization</a>.'
+      }
+    };
+    function runQs() {
+      var lowest = null, lowVal = 4;
+      ['rel','lp','ctr'].forEach(function (k) {
+        if (qsState[k] < lowVal) { lowVal = qsState[k]; lowest = k; }
+      });
+      var total = qsState.ctr + qsState.rel + qsState.lp;
+      if (total === 9) {
+        qsHead.textContent = 'All three above average';
+        document.getElementById('qs-body').innerHTML = 'There is nothing left to fix here, and that is a genuinely uncommon position. At this point relevance is no longer your constraint and bidding, budget and reach become the levers that matter. Worth checking that your <a href="/conversion-optimization/">conversion rate</a> justifies bidding harder for higher positions.';
+        return;
+      }
+      qsHead.textContent = FIX[lowest].title;
+      var extra = '';
+      if (lowVal === 2) extra = ' Everything here is average rather than broken, so gains will be incremental rather than dramatic &mdash; but average is where most accounts sit, and moving one component to above average is usually enough to change your cost per click meaningfully.';
+      document.getElementById('qs-body').innerHTML = FIX[lowest].body + extra;
+    }
+    document.querySelectorAll('.qs-btns').forEach(function (group) {
+      var key = group.getAttribute('data-qs');
+      group.querySelectorAll('.qs-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          group.querySelectorAll('.qs-btn').forEach(function (b) { b.classList.remove('on'); });
+          btn.classList.add('on');
+          qsState[key] = +btn.getAttribute('data-v');
+          runQs();
+        });
+      });
+    });
+    runQs();
+  }
+})();
+</script>
+
+</body>
+</html>
