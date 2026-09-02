@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PPC Agency &amp; PPC Management | Search Converts</title>
-  <meta name="description" content="A PPC agency that manages pay-per-click advertising across Google Ads, Meta, programmatic and CTV. Live ad auction simulator, break-even cost-per-click calculator, and a free PPC account audit.">
-  <link rel="canonical" href="https://searchconverts.com/ppc-management/">
+  <title>Google Ads Management &amp; Google PPC Agency | Search Converts</title>
+  <meta name="description" content="Google Ads management from a Google PPC agency that fixes account structure before bidding. Free match type simulator, campaign type selector, Quality Score diagnostic and a free account audit.">
+  <link rel="canonical" href="https://searchconverts.com/google-ads-management/">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
   <meta name="author" content="Search Converts">
-  <meta property="og:title" content="PPC Agency &amp; PPC Management | Search Converts">
-  <meta property="og:description" content="The highest bid does not win. A PPC agency built around relevance, not just bidding. Free account audit.">
-  <meta property="og:url" content="https://searchconverts.com/ppc-management/">
+  <meta property="og:title" content="Google Ads Management &amp; Google PPC Agency | Search Converts">
+  <meta property="og:description" content="Most Google PPC waste is structural, not a bidding problem. Match type simulator, campaign selector and Quality Score diagnostic inside.">
+  <meta property="og:url" content="https://searchconverts.com/google-ads-management/">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Search Converts">
   <meta property="og:image" content="https://searchconverts.com/images/Generative-engine-optimization-experts.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="PPC Agency &amp; PPC Management | Search Converts">
-  <meta name="twitter:description" content="The highest bid does not win. Live auction simulator and break-even CPC calculator.">
+  <meta name="twitter:title" content="Google Ads Management &amp; Google PPC Agency">
+  <meta name="twitter:description" content="Most Google PPC waste is structural. Free tools and a free account audit.">
   <link rel="icon" type="image/png" href="/images/search-converts-favicon.png">
   <link rel="apple-touch-icon" href="/images/search-converts-favicon.png">
   <link rel="shortcut icon" type="image/png" href="/images/search-converts-favicon.png">
@@ -1215,331 +1215,254 @@
       .draw-arrow path, .draw-arrow line, .draw-arrow polyline { stroke-dashoffset: 0; }
     }
   
-    /* definition + ordered list reused from guide styling */
-    .definition { background: linear-gradient(135deg,#fff7ed,#ffedd5); border: 1.5px solid rgba(249,115,22,.3); border-left: 6px solid var(--orange); border-radius: 12px; padding: 28px 30px; }
-    .definition p { font-size: 19px; color: var(--navy); line-height: 1.78; margin: 0; font-weight: 500; }
-    .guide-ol { counter-reset: g; list-style: none; padding: 0; margin: 0 0 20px; }
-    .guide-ol li { font-size: 18px; color: var(--muted); line-height: 1.75; padding-left: 46px; position: relative; margin-bottom: 20px; counter-increment: g; }
-    .guide-ol li strong { color: var(--navy); }
-    .guide-ol li::before { content: counter(g); position: absolute; left: 0; top: 2px; width: 30px; height: 30px; border-radius: 50%; background: var(--orange); color: #fff; font-family: 'Barlow Condensed', sans-serif; font-size: 15px; font-weight: 900; display: flex; align-items: center; justify-content: center; }
-    .ind-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; }
-    @media (max-width: 900px) { .ind-grid { grid-template-columns: 1fr 1fr; } }
-    @media (max-width: 520px) { .ind-grid { grid-template-columns: 1fr; } }
-    .ind-card { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.1); border-radius: 0; padding: 22px 20px; text-decoration: none; display: block; transition: border-color .2s, background .2s, transform .2s; }
-    .ind-card:hover { border-color: var(--orange); background: rgba(249,115,22,.07); transform: translateY(-3px); }
-    .ind-card span { font-size: 24px; display: block; margin-bottom: 10px; line-height: 1; }
-    .ind-card strong { font-family: 'Barlow Condensed', sans-serif; font-size: 18px; font-weight: 800; color: #fff; display: block; margin-bottom: 5px; letter-spacing: .02em; }
-    .ind-card p { font-size: 14.5px; color: #94a3b8; line-height: 1.5; margin: 0; }
-
-    /* ══════ PPC PAGE — AUCTION FLOOR ══════ */
-    .ppc-hero {
-      background: #080c16; position: relative; overflow: hidden; padding: 64px 0 70px;
+    /* mobile safety */
+    @media (max-width: 760px) {
+      .bp-sec { padding: 54px 0; }
+      .bp-hero { padding: 38px 0 46px; }
+      .bp-lede { font-size: 18px; }
+      .bp-sec p, .bp-ol li { font-size: 17px; }
+      .cs, .qs, .mt, .bp-fig { margin-left: 0; margin-right: 0; }
+      .cs { padding: 18px 16px; }
+      .bp-cta { padding: 30px 20px; }
+      .bp-cta h3 { font-size: 30px; }
+      .qs-row { padding: 16px 16px; }
+      .qs-out, .cs-out { padding: 20px 16px; }
+      .mt-foot, .mt-note { padding-left: 16px; padding-right: 16px; }
+      .bp-fig { padding: 14px; }
     }
-    .ppc-hero::before {
+    .bp-sec table, .bp-sec svg, .mt, .cs, .qs { max-width: 100%; }
+    .bp-hero, .bp-sec { overflow-x: hidden; }
+
+    /* ══════ GOOGLE ADS — BLUEPRINT ══════ */
+    .bp { background: #fbfaf7; }
+    .bp-hero {
+      background: #fbfaf7; position: relative; overflow: hidden;
+      padding: 56px 0 66px; border-bottom: 1px solid #e6e2d9;
+    }
+    .bp-hero::before {
       content: ''; position: absolute; inset: 0;
-      background-image: linear-gradient(rgba(34,211,238,0.045) 1px, transparent 1px),
-                        linear-gradient(90deg, rgba(34,211,238,0.045) 1px, transparent 1px);
-      background-size: 40px 40px;
+      background-image: linear-gradient(rgba(13,18,32,0.045) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(13,18,32,0.045) 1px, transparent 1px);
+      background-size: 32px 32px;
     }
-    .ppc-hero::after {
-      content: ''; position: absolute; top: -160px; left: 28%;
-      width: 620px; height: 620px; border-radius: 50%;
-      background: radial-gradient(circle, rgba(249,115,22,0.13) 0%, transparent 68%);
-      pointer-events: none;
+    .bp-hero::after {
+      content: ''; position: absolute; inset: 0;
+      background-image: linear-gradient(rgba(13,18,32,0.085) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(13,18,32,0.085) 1px, transparent 1px);
+      background-size: 160px 160px;
     }
-    .ppc-hero-inner {
-      max-width: 1240px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2;
-      display: grid; grid-template-columns: 1fr 452px; gap: 54px; align-items: center;
-    }
-    @media (max-width: 1000px) { .ppc-hero-inner { grid-template-columns: 1fr; gap: 40px; } }
-    .ppc-crumb {
+    .bp-inner { max-width: 1240px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2; }
+    .bp-hero-grid { display: grid; grid-template-columns: 1fr 430px; gap: 52px; align-items: center; }
+    @media (max-width: 1000px) { .bp-hero-grid { grid-template-columns: 1fr; gap: 36px; } }
+    .bp-crumb {
       font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 700;
-      letter-spacing: 0.1em; text-transform: uppercase; color: #475569; margin-bottom: 20px;
+      letter-spacing: 0.1em; text-transform: uppercase; color: #8a8577; margin-bottom: 18px;
     }
-    .ppc-crumb a { color: #64748b; text-decoration: none; }
-    .ppc-crumb a:hover { color: var(--orange); }
-    .ppc-tick {
-      display: inline-flex; align-items: center; gap: 9px;
-      font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 800;
-      letter-spacing: 0.15em; text-transform: uppercase; color: #22d3ee;
-      border: 1px solid rgba(34,211,238,0.3); background: rgba(34,211,238,0.07);
-      padding: 7px 14px; margin-bottom: 22px; border-radius: 2px;
+    .bp-crumb a { color: #6b675c; text-decoration: none; }
+    .bp-crumb a:hover { color: var(--orange-deep); }
+    .bp-tag {
+      display: inline-block; font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12.5px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase;
+      color: #0d1220; border: 1.5px solid #0d1220; padding: 6px 13px; margin-bottom: 20px;
     }
-    .ppc-tick::before {
-      content: ''; width: 7px; height: 7px; border-radius: 50%;
-      background: #22d3ee; animation: pulse 2s ease-in-out infinite;
+    .bp-h1 {
+      font-family: 'Bebas Neue', sans-serif; font-size: clamp(44px, 6.2vw, 82px);
+      line-height: 0.96; color: #0d1220; margin-bottom: 20px; letter-spacing: 0.01em;
     }
-    .ppc-h1 {
-      font-family: 'Bebas Neue', sans-serif; font-size: clamp(46px, 6.4vw, 84px);
-      line-height: 0.96; color: #fff; margin-bottom: 22px; letter-spacing: 0.01em;
+    .bp-h1 .amber { color: var(--orange-deep); display: block; }
+    .bp-lede { font-size: 20px; color: #4a463e; line-height: 1.68; max-width: 620px; margin-bottom: 24px; }
+    .bp-lede strong { color: #0d1220; }
+    .bp-specs { border-top: 1.5px solid #0d1220; padding-top: 16px; display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; max-width: 600px; }
+    @media (max-width: 560px) { .bp-specs { grid-template-columns: 1fr 1fr; } }
+    .bp-spec span {
+      display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 11px;
+      font-weight: 800; letter-spacing: 0.13em; text-transform: uppercase; color: #8a8577; margin-bottom: 3px;
     }
-    .ppc-h1 .amber { color: var(--orange); display: block; }
-    .ppc-lede { font-size: 20px; color: #94a3b8; line-height: 1.65; max-width: 620px; margin-bottom: 26px; }
-    .ppc-lede strong { color: #e2e8f0; }
-    .ppc-stats { display: flex; gap: 34px; flex-wrap: wrap; border-top: 1px solid rgba(255,255,255,0.09); padding-top: 22px; }
-    .ppc-stat span {
-      display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 11.5px;
-      font-weight: 800; letter-spacing: 0.13em; text-transform: uppercase; color: #475569; margin-bottom: 3px;
-    }
-    .ppc-stat strong {
-      font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 32px;
-      color: var(--neon-lime); line-height: 1; display: block;
-    }
-    .ppc-stat em { font-style: normal; color: #64748b; font-size: 13px; }
+    .bp-spec strong { font-family: 'Barlow Condensed', sans-serif; font-size: 20px; font-weight: 900; color: #0d1220; letter-spacing: 0.01em; }
 
-    /* ── SERP mockup ── */
-    .serp {
-      background: #fff; border-radius: 10px; overflow: hidden;
-      box-shadow: 0 34px 90px rgba(0,0,0,0.6), 0 0 0 1px rgba(249,115,22,0.22);
-    }
-    .serp-bar { background: #f1f5f9; padding: 11px 14px; display: flex; align-items: center; gap: 9px; border-bottom: 1px solid #e2e8f0; }
-    .serp-dot { width: 9px; height: 9px; border-radius: 50%; background: #cbd5e1; }
-    .serp-url {
-      flex: 1; background: #fff; border: 1px solid #e2e8f0; border-radius: 20px;
-      padding: 5px 13px; font-size: 12.5px; color: #64748b; font-family: 'Barlow', sans-serif;
-    }
-    .serp-body { padding: 16px 18px 20px; }
-    .serp-row { padding: 12px 12px; border-radius: 7px; margin-bottom: 6px; position: relative; transition: background .25s, box-shadow .25s; }
-    .serp-row.ad { background: #fff7ed; box-shadow: inset 3px 0 0 var(--orange); }
-    .serp-row.ad.top { background: #ffedd5; }
-    .serp-badge {
-      display: inline-block; font-family: 'Barlow Condensed', sans-serif; font-size: 10.5px;
-      font-weight: 900; letter-spacing: 0.11em; text-transform: uppercase;
-      background: var(--orange); color: #fff; padding: 2px 7px; border-radius: 3px; margin-right: 7px;
-    }
-    .serp-pos {
-      position: absolute; right: 10px; top: 11px;
-      font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 800;
-      letter-spacing: 0.09em; color: #c2410c; text-transform: uppercase;
-    }
-    .serp-title { font-size: 15.5px; color: #1a56db; font-weight: 600; line-height: 1.35; margin: 4px 0 2px; }
-    .serp-link { font-size: 12.5px; color: #15803d; }
-    .serp-desc { font-size: 13px; color: #64748b; line-height: 1.45; margin-top: 3px; }
-    .serp-org .serp-title { color: #1a56db; }
-    .serp-note {
-      background: #0d1220; padding: 13px 18px; font-size: 13px; color: #94a3b8;
-      line-height: 1.55; text-align: center;
-    }
-    .serp-note strong { color: var(--orange-bright); }
-
-    /* ══ AUCTION SIMULATOR ══ */
-    .auction {
-      background: #080c16; border: 1px solid rgba(255,255,255,0.1);
-      border-top: 3px solid var(--orange); padding: 34px; margin: 40px 0;
-    }
-    .auction-grid { display: grid; grid-template-columns: 300px 1fr; gap: 34px; }
-    @media (max-width: 860px) { .auction-grid { grid-template-columns: 1fr; gap: 26px; } }
-    .auc-ctrl { margin-bottom: 26px; }
-    .auc-ctrl label {
-      display: flex; justify-content: space-between; align-items: baseline;
-      font-family: 'Barlow Condensed', sans-serif; font-size: 12.5px; font-weight: 800;
-      letter-spacing: 0.11em; text-transform: uppercase; color: #64748b; margin-bottom: 9px;
-    }
-    .auc-ctrl label b { font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 26px; color: var(--orange); }
-    .auc-you {
-      background: rgba(249,115,22,0.07); border: 1px solid rgba(249,115,22,0.28);
-      padding: 18px 18px 4px; margin-bottom: 20px;
-    }
-    .auc-you-head {
-      font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 900;
-      letter-spacing: 0.14em; text-transform: uppercase; color: var(--orange-bright); margin-bottom: 14px;
-    }
-    .auc-board { border-top: 1px solid rgba(255,255,255,0.11); }
-    .auc-hd {
-      display: grid; grid-template-columns: 46px 1fr 78px 78px 92px; gap: 10px;
-      padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.11);
-      font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 800;
-      letter-spacing: 0.11em; text-transform: uppercase; color: #475569;
-    }
-    .auc-hd span:nth-child(n+3), .auc-rw span:nth-child(n+3) { text-align: right; }
-    .auc-rw {
-      display: grid; grid-template-columns: 46px 1fr 78px 78px 92px; gap: 10px;
-      padding: 13px 0; border-bottom: 1px solid rgba(255,255,255,0.07);
-      align-items: center; font-size: 15px; color: #94a3b8;
-      transition: background .3s;
-    }
-    .auc-rw.me { background: rgba(249,115,22,0.11); color: #fff; }
-    .auc-rw.out { opacity: 0.4; }
-    .auc-rw .rank {
-      font-family: 'Bebas Neue', sans-serif; font-size: 24px; color: #475569; line-height: 1; padding-left: 4px;
-    }
-    .auc-rw.me .rank { color: var(--orange); }
-    .auc-rw .nm { font-weight: 600; }
-    .auc-rw .cpc { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 17px; color: var(--neon-lime); }
-    .auc-rw.out .cpc { color: #475569; }
-    .auc-verdict {
-      margin-top: 22px; padding: 20px 22px; background: rgba(255,255,255,0.04);
-      border-left: 4px solid var(--orange); font-size: 16px; color: #94a3b8; line-height: 1.65;
-    }
-    .auc-verdict strong { color: #fff; display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 19px; margin-bottom: 5px; letter-spacing: 0.02em; }
-
-    /* ══ dark article shell ══ */
-    .ppc-sec { background: #0b111d; color: #cbd5e1; padding: 84px 0; }
-    .ppc-sec.light { background: #fff; color: var(--muted); }
-    .ppc-wrap { max-width: 900px; margin: 0 auto; padding: 0 24px; }
-    .ppc-wrap.wide { max-width: 1180px; }
-    .ppc-h2 {
-      font-family: 'Bebas Neue', sans-serif; font-size: clamp(34px, 4.4vw, 56px);
-      line-height: 1.0; color: #fff; margin-bottom: 20px; letter-spacing: 0.01em;
-    }
-    .ppc-sec.light .ppc-h2 { color: var(--navy); }
-    .ppc-h2 .amber { color: var(--orange); }
-    .ppc-h3 {
-      font-family: 'Barlow Condensed', sans-serif; font-size: 25px; font-weight: 900;
-      color: #fff; margin: 36px 0 12px; letter-spacing: 0.02em;
-    }
-    .ppc-sec.light .ppc-h3 { color: var(--navy); }
-    .ppc-sec p { font-size: 18px; line-height: 1.8; margin-bottom: 20px; }
-    .ppc-sec p strong { color: #fff; }
-    .ppc-sec.light p strong { color: var(--navy); }
-    .ppc-sec a { color: var(--orange-bright); font-weight: 700; }
-    .ppc-sec.light a { color: var(--orange-deep); }
-    .ppc-eyebrow {
-      font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 800;
-      letter-spacing: 0.18em; text-transform: uppercase; color: var(--orange);
+    /* section shell */
+    .bp-sec { background: #fbfaf7; padding: 78px 0; border-bottom: 1px solid #e6e2d9; }
+    .bp-sec.ink { background: #0d1220; border-bottom-color: rgba(255,255,255,.1); }
+    .bp-sec.paper { background: #fff; }
+    .bp-wrap { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+    .bp-wrap.wide { max-width: 1180px; }
+    .bp-eye {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 11.5px; font-weight: 800;
+      letter-spacing: 0.19em; text-transform: uppercase; color: var(--orange-deep);
       margin-bottom: 12px; display: flex; align-items: center; gap: 10px;
     }
-    .ppc-eyebrow::after { content: ''; flex: 1; max-width: 54px; height: 1px; background: var(--orange); opacity: .5; }
+    .bp-eye::before { content: ''; width: 22px; height: 1.5px; background: var(--orange-deep); }
+    .bp-sec.ink .bp-eye { color: var(--orange-bright); }
+    .bp-sec.ink .bp-eye::before { background: var(--orange-bright); }
+    .bp-h2 {
+      font-family: 'Bebas Neue', sans-serif; font-size: clamp(33px, 4.3vw, 54px);
+      line-height: 1.0; color: #0d1220; margin-bottom: 20px; letter-spacing: 0.01em;
+    }
+    .bp-sec.ink .bp-h2 { color: #fff; }
+    .bp-h2 .amber { color: var(--orange-deep); }
+    .bp-sec.ink .bp-h2 .amber { color: var(--orange-bright); }
+    .bp-h3 {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 24px; font-weight: 900;
+      color: #0d1220; margin: 34px 0 11px; letter-spacing: 0.02em;
+    }
+    .bp-sec.ink .bp-h3 { color: #fff; }
+    .bp-sec p { font-size: 18px; line-height: 1.8; color: #4a463e; margin-bottom: 19px; }
+    .bp-sec.ink p { color: #a3b0c2; }
+    .bp-sec p strong { color: #0d1220; }
+    .bp-sec.ink p strong { color: #fff; }
+    .bp-sec a { color: var(--orange-deep); font-weight: 700; }
+    .bp-sec.ink a { color: var(--orange-bright); }
 
-    /* ledger table */
-    .led { width: 100%; border-collapse: collapse; margin: 8px 0 26px; font-size: 16.5px; }
-    .led th {
-      text-align: left; font-family: 'Barlow Condensed', sans-serif; font-size: 12px;
-      font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #475569;
-      padding: 0 14px 11px 0; border-bottom: 1px solid rgba(255,255,255,0.14);
+    .bp-def {
+      background: #fff; border: 1.5px solid #0d1220; border-left: 6px solid var(--orange);
+      padding: 26px 28px; margin-bottom: 28px;
     }
-    .ppc-sec.light .led th { color: var(--muted2); border-bottom-color: var(--border2); }
-    .led td { padding: 15px 14px 15px 0; border-bottom: 1px solid rgba(255,255,255,0.07); vertical-align: top; line-height: 1.55; }
-    .ppc-sec.light .led td { border-bottom-color: var(--border); }
-    .led td:first-child { color: #fff; font-weight: 700; width: 30%; }
-    .ppc-sec.light .led td:first-child { color: var(--navy); }
-    .led td:last-child { text-align: right; white-space: nowrap; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; letter-spacing: .04em; }
-    .led .cost { color: #f87171; }
-    .led .gain { color: var(--neon-lime); }
-    .ppc-sec.light .led .gain { color: #15803d; }
+    .bp-def p { font-size: 19px; color: #0d1220; line-height: 1.78; margin: 0; font-weight: 500; }
 
-    /* channel rows */
-    .chan { border-top: 2px solid rgba(255,255,255,0.14); }
-    .chan-row {
-      display: grid; grid-template-columns: 56px 1fr 200px; gap: 20px;
-      padding: 22px 0; border-bottom: 1px solid rgba(255,255,255,0.08); align-items: center;
-      text-decoration: none; transition: padding-left .2s, background .2s;
+    /* spec table */
+    .spec { width: 100%; border-collapse: collapse; font-size: 16.5px; margin: 6px 0 26px; }
+    .spec th {
+      text-align: left; font-family: 'Barlow Condensed', sans-serif; font-size: 11.5px;
+      font-weight: 800; letter-spacing: 0.13em; text-transform: uppercase; color: #8a8577;
+      padding: 0 14px 10px 0; border-bottom: 1.5px solid #0d1220;
     }
-    .chan-row:hover { background: rgba(249,115,22,0.06); padding-left: 12px; }
-    @media (max-width: 700px) { .chan-row { grid-template-columns: 46px 1fr; } .chan-cpc { grid-column: 2; } }
-    .chan-ico {
-      width: 46px; height: 46px; border: 1px solid rgba(249,115,22,0.34);
-      background: rgba(249,115,22,0.11); display: flex; align-items: center; justify-content: center;
-    }
-    .chan-ico svg { width: 22px; height: 22px; stroke: #fdba74; fill: none; stroke-width: 1.9; stroke-linecap: round; stroke-linejoin: round; }
-    .chan-t { font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 900; color: #fff; letter-spacing: .02em; margin-bottom: 3px; }
-    .chan-d { font-size: 15.5px; color: #94a3b8; line-height: 1.5; }
-    .chan-cpc { text-align: right; }
-    .chan-cpc span { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; color: #475569; }
-    .chan-cpc strong { font-family: 'Barlow Condensed', sans-serif; font-size: 16px; color: var(--neon-lime); font-weight: 800; }
-    @media (max-width: 700px) { .chan-cpc { text-align: left; } }
-
-    /* profit calc */
-    .pcalc { background: #0d1220; border: 1px solid rgba(255,255,255,0.1); padding: 32px; margin: 36px 0; }
-    .pcalc-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 18px 24px; margin-bottom: 26px; }
-    @media (max-width: 620px) { .pcalc-grid { grid-template-columns: 1fr; } }
-    .pcalc label {
-      display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 800;
-      letter-spacing: .1em; text-transform: uppercase; color: #64748b; margin-bottom: 6px;
-    }
-    .pcalc input {
-      width: 100%; background: #060910; border: 1px solid rgba(255,255,255,0.16);
-      padding: 11px 13px; color: #fff; font-size: 17px; font-family: 'Barlow', sans-serif; border-radius: 4px;
-    }
-    .pcalc input:focus { outline: none; border-color: var(--orange); box-shadow: 0 0 0 3px rgba(249,115,22,.14); }
-    .pcalc-out { display: grid; grid-template-columns: repeat(4,1fr); gap: 2px; background: rgba(255,255,255,0.09); }
-    @media (max-width: 760px) { .pcalc-out { grid-template-columns: 1fr 1fr; } }
-    .pcalc-cell { background: #080c16; padding: 20px 16px; text-align: center; }
-    .pcalc-cell span { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; color: #475569; margin-bottom: 6px; }
-    .pcalc-cell strong { font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 34px; color: #fff; line-height: 1; }
-    .pcalc-cell strong.good { color: var(--neon-lime); }
-    .pcalc-cell strong.bad { color: #f87171; }
-    .pcalc-verdict { margin-top: 2px; background: #080c16; padding: 22px; font-size: 16.5px; color: #94a3b8; line-height: 1.65; border-top: 3px solid var(--orange); }
-    .pcalc-verdict strong { color: #fff; }
-
-    .ppc-cta {
-      background: linear-gradient(135deg, var(--orange-deep), var(--orange)); padding: 44px 40px;
-      text-align: center; margin: 52px 0;
-    }
-    .ppc-cta h3 { font-family: 'Bebas Neue', sans-serif; font-size: 40px; color: #fff; margin-bottom: 10px; line-height: 1.04; }
-    .ppc-cta p { color: rgba(255,255,255,.94); font-size: 17.5px; margin-bottom: 24px; }
-    .ppc-cta .sc-btn-primary { background: #0d1220; color: #fff; }
-    .ppc-cta .sc-btn-primary:hover { background: #fff; color: var(--orange-deep); }
-
-    /* ══════ MOBILE FIXES — PPC PAGE ══════ */
-    @media (max-width: 760px) {
-      .ppc-sec { padding: 56px 0; }
-      .auction { padding: 18px 16px; margin: 28px 0; }
-      .pcalc { padding: 20px 16px; }
-      .ppc-cta { padding: 32px 22px; }
-      .ppc-cta h3 { font-size: 31px; }
-      .ppc-hero { padding: 44px 0 52px; }
-      .ppc-lede { font-size: 18px; }
-      .ppc-stats { gap: 20px; }
-      .ppc-sec p, .guide-ol li { font-size: 17px; }
-      .definition { padding: 20px 18px; }
-      .definition p { font-size: 17.5px; }
-    }
-
-    /* auction board: keep all five columns, shrink to fit */
-    @media (max-width: 640px) {
-      .auc-hd, .auc-rw {
-        grid-template-columns: 26px minmax(0,1fr) 54px 38px 68px;
-        gap: 6px;
-      }
-      .auc-hd { font-size: 9.5px; letter-spacing: 0.05em; }
-      .auc-rw { font-size: 13px; padding: 11px 0; }
-      .auc-rw .rank { font-size: 19px; padding-left: 0; }
-      .auc-rw .nm { font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-      .auc-rw .cpc { font-size: 14px; }
-      .auc-verdict { padding: 16px 16px; font-size: 15px; }
-      .auc-you { padding: 14px 14px 2px; }
-    }
-
-    /* ledger tables restack as rows instead of scrolling off screen */
+    .bp-sec.ink .spec th { color: #64748b; border-bottom-color: rgba(255,255,255,.25); }
+    .spec td { padding: 14px 14px 14px 0; border-bottom: 1px solid #e6e2d9; color: #4a463e; line-height: 1.55; vertical-align: top; }
+    .bp-sec.ink .spec td { border-bottom-color: rgba(255,255,255,.08); color: #94a3b8; }
+    .spec td:first-child { color: #0d1220; font-weight: 700; }
+    .bp-sec.ink .spec td:first-child { color: #fff; }
     @media (max-width: 720px) {
-      .led, .led tbody, .led tr, .led td { display: block; width: 100%; }
-      .led thead { display: none; }
-      .led tr {
-        padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,0.09);
-      }
-      .ppc-sec.light .led tr { border-bottom-color: var(--border); }
-      .led td { border: none; padding: 0 0 7px; width: auto !important; }
-      .led td:first-child {
-        font-family: 'Barlow Condensed', sans-serif; font-size: 20px;
-        font-weight: 900; letter-spacing: 0.02em; margin-bottom: 3px;
-      }
-      .led td:last-child {
-        text-align: left; padding-bottom: 0; font-size: 13px;
-        letter-spacing: 0.09em; text-transform: uppercase;
-      }
-      .led td:empty { display: none; }
+      .spec, .spec tbody, .spec tr, .spec td { display: block; width: 100%; }
+      .spec thead { display: none; }
+      .spec tr { padding: 15px 0; border-bottom: 1px solid #e6e2d9; }
+      .bp-sec.ink .spec tr { border-bottom-color: rgba(255,255,255,.08); }
+      .spec td { border: none; padding: 0 0 6px; }
+      .spec td:first-child { font-family: 'Barlow Condensed', sans-serif; font-size: 20px; font-weight: 900; }
     }
 
-    /* channel rows + profit calc */
-    @media (max-width: 560px) {
-      .chan-row { grid-template-columns: 40px minmax(0,1fr); gap: 14px; padding: 18px 0; }
-      .chan-ico { width: 40px; height: 40px; }
-      .chan-t { font-size: 20px; }
-      .chan-d { font-size: 15px; }
-      .chan-cpc { grid-column: 2; text-align: left; margin-top: 6px; }
-      .pcalc-out { grid-template-columns: 1fr 1fr; }
-      .pcalc-cell { padding: 16px 10px; }
-      .pcalc-cell strong { font-size: 27px; }
-      .pcalc-verdict { padding: 18px 16px; font-size: 15.5px; }
-      .serp-body { padding: 12px 12px 14px; }
-      .serp-title { font-size: 14.5px; }
-      .serp-pos { font-size: 10px; }
+    /* ══ MATCH TYPE SIMULATOR ══ */
+    .mt { background: #fff; border: 1.5px solid #0d1220; margin: 32px 0; }
+    .mt-head { padding: 22px 26px 20px; border-bottom: 1.5px solid #0d1220; }
+    .mt-kw {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 800;
+      letter-spacing: 0.14em; text-transform: uppercase; color: #8a8577; margin-bottom: 8px;
     }
+    .mt-kw-val { font-family: 'Bebas Neue', sans-serif; font-size: 34px; color: #0d1220; line-height: 1; }
+    .mt-tabs { display: flex; gap: 0; border-bottom: 1.5px solid #0d1220; }
+    .mt-tab {
+      flex: 1; background: #f3f1ec; border: none; border-right: 1px solid #ddd8cd;
+      padding: 15px 8px; cursor: pointer; transition: background .18s, color .18s;
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 900; letter-spacing: .06em;
+      text-transform: uppercase; color: #6b675c; font-size: 15px;
+    }
+    .mt-tab:last-child { border-right: none; }
+    .mt-tab:hover { background: #ebe8e1; }
+    .mt-tab.on { background: #0d1220; color: #fff; }
+    .mt-tab small { display: block; font-family: 'Barlow', sans-serif; font-size: 12px; font-weight: 600; text-transform: none; letter-spacing: 0; opacity: .62; margin-top: 2px; }
+    .mt-body { padding: 8px 0 0; }
+    .mt-q {
+      display: grid; grid-template-columns: 1fr 96px; gap: 12px; align-items: center;
+      padding: 12px 26px; border-bottom: 1px solid #eeebe4;
+      transition: background .25s, opacity .25s;
+      font-size: 16.5px; color: #4a463e;
+    }
+    .mt-q.off { opacity: .3; }
+    .mt-q.on-waste { background: #fff5f5; }
+    .mt-q.on-good { background: #f6fdf8; }
+    .mt-verdict {
+      text-align: right; font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px; font-weight: 800; letter-spacing: .09em; text-transform: uppercase;
+    }
+    .mt-q.off .mt-verdict { color: #b6b1a5; }
+    .mt-q.on-waste .mt-verdict { color: var(--red); }
+    .mt-q.on-good .mt-verdict { color: #15803d; }
+    .mt-q.on-mixed .mt-verdict { color: #b45309; }
+    .mt-q.on-mixed { background: #fffbf0; }
+    .mt-foot { background: #0d1220; padding: 22px 26px; display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
+    @media (max-width: 560px) { .mt-foot { grid-template-columns: 1fr 1fr; } .mt-q { grid-template-columns: 1fr 78px; padding: 11px 16px; font-size: 15px; } .mt-head { padding: 18px 16px 16px; } }
+    .mt-stat span {
+      display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 10.5px;
+      font-weight: 800; letter-spacing: .13em; text-transform: uppercase; color: #64748b; margin-bottom: 3px;
+    }
+    .mt-stat strong { font-family: 'Bebas Neue', sans-serif; font-weight: 400; font-size: 31px; line-height: 1; color: #fff; }
+    .mt-stat strong.bad { color: #f87171; }
+    .mt-stat strong.good { color: var(--neon-lime); }
+    .mt-note { background: #0d1220; padding: 0 26px 22px; color: #94a3b8; font-size: 15.5px; line-height: 1.65; }
+    .mt-note strong { color: #fff; }
 
-    /* nothing may exceed the viewport */
-    .ppc-sec table, .ppc-sec svg, .ppc-sec img { max-width: 100%; }
-    .auction, .pcalc, .serp { max-width: 100%; overflow-x: hidden; }
+    /* ══ CAMPAIGN SELECTOR ══ */
+    .cs { background: #fff; border: 1.5px solid #0d1220; padding: 28px; margin: 32px 0; }
+    .cs-q { margin-bottom: 24px; }
+    .cs-q > label {
+      display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 12.5px;
+      font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: #8a8577; margin-bottom: 10px;
+    }
+    .cs-opts { display: flex; flex-wrap: wrap; gap: 8px; }
+    .cs-opt {
+      background: #f6f4ef; border: 1.5px solid #ddd8cd; padding: 10px 16px;
+      font-family: 'Barlow', sans-serif; font-size: 15.5px; color: #4a463e;
+      cursor: pointer; transition: all .16s;
+    }
+    .cs-opt:hover { border-color: var(--orange); color: #0d1220; }
+    .cs-opt.on { background: #0d1220; border-color: #0d1220; color: #fff; font-weight: 600; }
+    .cs-out { background: #0d1220; padding: 26px 28px; margin-top: 6px; }
+    .cs-out .cs-label {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 11px; font-weight: 800;
+      letter-spacing: .14em; text-transform: uppercase; color: #64748b; margin-bottom: 7px;
+    }
+    .cs-out .cs-name { font-family: 'Bebas Neue', sans-serif; font-size: 38px; color: var(--neon-lime); line-height: 1; margin-bottom: 12px; }
+    .cs-out p { color: #a3b0c2; font-size: 16.5px; line-height: 1.7; margin: 0; }
+    .cs-out p strong { color: #fff; }
+    .cs-out p + p { margin-top: 12px; }
+
+    /* ══ QUALITY SCORE DIAGNOSTIC ══ */
+    .qs { background: #fff; border: 1.5px solid #0d1220; margin: 32px 0; }
+    .qs-row {
+      display: grid; grid-template-columns: 1fr 300px; gap: 20px; align-items: center;
+      padding: 20px 26px; border-bottom: 1px solid #e6e2d9;
+    }
+    @media (max-width: 700px) { .qs-row { grid-template-columns: 1fr; gap: 12px; } }
+    .qs-name { font-family: 'Barlow Condensed', sans-serif; font-size: 21px; font-weight: 900; color: #0d1220; letter-spacing: .02em; margin-bottom: 4px; }
+    .qs-desc { font-size: 15.5px; color: #6b675c; line-height: 1.55; }
+    .qs-btns { display: flex; gap: 5px; }
+    .qs-btn {
+      flex: 1; background: #f6f4ef; border: 1.5px solid #ddd8cd; padding: 9px 4px;
+      font-family: 'Barlow Condensed', sans-serif; font-size: 12.5px; font-weight: 800;
+      letter-spacing: .05em; text-transform: uppercase; color: #6b675c; cursor: pointer; transition: all .16s;
+    }
+    .qs-btn:hover { border-color: var(--orange); }
+    .qs-btn.on.lo { background: var(--red); border-color: var(--red); color: #fff; }
+    .qs-btn.on.mid { background: #d97706; border-color: #d97706; color: #fff; }
+    .qs-btn.on.hi { background: #15803d; border-color: #15803d; color: #fff; }
+    .qs-out { background: #0d1220; padding: 26px 28px; }
+    .qs-out .qs-head { font-family: 'Bebas Neue', sans-serif; font-size: 32px; color: #fff; line-height: 1.06; margin-bottom: 10px; }
+    .qs-out p { color: #a3b0c2; font-size: 16.5px; line-height: 1.7; margin: 0; }
+    .qs-out p strong { color: var(--orange-bright); }
+
+    /* blueprint figure */
+    .bp-fig { background: #fff; border: 1.5px solid #0d1220; padding: 24px; margin: 32px 0; }
+    .bp-fig svg { width: 100%; height: auto; display: block; }
+    .bp-fig figcaption { font-size: 15.5px; color: #6b675c; line-height: 1.6; margin-top: 15px; padding-top: 13px; border-top: 1px solid #e6e2d9; }
+
+    .bp-cta { background: #0d1220; padding: 42px 38px; text-align: center; margin: 46px 0; }
+    .bp-cta h3 { font-family: 'Bebas Neue', sans-serif; font-size: 38px; color: #fff; margin-bottom: 10px; line-height: 1.05; }
+    .bp-cta p { color: #94a3b8; font-size: 17px; margin-bottom: 22px; }
+    .bp-ol { counter-reset: b; list-style: none; padding: 0; margin: 0 0 20px; }
+    .bp-ol li { font-size: 18px; color: #4a463e; line-height: 1.75; padding-left: 44px; position: relative; margin-bottom: 19px; counter-increment: b; }
+    .bp-ol li strong { color: #0d1220; }
+    .bp-ol li::before {
+      content: counter(b, decimal-leading-zero); position: absolute; left: 0; top: 3px;
+      font-family: 'Barlow Condensed', sans-serif; font-size: 15px; font-weight: 900;
+      color: var(--orange-deep); border-bottom: 2px solid var(--orange); padding-bottom: 1px;
+    }
+    .bp-grid4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: #ddd8cd; border: 1px solid #ddd8cd; }
+    @media (max-width: 900px) { .bp-grid4 { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 500px) { .bp-grid4 { grid-template-columns: 1fr; } }
+    .bp-cell { background: #fff; padding: 22px 20px; text-decoration: none; display: block; transition: background .18s; }
+    .bp-cell:hover { background: #fffaf3; }
+    .bp-cell span { font-size: 23px; display: block; margin-bottom: 9px; line-height: 1; }
+    .bp-cell strong { font-family: 'Barlow Condensed', sans-serif; font-size: 18px; font-weight: 900; color: #0d1220; display: block; margin-bottom: 4px; letter-spacing: .02em; }
+    .bp-cell p { font-size: 14.5px; color: #6b675c; line-height: 1.5; margin: 0; }
   </style>
 </head>
 
@@ -1697,370 +1620,373 @@
 </header>
 
 <!-- HERO -->
-<section class="ppc-hero">
-  <div class="ppc-hero-inner">
-    <div>
-      <nav class="ppc-crumb" aria-label="Breadcrumb">
-        <a href="/">Home</a> / <a href="/services/">Services</a> / <span>PPC Management</span>
-      </nav>
-      <div class="ppc-tick">PPC Agency &mdash; Every Major Platform</div>
-      <h1 class="ppc-h1">
-        The Highest Bid
-        <span class="amber">Does Not Win.</span>
-      </h1>
-      <p class="ppc-lede">
-        PPC advertising runs a live auction on every single search, and position is decided by bid <strong>multiplied by relevance</strong>. Advertisers who understand that pay less than their competitors for better placement. Everyone else just raises the bid. We are a PPC agency built around the half most accounts ignore.
-      </p>
-      <div class="ppc-stats">
-        <div class="ppc-stat"><span>Managed</span><strong>All platforms</strong><em>Search, social, shopping, retail</em></div>
-        <div class="ppc-stat"><span>Reported on</span><strong>Revenue</strong><em>Not impressions or clicks</em></div>
-        <div class="ppc-stat"><span>Contracts</span><strong>None</strong><em>Month to month</em></div>
+<section class="bp-hero">
+  <div class="bp-inner">
+    <div class="bp-hero-grid">
+      <div>
+        <nav class="bp-crumb" aria-label="Breadcrumb">
+          <a href="/">Home</a> / <a href="/ppc-management/">PPC Management</a> / <span>Google Ads</span>
+        </nav>
+        <div class="bp-tag">Google Ads Management &amp; Google PPC</div>
+        <h1 class="bp-h1">
+          Most Google PPC Waste
+          <span class="amber">Is Structural.</span>
+        </h1>
+        <p class="bp-lede">
+          Broad match buying searches you would never pay for. Performance Max absorbing budget with no visibility. Auto-applied recommendations quietly rewriting your account. <strong>None of that is a bidding problem</strong>, and raising the budget makes every one of them worse.
+        </p>
+        <div class="bp-specs">
+          <div class="bp-spec"><span>Account ownership</span><strong>Always yours</strong></div>
+          <div class="bp-spec"><span>Reporting</span><strong>Cost per sale</strong></div>
+          <div class="bp-spec"><span>Commitment</span><strong>Month to month</strong></div>
+        </div>
       </div>
-    </div>
 
-    <div class="serp" aria-hidden="true">
-      <div class="serp-bar">
-        <i class="serp-dot"></i><i class="serp-dot"></i><i class="serp-dot"></i>
-        <div class="serp-url">emergency plumber near me</div>
+      <div class="bp-fig" style="margin:0;">
+        <svg viewBox="0 0 400 300" role="img" aria-labelledby="acct-t" class="fig-draw">
+          <title id="acct-t">Google Ads account architecture diagram showing account, campaign, ad group, keyword and ad layers</title>
+          <text x="200" y="20" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="12" font-weight="800" letter-spacing="2" fill="#8a8577">ACCOUNT ARCHITECTURE</text>
+          <g class="fig-pop">
+            <rect x="140" y="34" width="120" height="34" fill="#0d1220"/>
+            <text x="200" y="56" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="15" font-weight="900" letter-spacing="1" fill="#fff">ACCOUNT</text>
+          </g>
+          <g stroke="#0d1220" stroke-width="1.4" fill="none" class="fig-draw">
+            <path d="M200 68 V84 M70 84 H330 M70 84 V100 M200 84 V100 M330 84 V100"/>
+          </g>
+          <g class="fig-pop d1">
+            <rect x="18" y="100" width="104" height="30" fill="#fff" stroke="#0d1220" stroke-width="1.6"/>
+            <text x="70" y="120" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="13" font-weight="800" fill="#0d1220">SEARCH</text>
+            <rect x="148" y="100" width="104" height="30" fill="#fff7ed" stroke="var(--orange)" stroke-width="2"/>
+            <text x="200" y="120" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="13" font-weight="800" fill="#c2410c">SHOPPING</text>
+            <rect x="278" y="100" width="104" height="30" fill="#fff" stroke="#0d1220" stroke-width="1.6"/>
+            <text x="330" y="120" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="13" font-weight="800" fill="#0d1220">PMAX</text>
+          </g>
+          <text x="200" y="146" text-anchor="middle" font-family="Barlow, sans-serif" font-size="11" fill="#8a8577">campaigns</text>
+          <g stroke="#0d1220" stroke-width="1.4" fill="none" class="fig-draw">
+            <path d="M70 130 V158 M20 158 H120 M20 158 V174 M120 158 V174"/>
+          </g>
+          <g class="fig-pop d2">
+            <rect x="-6" y="174" width="52" height="26" fill="#fff" stroke="#0d1220" stroke-width="1.4"/>
+            <text x="20" y="191" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="11" font-weight="800" fill="#0d1220">AD GRP</text>
+            <rect x="94" y="174" width="52" height="26" fill="#fff" stroke="#0d1220" stroke-width="1.4"/>
+            <text x="120" y="191" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="11" font-weight="800" fill="#0d1220">AD GRP</text>
+          </g>
+          <g stroke="#0d1220" stroke-width="1.4" fill="none" class="fig-draw">
+            <path d="M20 200 V216 M20 216 H8 M20 216 H36"/>
+          </g>
+          <g class="fig-pop d3">
+            <rect x="-24" y="216" width="56" height="22" fill="#f6f4ef" stroke="#b6b1a5" stroke-width="1.2"/>
+            <text x="4" y="231" text-anchor="middle" font-family="Barlow, sans-serif" font-size="10" fill="#4a463e">keywords</text>
+            <rect x="40" y="216" width="42" height="22" fill="#f6f4ef" stroke="#b6b1a5" stroke-width="1.2"/>
+            <text x="61" y="231" text-anchor="middle" font-family="Barlow, sans-serif" font-size="10" fill="#4a463e">ads</text>
+          </g>
+          <g class="fig-pop d4">
+            <rect x="150" y="176" width="230" height="72" fill="#fff5f5" stroke="#ef4444" stroke-width="1.6" stroke-dasharray="5 4"/>
+            <text x="265" y="200" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-size="13" font-weight="900" letter-spacing="1" fill="#dc2626">THE USUAL ACCOUNT</text>
+            <text x="265" y="220" text-anchor="middle" font-family="Barlow, sans-serif" font-size="12" fill="#7f1d1d">One ad group. Forty keywords.</text>
+            <text x="265" y="238" text-anchor="middle" font-family="Barlow, sans-serif" font-size="12" fill="#7f1d1d">One generic ad serving all of them.</text>
+          </g>
+          <text x="200" y="278" text-anchor="middle" font-family="Barlow, sans-serif" font-size="12.5" font-style="italic" fill="#6b675c">Structure decides relevance. Relevance decides your cost per click.</text>
+        </svg>
       </div>
-      <div class="serp-body">
-        <div class="serp-row ad top">
-          <span class="serp-pos">Position 1</span>
-          <span class="serp-badge">Ad</span>
-          <div class="serp-title">Emergency Plumber &mdash; 90 Minute Response</div>
-          <div class="serp-link">example-plumbing.com/emergency</div>
-          <div class="serp-desc">Licensed, insured, upfront pricing. Call now.</div>
-        </div>
-        <div class="serp-row ad">
-          <span class="serp-pos">Position 2</span>
-          <span class="serp-badge">Ad</span>
-          <div class="serp-title">24/7 Plumbing Services In Your Area</div>
-          <div class="serp-link">competitor-two.com</div>
-          <div class="serp-desc">Fast, friendly service from local plumbers.</div>
-        </div>
-        <div class="serp-row ad">
-          <span class="serp-pos">Position 3</span>
-          <span class="serp-badge">Ad</span>
-          <div class="serp-title">Plumbing Repair Specialists</div>
-          <div class="serp-link">competitor-three.com</div>
-        </div>
-        <div class="serp-row serp-org">
-          <div class="serp-title">Local Plumbers &mdash; Directory Listing</div>
-          <div class="serp-link">directory-site.com/plumbers</div>
-          <div class="serp-desc">First organic result, below three paid positions.</div>
-        </div>
-      </div>
-      <div class="serp-note">Three paid positions sit above the first organic result. <strong>Who fills them is decided in about 200 milliseconds.</strong></div>
     </div>
   </div>
 </section>
 
-<div class="neon-divider"></div>
-
-<!-- THE AUCTION -->
-<section class="ppc-sec">
-  <div class="ppc-wrap wide">
-    <div class="ppc-eyebrow">How the auction actually works</div>
-    <h2 class="ppc-h2">Bid &times; relevance.<br><span class="amber">Move the second number and the first one matters less.</span></h2>
-    <p style="max-width:860px;">
-      Search platforms do not sell position to the highest bidder. They rank advertisers on a score that combines the bid with how relevant and useful the ad is expected to be &mdash; Google calls its version Quality Score. A well-built account with a high score can outrank a competitor bidding significantly more, and pay less per click while doing it.
-    </p>
-    <p style="max-width:860px;">
-      That is the entire arbitrage in paid search, and it is where a competent PPC agency or PPC company earns its fee. Drag the sliders below and watch what happens to your position and your actual cost per click.
-    </p>
-
-    <div class="auction">
-      <div class="auction-grid">
-        <div>
-          <div class="auc-you">
-            <div class="auc-you-head">Your account</div>
-            <div class="auc-ctrl">
-              <label for="au-bid">Max bid <b id="au-bid-out">$8.00</b></label>
-              <input class="calc-slider" type="range" id="au-bid" min="10" max="4000" step="10" value="800">
-            </div>
-            <div class="auc-ctrl" style="margin-bottom:18px;">
-              <label for="au-qs">Quality score <b id="au-qs-out">5</b></label>
-              <input class="calc-slider" type="range" id="au-qs" min="1" max="10" step="1" value="5">
-            </div>
-          </div>
-          <p style="font-size:15px;color:#64748b;line-height:1.6;margin:0;">
-            Competitors hold steady. Only your two numbers change. Try raising quality score without touching the bid, then try the reverse.
-          </p>
-        </div>
-
-        <div>
-          <div class="auc-board">
-            <div class="auc-hd">
-              <span>Pos</span><span>Advertiser</span><span>Bid</span><span>Score</span><span>Pays / click</span>
-            </div>
-            <div id="auc-rows"></div>
-          </div>
-          <div class="auc-verdict" id="auc-verdict">
-            <strong>Position 3 at $6.40 a click</strong>
-            You are mid-pack. Raising the bid buys position, and you pay for every click of it forever. Raising the score buys the same position and lowers the price at the same time.
-          </div>
-        </div>
-      </div>
+<!-- WHAT IS IT -->
+<section class="bp-sec paper">
+  <div class="bp-wrap">
+    <div class="bp-eye">Definition</div>
+    <h2 class="bp-h2">What is Google Ads management?</h2>
+    <div class="bp-def">
+      <p><strong>Google Ads management</strong> is the ongoing work of structuring, running and improving campaigns inside Google Ads so that spend produces profitable customers. It covers campaign type selection, account architecture, keyword and match type strategy, negative keywords, ad and asset creation, bidding, conversion tracking, and continuous review of the search terms your ads actually appeared for.</p>
     </div>
-
-    <p style="max-width:860px;font-size:15.5px;color:#64748b;">
-      Simplified for teaching: real auctions also weigh ad format, device, location and competitor behaviour, and the exact formulas are proprietary. The relationship shown here &mdash; that relevance discounts your cost and multiplies your bid &mdash; is the part that holds true everywhere and the part most accounts leave on the table.
+    <p>
+      Google PPC is the largest and most competitive advertising auction in the world, and also the easiest one to lose money in quietly. The platform is designed so that a campaign can be launched in about six minutes by someone who has never done it before. That is a genuine achievement of product design and a genuine problem for advertisers, because the default settings are tuned toward spending your budget rather than protecting your margin.
     </p>
-
-    <h3 class="ppc-h3">Why this is the whole argument for hiring a PPC company</h3>
-    <p style="max-width:860px;">
-      A PPC company that only knows how to raise bids has one lever, and it costs money every time they pull it. An advertiser who can lift relevance has a lever that <em>reduces</em> cost while improving position. That difference does not show up in a monthly report as anything dramatic. It shows up as a competitor quietly acquiring the same customers for 40% less, month after month, and eventually being able to outspend you on a smaller budget.
+    <p>
+      Nothing about that is malicious. Google's automated recommendations optimize for the outcomes Google can measure &mdash; clicks, conversions as you have defined them, budget utilization. If your conversion tracking counts a page load as a sale, the system will diligently buy you thousands of page loads. It is doing exactly what it was asked.
     </p>
-    <p style="max-width:860px;">
-      Relevance is built from tight keyword grouping, ad copy that matches the search rather than the brand, and a landing page that delivers what the ad promised. How that plays out inside the largest auction is covered on our <a href="/google-ads-management/">Google Ads management</a> page. That last one is why we run <a href="/conversion-optimization/">conversion optimization</a> alongside every paid account &mdash; the landing page is not downstream of the ad auction, it is an input to it.
+    <p>
+      A Google Ads company earns its fee by being the part of the system that knows what a customer is actually worth. The mechanics of the auction itself &mdash; why the highest bid does not win &mdash; are covered on our <a href="/ppc-management/">PPC management</a> page. This page is about the Google-specific execution that decides whether that auction works for you.
     </p>
   </div>
 </section>
 
-<!-- WHAT PPC MANAGEMENT IS -->
-<section class="ppc-sec light">
-  <div class="ppc-wrap">
-    <div class="ppc-eyebrow">Plain English</div>
-    <h2 class="ppc-h2">What is PPC management?</h2>
-    <div class="definition" style="margin-bottom:30px;">
-      <p><strong>PPC management</strong> is the ongoing work of planning, building, running and improving pay-per-click advertising campaigns so that the money spent on clicks produces profitable customers. It covers keyword and audience research, account structure, ad creation, bidding strategy, negative keywords, landing page alignment, conversion tracking and continuous testing.</p>
-    </div>
-    <p>
-      Pay per click advertising means exactly what it says: you pay only when someone clicks. That sounds low risk and is the reason so much money gets wasted on it. Nobody notices the cost of a click. They notice the invoice at the end of the month, by which point the account has bought several thousand of them and nobody can say which ones led to revenue.
+<!-- MATCH TYPE SIMULATOR -->
+<section class="bp-sec">
+  <div class="bp-inner" style="max-width:940px;">
+    <div class="bp-eye">Tool 01</div>
+    <h2 class="bp-h2">Match types:<br><span class="amber">what you are actually buying</span></h2>
+    <p style="max-width:760px;">
+      Match type is the setting that decides which real searches can trigger your ad. It is the single largest source of wasted Google PPC spend, and it is set once during setup by people who reasonably assume broad means "more people who want this."
     </p>
-    <p>
-      A PPC agency exists to close that gap. Not to run ads &mdash; the platforms will happily run ads for you, and their automated recommendations are designed to increase your spend, not your profit. The job is to make every click accountable to a number that appears in your bank account.
+    <p style="max-width:760px;">
+      Below is one keyword and fourteen searches. Switch between the three match types and watch which searches become eligible to spend your money.
     </p>
 
-    <h3 class="ppc-h3">What actually gets managed</h3>
-    <table class="led">
-      <thead><tr><th>Area</th><th>What it involves</th><th>Reviewed</th></tr></thead>
+    <div class="mt">
+      <div class="mt-head">
+        <div class="mt-kw">Your keyword</div>
+        <div class="mt-kw-val" id="mt-display">"emergency plumber"</div>
+      </div>
+      <div class="mt-tabs" role="tablist">
+        <button class="mt-tab" data-mt="1" type="button">Exact<small>[emergency plumber]</small></button>
+        <button class="mt-tab on" data-mt="2" type="button">Phrase<small>"emergency plumber"</small></button>
+        <button class="mt-tab" data-mt="3" type="button">Broad<small>emergency plumber</small></button>
+      </div>
+      <div class="mt-body" id="mt-list"></div>
+      <div class="mt-foot">
+        <div class="mt-stat"><span>Searches eligible</span><strong id="mt-elig">7</strong></div>
+        <div class="mt-stat"><span>Buyer intent</span><strong class="good" id="mt-good">6</strong></div>
+        <div class="mt-stat"><span>Wasted spend</span><strong class="bad" id="mt-waste">0</strong></div>
+      </div>
+      <div class="mt-note" id="mt-note"></div>
+    </div>
+
+    <p style="max-width:760px;font-size:15.5px;color:#6b675c;">
+      Example searches, chosen to illustrate how the three settings behave. Real accounts see hundreds of variations, which is why the search terms report is reviewed weekly rather than at setup. Google also matches close variants and same-meaning queries within every match type, so even exact is broader than the name suggests.
+    </p>
+
+    <h3 class="bp-h3">Why broad match is not simply wrong</h3>
+    <p>
+      Any competent Google ad agency will tell you that broad match, paired with a well-maintained negative keyword list and reliable conversion tracking, can find profitable searches nobody thought to add. Broad match without those two things is an open tab at the bar. The setting is not the problem &mdash; the setting without supervision is. That is the entire distinction between an account that is managed and one that is merely running.
+    </p>
+  </div>
+</section>
+
+<!-- CAMPAIGN TYPE SELECTOR -->
+<section class="bp-sec paper">
+  <div class="bp-wrap">
+    <div class="bp-eye">Tool 02</div>
+    <h2 class="bp-h2">Which Google Ads<br><span class="amber">campaign type do you need?</span></h2>
+    <p>
+      Google offers roughly a dozen campaign types and they are not interchangeable. Picking the wrong one is why plenty of accounts underperform despite a healthy budget and reasonable ads. Answer three questions.
+    </p>
+
+    <div class="cs">
+      <div class="cs-q">
+        <label>1. What are you selling?</label>
+        <div class="cs-opts" data-cs="what">
+          <button class="cs-opt on" data-v="services" type="button">A service</button>
+          <button class="cs-opt" data-v="products" type="button">Physical products</button>
+          <button class="cs-opt" data-v="software" type="button">Software or a subscription</button>
+          <button class="cs-opt" data-v="local" type="button">Local trade or home services</button>
+        </div>
+      </div>
+      <div class="cs-q">
+        <label>2. What do you need it to do?</label>
+        <div class="cs-opts" data-cs="goal">
+          <button class="cs-opt on" data-v="leads" type="button">Generate leads</button>
+          <button class="cs-opt" data-v="sales" type="button">Drive online sales</button>
+          <button class="cs-opt" data-v="calls" type="button">Make the phone ring</button>
+          <button class="cs-opt" data-v="aware" type="button">Build awareness</button>
+        </div>
+      </div>
+      <div class="cs-q" style="margin-bottom:20px;">
+        <label>3. Do people already search for what you do?</label>
+        <div class="cs-opts" data-cs="demand">
+          <button class="cs-opt on" data-v="yes" type="button">Yes, there is existing demand</button>
+          <button class="cs-opt" data-v="no" type="button">No, it needs explaining first</button>
+        </div>
+      </div>
+      <div class="cs-out">
+        <div class="cs-label">Recommended starting point</div>
+        <div class="cs-name" id="cs-name">Search campaign</div>
+        <div id="cs-body"></div>
+      </div>
+    </div>
+
+    <h3 class="bp-h3">The campaign types, honestly compared</h3>
+    <table class="spec">
+      <thead><tr><th>Type</th><th>What it is good for</th><th>The catch</th></tr></thead>
       <tbody>
-        <tr><td>Account structure</td><td>Campaign and ad group architecture tight enough that each ad matches a narrow set of searches</td><td>Monthly</td></tr>
-        <tr><td>Keyword and audience research</td><td>Finding the searches with buying intent and the audiences worth paying to reach</td><td>Ongoing</td></tr>
-        <tr><td>Negative keywords</td><td>Blocking the searches that look relevant and never convert. The single most neglected task in paid search</td><td>Weekly</td></tr>
-        <tr><td>Ad copy and assets</td><td>Writing and testing headlines, descriptions, extensions and creative against each other</td><td>Ongoing</td></tr>
-        <tr><td>Bidding and budget</td><td>Choosing the strategy, setting targets, and shifting budget toward what is producing revenue</td><td>Weekly</td></tr>
-        <tr><td>Landing pages</td><td>Making the page deliver what the ad promised, which improves both conversion and quality score</td><td>Ongoing</td></tr>
-        <tr><td>Conversion tracking</td><td>Making sure the platform is optimizing toward real sales rather than form loads or phantom events</td><td>Continuously</td></tr>
-        <tr><td>Reporting</td><td>Cost per lead, cost per sale, and return &mdash; not impressions, clicks or position</td><td>Monthly</td></tr>
+        <tr><td>Search</td><td>Capturing people actively looking for what you sell. Highest intent available anywhere.</td><td>The most competitive and expensive auction. Needs tight structure to be affordable.</td></tr>
+        <tr><td>Performance Max</td><td>Running every Google surface from one campaign with heavy automation.</td><td>Very limited visibility into where money went. Needs strong conversion data to behave.</td></tr>
+        <tr><td>Shopping</td><td>Ecommerce. Product images and prices directly in results.</td><td>Performance is decided by your product feed quality, not your bidding.</td></tr>
+        <tr><td>Demand Gen</td><td>Visual, discovery-led placements across YouTube, Discover and Gmail.</td><td>Lower intent. Depends almost entirely on creative quality.</td></tr>
+        <tr><td>Video</td><td>YouTube reach and consideration at low cost per view.</td><td>Rarely a direct-response channel. Judge it on assisted conversions.</td></tr>
+        <tr><td>Local Services Ads</td><td>Trades and licensed local services. Pay per lead, not per click.</td><td>Separate product with its own verification. Not part of a standard account.</td></tr>
+        <tr><td>Display</td><td>Cheap reach and, more usefully, <a href="/retargeting/">retargeting</a> people who already visited.</td><td>Prospecting on Display without tight audience control burns budget fast.</td></tr>
       </tbody>
     </table>
   </div>
 </section>
 
-<!-- THE FIVE LEAKS -->
-<section class="ppc-sec">
-  <div class="ppc-wrap">
-    <div class="ppc-eyebrow">Where the budget goes</div>
-    <h2 class="ppc-h2">Five ways a PPC account<br><span class="amber">quietly burns money</span></h2>
+<!-- QUALITY SCORE -->
+<section class="bp-sec">
+  <div class="bp-wrap">
+    <div class="bp-eye">Tool 03</div>
+    <h2 class="bp-h2">Quality Score has three parts.<br><span class="amber">Only one is about your ads.</span></h2>
     <p>
-      These are what we find in nearly every PPC advertising audit of an account that was set up once and left running. None of them look like a problem on the dashboard, which is exactly why they persist.
-    </p>
-    <table class="led">
-      <thead><tr><th>The leak</th><th>What is happening</th><th>Typical cost</th></tr></thead>
-      <tbody>
-        <tr>
-          <td>No negative keywords</td>
-          <td>Broad match is showing your ads on searches containing the words "free", "jobs", "DIY", "salary" and your competitors' brand names. Every one of those clicks is billed.</td>
-          <td class="cost">High</td>
-        </tr>
-        <tr>
-          <td>Tracking that lies</td>
-          <td>The platform is counting page loads, thank-you page visits that fire twice, or form starts as conversions. It then optimizes hard toward producing more of them.</td>
-          <td class="cost">Severe</td>
-        </tr>
-        <tr>
-          <td>One ad group, forty keywords</td>
-          <td>A single generic ad serving dozens of different searches. Relevance drops, quality score follows, and the cost per click rises across the whole account.</td>
-          <td class="cost">High</td>
-        </tr>
-        <tr>
-          <td>Ads pointing at the homepage</td>
-          <td>Someone searched for a specific service and landed on a page about the company. They have to navigate to what they wanted, and most of them do not.</td>
-          <td class="cost">High</td>
-        </tr>
-        <tr>
-          <td>Automation left unsupervised</td>
-          <td>Auto-applied recommendations expanding match types and raising budgets. The platform's incentive is spend; yours is profit. They are not the same incentive.</td>
-          <td class="cost">Severe</td>
-        </tr>
-      </tbody>
-    </table>
-    <p>
-      Note what is missing from that list: bid amount. Almost nobody's core problem is that they are bidding too little. The money is lost before bidding is even the relevant question, and raising the budget on an account leaking in five places simply loses money faster.
-    </p>
-  </div>
-</section>
-
-<!-- PROFIT CALCULATOR -->
-<section class="ppc-sec light">
-  <div class="ppc-wrap">
-    <div class="ppc-eyebrow">Run your numbers</div>
-    <h2 class="ppc-h2">What can you actually<br><span class="amber">afford to pay per click?</span></h2>
-    <p>
-      This is the calculation that should precede every paid search decision and rarely does. Work backwards from what a customer is worth and the maximum viable cost per click falls out of it. If your current CPC is above that number, no amount of optimization saves the campaign &mdash; the economics do not work and something upstream has to change.
+      Google reports Quality Score as a number from 1 to 10, but the number itself is not actionable. What is actionable are the three components underneath it, each of which Google labels Below average, Average or Above average in the interface. Set yours below to see which one to fix first.
     </p>
 
-    <div class="pcalc">
-      <div class="pcalc-grid">
+    <div class="qs">
+      <div class="qs-row">
         <div>
-          <label for="pc-cpc">Average cost per click</label>
-          <input type="number" id="pc-cpc" value="6.50" min="0.05" step="0.05" inputmode="decimal">
+          <div class="qs-name">Expected click-through rate</div>
+          <div class="qs-desc">How likely your ad is to be clicked when shown for this keyword, compared to competitors in the same position.</div>
         </div>
-        <div>
-          <label for="pc-cvr">Landing page conversion rate (%)</label>
-          <input type="number" id="pc-cvr" value="4" min="0.1" step="0.1" inputmode="decimal">
-        </div>
-        <div>
-          <label for="pc-close">Lead to sale close rate (%)</label>
-          <input type="number" id="pc-close" value="25" min="1" step="1" inputmode="numeric">
-        </div>
-        <div>
-          <label for="pc-value">Gross profit per customer ($)</label>
-          <input type="number" id="pc-value" value="1200" min="1" step="10" inputmode="numeric">
+        <div class="qs-btns" data-qs="ctr">
+          <button class="qs-btn lo" data-v="1" type="button">Below</button>
+          <button class="qs-btn mid on" data-v="2" type="button">Average</button>
+          <button class="qs-btn hi" data-v="3" type="button">Above</button>
         </div>
       </div>
-      <div class="pcalc-out">
-        <div class="pcalc-cell"><span>Cost per lead</span><strong id="pc-cpl">$163</strong></div>
-        <div class="pcalc-cell"><span>Cost per sale</span><strong id="pc-cpa">$650</strong></div>
-        <div class="pcalc-cell"><span>Profit per sale</span><strong id="pc-profit" class="good">$550</strong></div>
-        <div class="pcalc-cell"><span>Break-even CPC</span><strong id="pc-break">$12.00</strong></div>
+      <div class="qs-row">
+        <div>
+          <div class="qs-name">Ad relevance</div>
+          <div class="qs-desc">How closely your ad text matches the intent behind the search. Driven almost entirely by account structure.</div>
+        </div>
+        <div class="qs-btns" data-qs="rel">
+          <button class="qs-btn lo" data-v="1" type="button">Below</button>
+          <button class="qs-btn mid on" data-v="2" type="button">Average</button>
+          <button class="qs-btn hi" data-v="3" type="button">Above</button>
+        </div>
       </div>
-      <div class="pcalc-verdict" id="pc-verdict">
-        <strong>Profitable, with room to bid.</strong> You break even at $12.00 a click and you are paying $6.50, so there is headroom to compete harder for better positions. The constraint here is volume, not economics.
+      <div class="qs-row">
+        <div>
+          <div class="qs-name">Landing page experience</div>
+          <div class="qs-desc">How useful and relevant the page is once they arrive. Speed, clarity, and whether it delivers what the ad promised.</div>
+        </div>
+        <div class="qs-btns" data-qs="lp">
+          <button class="qs-btn lo" data-v="1" type="button">Below</button>
+          <button class="qs-btn mid on" data-v="2" type="button">Average</button>
+          <button class="qs-btn hi" data-v="3" type="button">Above</button>
+        </div>
+      </div>
+      <div class="qs-out">
+        <div class="qs-head" id="qs-head">Fix ad relevance first</div>
+        <p id="qs-body"></p>
       </div>
     </div>
 
-    <h3 class="ppc-h3">Why this changes the strategy</h3>
     <p>
-      Two businesses in the same industry can face completely different correct answers. One with a 2% conversion rate and a $400 profit per customer cannot afford $6 clicks at all and should fix the landing page before spending another dollar. One with an 8% conversion rate and a $3,000 profit can outbid nearly everyone and should be worried about volume, not cost.
-    </p>
-    <p>
-      Notice which input moves the break-even number fastest: the <a href="/conversion-optimization/">conversion rate</a>. Doubling it doubles what you can afford to pay per click, which means you can buy positions your competitors cannot reach. This is why we treat <a href="/conversion-optimization/">conversion optimization</a> and paid media as one engagement rather than two, and why an agency that only touches the ad account is working with one hand tied.
+      Notice that two of the three components have nothing to do with bidding and one of them is not even in the ad account. Landing page experience is a Google Ads setting in the same sense that weather is a travel setting &mdash; it governs your cost whether or not you think of it as part of the campaign. That is why <a href="/conversion-optimization/">conversion optimization</a> runs alongside every account we manage rather than being sold as a separate project.
     </p>
   </div>
 </section>
 
-<!-- CHANNELS -->
-<section class="ppc-sec">
-  <div class="ppc-wrap wide">
-    <div class="ppc-eyebrow">Platforms we run</div>
-    <h2 class="ppc-h2">Pay-per-click is not one channel.<br><span class="amber">It is a dozen with different rules.</span></h2>
-    <p style="max-width:860px;margin-bottom:34px;">
-      Each platform has its own auction, its own intent level and its own economics. Running them from one account with one strategy is how budgets get spread evenly across channels that deserve wildly different treatment. <a href="/google-ads-management/">Google Ads</a> is usually the first and largest of them.
-    </p>
-    <div class="chan">
-      <a href="/google-ads-management/" class="chan-row">
-        <span class="chan-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.2" y1="16.2" x2="21" y2="21"/></svg></span>
-        <span><span class="chan-t">Google Ads</span><span class="chan-d">Search, Shopping, Performance Max and Display. The highest-intent traffic available and the most competitive auction.</span></span>
-        <span class="chan-cpc"><span>Intent</span><strong>Highest</strong></span>
-      </a>
-      <a href="/facebook-ads-management/" class="chan-row">
-        <span class="chan-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 3h-3.5A4.5 4.5 0 0010 7.5V11H7v4h3v6h4v-6h3l1-4h-4V7.5A.5.5 0 0114.5 7H18z"/></svg></span>
-        <span><span class="chan-t">Facebook &amp; Meta Ads</span><span class="chan-d">Interest and lookalike targeting across Facebook and Instagram. Demand creation rather than demand capture.</span></span>
-        <span class="chan-cpc"><span>Intent</span><strong>Lower, cheaper</strong></span>
-      </a>
-      <a href="/programmatic-advertising/" class="chan-row">
-        <span class="chan-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="8" y1="21" x2="16" y2="21"/></svg></span>
-        <span><span class="chan-t">Programmatic display</span><span class="chan-d">Audience-targeted banner and native inventory bought in real time across the open web.</span></span>
-        <span class="chan-cpc"><span>Best for</span><strong>Reach</strong></span>
-      </a>
-      <a href="/ctv-advertising/" class="chan-row">
-        <span class="chan-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12" rx="2"/><polygon points="10.5,10 15,12 10.5,14"/></svg></span>
-        <span><span class="chan-t">CTV &amp; streaming</span><span class="chan-d">Connected TV and streaming audio. Television reach with digital targeting and measurement.</span></span>
-        <span class="chan-cpc"><span>Growth</span><strong>Fastest</strong></span>
-      </a>
-      <a href="/retargeting/" class="chan-row">
-        <span class="chan-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1"/></svg></span>
-        <span><span class="chan-t">Retargeting</span><span class="chan-d">Reaching the people who already visited and left. Usually the cheapest conversions in the whole account.</span></span>
-        <span class="chan-cpc"><span>Cost per sale</span><strong>Lowest</strong></span>
-      </a>
-      <a href="/social-media-marketing/" class="chan-row">
-        <span class="chan-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="17" cy="6" r="2.6"/><circle cx="6.5" cy="12" r="2.6"/><circle cx="17" cy="18" r="2.6"/><line x1="8.9" y1="10.7" x2="14.6" y2="7.3"/><line x1="8.9" y1="13.3" x2="14.6" y2="16.7"/></svg></span>
-        <span><span class="chan-t">Paid social &amp; TikTok</span><span class="chan-d">Short-form video and feed placements. Cheap attention, low intent, needs strong creative to work.</span></span>
-        <span class="chan-cpc"><span>Depends on</span><strong>Creative</strong></span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- PPC VS SEO -->
-<section class="ppc-sec light">
-  <div class="ppc-wrap">
-    <div class="ppc-eyebrow">The honest comparison</div>
-    <h2 class="ppc-h2">PPC or SEO?<br><span class="amber">The question is usually the wrong one.</span></h2>
+<!-- LEAKS -->
+<section class="bp-sec ink">
+  <div class="bp-wrap">
+    <div class="bp-eye">Findings</div>
+    <h2 class="bp-h2">What we find in almost<br><span class="amber">every Google Ads audit</span></h2>
     <p>
-      Agencies that sell only one of these will tell you theirs is better. We run both, so we have no reason to. The truthful answer is that they solve different problems on different timelines and the right split depends on how urgently you need customers and how long you plan to be in business.
+      These are specific to Google rather than paid media generally. Every one of them is visible in the account within about twenty minutes of getting access.
     </p>
-    <table class="led">
-      <thead><tr><th></th><th>Pay-per-click</th><th>Organic search</th></tr></thead>
+    <table class="spec">
+      <thead><tr><th>Finding</th><th>What is happening</th></tr></thead>
       <tbody>
-        <tr><td>Time to first customer</td><td>Days</td><td class="gain">Months</td></tr>
-        <tr><td>Cost behaviour</td><td>Per click, forever</td><td class="gain">Front-loaded, then cheap</td></tr>
-        <tr><td>When you stop paying</td><td>Traffic stops that day</td><td class="gain">Decays slowly</td></tr>
-        <tr><td>Control over messaging</td><td>Total, changes in minutes</td><td class="gain">Indirect, slow</td></tr>
-        <tr><td>Testing speed</td><td>Fast &mdash; a week of data</td><td class="gain">Slow</td></tr>
-        <tr><td>Ceiling</td><td>Your budget</td><td class="gain">Your authority</td></tr>
+        <tr><td>Search terms never reviewed</td><td>The report showing what people actually typed has not been opened. It is the single most useful screen in the platform and the most consistently ignored.</td></tr>
+        <tr><td>Auto-apply left on</td><td>Google is silently expanding match types, adding keywords and raising budgets. The recommendations are optimized for Google's measurable outcomes, which are not identical to your profit.</td></tr>
+        <tr><td>Performance Max with no feed control</td><td>PMax absorbing most of the budget while brand searches you would have won for free get counted as its conversions.</td></tr>
+        <tr><td>Conversions counting the wrong thing</td><td>Page loads, thank-you pages firing twice, form starts, or every phone call regardless of length. Smart bidding then optimizes hard toward producing more of them.</td></tr>
+        <tr><td>Brand and non-brand mixed</td><td>Brand keywords converting cheaply and hiding the fact that the rest of the account is unprofitable. Always separate them before judging anything.</td></tr>
+        <tr><td>Ads pointed at the homepage</td><td>Someone searched for one specific service and landed on a page about the company. Landing page experience drops, quality score follows, cost per click rises everywhere.</td></tr>
+        <tr><td>No negative keyword list</td><td>Paying for "free", "jobs", "salary", "DIY" and competitor brand searches. Weekly maintenance, not a one-time task.</td></tr>
       </tbody>
     </table>
     <p>
-      The usual right answer for a business that needs revenue now is to run paid to generate customers immediately while organic search is built underneath it, then let the organic results gradually take over the head terms so the paid budget can be redeployed to the searches organic will never win.
-    </p>
-    <p>
-      Search engine optimization and AI-search optimization run through <a href="https://eyetoad.com" rel="noopener">Eye To Ad Media</a>, which specializes in that side of the work. If you are a local business and organic visibility is the priority, their <a href="https://eyetoad.com" rel="noopener">Denver SEO</a> team is the better first call. Paid media, conversion and creative are handled here.
-    </p>
-    <p>
-      There is a practical reason to run them together rather than at separate agencies. Paid search data tells you within weeks which keywords convert and which merely attract clicks &mdash; information that would take organic search a year to reveal. Feeding that back into the <a href="https://eyetoad.com" rel="noopener">search optimization</a> roadmap means the organic work targets proven terms instead of guesses.
+      What is not on that list is the bid. It almost never is. By the time bidding is the binding constraint, the account has already been structured properly, which describes very few of the accounts we are handed.
     </p>
   </div>
 </section>
 
 <!-- CTA -->
-<section class="ppc-sec" style="padding-top:0;">
-  <div class="ppc-wrap">
-    <div class="ppc-cta">
-      <h3>Free PPC account audit</h3>
-      <p>We will look at your account, find the leaks, and tell you what we would change &mdash; whether or not you hire us. No obligation, and you keep the findings.</p>
+<section class="bp-sec paper" style="padding-bottom:0;border-bottom:none;">
+  <div class="bp-wrap">
+    <div class="bp-cta">
+      <h3>Free Google Ads account audit</h3>
+      <p>We look at your search terms, your tracking, your structure and your landing pages, then tell you what we would change. You keep the findings either way.</p>
       <a href="/contact/" class="sc-btn-primary">Get my free audit</a>
     </div>
   </div>
 </section>
 
+<!-- VS ORGANIC -->
+<section class="bp-sec paper" style="padding-top:24px;">
+  <div class="bp-wrap">
+    <div class="bp-eye">The honest comparison</div>
+    <h2 class="bp-h2">Google PPC and organic search<br><span class="amber">are not alternatives</span></h2>
+    <p>
+      An agency that only sells one of these has an incentive to tell you it is the better investment. We run paid here and search optimization runs through <a href="https://eyetoad.com" rel="noopener">Eye To Ad Media</a>, so the honest answer costs us nothing: they do different jobs and most businesses that can afford both should run both.
+    </p>
+    <table class="spec">
+      <thead><tr><th></th><th>Google Ads</th><th>Organic search</th></tr></thead>
+      <tbody>
+        <tr><td>First customer</td><td>Days</td><td>Months</td></tr>
+        <tr><td>Position control</td><td>Immediate, adjustable hourly</td><td>Earned slowly, never guaranteed</td></tr>
+        <tr><td>Cost pattern</td><td>Every click, indefinitely</td><td>Front-loaded, then marginal</td></tr>
+        <tr><td>If you stop</td><td>Traffic ends that day</td><td>Decays over months</td></tr>
+        <tr><td>Best used for</td><td>High-intent commercial searches and testing</td><td>Informational depth and long-tail coverage</td></tr>
+      </tbody>
+    </table>
+    <p>
+      There is a specific, practical reason to run them together rather than at unrelated agencies. Google Ads reveals within weeks which keywords convert into customers and which merely attract clicks &mdash; information organic search would take a year to surface. Handing that data to the <a href="https://eyetoad.com" rel="noopener">search engine optimization</a> roadmap means the organic work targets proven commercial terms instead of estimates from a keyword tool.
+    </p>
+    <p>
+      For local businesses where organic visibility matters more than paid reach, the <a href="https://eyetoad.com" rel="noopener">Denver SEO</a> team is usually the better first conversation. Paid media, conversion and creative are handled here.
+    </p>
+  </div>
+</section>
+
 <!-- PROCESS -->
-<section class="ppc-sec light" style="padding-top:0;">
-  <div class="ppc-wrap">
-    <div class="ppc-eyebrow">How we work</div>
-    <h2 class="ppc-h2">What happens when you<br><span class="amber">hand us an account</span></h2>
-    <ol class="guide-ol">
-      <li><strong>Audit before anything changes.</strong> We look at <a href="/google-ads-management/">search terms and match types</a>, negative keyword coverage, tracking accuracy, account structure and landing page alignment. Roughly half the value we deliver in the first quarter is found in this step.</li>
-      <li><strong>Fix the tracking first.</strong> If conversions are being counted wrong, every decision after this point is wrong too, including the platform's own automated bidding. Nothing else starts until the numbers are trustworthy.</li>
-      <li><strong>Stop the bleeding.</strong> Negative keywords, pausing the searches that have never converted, and switching off auto-applied recommendations. This usually cuts waste before it improves anything.</li>
-      <li><strong>Rebuild structure.</strong> Tighter ad groups, ads written to the search rather than the brand, landing pages matched to the promise. This is where quality score and cost per click start moving.</li>
-      <li><strong>Then bid.</strong> Only once the account deserves cheap clicks do we start pushing for volume and position. Bidding aggressively into a badly built account is how budgets disappear.</li>
-      <li><strong>Test continuously.</strong> Ads, landing pages and offers, measured properly. Our approach to that is set out on the <a href="/ab-testing/">A/B testing</a> page.</li>
-      <li><strong>Report on money.</strong> Cost per lead, cost per sale, return on ad spend. If a report cannot be connected to revenue, it does not go in the report.</li>
+<section class="bp-sec">
+  <div class="bp-wrap">
+    <div class="bp-eye">How we work</div>
+    <h2 class="bp-h2">What happens in the<br><span class="amber">first ninety days</span></h2>
+    <ol class="bp-ol">
+      <li><strong>Read the search terms report before touching anything.</strong> It tells you what the account has really been buying, which is frequently not what anyone believed. Most of the value in an audit is found here.</li>
+      <li><strong>Verify every conversion action.</strong> We check what each one actually fires on. If the account has been optimizing toward a broken signal, nothing else can be trusted and nothing else gets changed until it is fixed.</li>
+      <li><strong>Turn off auto-apply and stop the bleeding.</strong> Negative keywords, pausing search terms that have never converted, separating brand from non-brand so the real numbers become visible.</li>
+      <li><strong>Rebuild structure.</strong> Tighter ad groups, ads written to the search rather than to the brand, match types chosen deliberately. This is where quality score and cost per click begin to move.</li>
+      <li><strong>Fix the landing pages.</strong> Message match, speed and form friction. It improves conversion rate and landing page experience simultaneously, which means it lowers cost per click as a side effect. Our approach is set out under <a href="/conversion-optimization/">conversion optimization</a>.</li>
+      <li><strong>Then compete on bids.</strong> Only once the account earns cheap clicks do we push for position and volume. Bidding aggressively into a badly built account is the fastest way to spend a budget with nothing to show.</li>
+      <li><strong>Test continuously.</strong> Ads, assets, landing pages and offers, judged with enough data to be real rather than on a hunch. See <a href="/ab-testing/">A/B testing</a>.</li>
+      <li><strong>Report on money.</strong> Cost per lead, cost per sale, return on ad spend. If a metric cannot be connected to revenue it does not appear in the report.</li>
     </ol>
   </div>
 </section>
 
-<!-- INDUSTRIES -->
-<section class="ppc-sec">
-  <div class="ppc-wrap wide">
-    <div class="ppc-eyebrow">Sector experience</div>
-    <h2 class="ppc-h2">Different industries,<br><span class="amber">very different auctions</span></h2>
-    <p style="max-width:860px;margin-bottom:30px;">
-      A click that costs three dollars in one sector costs ninety in another, and the account that works in one would bankrupt a business in the other. Cost per click only means something next to what a customer is worth.
+<!-- OTHER CHANNELS -->
+<section class="bp-sec paper">
+  <div class="bp-wrap wide">
+    <div class="bp-eye">Beyond Google</div>
+    <h2 class="bp-h2">Google is the start,<br><span class="amber">not the whole plan</span></h2>
+    <p style="max-width:760px;margin-bottom:28px;">
+      Google captures people already looking. It cannot reach anyone who has not thought to search yet, and its auction gets more expensive every year. These run alongside it.
     </p>
-    <div class="ind-grid">
-      <a href="/law-firm-marketing/" class="ind-card"><span>&#9878;</span><strong>Law Firms</strong><p>Among the most expensive clicks in paid search. Intake quality decides everything.</p></a>
-      <a href="/saas-marketing/" class="ind-card"><span>&#128187;</span><strong>SaaS</strong><p>Trial signups are cheap, trial-to-paid is the real metric. Optimize for the second one.</p></a>
-      <a href="/b2b-marketing/" class="ind-card"><span>&#127970;</span><strong>B2B</strong><p>Long cycles, several stakeholders, and attribution that spans months.</p></a>
-      <a href="/healthcare-marketing/" class="ind-card"><span>&#127973;</span><strong>Healthcare</strong><p>Restricted targeting and compliance rules that change what you can bid on.</p></a>
-      <a href="/ecommerce-marketing/" class="ind-card"><span>&#128722;</span><strong>Ecommerce</strong><p>Shopping feeds and margin per product decide the ceiling, not keywords.</p></a>
-      <a href="/dental-marketing/" class="ind-card"><span>&#129463;</span><strong>Dental</strong><p>Local intent, phone conversion, and new-patient offer design.</p></a>
-      <a href="/real-estate-marketing/" class="ind-card"><span>&#127968;</span><strong>Real Estate</strong><p>Lead volume is easy. Lead quality and speed to contact are not.</p></a>
-      <a href="/restaurant-marketing/" class="ind-card"><span>&#127869;</span><strong>Restaurants</strong><p>Thin margins mean paid only works on repeat visits and catering.</p></a>
+    <div class="bp-grid4">
+      <a href="/facebook-ads-management/" class="bp-cell"><span>&#128241;</span><strong>Meta Ads</strong><p>Interest and lookalike targeting. Demand creation rather than capture.</p></a>
+      <a href="/retargeting/" class="bp-cell"><span>&#127919;</span><strong>Retargeting</strong><p>The people who already visited. Usually the cheapest conversions you will buy.</p></a>
+      <a href="/programmatic-advertising/" class="bp-cell"><span>&#128225;</span><strong>Programmatic</strong><p>Audience-targeted display across the open web, bought in real time.</p></a>
+      <a href="/ctv-advertising/" class="bp-cell"><span>&#128250;</span><strong>CTV &amp; streaming</strong><p>Television reach with digital targeting and measurement.</p></a>
+    </div>
+    <p style="margin-top:26px;">
+      How these fit together, and which deserves your next dollar, is covered on the <a href="/ppc-management/">PPC management</a> page. If the goal is simply more qualified inquiries regardless of channel, start with <a href="/lead-generation/">lead generation</a>.
+    </p>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="bp-sec">
+  <div class="bp-wrap wide">
+    <div class="bp-eye">Sector experience</div>
+    <h2 class="bp-h2">The same click costs<br><span class="amber">$3 or $300</span></h2>
+    <p style="max-width:760px;margin-bottom:28px;">
+      Google PPC economics differ enormously by sector. A cost per click only means something next to what a customer is worth and how many of them you can close.
+    </p>
+    <div class="bp-grid4">
+      <a href="/law-firm-marketing/" class="bp-cell"><span>&#9878;</span><strong>Law Firms</strong><p>Among the most expensive keywords anywhere. Intake speed decides the return.</p></a>
+      <a href="/saas-marketing/" class="bp-cell"><span>&#128187;</span><strong>SaaS</strong><p>Optimize toward trial-to-paid, not signups. The two diverge fast.</p></a>
+      <a href="/b2b-marketing/" class="bp-cell"><span>&#127970;</span><strong>B2B</strong><p>Long cycles and multi-touch attribution that Google alone will not show you.</p></a>
+      <a href="/healthcare-marketing/" class="bp-cell"><span>&#127973;</span><strong>Healthcare</strong><p>Restricted targeting and compliance rules that limit what you can bid on.</p></a>
+      <a href="/ecommerce-marketing/" class="bp-cell"><span>&#128722;</span><strong>Ecommerce</strong><p>Shopping feed quality and product margin set the ceiling, not keywords.</p></a>
+      <a href="/dental-marketing/" class="bp-cell"><span>&#129463;</span><strong>Dental</strong><p>Local intent and phone conversion. Call tracking is not optional here.</p></a>
+      <a href="/real-estate-marketing/" class="bp-cell"><span>&#127968;</span><strong>Real Estate</strong><p>Lead volume is easy and cheap. Lead quality is neither.</p></a>
+      <a href="/restaurant-marketing/" class="bp-cell"><span>&#127869;</span><strong>Restaurants</strong><p>Margins mean paid only works on catering, events and repeat visits.</p></a>
     </div>
   </div>
 </section>
@@ -2070,58 +1996,58 @@
   <div class="section-inner">
     <div class="text-center reveal" style="margin-bottom:48px;">
       <div class="section-eyebrow" style="justify-content:center;">Questions we get asked</div>
-      <h2 class="section-h2" id="faq-h2">PPC management<br><span class="text-orange">questions, answered</span></h2>
+      <h2 class="section-h2" id="faq-h2">Google Ads management<br><span class="text-orange">questions, answered</span></h2>
     </div>
     <div class="faq-list">
 
       <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">What does a PPC agency actually do?<span class="faq-icon" aria-hidden="true">+</span></button>
-        <div class="faq-answer" hidden><p>A PPC agency plans, builds and continuously improves your pay-per-click advertising so the money spent on clicks produces profitable customers. That covers keyword and audience research, account structure, writing and testing ads, negative keyword management, bidding strategy, landing page alignment, conversion tracking and reporting. The platforms will run ads without any of this &mdash; what they will not do is tell you when your account is buying clicks that never become revenue, because their automated recommendations are built to increase spend rather than profit.</p></div>
+        <button class="faq-question" aria-expanded="false">What does a Google Ads agency actually do?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>A Google Ads agency structures, runs and continuously improves your campaigns so spend produces profitable customers. In practice that means choosing the right campaign types, building account architecture tight enough that each ad matches a narrow set of searches, managing match types and negative keywords, writing and testing ads, verifying conversion tracking, aligning landing pages, and reviewing the search terms report to see what the account is really buying. The platform will run ads without any of this. What it will not do is tell you when your budget is being spent on searches that never become revenue.</p></div>
       </div>
 
       <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">What is pay per click advertising?<span class="faq-icon" aria-hidden="true">+</span></button>
-        <div class="faq-answer" hidden><p>Pay-per-click advertising is a model where you bid to appear in a placement and pay only when someone clicks your ad. It runs on search engines, social platforms, retail sites and across the open web through programmatic display. The appeal is that you pay for attention rather than exposure. The risk is that a click costs so little individually that waste accumulates invisibly until the monthly invoice arrives and nobody can say which clicks led to revenue.</p></div>
+        <button class="faq-question" aria-expanded="false">What is Google PPC and how does it work?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Google PPC, or Google pay per click advertising, is a model where you bid to appear in Google's results and pay only when someone clicks. Every search triggers an auction that ranks advertisers using a combination of the bid and expected relevance, which means the highest bidder does not automatically win the top position. An advertiser with strong relevance can outrank a competitor bidding more while paying less per click. The mechanics of that auction are covered in detail on our <a href="/ppc-management/">PPC management</a> page.</p></div>
       </div>
 
       <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">Does the highest bidder always get the top position?<span class="faq-icon" aria-hidden="true">+</span></button>
-        <div class="faq-answer" hidden><p>No, and this is the most valuable thing most advertisers never learn. Position is determined by a combination of your bid and how relevant and useful your ad and landing page are expected to be. Google calls its version Quality Score. An advertiser with strong relevance can outrank someone bidding considerably more while paying less per click. That is why account structure, ad copy and landing pages are not cosmetic concerns &mdash; they are direct inputs into what you pay. Use the auction simulator on this page to see the effect.</p></div>
+        <button class="faq-question" aria-expanded="false">Why is broad match spending my budget on irrelevant searches?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Because broad match is designed to find related searches, and "related" is interpreted generously. A keyword like emergency plumber can become eligible for searches about plumbing jobs, salaries, DIY repairs and supply stores. Every one of those clicks is billed at full price. Broad match is not inherently wrong, but it requires an actively maintained negative keyword list and trustworthy conversion tracking to be safe. Without both, it is the single largest source of wasted Google PPC spend. Use the match type simulator on this page to see the effect.</p></div>
       </div>
 
       <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">How much should I spend on PPC?<span class="faq-icon" aria-hidden="true">+</span></button>
-        <div class="faq-answer" hidden><p>Work backwards rather than picking a number. Take your gross profit per customer, multiply by your close rate to get what a lead is worth, then multiply by your landing page conversion rate to get your break-even cost per click. If your break-even CPC comfortably exceeds market rates in your sector, spend as much as you can profitably absorb. If it does not, more budget will only lose money faster and the fix is upstream &mdash; in your conversion rate, your offer, or your pricing. The calculator on this page runs that math with your own numbers.</p></div>
+        <button class="faq-question" aria-expanded="false">What is Quality Score and how do I improve it?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Quality Score is Google's 1 to 10 estimate of how relevant and useful your ads and landing pages are for a keyword. The score itself is a diagnostic rather than a lever. What matters are the three components beneath it, each labeled Below average, Average or Above average: expected click-through rate, ad relevance and landing page experience. Ad relevance is fixed with tighter account structure and ads written to the specific search. Landing page experience is fixed with speed, message match and a page that delivers the promise. Improving these lowers what you pay per click at the same position, which is why they matter more than bidding for most accounts.</p></div>
       </div>
 
       <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">How much does PPC management cost?<span class="faq-icon" aria-hidden="true">+</span></button>
-        <div class="faq-answer" hidden><p>Most PPC company and PPC agency fees are structured as a percentage of ad spend, a flat monthly retainer, or a hybrid. We price to the work rather than publishing tiers, because a single-location service business with one campaign and a national ecommerce account with thousands of products are not the same job. What we will do is give you a real number on the first call. Be wary of any arrangement where the agency's fee rises automatically with your spend and nothing else &mdash; it rewards spending more rather than earning more.</p></div>
+        <button class="faq-question" aria-expanded="false">Should I use Performance Max?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Sometimes, and rarely as your only campaign. Performance Max runs across every Google surface from a single campaign with heavy automation, which suits ecommerce accounts with clean product feeds and plenty of conversion data. The trade-off is visibility: you get considerably less insight into where the money went and which searches produced results. It also has a habit of claiming credit for brand searches you would have won anyway. If you are running it, run brand as a separate Search campaign so you can see what PMax is actually contributing.</p></div>
       </div>
 
       <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">How long before PPC produces results?<span class="faq-icon" aria-hidden="true">+</span></button>
-        <div class="faq-answer" hidden><p>Clicks and leads can arrive within days of launch, which is the main advantage of paid over organic search. Reliable performance takes longer. Expect two to four weeks before there is enough conversion data to judge anything, and roughly 90 days before an account that needed restructuring is genuinely optimized. Anyone promising stable profitable results in week one is describing luck rather than a process.</p></div>
+        <button class="faq-question" aria-expanded="false">How much does Google Ads management cost?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Fees in the industry are typically a percentage of ad spend, a flat monthly retainer, or a hybrid of both. Most Google Ads company pricing follows one of those three shapes. We price to the work rather than publishing tiers, because a single-location service business running one campaign and a national ecommerce account with thousands of products are not the same job. You get a real number on the first call. One thing worth watching in any proposal: an arrangement where the fee rises automatically with your spend and nothing else rewards spending more, not earning more.</p></div>
       </div>
 
       <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">Should I do PPC or SEO?<span class="faq-icon" aria-hidden="true">+</span></button>
-        <div class="faq-answer" hidden><p>Usually both, in that order. Paid search produces customers within days and gives you conversion data fast; organic search takes months but keeps working after you stop paying. The common sequence is to run paid for immediate revenue while organic is built underneath, then redeploy paid budget toward searches organic will never win. Search and AI-search optimization runs through <a href="https://eyetoad.com" rel="noopener">Eye To Ad Media</a> rather than being treated here as an add-on. One practical benefit of running them together is that paid data reveals which keywords actually convert within weeks, which stops the organic roadmap being built on guesses.</p></div>
+        <button class="faq-question" aria-expanded="false">Do I get to keep my Google Ads account?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Yes, always, and you should insist on this with any agency. You retain administrative ownership of your Google Ads account, your conversion data and your historical performance throughout the relationship and after it ends. An agency that runs your advertising inside their own account is holding your data hostage, and you discover that at exactly the worst moment. Ask the question before you sign anything, with us or anyone else.</p></div>
       </div>
 
       <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">Do you require a long-term contract?<span class="faq-icon" aria-hidden="true">+</span></button>
-        <div class="faq-answer" hidden><p>No. Paid media is month to month. We do ask that you give a restructured account a fair run &mdash; roughly 90 days &mdash; because judging a rebuild at week three tells you nothing except that data was still accumulating. But that is a request, not a clause, and you own your ad accounts throughout. Any agency that will not give you administrative ownership of your own advertising accounts is telling you something important about how they expect the relationship to end.</p></div>
+        <button class="faq-question" aria-expanded="false">How long before Google Ads produces results?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Clicks and inquiries can arrive within days of launch, which is the main advantage over organic search. Reliable, optimized performance takes longer. Expect two to four weeks before there is enough conversion data to judge anything, and roughly 90 days for an account that needed restructuring. Smart bidding strategies in particular need a meaningful volume of accurate conversions before they behave sensibly, which is why fixing tracking comes before anything else.</p></div>
       </div>
 
       <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">What is a PPC audit and is it really free?<span class="faq-icon" aria-hidden="true">+</span></button>
-        <div class="faq-answer" hidden><p>An audit is a review of your existing account looking for wasted spend, tracking errors, structural problems and landing page mismatches. Ours is genuinely free and you keep the findings whether or not you work with us. The reason we can offer it is straightforward: accounts with real problems are accounts we can help, and accounts that are already well run get told so. Call <a href="tel:+17207128615">+1 720-712-8615</a> or use the form below.</p></div>
+        <button class="faq-question" aria-expanded="false">Are you a Google Ads Partner?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Partner status is based on spend thresholds, certification and account performance criteria that Google sets and periodically changes. It is worth asking any Google ad agency about, but treat it as a baseline rather than a differentiator &mdash; it indicates an agency manages a certain volume of spend, not that they manage it well. The more useful questions are whether you keep ownership of your account, how they report results, and whether they can explain what your search terms report currently shows.</p></div>
       </div>
 
       <div class="faq-item reveal">
-        <button class="faq-question" aria-expanded="false">Do you work with businesses outside Colorado?<span class="faq-icon" aria-hidden="true">+</span></button>
-        <div class="faq-answer" hidden><p>Yes. We are based in Denver and manage paid media for clients across the United States and Canada. Paid advertising is delivered entirely remotely, and most client relationships run over calls and shared dashboards. You keep ownership of your accounts regardless of where you are.</p></div>
+        <button class="faq-question" aria-expanded="false">Should I run Google Ads or invest in SEO?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Usually both, with paid first if you need revenue soon. Google Ads produces customers within days and reveals which keywords genuinely convert; organic search takes months but continues working after you stop paying. The common sequence is to run paid for immediate revenue while organic is built underneath, then redeploy paid budget toward the commercial searches organic will never win. Search engine optimization and AI-search optimization run through <a href="https://eyetoad.com" rel="noopener">Eye To Ad Media</a>. Running them together means the organic roadmap is built on proven conversion data rather than keyword tool estimates.</p></div>
       </div>
 
     </div>
@@ -2133,12 +2059,12 @@
   <div class="bottom-form-inner">
     <div class="bottom-form-wrap">
       <div class="bottom-form-header">
-        <h2 id="bf-h2">Get a free PPC account audit</h2>
-        <p>Tell us what you are spending and where. We come back within one business day with the leaks we found and what we would do about them.</p>
+        <h2 id="bf-h2">Free Google Ads account audit</h2>
+        <p>Tell us what you are running. We come back within one business day with what your search terms report shows and what we would change first.</p>
       </div>
       <div class="bottom-form-body">
         <form id="bottom-form" novalidate>
-          <input type="hidden" name="source_site" value="searchconverts.com - PPC Management Page">
+          <input type="hidden" name="source_site" value="searchconverts.com - Google Ads Management Page">
           <input type="hidden" name="_form_loaded" id="b-form-loaded" value="">
           <div style="display:none;" aria-hidden="true"><input type="text" name="_honey" tabindex="-1" autocomplete="off"></div>
           <div class="sc-form-row">
@@ -2150,22 +2076,24 @@
             <div class="sc-form-group"><label for="b-email">Email</label><input id="b-email" name="user_email" type="email" placeholder="you@company.com" autocomplete="email"></div>
           </div>
           <div class="sc-form-row">
-            <div class="sc-form-group"><label for="b-spend">Monthly ad spend</label><input id="b-spend" name="monthly_spend" type="text" placeholder="e.g. $8,000 or not running yet"></div>
+            <div class="sc-form-group"><label for="b-spend">Monthly Google Ads spend</label><input id="b-spend" name="monthly_spend" type="text" placeholder="e.g. $9,000 or not running yet"></div>
             <div class="sc-form-group">
-              <label for="b-plat">Platforms running</label>
-              <select id="b-plat" name="platforms">
+              <label for="b-camp">Campaign types running</label>
+              <select id="b-camp" name="campaign_types">
                 <option value="">Select</option>
-                <option>Google Ads only</option>
-                <option>Google + Meta</option>
-                <option>Meta / social only</option>
-                <option>Multiple platforms</option>
+                <option>Search only</option>
+                <option>Search + Performance Max</option>
+                <option>Performance Max only</option>
+                <option>Shopping / ecommerce</option>
+                <option>Local Services Ads</option>
+                <option>Not sure what is running</option>
                 <option>Nothing running yet</option>
               </select>
             </div>
           </div>
           <div class="sc-form-group">
             <label for="b-msg">What is not working?</label>
-            <textarea id="b-msg" name="user_message" placeholder="Leads too expensive? Volume too low? Not sure whether it is profitable? Tell us what prompted the search."></textarea>
+            <textarea id="b-msg" name="user_message" placeholder="Cost per lead climbing? Leads not closing? Cannot tell whether it is profitable? Tell us what prompted the search."></textarea>
           </div>
           <button type="submit" class="sc-submit-btn" id="bottom-submit-btn">Send my audit request</button>
           <div id="bottom-form-msg" role="status" aria-live="polite"></div>
@@ -2286,79 +2214,69 @@
     },
     {
       "@type": "Service",
-      "@id": "https://searchconverts.com/ppc-management/#service",
-      "serviceType": "PPC Management",
-      "name": "PPC Management Services",
-      "description": "Pay-per-click advertising management covering keyword and audience research, account structure, ad creation, negative keyword management, bidding strategy, landing page alignment, conversion tracking and revenue reporting across Google Ads, Meta, programmatic, CTV and retail platforms.",
+      "@id": "https://searchconverts.com/google-ads-management/#service",
+      "serviceType": "Google Ads Management",
+      "name": "Google Ads Management and Google PPC Services",
+      "description": "Google Ads management covering campaign type selection, account structure, match type and negative keyword strategy, ad and asset creation, Quality Score improvement, conversion tracking verification, landing page alignment and revenue reporting.",
       "provider": { "@id": "https://searchconverts.com/#organization" },
       "areaServed": [ { "@type": "Country", "name": "United States" }, { "@type": "Country", "name": "Canada" } ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Paid media channels",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Google Ads Management", "url": "https://searchconverts.com/google-ads-management/" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Facebook and Meta Ads", "url": "https://searchconverts.com/facebook-ads-management/" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Programmatic Display Advertising", "url": "https://searchconverts.com/programmatic-advertising/" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CTV Advertising", "url": "https://searchconverts.com/ctv-advertising/" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Retargeting", "url": "https://searchconverts.com/retargeting/" } }
-        ]
-      }
+      "isRelatedTo": { "@type": "Service", "name": "PPC Management", "url": "https://searchconverts.com/ppc-management/" }
     },
     {
       "@type": ["WebPage","Article"],
-      "@id": "https://searchconverts.com/ppc-management/#webpage",
-      "url": "https://searchconverts.com/ppc-management/",
-      "name": "PPC Agency & Management | Search Converts",
-      "headline": "PPC Management: The Highest Bid Does Not Win",
-      "description": "A PPC agency that manages pay-per-click advertising across Google Ads, Meta, programmatic and CTV. Includes a live ad auction simulator and a break-even cost-per-click calculator.",
+      "@id": "https://searchconverts.com/google-ads-management/#webpage",
+      "url": "https://searchconverts.com/google-ads-management/",
+      "name": "Google Ads Management & Google PPC Agency | Search Converts",
+      "headline": "Most Google PPC Waste Is Structural",
+      "description": "Google Ads management and Google PPC from an agency that fixes structure before bidding. Includes a match type simulator, campaign type selector and Quality Score diagnostic.",
       "isPartOf": { "@id": "https://searchconverts.com/#website" },
       "inLanguage": "en-US",
       "author": { "@id": "https://searchconverts.com/#organization" },
       "publisher": { "@id": "https://searchconverts.com/#organization" },
-      "hasPart": { "@id": "https://searchconverts.com/ppc-management/#faq" },
-      "speakable": { "@type": "SpeakableSpecification", "cssSelector": [".definition", ".ppc-h1"] },
+      "hasPart": { "@id": "https://searchconverts.com/google-ads-management/#faq" },
+      "speakable": { "@type": "SpeakableSpecification", "cssSelector": [".bp-def", ".bp-h1"] },
       "about": {
         "@type": "DefinedTerm",
-        "name": "Pay-per-click advertising",
-        "alternateName": ["PPC","PPC management","Paid search"],
-        "description": "An online advertising model in which advertisers bid to appear in a placement and pay a fee each time their ad is clicked, with position determined by a combination of bid amount and expected ad relevance.",
-        "sameAs": "https://en.wikipedia.org/wiki/Pay-per-click"
+        "name": "Google Ads",
+        "alternateName": ["Google PPC","Google pay per click","Google AdWords"],
+        "description": "Google's online advertising platform, in which advertisers bid on keywords and placements and pay when their ad is clicked, with position determined by a combination of bid and expected relevance.",
+        "sameAs": "https://en.wikipedia.org/wiki/Google_Ads"
       },
       "mentions": [
         { "@type": "DefinedTerm", "name": "Quality Score", "sameAs": "https://en.wikipedia.org/wiki/Quality_Score" },
-        { "@type": "DefinedTerm", "name": "Google Ads", "sameAs": "https://en.wikipedia.org/wiki/Google_Ads" },
-        { "@type": "DefinedTerm", "name": "Real-time bidding", "sameAs": "https://en.wikipedia.org/wiki/Real-time_bidding" }
+        { "@type": "DefinedTerm", "name": "Keyword match types", "sameAs": "https://en.wikipedia.org/wiki/Pay-per-click" },
+        { "@type": "DefinedTerm", "name": "Search engine marketing", "sameAs": "https://en.wikipedia.org/wiki/Search_engine_marketing" }
       ],
       "significantLink": [
-        "https://searchconverts.com/",
+        "https://searchconverts.com/ppc-management/",
         "https://searchconverts.com/conversion-optimization/",
-        "https://searchconverts.com/google-ads-management/",
+        "https://searchconverts.com/retargeting/",
         "https://searchconverts.com/contact/"
       ]
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://searchconverts.com/ppc-management/#breadcrumb",
+      "@id": "https://searchconverts.com/google-ads-management/#breadcrumb",
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://searchconverts.com/" },
-        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://searchconverts.com/services/" },
-        { "@type": "ListItem", "position": 3, "name": "PPC Management", "item": "https://searchconverts.com/ppc-management/" }
+        { "@type": "ListItem", "position": 2, "name": "PPC Management", "item": "https://searchconverts.com/ppc-management/" },
+        { "@type": "ListItem", "position": 3, "name": "Google Ads Management", "item": "https://searchconverts.com/google-ads-management/" }
       ]
     },
     {
       "@type": "FAQPage",
-      "@id": "https://searchconverts.com/ppc-management/#faq",
+      "@id": "https://searchconverts.com/google-ads-management/#faq",
       "mainEntity": [
-        { "@type": "Question", "name": "What does a PPC agency actually do?", "acceptedAnswer": { "@type": "Answer", "text": "A PPC agency plans, builds and continuously improves your pay-per-click advertising so the money spent on clicks produces profitable customers. That covers keyword and audience research, account structure, writing and testing ads, negative keyword management, bidding strategy, landing page alignment, conversion tracking and reporting. The platforms will run ads without any of this, but they will not tell you when your account is buying clicks that never become revenue, because their automated recommendations are built to increase spend rather than profit." } },
-        { "@type": "Question", "name": "What is pay per click advertising?", "acceptedAnswer": { "@type": "Answer", "text": "Pay-per-click advertising is a model where you bid to appear in a placement and pay only when someone clicks your ad. It runs on search engines, social platforms, retail sites and across the open web through programmatic display. The appeal is paying for attention rather than exposure. The risk is that a click costs so little individually that waste accumulates invisibly until the monthly invoice arrives." } },
-        { "@type": "Question", "name": "Does the highest bidder always get the top position?", "acceptedAnswer": { "@type": "Answer", "text": "No. Position is determined by a combination of your bid and how relevant and useful your ad and landing page are expected to be, which Google calls Quality Score. An advertiser with strong relevance can outrank someone bidding considerably more while paying less per click. Account structure, ad copy and landing pages are therefore direct inputs into what you pay, not cosmetic concerns." } },
-        { "@type": "Question", "name": "How much should I spend on PPC?", "acceptedAnswer": { "@type": "Answer", "text": "Work backwards rather than picking a number. Take gross profit per customer, multiply by close rate to get what a lead is worth, then multiply by landing page conversion rate to get break-even cost per click. If break-even CPC comfortably exceeds market rates in your sector, spend as much as you can profitably absorb. If it does not, more budget loses money faster and the fix is upstream in conversion rate, offer or pricing." } },
-        { "@type": "Question", "name": "How much does PPC management cost?", "acceptedAnswer": { "@type": "Answer", "text": "Industry management fees are usually a percentage of ad spend, a flat monthly retainer, or a hybrid. Search Converts prices to the work rather than publishing tiers, because a single-location service business and a national ecommerce account are not the same job, and gives a real number on the first call. Be wary of arrangements where the fee rises automatically with spend and nothing else, since that rewards spending more rather than earning more." } },
-        { "@type": "Question", "name": "How long before PPC produces results?", "acceptedAnswer": { "@type": "Answer", "text": "Clicks and leads can arrive within days of launch, which is the main advantage of paid over organic search. Reliable performance takes longer: expect two to four weeks before there is enough conversion data to judge anything, and roughly 90 days before an account that needed restructuring is genuinely optimized." } },
-        { "@type": "Question", "name": "Should I do PPC or SEO?", "acceptedAnswer": { "@type": "Answer", "text": "Usually both, in that order. Paid search produces customers within days and generates conversion data fast; organic search takes months but keeps working after you stop paying. The common sequence is to run paid for immediate revenue while organic is built underneath, then redeploy paid budget toward searches organic will never win. Running them together also means paid data reveals which keywords actually convert within weeks, so the organic roadmap is not built on guesses." } },
-        { "@type": "Question", "name": "Do you require a long-term contract?", "acceptedAnswer": { "@type": "Answer", "text": "No. Paid media is month to month. Search Converts asks that a restructured account is given roughly 90 days because judging a rebuild at week three tells you nothing, but that is a request rather than a clause, and clients retain administrative ownership of their own ad accounts throughout." } },
-        { "@type": "Question", "name": "What is a PPC audit and is it really free?", "acceptedAnswer": { "@type": "Answer", "text": "A PPC audit is a review of an existing account looking for wasted spend, tracking errors, structural problems and landing page mismatches. The Search Converts audit is free and the client keeps the findings whether or not they engage. Accounts with real problems are accounts that can be helped, and accounts already well run are told so." } },
-        { "@type": "Question", "name": "Do you work with businesses outside Colorado?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Search Converts is based in Denver and manages paid media for clients across the United States and Canada. Paid advertising is delivered remotely, and clients retain ownership of their accounts regardless of location." } }
+        { "@type": "Question", "name": "What does a Google Ads agency actually do?", "acceptedAnswer": { "@type": "Answer", "text": "A Google Ads agency structures, runs and continuously improves your campaigns so spend produces profitable customers. That means choosing the right campaign types, building account architecture tight enough that each ad matches a narrow set of searches, managing match types and negative keywords, writing and testing ads, verifying conversion tracking, aligning landing pages, and reviewing the search terms report to see what the account is really buying." } },
+        { "@type": "Question", "name": "What is Google PPC and how does it work?", "acceptedAnswer": { "@type": "Answer", "text": "Google PPC, or Google pay per click advertising, is a model where you bid to appear in Google's results and pay only when someone clicks. Every search triggers an auction that ranks advertisers using a combination of bid and expected relevance, which means the highest bidder does not automatically win the top position. An advertiser with strong relevance can outrank a competitor bidding more while paying less per click." } },
+        { "@type": "Question", "name": "Why is broad match spending my budget on irrelevant searches?", "acceptedAnswer": { "@type": "Answer", "text": "Broad match is designed to find related searches and related is interpreted generously. A keyword like emergency plumber can become eligible for searches about plumbing jobs, salaries, DIY repairs and supply stores, and every one of those clicks is billed at full price. Broad match requires an actively maintained negative keyword list and trustworthy conversion tracking to be safe. Without both it is the single largest source of wasted Google PPC spend." } },
+        { "@type": "Question", "name": "What is Quality Score and how do I improve it?", "acceptedAnswer": { "@type": "Answer", "text": "Quality Score is Google's 1 to 10 estimate of how relevant and useful your ads and landing pages are for a keyword. What matters are the three components beneath it, each labeled Below average, Average or Above average: expected click-through rate, ad relevance and landing page experience. Ad relevance is fixed with tighter account structure and ads written to the specific search. Landing page experience is fixed with speed, message match and a page that delivers the promise. Improving these lowers what you pay per click at the same position." } },
+        { "@type": "Question", "name": "Should I use Performance Max?", "acceptedAnswer": { "@type": "Answer", "text": "Sometimes, and rarely as your only campaign. Performance Max runs across every Google surface from a single campaign with heavy automation, which suits ecommerce accounts with clean product feeds and plenty of conversion data. The trade-off is much less visibility into where money went and which searches produced results. It also tends to claim credit for brand searches you would have won anyway, so run brand as a separate Search campaign to see what PMax is actually contributing." } },
+        { "@type": "Question", "name": "How much does Google Ads management cost?", "acceptedAnswer": { "@type": "Answer", "text": "Fees are typically a percentage of ad spend, a flat monthly retainer, or a hybrid. Search Converts prices to the work rather than publishing tiers, because a single-location service business running one campaign and a national ecommerce account with thousands of products are not the same job, and gives a real number on the first call. Be cautious of arrangements where the fee rises automatically with spend and nothing else." } },
+        { "@type": "Question", "name": "Do I get to keep my Google Ads account?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Clients retain administrative ownership of their Google Ads account, conversion data and historical performance throughout the relationship and after it ends. An agency that runs your advertising inside their own account is holding your data, which becomes apparent at the worst possible moment. Ask this question before signing with any agency." } },
+        { "@type": "Question", "name": "How long before Google Ads produces results?", "acceptedAnswer": { "@type": "Answer", "text": "Clicks and inquiries can arrive within days of launch. Reliable optimized performance takes longer: expect two to four weeks before there is enough conversion data to judge anything, and roughly 90 days for an account that needed restructuring. Smart bidding strategies need a meaningful volume of accurate conversions before they behave sensibly, which is why fixing tracking comes first." } },
+        { "@type": "Question", "name": "Are you a Google Ads Partner?", "acceptedAnswer": { "@type": "Answer", "text": "Partner status is based on spend thresholds, certification and performance criteria that Google sets and periodically changes. It is worth asking any agency about but is a baseline rather than a differentiator, since it indicates an agency manages a certain volume of spend rather than managing it well. More useful questions are whether you keep ownership of your account, how results are reported, and whether they can explain what your search terms report currently shows." } },
+        { "@type": "Question", "name": "Should I run Google Ads or invest in SEO?", "acceptedAnswer": { "@type": "Answer", "text": "Usually both, with paid first if revenue is needed soon. Google Ads produces customers within days and reveals which keywords genuinely convert; organic search takes months but continues working after you stop paying. The common sequence is to run paid for immediate revenue while organic is built underneath, then redeploy paid budget toward commercial searches organic will never win. Search and AI-search optimization runs through Eye To Ad Media." } }
       ]
     }
   ]
@@ -2725,115 +2643,156 @@
 (function () {
   'use strict';
 
-  /* ── AD AUCTION SIMULATOR ── */
-  var bidEl = document.getElementById('au-bid');
-  var qsEl  = document.getElementById('au-qs');
-  if (bidEl && qsEl) {
-    var rivals = [
-      { name: 'Competitor A', bid: 14.00, qs: 4 },
-      { name: 'Competitor B', bid: 9.50,  qs: 7 },
-      { name: 'Competitor C', bid: 6.00,  qs: 9 },
-      { name: 'Competitor D', bid: 4.25,  qs: 6 }
-    ];
-    function money(n) { return '$' + n.toFixed(2); }
-    function paint(el) {
-      var p = ((el.value - el.min) / (el.max - el.min)) * 100;
-      el.style.background = 'linear-gradient(90deg,#f97316 0%,#f97316 ' + p + '%,rgba(255,255,255,.14) ' + p + '%,rgba(255,255,255,.14) 100%)';
-    }
-    function run() {
-      var myBid = +bidEl.value / 100, myQs = +qsEl.value;
-      document.getElementById('au-bid-out').textContent = money(myBid);
-      document.getElementById('au-qs-out').textContent = myQs;
+  /* ── MATCH TYPE SIMULATOR ── */
+  // level: 1 = eligible on exact, 2 = phrase and broader, 3 = broad only
+  var QUERIES = [
+    { q: 'emergency plumber',                 lvl: 1, v: 'good'  },
+    { q: 'emergency plumbers',                lvl: 1, v: 'good'  },
+    { q: 'urgent plumber',                    lvl: 1, v: 'good'  },
+    { q: 'emergency plumber near me',         lvl: 2, v: 'good'  },
+    { q: '24 hour emergency plumber',         lvl: 2, v: 'good'  },
+    { q: 'weekend emergency plumber denver',  lvl: 2, v: 'good'  },
+    { q: 'emergency plumber cost',            lvl: 2, v: 'mixed' },
+    { q: 'burst pipe repair',                 lvl: 3, v: 'good'  },
+    { q: 'plumbing repair service',           lvl: 3, v: 'mixed' },
+    { q: 'how to fix a leaking pipe',         lvl: 3, v: 'waste' },
+    { q: 'plumber salary',                    lvl: 3, v: 'waste' },
+    { q: 'plumber jobs near me',              lvl: 3, v: 'waste' },
+    { q: 'diy drain unclog',                  lvl: 3, v: 'waste' },
+    { q: 'plumbing supply store',             lvl: 3, v: 'waste' }
+  ];
+  var LABEL = { good: 'Buyer', mixed: 'Maybe', waste: 'Waste' };
+  var mtList = document.getElementById('mt-list');
 
-      var field = rivals.map(function (r) { return { name: r.name, bid: r.bid, qs: r.qs, rank: r.bid * r.qs, me: false }; });
-      field.push({ name: 'You', bid: myBid, qs: myQs, rank: myBid * myQs, me: true });
-      field.sort(function (a, b) { return b.rank - a.rank; });
-
-      var html = '', myPos = 0, myCpc = 0;
-      field.forEach(function (f, i) {
-        var below = field[i + 1];
-        // second-price style: you pay just enough to beat the next advertiser's rank, given your own score
-        var cpc = below ? Math.min(f.bid, (below.rank / f.qs) + 0.01) : Math.min(f.bid, 0.5);
-        var out = i > 2;
-        if (f.me) { myPos = i + 1; myCpc = cpc; }
-        html += '<div class="auc-rw' + (f.me ? ' me' : '') + (out ? ' out' : '') + '">' +
-                '<span class="rank">' + (out ? '&mdash;' : (i + 1)) + '</span>' +
-                '<span class="nm">' + f.name + '</span>' +
-                '<span>' + money(f.bid) + '</span>' +
-                '<span>' + f.qs + '</span>' +
-                '<span class="cpc">' + (out ? 'No placement' : money(cpc)) + '</span>' +
+  if (mtList) {
+    var NOTES = {
+      1: '<strong>Exact match.</strong> Only searches that mean what your keyword means. The tightest control available and the smallest reach &mdash; note that Google still matches close variants, so even this is broader than the brackets suggest. Start here when budget is limited and every click has to count.',
+      2: '<strong>Phrase match.</strong> Searches that contain your keyword\u2019s meaning plus additional words. This is where most qualified long-tail volume lives &mdash; "near me", "24 hour", city names &mdash; without opening the gates. For most lead-generation accounts this is the sensible default.',
+      3: '<strong>Broad match.</strong> Every search Google judges related, which now includes people researching salaries, looking for jobs, and trying to fix the problem themselves. Each of those clicks costs the same as a real buyer. Broad match works with a maintained negative keyword list and accurate conversion tracking. Without both, this is where budgets disappear.'
+    };
+    function renderMT(level) {
+      var html = '', elig = 0, good = 0, waste = 0;
+      QUERIES.forEach(function (item) {
+        var on = item.lvl <= level;
+        if (on) {
+          elig++;
+          if (item.v === 'waste') waste++; else if (item.v === 'good') good++;
+        }
+        html += '<div class="mt-q ' + (on ? 'on-' + item.v : 'off') + '">' +
+                '<span>' + item.q + '</span>' +
+                '<span class="mt-verdict">' + (on ? LABEL[item.v] : 'Blocked') + '</span>' +
                 '</div>';
       });
-      document.getElementById('auc-rows').innerHTML = html;
-
-      var v = document.getElementById('auc-verdict');
-      var headline, body;
-      if (myPos > 3) {
-        headline = 'No placement';
-        body = 'Your ad rank is below the last paid position, so you are not shown at all and you pay nothing &mdash; because you get nothing. Note that raising quality score gets you back in the auction just as effectively as raising the bid, and it does not cost you anything per click.';
-      } else if (myPos === 1) {
-        headline = 'Position 1 at ' + money(myCpc) + ' a click';
-        body = myQs >= 8
-          ? 'Top position, and look at the price. A high quality score means you clear the competition on rank while paying near the bottom of the range. This is what a well-built account buys you, and it is not something a competitor can copy by raising their bid.'
-          : 'Top position, but you are paying for it with bid rather than relevance. Lift the quality score and watch the cost per click fall while your position stays exactly where it is. That saving compounds across every click for as long as the account runs.';
-      } else {
-        headline = 'Position ' + myPos + ' at ' + money(myCpc) + ' a click';
-        body = 'Mid-pack. You have two ways up. Raising the bid buys position and you pay for it on every click, forever. Raising the quality score buys the same position and lowers the price at the same time &mdash; which is the entire reason account structure, ad copy and landing pages matter.';
-      }
-      v.innerHTML = '<strong>' + headline + '</strong>' + body;
-      paint(bidEl); paint(qsEl);
+      mtList.innerHTML = html;
+      document.getElementById('mt-elig').textContent = elig;
+      document.getElementById('mt-good').textContent = good;
+      var w = document.getElementById('mt-waste');
+      w.textContent = waste;
+      w.className = waste > 0 ? 'bad' : 'good';
+      document.getElementById('mt-note').innerHTML = NOTES[level];
+      var disp = { 1: '[emergency plumber]', 2: '"emergency plumber"', 3: 'emergency plumber' };
+      document.getElementById('mt-display').textContent = disp[level];
     }
-    bidEl.addEventListener('input', run);
-    qsEl.addEventListener('input', run);
-    run();
+    document.querySelectorAll('.mt-tab').forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        document.querySelectorAll('.mt-tab').forEach(function (t) { t.classList.remove('on'); });
+        tab.classList.add('on');
+        renderMT(+tab.getAttribute('data-mt'));
+      });
+    });
+    renderMT(2);
   }
 
-  /* ── BREAK-EVEN CPC CALCULATOR ── */
-  var pc = ['pc-cpc','pc-cvr','pc-close','pc-value'].map(function (i) { return document.getElementById(i); });
-  if (pc[0]) {
-    function m0(n) { return '$' + Math.round(n).toLocaleString('en-US'); }
-    function runPc() {
-      var cpc = parseFloat(pc[0].value) || 0;
-      var cvr = (parseFloat(pc[1].value) || 0) / 100;
-      var cls = (parseFloat(pc[2].value) || 0) / 100;
-      var val = parseFloat(pc[3].value) || 0;
-      var cplEl = document.getElementById('pc-cpl'), cpaEl = document.getElementById('pc-cpa');
-      var prEl = document.getElementById('pc-profit'), bkEl = document.getElementById('pc-break');
-      var vd = document.getElementById('pc-verdict');
+  /* ── CAMPAIGN TYPE SELECTOR ── */
+  var csState = { what: 'services', goal: 'leads', demand: 'yes' };
+  var csName = document.getElementById('cs-name');
+  if (csName) {
+    function recommend() {
+      var w = csState.what, g = csState.goal, d = csState.demand;
+      var name, body;
 
-      if (cvr <= 0 || cls <= 0 || cpc <= 0) {
-        cplEl.textContent = cpaEl.textContent = prEl.textContent = bkEl.textContent = '\u2014';
-        vd.innerHTML = '<strong>Enter your numbers.</strong> Cost per click, conversion rate and close rate all need to be above zero.';
+      if (w === 'local' && (g === 'calls' || g === 'leads')) {
+        name = 'Local Services Ads + Search';
+        body = '<p><strong>Start with Local Services Ads.</strong> You pay per lead rather than per click, your listing appears above the standard ads, and Google handles the verification badge that local buyers look for. It is a separate product from your main account and worth the setup effort for trades and licensed services.</p><p>Run a small <strong>Search campaign</strong> alongside it for the service and location terms LSA does not cover. Keep them separate so you can see which is actually producing booked jobs, and make sure call tracking is in place before either goes live.</p>';
+      } else if (w === 'products' && g === 'sales') {
+        name = 'Shopping, then Performance Max';
+        body = '<p><strong>Standard Shopping first.</strong> Your results here are decided by product feed quality &mdash; titles, images, attributes and pricing &mdash; far more than by bidding. Fix the feed before spending on anything else, because every campaign type downstream reads from it.</p><p>Once Shopping has produced consistent conversion data, <strong>Performance Max</strong> can extend reach across other Google surfaces. Add it second, not first, and always keep a separate branded Search campaign so PMax cannot take credit for searches you would have won for free.</p>';
+      } else if (d === 'no') {
+        name = 'Demand Gen + Video';
+        body = '<p>If nobody is searching for what you sell yet, Search campaigns have almost nothing to bid on. <strong>Demand Gen and Video</strong> put your offer in front of relevant audiences on YouTube, Discover and Gmail before they know to look for it.</p><p>This is creative-led rather than keyword-led, so budget belongs in production. Judge it on assisted conversions and branded search volume rather than last-click, and pair it with <a href="/retargeting/">retargeting</a> to catch the interest it creates. <a href="/facebook-ads-management/">Meta Ads</a> often works alongside this for the same reason.</p>';
+      } else if (w === 'software') {
+        name = 'Search + Retargeting';
+        body = '<p><strong>Search</strong> for the problem-aware terms and competitor comparisons where intent is highest, kept in tight ad groups so each ad matches the specific search. Software buyers research heavily and compare, so the long tail matters more here than head terms.</p><p>Because evaluation cycles run long, <strong><a href="/retargeting/">retargeting</a></strong> does much of the real work. Optimize toward trial-to-paid rather than signups &mdash; those two numbers diverge quickly and cheap signups can look like success while revenue stays flat.</p>';
+      } else if (g === 'aware') {
+        name = 'Video + Display';
+        body = '<p><strong>Video</strong> on YouTube buys attention at a low cost per view, and <strong>Display</strong> extends reach cheaply across the open web. Neither is a direct-response channel and neither should be judged on last-click conversions.</p><p>Set the measurement expectation before launch: assisted conversions, branded search lift and view-through behavior. If you need customers rather than awareness this month, a Search campaign will get you there faster.</p>';
+      } else {
+        name = 'Search campaign';
+        body = '<p><strong>Search is the right starting point.</strong> People are already looking for what you sell, which is the highest-intent traffic available anywhere. Build tight ad groups so each ad matches a narrow set of searches, start on phrase match rather than broad, and add negatives from week one.</p><p>Conversion tracking has to be verified before launch, not after. Once Search is profitable and stable, extend into <a href="/retargeting/">retargeting</a> for the people who visited and did not act &mdash; usually the cheapest conversions in the account.</p>';
+      }
+      csName.textContent = name;
+      document.getElementById('cs-body').innerHTML = body;
+    }
+    document.querySelectorAll('.cs-opts').forEach(function (group) {
+      var key = group.getAttribute('data-cs');
+      group.querySelectorAll('.cs-opt').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          group.querySelectorAll('.cs-opt').forEach(function (b) { b.classList.remove('on'); });
+          btn.classList.add('on');
+          csState[key] = btn.getAttribute('data-v');
+          recommend();
+        });
+      });
+    });
+    recommend();
+  }
+
+  /* ── QUALITY SCORE DIAGNOSTIC ── */
+  var qsState = { ctr: 2, rel: 2, lp: 2 };
+  var qsHead = document.getElementById('qs-head');
+  if (qsHead) {
+    var FIX = {
+      ctr: {
+        title: 'Fix expected click-through rate first',
+        body: 'Your ads are not being clicked as often as competitors in the same position. That is usually a headline problem: the ad describes the company rather than answering the search. Write the primary headline as the search term itself where it is honest to do so, put the outcome in the second headline, and use every available asset. Low expected CTR also frequently signals that the keyword does not belong in that ad group at all.'
+      },
+      rel: {
+        title: 'Fix ad relevance first',
+        body: 'This is nearly always a structure problem rather than a copywriting one. If one ad group holds forty loosely related keywords, no single ad can be relevant to all of them. Split them into tighter groups where every keyword shares an intent, then write ads to that specific intent. This is the cheapest of the three to fix and it moves fastest.'
+      },
+      lp: {
+        title: 'Fix landing page experience first',
+        body: 'Google is judging what happens after the click: load speed, mobile behavior, and whether the page delivers what the ad promised. Sending traffic to a homepage is the most common cause. Build a page for the specific service being advertised, make it fast, and match its language to the ad. This lowers your cost per click and raises your conversion rate at the same time &mdash; see <a href="/conversion-optimization/">conversion optimization</a>.'
+      }
+    };
+    function runQs() {
+      var lowest = null, lowVal = 4;
+      ['rel','lp','ctr'].forEach(function (k) {
+        if (qsState[k] < lowVal) { lowVal = qsState[k]; lowest = k; }
+      });
+      var total = qsState.ctr + qsState.rel + qsState.lp;
+      if (total === 9) {
+        qsHead.textContent = 'All three above average';
+        document.getElementById('qs-body').innerHTML = 'There is nothing left to fix here, and that is a genuinely uncommon position. At this point relevance is no longer your constraint and bidding, budget and reach become the levers that matter. Worth checking that your <a href="/conversion-optimization/">conversion rate</a> justifies bidding harder for higher positions.';
         return;
       }
-      var cpl = cpc / cvr;
-      var cpa = cpl / cls;
-      var profit = val - cpa;
-      var breakeven = val * cls * cvr;
-
-      cplEl.textContent = m0(cpl);
-      cpaEl.textContent = m0(cpa);
-      prEl.textContent = (profit < 0 ? '-' : '') + m0(Math.abs(profit));
-      prEl.className = profit > 0 ? 'good' : 'bad';
-      bkEl.textContent = '$' + breakeven.toFixed(2);
-
-      var ratio = breakeven / cpc;
-      if (profit <= 0) {
-        vd.innerHTML = '<strong>Losing money on every sale.</strong> You break even at $' + breakeven.toFixed(2) +
-          ' a click and you are paying $' + cpc.toFixed(2) + '. More budget will only lose money faster. The fix is upstream: raise the landing page conversion rate, improve the close rate, or increase what a customer is worth. Doubling the conversion rate alone doubles what you can afford to bid.';
-      } else if (ratio < 1.4) {
-        vd.innerHTML = '<strong>Profitable, but thin.</strong> Break-even is $' + breakeven.toFixed(2) +
-          ' and you are paying $' + cpc.toFixed(2) + ', which leaves very little margin for a bad month or a rising auction. Worth improving <a href="/conversion-optimization/">conversion rate</a> before scaling spend, since that widens the gap without touching the auction at all.';
-      } else if (ratio < 2.5) {
-        vd.innerHTML = '<strong>Profitable, with room to bid.</strong> You break even at $' + breakeven.toFixed(2) +
-          ' a click and you are paying $' + cpc.toFixed(2) + ', so there is headroom to compete harder for better positions. The constraint here is volume, not economics.';
-      } else {
-        vd.innerHTML = '<strong>Strong economics. You are probably under-spending.</strong> Break-even is $' + breakeven.toFixed(2) +
-          ' against an actual cost of $' + cpc.toFixed(2) + '. At that margin you can outbid nearly anyone in the auction, and the question stops being cost and becomes how much qualified volume exists to buy.';
-      }
+      qsHead.textContent = FIX[lowest].title;
+      var extra = '';
+      if (lowVal === 2) extra = ' Everything here is average rather than broken, so gains will be incremental rather than dramatic &mdash; but average is where most accounts sit, and moving one component to above average is usually enough to change your cost per click meaningfully.';
+      document.getElementById('qs-body').innerHTML = FIX[lowest].body + extra;
     }
-    pc.forEach(function (el) { el.addEventListener('input', runPc); });
-    runPc();
+    document.querySelectorAll('.qs-btns').forEach(function (group) {
+      var key = group.getAttribute('data-qs');
+      group.querySelectorAll('.qs-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          group.querySelectorAll('.qs-btn').forEach(function (b) { b.classList.remove('on'); });
+          btn.classList.add('on');
+          qsState[key] = +btn.getAttribute('data-v');
+          runQs();
+        });
+      });
+    });
+    runQs();
   }
 })();
 </script>
