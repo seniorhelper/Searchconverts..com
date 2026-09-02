@@ -1,0 +1,2770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Marketing Agency | Search Converts</title>
+  <meta name="description" content="An email marketing agency focused on deliverability and automated flows rather than open rates. Free delivery journey visualiser, sender compliance checker and flows versus campaigns revenue model.">
+  <link rel="canonical" href="https://searchconverts.com/email-marketing/">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="author" content="Search Converts">
+  <meta property="og:title" content="Email Marketing Agency | Search Converts">
+  <meta property="og:description" content="Your open rate is mostly fiction. Roughly half your reported opens are bots. Free deliverability and flow tools inside.">
+  <meta property="og:url" content="https://searchconverts.com/email-marketing/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Search Converts">
+  <meta property="og:image" content="https://searchconverts.com/images/Generative-engine-optimization-experts.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Email Marketing Agency | Search Converts">
+  <meta name="twitter:description" content="Free delivery journey visualiser, compliance checker and flow revenue model.">
+  <link rel="icon" type="image/png" href="/images/search-converts-favicon.png">
+  <link rel="apple-touch-icon" href="/images/search-converts-favicon.png">
+  <link rel="shortcut icon" type="image/png" href="/images/search-converts-favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&family=Barlow+Condensed:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    /* ══ RESET & BASE ══ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Barlow', sans-serif;
+      background: #ffffff;
+      color: #0d1220;
+      font-size: 18px;
+      line-height: 1.72;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; }
+    a:focus-visible, button:focus-visible, input:focus-visible,
+    select:focus-visible, textarea:focus-visible {
+      outline: 3px solid #22d3ee;
+      outline-offset: 2px;
+    }
+
+    :root {
+      --orange: #f97316;
+      --orange-bright: #fb923c;
+      --orange-deep: #ea580c;
+      --neon-lime: #a3e635;
+      --neon-cyan: #22d3ee;
+      --neon-pink: #f472b6;
+      --electric-blue: #3b82f6;
+      --mint: #d1fae5;
+      --lavender: #ede9fe;
+      --peach: #fed7aa;
+      --sky: #e0f2fe;
+      --black: #060910;
+      --navy: #0d1220;
+      --charcoal: #1e2a40;
+      --surface: #f8fafc;
+      --surface2: #f1f5f9;
+      --border: #e2e8f0;
+      --border2: #cbd5e1;
+      --text: #0d1220;
+      --muted: #475569;
+      --muted2: #64748b;
+      --white: #ffffff;
+      --green: #10b981;
+      --red: #ef4444;
+      --yellow: #fbbf24;
+    }
+
+    /* ══ ANNOUNCEMENT BAR ══ */
+    .ann-bar {
+      position: relative; z-index: 1;
+      background: linear-gradient(90deg, var(--orange-deep), var(--orange), #fb923c);
+      color: #fff;
+      text-align: center;
+      padding: 10px 20px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .ann-bar a { color: #fff; text-decoration: underline; }
+
+    /* ══ HEADER ══ */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #ffffff;
+      border-bottom: 3px solid var(--orange);
+      box-shadow: 0 2px 24px rgba(0,0,0,0.10);
+    }
+    .header-inner {
+      max-width: 1460px;
+      margin: 0 auto;
+      padding: 0 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      height: 110px;
+      flex-wrap: nowrap;
+    }
+        .header-logo { position: relative; z-index: 30; display: block; line-height: 0; }
+    .header-logo img {
+      height: 200px; width: auto; max-width: 250px; object-fit: contain; display: block;
+      filter: drop-shadow(0 5px 10px rgba(0,0,0,0.30)) drop-shadow(0 1px 2px rgba(0,0,0,0.18));
+    }
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      list-style: none;
+      flex-wrap: nowrap;
+    }
+    .header-nav > li { position: relative; }
+    .header-nav a, .nav-toggle {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #0d1220;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: color 0.2s;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: 'Barlow Condensed', sans-serif;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .header-nav a:hover, .nav-toggle:hover { color: var(--orange); }
+    .nav-toggle .caret {
+      width: 0; height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 5px solid currentColor;
+      transition: transform 0.25s;
+    }
+    .header-nav li.open .nav-toggle .caret { transform: rotate(180deg); }
+    .header-nav .nav-cta {
+      background: var(--orange);
+      color: #fff !important;
+      padding: 10px 15px;
+      white-space: nowrap;
+      border-radius: 4px;
+      transition: background 0.2s, transform 0.2s !important;
+    }
+    .header-nav .nav-cta:hover { background: var(--orange-deep); transform: translateY(-1px); }
+
+    /* ── MEGA DROPDOWN ── */
+    .nav-drop {
+      position: absolute;
+      top: calc(100% + 14px);
+      left: 50%;
+      transform: translateX(-50%) translateY(-8px);
+      background: #fff;
+      border: 1.5px solid var(--border);
+      border-top: 4px solid var(--orange);
+      border-radius: 10px;
+      box-shadow: 0 28px 70px rgba(13,18,32,0.22);
+      padding: 24px 26px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
+      z-index: 1200;
+    }
+    .header-nav li.open .nav-drop { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
+    .nav-drop-cols { display: flex; gap: 34px; }
+    .nav-drop-col { min-width: 176px; }
+    .nav-drop-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--orange-deep);
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-drop a {
+      display: block;
+      font-family: 'Barlow', sans-serif;
+      font-size: 14.5px;
+      font-weight: 600;
+      text-transform: none;
+      letter-spacing: 0;
+      color: #334155;
+      padding: 6px 0;
+      white-space: nowrap;
+    }
+    .nav-drop a:hover { color: var(--orange); }
+    .nav-drop a .ext { font-size: 11px; color: var(--muted2); }
+    .nav-drop-wide { min-width: 640px; }
+
+    .header-call {
+      display: flex; align-items: center; gap: 10px; white-space: nowrap;
+    }
+    .header-phone {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 31px; font-weight: 900;
+      color: var(--orange); text-decoration: none;
+      letter-spacing: 0.01em; white-space: nowrap;
+      line-height: 1; transition: color 0.2s, transform 0.2s;
+    }
+    .header-phone:hover { color: var(--orange-deep); transform: translateY(-1px); }
+    .wa-link {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 40px; height: 40px; border-radius: 50%;
+      background: #25D366; flex-shrink: 0;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 14px rgba(37,211,102,0.35);
+    }
+    .wa-link:hover { transform: translateY(-2px) scale(1.05); box-shadow: 0 8px 22px rgba(37,211,102,0.5); }
+    .wa-link svg { width: 23px; height: 23px; display: block; }
+    @media (max-width: 1340px) { .header-phone { font-size: 28px; } .wa-link { width: 36px; height: 36px; } .wa-link svg { width: 21px; height: 21px; } }
+    @media (max-width: 600px) {
+      .header-phone { font-size: 22px; }
+      .wa-link { width: 32px; height: 32px; } .wa-link svg { width: 18px; height: 18px; }
+      .header-call { gap: 6px; }
+    }
+    @media (max-width: 430px) {
+      .header-logo img { height: 104px; max-width: 164px; }
+      .header-inner { height: 86px; }
+      .header-phone { font-size: 19px; }
+      .wa-link { width: 29px; height: 29px; } .wa-link svg { width: 17px; height: 17px; }
+    }
+    @media (max-width: 360px) {
+      .header-logo img { height: 88px; max-width: 138px; }
+      .header-phone { font-size: 17px; }
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+      background: none;
+      border: none;
+    }
+    .hamburger span {
+      display: block;
+      width: 26px; height: 3px;
+      background: #0d1220;
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+    .mobile-nav {
+      display: none;
+      background: #fff;
+      border-top: 1px solid var(--border);
+      padding: 12px 24px 20px;
+      max-height: 78vh;
+      overflow-y: auto;
+    }
+    .mobile-nav.open { display: block; }
+    .mobile-nav a {
+      display: block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 17px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #0d1220;
+      text-decoration: none;
+      padding: 9px 0;
+      border-bottom: 1px solid var(--border);
+      letter-spacing: 0.05em;
+    }
+    .mobile-nav a:hover { color: var(--orange); }
+    .mobile-nav .m-group {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--orange-deep);
+      margin: 16px 0 4px;
+    }
+    .mobile-nav .m-sub {
+      font-family: 'Barlow', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      text-transform: none;
+      letter-spacing: 0;
+      color: #334155;
+      padding: 6px 0;
+    }
+
+    @media (max-width: 1360px) {
+      .header-nav { display: none; }
+      .hamburger { display: flex; }
+      .header-logo img { height: 150px; }
+      .header-inner { height: 112px; }
+    }
+    @media (max-width: 600px) {
+      .header-logo img { height: 124px; max-width: 196px; }
+      .header-inner { height: 96px; padding: 0 14px; }
+      .header-phone { font-size: 16px; }
+      .ann-bar { font-size: 13px; }
+    }
+
+    /* ══ HERO ══ */
+    .hero { background: var(--navy); position: relative; overflow: hidden; padding: 80px 0 0; }
+    .hero-grid-bg {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(249,115,22,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(249,115,22,0.05) 1px, transparent 1px);
+      background-size: 56px 56px;
+      z-index: 0;
+    }
+    .hero-blob1 {
+      position: absolute; top: -80px; left: -80px;
+      width: 400px; height: 400px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(249,115,22,0.18) 0%, transparent 70%);
+      z-index: 0; pointer-events: none;
+    }
+    .hero-blob2 {
+      position: absolute; bottom: -60px; right: 10%;
+      width: 500px; height: 500px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(34,211,238,0.10) 0%, transparent 70%);
+      z-index: 0; pointer-events: none;
+    }
+    .hero-inner {
+      max-width: 1240px; margin: 0 auto;
+      padding: 0 24px 0;
+      display: grid; grid-template-columns: 1fr 480px;
+      gap: 60px; align-items: center;
+      position: relative; z-index: 2;
+    }
+    .hero-left { padding-bottom: 80px; }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px; font-weight: 800;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--neon-cyan);
+      background: rgba(34,211,238,0.1);
+      border: 1px solid rgba(34,211,238,0.35);
+      border-radius: 3px; padding: 6px 14px; margin-bottom: 24px;
+    }
+    .hero-eyebrow::before {
+      content: ''; width: 7px; height: 7px; border-radius: 50%;
+      background: var(--neon-cyan); animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%,100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.6); }
+    }
+    .hero-h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(52px, 7.2vw, 92px);
+      line-height: 0.95; letter-spacing: 0.01em;
+      color: #fff; margin-bottom: 26px;
+    }
+    .hero-h1 .accent { color: var(--orange); display: block; }
+    .hero-h1 .kw {
+      display: flex; width: fit-content; align-items: center; gap: 8px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 15px; font-weight: 800;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--neon-cyan);
+      background: rgba(34,211,238,0.1);
+      border: 1px solid rgba(34,211,238,0.35);
+      border-radius: 3px; padding: 7px 14px;
+      margin-bottom: 26px; line-height: 1.35;
+    }
+    .hero-h1 .kw::before {
+      content: ''; width: 7px; height: 7px; border-radius: 50%;
+      background: var(--neon-cyan); flex-shrink: 0;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @media (max-width: 520px) { .hero-h1 .kw { font-size: 13px; letter-spacing: 0.1em; } }
+    .hero-lead {
+      font-size: 21px; font-weight: 500; line-height: 1.68;
+      color: #a8b6c8; max-width: 580px; margin-bottom: 26px;
+    }
+    .hero-lead strong { color: #e2e8f0; font-weight: 700; }
+    .hero-trust-row {
+      display: flex; align-items: center; gap: 20px;
+      flex-wrap: wrap; margin-bottom: 20px;
+    }
+    .trust-pill {
+      display: flex; align-items: center; gap: 7px;
+      font-size: 13px; font-weight: 700; color: #cbd5e1;
+      font-family: 'Barlow Condensed', sans-serif;
+      letter-spacing: 0.05em; text-transform: uppercase;
+    }
+    .trust-pill .check {
+      width: 18px; height: 18px; border-radius: 50%;
+      background: rgba(163,230,53,0.15);
+      border: 1px solid rgba(163,230,53,0.5);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 10px; color: var(--neon-lime);
+    }
+
+    /* ── HERO FORM CARD ── */
+    .hero-form-card {
+      background: #fff; border-radius: 12px; padding: 34px 32px 30px;
+      box-shadow: 0 40px 100px rgba(0,0,0,0.5), 0 0 0 1px rgba(249,115,22,0.25);
+      position: relative; z-index: 3; margin-bottom: -1px;
+    }
+    .hero-form-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 5px;
+      background: linear-gradient(90deg, var(--orange), var(--orange-bright), var(--neon-lime));
+      border-radius: 12px 12px 0 0;
+    }
+    .form-card-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px; font-weight: 800; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--orange); margin-bottom: 8px;
+    }
+    .form-card-h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 24px; font-weight: 900; color: #0d1220;
+      line-height: 1.15; margin-bottom: 20px;
+    }
+    .sc-form-group { margin-bottom: 14px; }
+    .sc-form-group label {
+      display: block; font-size: 12px; font-weight: 700;
+      color: #4b5563; text-transform: uppercase; letter-spacing: 0.06em;
+      margin-bottom: 5px; font-family: 'Barlow Condensed', sans-serif;
+    }
+    .sc-form-group input, .sc-form-group select, .sc-form-group textarea {
+      width: 100%; background: #f8fafc;
+      border: 1.5px solid #e2e8f0; border-radius: 6px;
+      padding: 11px 14px; font-size: 15px;
+      font-family: 'Barlow', sans-serif; color: #0d1220;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .sc-form-group input:focus, .sc-form-group select:focus, .sc-form-group textarea:focus {
+      outline: none; border-color: var(--orange);
+      box-shadow: 0 0 0 3px rgba(249,115,22,0.12);
+    }
+    .sc-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .sc-submit-btn {
+      width: 100%; padding: 16px; background: var(--orange); color: #fff;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 18px; font-weight: 900; letter-spacing: 0.08em;
+      text-transform: uppercase; border: none; border-radius: 6px;
+      cursor: pointer; transition: background 0.2s, transform 0.2s; margin-top: 6px;
+    }
+    .sc-submit-btn:hover { background: var(--orange-deep); transform: translateY(-1px); }
+    .sc-submit-btn:disabled { opacity: 0.65; cursor: not-allowed; transform: none; }
+    .form-privacy {
+      font-size: 12px; color: #9ca3af; text-align: center;
+      margin-top: 10px; line-height: 1.5;
+    }
+    #hero-form-msg, #bottom-form-msg {
+      font-size: 14px; margin-top: 10px; text-align: center;
+      font-weight: 700; min-height: 20px; line-height: 1.5;
+    }
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-left { padding-bottom: 0; }
+      .hero { padding-top: 56px; }
+    }
+
+    /* ══ SHARED SECTION BASE ══ */
+    .section { padding: 90px 0; }
+    .section-inner { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+    .section-eyebrow {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px; font-weight: 800; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--orange);
+      margin-bottom: 14px; display: flex; align-items: center; gap: 10px;
+    }
+    .section-eyebrow::after {
+      content: ''; flex: 1; max-width: 60px; height: 2px;
+      background: var(--orange); opacity: 0.5;
+    }
+    .section-h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(38px, 5vw, 62px);
+      line-height: 1; color: var(--navy); margin-bottom: 20px;
+    }
+    .section-h2.light { color: #fff; }
+    .section-lead {
+      font-size: 19px; color: var(--muted);
+      max-width: 720px; line-height: 1.75; margin-bottom: 48px;
+    }
+    .section-h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 26px; font-weight: 900; color: var(--navy);
+      letter-spacing: 0.02em; margin-bottom: 12px;
+    }
+
+    /* ══ LIVE A/B TEST DEMO ══ */
+    .abdemo-section {
+      background: linear-gradient(180deg, var(--navy) 0%, #131c30 100%);
+      padding: 80px 0; position: relative; overflow: hidden;
+    }
+    .abdemo-section::before {
+      content: ''; position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(163,230,53,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(163,230,53,0.035) 1px, transparent 1px);
+      background-size: 48px 48px;
+    }
+    .abdemo-inner { max-width: 940px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+    .abdemo-head { text-align: center; margin-bottom: 40px; }
+    .abdemo-head h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(34px, 4.4vw, 54px); line-height: 1;
+      color: #fff; margin-bottom: 14px;
+    }
+    .abdemo-head p { color: #94a3b8; font-size: 17px; max-width: 620px; margin: 0 auto; line-height: 1.7; }
+    .abdemo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    @media (max-width: 700px) { .abdemo-grid { grid-template-columns: 1fr; } }
+    .ab-variant {
+      background: rgba(255,255,255,0.04);
+      border: 1.5px solid rgba(255,255,255,0.10);
+      border-radius: 12px; padding: 30px 26px;
+      text-align: center; transition: border-color 0.25s, background 0.25s, transform 0.25s;
+    }
+    .ab-variant:hover { border-color: rgba(249,115,22,0.5); background: rgba(255,255,255,0.06); }
+    .ab-variant.chosen { border-color: var(--neon-lime); background: rgba(163,230,53,0.07); }
+    .ab-tag {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px; font-weight: 800; letter-spacing: 0.16em;
+      text-transform: uppercase; color: #64748b; margin-bottom: 18px;
+    }
+    .ab-mock-a, .ab-mock-b {
+      display: inline-block; text-decoration: none;
+      border: none; cursor: pointer; font-family: 'Barlow', sans-serif;
+    }
+    .ab-mock-a {
+      background: #475569; color: #fff;
+      padding: 13px 30px; border-radius: 4px;
+      font-size: 15px; font-weight: 600;
+    }
+    .ab-mock-b {
+      background: var(--orange); color: #fff;
+      padding: 17px 36px; border-radius: 6px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 19px; font-weight: 900;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      box-shadow: 0 10px 28px rgba(249,115,22,0.35);
+    }
+    .ab-sub { font-size: 13px; color: #64748b; margin-top: 14px; min-height: 20px; }
+    .ab-reveal {
+      margin-top: 30px; background: rgba(249,115,22,0.07);
+      border: 1.5px solid rgba(249,115,22,0.3); border-left: 5px solid var(--orange);
+      border-radius: 10px; padding: 26px 28px;
+      max-height: 0; overflow: hidden; opacity: 0;
+      transition: max-height 0.5s ease, opacity 0.4s ease, padding 0.4s ease;
+      padding-top: 0; padding-bottom: 0;
+    }
+    .ab-reveal.show { max-height: 620px; opacity: 1; padding-top: 26px; padding-bottom: 26px; }
+    .ab-reveal h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 22px; font-weight: 900; color: var(--orange-bright); margin-bottom: 12px;
+    }
+    .ab-reveal p { color: #cbd5e1; font-size: 15.5px; line-height: 1.75; margin-bottom: 12px; }
+    .ab-reveal ul { list-style: none; margin: 14px 0 4px; }
+    .ab-reveal li {
+      color: #cbd5e1; font-size: 15px; line-height: 1.6;
+      padding-left: 26px; position: relative; margin-bottom: 9px;
+    }
+    .ab-reveal li::before {
+      content: ''; position: absolute; left: 4px; top: 9px;
+      width: 7px; height: 7px; border-radius: 50%; background: var(--neon-lime);
+    }
+
+    /* ══ ANIMATED ARROW ══ */
+    .draw-arrow path, .draw-arrow line, .draw-arrow polyline {
+      stroke-dasharray: 400; stroke-dashoffset: 400;
+      transition: stroke-dashoffset 1.1s cubic-bezier(.5,0,.2,1);
+    }
+    .draw-arrow.drawn path, .draw-arrow.drawn line, .draw-arrow.drawn polyline { stroke-dashoffset: 0; }
+    .arrow-note {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px; font-weight: 800; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--orange);
+    }
+
+
+    /* ══ HERO LIGHT-TRAIL ART ══ */
+    .hero-art {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+      z-index: 1; pointer-events: none; opacity: 1;
+    }
+    .trail-set path { animation: trailFlow var(--t, 12s) linear infinite; }
+    @keyframes trailFlow { from { stroke-dashoffset: var(--d, 900px); } to { stroke-dashoffset: 0; } }
+    .hero-arrow { animation: arrowBreathe 6s ease-in-out infinite; }
+    @keyframes arrowBreathe { 0%,100% { opacity: .85; } 50% { opacity: 1; } }
+    .nodes circle { animation: nodePulse 3.4s ease-in-out infinite; animation-delay: var(--nd, 0s); }
+    @keyframes nodePulse { 0%,100% { opacity: .18; } 50% { opacity: .95; } }
+    .rings circle { animation: ringOut 4.8s ease-out infinite; animation-delay: var(--rd, 0s); transform-origin: 1298px 96px; }
+    @keyframes ringOut {
+      0%   { transform: scale(.25); opacity: .75; }
+      70%  { opacity: .12; }
+      100% { transform: scale(3.4); opacity: 0; }
+    }
+    @media (max-width: 900px) { .hero-art { opacity: .8; } }
+    @media (prefers-reduced-motion: reduce) {
+      .trail-set path { animation: none; stroke-dashoffset: 0; }
+      .hero-arrow, .nodes circle, .rings circle { animation: none; }
+      .rings circle { opacity: .3; }
+    }
+
+    /* ══ CAROUSEL ══ */
+    .carousel-section {
+      background: #fff; border-top: 1px solid var(--border);
+      border-bottom: 4px solid var(--orange);
+      padding: 32px 0; overflow: hidden;
+    }
+    .carousel-label {
+      text-align: center; font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px; font-weight: 800; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--muted); margin-bottom: 20px;
+    }
+    .carousel-track-wrap { overflow: hidden; position: relative; }
+    .carousel-track-wrap::before, .carousel-track-wrap::after {
+      content: ''; position: absolute; top: 0; bottom: 0;
+      width: 120px; z-index: 2; pointer-events: none;
+    }
+    .carousel-track-wrap::before { left: 0; background: linear-gradient(90deg, #fff, transparent); }
+    .carousel-track-wrap::after { right: 0; background: linear-gradient(-90deg, #fff, transparent); }
+    .carousel-track {
+      display: flex; gap: 60px;
+      animation: scrollLeft 26s linear infinite; width: max-content;
+    }
+    .carousel-track:hover { animation-play-state: paused; }
+    @keyframes scrollLeft {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .carousel-item {
+      display: flex; align-items: center; gap: 12px;
+      opacity: 0.7; transition: opacity 0.3s; flex-shrink: 0; white-space: nowrap;
+    }
+    .carousel-item:hover { opacity: 1; }
+    .carousel-item img { height: 34px; width: auto; object-fit: contain; }
+    .carousel-engine-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 16px; font-weight: 700; color: var(--charcoal); letter-spacing: 0.04em;
+    }
+
+    /* ══ CONVERSION CALCULATOR ══ */
+    .calc-section { background: var(--surface); border-top: 1px solid var(--border); }
+    .calc-wrap {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 60px; align-items: center;
+    }
+    @media (max-width: 900px) { .calc-wrap { grid-template-columns: 1fr; gap: 40px; } }
+    .calc-panel {
+      background: #fff; border: 1.5px solid var(--border);
+      border-top: 5px solid var(--orange);
+      border-radius: 12px; padding: 32px 30px;
+      box-shadow: 0 18px 48px rgba(13,18,32,0.09);
+    }
+    .calc-field { margin-bottom: 22px; }
+    .calc-field-top {
+      display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px;
+    }
+    .calc-field label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px; font-weight: 800; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--muted);
+    }
+    .calc-value {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 26px; color: var(--navy); line-height: 1;
+    }
+    input[type="range"].calc-slider {
+      -webkit-appearance: none; appearance: none;
+      width: 100%; height: 8px; border-radius: 999px;
+      background: linear-gradient(90deg, var(--orange) 0%, var(--orange) 50%, #e2e8f0 50%, #e2e8f0 100%);
+      outline: none; cursor: pointer;
+    }
+    input[type="range"].calc-slider::-webkit-slider-thumb {
+      -webkit-appearance: none; appearance: none;
+      width: 24px; height: 24px; border-radius: 50%;
+      background: #fff; border: 4px solid var(--orange);
+      box-shadow: 0 3px 10px rgba(13,18,32,0.22); cursor: grab;
+    }
+    input[type="range"].calc-slider::-moz-range-thumb {
+      width: 22px; height: 22px; border-radius: 50%;
+      background: #fff; border: 4px solid var(--orange);
+      box-shadow: 0 3px 10px rgba(13,18,32,0.22); cursor: grab;
+    }
+    .calc-result {
+      background: var(--navy); border-radius: 12px;
+      padding: 34px 30px; color: #fff; position: relative; overflow: hidden;
+    }
+    .calc-result::after {
+      content: ''; position: absolute; top: -60px; right: -60px;
+      width: 260px; height: 260px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(163,230,53,0.14) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .calc-result-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 12px; font-weight: 800; letter-spacing: 0.14em;
+      text-transform: uppercase; color: #94a3b8; margin-bottom: 6px;
+    }
+    .calc-big {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(46px, 6vw, 72px); line-height: 1;
+      color: var(--neon-lime); margin-bottom: 4px; word-break: break-word;
+    }
+    .calc-sub { font-size: 15px; color: #94a3b8; line-height: 1.6; margin-bottom: 22px; }
+    .calc-split {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+      border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;
+    }
+    .calc-split div span {
+      display: block; font-family: 'Barlow Condensed', sans-serif;
+      font-size: 11px; font-weight: 800; letter-spacing: 0.1em;
+      text-transform: uppercase; color: #64748b; margin-bottom: 3px;
+    }
+    .calc-split div strong {
+      font-family: 'Bebas Neue', sans-serif; font-weight: 400;
+      font-size: 28px; color: #fff; line-height: 1;
+    }
+
+    /* ══ FUNNEL ══ */
+    .funnel-section { background: #fff; border-top: 1px solid var(--border); }
+    .funnel-stage {
+      display: grid; grid-template-columns: 190px 1fr 128px;
+      gap: 20px; align-items: center; margin-bottom: 14px;
+    }
+    @media (max-width: 640px) {
+      .funnel-stage { grid-template-columns: 1fr; gap: 6px; margin-bottom: 22px; }
+    }
+    .funnel-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 16px; font-weight: 800; color: var(--navy);
+      letter-spacing: 0.04em; text-transform: uppercase;
+    }
+    .funnel-label small {
+      display: block; font-size: 12.5px; font-weight: 600;
+      color: var(--muted2); text-transform: none; letter-spacing: 0;
+    }
+    .funnel-bar-track { height: 42px; background: var(--surface2); border-radius: 6px; overflow: hidden; }
+    .funnel-bar {
+      height: 100%; width: 0;
+      border-radius: 6px;
+      transition: width 1.3s cubic-bezier(.4,0,.2,1);
+      display: flex; align-items: center; justify-content: flex-end;
+      padding-right: 12px; color: #fff;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 15px; font-weight: 800;
+    }
+    .funnel-bar.f1 { background: linear-gradient(90deg, #1e2a40, #334155); }
+    .funnel-bar.f2 { background: linear-gradient(90deg, var(--electric-blue), #60a5fa); }
+    .funnel-bar.f3 { background: linear-gradient(90deg, var(--neon-cyan), #67e8f9); }
+    .funnel-bar.f4 { background: linear-gradient(90deg, var(--orange-deep), var(--orange)); }
+    .funnel-bar.f5 { background: linear-gradient(90deg, #65a30d, var(--neon-lime)); }
+    .funnel-loss {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px; font-weight: 800; color: var(--red);
+      letter-spacing: 0.04em; text-align: right;
+    }
+    .funnel-loss.gain { color: var(--green); }
+    @media (max-width: 640px) { .funnel-loss { text-align: left; } }
+    .funnel-toggle-row {
+      display: flex; gap: 10px; flex-wrap: wrap;
+      margin: 0 0 34px; align-items: center;
+    }
+    .funnel-toggle {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 15px; font-weight: 800; letter-spacing: 0.06em;
+      text-transform: uppercase; padding: 11px 22px;
+      border-radius: 6px; border: 2px solid var(--border2);
+      background: #fff; color: var(--muted); cursor: pointer;
+      transition: all 0.2s;
+    }
+    .funnel-toggle:hover { border-color: var(--orange); color: var(--orange); }
+    .funnel-toggle.active {
+      background: var(--orange); border-color: var(--orange); color: #fff;
+    }
+    .funnel-readout {
+      margin-top: 30px; padding: 22px 26px;
+      background: var(--surface); border-radius: 10px;
+      border-left: 5px solid var(--orange);
+      font-size: 16px; color: var(--muted); line-height: 1.7;
+    }
+    .funnel-readout strong { color: var(--navy); }
+
+    /* ══ GROWTH SYSTEM ══ */
+    .growth-section { background: var(--surface2); border-top: 1px solid var(--border); }
+    .growth-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    @media (max-width: 900px) { .growth-inner { grid-template-columns: 1fr; gap: 48px; } }
+    .growth-text .big-statement {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(36px, 4.5vw, 54px);
+      line-height: 1.05; color: var(--navy); margin-bottom: 24px;
+    }
+    .growth-text .big-statement span { color: var(--orange); }
+    .growth-text p { font-size: 18px; color: var(--muted); margin-bottom: 18px; line-height: 1.8; }
+    .growth-text strong { color: var(--navy); }
+    .growth-text p a { color: var(--orange-deep); font-weight: 700; }
+    .growth-stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .stat-card { border-radius: 12px; padding: 28px 22px; position: relative; overflow: hidden; }
+    .stat-card.c1 { background: var(--peach); }
+    .stat-card.c2 { background: var(--sky); }
+    .stat-card.c3 { background: var(--mint); }
+    .stat-card.c4 { background: var(--lavender); }
+    .stat-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 52px; line-height: 1; color: var(--navy); margin-bottom: 4px;
+    }
+    .stat-label {
+      font-size: 13px; font-weight: 800; color: var(--navy);
+      font-family: 'Barlow Condensed', sans-serif;
+      letter-spacing: 0.05em; text-transform: uppercase;
+    }
+    .stat-desc { font-size: 15px; color: var(--muted); margin-top: 8px; line-height: 1.5; }
+
+    /* ══ SERVICES ══ */
+    .services-section { background: #fff; border-top: 1px solid var(--border); }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    @media (max-width: 900px) { .services-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 580px) { .services-grid { grid-template-columns: 1fr; } }
+    .service-card {
+      background: #fff; border: 1.5px solid var(--border);
+      border-radius: 12px; padding: 32px 28px;
+      text-decoration: none; display: block; position: relative; overflow: hidden;
+      transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+    }
+    .service-card::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0;
+      height: 4px; transform: scaleX(0); transform-origin: left; transition: transform 0.3s;
+    }
+    .service-card.s1::after { background: var(--orange); }
+    .service-card.s2::after { background: var(--neon-cyan); }
+    .service-card.s3::after { background: var(--neon-lime); }
+    .service-card.s4::after { background: var(--neon-pink); }
+    .service-card.s5::after { background: var(--electric-blue); }
+    .service-card.s6::after { background: var(--yellow); }
+    .service-card:hover {
+      border-color: var(--orange); transform: translateY(-5px);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.10);
+    }
+    .service-card:hover::after { transform: scaleX(1); }
+    .service-icon { font-size: 34px; margin-bottom: 14px; display: block; line-height: 1; }
+    .service-card h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 22px; font-weight: 800; color: var(--navy);
+      letter-spacing: 0.02em; margin-bottom: 10px;
+    }
+    .service-card p { font-size: 16px; color: var(--muted); line-height: 1.65; margin-bottom: 16px; }
+    .service-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .service-tag {
+      font-size: 11px; font-weight: 700;
+      font-family: 'Barlow Condensed', sans-serif;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--orange); background: rgba(249,115,22,0.08);
+      border: 1px solid rgba(249,115,22,0.25);
+      border-radius: 3px; padding: 3px 8px;
+    }
+
+    /* ══ ANATOMY ══ */
+    .anatomy-section { background: var(--surface); border-top: 1px solid var(--border); }
+    .anatomy-frame {
+      max-width: 1000px; margin: 0 auto;
+      background: #fff; border: 1.5px solid var(--border);
+      border-radius: 14px; padding: 20px;
+      box-shadow: 0 22px 60px rgba(13,18,32,0.10);
+    }
+    .anatomy-frame svg { width: 100%; height: auto; display: block; }
+    .anatomy-legend {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 20px; max-width: 1000px; margin: 40px auto 0;
+    }
+    @media (max-width: 800px) { .anatomy-legend { grid-template-columns: 1fr; } }
+    .anatomy-item {
+      display: flex; gap: 14px; align-items: flex-start;
+    }
+    .anatomy-num {
+      width: 30px; height: 30px; flex-shrink: 0;
+      border-radius: 50%; background: var(--orange); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 15px; font-weight: 900;
+    }
+    .anatomy-item strong {
+      display: block; color: var(--navy); font-size: 16px;
+      margin-bottom: 4px; font-weight: 700;
+    }
+    .anatomy-item p { font-size: 15.5px; color: var(--muted); line-height: 1.6; }
+
+    /* ══ GEO / AIO ══ */
+    .geo-section { background: var(--navy); color: #fff; }
+    .geo-image-full { width: 100%; max-width: 1100px; margin: 0 auto 56px; text-align: center; }
+    .geo-image-full img {
+      width: 100%; height: auto; border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 32px 80px rgba(0,0,0,0.6); display: block;
+    }
+    .geo-badge {
+      display: inline-block; background: var(--neon-lime); color: var(--navy);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px; font-weight: 800; letter-spacing: 0.08em;
+      text-transform: uppercase; padding: 8px 18px; border-radius: 4px;
+      box-shadow: 0 8px 24px rgba(163,230,53,0.4); margin-bottom: 24px;
+    }
+    .geo-content-below { max-width: 1100px; margin: 0 auto; }
+    .geo-points-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 40px; }
+    @media (max-width: 700px) { .geo-points-grid { grid-template-columns: 1fr; } }
+    .geo-point-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 10px; padding: 24px;
+      display: flex; align-items: flex-start; gap: 14px;
+    }
+    .geo-point-icon {
+      width: 40px; height: 40px; border-radius: 8px;
+      background: rgba(249,115,22,0.15); border: 1px solid rgba(249,115,22,0.35);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; flex-shrink: 0;
+    }
+    .geo-point-card strong { color: #fff; display: block; margin-bottom: 6px; font-size: 16px; }
+    .geo-point-card p { color: #a3b0c2; font-size: 16px; line-height: 1.6; margin: 0; }
+    .geo-point-card a { color: var(--orange-bright); font-weight: 700; }
+
+    /* ══ PLANNER TEASER ══ */
+    .planner-teaser { background: #fff; border-top: 1px solid var(--border); position: relative; overflow: hidden; }
+    .planner-teaser::after {
+      content: ''; position: absolute; top: 0; right: 0; bottom: 0; width: 35%;
+      background: linear-gradient(135deg, var(--peach), var(--lavender));
+      clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
+      z-index: 0; pointer-events: none;
+    }
+    .planner-teaser-inner {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 70px;
+      align-items: center; position: relative; z-index: 1;
+    }
+    @media (max-width: 900px) {
+      .planner-teaser-inner { grid-template-columns: 1fr; gap: 44px; }
+      .planner-teaser::after { display: none; }
+    }
+    .teaser-score-demo {
+      background: var(--navy); border-radius: 12px; padding: 28px;
+      box-shadow: 0 20px 60px rgba(13,18,32,0.15); position: relative; z-index: 2;
+    }
+    .teaser-score-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+    .teaser-score-num { font-family: 'Bebas Neue', sans-serif; font-size: 72px; line-height: 1; color: var(--orange); }
+    .teaser-score-label {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.1em; text-align: right; color: #94a3b8;
+    }
+    .teaser-progress { height: 10px; background: rgba(255,255,255,0.08); border-radius: 999px; overflow: hidden; margin-bottom: 20px; }
+    .teaser-progress-fill {
+      height: 100%; width: 0;
+      background: linear-gradient(90deg, var(--red), var(--orange));
+      border-radius: 999px; transition: width 1.4s cubic-bezier(.4,0,.2,1);
+    }
+    .teaser-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+    .teaser-chip {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px; font-weight: 700; letter-spacing: 0.04em;
+      padding: 5px 12px; border-radius: 4px; border: 1px solid;
+    }
+    .teaser-chip.search { background: rgba(59,130,246,0.15); border-color: rgba(59,130,246,0.4); color: #93c5fd; }
+    .teaser-chip.demand { background: rgba(249,115,22,0.15); border-color: rgba(249,115,22,0.4); color: #fdba74; }
+    .teaser-chip.empty { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.15); color: #64748b; border-style: dashed; }
+    .teaser-status {
+      font-size: 14px; color: #94a3b8; font-style: italic;
+      border-top: 1px solid rgba(255,255,255,0.08); padding-top: 14px; line-height: 1.5;
+    }
+    .teaser-status strong { color: var(--orange-bright); font-style: normal; }
+
+    /* ══ BUTTONS ══ */
+    .sc-btn-primary {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 16px 32px; background: var(--orange); color: #fff;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 18px; font-weight: 900; letter-spacing: 0.08em;
+      text-transform: uppercase; text-decoration: none; border-radius: 6px;
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+      border: none; cursor: pointer;
+    }
+    .sc-btn-primary:hover {
+      background: var(--orange-deep); transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(249,115,22,0.35);
+    }
+    .sc-btn-outline {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 15px 30px; background: transparent; color: var(--orange);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 18px; font-weight: 900; letter-spacing: 0.08em;
+      text-transform: uppercase; text-decoration: none;
+      border-radius: 6px; border: 2px solid var(--orange); transition: all 0.2s;
+    }
+    .sc-btn-outline:hover { background: rgba(249,115,22,0.08); }
+    .sc-btn-outline.white { color: #fff; border-color: rgba(255,255,255,0.4); }
+    .sc-btn-outline.white:hover { background: rgba(255,255,255,0.08); }
+    .btn-row { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; margin-top: 32px; }
+
+    /* ══ WHY NOT TYPICAL ══ */
+    .why-section { background: var(--surface2); }
+    .why-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 2px;
+      border: 1.5px solid var(--border); border-radius: 12px;
+      overflow: hidden; margin-top: 48px; box-shadow: 0 8px 32px rgba(0,0,0,0.06);
+    }
+    @media (max-width: 700px) { .why-grid { grid-template-columns: 1fr; } }
+    .why-col-header {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px; font-weight: 800; letter-spacing: 0.12em;
+      text-transform: uppercase; padding: 18px 28px; border-bottom: 1.5px solid var(--border);
+    }
+    .why-col-bad { background: #fff0f0; color: var(--red); }
+    .why-col-good { background: #fff7ed; color: var(--orange-deep); }
+    .why-cell {
+      padding: 16px 28px; border-bottom: 1px solid var(--border);
+      font-size: 16px; color: var(--muted);
+      display: flex; align-items: flex-start; gap: 10px;
+      line-height: 1.55; background: #fff;
+    }
+    .why-cell:last-child, .why-cell:nth-last-child(2) { border-bottom: none; }
+    .why-cell .icon { font-size: 16px; flex-shrink: 0; margin-top: 2px; }
+    .why-cell-bad { background: #fffafa; }
+    .why-cell-good { background: #fffbf5; color: var(--navy); }
+
+    /* ══ AI TOOLS ══ */
+    .ai-section { background: #fff; border-top: 1px solid var(--border); }
+    .ai-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-bottom: 40px; }
+    @media (max-width: 900px) { .ai-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 520px) { .ai-grid { grid-template-columns: 1fr; } }
+    .ai-card {
+      background: var(--surface); border: 1.5px solid var(--border);
+      border-radius: 12px; padding: 28px 22px;
+      text-decoration: none; display: block; position: relative; overflow: hidden;
+      transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+    }
+    .ai-card:hover { transform: translateY(-5px); border-color: var(--border2); box-shadow: 0 16px 40px rgba(0,0,0,0.08); }
+    .ai-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; }
+    .ai-card.gpt::before { background: linear-gradient(90deg, #10a37f, #34d399); }
+    .ai-card.gemini::before { background: linear-gradient(90deg, #4285f4, #34a853); }
+    .ai-card.perplexity::before { background: linear-gradient(90deg, #20b2aa, #3b82f6); }
+    .ai-card.claude::before { background: linear-gradient(90deg, #d4704a, #f97316); }
+    .ai-icon { font-size: 28px; margin-bottom: 12px; display: block; }
+    .ai-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 18px; font-weight: 800; color: var(--navy);
+      margin-bottom: 8px; letter-spacing: 0.02em;
+    }
+    .ai-desc { font-size: 15px; color: var(--muted); line-height: 1.6; }
+    .ai-role {
+      display: inline-block; margin-top: 12px; font-size: 11px;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--orange); background: rgba(249,115,22,0.08);
+      padding: 3px 8px; border-radius: 3px;
+    }
+
+    /* ══ WHAT IS CRO (visible AIO block) ══ */
+    .whatis-section { background: var(--navy); color: #fff; }
+    .whatis-inner { max-width: 880px; margin: 0 auto; }
+    .whatis-inner .section-h2 { color: #fff; }
+    .whatis-inner > p { color: #cbd5e1; font-size: 17.5px; line-height: 1.85; margin-bottom: 20px; }
+    .whatis-inner > p strong { color: #fff; }
+    .whatis-def {
+      background: rgba(249,115,22,0.08);
+      border: 1.5px solid rgba(249,115,22,0.28);
+      border-left: 5px solid var(--orange);
+      border-radius: 10px; padding: 26px 28px; margin-bottom: 30px;
+    }
+    .whatis-def p { color: #e2e8f0; font-size: 17px; line-height: 1.8; margin: 0; }
+    .whatis-sub {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 21px; font-weight: 900; color: var(--orange-bright);
+      margin: 30px 0 12px; letter-spacing: 0.02em;
+    }
+    .whatis-list { list-style: none; }
+    .whatis-list li {
+      color: #cbd5e1; font-size: 16px; line-height: 1.7;
+      padding-left: 28px; position: relative; margin-bottom: 12px;
+    }
+    .whatis-list li::before {
+      content: ''; position: absolute; left: 4px; top: 10px;
+      width: 8px; height: 8px; border-radius: 50%; background: var(--neon-lime);
+    }
+    .whatis-list li strong { color: #fff; }
+
+    /* ══ INDUSTRIES ══ */
+    .ind-section { background: var(--surface); border-top: 1px solid var(--border); }
+    .ind-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    @media (max-width: 900px) { .ind-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 520px) { .ind-grid { grid-template-columns: 1fr; } }
+    .ind-card {
+      background: #fff; border: 1.5px solid var(--border);
+      border-radius: 10px; padding: 22px 20px; text-decoration: none;
+      display: block; transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .ind-card:hover { border-color: var(--orange); transform: translateY(-4px); box-shadow: 0 14px 34px rgba(0,0,0,0.08); }
+    .ind-card span { font-size: 24px; display: block; margin-bottom: 10px; line-height: 1; }
+    .ind-card strong {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 18px; font-weight: 800; color: var(--navy);
+      display: block; margin-bottom: 5px; letter-spacing: 0.02em;
+    }
+    .ind-card p { font-size: 14.5px; color: var(--muted); line-height: 1.5; }
+
+    /* ══ FAQ ══ */
+    .faq-section { background: var(--surface2); }
+    .faq-list { max-width: 860px; margin: 0 auto; }
+    .faq-item {
+      border: 1.5px solid var(--border); border-radius: 10px;
+      margin-bottom: 12px; background: #fff; overflow: hidden; transition: box-shadow 0.2s;
+    }
+    .faq-item:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.07); }
+    .faq-question {
+      width: 100%; background: none; border: none;
+      padding: 20px 24px; text-align: left;
+      font-family: 'Barlow', sans-serif;
+      font-size: 16px; font-weight: 700; color: var(--navy);
+      cursor: pointer; display: flex; justify-content: space-between;
+      align-items: center; gap: 16px; line-height: 1.4;
+    }
+    .faq-question:hover { color: var(--orange); }
+    .faq-icon {
+      font-size: 22px; color: var(--orange); flex-shrink: 0;
+      transition: transform 0.3s; line-height: 1;
+    }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.2s; padding: 0 24px; }
+    .faq-item.open .faq-answer { max-height: 700px; padding: 0 24px 20px; }
+    .faq-answer p { font-size: 16px; color: var(--muted); line-height: 1.75; }
+    .faq-answer a { color: var(--orange-deep); text-decoration: none; font-weight: 700; }
+    .faq-answer a:hover { text-decoration: underline; }
+
+    /* ══ BOTTOM FORM ══ */
+    .bottom-form-section { background: var(--navy); padding: 100px 0; position: relative; overflow: hidden; }
+    .bottom-form-section::before {
+      content: ''; position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(249,115,22,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(249,115,22,0.04) 1px, transparent 1px);
+      background-size: 56px 56px;
+    }
+    .bottom-form-section::after {
+      content: ''; position: absolute; top: -100px; right: -100px;
+      width: 600px; height: 600px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(34,211,238,0.08) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .bottom-form-inner { max-width: 800px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+    .bottom-form-wrap { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 40px 100px rgba(0,0,0,0.4); }
+    .bottom-form-header {
+      background: linear-gradient(135deg, var(--orange-deep), var(--orange), var(--orange-bright));
+      padding: 40px; text-align: center;
+    }
+    .bottom-form-header h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 46px; color: #fff; line-height: 1.05; margin-bottom: 8px;
+    }
+    .bottom-form-header p { font-size: 17px; color: rgba(255,255,255,0.92); line-height: 1.6; }
+    .bottom-form-body { padding: 40px; background: #fff; }
+    .bottom-form-body .sc-form-group label { color: #374151; }
+    .bottom-form-body .sc-form-group textarea { min-height: 100px; }
+    @media (max-width: 600px) {
+      .bottom-form-header { padding: 28px 24px; }
+      .bottom-form-body { padding: 28px 24px; }
+      .bottom-form-header h2 { font-size: 34px; }
+      .sc-form-row { grid-template-columns: 1fr; }
+    }
+
+    /* ══ FOOTER ══ */
+    .site-footer { background: #ffffff; border-top: 4px solid var(--orange); padding: 60px 0 30px; }
+    .footer-inner { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+    .footer-top {
+      display: grid; grid-template-columns: 260px 1fr 1fr 1fr;
+      gap: 44px; padding-bottom: 48px; border-bottom: 1px solid var(--border);
+    }
+    @media (max-width: 900px) { .footer-top { grid-template-columns: 1fr 1fr; gap: 36px; } }
+    @media (max-width: 560px) { .footer-top { grid-template-columns: 1fr; } }
+    .footer-brand-logo { display: inline-block; margin-bottom: 16px; }
+    .footer-brand-logo img { height: 80px; width: auto; display: block; }
+    .footer-brand-desc { font-size: 15px; color: #374151; line-height: 1.7; margin-bottom: 16px; }
+    .footer-contact-link {
+      display: block; font-size: 15px; color: #374151;
+      text-decoration: none; margin-bottom: 6px; transition: color 0.2s;
+    }
+    .footer-contact-link:hover { color: var(--orange); }
+    .footer-col-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px; font-weight: 800; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--orange-deep); margin-bottom: 16px;
+    }
+    .footer-links { list-style: none; padding: 0; }
+    .footer-links li { margin-bottom: 9px; }
+    .footer-links a { font-size: 15px; color: #374151; text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--orange); }
+    .footer-bottom {
+      display: flex; justify-content: space-between; align-items: center;
+      padding-top: 28px; flex-wrap: wrap; gap: 12px; border-top: 1px solid var(--border);
+    }
+    .footer-bottom p { font-size: 13px; color: #374151; line-height: 1.5; }
+    .footer-bottom a { color: var(--orange-deep); text-decoration: none; }
+    .footer-bottom a:hover { text-decoration: underline; }
+
+    /* ══ REVEAL ══ */
+    .will-reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .will-reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ══ MISC ══ */
+    .text-orange { color: var(--orange); }
+    .text-center { text-align: center; }
+    .neon-divider {
+      height: 6px;
+      background: linear-gradient(90deg, var(--orange), var(--neon-lime), var(--neon-cyan), var(--neon-pink), var(--orange));
+      background-size: 300% 100%; animation: shimmer 5s linear infinite;
+    }
+    @keyframes shimmer {
+      0% { background-position: 0% 0%; }
+      100% { background-position: 300% 0%; }
+    }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px;
+      padding: 0; margin: -1px; overflow: hidden;
+      clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .will-reveal { opacity: 1; transform: none; }
+      .draw-arrow path, .draw-arrow line, .draw-arrow polyline { stroke-dashoffset: 0; }
+    }
+  
+    /* ══════ EMAIL — MAIL SERVER TERMINAL ══════ */
+    :root { --grn:#22c55e; --grn2:#4ade80; --grn3:#bbf7d0; --amb4:#fbbf24; --red4:#f87171; --term:#080d0a; --term2:#0e1712; --term3:#152019; }
+    .em-hero { background:var(--term); position:relative; overflow:hidden; padding:52px 0 60px; }
+    .em-hero::before {
+      content:''; position:absolute; inset:0;
+      background:repeating-linear-gradient(0deg,rgba(34,197,94,.035) 0 1px,transparent 1px 4px);
+    }
+    .em-hero::after {
+      content:''; position:absolute; top:-140px; left:-100px; width:640px; height:640px; border-radius:50%;
+      background:radial-gradient(circle,rgba(34,197,94,.13) 0%,transparent 66%); pointer-events:none;
+    }
+    .em-hero-inner { max-width:1240px; margin:0 auto; padding:0 24px; position:relative; z-index:2;
+      display:grid; grid-template-columns:1fr 402px; gap:50px; align-items:center; }
+    @media (max-width:1000px){ .em-hero-inner{grid-template-columns:1fr;gap:34px} }
+    .em-crumb { font-family:'Barlow Condensed',sans-serif; font-size:13px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:#3f6350; margin-bottom:16px; }
+    .em-crumb a { color:#5c8a70; text-decoration:none } .em-crumb a:hover{color:var(--grn2)}
+    .em-tag { display:inline-flex; align-items:center; gap:9px; font-family:'Barlow Condensed',sans-serif;
+      font-size:12.5px; font-weight:800; letter-spacing:.16em; text-transform:uppercase; color:var(--term);
+      background:var(--grn); padding:7px 14px; margin-bottom:20px; }
+    .em-tag::before { content:''; width:7px; height:7px; background:var(--term); animation:pulse 1.6s ease-in-out infinite; }
+    .em-h1 { font-family:'Bebas Neue',sans-serif; font-size:clamp(44px,6.2vw,80px); line-height:.95; color:#fff; margin-bottom:20px; letter-spacing:.01em; }
+    .em-h1 .gn { color:var(--grn2); display:block; }
+    .em-lede { font-size:20px; color:#8fae9c; line-height:1.66; max-width:610px; margin-bottom:22px; }
+    .em-lede strong { color:#e8f5ec; }
+    /* typing log */
+    .em-log { background:var(--term2); border:1px solid rgba(34,197,94,.26); padding:16px 18px; max-width:600px; margin-bottom:22px; font-size:14.5px; line-height:1.85; min-height:118px; }
+    .em-log div { color:#5c8a70; opacity:0; transform:translateX(-6px); transition:opacity .3s,transform .3s; }
+    .em-log div.on { opacity:1; transform:none }
+    .em-log b { color:var(--grn2); font-weight:700 }
+    .em-log .w { color:var(--amb4) }
+    .em-log .e { color:var(--red4) }
+    .em-log .cur { display:inline-block; width:8px; height:15px; background:var(--grn2); vertical-align:-2px; animation:blink 1.1s step-end infinite }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+    @media (prefers-reduced-motion:reduce){ .em-log div{opacity:1;transform:none} .em-log .cur{animation:none} }
+    .em-meters { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:rgba(34,197,94,.26); border:1px solid rgba(34,197,94,.26); max-width:580px; }
+    @media (max-width:560px){ .em-meters{grid-template-columns:1fr 1fr} }
+    .em-meter { background:var(--term2); padding:15px 16px; }
+    .em-meter span { display:block; font-family:'Barlow Condensed',sans-serif; font-size:10.5px; font-weight:800; letter-spacing:.13em; text-transform:uppercase; color:#3f6350; margin-bottom:4px; }
+    .em-meter strong { font-family:'Bebas Neue',sans-serif; font-weight:400; font-size:27px; line-height:1; display:block; color:var(--grn2) }
+    .em-meter strong.w { color:var(--amb4) } .em-meter strong.e { color:var(--red4) }
+    .em-meter em { font-style:normal; font-size:12.5px; color:#5c8a70; }
+
+    .box { background:var(--term2); border:1px solid rgba(34,197,94,.3); }
+    .box-bar { background:var(--term3); padding:12px 15px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid rgba(34,197,94,.24); }
+    .box-bar span { font-family:'Barlow Condensed',sans-serif; font-size:11.5px; font-weight:800; letter-spacing:.15em; text-transform:uppercase; color:var(--grn2); }
+    .box-bar em { font-style:normal; font-family:'Barlow Condensed',sans-serif; font-size:11.5px; font-weight:700; letter-spacing:.1em; color:#3f6350; }
+    .box-item { display:flex; align-items:center; gap:13px; padding:14px 15px; text-decoration:none; border-bottom:1px solid rgba(34,197,94,.12); transition:background .2s,padding-left .2s; }
+    .box-item:last-of-type{border-bottom:none}
+    .box-item:hover { background:rgba(34,197,94,.1); padding-left:23px; }
+    .box-ico { width:36px; height:36px; flex-shrink:0; display:flex; align-items:center; justify-content:center; background:rgba(34,197,94,.12); border:1px solid rgba(34,197,94,.36); }
+    .box-ico svg { width:18px; height:18px; stroke:var(--grn2); fill:none; stroke-width:1.9; stroke-linecap:round; stroke-linejoin:round; }
+    .box-t strong { display:block; color:#fff; font-size:15.5px; font-weight:700; line-height:1.25; margin-bottom:2px; }
+    .box-t em { font-style:normal; color:#5c8a70; font-size:13px; }
+    .box-foot { padding:12px 15px; text-align:center; font-family:'Barlow Condensed',sans-serif; font-size:11.5px; letter-spacing:.12em; text-transform:uppercase; color:#3f6350; border-top:1px solid rgba(34,197,94,.24); }
+
+    .em-sec { background:var(--term2); color:#8fae9c; padding:74px 0; border-bottom:1px solid rgba(34,197,94,.16); }
+    .em-sec.deep { background:var(--term); }
+    .em-sec.lite { background:#f7fbf8; color:var(--muted); border-bottom-color:var(--border); }
+    .em-wrap { max-width:880px; margin:0 auto; padding:0 24px; }
+    .em-wrap.wide { max-width:1180px; }
+    .em-eye { font-family:'Barlow Condensed',sans-serif; font-size:11.5px; font-weight:800; letter-spacing:.19em; text-transform:uppercase; color:var(--grn2); margin-bottom:12px; display:flex; align-items:center; gap:9px; }
+    .em-eye::before { content:''; width:20px; height:2px; background:var(--grn2); }
+    .em-sec.lite .em-eye { color:#15803d } .em-sec.lite .em-eye::before{background:#15803d}
+    .em-h2 { font-family:'Bebas Neue',sans-serif; font-size:clamp(33px,4.3vw,54px); line-height:1; color:#fff; margin-bottom:20px; letter-spacing:.01em; }
+    .em-sec.lite .em-h2 { color:var(--navy) }
+    .em-h2 .gn { color:var(--grn2) } .em-sec.lite .em-h2 .gn { color:#15803d }
+    .em-h3 { font-family:'Barlow Condensed',sans-serif; font-size:24px; font-weight:900; color:#fff; margin:32px 0 11px; letter-spacing:.02em; }
+    .em-sec.lite .em-h3 { color:var(--navy) }
+    .em-sec p { font-size:18px; line-height:1.78; margin-bottom:18px; }
+    .em-sec p strong { color:#e8f5ec } .em-sec.lite p strong { color:var(--navy) }
+    .em-sec a { color:var(--grn2); font-weight:700 } .em-sec.lite a { color:#15803d }
+    .em-def { background:rgba(34,197,94,.09); border:1px solid rgba(34,197,94,.32); border-left:5px solid var(--grn); padding:26px 28px; margin-bottom:26px; }
+    .em-def p { font-size:19px; color:#e8f5ec; line-height:1.76; margin:0 }
+    .em-sec.lite .em-def { background:#f0fdf4; border-color:#bbf7d0; border-left-color:#15803d }
+    .em-sec.lite .em-def p { color:var(--navy) }
+
+    .emt { width:100%; border-collapse:collapse; font-size:16.5px; margin:6px 0 20px; }
+    .emt th { text-align:left; font-family:'Barlow Condensed',sans-serif; font-size:11.5px; font-weight:800; letter-spacing:.13em; text-transform:uppercase; color:#3f6350; padding:0 12px 10px 0; border-bottom:2px solid var(--grn); }
+    .em-sec.lite .emt th { color:var(--muted2); border-bottom-color:#15803d }
+    .emt td { padding:13px 12px 13px 0; border-bottom:1px solid rgba(34,197,94,.14); line-height:1.5; vertical-align:top; }
+    .em-sec.lite .emt td { border-bottom-color:var(--border) }
+    .emt td:first-child { color:#fff; font-weight:700 } .em-sec.lite .emt td:first-child { color:var(--navy) }
+    .emt td.n { font-family:'Barlow Condensed',sans-serif; font-weight:800; font-size:18px; color:var(--grn2); text-align:right; white-space:nowrap }
+    .emt td.n.w { color:var(--amb4) } .emt td.n.e { color:var(--red4) }
+    .em-sec.lite .emt td.n { color:#15803d }
+    .src { font-size:14.5px; color:#5c8a70; line-height:1.6; margin-top:-8px }
+    .em-sec.lite .src { color:var(--muted2) }
+    @media (max-width:700px){
+      .emt,.emt tbody,.emt tr,.emt td{display:block;width:100%}
+      .emt thead{display:none}
+      .emt tr{padding:14px 0;border-bottom:1px solid rgba(34,197,94,.14)}
+      .em-sec.lite .emt tr{border-bottom-color:var(--border)}
+      .emt td{border:none;padding:0 0 5px}
+      .emt td:first-child{font-family:'Barlow Condensed',sans-serif;font-size:20px;font-weight:900}
+      .emt td.n{text-align:left}
+    }
+
+    /* ══ 1000 EMAIL JOURNEY ══ */
+    .jr { background:var(--term); border:1px solid rgba(34,197,94,.3); margin:30px 0; }
+    .jr-top { padding:18px 20px; display:flex; justify-content:space-between; align-items:center; gap:14px; flex-wrap:wrap; border-bottom:1px solid rgba(34,197,94,.22); }
+    .jr-stage { font-family:'Barlow Condensed',sans-serif; font-size:14px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; color:var(--grn2); }
+    .jr-btn { background:var(--grn); border:none; color:var(--term); padding:11px 22px; font-family:'Barlow Condensed',sans-serif; font-size:15px; font-weight:900; letter-spacing:.07em; text-transform:uppercase; cursor:pointer; transition:background .18s; }
+    .jr-btn:hover { background:var(--grn2) }
+    .jr-btn:disabled { opacity:.5; cursor:default }
+    .jr-body { padding:20px }
+    .jr-row { display:grid; grid-template-columns:190px 1fr 108px; gap:14px; align-items:center; margin-bottom:10px; }
+    @media (max-width:680px){ .jr-row{grid-template-columns:1fr;gap:4px;margin-bottom:15px} }
+    .jr-l { font-family:'Barlow Condensed',sans-serif; font-size:15.5px; font-weight:800; letter-spacing:.03em; text-transform:uppercase; color:#fff }
+    .jr-l small { display:block; font-family:'Barlow',sans-serif; font-size:13px; font-weight:400; text-transform:none; letter-spacing:0; color:#5c8a70; margin-top:2px }
+    .jr-bar { height:30px; background:rgba(255,255,255,.05); overflow:hidden }
+    .jr-bar i { display:block; height:100%; width:0; transition:width 1s cubic-bezier(.4,0,.2,1) }
+    .jr-bar i.g { background:linear-gradient(90deg,#15803d,var(--grn2)) }
+    .jr-bar i.gh { background:repeating-linear-gradient(45deg,#3f6350 0 6px,#2a4438 6px 12px) }
+    .jr-bar i.w { background:linear-gradient(90deg,#b45309,var(--amb4)) }
+    .jr-bar i.e { background:linear-gradient(90deg,#991b1b,var(--red4)) }
+    .jr-v { text-align:right; font-family:'Bebas Neue',sans-serif; font-size:26px; color:#fff }
+    .jr-v.ghost { color:#5c8a70 } .jr-v.warn { color:var(--amb4) } .jr-v.bad { color:var(--red4) }
+    @media (max-width:680px){ .jr-v{text-align:left} }
+    .jr-out { background:var(--term3); padding:20px; border-top:2px solid var(--grn); color:#8fae9c; font-size:16.5px; line-height:1.68 }
+    .jr-out strong { color:#fff }
+
+    /* compliance checklist */
+    .cmp { background:var(--term); border:1px solid rgba(34,197,94,.3); margin:30px 0; }
+    .cmp-row { display:grid; grid-template-columns:38px 1fr 118px; gap:14px; align-items:center; padding:15px 20px; border-bottom:1px solid rgba(34,197,94,.14); cursor:pointer; transition:background .18s; }
+    .cmp-row:hover { background:rgba(34,197,94,.06) }
+    @media (max-width:640px){ .cmp-row{grid-template-columns:32px 1fr;gap:10px} .cmp-tag{grid-column:2} }
+    .cmp-box { width:24px; height:24px; border:2px solid #3f6350; display:flex; align-items:center; justify-content:center; transition:all .2s }
+    .cmp-box svg { width:14px; height:14px; stroke:var(--term); fill:none; stroke-width:3.4; stroke-linecap:round; stroke-linejoin:round; opacity:0; transition:opacity .15s }
+    .cmp-row.on .cmp-box { background:var(--grn); border-color:var(--grn) }
+    .cmp-row.on .cmp-box svg { opacity:1 }
+    .cmp-n { font-family:'Barlow Condensed',sans-serif; font-size:19px; font-weight:900; color:#fff; letter-spacing:.02em }
+    .cmp-n small { display:block; font-family:'Barlow',sans-serif; font-size:14.5px; font-weight:400; color:#5c8a70; margin-top:3px; line-height:1.5 }
+    .cmp-tag { text-align:right; font-family:'Barlow Condensed',sans-serif; font-size:11px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; color:var(--red4) }
+    .cmp-row.on .cmp-tag { color:var(--grn2) }
+    @media (max-width:640px){ .cmp-tag{text-align:left} }
+    .cmp-out { background:var(--term3); padding:22px 20px; border-top:2px solid var(--grn) }
+    .cmp-score { display:flex; align-items:center; gap:18px; margin-bottom:14px; flex-wrap:wrap }
+    .cmp-score .num { font-family:'Bebas Neue',sans-serif; font-size:52px; line-height:1; color:var(--grn2) }
+    .cmp-score .num.w { color:var(--amb4) } .cmp-score .num.e { color:var(--red4) }
+    .cmp-score .lbl { font-family:'Barlow Condensed',sans-serif; font-size:13px; font-weight:800; letter-spacing:.11em; text-transform:uppercase; color:#3f6350 }
+    .cmp-v { color:#8fae9c; font-size:16.5px; line-height:1.68 } .cmp-v strong { color:#fff }
+
+    /* flows vs campaigns */
+    .fc { background:var(--term); border:1px solid rgba(34,197,94,.3); padding:26px; margin:30px 0 }
+    .em-sec.lite .fc { background:var(--term2); border-color:rgba(34,197,94,.3) }
+    .fc-in { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; margin-bottom:22px }
+    @media (max-width:640px){ .fc-in{grid-template-columns:1fr} }
+    .fc-in label { display:flex; justify-content:space-between; align-items:baseline; font-family:'Barlow Condensed',sans-serif; font-size:12px; font-weight:800; letter-spacing:.11em; text-transform:uppercase; color:#3f6350; margin-bottom:8px }
+    .fc-in label b { font-family:'Bebas Neue',sans-serif; font-weight:400; font-size:25px; color:var(--grn2) }
+    .fc-cmp { display:grid; grid-template-columns:1fr 1fr; gap:2px; background:rgba(34,197,94,.24) }
+    @media (max-width:600px){ .fc-cmp{grid-template-columns:1fr} }
+    .fc-side { background:var(--term2); padding:22px 20px }
+    .fc-side.hi { background:var(--term3) }
+    .fc-side h4 { font-family:'Barlow Condensed',sans-serif; font-size:14px; font-weight:900; letter-spacing:.1em; text-transform:uppercase; color:#3f6350; margin-bottom:14px }
+    .fc-side.hi h4 { color:var(--grn2) }
+    .fc-line { display:flex; justify-content:space-between; align-items:baseline; padding:8px 0; border-bottom:1px solid rgba(34,197,94,.12); font-size:15px; color:#5c8a70 }
+    .fc-line:last-child{border-bottom:none}
+    .fc-line b { font-family:'Barlow Condensed',sans-serif; font-weight:800; color:#fff; font-size:17px }
+    .fc-big { margin-top:14px; padding-top:14px; border-top:2px solid rgba(34,197,94,.3) }
+    .fc-big span { display:block; font-family:'Barlow Condensed',sans-serif; font-size:11px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; color:#3f6350; margin-bottom:4px }
+    .fc-big strong { font-family:'Bebas Neue',sans-serif; font-weight:400; font-size:38px; line-height:1; color:#fff }
+    .fc-side.hi .fc-big strong { color:var(--grn2) }
+    .fc-v { background:var(--term3); margin-top:2px; padding:22px; color:#8fae9c; font-size:16.5px; line-height:1.68 }
+    .fc-v strong { color:#fff }
+
+    .em-cta { background:var(--grn); padding:38px 34px; text-align:center; margin:44px 0 }
+    .em-cta h3 { font-family:'Bebas Neue',sans-serif; font-size:38px; color:var(--term); margin-bottom:10px; line-height:1.05 }
+    .em-cta p { color:rgba(8,13,10,.82); font-size:17px; margin-bottom:22px; font-weight:500 }
+    .em-cta .sc-btn-primary { background:var(--term); color:#fff }
+    .em-cta .sc-btn-primary:hover { background:#fff; color:var(--term) }
+    .em-ol { counter-reset:e; list-style:none; padding:0; margin:0 0 20px }
+    .em-ol li { font-size:18px; line-height:1.75; padding-left:46px; position:relative; margin-bottom:18px; counter-increment:e }
+    .em-ol li strong { color:#e8f5ec } .em-sec.lite .em-ol li strong { color:var(--navy) }
+    .em-ol li::before { content:counter(e,decimal-leading-zero); position:absolute; left:0; top:2px; font-family:'Barlow Condensed',sans-serif; font-size:15px; font-weight:900; color:var(--grn2); border-bottom:2px solid var(--grn); padding-bottom:1px }
+    .em-g3 { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:rgba(34,197,94,.24); border:1px solid rgba(34,197,94,.24) }
+    @media (max-width:860px){ .em-g3{grid-template-columns:1fr 1fr} }
+    @media (max-width:540px){ .em-g3{grid-template-columns:1fr} }
+    .em-cellx { background:var(--term2); padding:23px 21px }
+    .em-cellx strong { font-family:'Barlow Condensed',sans-serif; font-size:20px; font-weight:900; color:#fff; display:block; margin-bottom:6px; letter-spacing:.02em }
+    .em-cellx p { font-size:15.5px; line-height:1.55; margin:0 }
+    .ind-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px }
+    @media (max-width:900px){ .ind-grid{grid-template-columns:1fr 1fr} }
+    @media (max-width:520px){ .ind-grid{grid-template-columns:1fr} }
+    .ind-card { background:var(--term2); border:1px solid rgba(34,197,94,.24); padding:22px 20px; text-decoration:none; display:block; transition:all .2s }
+    .ind-card:hover { border-color:var(--grn); background:rgba(34,197,94,.08); transform:translateY(-3px) }
+    .ind-card span { font-size:23px; display:block; margin-bottom:9px; line-height:1 }
+    .ind-card strong { font-family:'Barlow Condensed',sans-serif; font-size:18px; font-weight:900; color:#fff; display:block; margin-bottom:4px; letter-spacing:.02em }
+    .ind-card p { font-size:14.5px; color:#8fae9c; line-height:1.5; margin:0 }
+    @media (max-width:760px){
+      .em-sec{padding:50px 0} .em-hero{padding:34px 0 42px}
+      .em-lede{font-size:18px} .em-sec p,.em-ol li{font-size:17px}
+      .fc{padding:18px 14px} .em-cta{padding:30px 20px} .em-cta h3{font-size:30px}
+      .jr-body,.jr-out,.jr-top{padding-left:15px;padding-right:15px} .cmp-row{padding:14px 15px}
+      .em-log{font-size:13px}
+    }
+    .em-sec table,.jr,.cmp,.fc { max-width:100% } .em-hero,.em-sec { overflow-x:hidden }
+  </style>
+</head>
+
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="ann-bar">
+  Free 30-minute strategy session &mdash; no obligation &nbsp;|&nbsp; Call <a href="tel:+17207128615">+1 720-712-8615</a>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="header-logo" aria-label="Search Converts home">
+      <img src="/images/search-converts-logo-color.avif"
+           alt="Search Converts &mdash; conversion rate optimization agency"
+           width="200" height="200">
+    </a>
+    <nav aria-label="Main navigation">
+      <ul class="header-nav">
+        <li>
+          <button class="nav-toggle" aria-expanded="false" aria-haspopup="true">Services <i class="caret"></i></button>
+          <div class="nav-drop nav-drop-wide">
+            <div class="nav-drop-cols">
+              <div class="nav-drop-col">
+                <div class="nav-drop-title">Paid Media</div>
+                <a href="/ppc-management/">PPC Management</a>
+                <a href="/google-ads-management/">Google Ads Management</a>
+                <a href="/facebook-ads-management/">Facebook &amp; Meta Ads</a>
+                <a href="/social-media-marketing/">Social Media Marketing</a>
+                <a href="/programmatic-advertising/">Programmatic Display</a>
+                <a href="/ctv-advertising/">CTV &amp; Streaming Ads</a>
+                <a href="/retargeting/">Retargeting</a>
+              </div>
+              <div class="nav-drop-col">
+                <div class="nav-drop-title">Traditional Media</div>
+                <a href="/radio-tv-advertising/">Radio &amp; TV Advertising</a>
+                <a href="/direct-mail-marketing/">Direct Mail Marketing</a>
+                <div class="nav-drop-title" style="margin-top:20px;">Creative &amp; Build</div>
+                <a href="/video-production/">Video Production</a>
+                <a href="/youtube-promotion/">YouTube Promotion</a>
+                <a href="/branding-design/">Branding &amp; Design</a>
+              </div>
+              <div class="nav-drop-col">
+                <div class="nav-drop-title">Build &amp; Convert</div>
+                <a href="/app-development-company/">App Development</a>
+                <a href="/web-app-development/">Web App Development</a>
+                <a href="/ai-website-design/">AI Website Design</a>
+                <a href="/conversion-optimization/">Conversion Optimization</a>
+                <a href="/lead-generation/">Lead Generation</a>
+                <a href="/email-marketing/">Email Marketing</a>
+                <a href="/retention-systems/">Marketing Automation</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button class="nav-toggle" aria-expanded="false" aria-haspopup="true">Industries <i class="caret"></i></button>
+          <div class="nav-drop">
+            <div class="nav-drop-cols">
+              <div class="nav-drop-col">
+                <div class="nav-drop-title">Who We Serve</div>
+                <a href="/law-firm-marketing/">Law Firms</a>
+                <a href="/saas-marketing/">SaaS Companies</a>
+                <a href="/b2b-marketing/">B2B &amp; Enterprise</a>
+                <a href="/healthcare-marketing/">Healthcare</a>
+              </div>
+              <div class="nav-drop-col">
+                <div class="nav-drop-title">&nbsp;</div>
+                <a href="/ecommerce-marketing/">Ecommerce</a>
+                <a href="/dental-marketing/">Dental Practices</a>
+                <a href="/real-estate-marketing/">Real Estate</a>
+                <a href="/restaurant-marketing/">Restaurants</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button class="nav-toggle" aria-expanded="false" aria-haspopup="true">Consulting <i class="caret"></i></button>
+          <div class="nav-drop">
+            <div class="nav-drop-cols">
+              <div class="nav-drop-col">
+                <div class="nav-drop-title">Advisory</div>
+                <a href="/sales-training/">Sales Training</a>
+                <a href="/business-consulting/">Business Consulting</a>
+                <a href="/marketing-consulting/">Marketing Consulting</a>
+                <a href="/growth-system/">The Growth System</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="/ai-marketing-agency/">AI Marketing</a></li>
+        <li><a href="/marketing-plan-builder/">Plan Builder</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/" class="nav-cta">Free Strategy Session</a></li>
+      </ul>
+    </nav>
+    <div class="header-call">
+      <a href="https://wa.me/17207128615" class="wa-link" target="_blank" rel="noopener" aria-label="Message Search Converts on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M17.47 14.38c-.29-.15-1.71-.85-1.98-.94-.27-.1-.46-.15-.65.14-.19.29-.75.94-.92 1.13-.17.19-.34.22-.63.07-.29-.15-1.22-.45-2.33-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.65-1.57-.89-2.15-.23-.56-.47-.49-.65-.5-.17-.01-.36-.01-.55-.01-.19 0-.51.07-.77.36-.27.29-1.01.99-1.01 2.41s1.04 2.8 1.18 2.99c.15.19 2.04 3.12 4.95 4.38.69.3 1.23.48 1.65.61.69.22 1.33.19 1.83.12.56-.08 1.71-.7 1.96-1.38.24-.68.24-1.26.17-1.38-.07-.12-.26-.19-.55-.34zM12.05 21.8h-.02c-1.77 0-3.51-.48-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 01-1.51-5.26c0-5.45 4.44-9.89 9.9-9.89 2.64 0 5.13 1.03 7 2.9a9.82 9.82 0 012.9 6.99c0 5.46-4.44 9.89-9.9 9.89zM20.52 3.45A11.78 11.78 0 0012.05 0C5.5 0 .17 5.33.17 11.88c0 2.09.55 4.14 1.59 5.94L.07 24l6.33-1.66a11.87 11.87 0 005.65 1.44h.01c6.55 0 11.88-5.33 11.88-11.88 0-3.17-1.24-6.16-3.48-8.4z"/></svg>
+      </a>
+      <a href="tel:+17207128615" class="header-phone" aria-label="Call Search Converts at plus 1 720-712-8615">+1 720-712-8615</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <div class="m-group">Paid Media</div>
+    <a class="m-sub" href="/ppc-management/">PPC Management</a>
+    <a class="m-sub" href="/google-ads-management/">Google Ads Management</a>
+    <a class="m-sub" href="/facebook-ads-management/">Facebook &amp; Meta Ads</a>
+    <a class="m-sub" href="/social-media-marketing/">Social Media Marketing</a>
+    <a class="m-sub" href="/programmatic-advertising/">Programmatic Display</a>
+    <a class="m-sub" href="/ctv-advertising/">CTV &amp; Streaming Ads</a>
+    <a class="m-sub" href="/retargeting/">Retargeting</a>
+    <div class="m-group">Traditional Media</div>
+    <a class="m-sub" href="/radio-tv-advertising/">Radio &amp; TV Advertising</a>
+    <a class="m-sub" href="/direct-mail-marketing/">Direct Mail Marketing</a>
+    <div class="m-group">Creative &amp; Build</div>
+    <a class="m-sub" href="/video-production/">Video Production</a>
+    <a class="m-sub" href="/youtube-promotion/">YouTube Promotion</a>
+    <a class="m-sub" href="/branding-design/">Branding &amp; Design</a>
+    <a class="m-sub" href="/app-development-company/">App Development</a>
+    <a class="m-sub" href="/web-app-development/">Web App Development</a>
+    <a class="m-sub" href="/ai-website-design/">AI Website Design</a>
+    <div class="m-group">Convert &amp; Retain</div>
+    <a class="m-sub" href="/conversion-optimization/">Conversion Optimization</a>
+    <a class="m-sub" href="/lead-generation/">Lead Generation</a>
+    <a class="m-sub" href="/email-marketing/">Email Marketing</a>
+    <a class="m-sub" href="/retention-systems/">Marketing Automation</a>
+    <div class="m-group">Industries</div>
+    <a class="m-sub" href="/law-firm-marketing/">Law Firms</a>
+    <a class="m-sub" href="/saas-marketing/">SaaS Companies</a>
+    <a class="m-sub" href="/b2b-marketing/">B2B &amp; Enterprise</a>
+    <a class="m-sub" href="/healthcare-marketing/">Healthcare</a>
+    <a class="m-sub" href="/ecommerce-marketing/">Ecommerce</a>
+    <a class="m-sub" href="/dental-marketing/">Dental Practices</a>
+    <a class="m-sub" href="/real-estate-marketing/">Real Estate</a>
+    <a class="m-sub" href="/restaurant-marketing/">Restaurants</a>
+    <div class="m-group">Consulting</div>
+    <a class="m-sub" href="/sales-training/">Sales Training</a>
+    <a class="m-sub" href="/business-consulting/">Business Consulting</a>
+    <a class="m-sub" href="/marketing-consulting/">Marketing Consulting</a>
+    <a class="m-sub" href="/growth-system/">The Growth System</a>
+    <div class="m-group">More</div>
+    <a href="/ai-marketing-agency/">AI Marketing</a>
+    <a href="/marketing-plan-builder/">Plan Builder</a>
+    <a href="/about/">About</a>
+    <a href="/contact/">Free Strategy Session</a>
+    <a href="tel:+17207128615" style="color:var(--orange);font-size:23px;">Call +1 720-712-8615</a>
+    <a href="https://wa.me/17207128615" target="_blank" rel="noopener" style="color:#128C4A;">WhatsApp +1 720-712-8615</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="em-hero">
+  <div class="em-hero-inner">
+    <div>
+      <nav class="em-crumb" aria-label="Breadcrumb">
+        <a href="/">Home</a> / <a href="/services/">Services</a> / <span>Email Marketing</span>
+      </nav>
+      <div class="em-tag">Email Marketing Agency</div>
+      <h1 class="em-h1">
+        Your Open Rate
+        <span class="gn">Is Mostly Fiction.</span>
+      </h1>
+      <p class="em-lede">
+        Reported open rates average 42 to 44%. Apple's privacy protection inflates that by 15 to 20 points by loading tracking pixels nobody asked for. <strong>Roughly half your reported opens are machines.</strong> Meanwhile click rates have not moved in three years.
+      </p>
+      <div class="em-log" id="em-log" aria-hidden="true">
+        <div><b>&gt;</b> checking sender authentication...</div>
+        <div><b>SPF</b> pass &nbsp;<b>DKIM</b> pass &nbsp;<span class="w">DMARC</span> none</div>
+        <div><span class="w">warn</span> one-click unsubscribe header missing</div>
+        <div><span class="e">alert</span> complaint rate 0.42% &mdash; threshold 0.30%</div>
+        <div><b>&gt;</b> inbox placement dropping<span class="cur"></span></div>
+      </div>
+      <div class="em-meters">
+        <div class="em-meter"><span>Reported opens that are bots</span><strong class="e">~50%</strong><em>Apple Mail Privacy</em></div>
+        <div class="em-meter"><span>Revenue from automated flows</span><strong>41%</strong><em>From 5.3% of sends</em></div>
+        <div class="em-meter"><span>Senders still non-compliant</span><strong class="w">~30%</strong><em>Two years after the rules</em></div>
+      </div>
+    </div>
+
+    <aside class="box" aria-label="Free tools on this page">
+      <div class="box-bar"><span>Free tools</span><em>No signup</em></div>
+      <a href="#journey" class="box-item">
+        <span class="box-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+        <span class="box-t"><strong>Where 1,000 emails go</strong><em>Including the stage nobody measures</em></span>
+      </a>
+      <a href="#compliance" class="box-item">
+        <span class="box-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l2 2 4-4"/><path d="M12 3l7.5 3v6c0 4.5-3 7.7-7.5 9-4.5-1.3-7.5-4.5-7.5-9V6z"/></svg></span>
+        <span class="box-t"><strong>Deliverability compliance check</strong><em>The rules that are now enforced</em></span>
+      </a>
+      <a href="#flows" class="box-item">
+        <span class="box-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h6a4 4 0 014 4v8"/><circle cx="4" cy="6" r="2"/><circle cx="18" cy="18" r="2"/><path d="M14 18h2"/></svg></span>
+        <span class="box-t"><strong>Flows vs campaigns model</strong><em>Where the revenue actually is</em></span>
+      </a>
+      <div class="box-foot">Runs in your browser</div>
+    </aside>
+  </div>
+</section>
+
+<!-- DEFINITION -->
+<section class="em-sec">
+  <div class="em-wrap">
+    <div class="em-eye">Plain English</div>
+    <h2 class="em-h2">What does an email marketing agency do?</h2>
+    <div class="em-def">
+      <p>An <strong>email marketing agency</strong> builds and runs the email program that turns subscribers into customers and customers into repeat customers. Email marketing services normally cover list growth, automated sequences, campaign sends, segmentation, deliverability engineering, and the measurement that connects all of it to revenue.</p>
+    </div>
+    <p>
+      Email is the only channel on this website you own outright. No auction. No algorithm deciding who sees you. No platform that can change the rules next quarter and halve your reach.
+    </p>
+    <p>
+      It also returns more than anything else. Reporting puts email at roughly <strong>$36 to $42 for every dollar spent</strong>, against about $2 for paid search and $2.80 for paid social. Those figures come from different studies with different methods, so treat the exact numbers loosely. The ordering is not in dispute.
+    </p>
+    <p>
+      So why do most email marketing firms deliver programs that underperform? Three reasons, and this page is built around them. The metric everyone watches is broken. The emails that make the money are the ones nobody works on. And a third of senders are quietly failing rules they do not know exist.
+    </p>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section class="em-sec deep" id="journey">
+  <div class="em-wrap wide">
+    <div class="em-eye">Tool 01</div>
+    <h2 class="em-h2">Send 1,000 emails.<br><span class="gn">Watch what happens.</span></h2>
+    <p style="max-width:820px;">
+      Most email reports start at "delivered" and jump straight to "opened." Two things get hidden in that jump. The messages that never reached an inbox at all, and the opens that were never human.
+    </p>
+
+    <div class="jr">
+      <div class="jr-top">
+        <div class="jr-stage" id="jr-stage">Ready to send</div>
+        <button class="jr-btn" id="jr-run" type="button">Send the batch</button>
+      </div>
+      <div class="jr-body">
+        <div class="jr-row">
+          <div class="jr-l">Sent<small>What your report starts with</small></div>
+          <div class="jr-bar"><i class="g" data-w="100"></i></div>
+          <div class="jr-v" data-v="1000">&mdash;</div>
+        </div>
+        <div class="jr-row">
+          <div class="jr-l">Reached the inbox<small>Global average is about 87%</small></div>
+          <div class="jr-bar"><i class="g" data-w="87"></i></div>
+          <div class="jr-v" data-v="872">&mdash;</div>
+        </div>
+        <div class="jr-row">
+          <div class="jr-l">Landed in spam<small>Invisible on most dashboards</small></div>
+          <div class="jr-bar"><i class="e" data-w="6"></i></div>
+          <div class="jr-v bad" data-v="61">&mdash;</div>
+        </div>
+        <div class="jr-row">
+          <div class="jr-l">Vanished entirely<small>Blocked or dropped without notice</small></div>
+          <div class="jr-bar"><i class="w" data-w="7"></i></div>
+          <div class="jr-v warn" data-v="67">&mdash;</div>
+        </div>
+        <div class="jr-row">
+          <div class="jr-l">Reported opens<small>What your platform proudly shows you</small></div>
+          <div class="jr-bar"><i class="g" data-w="43"></i></div>
+          <div class="jr-v" data-v="430">&mdash;</div>
+        </div>
+        <div class="jr-row">
+          <div class="jr-l">Phantom opens<small>Privacy bots pre-loading the pixel</small></div>
+          <div class="jr-bar"><i class="gh" data-w="21"></i></div>
+          <div class="jr-v ghost" data-v="215">&mdash;</div>
+        </div>
+        <div class="jr-row">
+          <div class="jr-l">Humans who opened<small>The honest number</small></div>
+          <div class="jr-bar"><i class="g" data-w="22"></i></div>
+          <div class="jr-v" data-v="215">&mdash;</div>
+        </div>
+        <div class="jr-row">
+          <div class="jr-l">Clicked<small>The metric that has not been corrupted</small></div>
+          <div class="jr-bar"><i class="g" data-w="2.2"></i></div>
+          <div class="jr-v" data-v="22">&mdash;</div>
+        </div>
+      </div>
+      <div class="jr-out" id="jr-out">
+        <strong>Press send.</strong> Watch the two rows nobody puts in a monthly report: the messages that never arrived, and the opens that were never people.
+      </div>
+    </div>
+
+    <p class="src">
+      Modeled on 2026 published figures: global inbox placement around 87.2% with roughly 6.1% spam and 6.6% missing, per Validity's deliverability benchmark; reported opens averaging 42 to 44% with Apple Mail Privacy Protection inflating them by an estimated 15 to 20 points; click rates flat at 2.0 to 2.5% for three consecutive years. Your own numbers will differ. The shape will not.
+    </p>
+
+    <h3 class="em-h3">What to measure instead</h3>
+    <p>
+      Stop leading with open rate. It is still useful for one thing: a sudden drop usually means a deliverability problem, so treat it as a smoke alarm rather than a scoreboard.
+    </p>
+    <p>
+      Lead with <strong>click rate</strong>, which nothing has corrupted. Then <strong>click-to-open rate</strong>, which currently averages around 6.8%, up from 5.6% two years ago. Then the ones that actually decide whether you keep reaching anybody: <strong>bounce rate, complaint rate and inbox placement.</strong>
+    </p>
+    <p>
+      And above all, revenue per email sent. That is the number that survives every privacy change, because it does not depend on tracking a person at all.
+    </p>
+  </div>
+</section>
+
+<!-- COMPLIANCE -->
+<section class="em-sec" id="compliance">
+  <div class="em-wrap">
+    <div class="em-eye">Tool 02</div>
+    <h2 class="em-h2">The rules changed.<br><span class="gn">Nobody told most senders.</span></h2>
+    <p>
+      In February 2024 the major mailbox providers stopped recommending things and started requiring them. Two years on, roughly <strong>30% of senders are still non-compliant on at least one requirement.</strong>
+    </p>
+    <p>
+      This is not a warning system. Google moved from temporary deferrals to permanent rejections in November 2025. Microsoft began enforcing in May 2025 with hard error codes. Non-compliant senders see spam-folder delivery jump from a 5 to 10% baseline to somewhere between 22 and 34%.
+    </p>
+    <p>
+      Tick what you genuinely have in place. If you are not sure, that counts as not having it.
+    </p>
+
+    <div class="cmp" id="cmp">
+      <div class="cmp-row" data-w="25">
+        <div class="cmp-box"><svg viewBox="0 0 24 24"><polyline points="4,13 9,18 20,6"/></svg></div>
+        <div class="cmp-n">SPF record published<small>Tells receiving servers which systems may send on your behalf.</small></div>
+        <div class="cmp-tag">Required</div>
+      </div>
+      <div class="cmp-row" data-w="25">
+        <div class="cmp-box"><svg viewBox="0 0 24 24"><polyline points="4,13 9,18 20,6"/></svg></div>
+        <div class="cmp-n">DKIM signing enabled<small>Cryptographically signs your mail so it cannot be forged in transit.</small></div>
+        <div class="cmp-tag">Required</div>
+      </div>
+      <div class="cmp-row" data-w="20">
+        <div class="cmp-box"><svg viewBox="0 0 24 24"><polyline points="4,13 9,18 20,6"/></svg></div>
+        <div class="cmp-n">DMARC policy in place<small>Tells receivers what to do when authentication fails. Even a monitoring policy counts.</small></div>
+        <div class="cmp-tag">Required</div>
+      </div>
+      <div class="cmp-row" data-w="15">
+        <div class="cmp-box"><svg viewBox="0 0 24 24"><polyline points="4,13 9,18 20,6"/></svg></div>
+        <div class="cmp-n">One-click unsubscribe header<small>Not a link in the footer. A header the mail client itself can act on.</small></div>
+        <div class="cmp-tag">Required</div>
+      </div>
+      <div class="cmp-row" data-w="10">
+        <div class="cmp-box"><svg viewBox="0 0 24 24"><polyline points="4,13 9,18 20,6"/></svg></div>
+        <div class="cmp-n">Complaint rate under 0.3%<small>Providers recommend staying under 0.1%. Above 0.3% triggers enforcement.</small></div>
+        <div class="cmp-tag">Required</div>
+      </div>
+      <div class="cmp-row" data-w="5">
+        <div class="cmp-box"><svg viewBox="0 0 24 24"><polyline points="4,13 9,18 20,6"/></svg></div>
+        <div class="cmp-n">List cleaned in the last 90 days<small>Not required, but bounces and complaints come from stale addresses.</small></div>
+        <div class="cmp-tag">Recommended</div>
+      </div>
+      <div class="cmp-out">
+        <div class="cmp-score">
+          <div class="num e" id="cmp-num">0</div>
+          <div class="lbl">Compliance score<br>out of 100</div>
+        </div>
+        <div class="cmp-v" id="cmp-v"></div>
+      </div>
+    </div>
+
+    <p class="src">
+      Requirements as published by Google and Yahoo for bulk senders, effective February 2024, applying to senders of roughly 5,000 or more messages a day to personal accounts at those providers. Microsoft has signaled similar requirements rolling out in phases. This is a self-assessment, not a technical audit &mdash; your sending platform or a deliverability tool can confirm each item properly.
+    </p>
+
+    <h3 class="em-h3">Why this beats every subject line experiment</h3>
+    <p>
+      Authenticated domains are reported to be around <strong>2.7 times more likely</strong> to reach the inbox. No amount of creative work competes with that, because creative only matters after delivery.
+    </p>
+    <p>
+      There is also a compounding problem people miss. Rejections do not reset when a bad campaign ends. They damage sender reputation across your whole domain and affect every send that follows. A single careless purchased list can degrade a program for months.
+    </p>
+  </div>
+</section>
+
+<!-- FLOWS -->
+<section class="em-sec lite" id="flows">
+  <div class="em-wrap">
+    <div class="em-eye">Tool 03</div>
+    <h2 class="em-h2">41% of the revenue<br><span class="gn">from 5.3% of the sends</span></h2>
+    <p>
+      That figure comes from ecommerce data covering a large volume of sends, and it is the most important number on this page. Automated flows &mdash; welcome sequences, cart recovery, post-purchase, win-back &mdash; produce a wildly disproportionate share of email revenue.
+    </p>
+    <p>
+      Yet campaigns get almost all the attention. Somebody writes a newsletter every week. Nobody has touched the welcome sequence since it was set up. Welcome emails alone have been reported at open rates above 80% with click rates near 17%, which is several times what a broadcast achieves.
+    </p>
+    <p>
+      Set your numbers below and see the split.
+    </p>
+
+    <div class="fc">
+      <div class="fc-in">
+        <div>
+          <label for="fc-list">List size <b id="fc-list-out">8,000</b></label>
+          <input class="calc-slider" type="range" id="fc-list" min="200" max="500000" step="200" value="8000">
+        </div>
+        <div>
+          <label for="fc-val">Revenue per click <b id="fc-val-out">$14</b></label>
+          <input class="calc-slider" type="range" id="fc-val" min="1" max="400" step="1" value="14">
+        </div>
+        <div>
+          <label for="fc-camp">Campaigns per month <b id="fc-camp-out">4</b></label>
+          <input class="calc-slider" type="range" id="fc-camp" min="0" max="30" step="1" value="4">
+        </div>
+        <div>
+          <label for="fc-flow">Flows running <b id="fc-flow-out">1</b></label>
+          <input class="calc-slider" type="range" id="fc-flow" min="0" max="8" step="1" value="1">
+        </div>
+      </div>
+      <div class="fc-cmp">
+        <div class="fc-side">
+          <h4>Campaigns</h4>
+          <div class="fc-line">Emails sent per month <b id="fc-c-sends">32,000</b></div>
+          <div class="fc-line">Click rate <b>2.2%</b></div>
+          <div class="fc-line">Clicks <b id="fc-c-clicks">704</b></div>
+          <div class="fc-big"><span>Monthly revenue</span><strong id="fc-c-rev">$9,856</strong></div>
+        </div>
+        <div class="fc-side hi">
+          <h4>Automated flows</h4>
+          <div class="fc-line">Emails sent per month <b id="fc-f-sends">1,600</b></div>
+          <div class="fc-line">Click rate <b>5.6%</b></div>
+          <div class="fc-line">Clicks <b id="fc-f-clicks">90</b></div>
+          <div class="fc-big"><span>Monthly revenue</span><strong id="fc-f-rev">$1,254</strong></div>
+        </div>
+      </div>
+      <div class="fc-v" id="fc-v"></div>
+    </div>
+
+    <p class="src">
+      Uses published click-rate benchmarks &mdash; roughly 2.0 to 2.5% for campaigns and around 5.6% for automated flows. Flow send volume is modeled on the share of your list entering a sequence each month, which is why more flows means more sends and more revenue without touching your campaign calendar. Revenue per click is yours to set; if you do not know it, divide last quarter's email revenue by email clicks.
+    </p>
+
+    <h3 class="em-h3">The flows worth building first</h3>
+    <table class="emt">
+      <thead><tr><th>Flow</th><th>What it does</th><th>Priority</th></tr></thead>
+      <tbody>
+        <tr><td>Welcome sequence</td><td>Fires when someone joins. Highest engagement of anything you will ever send, because interest is at its peak.</td><td class="n">First</td></tr>
+        <tr><td>Cart or form abandonment</td><td>Catches people who started and stopped. Pure recovery of demand you already paid to create.</td><td class="n">First</td></tr>
+        <tr><td>Post-purchase</td><td>Sets up the second sale and reduces refunds. The cheapest revenue in the business.</td><td class="n">Second</td></tr>
+        <tr><td>Browse abandonment</td><td>Looked, did not act. Lower intent than cart, still well above a broadcast.</td><td class="n">Second</td></tr>
+        <tr><td>Win-back</td><td>Reaches lapsed customers before they are gone for good.</td><td class="n">Third</td></tr>
+        <tr><td>Re-engagement and sunset</td><td>Last attempt, then removal. Protects deliverability, which protects everything else.</td><td class="n">Third</td></tr>
+      </tbody>
+    </table>
+    <p>
+      Build them once. They run for years. That is the entire argument, and it is why we start here rather than with a content calendar.
+    </p>
+  </div>
+</section>
+
+<!-- SCOPE -->
+<section class="em-sec">
+  <div class="em-wrap wide">
+    <div class="em-eye">Scope</div>
+    <h2 class="em-h2">What we actually<br><span class="gn">do for you</span></h2>
+    <p style="max-width:840px;margin-bottom:28px;">
+      Writing emails is the visible part of any email marketing services engagement. Here is the rest.
+    </p>
+    <div class="em-g3">
+      <div class="em-cellx"><strong>Deliverability engineering</strong><p>Authentication, domain warming, complaint monitoring and list hygiene. The unglamorous work that decides whether anything else matters.</p></div>
+      <div class="em-cellx"><strong>Flow architecture</strong><p>Welcome, abandonment, post-purchase, win-back and sunset sequences. Built once, earning for years.</p></div>
+      <div class="em-cellx"><strong>Segmentation</strong><p>Sending different things to different people. The single largest driver of the gap between good programs and lazy ones.</p></div>
+      <div class="em-cellx"><strong>Campaign production</strong><p>Regular sends that are worth opening, on a cadence you can sustain without burning the list.</p></div>
+      <div class="em-cellx"><strong>List growth</strong><p>Capture that does not degrade quality. A big list of people who never wanted you is a liability, not an asset.</p></div>
+      <div class="em-cellx"><strong>Cold email outreach</strong><p>Cold email runs on separate domains with separate reputations, so a cold program can never damage your main sending.</p></div>
+      <div class="em-cellx"><strong>Platform work</strong><p>Klaviyo, HubSpot, Mailchimp, Brevo and others. Migration, cleanup and building what the platform can actually support.</p></div>
+      <div class="em-cellx"><strong>Testing</strong><p>Subject lines, send times and content, judged with enough volume to mean something. See <a href="/ab-testing/">A/B testing</a>.</p></div>
+      <div class="em-cellx"><strong>Revenue reporting</strong><p>Revenue per email sent, per subscriber, per flow. Not opens.</p></div>
+    </div>
+
+    <h3 class="em-h3">Where email fits with everything else</h3>
+    <p>
+      Email cannot generate its own audience. Something has to fill the list first &mdash; <a href="/ppc-management/">paid search</a>, <a href="/social-media-marketing/">social</a>, <a href="/lead-generation/">lead generation</a> or organic search. Email is what makes those channels worth more.
+    </p>
+    <p>
+      It pairs particularly well with two things on this site. <a href="/retargeting/">Retargeting</a>, because an email opened and a retargeting ad seen in the same week reinforce each other. And <a href="/conversion-optimization/">conversion optimization</a>, because every click you earn still has to land on a page that works.
+    </p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="em-sec deep" style="padding-bottom:0;border-bottom:none;">
+  <div class="em-wrap">
+    <div class="em-cta">
+      <h3>Free deliverability audit</h3>
+      <p>We check your authentication, your headers and your complaint rate, then tell you what is broken. It takes us about twenty minutes and you keep the findings.</p>
+      <a href="/contact/" class="sc-btn-primary">Get my audit</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="em-sec deep" style="padding-top:24px;">
+  <div class="em-wrap">
+    <div class="em-eye">How we work</div>
+    <h2 class="em-h2">The order matters<br><span class="gn">more than the ideas</span></h2>
+    <ol class="em-ol">
+      <li><strong>Fix delivery first.</strong> Authentication, headers, complaint rate. There is no point writing anything if a third of it lands in spam. This is usually week one.</li>
+      <li><strong>Clean the list.</strong> Remove invalid addresses and people who have not engaged in a year. Your numbers will look worse and your revenue will go up. Both are correct.</li>
+      <li><strong>Change what you report.</strong> Click rate, click-to-open, revenue per email. Open rate demoted to a deliverability alarm.</li>
+      <li><strong>Build the welcome sequence.</strong> Highest engagement you will ever get, and most businesses have one email where there should be four.</li>
+      <li><strong>Build the recovery flows.</strong> Cart and form abandonment. This is money already on the table.</li>
+      <li><strong>Then segment.</strong> Once flows are working, stop sending everything to everyone. This is where the widening gap between good and lazy programs actually comes from.</li>
+      <li><strong>Then campaigns.</strong> Regular sends, on a cadence you can hold. Last, not first, because campaigns are the part that stops working the moment you stop.</li>
+      <li><strong>Test properly.</strong> Small lists cannot read a subject line test. We will say so rather than pretend a 40-person difference means something.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="em-sec">
+  <div class="em-wrap wide">
+    <div class="em-eye">Sector notes</div>
+    <h2 class="em-h2">Email works differently<br><span class="gn">depending on what you sell</span></h2>
+    <p style="max-width:840px;margin-bottom:26px;">
+      The channel suits repeat purchase and long consideration. It suits one-off local emergencies considerably less.
+    </p>
+    <div class="ind-grid">
+      <a href="/ecommerce-marketing/" class="ind-card"><span>&#128722;</span><strong>Ecommerce</strong><p>The natural home. Cart recovery and post-purchase flows carry most of the revenue.</p></a>
+      <a href="/saas-marketing/" class="ind-card"><span>&#128187;</span><strong>SaaS</strong><p>Onboarding and trial conversion sequences. Behavioral triggers beat calendars.</p></a>
+      <a href="/b2b-marketing/" class="ind-card"><span>&#127970;</span><strong>B2B</strong><p>Long cycles mean nurture matters. Cold outreach on separate domains only.</p></a>
+      <a href="/healthcare-marketing/" class="ind-card"><span>&#127973;</span><strong>Healthcare</strong><p>Appointment reminders and recall. Privacy rules constrain what you can segment on.</p></a>
+      <a href="/dental-marketing/" class="ind-card"><span>&#129463;</span><strong>Dental</strong><p>Recall sequences are close to free revenue and most practices run none.</p></a>
+      <a href="/real-estate-marketing/" class="ind-card"><span>&#127968;</span><strong>Real Estate</strong><p>Long nurture and saved-search alerts. Patience is the whole strategy.</p></a>
+      <a href="/restaurant-marketing/" class="ind-card"><span>&#127869;</span><strong>Restaurants</strong><p>Works for events, catering and loyalty. Not for tonight's covers.</p></a>
+      <a href="/law-firm-marketing/" class="ind-card"><span>&#9878;</span><strong>Law Firms</strong><p>Referral nurture and past-client contact. Advertising rules apply to email too.</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq-section" id="faq" aria-labelledby="faq-h2">
+  <div class="section-inner">
+    <div class="text-center reveal" style="margin-bottom:48px;">
+      <div class="section-eyebrow" style="justify-content:center;">Questions we get asked</div>
+      <h2 class="section-h2" id="faq-h2">Email marketing<br><span class="text-orange">questions, answered</span></h2>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">Are open rates still worth tracking?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>As a scoreboard, no. As a smoke alarm, yes. Apple Mail Privacy Protection pre-loads tracking pixels for Apple Mail users, which means roughly half of all reported opens are machines rather than people. Reported averages sit at 42 to 44%, inflated by an estimated 15 to 20 percentage points. What open rate is still good for is spotting a sudden drop, which usually means a deliverability problem. Lead with click rate instead, which nothing has corrupted, then click-to-open rate, then revenue per email sent.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">What is a good email click rate?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Campaign click rates have hovered between 2.0% and 2.5% for three consecutive years across most published benchmarks. Automated flows run far higher, commonly around 5.6%, because they fire when someone has just done something rather than on a calendar. Click-to-open rate currently averages near 6.8%, up from about 5.6% two years ago. The averages hide a widening gap: senders who segment and automate are pulling away from senders who send the same thing to everyone.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">Why are my emails going to spam?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Usually authentication or complaints rather than content. Since February 2024 the major providers require SPF, DKIM, DMARC, a one-click unsubscribe header and a spam complaint rate under 0.3% from bulk senders. Roughly 30% of senders are still non-compliant on at least one of those, and non-compliant senders see spam-folder delivery jump from a 5 to 10% baseline to between 22 and 34%. Authenticated domains are reported to be around 2.7 times more likely to reach the inbox. Run through the compliance checklist on this page first.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">What are the Gmail and Yahoo sender requirements?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>For bulk senders, meaning roughly 5,000 or more messages a day to personal accounts at those providers: SPF and DKIM authentication, a published DMARC policy, a one-click unsubscribe header that mail clients can act on directly, and a user-reported spam rate kept under 0.3% with under 0.1% recommended. These took effect in February 2024. Google moved from temporary deferrals to permanent rejections in November 2025 and Microsoft began enforcing in May 2025. Microsoft has signaled similar requirements for its consumer mail rolling out in phases.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">Should I focus on campaigns or automated flows?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Flows, and it is not close. Ecommerce data indicates automated flows produce around 41% of email revenue from about 5.3% of sends. Campaigns get almost all the attention because they feel like work, while the welcome sequence sits untouched for two years. Welcome emails have been reported at open rates above 80% and click rates near 17%, several times what a broadcast achieves. Build welcome, cart or form abandonment, and post-purchase first. They run for years without further effort.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">How often should I email my list?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Often enough that people remember who you are, rarely enough that they do not resent it, and consistently enough that your sending pattern looks stable to mailbox providers. For most businesses that is somewhere between weekly and monthly for campaigns, with flows firing whenever they are triggered. The honest answer is that frequency matters less than relevance. A segmented list can take more mail than an unsegmented one, and complaint rate is the number that tells you when you have crossed the line.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">Should I buy an email list?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>No, and the reason is more serious than most people realize. Purchased lists produce bounces and complaints, and complaint damage does not reset when the campaign ends. It compounds against your sender reputation across your entire domain and affects every email you send afterwards, including transactional mail. One careless send can degrade a program for months. If you want to reach people who have not opted in, cold email exists, but a competent email marketing company runs it on separate domains with separate reputations precisely so it can never touch your main sending.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">How much does an email marketing agency cost?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Most email marketing companies charge a monthly retainer, and it varies widely depending on whether flows are being built from scratch, how many campaigns are produced, and whether deliverability work is needed. We price to the work rather than publishing tiers. What is worth knowing is that the highest-value work is front-loaded: deliverability fixes and flow architecture take effort once and then keep earning, so the first quarter is typically heavier than what follows. Call <a href="tel:+17207128615">+1 720-712-8615</a> and we will tell you what your situation actually needs.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">Which email platform should I use?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>The one you will actually use properly. Klaviyo is strong for ecommerce because of its flow builder and store integration, which is why so many email marketing firms specialize in it. HubSpot suits businesses that need email tied to a CRM. Mailchimp and Brevo are fine for straightforward campaign sending at lower cost. Platform choice matters far less than what you do with it, and we have seen excellent programs on cheap tools and dreadful ones on expensive tools. If you are already on something workable, migrating is usually not the highest-value thing you could be doing.</p></div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question" aria-expanded="false">Is email still worth it compared to paid ads?<span class="faq-icon" aria-hidden="true">+</span></button>
+        <div class="faq-answer" hidden><p>Reported returns put email at roughly $36 to $42 per dollar spent, against about $2 for paid search and $2.80 for paid social. Those figures come from different studies with different methods, so hold the exact numbers loosely, but the ordering is not seriously disputed. The catch is that email cannot generate its own audience. Something has to fill the list, which is what <a href="/ppc-management/">paid media</a> and <a href="/lead-generation/">lead generation</a> are for. Email is what makes those channels worth more, not a replacement for them.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="bottom-form-section" aria-labelledby="bf-h2">
+  <div class="bottom-form-inner">
+    <div class="bottom-form-wrap">
+      <div class="bottom-form-header">
+        <h2 id="bf-h2">Free deliverability audit</h2>
+        <p>We check your authentication and headers and tell you what is broken. One business day, findings are yours either way.</p>
+      </div>
+      <div class="bottom-form-body">
+        <form id="bottom-form" novalidate>
+          <input type="hidden" name="source_site" value="searchconverts.com - Email Marketing Page">
+          <input type="hidden" name="_form_loaded" id="b-form-loaded" value="">
+          <div style="display:none;" aria-hidden="true"><input type="text" name="_honey" tabindex="-1" autocomplete="off"></div>
+          <div class="sc-form-row">
+            <div class="sc-form-group"><label for="b-name">Your name *</label><input id="b-name" name="user_name" type="text" placeholder="Full name" required autocomplete="name"></div>
+            <div class="sc-form-group"><label for="b-biz">Business name</label><input id="b-biz" name="business_name" type="text" placeholder="Company" autocomplete="organization"></div>
+          </div>
+          <div class="sc-form-row">
+            <div class="sc-form-group"><label for="b-phone">Phone *</label><input id="b-phone" name="user_phone" type="tel" placeholder="720-000-0000" required autocomplete="tel"></div>
+            <div class="sc-form-group"><label for="b-email">Email</label><input id="b-email" name="user_email" type="email" placeholder="you@company.com" autocomplete="email"></div>
+          </div>
+          <div class="sc-form-row">
+            <div class="sc-form-group"><label for="b-list">List size</label><input id="b-list" name="list_size" type="text" placeholder="e.g. 8,000 or no list yet"></div>
+            <div class="sc-form-group">
+              <label for="b-plat">Platform</label>
+              <select id="b-plat" name="platform">
+                <option value="">Select</option>
+                <option>Klaviyo</option>
+                <option>HubSpot</option>
+                <option>Mailchimp</option>
+                <option>Brevo</option>
+                <option>Something else</option>
+                <option>Nothing yet</option>
+              </select>
+            </div>
+          </div>
+          <div class="sc-form-group">
+            <label for="b-msg">How many flows are running?</label>
+            <textarea id="b-msg" name="user_message" placeholder="Welcome sequence? Cart abandonment? Or just campaigns? And tell us whether anything is landing in spam."></textarea>
+          </div>
+          <button type="submit" class="sc-submit-btn" id="bottom-submit-btn">Send my audit request</button>
+          <div id="bottom-form-msg" role="status" aria-live="polite"></div>
+        </form>
+        <p class="form-privacy" style="color:#6b7280;margin-top:14px;">Your information is never sold or shared. We respond within one business day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer" aria-label="Site footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <a href="/" class="footer-brand-logo" aria-label="Search Converts home">
+          <img src="/images/search-converts-logo-color.avif"
+               alt="Search Converts" width="200" height="200" loading="lazy">
+        </a>
+        <p class="footer-brand-desc">A full-service conversion rate optimization agency. We turn the traffic you already pay for into revenue &mdash; then scale it across every channel that reaches a buyer.</p>
+        <address style="font-style:normal;">
+          <a href="#" class="footer-contact-link js-email" data-email="footer">Email us</a>
+          <a href="tel:7207128615" class="footer-contact-link">720-712-8615</a>
+          <span class="footer-contact-link" style="color:#374151;">1001 Bannock St #660, Denver, CO 80204</span>
+        </address>
+      </div>
+      <div>
+        <div class="footer-col-title">Convert</div>
+        <ul class="footer-links">
+          <li><a href="/conversion-optimization/">Conversion Optimization</a></li>
+          <li><a href="/conversion-optimization-ideas/">Conversion Optimization Ideas</a></li>
+          <li><a href="/ab-testing/">A/B Testing</a></li>
+          <li><a href="/lead-generation/">Lead Generation</a></li>
+          <li><a href="/email-marketing/">Email Marketing</a></li>
+          <li><a href="/retention-systems/">Marketing Automation</a></li>
+          <li><a href="/marketing-plan-builder/">Marketing Plan Builder</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Advertise</div>
+        <ul class="footer-links">
+          <li><a href="/ppc-management/">PPC Management</a></li>
+          <li><a href="/google-ads-management/">Google Ads Management</a></li>
+          <li><a href="/facebook-ads-management/">Facebook &amp; Meta Ads</a></li>
+          <li><a href="/social-media-marketing/">Social Media Marketing</a></li>
+          <li><a href="/programmatic-advertising/">Programmatic Display</a></li>
+          <li><a href="/ctv-advertising/">CTV &amp; Streaming Ads</a></li>
+          <li><a href="/retargeting/">Retargeting</a></li>
+          <li><a href="/radio-tv-advertising/">Radio &amp; TV Advertising</a></li>
+          <li><a href="/direct-mail-marketing/">Direct Mail Marketing</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Build &amp; Grow</div>
+        <ul class="footer-links">
+          <li><a href="/video-production/">Video Production</a></li>
+          <li><a href="/youtube-promotion/">YouTube Promotion</a></li>
+          <li><a href="/branding-design/">Branding &amp; Design</a></li>
+          <li><a href="/app-development-company/">App Development</a></li>
+          <li><a href="/web-app-development/">Web App Development</a></li>
+          <li><a href="/ai-website-design/">AI Website Design</a></li>
+          <li><a href="/ai-marketing-agency/">AI Marketing Agency</a></li>
+          <li><a href="/sales-training/">Sales Training</a></li>
+          <li><a href="/business-consulting/">Business Consulting</a></li>
+          <li><a href="/marketing-consulting/">Marketing Consulting</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="padding:28px 0 4px;border-bottom:1px solid var(--border);">
+      <div class="footer-col-title">Our Network</div>
+      <ul class="footer-links" style="display:flex;flex-wrap:wrap;gap:8px 32px;">
+        <li><a href="https://eyetoad.com" rel="noopener">Eye To Ad Media &mdash; SEO &amp; AI search optimization</a></li>
+        <li><a href="https://denver-webdesign.com" rel="noopener">Denver Web Design</a></li>
+        <li><a href="https://mysaleshelp.com" rel="noopener">My Sales Help &mdash; free sales tools</a></li>
+        <li><a href="https://actionglobalnews.com" rel="noopener">Action Global News</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Search Converts LLC. All rights reserved.<br>
+        1001 Bannock St #660, Denver, CO 80204 &nbsp;|&nbsp; <a href="tel:7207128615">720-712-8615</a>
+      </p>
+      <p>
+        <a href="/about/">About</a> &nbsp;|&nbsp;
+        <a href="/services/">Services</a> &nbsp;|&nbsp;
+        <a href="/contact/">Contact</a> &nbsp;|&nbsp;
+        <a href="/privacy/">Privacy</a> &nbsp;|&nbsp;
+        <a href="/terms/">Terms</a> &nbsp;|&nbsp;
+        <a href="/sitemap.xml">Sitemap</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://searchconverts.com/#organization",
+      "name": "Search Converts",
+      "legalName": "Search Converts LLC",
+      "url": "https://searchconverts.com/",
+      "logo": { "@type": "ImageObject", "url": "https://searchconverts.com/images/search-converts-logo-color.avif" },
+      "telephone": "+17207128615",
+      "foundingDate": "2012",
+      "address": { "@type": "PostalAddress", "streetAddress": "1001 Bannock St #660", "addressLocality": "Denver", "addressRegion": "CO", "postalCode": "80204", "addressCountry": "US" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://searchconverts.com/#website",
+      "url": "https://searchconverts.com/",
+      "name": "Search Converts",
+      "inLanguage": "en-US",
+      "publisher": { "@id": "https://searchconverts.com/#organization" }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://searchconverts.com/email-marketing/#service",
+      "serviceType": "Email Marketing",
+      "name": "Email Marketing Agency Services",
+      "description": "Email marketing covering deliverability engineering and sender authentication, automated flow architecture including welcome, abandonment, post-purchase and win-back sequences, segmentation, campaign production, list growth, cold outreach on separate sending domains, platform management and revenue reporting.",
+      "provider": { "@id": "https://searchconverts.com/#organization" },
+      "areaServed": [ { "@type": "Country", "name": "United States" }, { "@type": "Country", "name": "Canada" } ],
+      "isRelatedTo": [
+        { "@type": "Service", "name": "Lead Generation", "url": "https://searchconverts.com/lead-generation/" },
+        { "@type": "Service", "name": "Conversion Rate Optimization", "url": "https://searchconverts.com/conversion-optimization/" }
+      ]
+    },
+    {
+      "@type": ["WebPage","Article"],
+      "@id": "https://searchconverts.com/email-marketing/#webpage",
+      "url": "https://searchconverts.com/email-marketing/",
+      "name": "Email Marketing Agency | Search Converts",
+      "headline": "Your Open Rate Is Mostly Fiction",
+      "description": "An email marketing agency focused on deliverability and automated flows rather than open rates. Includes a delivery journey visualiser, a sender compliance checker and a flows versus campaigns revenue model.",
+      "isPartOf": { "@id": "https://searchconverts.com/#website" },
+      "inLanguage": "en-US",
+      "author": { "@id": "https://searchconverts.com/#organization" },
+      "publisher": { "@id": "https://searchconverts.com/#organization" },
+      "hasPart": { "@id": "https://searchconverts.com/email-marketing/#faq" },
+      "speakable": { "@type": "SpeakableSpecification", "cssSelector": [".em-def", ".em-h1"] },
+      "about": {
+        "@type": "DefinedTerm",
+        "name": "Email marketing",
+        "alternateName": ["Email automation","Lifecycle email","Email marketing services"],
+        "description": "The practice of using email to convert subscribers into customers and customers into repeat buyers, covering list growth, automated behavioral sequences, campaign sends, segmentation and deliverability engineering.",
+        "sameAs": "https://en.wikipedia.org/wiki/Email_marketing"
+      },
+      "mentions": [
+        { "@type": "DefinedTerm", "name": "Email deliverability", "description": "The likelihood that a sent email reaches a recipient's inbox rather than a spam folder or being blocked entirely, determined largely by sender authentication, complaint rate and list quality." },
+        { "@type": "DefinedTerm", "name": "DMARC", "sameAs": "https://en.wikipedia.org/wiki/DMARC" },
+        { "@type": "DefinedTerm", "name": "DomainKeys Identified Mail", "sameAs": "https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail" },
+        { "@type": "DefinedTerm", "name": "Sender Policy Framework", "sameAs": "https://en.wikipedia.org/wiki/Sender_Policy_Framework" }
+      ],
+      "significantLink": [
+        "https://searchconverts.com/lead-generation/",
+        "https://searchconverts.com/conversion-optimization/",
+        "https://searchconverts.com/retargeting/",
+        "https://searchconverts.com/contact/"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://searchconverts.com/email-marketing/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://searchconverts.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://searchconverts.com/services/" },
+        { "@type": "ListItem", "position": 3, "name": "Email Marketing", "item": "https://searchconverts.com/email-marketing/" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://searchconverts.com/email-marketing/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "Are open rates still worth tracking?", "acceptedAnswer": { "@type": "Answer", "text": "As a scoreboard no, as a smoke alarm yes. Apple Mail Privacy Protection pre-loads tracking pixels for Apple Mail users, meaning roughly half of all reported opens are machines. Reported averages sit at 42 to 44 percent, inflated by an estimated 15 to 20 percentage points. Open rate remains useful for spotting a sudden drop, which usually indicates a deliverability problem. Lead with click rate, then click-to-open rate, then revenue per email sent." } },
+        { "@type": "Question", "name": "What is a good email click rate?", "acceptedAnswer": { "@type": "Answer", "text": "Campaign click rates have hovered between 2.0 and 2.5 percent for three consecutive years. Automated flows run far higher, commonly around 5.6 percent, because they fire when someone has just done something rather than on a calendar. Click-to-open rate currently averages near 6.8 percent, up from about 5.6 percent two years ago." } },
+        { "@type": "Question", "name": "Why are my emails going to spam?", "acceptedAnswer": { "@type": "Answer", "text": "Usually authentication or complaints rather than content. Since February 2024 major providers require SPF, DKIM, DMARC, a one-click unsubscribe header and a spam complaint rate under 0.3 percent from bulk senders. Roughly 30 percent of senders remain non-compliant on at least one requirement, and non-compliant senders see spam-folder delivery jump from a 5 to 10 percent baseline to between 22 and 34 percent. Authenticated domains are reported around 2.7 times more likely to reach the inbox." } },
+        { "@type": "Question", "name": "What are the Gmail and Yahoo sender requirements?", "acceptedAnswer": { "@type": "Answer", "text": "For bulk senders, meaning roughly 5,000 or more messages a day to personal accounts: SPF and DKIM authentication, a published DMARC policy, a one-click unsubscribe header that mail clients can act on, and a user-reported spam rate under 0.3 percent with under 0.1 percent recommended. These took effect February 2024. Google moved from temporary deferrals to permanent rejections in November 2025 and Microsoft began enforcing in May 2025." } },
+        { "@type": "Question", "name": "Should I focus on campaigns or automated flows?", "acceptedAnswer": { "@type": "Answer", "text": "Flows. Ecommerce data indicates automated flows produce around 41 percent of email revenue from about 5.3 percent of sends. Welcome emails have been reported at open rates above 80 percent and click rates near 17 percent, several times what a broadcast achieves. Build welcome, cart or form abandonment, and post-purchase sequences first, since they run for years without further effort." } },
+        { "@type": "Question", "name": "How often should I email my list?", "acceptedAnswer": { "@type": "Answer", "text": "Often enough to be remembered, rarely enough not to be resented, and consistently enough that the sending pattern looks stable to mailbox providers. For most businesses that means weekly to monthly campaigns with flows firing on trigger. Frequency matters less than relevance, and complaint rate is the metric that indicates when a line has been crossed." } },
+        { "@type": "Question", "name": "Should I buy an email list?", "acceptedAnswer": { "@type": "Answer", "text": "No. Purchased lists produce bounces and complaints, and complaint damage does not reset when a campaign ends. It compounds against sender reputation across the entire domain and affects every subsequent email including transactional mail. Cold outreach exists as an alternative but runs on separate domains with separate reputations so it cannot affect main sending." } },
+        { "@type": "Question", "name": "How much does an email marketing agency cost?", "acceptedAnswer": { "@type": "Answer", "text": "Retainers vary depending on whether flows are being built from scratch, how many campaigns are produced and whether deliverability work is required. Search Converts prices to the work rather than publishing tiers. The highest-value work is front-loaded, since deliverability fixes and flow architecture take effort once and then keep earning." } },
+        { "@type": "Question", "name": "Which email platform should I use?", "acceptedAnswer": { "@type": "Answer", "text": "The one you will use properly. Klaviyo is strong for ecommerce, HubSpot suits businesses needing email tied to a CRM, and Mailchimp or Brevo are fine for straightforward campaign sending at lower cost. Platform choice matters far less than what is done with it, and migrating is usually not the highest-value available action." } },
+        { "@type": "Question", "name": "Is email still worth it compared to paid ads?", "acceptedAnswer": { "@type": "Answer", "text": "Reported returns put email at roughly $36 to $42 per dollar spent against about $2 for paid search and $2.80 for paid social, though these figures come from different studies with different methods. The catch is that email cannot generate its own audience, so paid media and lead generation are what fill the list. Email makes those channels worth more rather than replacing them." } }
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ── OBFUSCATED ADDRESSES (offset cipher, assembled at runtime) ── */
+  var _L = [112,117,109,118,71,108,128,108,123,118,104,107,53,106,118,116];
+  var _P = [111,108,115,115,118,71,122,108,104,121,106,111,106,118,117,125,108,121,123,122,53,106,118,116];
+  function _d(a) { var s = '', i; for (i = 0; i < a.length; i++) { s += String.fromCharCode(a[i] - 7); } return s; }
+
+  /* ── PUBLIC EMAIL LINKS ── */
+  document.querySelectorAll('.js-email').forEach(function (el) {
+    var addr = _d(_P);
+    el.setAttribute('href', 'mai' + 'lto:' + addr);
+    el.textContent = addr;
+  });
+
+  /* ── HAMBURGER ── */
+  var burger = document.getElementById('hamburger');
+  var mnav = document.getElementById('mobile-nav');
+  if (burger && mnav) {
+    burger.addEventListener('click', function () {
+      var open = mnav.classList.toggle('open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+
+  /* ── DESKTOP DROPDOWNS ── */
+  var navItems = document.querySelectorAll('.header-nav > li');
+  navItems.forEach(function (li) {
+    var btn = li.querySelector('.nav-toggle');
+    if (!btn) return;
+    function close() { li.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); }
+    function open() {
+      navItems.forEach(function (o) {
+        var b = o.querySelector('.nav-toggle');
+        if (b) { o.classList.remove('open'); b.setAttribute('aria-expanded', 'false'); }
+      });
+      li.classList.add('open'); btn.setAttribute('aria-expanded', 'true');
+    }
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      li.classList.contains('open') ? close() : open();
+    });
+    li.addEventListener('mouseenter', open);
+    li.addEventListener('mouseleave', close);
+    li.addEventListener('keydown', function (e) { if (e.key === 'Escape') { close(); btn.focus(); } });
+  });
+  document.addEventListener('click', function () {
+    navItems.forEach(function (o) {
+      var b = o.querySelector('.nav-toggle');
+      if (b) { o.classList.remove('open'); b.setAttribute('aria-expanded', 'false'); }
+    });
+  });
+
+  /* ── SCROLL REVEAL + ONE-SHOT ANIMATIONS ── */
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els = document.querySelectorAll('.reveal');
+  els.forEach(function (el) { el.classList.add('will-reveal'); });
+
+  function countUp(el) {
+    var target = parseInt(el.getAttribute('data-target'), 10) || 0;
+    if (reduce) { el.textContent = target.toLocaleString('en-US'); return; }
+    var start = null, dur = 1400;
+    function step(ts) {
+      if (!start) start = ts;
+      var p = Math.min((ts - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(target * eased).toLocaleString('en-US');
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        e.target.classList.add('visible');
+        e.target.querySelectorAll('.countup').forEach(countUp);
+        e.target.querySelectorAll('.draw-arrow, .fig-draw').forEach(function (a) { a.classList.add('drawn'); });
+        obs.unobserve(e.target);
+      });
+    }, { threshold: 0.08 });
+    els.forEach(function (el) { obs.observe(el); });
+
+    var fill = document.getElementById('teaser-fill');
+    if (fill) {
+      var fo = new IntersectionObserver(function (en) {
+        en.forEach(function (e) { if (e.isIntersecting) { fill.style.width = '35%'; fo.unobserve(e.target); } });
+      }, { threshold: 0.4 });
+      fo.observe(fill);
+    }
+  } else {
+    els.forEach(function (el) { el.classList.add('visible'); });
+    document.querySelectorAll('.countup').forEach(countUp);
+    document.querySelectorAll('.draw-arrow, .fig-draw').forEach(function (a) { a.classList.add('drawn'); });
+    var f2 = document.getElementById('teaser-fill'); if (f2) f2.style.width = '35%';
+  }
+
+  /* ── SAFETY NET: never leave a figure permanently invisible ── */
+  window.setTimeout(function () {
+    document.querySelectorAll('.draw-arrow, .fig-draw').forEach(function (a) { a.classList.add('drawn'); });
+  }, 2600);
+
+  /* ── A/B DEMO ── */
+  var abDone = false;
+  document.querySelectorAll('[data-ab]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var pick = btn.getAttribute('data-ab');
+      document.getElementById('ab-var-a').classList.toggle('chosen', pick === 'a');
+      document.getElementById('ab-var-b').classList.toggle('chosen', pick === 'b');
+      var t = document.getElementById('ab-reveal-title');
+      var b = document.getElementById('ab-reveal-body');
+      if (pick === 'b') {
+        t.textContent = 'That is conversion rate optimization in one click.';
+        b.textContent = 'Most people pick Version B, and the reasons are not aesthetic. Four separate, well-documented conversion principles are working at once:';
+      } else {
+        t.textContent = 'Interesting pick. Here is why most people go the other way.';
+        b.textContent = 'Version A is not wrong, it is just doing less work. Four documented conversion principles are missing from it, and each one costs a small percentage of the people who would otherwise have acted:';
+      }
+      document.getElementById('ab-reveal').classList.add('show');
+      if (!abDone) { abDone = true; }
+    });
+  });
+
+  /* ── CONVERSION CALCULATOR ── */
+  var cT = document.getElementById('calc-traffic');
+  var cR = document.getElementById('calc-rate');
+  var cV = document.getElementById('calc-value');
+  var cL = document.getElementById('calc-lift');
+
+  function money(n) {
+    return '$' + Math.round(n).toLocaleString('en-US');
+  }
+  function paintSlider(el) {
+    var pct = ((el.value - el.min) / (el.max - el.min)) * 100;
+    el.style.background = 'linear-gradient(90deg, #f97316 0%, #f97316 ' + pct + '%, #e2e8f0 ' + pct + '%, #e2e8f0 100%)';
+  }
+  function calc() {
+    if (!cT) return;
+    var traffic = +cT.value;
+    var rate = +cR.value / 10;
+    var val = +cV.value;
+    var lift = +cL.value / 10;
+
+    document.getElementById('out-traffic').textContent = traffic.toLocaleString('en-US');
+    document.getElementById('out-rate').textContent = rate.toFixed(1) + '%';
+    document.getElementById('out-value').textContent = money(val);
+    document.getElementById('out-lift').textContent = '+' + lift.toFixed(1) + ' pt';
+
+    var now = traffic * (rate / 100) * 12;
+    var after = traffic * ((rate + lift) / 100) * 12;
+    var delta = (after - now) * val;
+
+    document.getElementById('out-now').textContent = Math.round(now).toLocaleString('en-US');
+    document.getElementById('out-after').textContent = Math.round(after).toLocaleString('en-US');
+    document.getElementById('out-annual').textContent = money(delta);
+    document.getElementById('out-explainer').textContent =
+      'Same traffic. Same ad spend. Same team. That is what moving your conversion rate from ' +
+      rate.toFixed(1) + '% to ' + (rate + lift).toFixed(1) + '% is worth over twelve months.';
+
+    [cT, cR, cV, cL].forEach(paintSlider);
+  }
+  [cT, cR, cV, cL].forEach(function (el) { if (el) el.addEventListener('input', calc); });
+  calc();
+
+  /* ── FUNNEL ── */
+  var funnelData = {
+    before: {
+      counts: [1000, 550, 220, 48, 15],
+      note: '<strong>15 leads from 1,000 visitors.</strong> A 1.5% conversion rate, which is roughly average for a lead-generation site. The 985 people who left were not bad traffic &mdash; you already paid to bring every one of them here.'
+    },
+    after: {
+      counts: [1000, 760, 410, 132, 47],
+      note: '<strong>47 leads from the same 1,000 visitors.</strong> No extra ad spend, no new channel, no more traffic. Faster pages kept more people past the first five seconds, clearer navigation got more of them to the offer, and a shorter form let more of them finish. This is what the work looks like on a scoreboard.'
+    }
+  };
+  var funnelBars = document.querySelectorAll('.funnel-bar');
+  var funnelLosses = document.querySelectorAll('.funnel-loss');
+  var funnelReadout = document.getElementById('funnel-readout');
+  var funnelPainted = false;
+
+  function paintFunnel(mode) {
+    var d = funnelData[mode];
+    funnelBars.forEach(function (bar, i) {
+      var c = d.counts[i];
+      bar.style.width = (c / d.counts[0] * 100) + '%';
+      bar.textContent = c.toLocaleString('en-US');
+    });
+    funnelLosses.forEach(function (l, i) {
+      if (i === 0) { l.textContent = '\u2014'; l.classList.remove('gain'); return; }
+      var loss = d.counts[i - 1] - d.counts[i];
+      l.textContent = '\u2212' + loss.toLocaleString('en-US');
+      l.classList.remove('gain');
+    });
+    if (funnelReadout) funnelReadout.innerHTML = d.note;
+  }
+  document.querySelectorAll('.funnel-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('.funnel-toggle').forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      paintFunnel(btn.getAttribute('data-funnel'));
+    });
+  });
+  if ('IntersectionObserver' in window && funnelBars.length) {
+    var fnObs = new IntersectionObserver(function (en) {
+      en.forEach(function (e) {
+        if (e.isIntersecting && !funnelPainted) { funnelPainted = true; paintFunnel('before'); fnObs.unobserve(e.target); }
+      });
+    }, { threshold: 0.25 });
+    fnObs.observe(document.getElementById('funnel-stages'));
+  } else {
+    paintFunnel('before');
+  }
+
+  /* ── FAQ ACCORDION ── */
+  var faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(function (item) {
+    var btn = item.querySelector('.faq-question');
+    var ans = item.querySelector('.faq-answer');
+    if (!btn || !ans) return;
+    btn.addEventListener('click', function () {
+      var wasOpen = item.classList.contains('open');
+      faqItems.forEach(function (i) {
+        i.classList.remove('open');
+        var q = i.querySelector('.faq-question'), a = i.querySelector('.faq-answer');
+        if (q) q.setAttribute('aria-expanded', 'false');
+        if (a) a.hidden = true;
+      });
+      if (!wasOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+        ans.hidden = false;
+      }
+    });
+  });
+
+  /* ── FORM TIME TRAP ── */
+  var loadedAt = Date.now().toString();
+  ['h-form-loaded', 'b-form-loaded'].forEach(function (id) {
+    var f = document.getElementById(id); if (f) f.value = loadedAt;
+  });
+
+  /* ── RATE LIMITER ── */
+  var submitTimes = [];
+  function rateLimited() {
+    var now = Date.now();
+    submitTimes = submitTimes.filter(function (t) { return now - t < 60000; });
+    if (submitTimes.length >= 3) return true;
+    submitTimes.push(now);
+    return false;
+  }
+
+  /* ── SPAM CONTENT FILTER ── */
+  var spamPatterns = [
+    /https?:\/\//i, /www\./i, /\[url/i, /<a\s/i,
+    /\bviagra\b/i, /\bcialis\b/i, /\bcasino\b/i, /\bpoker\b/i,
+    /\bbitcoin\b/i, /\bcrypto\b/i, /\bforex\b/i, /\bloan offer\b/i,
+    /\bseo (services|package|packages|cheap|expert)\b/i,
+    /\bguaranteed (rankings|results|first page)\b/i,
+    /\bbacklinks?\b/i, /\bfirst page of google\b/i,
+    /(.)\1{6,}/, /[^\x00-\x7F]{8,}/
+  ];
+  function isSpam(text) {
+    if (!text) return false;
+    return spamPatterns.some(function (p) { return p.test(text); });
+  }
+
+  /* ── FORM SUBMISSION ── */
+  function wireForm(formId, btnId, msgId, loadedId) {
+    var form = document.getElementById(formId);
+    var btn = document.getElementById(btnId);
+    var msg = document.getElementById(msgId);
+    if (!form || !btn || !msg) return;
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      if (rateLimited()) {
+        msg.style.color = '#ef4444';
+        msg.textContent = 'Too many attempts. Wait a minute and try again, or call 720-712-8615.';
+        return;
+      }
+
+      var honey = form.querySelector('[name="_honey"]');
+      if (honey && honey.value !== '') return;
+
+      var lf = document.getElementById(loadedId);
+      if (lf && lf.value) {
+        if (Date.now() - parseInt(lf.value, 10) < 3500) return;
+      }
+
+      var message = (form.querySelector('[name="user_message"]') || {}).value || '';
+      var bizName = (form.querySelector('[name="business_name"]') || {}).value || '';
+      if (isSpam(message) || isSpam(bizName)) {
+        msg.style.color = '#ef4444';
+        msg.textContent = 'That message was flagged as spam. Remove any links and try again, or call 720-712-8615.';
+        return;
+      }
+
+      var nameEl = form.querySelector('[name="user_name"]');
+      var phoneEl = form.querySelector('[name="user_phone"]');
+      var name = nameEl ? nameEl.value.trim() : '';
+      var phone = phoneEl ? phoneEl.value.trim() : '';
+      if (!name || !phone) {
+        msg.style.color = '#ef4444';
+        msg.textContent = 'Enter your name and phone number so we can reach you.';
+        if (!name && nameEl) { nameEl.focus(); } else if (phoneEl) { phoneEl.focus(); }
+        return;
+      }
+      if (phone.replace(/\D/g, '').length < 10) {
+        msg.style.color = '#ef4444';
+        msg.textContent = 'That phone number looks incomplete. Include the area code.';
+        if (phoneEl) phoneEl.focus();
+        return;
+      }
+
+      var originalText = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+      msg.style.color = '#64748b';
+      msg.textContent = 'Sending your request...';
+
+      var data = new FormData(form);
+      data.append('_template', 'table');
+      data.append('_subject', 'New lead - Search Converts: ' + name);
+
+      var endpoint = 'ht' + 'tps://for' + 'msubmit.co/' + _d(_L);
+
+      fetch(endpoint, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(function (res) {
+        if (res.ok) {
+          form.reset();
+          msg.style.color = '#10b981';
+          msg.textContent = 'Received. We will get back to you within one business day.';
+          btn.textContent = 'Request sent';
+        } else {
+          throw new Error('status ' + res.status);
+        }
+      }).catch(function () {
+        msg.style.color = '#f59e0b';
+        msg.innerHTML = 'We could not confirm delivery. Your request may not have gone through &mdash; please call <a href="tel:7207128615" style="color:#ea580c;font-weight:700;">720-712-8615</a> or try again.';
+        btn.disabled = false;
+        btn.textContent = originalText;
+      });
+    });
+  }
+
+  wireForm('hero-form', 'hero-submit-btn', 'hero-form-msg', 'h-form-loaded');
+  wireForm('bottom-form', 'bottom-submit-btn', 'bottom-form-msg', 'b-form-loaded');
+})();
+</script>
+
+<script>
+(function () {
+  'use strict';
+  function paint(el){
+    var p=((el.value-el.min)/(el.max-el.min))*100;
+    el.style.background='linear-gradient(90deg,#22c55e 0%,#22c55e '+p+'%,#1e3a2a '+p+'%,#1e3a2a 100%)';
+  }
+  function money(n){ return '$'+Math.round(n).toLocaleString('en-US'); }
+
+  /* ══ HERO LOG TYPING ══ */
+  var log=document.getElementById('em-log');
+  if (log) {
+    var lines=log.querySelectorAll('div');
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      lines.forEach(function(l){ l.classList.add('on'); });
+    } else {
+      lines.forEach(function(l,i){ setTimeout(function(){ l.classList.add('on'); }, 500+i*620); });
+    }
+  }
+
+  /* ══ 1,000 EMAIL JOURNEY ══ */
+  var jrRun=document.getElementById('jr-run');
+  if (jrRun) {
+    var rows=document.querySelectorAll('.jr-row');
+    var running=false, timers=[];
+    function reset(){
+      timers.forEach(clearTimeout); timers=[];
+      rows.forEach(function(r){
+        r.querySelector('.jr-bar i').style.width='0';
+        r.querySelector('.jr-v').textContent='\u2014';
+      });
+      document.getElementById('jr-stage').textContent='Ready to send';
+      document.getElementById('jr-out').innerHTML='<strong>Press send.</strong> Watch the two rows nobody puts in a monthly report: the messages that never arrived, and the opens that were never people.';
+    }
+    function countTo(el,target,dur){
+      var start=null;
+      function step(ts){
+        if(!start) start=ts;
+        var p=Math.min((ts-start)/dur,1);
+        el.textContent=Math.round(target*(1-Math.pow(1-p,3))).toLocaleString('en-US');
+        if(p<1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+    function run(){
+      if (running) return; running=true; reset();
+      jrRun.disabled=true; jrRun.textContent='Sending...';
+      var stage=document.getElementById('jr-stage');
+      var STAGES=['Handing off to mail servers','Checking authentication','Applying filters','Recording opens','Separating bots from humans','Counting clicks'];
+      rows.forEach(function(r,i){
+        timers.push(setTimeout(function(){
+          if (STAGES[i]) stage.textContent=STAGES[i];
+          r.querySelector('.jr-bar i').style.width=r.querySelector('.jr-bar i').getAttribute('data-w')+'%';
+          countTo(r.querySelector('.jr-v'), +r.querySelector('.jr-v').getAttribute('data-v'), 900);
+        }, 300+i*560));
+      });
+      timers.push(setTimeout(function(){
+        stage.textContent='Complete';
+        document.getElementById('jr-out').innerHTML=
+          '<strong>You sent 1,000. About 128 never reached an inbox at all.</strong> '+
+          'Your platform then reported 430 opens and roughly half of those were privacy bots loading a pixel, not people reading anything. '+
+          'The honest figures are around 215 human opens and 22 clicks. '+
+          'Notice that the two rows doing the most damage &mdash; the mail that vanished and the opens that were fake &mdash; appear on almost no monthly report anyone receives.';
+        running=false; jrRun.disabled=false; jrRun.textContent='Send again';
+      }, 300+rows.length*560+600));
+    }
+    jrRun.addEventListener('click', run);
+  }
+
+  /* ══ COMPLIANCE CHECKER ══ */
+  var cmp=document.getElementById('cmp');
+  if (cmp) {
+    function scoreCmp(){
+      var total=0, req=0;
+      cmp.querySelectorAll('.cmp-row').forEach(function(r){
+        if (r.classList.contains('on')) total += +r.getAttribute('data-w');
+      });
+      var reqRows=Array.prototype.slice.call(cmp.querySelectorAll('.cmp-row')).slice(0,5);
+      reqRows.forEach(function(r){ if(r.classList.contains('on')) req++; });
+      var num=document.getElementById('cmp-num');
+      num.textContent=total;
+      num.className='num'+(total>=95?'':(total>=70?' w':' e'));
+      var v=document.getElementById('cmp-v'), msg;
+      if (req===5 && total===100) {
+        msg='<strong>Fully compliant, and cleaning regularly.</strong> You are in the minority. At this point deliverability is genuinely not your problem, which means the next gains come from flow architecture and segmentation rather than technical work. Keep watching complaint rate as volume grows.';
+      } else if (req===5) {
+        msg='<strong>Compliant on every requirement.</strong> That already puts you ahead of roughly 30% of senders. The only item outstanding is list hygiene, which is not required but is where bounces and complaints originate. Clean quarterly and the requirements largely look after themselves.';
+      } else if (req>=3) {
+        msg='<strong>'+(5-req)+' requirement'+(5-req===1?'':'s')+' outstanding.</strong> Partial compliance is still non-compliance to a mailbox provider. Senders failing at least one requirement are reported to see spam placement rise from a 5 to 10% baseline into the 22 to 34% range. Every item above is a configuration change rather than a project &mdash; most take an afternoon.';
+      } else {
+        msg='<strong>This is the state most struggling programs are in, and it is entirely fixable.</strong> Authentication is free, takes an afternoon, and authenticated domains are reported around 2.7 times more likely to reach the inbox. Nothing else you do to your email matters as much, and no subject line experiment comes close. Start at the top of this list and work down.';
+      }
+      v.innerHTML=msg;
+    }
+    cmp.querySelectorAll('.cmp-row').forEach(function(r){
+      r.setAttribute('role','button'); r.setAttribute('tabindex','0');
+      function toggle(){ r.classList.toggle('on'); scoreCmp(); }
+      r.addEventListener('click', toggle);
+      r.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); toggle(); } });
+    });
+    scoreCmp();
+  }
+
+  /* ══ FLOWS VS CAMPAIGNS ══ */
+  var fcs=['fc-list','fc-val','fc-camp','fc-flow'].map(function(i){return document.getElementById(i);});
+  if (fcs[0]) {
+    function runFc(){
+      var list=+fcs[0].value, val=+fcs[1].value, camp=+fcs[2].value, flows=+fcs[3].value;
+      document.getElementById('fc-list-out').textContent=list.toLocaleString('en-US');
+      document.getElementById('fc-val-out').textContent=money(val);
+      document.getElementById('fc-camp-out').textContent=camp;
+      document.getElementById('fc-flow-out').textContent=flows;
+
+      var cSends=list*camp, cClicks=cSends*0.022, cRev=cClicks*val;
+      // each flow reaches roughly 4% of the list per month, averaging 5 emails per sequence
+      var fSends=list*0.04*5*flows, fClicks=fSends*0.056, fRev=fClicks*val;
+
+      document.getElementById('fc-c-sends').textContent=Math.round(cSends).toLocaleString('en-US');
+      document.getElementById('fc-c-clicks').textContent=Math.round(cClicks).toLocaleString('en-US');
+      document.getElementById('fc-c-rev').textContent=money(cRev);
+      document.getElementById('fc-f-sends').textContent=Math.round(fSends).toLocaleString('en-US');
+      document.getElementById('fc-f-clicks').textContent=Math.round(fClicks).toLocaleString('en-US');
+      document.getElementById('fc-f-rev').textContent=money(fRev);
+
+      var v=document.getElementById('fc-v'), msg;
+      var totalSends=cSends+fSends, totalRev=cRev+fRev;
+      var flowShareSends=totalSends>0?(fSends/totalSends)*100:0;
+      var flowShareRev=totalRev>0?(fRev/totalRev)*100:0;
+
+      if (flows===0) {
+        msg='<strong>No flows running, which is the most common and most expensive situation on this page.</strong> '+
+            'Every campaign you send is work that stops earning the moment you stop sending. Adding a single welcome sequence would put '+
+            money(list*0.04*5*0.056*val)+' a month on the board for a build you do once. Start there.';
+      } else if (flows<=2) {
+        msg='<strong>Flows are '+flowShareSends.toFixed(1)+'% of your sends and '+flowShareRev.toFixed(0)+'% of your revenue.</strong> '+
+            'That ratio is the whole argument. Each additional sequence adds revenue without adding anything to your campaign calendar, '+
+            'and published ecommerce data puts well-built flow programs near 41% of email revenue from about 5% of sends. You have room.';
+      } else if (flows<=5) {
+        msg='<strong>A real flow program.</strong> At '+flowShareSends.toFixed(1)+'% of sends producing '+flowShareRev.toFixed(0)+
+            '% of revenue, you are approaching the ratio the benchmark data describes. From here the gains come from segmentation and from improving the flows you have rather than adding more.';
+      } else {
+        msg='<strong>Comprehensive coverage.</strong> With '+flows+' sequences running you have built the thing most programs never get to. '+
+            'The risk now is the opposite one &mdash; overlapping flows sending the same person several messages in a week. Suppression rules matter more than new sequences at this point.';
+      }
+      v.innerHTML=msg;
+      fcs.forEach(paint);
+    }
+    fcs.forEach(function(e){ e.addEventListener('input',runFc); });
+    runFc();
+  }
+})();
+</script>
+
+</body>
+</html>
