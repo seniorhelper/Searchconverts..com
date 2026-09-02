@@ -591,6 +591,22 @@
       text-transform: uppercase; color: var(--orange);
     }
 
+
+    /* ══ HERO LIGHT-TRAIL ART ══ */
+    .hero-art {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+      z-index: 1; pointer-events: none; opacity: .9;
+    }
+    .trail-set path { animation: trailFlow var(--t, 14s) linear infinite; }
+    @keyframes trailFlow { from { stroke-dashoffset: var(--d, 900px); } to { stroke-dashoffset: 0; } }
+    .hero-arrow { animation: arrowBreathe 7s ease-in-out infinite; transform-origin: 60% 60%; }
+    @keyframes arrowBreathe { 0%,100% { opacity: .82; } 50% { opacity: 1; } }
+    @media (max-width: 900px) { .hero-art { opacity: .62; } }
+    @media (prefers-reduced-motion: reduce) {
+      .trail-set path { animation: none; stroke-dashoffset: 0; }
+      .hero-arrow { animation: none; }
+    }
+
     /* ══ CAROUSEL ══ */
     .carousel-section {
       background: #fff; border-top: 1px solid var(--border);
@@ -1380,6 +1396,100 @@
   <div class="hero-grid-bg"></div>
   <div class="hero-blob1"></div>
   <div class="hero-blob2"></div>
+  <svg class="hero-art" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="g-o" x1="0" y1="1" x2="1" y2="0">
+        <stop offset="0%" stop-color="#f97316" stop-opacity="0"/>
+        <stop offset="28%" stop-color="#fb923c"/>
+        <stop offset="70%" stop-color="#fdba74"/>
+        <stop offset="100%" stop-color="#ffedd5" stop-opacity="0"/>
+      </linearGradient>
+      <linearGradient id="g-m" x1="0" y1="1" x2="1" y2="0">
+        <stop offset="0%" stop-color="#fb923c" stop-opacity="0"/>
+        <stop offset="40%" stop-color="#fef3c7"/>
+        <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+      </linearGradient>
+      <linearGradient id="g-c" x1="0" y1="1" x2="1" y2="0">
+        <stop offset="0%" stop-color="#22d3ee" stop-opacity="0"/>
+        <stop offset="34%" stop-color="#67e8f9"/>
+        <stop offset="72%" stop-color="#a5f3fc"/>
+        <stop offset="100%" stop-color="#cffafe" stop-opacity="0"/>
+      </linearGradient>
+      <linearGradient id="g-arrow" x1="0" y1="1" x2="1" y2="0">
+        <stop offset="0%" stop-color="#fb923c" stop-opacity="0"/>
+        <stop offset="45%" stop-color="#fdba74" stop-opacity=".85"/>
+        <stop offset="100%" stop-color="#a5f3fc"/>
+      </linearGradient>
+      <radialGradient id="glow-o" cx="14%" cy="88%" r="62%">
+        <stop offset="0%" stop-color="#f97316" stop-opacity=".34"/>
+        <stop offset="55%" stop-color="#ea580c" stop-opacity=".10"/>
+        <stop offset="100%" stop-color="#ea580c" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="glow-c" cx="84%" cy="24%" r="58%">
+        <stop offset="0%" stop-color="#22d3ee" stop-opacity=".24"/>
+        <stop offset="60%" stop-color="#0ea5e9" stop-opacity=".07"/>
+        <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
+      </radialGradient>
+      <filter id="soft" x="-25%" y="-25%" width="150%" height="150%">
+        <feGaussianBlur stdDeviation="7"/>
+      </filter>
+      <filter id="softer" x="-30%" y="-30%" width="160%" height="160%">
+        <feGaussianBlur stdDeviation="18"/>
+      </filter>
+    </defs>
+
+    <rect width="1440" height="900" fill="url(#glow-o)"/>
+    <rect width="1440" height="900" fill="url(#glow-c)"/>
+
+    <g filter="url(#softer)" opacity=".55" class="trail-set">
+        <path d="M-140 930 C 180 890, 760 620, 1560 470" stroke="url(#g-o)" stroke-width="1.34" fill="none" stroke-linecap="round" opacity="0.1" stroke-dasharray="300 600" style="--d:900px;--t:9.0s"/>
+        <path d="M-140 899 C 195 854, 768 592, 1560 445" stroke="url(#g-o)" stroke-width="1.74" fill="none" stroke-linecap="round" opacity="0.14" stroke-dasharray="353 706" style="--d:1059px;--t:9.6s"/>
+        <path d="M-140 869 C 211 818, 776 565, 1560 419" stroke="url(#g-o)" stroke-width="2.14" fill="none" stroke-linecap="round" opacity="0.18" stroke-dasharray="406 812" style="--d:1218px;--t:10.3s"/>
+        <path d="M-140 838 C 226 782, 785 537, 1560 394" stroke="url(#g-o)" stroke-width="2.54" fill="none" stroke-linecap="round" opacity="0.22" stroke-dasharray="459 918" style="--d:1377px;--t:10.9s"/>
+        <path d="M-140 808 C 241 746, 793 509, 1560 369" stroke="url(#g-o)" stroke-width="2.94" fill="none" stroke-linecap="round" opacity="0.26" stroke-dasharray="512 1024" style="--d:1536px;--t:11.6s"/>
+        <path d="M-140 777 C 256 711, 801 482, 1560 344" stroke="url(#g-o)" stroke-width="3.34" fill="none" stroke-linecap="round" opacity="0.3" stroke-dasharray="565 1130" style="--d:1695px;--t:12.2s"/>
+        <path d="M-140 746 C 272 675, 809 454, 1560 318" stroke="url(#g-o)" stroke-width="3.74" fill="none" stroke-linecap="round" opacity="0.34" stroke-dasharray="618 1236" style="--d:1854px;--t:12.9s"/>
+        <path d="M-140 716 C 287 639, 818 426, 1560 293" stroke="url(#g-o)" stroke-width="4.14" fill="none" stroke-linecap="round" opacity="0.38" stroke-dasharray="671 1342" style="--d:2013px;--t:13.5s"/>
+        <path d="M-140 685 C 302 603, 826 399, 1560 268" stroke="url(#g-m)" stroke-width="4.26" fill="none" stroke-linecap="round" opacity="0.42" stroke-dasharray="724 1448" style="--d:2172px;--t:14.2s"/>
+        <path d="M-140 655 C 318 567, 834 371, 1560 242" stroke="url(#g-m)" stroke-width="3.86" fill="none" stroke-linecap="round" opacity="0.42" stroke-dasharray="776 1552" style="--d:2328px;--t:14.8s"/>
+        <path d="M-140 624 C 333 531, 842 344, 1560 217" stroke="url(#g-m)" stroke-width="3.46" fill="none" stroke-linecap="round" opacity="0.38" stroke-dasharray="829 1658" style="--d:2487px;--t:15.5s"/>
+        <path d="M-140 594 C 348 495, 851 316, 1560 192" stroke="url(#g-c)" stroke-width="3.06" fill="none" stroke-linecap="round" opacity="0.34" stroke-dasharray="882 1764" style="--d:2646px;--t:16.1s"/>
+        <path d="M-140 563 C 364 459, 859 288, 1560 166" stroke="url(#g-c)" stroke-width="2.66" fill="none" stroke-linecap="round" opacity="0.3" stroke-dasharray="935 1870" style="--d:2805px;--t:16.8s"/>
+        <path d="M-140 532 C 379 424, 867 261, 1560 141" stroke="url(#g-c)" stroke-width="2.26" fill="none" stroke-linecap="round" opacity="0.26" stroke-dasharray="988 1976" style="--d:2964px;--t:17.4s"/>
+        <path d="M-140 502 C 394 388, 875 233, 1560 116" stroke="url(#g-c)" stroke-width="1.86" fill="none" stroke-linecap="round" opacity="0.22" stroke-dasharray="1041 2082" style="--d:3123px;--t:18.1s"/>
+        <path d="M-140 471 C 409 352, 884 205, 1560 91" stroke="url(#g-c)" stroke-width="1.46" fill="none" stroke-linecap="round" opacity="0.18" stroke-dasharray="1094 2188" style="--d:3282px;--t:18.7s"/>
+        <path d="M-140 441 C 425 316, 892 178, 1560 65" stroke="url(#g-c)" stroke-width="1.06" fill="none" stroke-linecap="round" opacity="0.14" stroke-dasharray="1147 2294" style="--d:3441px;--t:19.4s"/>
+        <path d="M-140 410 C 440 280, 900 150, 1560 40" stroke="url(#g-c)" stroke-width="0.7" fill="none" stroke-linecap="round" opacity="0.1" stroke-dasharray="1200 2400" style="--d:3600px;--t:20.0s"/>
+    </g>
+    <g filter="url(#soft)" class="trail-set">
+        <path d="M-140 930 C 180 890, 760 620, 1560 470" stroke="url(#g-o)" stroke-width="1.34" fill="none" stroke-linecap="round" opacity="0.1" stroke-dasharray="300 600" style="--d:900px;--t:9.0s"/>
+        <path d="M-140 899 C 195 854, 768 592, 1560 445" stroke="url(#g-o)" stroke-width="1.74" fill="none" stroke-linecap="round" opacity="0.14" stroke-dasharray="353 706" style="--d:1059px;--t:9.6s"/>
+        <path d="M-140 869 C 211 818, 776 565, 1560 419" stroke="url(#g-o)" stroke-width="2.14" fill="none" stroke-linecap="round" opacity="0.18" stroke-dasharray="406 812" style="--d:1218px;--t:10.3s"/>
+        <path d="M-140 838 C 226 782, 785 537, 1560 394" stroke="url(#g-o)" stroke-width="2.54" fill="none" stroke-linecap="round" opacity="0.22" stroke-dasharray="459 918" style="--d:1377px;--t:10.9s"/>
+        <path d="M-140 808 C 241 746, 793 509, 1560 369" stroke="url(#g-o)" stroke-width="2.94" fill="none" stroke-linecap="round" opacity="0.26" stroke-dasharray="512 1024" style="--d:1536px;--t:11.6s"/>
+        <path d="M-140 777 C 256 711, 801 482, 1560 344" stroke="url(#g-o)" stroke-width="3.34" fill="none" stroke-linecap="round" opacity="0.3" stroke-dasharray="565 1130" style="--d:1695px;--t:12.2s"/>
+        <path d="M-140 746 C 272 675, 809 454, 1560 318" stroke="url(#g-o)" stroke-width="3.74" fill="none" stroke-linecap="round" opacity="0.34" stroke-dasharray="618 1236" style="--d:1854px;--t:12.9s"/>
+        <path d="M-140 716 C 287 639, 818 426, 1560 293" stroke="url(#g-o)" stroke-width="4.14" fill="none" stroke-linecap="round" opacity="0.38" stroke-dasharray="671 1342" style="--d:2013px;--t:13.5s"/>
+        <path d="M-140 685 C 302 603, 826 399, 1560 268" stroke="url(#g-m)" stroke-width="4.26" fill="none" stroke-linecap="round" opacity="0.42" stroke-dasharray="724 1448" style="--d:2172px;--t:14.2s"/>
+        <path d="M-140 655 C 318 567, 834 371, 1560 242" stroke="url(#g-m)" stroke-width="3.86" fill="none" stroke-linecap="round" opacity="0.42" stroke-dasharray="776 1552" style="--d:2328px;--t:14.8s"/>
+        <path d="M-140 624 C 333 531, 842 344, 1560 217" stroke="url(#g-m)" stroke-width="3.46" fill="none" stroke-linecap="round" opacity="0.38" stroke-dasharray="829 1658" style="--d:2487px;--t:15.5s"/>
+        <path d="M-140 594 C 348 495, 851 316, 1560 192" stroke="url(#g-c)" stroke-width="3.06" fill="none" stroke-linecap="round" opacity="0.34" stroke-dasharray="882 1764" style="--d:2646px;--t:16.1s"/>
+        <path d="M-140 563 C 364 459, 859 288, 1560 166" stroke="url(#g-c)" stroke-width="2.66" fill="none" stroke-linecap="round" opacity="0.3" stroke-dasharray="935 1870" style="--d:2805px;--t:16.8s"/>
+        <path d="M-140 532 C 379 424, 867 261, 1560 141" stroke="url(#g-c)" stroke-width="2.26" fill="none" stroke-linecap="round" opacity="0.26" stroke-dasharray="988 1976" style="--d:2964px;--t:17.4s"/>
+        <path d="M-140 502 C 394 388, 875 233, 1560 116" stroke="url(#g-c)" stroke-width="1.86" fill="none" stroke-linecap="round" opacity="0.22" stroke-dasharray="1041 2082" style="--d:3123px;--t:18.1s"/>
+        <path d="M-140 471 C 409 352, 884 205, 1560 91" stroke="url(#g-c)" stroke-width="1.46" fill="none" stroke-linecap="round" opacity="0.18" stroke-dasharray="1094 2188" style="--d:3282px;--t:18.7s"/>
+        <path d="M-140 441 C 425 316, 892 178, 1560 65" stroke="url(#g-c)" stroke-width="1.06" fill="none" stroke-linecap="round" opacity="0.14" stroke-dasharray="1147 2294" style="--d:3441px;--t:19.4s"/>
+        <path d="M-140 410 C 440 280, 900 150, 1560 40" stroke="url(#g-c)" stroke-width="0.7" fill="none" stroke-linecap="round" opacity="0.1" stroke-dasharray="1200 2400" style="--d:3600px;--t:20.0s"/>
+    </g>
+
+    <g class="hero-arrow">
+      <path d="M-120 880 C 300 800, 720 600, 1290 214" stroke="url(#g-arrow)" stroke-width="7" fill="none" stroke-linecap="round" filter="url(#soft)" opacity=".5"/>
+      <path d="M-120 880 C 300 800, 720 600, 1290 214" stroke="url(#g-arrow)" stroke-width="2.6" fill="none" stroke-linecap="round" opacity=".85"/>
+      <path d="M1214 232 L1300 206 L1274 292" stroke="#a5f3fc" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>
+      <path d="M1214 232 L1300 206 L1274 292" stroke="#a5f3fc" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".35" filter="url(#soft)"/>
+    </g>
+  </svg>
+
   <div class="hero-inner">
     <div class="hero-left">
       <h1 class="hero-h1">
@@ -1632,10 +1742,10 @@
           We build <span>growth systems.</span>
         </h2>
         <p>
-          Most agencies sell one service and report on one metric. A conversion rate optimization agency that only touches your landing page is solving a quarter of the problem. <strong>Search Converts operates every channel that touches a buyer</strong> &mdash; paid search, programmatic, connected TV, social, video, email, direct mail, radio &mdash; and connects them to a website engineered to convert what they deliver.
+          Most agencies sell one service and report on one metric. A <a href="/conversion-optimization/">conversion rate optimization</a> agency that only touches your landing page is solving a quarter of the problem. <strong>Search Converts operates every channel that touches a buyer</strong> &mdash; paid search, programmatic, connected TV, social, video, email, direct mail, radio &mdash; and connects them to a website engineered to convert what they deliver.
         </p>
         <p>
-          That is the difference between a vendor and a growth partner. When the same team owns the ad, the landing page, the form, the follow-up sequence and the sales conversation, nobody gets to blame the other guy for the drop-off. <strong>The whole chain is measured, and the whole chain is ours.</strong>
+          That is the difference between a vendor and a growth partner. When the same team owns the <a href="/ppc-management/">paid media</a>, the landing page, the form, the follow-up sequence and the sales conversation, nobody gets to blame the other guy for the drop-off. <strong>The whole chain is measured, and the whole chain is ours.</strong>
         </p>
         <p>
           Search Converts operates as a performance marketing agency and growth marketing agency across the United States and Canada. Search and AI-search optimization runs through <a href="https://eyetoad.com" rel="noopener">Eye To Ad Media</a>, and regional website work through <a href="https://denver-webdesign.com" rel="noopener">Denver Web Design</a>. Specialist teams, one system.
@@ -2027,7 +2137,7 @@
     </div>
     <div class="reveal" style="max-width:760px;">
       <p style="font-size:17px;color:var(--muted);line-height:1.8;">
-        <strong style="color:var(--navy);">AI is leverage, not a strategy.</strong> It lets a small senior team produce the volume of a much larger one without handing your account to a junior. What it does not do is decide what to say, who to say it to, or whether the offer is any good. That part is still the job, and it is still done by people who have been doing it since 2012.
+        <strong style="color:var(--navy);">AI is leverage, not a strategy.</strong> It lets a small senior team produce the volume of a much larger one without handing your account to a junior. What it does not do is decide what to say, who to say it to, whether your <a href="/google-ads-management/">Google Ads account</a> is structured properly, or whether the offer is any good. That part is still the job, and it is still done by people who have been doing it since 2012.
       </p>
     </div>
   </div>
@@ -2062,7 +2172,7 @@
 
       <h3 class="whatis-sub">CRO, SEO and paid media are not competitors</h3>
       <p>
-        Search optimization and advertising decide how many people arrive. Conversion optimization decides what share of them become customers. Improving the conversion rate raises the return on every other channel simultaneously, which is why we start there and why it makes the paid media that follows cheaper per acquisition. It is also why performance marketing agencies that ignore the landing page tend to plateau: at some point you cannot buy your way past a page that does not convert. <a href="/conversion-optimization/" style="color:var(--orange-bright);font-weight:700;text-decoration:none;">Read the full guide to conversion optimization &rarr;</a>
+        Search optimization and <a href="/ppc-management/">paid advertising</a> decide how many people arrive. Conversion optimization decides what share of them become customers. Improving the conversion rate raises the return on every other channel simultaneously, which is why we start there and why it makes the paid media that follows cheaper per acquisition. It is also why performance marketing agencies that ignore the landing page tend to plateau: at some point you cannot buy your way past a page that does not convert. <a href="/conversion-optimization/" style="color:var(--orange-bright);font-weight:700;text-decoration:none;">Read the full guide to conversion optimization &rarr;</a>
       </p>
     </div>
   </div>
