@@ -1,0 +1,1889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>53 Conversion Optimization Ideas, Sorted by Whether You Can Test Them | Search Converts</title>
+  <meta name="description" content="A filterable library of 53 conversion optimization ideas, each tagged by funnel stage, effort and evidence. Plus a calculator that tells you whether your traffic can support an A/B test at all, because most sites cannot.">
+  <link rel="canonical" href="https://searchconverts.com/conversion-optimization-ideas/">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="author" content="Search Converts">
+  <meta name="geo.region" content="US-CO">
+  <meta name="geo.placename" content="Denver">
+
+  <meta property="og:title" content="53 Conversion Optimization Ideas | Search Converts">
+  <meta property="og:description" content="Most CRO lists assume you can test. Roughly 91% of sites cannot. Here is what to do instead.">
+  <meta property="og:url" content="https://searchconverts.com/conversion-optimization-ideas/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Search Converts">
+  <meta property="og:image" content="https://searchconverts.com/images/Generative-engine-optimization-experts.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="53 Conversion Optimization Ideas | Search Converts">
+  <meta name="twitter:description" content="A filterable idea library plus a test feasibility calculator.">
+
+  <link rel="icon" type="image/png" href="/images/search-converts-favicon.png">
+  <link rel="apple-touch-icon" href="/images/search-converts-favicon.png">
+  <link rel="shortcut icon" type="image/png" href="/images/search-converts-favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700;800&family=Commissioner:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    img { max-width: 100%; }
+    a:focus-visible, button:focus-visible, input:focus-visible,
+    select:focus-visible, textarea:focus-visible { outline: 3px solid #046a38; outline-offset: 3px; }
+
+    :root {
+      --orange: #f97316;
+      --orange-deep: #ea580c;
+      --border: #e2e8f0;
+
+      --ink: #10161a;
+      --ink-2: #38434a;
+      --grey: #5f6b72;
+      --grey-2: #93a0a6;
+      --rule: #dfe6e1;
+      --rule-2: #c3cec6;
+      --paper: #ffffff;
+      --wash: #f4f7f2;
+      --wash-2: #e6ede7;
+      --em: #046a38;
+      --em-deep: #023d20;
+      --em-dk: #024a27;
+      --em-lt: #4f9b72;
+      --lime: #c9db2e;
+      --alert: #c4432b;
+      --amber: #a8690b;
+    }
+
+    body {
+      font-family: 'Commissioner', system-ui, sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      font-size: 17.5px;
+      line-height: 1.74;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, .disp { font-family: 'Lexend', system-ui, sans-serif; font-weight: 700; }
+
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+    .narrow { max-width: 760px; }
+    .band { padding: 84px 0; }
+    .band-wash { background: var(--wash); }
+    .band-dark { background: var(--ink); color: #e5ebe7; }
+    .rule-t { border-top: 1px solid var(--rule); }
+    @media (max-width: 640px) { .band { padding: 54px 0; } body { font-size: 17px; } }
+
+    .h2 { font-size: clamp(31px, 4.6vw, 50px); line-height: 1.06; letter-spacing: -0.035em; margin-bottom: 18px; }
+    .band-dark .h2 { color: #fff; }
+    .h3 { font-size: 22px; letter-spacing: -0.02em; line-height: 1.28; margin-bottom: 10px; }
+    .kicker {
+      display: inline-block; font-family: 'Lexend', sans-serif; font-size: 12px; font-weight: 700;
+      letter-spacing: 0.14em; text-transform: uppercase; color: var(--em);
+      margin-bottom: 15px;
+    }
+    .band-dark .kicker { color: #7fc9a0; }
+    .lede { font-size: 20px; line-height: 1.62; color: var(--ink-2); max-width: 62ch; }
+    .band-dark .lede { color: #a3b0aa; }
+    p { max-width: 70ch; }
+    .prose p + p { margin-top: 17px; }
+    .prose p { color: var(--ink-2); }
+    .band-dark .prose p { color: #a3b0aa; }
+    .prose a { color: var(--em-dk); text-decoration: underline; text-underline-offset: 3px; font-weight: 600; }
+    .prose a:hover { color: var(--alert); }
+    .band-dark .prose a { color: #7fc9a0; }
+
+    /* ══ HERO ══ */
+    .hero { position: relative; overflow: hidden; background: var(--wash); border-bottom: 1px solid var(--rule); padding: 58px 0 70px; }
+    .hero-in { position: relative; z-index: 1; }
+    .hero h1 { font-size: clamp(35px, 5.2vw, 64px); line-height: 1.03; letter-spacing: -0.04em; max-width: 18ch; margin-bottom: 22px; }
+    .hero h1 span { color: var(--em); }
+    .hero-sub { font-size: 20px; line-height: 1.62; color: var(--ink-2); max-width: 58ch; margin-bottom: 28px; }
+    .hero-cta { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; margin-bottom: 38px; }
+    .hero-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--rule-2); border: 1px solid var(--rule-2); }
+    @media (max-width: 820px) { .hero-stats { grid-template-columns: 1fr 1fr; } }
+    .hs { background: var(--wash); padding: 18px; }
+    .hs b { font-family: 'Lexend', sans-serif; display: block; font-size: 32px; line-height: 1.06; letter-spacing: -0.04em; color: var(--em); }
+    .hs span { display: block; font-size: 14px; color: var(--grey); line-height: 1.42; margin-top: 4px; }
+
+    /* ══ CALCULATOR ══ */
+    .tool { border: 2px solid var(--ink); background: var(--paper); }
+    .tool-head { padding: 24px 26px 20px; border-bottom: 1px solid var(--rule); }
+    .tool-head h2 { font-size: clamp(22px, 3vw, 32px); line-height: 1.14; letter-spacing: -0.03em; margin-bottom: 6px; }
+    .tool-head p { font-size: 16px; color: var(--grey); line-height: 1.55; margin: 0; }
+    .tool-body { display: grid; grid-template-columns: 340px 1fr; }
+    @media (max-width: 980px) { .tool-body { grid-template-columns: 1fr; } }
+    .tool-in { padding: 22px 26px; border-right: 1px solid var(--rule); }
+    @media (max-width: 980px) { .tool-in { border-right: none; border-bottom: 1px solid var(--rule); } }
+    .tool-out { padding: 24px 26px; }
+
+    .cf { margin-bottom: 17px; }
+    .cf-top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 6px; }
+    .cf-top label { font-size: 14.5px; font-weight: 500; color: var(--ink-2); }
+    .cf-val { font-family: 'Lexend', sans-serif; font-size: 19px; font-weight: 700; line-height: 1; color: var(--em); }
+    input[type="range"].sl {
+      -webkit-appearance: none; appearance: none; width: 100%; height: 6px; outline: none; cursor: pointer;
+      background: linear-gradient(90deg, var(--em) 0%, var(--em) 50%, var(--wash-2) 50%, var(--wash-2) 100%);
+    }
+    input[type="range"].sl::-webkit-slider-thumb {
+      -webkit-appearance: none; appearance: none; width: 21px; height: 21px;
+      background: var(--paper); border: 4px solid var(--em); border-radius: 50%;
+      box-shadow: 0 2px 8px rgba(16,22,26,0.24); cursor: grab;
+    }
+    input[type="range"].sl::-moz-range-thumb {
+      width: 19px; height: 19px; background: var(--paper); border: 4px solid var(--em);
+      border-radius: 50%; box-shadow: 0 2px 8px rgba(16,22,26,0.24); cursor: grab;
+    }
+    .cf-hint { font-size: 13px; color: var(--grey-2); line-height: 1.45; margin-top: 5px; }
+
+    .tw { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 18px; }
+    @media (max-width: 700px) { .tw { grid-template-columns: 1fr; } }
+    .tn { border-top: 3px solid var(--rule-2); padding-top: 12px; }
+    .tn.hot { border-top-color: var(--alert); }
+    .tn.good { border-top-color: var(--em); }
+    .tn span { display: block; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--grey); }
+    .tn b { font-family: 'Lexend', sans-serif; display: block; font-size: 26px; line-height: 1.1; margin: 3px 0 4px; color: var(--ink); }
+    .tn i { font-style: normal; font-size: 14px; color: var(--ink-2); line-height: 1.45; display: block; }
+    .tool-verdict { background: var(--ink); color: #e5ebe7; padding: 20px 22px; }
+    .tool-verdict h3 { font-size: 20px; color: #fff; margin-bottom: 7px; }
+    .tool-verdict p { font-size: 16.5px; line-height: 1.6; color: #a3b0aa; margin: 0; max-width: none; }
+
+    /* ══ IDEA LIBRARY ══ */
+    .lib { border: 2px solid var(--ink); background: var(--paper); margin-top: 34px; }
+    .lib-bar { padding: 18px 22px; border-bottom: 1px solid var(--rule); background: var(--wash); }
+    .fgroup { margin-bottom: 12px; }
+    .fgroup:last-child { margin-bottom: 0; }
+    .fgroup > span {
+      display: block; font-family: 'Lexend', sans-serif; font-size: 11px; font-weight: 700;
+      letter-spacing: .12em; text-transform: uppercase; color: var(--grey); margin-bottom: 7px;
+    }
+    .chips { display: flex; flex-wrap: wrap; gap: 7px; }
+    .chip {
+      background: var(--paper); border: 1px solid var(--rule-2); padding: 6px 13px; cursor: pointer;
+      font-family: 'Commissioner', sans-serif; font-size: 13.5px; font-weight: 600; color: var(--ink-2);
+      transition: all .16s; border-radius: 100px;
+    }
+    .chip:hover { border-color: var(--em); color: var(--em-dk); }
+    .chip[aria-pressed="true"] { background: var(--em); border-color: var(--em); color: #fff; }
+    .lib-count { padding: 12px 22px; font-size: 14px; color: var(--grey); border-bottom: 1px solid var(--rule); font-weight: 600; }
+    .lib-count b { color: var(--ink); }
+    .idea-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--rule); }
+    @media (max-width: 780px) { .idea-grid { grid-template-columns: 1fr; } }
+    .idea {
+      background: var(--paper); padding: 20px 22px;
+      animation: ideaIn .3s ease;
+    }
+    @keyframes ideaIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+    .idea-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 9px; }
+    .tag {
+      font-family: 'Lexend', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: .08em;
+      text-transform: uppercase; padding: 3px 8px; color: #fff;
+    }
+    .t-fix { background: var(--em); }
+    .t-test { background: var(--ink); }
+    .t-stage { background: var(--wash-2); color: var(--ink-2); }
+    .t-low { background: var(--em-lt); }
+    .t-med { background: var(--amber); }
+    .t-high { background: var(--alert); }
+    .idea h3 { font-size: 17.5px; line-height: 1.32; margin-bottom: 6px; }
+    .idea p { font-size: 15px; color: var(--ink-2); line-height: 1.56; margin: 0; }
+    .idea .ev { display: block; margin-top: 8px; font-size: 13.5px; color: var(--grey); line-height: 1.5; }
+    .idea .ev b { color: var(--em-dk); font-weight: 700; }
+    .lib-empty { padding: 40px 22px; text-align: center; color: var(--grey); font-size: 16px; }
+
+    /* ══ TABLE / SERVICES / LINKS ══ */
+    .tbl-wrap { overflow-x: auto; margin-top: 30px; border-top: 2px solid var(--ink); }
+    table.bench { width: 100%; border-collapse: collapse; min-width: 620px; }
+    table.bench th, table.bench td { text-align: left; padding: 14px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+    table.bench th { font-size: 12px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; color: var(--grey); }
+    table.bench td { font-size: 15.5px; color: var(--ink-2); }
+    table.bench td:first-child { font-weight: 600; color: var(--ink); }
+    table.bench td.num { font-family: 'Lexend', sans-serif; font-size: 18px; font-weight: 700; color: var(--em); }
+    table.bench tr:hover td { background: var(--wash); }
+    .band-dark table.bench th { color: #8b9891; }
+    .band-dark table.bench td { color: #b4c0ba; border-color: rgba(255,255,255,0.14); }
+    .band-dark table.bench td:first-child { color: #fff; }
+    .band-dark table.bench td.num { color: #7fc9a0; }
+    .band-dark table.bench tr:hover td { background: rgba(255,255,255,0.05); }
+    .band-dark .tbl-wrap { border-top-color: rgba(255,255,255,0.4); }
+
+    .svc { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--rule); border: 1px solid var(--rule); margin-top: 32px; }
+    @media (max-width: 880px) { .svc { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 540px) { .svc { grid-template-columns: 1fr; } }
+    .svc-cell { background: var(--paper); padding: 24px 22px; }
+    .svc-cell h3 { font-size: 19px; margin-bottom: 7px; }
+    .svc-cell p { font-size: 15.5px; color: var(--ink-2); line-height: 1.55; }
+    .svc-cell a { color: var(--em-dk); text-decoration: underline; text-underline-offset: 3px; font-weight: 600; }
+
+    .links-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 32px; }
+    @media (max-width: 860px) { .links-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 520px) { .links-grid { grid-template-columns: 1fr; } }
+    .link-card { display: block; text-decoration: none; padding: 18px; border: 1px solid var(--rule); transition: border-color .2s, background .2s; }
+    .link-card:hover { border-color: var(--em); background: var(--wash); }
+    .link-card b { font-family: 'Lexend', sans-serif; display: block; font-size: 17px; font-weight: 700; color: var(--ink); margin-bottom: 3px; letter-spacing: -0.02em; }
+    .link-card span { font-size: 15px; color: var(--grey); line-height: 1.45; }
+
+    /* ══ FAQ ══ */
+    .faq-list { max-width: 840px; margin-top: 30px; border-top: 3px solid var(--ink); }
+    .faq-item { border-bottom: 1px solid var(--rule); }
+    .faq-question {
+      width: 100%; background: none; border: none; cursor: pointer;
+      font-family: 'Lexend', sans-serif; font-size: 19px; font-weight: 600;
+      color: var(--ink); text-align: left; padding: 19px 44px 19px 0;
+      position: relative; line-height: 1.34; letter-spacing: -0.025em;
+    }
+    .faq-question:hover { color: var(--em); }
+    .faq-icon { position: absolute; right: 6px; top: 50%; transform: translateY(-50%); width: 15px; height: 15px; transition: transform .3s; }
+    .faq-icon::before, .faq-icon::after { content: ''; position: absolute; background: var(--em); }
+    .faq-icon::before { left: 0; top: 6.5px; width: 15px; height: 2.5px; }
+    .faq-icon::after { left: 6.5px; top: 0; width: 2.5px; height: 15px; }
+    .faq-item.open .faq-icon { transform: translateY(-50%) rotate(135deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+    .faq-item.open .faq-answer { max-height: 1200px; }
+    .faq-answer p { font-size: 17px; line-height: 1.74; color: var(--ink-2); padding-bottom: 22px; }
+    .faq-answer a { color: var(--em-dk); font-weight: 600; }
+
+    .src { font-size: 14px; color: var(--grey-2); line-height: 1.62; margin-top: 20px; max-width: 84ch; }
+    .band-dark .src { color: #7f8c86; }
+    .note-box { margin-top: 26px; border-left: 4px solid var(--lime); background: var(--wash); padding: 18px 20px; font-size: 15.5px; line-height: 1.6; color: var(--ink-2); max-width: 80ch; }
+    .note-box b { color: var(--ink); }
+    .band-dark .note-box { background: rgba(255,255,255,0.06); color: #b4c0ba; }
+    .band-dark .note-box b { color: #fff; }
+
+    /* ══ BUTTONS ══ */
+    .btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-family: 'Lexend', sans-serif; font-size: 16px; font-weight: 600;
+      padding: 15px 28px; text-decoration: none;
+      background: var(--orange); color: #fff; border: none; cursor: pointer;
+      transition: background .18s, transform .18s;
+    }
+    .btn:hover { background: var(--orange-deep); transform: translateY(-1px); }
+    .btn-ghost { background: transparent; color: var(--em); border: 2px solid var(--em); }
+    .btn-ghost:hover { background: var(--em); color: #fff; transform: none; }
+    .btn-row { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
+
+    /* ══ FORM ══ */
+    .form-band { background: var(--ink); padding: 84px 0; }
+    .form-shell { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+    .form-card { background: var(--paper); border-top: 5px solid var(--em); }
+    .form-head { padding: 32px 36px 26px; border-bottom: 1px solid var(--rule); }
+    .form-head h2 { font-size: clamp(26px, 3.8vw, 38px); line-height: 1.12; letter-spacing: -0.04em; margin-bottom: 10px; }
+    .form-head p { font-size: 17px; color: var(--ink-2); line-height: 1.6; }
+    .form-callout {
+      display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+      margin-top: 18px; padding: 14px 18px; background: var(--wash); border-left: 4px solid var(--lime);
+    }
+    .form-callout p { font-size: 15.5px; margin: 0; color: var(--ink-2); }
+    .form-callout a { font-family: 'Lexend', sans-serif; font-size: 22px; font-weight: 700; color: var(--em-dk); text-decoration: none; white-space: nowrap; }
+    .form-callout a:hover { color: var(--alert); }
+    .form-body { padding: 28px 36px 34px; }
+    @media (max-width: 600px) { .form-head, .form-body { padding-left: 22px; padding-right: 22px; } }
+    .sc-form-group { margin-bottom: 16px; }
+    .sc-form-group label { display: block; font-size: 13px; font-weight: 700; color: var(--ink-2); margin-bottom: 6px; }
+    .sc-form-group input, .sc-form-group select, .sc-form-group textarea {
+      width: 100%; background: var(--wash); border: 1px solid var(--rule-2);
+      padding: 12px 14px; font-size: 16px; font-family: 'Commissioner', sans-serif; color: var(--ink);
+      transition: border-color .18s, box-shadow .18s;
+    }
+    .sc-form-group textarea { min-height: 100px; resize: vertical; }
+    .sc-form-group input:focus, .sc-form-group select:focus, .sc-form-group textarea:focus {
+      outline: none; border-color: var(--em); box-shadow: 0 0 0 3px rgba(4,106,56,0.14);
+    }
+    .sc-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    @media (max-width: 560px) { .sc-form-row { grid-template-columns: 1fr; } }
+    .sc-submit-btn {
+      width: 100%; padding: 16px; background: var(--orange); color: #fff;
+      font-family: 'Lexend', sans-serif; font-size: 16px; font-weight: 600;
+      border: none; cursor: pointer; margin-top: 8px; transition: background .18s;
+    }
+    .sc-submit-btn:hover { background: var(--orange-deep); }
+    .sc-submit-btn:disabled { opacity: .65; cursor: not-allowed; }
+    #ci-form-msg { font-size: 14.5px; margin-top: 12px; text-align: center; font-weight: 700; min-height: 20px; line-height: 1.5; }
+    .form-privacy { font-size: 13px; color: var(--grey); text-align: center; margin-top: 12px; line-height: 1.5; }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .01ms !important; animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important; scroll-behavior: auto !important;
+      }
+    }
+
+    /* ══════ SHARED SITE CHROME ══════ */
+    .ann-bar {
+      position: relative; z-index: 1;
+      background: linear-gradient(90deg, var(--orange-deep), var(--orange), #fb923c);
+      color: #fff; text-align: center; padding: 10px 20px;
+      font-family: 'Barlow Condensed', sans-serif; font-size: 15px; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+    }
+    .ann-bar a { color: #fff; text-decoration: underline; }
+    .site-header {
+      position: sticky; top: 0; z-index: 1000; background: #fff;
+      border-bottom: 3px solid var(--orange); box-shadow: 0 2px 24px rgba(0,0,0,0.10);
+    }
+    .header-inner {
+      max-width: 1460px; margin: 0 auto; padding: 0 22px;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 18px; height: 110px; flex-wrap: nowrap;
+    }
+    .header-logo { position: relative; z-index: 30; display: block; line-height: 0; }
+    .header-logo img {
+      height: 200px; width: auto; max-width: 250px; object-fit: contain; display: block;
+      filter: drop-shadow(0 5px 10px rgba(0,0,0,0.30)) drop-shadow(0 1px 2px rgba(0,0,0,0.18));
+    }
+    .header-nav { display: flex; align-items: center; gap: 15px; list-style: none; flex-wrap: nowrap; }
+    .header-nav > li { position: relative; }
+    .header-nav a, .nav-toggle {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 14px; font-weight: 700;
+      letter-spacing: 0.04em; text-transform: uppercase; color: #0d1220;
+      text-decoration: none; white-space: nowrap; transition: color .2s;
+      background: none; border: none; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;
+    }
+    .header-nav a:hover, .nav-toggle:hover { color: var(--orange); }
+    .nav-toggle .caret {
+      width: 0; height: 0; border-left: 4px solid transparent;
+      border-right: 4px solid transparent; border-top: 5px solid currentColor; transition: transform .25s;
+    }
+    .header-nav li.open .nav-toggle .caret { transform: rotate(180deg); }
+    .header-nav .nav-cta {
+      background: var(--orange); color: #fff !important; padding: 10px 15px;
+      border-radius: 4px; transition: background .2s, transform .2s !important;
+    }
+    .header-nav .nav-cta:hover { background: var(--orange-deep); transform: translateY(-1px); }
+    .nav-drop {
+      position: absolute; top: calc(100% + 14px); left: 50%;
+      transform: translateX(-50%) translateY(-8px); background: #fff;
+      border: 1.5px solid var(--border); border-top: 4px solid var(--orange);
+      border-radius: 10px; box-shadow: 0 28px 70px rgba(13,18,32,0.22);
+      padding: 24px 26px; opacity: 0; visibility: hidden;
+      transition: opacity .22s ease, transform .22s ease, visibility .22s; z-index: 1200;
+    }
+    .header-nav li.open .nav-drop { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
+    .nav-drop-cols { display: flex; gap: 34px; }
+    .nav-drop-col { min-width: 176px; }
+    .nav-drop-title {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 800;
+      letter-spacing: 0.14em; text-transform: uppercase; color: #b45309;
+      margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid var(--border);
+    }
+    .nav-drop a {
+      display: block; font-family: 'Commissioner', sans-serif; font-size: 14.5px; font-weight: 400;
+      text-transform: none; letter-spacing: 0; color: #334155; padding: 6px 0; white-space: nowrap;
+    }
+    .nav-drop a:hover { color: var(--orange); }
+    .nav-drop-wide { min-width: 640px; }
+    .header-call { display: flex; align-items: center; gap: 10px; white-space: nowrap; }
+    .header-phone {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 31px; font-weight: 900;
+      color: var(--orange); text-decoration: none; letter-spacing: 0.01em;
+      line-height: 1; transition: color .2s, transform .2s;
+    }
+    .header-phone:hover { color: var(--orange-deep); transform: translateY(-1px); }
+    .wa-link {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 40px; height: 40px; border-radius: 50%; background: #25D366; flex-shrink: 0;
+      transition: transform .2s, box-shadow .2s; box-shadow: 0 4px 14px rgba(37,211,102,0.35);
+    }
+    .wa-link:hover { transform: translateY(-2px) scale(1.05); box-shadow: 0 8px 22px rgba(37,211,102,0.5); }
+    .wa-link svg { width: 23px; height: 23px; display: block; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
+    .hamburger span { display: block; width: 26px; height: 3px; background: #0d1220; border-radius: 2px; transition: all .3s; }
+    .mobile-nav {
+      display: none; background: #fff; border-top: 1px solid var(--border);
+      padding: 12px 24px 20px; max-height: 78vh; overflow-y: auto;
+    }
+    .mobile-nav.open { display: block; }
+    .mobile-nav a {
+      display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 17px;
+      font-weight: 700; text-transform: uppercase; color: #0d1220; text-decoration: none;
+      padding: 9px 0; border-bottom: 1px solid var(--border); letter-spacing: 0.05em;
+    }
+    .mobile-nav a:hover { color: var(--orange); }
+    .mobile-nav .m-group {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 800;
+      letter-spacing: 0.14em; text-transform: uppercase; color: #b45309; margin: 16px 0 4px;
+    }
+    .mobile-nav .m-sub {
+      font-family: 'Commissioner', sans-serif; font-size: 15px; font-weight: 400;
+      text-transform: none; letter-spacing: 0; color: #334155; padding: 6px 0;
+    }
+    @media (max-width: 1360px) {
+      .header-nav { display: none; }
+      .hamburger { display: flex; }
+      .header-logo img { height: 150px; }
+      .header-inner { height: 112px; }
+    }
+    @media (max-width: 1340px) { .header-phone { font-size: 28px; } .wa-link { width: 36px; height: 36px; } .wa-link svg { width: 21px; height: 21px; } }
+    @media (max-width: 600px) {
+      .header-logo img { height: 124px; max-width: 196px; }
+      .header-inner { height: 96px; padding: 0 14px; }
+      .header-phone { font-size: 16px; }
+      .ann-bar { font-size: 13px; }
+      .wa-link { width: 32px; height: 32px; } .wa-link svg { width: 18px; height: 18px; }
+      .header-call { gap: 6px; }
+    }
+    @media (max-width: 430px) {
+      .header-logo img { height: 104px; max-width: 164px; }
+      .header-inner { height: 86px; }
+      .header-phone { font-size: 19px; }
+      .wa-link { width: 29px; height: 29px; } .wa-link svg { width: 17px; height: 17px; }
+    }
+    .site-footer { background: #fff; border-top: 4px solid var(--orange); padding: 60px 0 30px; }
+    .footer-inner { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
+    .footer-top {
+      display: grid; grid-template-columns: 260px 1fr 1fr 1fr; gap: 44px;
+      padding-bottom: 48px; border-bottom: 1px solid var(--border);
+    }
+    @media (max-width: 900px) { .footer-top { grid-template-columns: 1fr 1fr; gap: 36px; } }
+    @media (max-width: 560px) { .footer-top { grid-template-columns: 1fr; } }
+    .footer-brand-logo { display: inline-block; margin-bottom: 16px; }
+    .footer-brand-logo img { height: 80px; width: auto; display: block; }
+    .footer-brand-desc { font-family: 'Commissioner', sans-serif; font-size: 14.5px; color: #374151; line-height: 1.7; margin-bottom: 16px; }
+    .footer-contact-link {
+      display: block; font-family: 'Commissioner', sans-serif; font-size: 14.5px; color: #374151;
+      text-decoration: none; margin-bottom: 6px; transition: color .2s;
+    }
+    .footer-contact-link:hover { color: var(--orange); }
+    .footer-col-title {
+      font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 800;
+      letter-spacing: 0.14em; text-transform: uppercase; color: #b45309; margin-bottom: 16px;
+    }
+    .footer-links { list-style: none; padding: 0; }
+    .footer-links li { margin-bottom: 9px; }
+    .footer-links a { font-family: 'Commissioner', sans-serif; font-size: 14.5px; color: #374151; text-decoration: none; transition: color .2s; }
+    .footer-links a:hover { color: var(--orange); }
+    .footer-bottom {
+      display: flex; justify-content: space-between; align-items: center;
+      padding-top: 28px; flex-wrap: wrap; gap: 12px; border-top: 1px solid var(--border);
+    }
+    .footer-bottom p { font-family: 'Commissioner', sans-serif; font-size: 13px; color: #374151; line-height: 1.5; max-width: none; }
+    .footer-bottom a { color: #b45309; text-decoration: none; }
+    .footer-bottom a:hover { text-decoration: underline; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  </style>
+</head>
+
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="ann-bar">
+  Free 30-minute strategy session &mdash; no obligation &nbsp;|&nbsp; Call <a href="tel:+17207128615">+1 720-712-8615</a>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="header-logo" aria-label="Search Converts home">
+      <img src="/images/search-converts-logo-color.avif"
+           alt="Search Converts &mdash; conversion optimization ideas and testing resources"
+           width="200" height="200">
+    </a>
+    <nav aria-label="Main navigation">
+      <ul class="header-nav">
+        <li>
+          <button class="nav-toggle" aria-expanded="false" aria-haspopup="true">Services <i class="caret"></i></button>
+          <div class="nav-drop nav-drop-wide">
+            <div class="nav-drop-cols">
+              <div class="nav-drop-col">
+                <div class="nav-drop-title">Paid Media</div>
+                <a href="/ppc-management/">PPC Management</a>
+                <a href="/google-ads-management/">Google Ads Management</a>
+                <a href="/facebook-ads-management/">Facebook &amp; Meta Ads</a>
+                <a href="/social-media-marketing/">Social Media Marketing</a>
+                <a href="/programmatic-advertising/">Programmatic Display</a>
+                <a href="/ctv-advertising/">CTV &amp; Streaming Ads</a>
+                <a href="/retargeting/">Retargeting</a>
+              </div>
+              <div class="nav-drop-col">
+                <div class="nav-drop-title">Traditional Media</div>
+                <a href="/radio-tv-advertising/">Radio &amp; TV Advertising</a>
+                <a href="/direct-mail-marketing/">Direct Mail Marketing</a>
+                <div class="nav-drop-title" style="margin-top:20px;">Creative &amp; Build</div>
+                <a href="/video-production/">Video Production</a>
+                <a href="/youtube-promotion/">YouTube Promotion</a>
+                <a href="/branding-design/">Branding &amp; Design</a>
+              </div>
+              <div class="nav-drop-col">
+                <div class="nav-drop-title">Build &amp; Convert</div>
+                <a href="/app-development-company/">App Development</a>
+                <a href="/web-app-development/">Web App Development</a>
+                <a href="/ai-website-design/">AI Website Design</a>
+                <a href="/conversion-optimization/">Conversion Optimization</a>
+                <a href="/lead-generation/">Lead Generation</a>
+                <a href="/email-marketing/">Email Marketing</a>
+                <a href="/retention-systems/">Marketing Automation</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button class="nav-toggle" aria-expanded="false" aria-haspopup="true">Industries <i class="caret"></i></button>
+          <div class="nav-drop">
+            <div class="nav-drop-cols">
+              <div class="nav-drop-col">
+                <div class="nav-drop-title">Who We Serve</div>
+                <a href="/law-firm-marketing/">Law Firms</a>
+                <a href="/saas-marketing/">SaaS Companies</a>
+                <a href="/b2b-marketing/">B2B &amp; Enterprise</a>
+                <a href="/healthcare-marketing/">Healthcare</a>
+              </div>
+              <div class="nav-drop-col">
+                <div class="nav-drop-title">&nbsp;</div>
+                <a href="/ecommerce-marketing/">Ecommerce</a>
+                <a href="/dental-marketing/">Dental Practices</a>
+                <a href="/real-estate-marketing/">Real Estate</a>
+                <a href="/restaurant-marketing/">Restaurants</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button class="nav-toggle" aria-expanded="false" aria-haspopup="true">Consulting <i class="caret"></i></button>
+          <div class="nav-drop">
+            <div class="nav-drop-cols">
+              <div class="nav-drop-col">
+                <div class="nav-drop-title">Advisory</div>
+                <a href="/sales-training/">Sales Training</a>
+                <a href="/business-consulting/">Business Consulting</a>
+                <a href="/marketing-consulting/">Marketing Consulting</a>
+                <a href="/growth-system/">The Growth System</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="/ai-marketing-agency/">AI Marketing</a></li>
+        <li><a href="/marketing-plan-builder/">Plan Builder</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/" class="nav-cta">Free Strategy Session</a></li>
+      </ul>
+    </nav>
+    <div class="header-call">
+      <a href="https://wa.me/17207128615" class="wa-link" target="_blank" rel="noopener" aria-label="Message Search Converts on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M17.47 14.38c-.29-.15-1.71-.85-1.98-.94-.27-.1-.46-.15-.65.14-.19.29-.75.94-.92 1.13-.17.19-.34.22-.63.07-.29-.15-1.22-.45-2.33-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.44-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.65-1.57-.89-2.15-.23-.56-.47-.49-.65-.5-.17-.01-.36-.01-.55-.01-.19 0-.51.07-.77.36-.27.29-1.01.99-1.01 2.41s1.04 2.8 1.18 2.99c.15.19 2.04 3.12 4.95 4.38.69.3 1.23.48 1.65.61.69.22 1.33.19 1.83.12.56-.08 1.71-.7 1.96-1.38.24-.68.24-1.26.17-1.38-.07-.12-.26-.19-.55-.34zM12.05 21.8h-.02c-1.77 0-3.51-.48-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 01-1.51-5.26c0-5.45 4.44-9.89 9.9-9.89 2.64 0 5.13 1.03 7 2.9a9.82 9.82 0 012.9 6.99c0 5.46-4.44 9.89-9.9 9.89zM20.52 3.45A11.78 11.78 0 0012.05 0C5.5 0 .17 5.33.17 11.88c0 2.09.55 4.14 1.59 5.94L.07 24l6.33-1.66a11.87 11.87 0 005.65 1.44h.01c6.55 0 11.88-5.33 11.88-11.88 0-3.17-1.24-6.16-3.48-8.4z"/></svg>
+      </a>
+      <a href="tel:+17207128615" class="header-phone" aria-label="Call Search Converts at plus 1 720-712-8615">+1 720-712-8615</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <div class="m-group">Paid Media</div>
+    <a class="m-sub" href="/ppc-management/">PPC Management</a>
+    <a class="m-sub" href="/google-ads-management/">Google Ads Management</a>
+    <a class="m-sub" href="/facebook-ads-management/">Facebook &amp; Meta Ads</a>
+    <a class="m-sub" href="/social-media-marketing/">Social Media Marketing</a>
+    <a class="m-sub" href="/programmatic-advertising/">Programmatic Display</a>
+    <a class="m-sub" href="/ctv-advertising/">CTV &amp; Streaming Ads</a>
+    <a class="m-sub" href="/retargeting/">Retargeting</a>
+    <div class="m-group">Traditional Media</div>
+    <a class="m-sub" href="/radio-tv-advertising/">Radio &amp; TV Advertising</a>
+    <a class="m-sub" href="/direct-mail-marketing/">Direct Mail Marketing</a>
+    <div class="m-group">Creative &amp; Build</div>
+    <a class="m-sub" href="/video-production/">Video Production</a>
+    <a class="m-sub" href="/youtube-promotion/">YouTube Promotion</a>
+    <a class="m-sub" href="/branding-design/">Branding &amp; Design</a>
+    <a class="m-sub" href="/app-development-company/">App Development</a>
+    <a class="m-sub" href="/web-app-development/">Web App Development</a>
+    <a class="m-sub" href="/ai-website-design/">AI Website Design</a>
+    <div class="m-group">Convert &amp; Retain</div>
+    <a class="m-sub" href="/conversion-optimization/">Conversion Optimization</a>
+    <a class="m-sub" href="/lead-generation/">Lead Generation</a>
+    <a class="m-sub" href="/email-marketing/">Email Marketing</a>
+    <a class="m-sub" href="/retention-systems/">Marketing Automation</a>
+    <div class="m-group">Industries</div>
+    <a class="m-sub" href="/law-firm-marketing/">Law Firms</a>
+    <a class="m-sub" href="/saas-marketing/">SaaS Companies</a>
+    <a class="m-sub" href="/b2b-marketing/">B2B &amp; Enterprise</a>
+    <a class="m-sub" href="/healthcare-marketing/">Healthcare</a>
+    <a class="m-sub" href="/ecommerce-marketing/">Ecommerce</a>
+    <a class="m-sub" href="/dental-marketing/">Dental Practices</a>
+    <a class="m-sub" href="/real-estate-marketing/">Real Estate</a>
+    <a class="m-sub" href="/restaurant-marketing/">Restaurants</a>
+    <div class="m-group">Consulting</div>
+    <a class="m-sub" href="/sales-training/">Sales Training</a>
+    <a class="m-sub" href="/business-consulting/">Business Consulting</a>
+    <a class="m-sub" href="/marketing-consulting/">Marketing Consulting</a>
+    <a class="m-sub" href="/growth-system/">The Growth System</a>
+    <div class="m-group">More</div>
+    <a href="/ai-marketing-agency/">AI Marketing</a>
+    <a href="/marketing-plan-builder/">Plan Builder</a>
+    <a href="/about/">About</a>
+    <a href="/contact/">Free Strategy Session</a>
+    <a href="tel:+17207128615" style="color:var(--orange);font-size:23px;">Call +1 720-712-8615</a>
+    <a href="https://wa.me/17207128615" target="_blank" rel="noopener" style="color:#128C4A;">WhatsApp +1 720-712-8615</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-in">
+    <h1>53 conversion ideas, sorted by <span>whether you can actually test them</span></h1>
+    <p class="hero-sub">Every list like this assumes you can run an A/B test. Most sites cannot: the median test needs somewhere between 10,400 and 14,800 visitors per variant, and only around 9% of sites see 100,000 visitors a month. So this list marks each idea as something to test or something to just fix, and gives you a calculator to work out which camp you are in.</p>
+
+    <div class="hero-cta">
+      <a href="#library" class="btn">Jump to the 53 ideas</a>
+      <a href="#feasibility" class="btn btn-ghost">Can I test at all?</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hs"><b>~12%</b><span>of tested ideas produce a significant positive result</span></div>
+      <div class="hs"><b>14,800</b><span>median visitors needed per variant, client-side</span></div>
+      <div class="hs"><b>61%</b><span>false positive rate on tests run under 14 days</span></div>
+      <div class="hs"><b>6.1%</b><span>median lift from a winning test, not 50%</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- THE REALITY -->
+<section class="band band-dark">
+  <div class="wrap">
+    <div class="narrow prose">
+      <span class="kicker">Read this before the list</span>
+      <h2 class="h2">Most conversion advice is written as though testing is free</h2>
+      <p class="lede">It is not. Testing costs traffic, time and the discipline to leave a test alone once it is running, and the published data on how that usually goes is worth seeing before you plan a program around it.</p>
+
+      <h3 class="h3" style="margin-top:26px; color:#fff;">Win rates are lower than anyone advertises</h3>
+      <p>Optimizely's analysis of more than 127,000 experiments puts the average win rate near 12%, meaning roughly one tested idea in eight produces a statistically significant improvement. Platform-published benchmarks cluster in the same region: VWO around 14%, CXL and Convert around 20%. An independent audit of 2,288 tests found half beat their control on raw numbers but only 19.1% did so with statistical significance.</p>
+      <p>Mature programs with strong hypothesis generation reach 22 to 30%. That is the ceiling for disciplined teams, not the starting point.</p>
+
+      <h3 class="h3" style="margin-top:26px; color:#fff;">The traffic requirement is the real barrier</h3>
+      <p>Across a dataset of 4,200 tests, the median required sample was 10,400 visitors per variant server-side and 14,800 client-side. Meanwhile only around 9% of sites reach 100,000 monthly visitors, and roughly 0.2% of websites run testing tools at all.</p>
+      <p>Put those together and the conclusion is uncomfortable but useful: for most businesses, A/B testing is not the right tool. That does not mean conversion work is unavailable to you. It means the work is fixing known problems rather than testing unknowns, which is what the tags on the list below are for.</p>
+
+      <h3 class="h3" style="margin-top:26px; color:#fff;">Lifts are smaller than the case studies suggest</h3>
+      <p>The median lift from a winning test is around 6.1%. Fifty percent improvements sit at the 95th to 99th percentile of outcomes, which is to say they happen and they are not a plan. The value comes from compounding: a 6.1% median lift across eight to ten winning tests a year on a checkout funnel produces something in the region of 47 to 61% total.</p>
+
+      <h3 class="h3" style="margin-top:26px; color:#fff;">And most tests are stopped too early</h3>
+      <p>Tests run under 14 days carry a false positive rate around 61%, and 41.4% of tests in one large dataset claimed significance while under-powered. Checking daily and stopping when the variant looks good is reportedly done by 47% of teams and is the single most common way to generate a fake winner. Underpowered tests also exaggerate the lift they do find, which is why implemented winners so often fail to reproduce their gains.</p>
+    </div>
+
+    <div class="note-box">
+      <b>The honest summary.</b> If you have the traffic, test, and expect to be wrong seven times out of eight. If you do not have the traffic, stop trying to test, fix the things that are already known to be broken, and measure at the business level rather than the page level. Both are legitimate. Pretending you are doing the first when you are actually doing the second is what wastes years.
+    </div>
+
+    <p class="src">Sources: Optimizely analysis of 127,000+ experiments; independent audit of 2,288 tests reporting raw and statistically significant win rates alongside platform benchmarks; A/B test program data covering 4,200+ experiments for sample size, power and lift distribution; agency experiment database of 90+ ecommerce brands for win rate by funnel stage and median duration; published CRO statistics roundups for testing tool adoption and site traffic distribution. Figures are drawn largely from ecommerce and should be read as directional.</p>
+  </div>
+</section>
+
+<!-- FEASIBILITY -->
+<section class="band" id="feasibility">
+  <div class="wrap">
+    <div class="narrow prose" style="margin-bottom:32px;">
+      <span class="kicker">Tool one</span>
+      <h2 class="h2">Work out whether you can test before you plan to</h2>
+      <p class="lede">Enter your traffic and conversion rate and this gives you the sample you would need, how long it would take, and a straight answer about whether testing is a sensible use of your time.</p>
+    </div>
+
+    <div class="tool">
+      <div class="tool-head">
+        <h2>Test feasibility calculator</h2>
+        <p>Standard two-sided test at 95% confidence and 80% power. Nothing is stored or sent.</p>
+      </div>
+      <div class="tool-body">
+        <div class="tool-in">
+          <div class="cf">
+            <div class="cf-top"><label for="traffic">Monthly visitors to the page</label><span class="cf-val" id="trafficOut">12,000</span></div>
+            <input class="sl" type="range" id="traffic" min="500" max="500000" step="500" value="12000">
+            <p class="cf-hint">The specific page you want to test, not the whole site.</p>
+          </div>
+          <div class="cf">
+            <div class="cf-top"><label for="base">Current conversion rate</label><span class="cf-val" id="baseOut">3.0%</span></div>
+            <input class="sl" type="range" id="base" min="1" max="400" step="1" value="30">
+            <p class="cf-hint">Shown in tenths of a percent, so 30 means 3.0%.</p>
+          </div>
+          <div class="cf">
+            <div class="cf-top"><label for="mde">Lift you want to detect</label><span class="cf-val" id="mdeOut">10%</span></div>
+            <input class="sl" type="range" id="mde" min="2" max="60" step="1" value="10">
+            <p class="cf-hint">Relative. Detecting small lifts costs enormously more traffic than large ones.</p>
+          </div>
+          <div class="cf">
+            <div class="cf-top"><label for="vars">Variants including control</label><span class="cf-val" id="varsOut">2</span></div>
+            <input class="sl" type="range" id="vars" min="2" max="5" step="1" value="2">
+          </div>
+        </div>
+
+        <div class="tool-out">
+          <div class="tw">
+            <div class="tn">
+              <span>Visitors needed per variant</span>
+              <b id="ssVal">&mdash;</b>
+              <i id="ssNote">&nbsp;</i>
+            </div>
+            <div class="tn hot">
+              <span>Days to reach that</span>
+              <b id="daysVal">&mdash;</b>
+              <i id="daysNote">&nbsp;</i>
+            </div>
+            <div class="tn good">
+              <span>Detectable in 30 days</span>
+              <b id="mdeVal">&mdash;</b>
+              <i id="mdeNote">&nbsp;</i>
+            </div>
+          </div>
+
+          <div class="tool-verdict">
+            <h3 id="fvTitle">&nbsp;</h3>
+            <p id="fvText">&nbsp;</p>
+          </div>
+
+          <div class="note-box" style="margin-top:18px;">
+            <b>A rule that saves a lot of wasted months.</b> If a test would take more than about six weeks, do not run it. Seasonality, traffic mix and your own site changes will contaminate the result long before it finishes, and you will have spent six weeks learning something unreliable about one button.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="narrow prose" style="margin-top:28px;">
+      <p>Two things this makes visible immediately. First, low baseline conversion rates are punishing: halving your conversion rate roughly doubles the traffic you need. Second, chasing small lifts is where testing programs go to die, because detecting a 5% improvement costs roughly four times the traffic of detecting a 10% one.</p>
+      <p>If the calculator tells you a test would take eight months, that is not a reason to run it anyway with less rigor. It is a signal to stop testing and start fixing, which is what most of the list below is for. Once you have made the known fixes and traffic has grown, testing becomes available again.</p>
+    </div>
+  </div>
+</section>
+
+<!-- LIBRARY -->
+<section class="band band-wash rule-t" id="library">
+  <div class="wrap">
+    <div class="narrow prose" style="margin-bottom:30px;">
+      <span class="kicker">Tool two</span>
+      <h2 class="h2">The library: 53 ideas you can filter</h2>
+      <p class="lede">Each one is tagged with the funnel stage it affects, how much work it takes, and whether it is a known fix you should just make or a hypothesis you should test if you have the traffic.</p>
+      <p>The green <b>Just fix it</b> tag means the evidence is strong enough that testing it is usually a waste of traffic. Nobody needs an experiment to establish that a form should have labels. The dark <b>Test it</b> tag means the answer genuinely depends on your audience and the honest position is that we do not know until you measure.</p>
+    </div>
+
+    <div class="lib">
+      <div class="lib-bar">
+        <div class="fgroup">
+          <span>Funnel stage</span>
+          <div class="chips" id="fStage">
+            <button class="chip" data-f="stage" data-v="all" aria-pressed="true">All</button>
+            <button class="chip" data-f="stage" data-v="Arrival" aria-pressed="false">Arrival</button>
+            <button class="chip" data-f="stage" data-v="Consideration" aria-pressed="false">Consideration</button>
+            <button class="chip" data-f="stage" data-v="Action" aria-pressed="false">Action</button>
+            <button class="chip" data-f="stage" data-v="Checkout" aria-pressed="false">Checkout</button>
+            <button class="chip" data-f="stage" data-v="After" aria-pressed="false">After</button>
+            <button class="chip" data-f="stage" data-v="Offline" aria-pressed="false">Offline</button>
+          </div>
+        </div>
+        <div class="fgroup">
+          <span>Approach</span>
+          <div class="chips" id="fKind">
+            <button class="chip" data-f="kind" data-v="all" aria-pressed="true">All</button>
+            <button class="chip" data-f="kind" data-v="fix" aria-pressed="false">Just fix it</button>
+            <button class="chip" data-f="kind" data-v="test" aria-pressed="false">Test it</button>
+          </div>
+        </div>
+        <div class="fgroup">
+          <span>Effort</span>
+          <div class="chips" id="fEffort">
+            <button class="chip" data-f="effort" data-v="all" aria-pressed="true">All</button>
+            <button class="chip" data-f="effort" data-v="low" aria-pressed="false">An afternoon</button>
+            <button class="chip" data-f="effort" data-v="med" aria-pressed="false">A few days</button>
+            <button class="chip" data-f="effort" data-v="high" aria-pressed="false">A project</button>
+          </div>
+        </div>
+      </div>
+      <div class="lib-count" id="libCount">Showing <b>53</b> of 53 ideas</div>
+      <div class="idea-grid" id="ideaGrid">
+        <article class="idea" data-s="Arrival" data-k="fix" data-e="low">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Arrival</span><span class="tag t-low">An afternoon</span></div>
+          <h3>Make the phone number a tap target on mobile</h3>
+          <p>Not text. An anchor with a tel link, in the header, visible without scrolling. For any business where people call, this is the single most common unforced error.</p>
+          <span class="ev"><b>Evidence:</b> Known fix. No test needed.</span>
+        </article>
+        <article class="idea" data-s="Arrival" data-k="fix" data-e="low">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Arrival</span><span class="tag t-low">An afternoon</span></div>
+          <h3>Fix low contrast body text</h3>
+          <p>Light grey on white looks elegant on a good monitor in a dark room and is unreadable on a phone in sunlight. Check it outside.</p>
+          <span class="ev"><b>Evidence:</b> Low contrast is the most common accessibility failure on the web, found on 83.9% of home pages in the 2026 WebAIM Million.</span>
+        </article>
+        <article class="idea" data-s="Arrival" data-k="fix" data-e="med">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Arrival</span><span class="tag t-med">A few days</span></div>
+          <h3>Cut page weight before adding anything</h3>
+          <p>Right-size images, use modern formats, and remove third-party scripts nobody can name the purpose of. Speed is a design decision as much as an engineering one.</p>
+          <span class="ev"><b>Evidence:</b> Only about 48% of mobile sites delivered good Core Web Vitals in 2025.</span>
+        </article>
+        <article class="idea" data-s="Arrival" data-k="fix" data-e="low">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Arrival</span><span class="tag t-low">An afternoon</span></div>
+          <h3>Match the page to the ad that sent them</h3>
+          <p>If the ad promises same-day service, the headline should say same-day service. Message mismatch is a silent killer because the bounce looks like a traffic quality problem.</p>
+          <span class="ev"><b>Evidence:</b> Known fix. Costs an afternoon per campaign.</span>
+        </article>
+        <article class="idea" data-s="Arrival" data-k="test" data-e="med">
+          <div class="idea-tags"><span class="tag t-test">Test it</span><span class="tag t-stage">Arrival</span><span class="tag t-med">A few days</span></div>
+          <h3>Try a specific headline against a clever one</h3>
+          <p>Clever headlines get approved in meetings. Specific ones get understood by strangers. Which wins depends on your audience, so this is worth measuring.</p>
+          <span class="ev"><b>Evidence:</b> Copy tests show the highest raw win rates of any test type, around 57 to 60%.</span>
+        </article>
+        <article class="idea" data-s="Arrival" data-k="fix" data-e="low">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Arrival</span><span class="tag t-low">An afternoon</span></div>
+          <h3>Put the location in the page, visibly</h3>
+          <p>For local businesses, a visitor deciding whether you serve them should not have to hunt. City and service area near the top, not only in the footer.</p>
+          <span class="ev"><b>Evidence:</b> Known fix.</span>
+        </article>
+        <article class="idea" data-s="Arrival" data-k="test" data-e="med">
+          <div class="idea-tags"><span class="tag t-test">Test it</span><span class="tag t-stage">Arrival</span><span class="tag t-med">A few days</span></div>
+          <h3>Test removing the carousel</h3>
+          <p>Rotating hero sliders let a team avoid choosing what matters most. Replacing one with a single decisive message frequently helps, and occasionally does not.</p>
+          <span class="ev"><b>Evidence:</b> Contested. Worth testing rather than asserting.</span>
+        </article>
+        <article class="idea" data-s="Arrival" data-k="fix" data-e="low">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Arrival</span><span class="tag t-low">An afternoon</span></div>
+          <h3>Give every image real alternative text</h3>
+          <p>Screen readers need it, search engines use it, and answer engines cannot quote a picture. Describe what the image shows, not what keyword you want.</p>
+          <span class="ev"><b>Evidence:</b> Missing alt text is among the six failures accounting for 96% of detected accessibility errors.</span>
+        </article>
+        <article class="idea" data-s="Arrival" data-k="fix" data-e="med">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Arrival</span><span class="tag t-med">A few days</span></div>
+          <h3>Stop sending paid traffic to your home page</h3>
+          <p>A home page serves everyone and therefore convinces nobody. One page per offer, matched to the search that produced the click.</p>
+          <span class="ev"><b>Evidence:</b> Known fix.</span>
+        </article>
+        <article class="idea" data-s="Arrival" data-k="test" data-e="high">
+          <div class="idea-tags"><span class="tag t-test">Test it</span><span class="tag t-stage">Arrival</span><span class="tag t-high">A project</span></div>
+          <h3>Test a distinctive layout against the generic one</h3>
+          <p>Centered hero, three equal feature cards and two competing buttons is what generative tools produce because it is the median of everything ever built. Being distinctive may help you or may confuse people.</p>
+          <span class="ev"><b>Evidence:</b> Worth testing. Recognition compounds, but novelty carries risk.</span>
+        </article>
+        <article class="idea" data-s="Consideration" data-k="fix" data-e="low">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Consideration</span><span class="tag t-low">An afternoon</span></div>
+          <h3>Answer the objection your sales team hears most</h3>
+          <p>Ask whoever takes the calls what people always ask before buying. Put the answer on the page. This is the cheapest research available and almost nobody does it.</p>
+          <span class="ev"><b>Evidence:</b> Known fix. One conversation and an afternoon.</span>
+        </article>
+        <article class="idea" data-s="Consideration" data-k="fix" data-e="low">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Consideration</span><span class="tag t-low">An afternoon</span></div>
+          <h3>Publish pricing, or explain honestly why you cannot</h3>
+          <p>A range with the variables named beats silence. Visitors who leave to find pricing rarely come back, and &quot;contact us for pricing&quot; reads as expensive.</p>
+          <span class="ev"><b>Evidence:</b> Known fix for most categories.</span>
+        </article>
+        <article class="idea" data-s="Consideration" data-k="test" data-e="med">
+          <div class="idea-tags"><span class="tag t-test">Test it</span><span class="tag t-stage">Consideration</span><span class="tag t-med">A few days</span></div>
+          <h3>Test social proof placement, not just presence</h3>
+          <p>Testimonials sitting in a section nobody reaches do nothing. Placing the relevant one next to the decision point is a different thing from having testimonials.</p>
+          <span class="ev"><b>Evidence:</b> Social proof tests are among the highest raw win rates at 57 to 60%.</span>
+        </article>
+        <article class="idea" data-s="Consideration" data-k="fix" data-e="med">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Consideration</span><span class="tag t-med">A few days</span></div>
+          <h3>Show your actual work, not stock photography</h3>
+          <p>Real photos of real jobs, real staff and real premises outperform polished stock in almost every service category, because stock signals that you had nothing to show.</p>
+          <span class="ev"><b>Evidence:</b> Known fix, though production takes a few days.</span>
+        </article>
+        <article class="idea" data-s="Consideration" data-k="fix" data-e="low">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Consideration</span><span class="tag t-low">An afternoon</span></div>
+          <h3>Name the person who will show up</h3>
+          <p>For services delivered by humans, a name and a face reduce the perceived risk of hiring a stranger. Anonymity is a friction nobody mentions.</p>
+          <span class="ev"><b>Evidence:</b> Known fix.</span>
+        </article>
+        <article class="idea" data-s="Consideration" data-k="test" data-e="med">
+          <div class="idea-tags"><span class="tag t-test">Test it</span><span class="tag t-stage">Consideration</span><span class="tag t-med">A few days</span></div>
+          <h3>Test long-form against short-form on high-consideration pages</h3>
+          <p>The rule that nobody reads is wrong for expensive or risky purchases, where people read everything. Which applies to you is an empirical question.</p>
+          <span class="ev"><b>Evidence:</b> Genuinely depends on price point and category.</span>
+        </article>
+        <article class="idea" data-s="Consideration" data-k="fix" data-e="low">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Consideration</span><span class="tag t-low">An afternoon</span></div>
+          <h3>Put comparison information on your own site</h3>
+          <p>People are going to compare you against alternatives. Doing it honestly on your page keeps them there and lets you frame the trade-offs.</p>
+          <span class="ev"><b>Evidence:</b> Known fix. Also strong for AI citation.</span>
+        </article>
+        <article class="idea" data-s="Consideration" data-k="fix" data-e="med">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Consideration</span><span class="tag t-med">A few days</span></div>
+          <h3>Write the page a machine can read</h3>
+          <p>Real headings in order, text as text rather than baked into images, labeled fields and structured data. Accessibility and AI readability are the same job from two directions.</p>
+          <span class="ev"><b>Evidence:</b> Known fix. Compounds with search and answer engines.</span>
+        </article>
+        <article class="idea" data-s="Consideration" data-k="test" data-e="low">
+          <div class="idea-tags"><span class="tag t-test">Test it</span><span class="tag t-stage">Consideration</span><span class="tag t-low">An afternoon</span></div>
+          <h3>Test adding a specific number to your claim</h3>
+          <p>&quot;Fast response&quot; is noise. &quot;We answer within four minutes on average&quot; is a claim. Specificity usually helps and occasionally invites scrutiny you cannot survive.</p>
+          <span class="ev"><b>Evidence:</b> Test it, and only claim what you can defend.</span>
+        </article>
+        <article class="idea" data-s="Consideration" data-k="fix" data-e="low">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Consideration</span><span class="tag t-low">An afternoon</span></div>
+          <h3>Remove the second call to action</h3>
+          <p>Two buttons at equal weight means nothing is primary. Make one dominant and demote the other to a text link.</p>
+          <span class="ev"><b>Evidence:</b> Known fix. Costs minutes.</span>
+        </article>
+        <article class="idea" data-s="Action" data-k="fix" data-e="low">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Action</span><span class="tag t-low">An afternoon</span></div>
+          <h3>Delete every form field you do not act on</h3>
+          <p>If nobody reads the answer within a week of submission, the field is costing you conversions for nothing. Company size, how did you hear about us, and job title are the usual suspects.</p>
+          <span class="ev"><b>Evidence:</b> Known fix. Strongest single lever on most lead forms.</span>
+        </article>
+        <article class="idea" data-s="Action" data-k="fix" data-e="low">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Action</span><span class="tag t-low">An afternoon</span></div>
+          <h3>Label every input properly</h3>
+          <p>Placeholder text is not a label. It disappears when typing starts, fails for screen readers, and leaves people unable to check what they entered.</p>
+          <span class="ev"><b>Evidence:</b> Missing form labels is one of the six most common accessibility failures on the web.</span>
+        </article>
+        <article class="idea" data-s="Action" data-k="test" data-e="med">
+          <div class="idea-tags"><span class="tag t-test">Test it</span><span class="tag t-stage">Action</span><span class="tag t-med">A few days</span></div>
+          <h3>Test splitting a long form into steps</h3>
+          <p>Multi-step forms often lift completion by lowering perceived effort, and sometimes lower it by adding clicks. Worth measuring rather than assuming.</p>
+          <span class="ev"><b>Evidence:</b> Genuinely contested. Form tests win less often than copy tests.</span>
+        </article>
+        <article class="idea" data-s="Action" data-k="fix" data-e="low">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Action</span><span class="tag t-low">An afternoon</span></div>
+          <h3>Make phone and form equally available</h3>
+          <p>Some people will never fill a form and some will never call. Offering only one is choosing to lose the other group.</p>
+          <span class="ev"><b>Evidence:</b> Known fix.</span>
+        </article>
+        <article class="idea" data-s="Action" data-k="fix" data-e="med">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Action</span><span class="tag t-med">A few days</span></div>
+          <h3>Answer inquiries in minutes, not days</h3>
+          <p>The fastest conversion improvement available to most businesses has nothing to do with the website. A form filled at 11pm and answered at 10am the next day is usually a lost customer.</p>
+          <span class="ev"><b>Evidence:</b> Published guidance suggests under five minutes for urgent categories, under an hour otherwise.</span>
+        </article>
+        <article class="idea" data-s="Action" data-k="fix" data-e="low">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Action</span><span class="tag t-low">An afternoon</span></div>
+          <h3>Fix the keyboard path to your primary action</h3>
+          <p>Tab through your own page. If focus vanishes, jumps somewhere illogical, or traps inside a menu, keyboard users cannot convert. This is pass or fail.</p>
+          <span class="ev"><b>Evidence:</b> Known fix. Takes ten minutes to check.</span>
+        </article>
+        <article class="idea" data-s="Action" data-k="test" data-e="low">
+          <div class="idea-tags"><span class="tag t-test">Test it</span><span class="tag t-stage">Action</span><span class="tag t-low">An afternoon</span></div>
+          <h3>Test the button label against the button color</h3>
+          <p>People obsess over color and under-invest in wording. &quot;Get my free quote&quot; and &quot;Submit&quot; are different promises. Test the words first.</p>
+          <span class="ev"><b>Evidence:</b> Copy tests outperform styling tests on win rate.</span>
+        </article>
+        <article class="idea" data-s="Action" data-k="fix" data-e="low">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Action</span><span class="tag t-low">An afternoon</span></div>
+          <h3>Say what happens after they submit</h3>
+          <p>One line under the button telling them who calls, when, and whether it costs anything. Uncertainty about the next step stops more people than the form length does.</p>
+          <span class="ev"><b>Evidence:</b> Known fix.</span>
+        </article>
+        <article class="idea" data-s="Action" data-k="fix" data-e="med">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Action</span><span class="tag t-med">A few days</span></div>
+          <h3>Cover the hours your customers actually need you</h3>
+          <p>Emergencies and impulse decisions do not respect business hours. An answering service or an AI intake assistant beats voicemail decisively.</p>
+          <span class="ev"><b>Evidence:</b> Known fix, and usually cheaper than the ad spend it rescues.</span>
+        </article>
+        <article class="idea" data-s="Action" data-k="fix" data-e="low">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Action</span><span class="tag t-low">An afternoon</span></div>
+          <h3>Follow up more than once</h3>
+          <p>A prospect who did not answer your callback is not lost, they are a prospect you tried once. Three attempts across two days, one outside business hours.</p>
+          <span class="ev"><b>Evidence:</b> Known fix.</span>
+        </article>
+        <article class="idea" data-s="Checkout" data-k="fix" data-e="med">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Checkout</span><span class="tag t-med">A few days</span></div>
+          <h3>Show total cost early, including shipping</h3>
+          <p>Unexpected extra costs at the final step is the most consistently reported reason for abandonment across studies of checkout behavior.</p>
+          <span class="ev"><b>Evidence:</b> Baymard documents cart abandonment averaging 70.22% across 50 studies, with surprise costs leading the reasons.</span>
+        </article>
+        <article class="idea" data-s="Checkout" data-k="fix" data-e="med">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Checkout</span><span class="tag t-med">A few days</span></div>
+          <h3>Offer guest checkout</h3>
+          <p>Forced account creation is a demand for commitment before anyone has received anything. Let them buy, then offer to save the details.</p>
+          <span class="ev"><b>Evidence:</b> Known fix. Consistently among the top abandonment reasons.</span>
+        </article>
+        <article class="idea" data-s="Checkout" data-k="test" data-e="med">
+          <div class="idea-tags"><span class="tag t-test">Test it</span><span class="tag t-stage">Checkout</span><span class="tag t-med">A few days</span></div>
+          <h3>Test a progress indicator</h3>
+          <p>Showing how many steps remain reduces uncertainty for some audiences and highlights how long the process is for others.</p>
+          <span class="ev"><b>Evidence:</b> Contested. Depends on how many steps you actually have.</span>
+        </article>
+        <article class="idea" data-s="Checkout" data-k="fix" data-e="low">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Checkout</span><span class="tag t-low">An afternoon</span></div>
+          <h3>Put the return policy where the doubt happens</h3>
+          <p>Next to the buy button, not on a separate page in the footer. The moment of hesitation is the moment to answer it.</p>
+          <span class="ev"><b>Evidence:</b> Known fix.</span>
+        </article>
+        <article class="idea" data-s="Checkout" data-k="fix" data-e="med">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Checkout</span><span class="tag t-med">A few days</span></div>
+          <h3>Support the payment methods people expect</h3>
+          <p>Digital wallets remove typing on mobile, which is where most abandonment happens. Missing methods are silent abandonment reasons.</p>
+          <span class="ev"><b>Evidence:</b> Known fix.</span>
+        </article>
+        <article class="idea" data-s="Checkout" data-k="fix" data-e="low">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Checkout</span><span class="tag t-low">An afternoon</span></div>
+          <h3>Never lose the cart on an error</h3>
+          <p>A validation failure that clears entered data is the most infuriating experience in ecommerce and one of the easiest bugs to leave in.</p>
+          <span class="ev"><b>Evidence:</b> Known fix.</span>
+        </article>
+        <article class="idea" data-s="Checkout" data-k="test" data-e="med">
+          <div class="idea-tags"><span class="tag t-test">Test it</span><span class="tag t-stage">Checkout</span><span class="tag t-med">A few days</span></div>
+          <h3>Test removing the discount code field</h3>
+          <p>It reminds people a discount exists and sends them to search for one. Some sites gain from hiding it; sites with real coupon programs lose.</p>
+          <span class="ev"><b>Evidence:</b> Test it. Depends entirely on your promotion strategy.</span>
+        </article>
+        <article class="idea" data-s="Checkout" data-k="fix" data-e="med">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Checkout</span><span class="tag t-med">A few days</span></div>
+          <h3>Optimize checkout for mobile separately</h3>
+          <p>Mobile converts at roughly half the desktop rate on most sites while carrying most of the traffic. Desktop-validated winners do not always transfer.</p>
+          <span class="ev"><b>Evidence:</b> Known fix. Segment your reporting by device before anything else.</span>
+        </article>
+        <article class="idea" data-s="After" data-k="fix" data-e="med">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">After</span><span class="tag t-med">A few days</span></div>
+          <h3>Build a welcome flow before another campaign</h3>
+          <p>It is typically the highest revenue-per-recipient automation in an account, works the moment the next person subscribes, and sets sender reputation for everything after.</p>
+          <span class="ev"><b>Evidence:</b> Flows are 5.3% of sends and about 41% of email revenue in Klaviyo 2026 data across 183,000+ brands.</span>
+        </article>
+        <article class="idea" data-s="After" data-k="fix" data-e="med">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">After</span><span class="tag t-med">A few days</span></div>
+          <h3>Build abandoned checkout and cart flows separately</h3>
+          <p>They are different signals at different intent levels and are frequently merged by mistake. Checkout abandonment is the highest-intent trigger you have.</p>
+          <span class="ev"><b>Evidence:</b> Welcome, cart and browse abandonment account for roughly 87% of automated email orders.</span>
+        </article>
+        <article class="idea" data-s="After" data-k="fix" data-e="low">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">After</span><span class="tag t-low">An afternoon</span></div>
+          <h3>Suppress subscribers who stopped engaging</h3>
+          <p>It feels like going backwards and it improves open rates, deliverability and revenue at once. Unengaged contacts drag your sender reputation down.</p>
+          <span class="ev"><b>Evidence:</b> Google guidance is to keep spam complaints below 0.1% and never reach 0.3%.</span>
+        </article>
+        <article class="idea" data-s="After" data-k="fix" data-e="low">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">After</span><span class="tag t-low">An afternoon</span></div>
+          <h3>Ask for the review at the right moment</h3>
+          <p>Timed to delivery or completion, not to purchase. The gap between paying and receiving is where a review request feels premature.</p>
+          <span class="ev"><b>Evidence:</b> Known fix.</span>
+        </article>
+        <article class="idea" data-s="After" data-k="test" data-e="med">
+          <div class="idea-tags"><span class="tag t-test">Test it</span><span class="tag t-stage">After</span><span class="tag t-med">A few days</span></div>
+          <h3>Test a post-purchase cross-sell against a thank you</h3>
+          <p>Selling immediately after a purchase captures momentum or feels grabby depending on category and price point.</p>
+          <span class="ev"><b>Evidence:</b> Test it. Post-purchase drives second-order velocity either way.</span>
+        </article>
+        <article class="idea" data-s="After" data-k="fix" data-e="med">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">After</span><span class="tag t-med">A few days</span></div>
+          <h3>Mail or email your existing customer list</h3>
+          <p>Most businesses have a customer file they have never contacted, alongside a plan to buy strangers. House lists outperform prospect lists in every published dataset.</p>
+          <span class="ev"><b>Evidence:</b> Known fix. The names cost nothing.</span>
+        </article>
+        <article class="idea" data-s="After" data-k="fix" data-e="low">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">After</span><span class="tag t-low">An afternoon</span></div>
+          <h3>Run a holdout on any flow big enough to read</h3>
+          <p>Withhold the message from a random slice and compare. It is the only way to know what an automation caused rather than merely observed.</p>
+          <span class="ev"><b>Evidence:</b> Known method. Works at far lower volumes than page testing.</span>
+        </article>
+        <article class="idea" data-s="Offline" data-k="fix" data-e="low">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Offline</span><span class="tag t-low">An afternoon</span></div>
+          <h3>Put a dedicated tracking number on every channel</h3>
+          <p>One number per campaign, forwarding to your real line. Without it, offline channels are unmeasurable and get cancelled for the wrong reasons.</p>
+          <span class="ev"><b>Evidence:</b> Known fix. Build it in before launch, never after.</span>
+        </article>
+        <article class="idea" data-s="Offline" data-k="fix" data-e="low">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Offline</span><span class="tag t-low">An afternoon</span></div>
+          <h3>Stop judging channels on attributed revenue alone</h3>
+          <p>Attribution flatters whatever sits closest to the click. Branded search gets credit for demand that something else created.</p>
+          <span class="ev"><b>Evidence:</b> Known measurement failure.</span>
+        </article>
+        <article class="idea" data-s="Offline" data-k="fix" data-e="med">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Offline</span><span class="tag t-med">A few days</span></div>
+          <h3>Concentrate broadcast rather than spreading it</h3>
+          <p>The same budget across three stations produces three schedules too thin to notice. Frequency beats reach when the budget is finite.</p>
+          <span class="ev"><b>Evidence:</b> Radio Advertising Bureau guidance is 35 to 60 spots weekly on a single station.</span>
+        </article>
+        <article class="idea" data-s="Offline" data-k="fix" data-e="med">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Offline</span><span class="tag t-med">A few days</span></div>
+          <h3>Calculate break-even before buying any list</h3>
+          <p>Cost per piece divided by close rate times average sale times margin times lifetime value. If the answer exceeds published response ranges, do not mail.</p>
+          <span class="ev"><b>Evidence:</b> Known method. Prevents most direct mail failures.</span>
+        </article>
+        <article class="idea" data-s="Offline" data-k="test" data-e="high">
+          <div class="idea-tags"><span class="tag t-test">Test it</span><span class="tag t-stage">Offline</span><span class="tag t-high">A project</span></div>
+          <h3>Run a matched-market test on offline spend</h3>
+          <p>Run the campaign in one market, hold a comparable one back, compare. Expensive and the only clean way to measure broadcast.</p>
+          <span class="ev"><b>Evidence:</b> Strongest available method where budget supports it.</span>
+        </article>
+        <article class="idea" data-s="Offline" data-k="fix" data-e="low">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Offline</span><span class="tag t-low">An afternoon</span></div>
+          <h3>Record and review sales calls</h3>
+          <p>The conversion problem is often after the click entirely. Listening to ten calls finds more than a month of heatmaps.</p>
+          <span class="ev"><b>Evidence:</b> Known method.</span>
+        </article>
+        <article class="idea" data-s="Offline" data-k="fix" data-e="med">
+          <div class="idea-tags"><span class="tag t-fix">Just fix it</span><span class="tag t-stage">Offline</span><span class="tag t-med">A few days</span></div>
+          <h3>Fix what happens between the lead and the quote</h3>
+          <p>Slow quotes lose deals that the marketing already won. Time-to-quote is a conversion metric that lives entirely outside the website.</p>
+          <span class="ev"><b>Evidence:</b> Known fix.</span>
+        </article>
+        <article class="idea" data-s="Offline" data-k="test" data-e="med">
+          <div class="idea-tags"><span class="tag t-test">Test it</span><span class="tag t-stage">Offline</span><span class="tag t-med">A few days</span></div>
+          <h3>Test qualifying harder rather than converting more</h3>
+          <p>More leads is not always better. Filtering out unqualified inquiries raises close rate and frees the time that was being wasted on them.</p>
+          <span class="ev"><b>Evidence:</b> Test it. Depends on capacity and lead mix.</span>
+        </article>
+      </div>
+      <div class="lib-empty" id="libEmpty" style="display:none;">No ideas match that combination. Try widening a filter.</div>
+    </div>
+
+    <div class="note-box">
+      <b>How to use this without wasting a quarter.</b> Filter to "Just fix it" and "An afternoon" first, and work that list until it is empty. Those are changes with enough evidence behind them that measuring individually is not worth the traffic, and they cost days rather than months. Only then move to the test column, and only if the feasibility calculator said you can.
+    </div>
+  </div>
+</section>
+
+<!-- MEASURING -->
+<section class="band">
+  <div class="wrap">
+    <div class="narrow prose">
+      <span class="kicker">If you cannot test</span>
+      <h2 class="h2">How to know your fixes worked when A/B testing is off the table</h2>
+      <p class="lede">This is the part nobody writes about, because it is less impressive than experimentation. It is also the situation most businesses are actually in.</p>
+
+      <h3 class="h3" style="margin-top:26px;">Measure at the business level, not the page level</h3>
+      <p>You cannot detect a 6% page-level lift without a lot of traffic. You can absolutely detect whether inquiries went from eleven a month to nineteen. Lower-traffic sites usually have larger, chunkier problems, and fixing them produces changes visible in the monthly total rather than requiring a significance calculation.</p>
+
+      <h3 class="h3" style="margin-top:24px;">Use before-and-after windows honestly</h3>
+      <p>Compare equal periods, account for seasonality, and note every other thing that changed in the window. This is weaker evidence than a controlled test and it is not worthless. The failure mode is claiming causation for a change that coincided with your busy season, so write down what else happened.</p>
+
+      <h3 class="h3" style="margin-top:24px;">Batch your changes deliberately</h3>
+      <p>If you cannot isolate variables anyway, stop pretending. Ship a group of related fixes at once, measure the total effect, and accept that you will not know which one did the work. That is a reasonable trade when the alternative is shipping nothing for eight months.</p>
+
+      <h3 class="h3" style="margin-top:24px;">Watch the qualitative signals</h3>
+      <p>Session recordings, the questions your sales team keeps answering, support tickets about the same confusion, and the point in a form where people stop. These do not prove anything statistically and they routinely find the actual problem faster than a test would, because they tell you what is happening rather than only that something is.</p>
+
+      <h3 class="h3" style="margin-top:24px;">Run a holdout where the mechanism allows</h3>
+      <p>Email flows, direct mail drops and broadcast campaigns can all be measured by withholding a random group, and that works at far lower volumes than page testing. Anywhere you control who receives something, you have a cleaner measurement available than anywhere you only control what a page looks like.</p>
+    </div>
+
+    <div class="svc">
+      <div class="svc-cell">
+        <h3>Where the tools live</h3>
+        <p>Our <a href="/ab-test-simulator/">A/B test simulator</a> lets you play with sample sizes and see how often underpowered tests produce fake winners.</p>
+      </div>
+      <div class="svc-cell">
+        <h3>Form friction specifically</h3>
+        <p>The <a href="/form-friction-calculator/">form friction calculator</a> scores what each additional field is costing you before you remove any of them.</p>
+      </div>
+      <div class="svc-cell">
+        <h3>The wider picture</h3>
+        <p>The <a href="/marketing-plan-builder/">marketing plan builder</a> models a whole channel mix rather than one page, if the constraint turns out to be upstream.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="band band-wash rule-t">
+  <div class="wrap">
+    <div class="narrow prose">
+      <span class="kicker">If you would rather not</span>
+      <h2 class="h2">Or we can do it with you</h2>
+      <p>Everything on this page is genuinely usable without hiring anyone, and most of it costs an afternoon each. If you would rather have it done, that is <a href="/conversion-optimization/">conversion optimization</a> work and it starts with the same feasibility question this page opens with.</p>
+      <p>The honest version of that engagement usually looks like this: a month of fixing known problems, measured at the business level, followed by testing only if the traffic supports it. Anyone selling you a testing program without first checking whether you have the traffic to run one is selling you a schedule of inconclusive results.</p>
+      <p>Where the constraint turns out to be that too few people arrive at all, the answer is <a href="/lead-generation/">lead generation</a> or <a href="/ppc-management/">PPC management</a> rather than page optimization. Where it is that the people arriving are the wrong people, that is a targeting and messaging problem, and we would look at <a href="/marketing-consulting/">marketing consulting</a> before touching a button color.</p>
+    </div>
+
+    <div class="links-grid">
+      <a class="link-card" href="/ecommerce-marketing/"><b>Ecommerce marketing</b><span>Checkout abandonment and first-order economics.</span></a>
+      <a class="link-card" href="/saas-marketing/"><b>SaaS marketing</b><span>Trial conversion and activation.</span></a>
+      <a class="link-card" href="/b2b-marketing/"><b>B2B marketing</b><span>Pages built for a buying committee.</span></a>
+      <a class="link-card" href="/retention-systems/"><b>Marketing automation</b><span>Triggered flows, where the leverage actually is.</span></a>
+      <a class="link-card" href="/ai-website-design/"><b>AI website design</b><span>Six checks you can run on your own site today.</span></a>
+      <a class="link-card" href="/branding-design/"><b>Branding and design</b><span>Why recognition lowers friction before anyone arrives.</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="band">
+  <div class="wrap">
+    <div class="narrow prose">
+      <span class="kicker">Questions we get</span>
+      <h2 class="h2">Conversion optimization questions, answered with the data</h2>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">How much traffic do I need to A/B test?<span class="faq-icon" aria-hidden="true"></span></button>
+        <div class="faq-answer" hidden><p>More than most sites have. Across a dataset of 4,200 tests the median requirement was 10,400 visitors per variant server-side and 14,800 client-side. The exact figure depends on your baseline conversion rate, the relative lift you want to detect, and your confidence and power settings. At 95% confidence and 80% power, a page converting at 4% needs roughly 10,300 visitors per variant to detect a 20% relative lift, and about 39,500 to detect a 10% one. Be careful with the simplified rules of thumb circulating online, which often quote figures two to three times lower because they use less conservative assumptions. The calculator above uses the standard two-sided formula, which is why its numbers look larger and why they line up with that 14,800 median.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What percentage of A/B tests actually win?<span class="faq-icon" aria-hidden="true"></span></button>
+        <div class="faq-answer" hidden><p>Around 12% on Optimizely's analysis of more than 127,000 experiments, meaning roughly one tested idea in eight produces a statistically significant improvement. Other platform benchmarks land nearby: VWO around 14%, CXL and Convert around 20%. An independent audit of 2,288 tests found 50.5% beat control on raw numbers but only 19.1% reached statistical significance. Mature programs with disciplined hypothesis generation reach 22 to 30%. If someone quotes you a much higher win rate, ask how they define a win.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">How long should a test run?<span class="faq-icon" aria-hidden="true"></span></button>
+        <div class="faq-answer" hidden><p>At minimum 14 days, covering at least one full business cycle including weekends, and beyond that whatever your pre-calculated sample size requires. Tests under 14 days carry a false positive rate around 61%. The median test in one large agency dataset ran 42 days. Set the duration before you launch and commit to it, because checking daily and stopping when the variant looks good is reportedly done by 47% of teams and is the most reliable way to manufacture a winner that does not exist.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What lift should I expect from a winning test?<span class="faq-icon" aria-hidden="true"></span></button>
+        <div class="faq-answer" hidden><p>Around 6.1% at the median for tests that win. Lifts above 50% sit at the 95th to 99th percentile, which means they happen occasionally and cannot be planned for. The value in a testing program comes from compounding rather than from any single result: a 6.1% median lift across eight to ten winning tests a year on a checkout funnel produces something in the region of 47 to 61% total improvement. Any agency forecasting case-study lifts on most tests is mis-calibrated or selling.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Why did my winning test not reproduce its lift?<span class="faq-icon" aria-hidden="true"></span></button>
+        <div class="faq-answer" hidden><p>Most likely the winner's curse. Under-powered tests systematically exaggerate the size of the effects they detect, because only unusually large swings cross the significance threshold when the sample is small, and extreme results drift toward the average over time. In one dataset 41.4% of tests claimed significance with insufficient statistical power. If you tested on 200 conversions rather than 2,000, expect both false positives and inflated lift estimates, and expect implemented winners to underperform their test results.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What if I do not have enough traffic to test?<span class="faq-icon" aria-hidden="true"></span></button>
+        <div class="faq-answer" hidden><p>Then stop trying, which is a legitimate strategy rather than a defeat. Fix the things that are already known to be broken, such as contrast, form labels, page speed, unclear actions and missing trust information, none of which need an experiment to justify. Measure at the business level, where a change from eleven inquiries a month to nineteen is visible without a significance calculation. Use session recordings and support questions to find problems. And run holdouts where you control the audience, such as email flows, which works at far lower volumes than page testing.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Which types of test win most often?<span class="faq-icon" aria-hidden="true"></span></button>
+        <div class="faq-answer" hidden><p>Copy and social proof tests show the highest raw win rates, around 57 to 60% in one audit, while form, layout and trust-signal tests win less often. By funnel stage the differences are smaller than people assume: one agency dataset found decision-stage tests on product, cart and checkout pages at 37.5%, consideration-stage at 34.9% and awareness-stage at 35.5%. Lead generation and subscription funnels win more often than mature ecommerce, at roughly 58 to 61% raw against 48 to 50%, mostly because they still carry visible friction that has never been removed.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Should I test one change at a time?<span class="faq-icon" aria-hidden="true"></span></button>
+        <div class="faq-answer" hidden><p>If you have the traffic, yes, because isolating variables is the entire point. If you do not have the traffic, batching related changes is the more honest approach: you will not be able to attribute the effect to a specific change either way, so shipping a coherent group of fixes and measuring the total beats shipping nothing for eight months. What you should not do is make many changes, run an underpowered test, and then claim to know which one worked.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Do desktop test results apply to mobile?<span class="faq-icon" aria-hidden="true"></span></button>
+        <div class="faq-answer" hidden><p>Not reliably. Mobile visitors typically convert at around half the desktop rate while making up the majority of traffic, and they encounter genuinely different friction: thumb reach, slower networks, autocomplete failures and longer forms on smaller screens. A winner validated on desktop can lose on mobile. If you run an unsegmented test and roll out the result to everyone, you can improve one device class while damaging the other and see a flat overall number that hides both effects.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Is conversion optimization worth it for a small site?<span class="faq-icon" aria-hidden="true"></span></button>
+        <div class="faq-answer" hidden><p>Yes, but as fixing rather than testing. Small sites usually carry larger and more obvious problems than heavily optimized ones, which is also why lead generation funnels win tests more often than mature ecommerce: there is more visible friction left to remove. The work is the same list of known fixes, done without waiting for a significance threshold you will never reach. The compounding argument still holds too, since an improvement made now applies to every visitor afterward.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">What should I fix first?<span class="faq-icon" aria-hidden="true"></span></button>
+        <div class="faq-answer" hidden><p>Whatever is closest to the money and most obviously broken. In practice that usually means: make sure people can contact you easily and someone responds fast, remove form fields you do not act on, fix contrast and labels so the page is usable at all, make one action per page clearly dominant, and answer the objection your sales team hears most often. Filter this page's library to "Just fix it" and "An afternoon" and you have a working list. None of those need a test to justify.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">Do you work with businesses outside Colorado?<span class="faq-icon" aria-hidden="true"></span></button>
+        <div class="faq-answer" hidden><p>Yes. Search Converts is based in Denver and works with businesses across the United States and Canada. Conversion work runs on analytics access, shared reporting and calls, so location is not a constraint. Call <a href="tel:+17207128615">+1 720-712-8615</a> and we will start by telling you whether your traffic supports testing at all, which determines everything about how the work should be approached, whether or not you hire us.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="form-band" id="talk">
+  <div class="form-shell">
+    <div class="form-card">
+      <div class="form-head">
+        <h2>Tell us your traffic and we will tell you which column you are in</h2>
+        <p>Monthly visitors, roughly what converts, and what you sell. First thing we report is whether testing is realistic for you, because that decides whether the right work is experiments or fixes.</p>
+        <div class="form-callout">
+          <p>Or call and we will work it out live:</p>
+          <a href="tel:+17207128615">+1 720-712-8615</a>
+        </div>
+      </div>
+      <div class="form-body">
+        <form id="ci-form" novalidate>
+          <input type="hidden" name="source_site" value="searchconverts.com - Conversion Optimization Ideas">
+          <input type="hidden" name="_form_loaded" id="ci-loaded" value="">
+          <div style="display:none;" aria-hidden="true">
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off">
+          </div>
+          <div class="sc-form-row">
+            <div class="sc-form-group">
+              <label for="ci-name">Your name *</label>
+              <input id="ci-name" name="user_name" type="text" placeholder="Full name" required autocomplete="name">
+            </div>
+            <div class="sc-form-group">
+              <label for="ci-biz">Business name</label>
+              <input id="ci-biz" name="business_name" type="text" placeholder="Company" autocomplete="organization">
+            </div>
+          </div>
+          <div class="sc-form-row">
+            <div class="sc-form-group">
+              <label for="ci-phone">Phone *</label>
+              <input id="ci-phone" name="user_phone" type="tel" placeholder="720-000-0000" required autocomplete="tel">
+            </div>
+            <div class="sc-form-group">
+              <label for="ci-email">Email</label>
+              <input id="ci-email" name="user_email" type="email" placeholder="you@company.com" autocomplete="email">
+            </div>
+          </div>
+          <div class="sc-form-row">
+            <div class="sc-form-group">
+              <label for="ci-traffic">Monthly visitors</label>
+              <select id="ci-traffic" name="traffic_band">
+                <option value="">Select one</option>
+                <option>Under 2,000</option>
+                <option>2,000 to 10,000</option>
+                <option>10,000 to 50,000</option>
+                <option>50,000 to 200,000</option>
+                <option>Over 200,000</option>
+              </select>
+            </div>
+            <div class="sc-form-group">
+              <label for="ci-goal">Main conversion</label>
+              <select id="ci-goal" name="main_goal">
+                <option value="">Select one</option>
+                <option>Phone calls</option>
+                <option>Form submissions</option>
+                <option>Online purchases</option>
+                <option>Trial signups</option>
+                <option>Booked appointments</option>
+                <option>Several of these</option>
+              </select>
+            </div>
+          </div>
+          <div class="sc-form-group">
+            <label for="ci-msg">What you have already tried</label>
+            <textarea id="ci-msg" name="user_message" placeholder="Your site address, roughly what converts today, and whether you have run tests before. If the feasibility calculator gave you a verdict, paste it here."></textarea>
+          </div>
+          <button type="submit" class="sc-submit-btn" id="ci-submit-btn">Send my details</button>
+          <div id="ci-form-msg" role="status" aria-live="polite"></div>
+        </form>
+        <p class="form-privacy">Your information is never sold or shared. We respond within one business day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer" aria-label="Site footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <a href="/" class="footer-brand-logo" aria-label="Search Converts home">
+          <img src="/images/search-converts-logo-color.avif" alt="Search Converts" width="200" height="200" loading="lazy">
+        </a>
+        <p class="footer-brand-desc">A full-service conversion rate optimization agency. We turn the traffic you already pay for into revenue &mdash; then scale it across every channel that reaches a buyer.</p>
+        <address style="font-style:normal;">
+          <a href="#" class="footer-contact-link js-email" data-email="footer">Email us</a>
+          <a href="tel:7207128615" class="footer-contact-link">720-712-8615</a>
+          <span class="footer-contact-link" style="color:#374151;">1001 Bannock St #660, Denver, CO 80204</span>
+        </address>
+      </div>
+      <div>
+        <div class="footer-col-title">Convert</div>
+        <ul class="footer-links">
+          <li><a href="/conversion-optimization/">Conversion Optimization</a></li>
+          <li><a href="/conversion-optimization-ideas/">Conversion Optimization Ideas</a></li>
+          <li><a href="/ab-test-simulator/">A/B Test Simulator</a></li>
+          <li><a href="/lead-generation/">Lead Generation</a></li>
+          <li><a href="/email-marketing/">Email Marketing</a></li>
+          <li><a href="/retention-systems/">Marketing Automation</a></li>
+          <li><a href="/marketing-plan-builder/">Marketing Plan Builder</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Advertise</div>
+        <ul class="footer-links">
+          <li><a href="/ppc-management/">PPC Management</a></li>
+          <li><a href="/google-ads-management/">Google Ads Management</a></li>
+          <li><a href="/facebook-ads-management/">Facebook &amp; Meta Ads</a></li>
+          <li><a href="/social-media-marketing/">Social Media Marketing</a></li>
+          <li><a href="/programmatic-advertising/">Programmatic Display</a></li>
+          <li><a href="/ctv-advertising/">CTV &amp; Streaming Ads</a></li>
+          <li><a href="/retargeting/">Retargeting</a></li>
+          <li><a href="/radio-tv-advertising/">Radio &amp; TV Advertising</a></li>
+          <li><a href="/direct-mail-marketing/">Direct Mail Marketing</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Build &amp; Grow</div>
+        <ul class="footer-links">
+          <li><a href="/video-production/">Video Production</a></li>
+          <li><a href="/youtube-promotion/">YouTube Promotion</a></li>
+          <li><a href="/branding-design/">Branding &amp; Design</a></li>
+          <li><a href="/app-development-company/">App Development</a></li>
+          <li><a href="/web-app-development/">Web App Development</a></li>
+          <li><a href="/ai-website-design/">AI Website Design</a></li>
+          <li><a href="/ai-marketing-agency/">AI Marketing Agency</a></li>
+          <li><a href="/sales-training/">Sales Training</a></li>
+          <li><a href="/business-consulting/">Business Consulting</a></li>
+          <li><a href="/marketing-consulting/">Marketing Consulting</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="padding:28px 0 4px;border-bottom:1px solid var(--border);">
+      <div class="footer-col-title">Our Network</div>
+      <ul class="footer-links" style="display:flex;flex-wrap:wrap;gap:8px 32px;">
+        <li><a href="https://eyetoad.com" rel="noopener">Eye To Ad Media &mdash; SEO &amp; AI search optimization</a></li>
+        <li><a href="https://denver-webdesign.com" rel="noopener">Denver Web Design</a></li>
+        <li><a href="https://mysaleshelp.com" rel="noopener">My Sales Help &mdash; free sales tools</a></li>
+        <li><a href="https://actionglobalnews.com" rel="noopener">Action Global News</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Search Converts LLC. All rights reserved.<br>
+        1001 Bannock St #660, Denver, CO 80204 &nbsp;|&nbsp; <a href="tel:7207128615">720-712-8615</a>
+      </p>
+      <p>
+        <a href="/about/">About</a> &nbsp;|&nbsp;
+        <a href="/services/">Services</a> &nbsp;|&nbsp;
+        <a href="/contact/">Contact</a> &nbsp;|&nbsp;
+        <a href="/privacy/">Privacy</a> &nbsp;|&nbsp;
+        <a href="/terms/">Terms</a> &nbsp;|&nbsp;
+        <a href="/sitemap.xml">Sitemap</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://searchconverts.com/#organization",
+      "name": "Search Converts",
+      "alternateName": "Search Converts LLC",
+      "url": "https://searchconverts.com/",
+      "logo": { "@type": "ImageObject", "url": "https://searchconverts.com/images/search-converts-logo-color.avif" },
+      "telephone": "+17207128615",
+      "legalName": "Search Converts LLC",
+      "foundingDate": "2012",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1001 Bannock St #660",
+        "addressLocality": "Denver",
+        "addressRegion": "CO",
+        "postalCode": "80204",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        { "@type": "Country", "name": "United States" },
+        { "@type": "Country", "name": "Canada" }
+      ],
+      "knowsAbout": [
+        "Conversion rate optimization",
+        "A/B test sample size and statistical power",
+        "Form and checkout friction reduction",
+        "Landing page optimization",
+        "Measurement without controlled testing",
+        "Holdout testing and incrementality"
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://searchconverts.com/conversion-optimization-ideas/#article",
+      "headline": "53 Conversion Optimization Ideas, Sorted by Whether You Can Test Them",
+      "description": "A filterable library of 53 conversion optimization ideas tagged by funnel stage, effort and evidence strength, with a calculator for whether your traffic supports A/B testing at all.",
+      "author": { "@id": "https://searchconverts.com/#organization" },
+      "publisher": { "@id": "https://searchconverts.com/#organization" },
+      "inLanguage": "en-US",
+      "isPartOf": { "@id": "https://searchconverts.com/conversion-optimization-ideas/#webpage" },
+      "about": [
+        { "@type": "Thing", "name": "Conversion rate optimization" },
+        { "@type": "Thing", "name": "A/B testing" }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://searchconverts.com/conversion-optimization-ideas/#webpage",
+      "url": "https://searchconverts.com/conversion-optimization-ideas/",
+      "name": "53 Conversion Optimization Ideas, Sorted by Whether You Can Test Them | Search Converts",
+      "description": "53 conversion optimization ideas filterable by funnel stage, effort and evidence, plus a test feasibility calculator.",
+      "isPartOf": { "@id": "https://searchconverts.com/#website" },
+      "hasPart": { "@id": "https://searchconverts.com/conversion-optimization-ideas/#faq" },
+      "inLanguage": "en-US",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".hero h1", ".hero-sub", ".lede"]
+      },
+      "mentions": [
+        {
+          "@type": "DefinedTerm",
+          "name": "Minimum detectable effect",
+          "alternateName": ["MDE"],
+          "description": "The smallest relative change in conversion rate an experiment is designed to detect reliably. Smaller minimum detectable effects require substantially more traffic: detecting a 5 percent relative lift costs roughly four times the sample of detecting a 10 percent lift."
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Statistical power",
+          "description": "The probability that a test will detect a real effect when one exists, conventionally set at 80 percent. Under-powered tests both miss real effects and exaggerate the size of the effects they do detect. In one dataset of 4,200 experiments, 41.4 percent claimed statistical significance while running below 80 percent power."
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Winner's curse",
+          "description": "The tendency of under-powered experiments to overstate the size of a winning variant's improvement, because only unusually large swings cross the significance threshold at small sample sizes and extreme results regress toward the mean over time. It explains why implemented test winners frequently underperform their measured lift."
+        }
+      ],
+      "significantLink": [
+        "https://searchconverts.com/conversion-optimization/",
+        "https://searchconverts.com/ab-test-simulator/",
+        "https://searchconverts.com/form-friction-calculator/",
+        "https://searchconverts.com/contact/"
+      ],
+      "potentialAction": [{
+        "@type": "CommunicateAction",
+        "name": "Get a free conversion and test feasibility review",
+        "target": "tel:+17207128615"
+      }]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://searchconverts.com/conversion-optimization-ideas/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://searchconverts.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Conversion Optimization", "item": "https://searchconverts.com/conversion-optimization/" },
+        { "@type": "ListItem", "position": 3, "name": "Conversion Optimization Ideas", "item": "https://searchconverts.com/conversion-optimization-ideas/" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://searchconverts.com/conversion-optimization-ideas/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much traffic do I need to A/B test?",
+          "acceptedAnswer": { "@type": "Answer", "text": "More than most sites have. Across a dataset of 4,200 tests the median requirement was 10,400 visitors per variant server-side and 14,800 client-side. The exact figure depends on your baseline conversion rate, the relative lift you want to detect, and your confidence and power settings. At 95% confidence and 80% power, a page converting at 4% needs roughly 10,300 visitors per variant to detect a 20% relative lift, and about 39,500 to detect a 10% one. Be careful with the simplified rules of thumb circulating online, which often quote figures two to three times lower because they use less conservative assumptions. The calculator above uses the standard two-sided formula, which is why its numbers look larger and why they line up with that 14,800 median." }
+        },
+        {
+          "@type": "Question",
+          "name": "What percentage of A/B tests actually win?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Around 12% on Optimizely's analysis of more than 127,000 experiments, meaning roughly one tested idea in eight produces a statistically significant improvement. Other platform benchmarks land nearby: VWO around 14%, CXL and Convert around 20%. An independent audit of 2,288 tests found 50.5% beat control on raw numbers but only 19.1% reached statistical significance. Mature programs with disciplined hypothesis generation reach 22 to 30%. If someone quotes you a much higher win rate, ask how they define a win." }
+        },
+        {
+          "@type": "Question",
+          "name": "How long should a test run?",
+          "acceptedAnswer": { "@type": "Answer", "text": "At minimum 14 days, covering at least one full business cycle including weekends, and beyond that whatever your pre-calculated sample size requires. Tests under 14 days carry a false positive rate around 61%. The median test in one large agency dataset ran 42 days. Set the duration before you launch and commit to it, because checking daily and stopping when the variant looks good is reportedly done by 47% of teams and is the most reliable way to manufacture a winner that does not exist." }
+        },
+        {
+          "@type": "Question",
+          "name": "What lift should I expect from a winning test?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Around 6.1% at the median for tests that win. Lifts above 50% sit at the 95th to 99th percentile, which means they happen occasionally and cannot be planned for. The value in a testing program comes from compounding rather than from any single result: a 6.1% median lift across eight to ten winning tests a year on a checkout funnel produces something in the region of 47 to 61% total improvement. Any agency forecasting case-study lifts on most tests is mis-calibrated or selling." }
+        },
+        {
+          "@type": "Question",
+          "name": "Why did my winning test not reproduce its lift?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Most likely the winner's curse. Under-powered tests systematically exaggerate the size of the effects they detect, because only unusually large swings cross the significance threshold when the sample is small, and extreme results drift toward the average over time. In one dataset 41.4% of tests claimed significance with insufficient statistical power. If you tested on 200 conversions rather than 2,000, expect both false positives and inflated lift estimates, and expect implemented winners to underperform their test results." }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I do not have enough traffic to test?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Then stop trying, which is a legitimate strategy rather than a defeat. Fix the things that are already known to be broken, such as contrast, form labels, page speed, unclear actions and missing trust information, none of which need an experiment to justify. Measure at the business level, where a change from eleven inquiries a month to nineteen is visible without a significance calculation. Use session recordings and support questions to find problems. And run holdouts where you control the audience, such as email flows, which works at far lower volumes than page testing." }
+        },
+        {
+          "@type": "Question",
+          "name": "Which types of test win most often?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Copy and social proof tests show the highest raw win rates, around 57 to 60% in one audit, while form, layout and trust-signal tests win less often. By funnel stage the differences are smaller than people assume: one agency dataset found decision-stage tests on product, cart and checkout pages at 37.5%, consideration-stage at 34.9% and awareness-stage at 35.5%. Lead generation and subscription funnels win more often than mature ecommerce, at roughly 58 to 61% raw against 48 to 50%, mostly because they still carry visible friction that has never been removed." }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I test one change at a time?",
+          "acceptedAnswer": { "@type": "Answer", "text": "If you have the traffic, yes, because isolating variables is the entire point. If you do not have the traffic, batching related changes is the more honest approach: you will not be able to attribute the effect to a specific change either way, so shipping a coherent group of fixes and measuring the total beats shipping nothing for eight months. What you should not do is make many changes, run an underpowered test, and then claim to know which one worked." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do desktop test results apply to mobile?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Not reliably. Mobile visitors typically convert at around half the desktop rate while making up the majority of traffic, and they encounter genuinely different friction: thumb reach, slower networks, autocomplete failures and longer forms on smaller screens. A winner validated on desktop can lose on mobile. If you run an unsegmented test and roll out the result to everyone, you can improve one device class while damaging the other and see a flat overall number that hides both effects." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is conversion optimization worth it for a small site?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes, but as fixing rather than testing. Small sites usually carry larger and more obvious problems than heavily optimized ones, which is also why lead generation funnels win tests more often than mature ecommerce: there is more visible friction left to remove. The work is the same list of known fixes, done without waiting for a significance threshold you will never reach. The compounding argument still holds too, since an improvement made now applies to every visitor afterward." }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I fix first?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Whatever is closest to the money and most obviously broken. In practice that usually means: make sure people can contact you easily and someone responds fast, remove form fields you do not act on, fix contrast and labels so the page is usable at all, make one action per page clearly dominant, and answer the objection your sales team hears most often. Filter this page's library to \"Just fix it\" and \"An afternoon\" and you have a working list. None of those need a test to justify." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with businesses outside Colorado?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Search Converts is based in Denver and works with businesses across the United States and Canada. Conversion work runs on analytics access, shared reporting and calls, so location is not a constraint. Call +1 720-712-8615 and we will start by telling you whether your traffic supports testing at all, which determines everything about how the work should be approached, whether or not you hire us." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+(function () {
+  'use strict';
+
+  var _L = [112,117,109,118,71,108,128,108,123,118,104,107,53,106,118,116];
+  var _P = [111,108,115,115,118,71,122,108,104,121,106,111,106,118,117,125,108,121,123,122,53,106,118,116];
+  function _d(a) { var s = '', i; for (i = 0; i < a.length; i++) { s += String.fromCharCode(a[i] - 7); } return s; }
+
+  document.querySelectorAll('.js-email').forEach(function (el) {
+    var addr = _d(_P);
+    el.setAttribute('href', 'mai' + 'lto:' + addr);
+    el.textContent = addr;
+  });
+
+  var burger = document.getElementById('hamburger');
+  var mnav = document.getElementById('mobile-nav');
+  if (burger && mnav) {
+    burger.addEventListener('click', function () {
+      var open = mnav.classList.toggle('open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+
+  var navItems = document.querySelectorAll('.header-nav > li');
+  navItems.forEach(function (li) {
+    var btn = li.querySelector('.nav-toggle');
+    if (!btn) return;
+    function closeAll() {
+      navItems.forEach(function (o) {
+        var b = o.querySelector('.nav-toggle');
+        if (b) { o.classList.remove('open'); b.setAttribute('aria-expanded', 'false'); }
+      });
+    }
+    function close() { li.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); }
+    function open() { closeAll(); li.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
+    btn.addEventListener('click', function (e) { e.stopPropagation(); li.classList.contains('open') ? close() : open(); });
+    li.addEventListener('mouseenter', open);
+    li.addEventListener('mouseleave', close);
+    li.addEventListener('keydown', function (e) { if (e.key === 'Escape') { close(); btn.focus(); } });
+  });
+  document.addEventListener('click', function () {
+    navItems.forEach(function (o) {
+      var b = o.querySelector('.nav-toggle');
+      if (b) { o.classList.remove('open'); b.setAttribute('aria-expanded', 'false'); }
+    });
+  });
+
+  /* ══ FEASIBILITY CALCULATOR ══ */
+  var fIds = ['traffic', 'base', 'mde', 'vars'];
+  var fEl = {};
+  fIds.forEach(function (i) { fEl[i] = document.getElementById(i); });
+
+  function paintSlider(e) {
+    if (!e) return;
+    var p = ((e.value - e.min) / (e.max - e.min)) * 100;
+    e.style.background = 'linear-gradient(90deg, #046a38 0%, #046a38 ' + p + '%, #e6ede7 ' + p + '%, #e6ede7 100%)';
+  }
+
+  /* sample size per variant, two-sided, 95% confidence, 80% power */
+  function sampleSize(p1, rel) {
+    var p2 = p1 * (1 + rel);
+    if (p2 >= 1) return Infinity;
+    var za = 1.959964, zb = 0.8416212;
+    var pbar = (p1 + p2) / 2;
+    var num = Math.pow(za * Math.sqrt(2 * pbar * (1 - pbar)) + zb * Math.sqrt(p1 * (1 - p1) + p2 * (1 - p2)), 2);
+    return Math.ceil(num / Math.pow(p2 - p1, 2));
+  }
+
+  function runFeas() {
+    if (!fEl.traffic) return;
+    var traffic = +fEl.traffic.value;
+    var base = +fEl.base.value / 1000;
+    var rel = +fEl.mde.value / 100;
+    var vars = +fEl.vars.value;
+
+    document.getElementById('trafficOut').textContent = traffic.toLocaleString('en-US');
+    document.getElementById('baseOut').textContent = (base * 100).toFixed(1) + '%';
+    document.getElementById('mdeOut').textContent = Math.round(rel * 100) + '%';
+    document.getElementById('varsOut').textContent = vars;
+    fIds.forEach(function (i) { paintSlider(fEl[i]); });
+
+    var n = sampleSize(base, rel);
+    var perDay = traffic / 30 / vars;
+    var days = perDay > 0 ? Math.ceil(n / perDay) : Infinity;
+
+    document.getElementById('ssVal').textContent = isFinite(n) ? n.toLocaleString('en-US') : 'n/a';
+    document.getElementById('ssNote').textContent = isFinite(n)
+      ? 'Total across ' + vars + ' variants: ' + (n * vars).toLocaleString('en-US') + ' visitors.'
+      : 'That lift would exceed a 100% conversion rate.';
+
+    document.getElementById('daysVal').textContent = isFinite(days)
+      ? (days > 999 ? '999+' : days) : 'n/a';
+    document.getElementById('daysNote').textContent = isFinite(days)
+      ? 'At ' + Math.round(perDay).toLocaleString('en-US') + ' visitors per variant per day.'
+      : 'Not reachable at this traffic.';
+
+    /* smallest lift detectable within 30 days */
+    var budget = (traffic / vars);
+    var lo = 0.01, hi = 3, best = null;
+    for (var i = 0; i < 40; i++) {
+      var mid = (lo + hi) / 2;
+      var need = sampleSize(base, mid);
+      if (isFinite(need) && need <= budget) { best = mid; hi = mid; } else { lo = mid; }
+    }
+    document.getElementById('mdeVal').textContent = best ? '+' + Math.round(best * 100) + '%' : 'None';
+    document.getElementById('mdeNote').textContent = best
+      ? 'The smallest lift a 30-day test could reliably detect.'
+      : 'No realistic lift is detectable in 30 days at this traffic.';
+
+    var title, text;
+    if (!isFinite(days) || days > 180) {
+      title = 'Testing is not available to you, and that is fine';
+      text = 'This test would take more than six months, by which point seasonality and your own site changes will have contaminated it. Do not run it. Work the "Just fix it" filter in the library below, measure at the business level, and revisit testing if traffic grows substantially.';
+    } else if (days > 42) {
+      title = 'Too slow to be worth it';
+      text = 'At ' + days + ' days this test outruns the six-week limit where results stay clean. Either target a larger lift, which costs far less traffic, or treat this as a fix to make rather than a hypothesis to test. Testing bigger, bolder changes is the usual answer at this traffic level.';
+    } else if (days > 14) {
+      title = 'Workable, if you leave it alone';
+      text = 'At ' + days + ' days this is a legitimate test. Set the end date now and do not stop early when the variant looks good, because tests under 14 days carry a false positive rate around 61% and peeking is how most fake winners get made.';
+    } else {
+      title = 'You have the traffic to run a real program';
+      text = 'This test completes in ' + days + ' days, so run it for a minimum of 14 anyway to cover a full business cycle including weekends. At this volume you can run eight to ten tests a year, which is where the compounding effect of a 6.1% median lift genuinely adds up.';
+    }
+    document.getElementById('fvTitle').textContent = title;
+    document.getElementById('fvText').textContent = text;
+  }
+
+  fIds.forEach(function (i) { if (fEl[i]) fEl[i].addEventListener('input', runFeas); });
+  runFeas();
+
+  /* ══ IDEA LIBRARY ══ */
+  var filters = { stage: 'all', kind: 'all', effort: 'all' };
+  var allIdeas = Array.prototype.slice.call(document.querySelectorAll('.idea'));
+  var TOTAL = allIdeas.length;
+
+  function render() {
+    var shown = 0;
+    allIdeas.forEach(function (el) {
+      var ok = (filters.stage === 'all' || el.getAttribute('data-s') === filters.stage)
+        && (filters.kind === 'all' || el.getAttribute('data-k') === filters.kind)
+        && (filters.effort === 'all' || el.getAttribute('data-e') === filters.effort);
+      el.style.display = ok ? '' : 'none';
+      if (ok) shown++;
+    });
+    var count = document.getElementById('libCount');
+    if (count) { count.innerHTML = 'Showing <b>' + shown + '</b> of ' + TOTAL + ' ideas'; }
+    var empty = document.getElementById('libEmpty');
+    if (empty) { empty.style.display = shown ? 'none' : 'block'; }
+  }
+
+  document.querySelectorAll('.chip').forEach(function (c) {
+    c.addEventListener('click', function () {
+      var f = c.getAttribute('data-f'), v = c.getAttribute('data-v');
+      filters[f] = v;
+      document.querySelectorAll('.chip[data-f="' + f + '"]').forEach(function (o) {
+        o.setAttribute('aria-pressed', o === c ? 'true' : 'false');
+      });
+      render();
+    });
+  });
+  render();
+
+  /* ══ FAQ ══ */
+  var faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(function (item) {
+    var btn = item.querySelector('.faq-question');
+    var ans = item.querySelector('.faq-answer');
+    if (!btn || !ans) return;
+    btn.addEventListener('click', function () {
+      var wasOpen = item.classList.contains('open');
+      faqItems.forEach(function (i) {
+        i.classList.remove('open');
+        var q = i.querySelector('.faq-question'), a = i.querySelector('.faq-answer');
+        if (q) q.setAttribute('aria-expanded', 'false');
+        if (a) a.hidden = true;
+      });
+      if (!wasOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+        ans.hidden = false;
+      }
+    });
+  });
+
+  /* ══ FORM ══ */
+  var lf0 = document.getElementById('ci-loaded');
+  if (lf0) lf0.value = Date.now().toString();
+
+  var submitTimes = [];
+  function rateLimited() {
+    var now = Date.now();
+    submitTimes = submitTimes.filter(function (t) { return now - t < 60000; });
+    if (submitTimes.length >= 3) return true;
+    submitTimes.push(now);
+    return false;
+  }
+
+  var spamPatterns = [
+    /\[url/i, /<a\s/i,
+    /\bviagra\b/i, /\bcialis\b/i, /\bcasino\b/i, /\bpoker\b/i,
+    /\bbitcoin\b/i, /\bcrypto\b/i, /\bforex\b/i, /\bloan offer\b/i,
+    /\bseo (services|package|packages|cheap|expert)\b/i,
+    /\bguaranteed (rankings|results|first page)\b/i,
+    /\bbacklinks?\b/i, /\bfirst page of google\b/i,
+    /(.)\1{6,}/, /[^\x00-\x7F]{8,}/
+  ];
+  function isSpam(text) {
+    if (!text) return false;
+    return spamPatterns.some(function (p) { return p.test(text); });
+  }
+
+  function wireForm(formId, btnId, msgId, loadedId) {
+    var form = document.getElementById(formId);
+    var btn = document.getElementById(btnId);
+    var msg = document.getElementById(msgId);
+    if (!form || !btn || !msg) return;
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      if (rateLimited()) {
+        msg.style.color = '#c4432b';
+        msg.textContent = 'Too many attempts. Wait a minute and try again, or call 720-712-8615.';
+        return;
+      }
+
+      var honey = form.querySelector('[name="_honey"]');
+      if (honey && honey.value !== '') return;
+
+      var lf = document.getElementById(loadedId);
+      if (lf && lf.value) {
+        if (Date.now() - parseInt(lf.value, 10) < 3500) return;
+      }
+
+      var message = (form.querySelector('[name="user_message"]') || {}).value || '';
+      var bizName = (form.querySelector('[name="business_name"]') || {}).value || '';
+      if (isSpam(message) || isSpam(bizName)) {
+        msg.style.color = '#c4432b';
+        msg.textContent = 'That message was flagged as spam. Please try again, or call 720-712-8615.';
+        return;
+      }
+
+      var nameEl = form.querySelector('[name="user_name"]');
+      var phoneEl = form.querySelector('[name="user_phone"]');
+      var name = nameEl ? nameEl.value.trim() : '';
+      var phone = phoneEl ? phoneEl.value.trim() : '';
+      if (!name || !phone) {
+        msg.style.color = '#c4432b';
+        msg.textContent = 'Enter your name and phone number so we can reach you.';
+        if (!name && nameEl) { nameEl.focus(); } else if (phoneEl) { phoneEl.focus(); }
+        return;
+      }
+      if (phone.replace(/\D/g, '').length < 10) {
+        msg.style.color = '#c4432b';
+        msg.textContent = 'That phone number looks incomplete. Include the area code.';
+        if (phoneEl) phoneEl.focus();
+        return;
+      }
+
+      var originalText = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'Sending...';
+      msg.style.color = '#5f6b72';
+      msg.textContent = 'Sending your request...';
+
+      var data = new FormData(form);
+      data.append('_template', 'table');
+      data.append('_subject', 'New CRO lead - Search Converts: ' + name);
+
+      var endpoint = 'ht' + 'tps://for' + 'msubmit.co/' + _d(_L);
+
+      fetch(endpoint, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(function (res) {
+        if (res.ok) {
+          form.reset();
+          msg.style.color = '#046a38';
+          msg.textContent = 'Received. We will get back to you within one business day.';
+          btn.textContent = 'Request sent';
+        } else {
+          throw new Error('status ' + res.status);
+        }
+      }).catch(function () {
+        msg.style.color = '#a8690b';
+        msg.innerHTML = 'We could not confirm delivery. Your request may not have gone through &mdash; please call <a href="tel:7207128615" style="color:#c4432b;font-weight:700;">720-712-8615</a> or try again.';
+        btn.disabled = false;
+        btn.textContent = originalText;
+      });
+    });
+  }
+
+  wireForm('ci-form', 'ci-submit-btn', 'ci-form-msg', 'ci-loaded');
+})();
+</script>
+
+</body>
+</html>
