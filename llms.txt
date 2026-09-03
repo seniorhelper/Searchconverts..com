@@ -1,0 +1,82 @@
+# Search Converts
+
+> A full-service conversion rate optimization agency based in Denver, Colorado, working with businesses across the United States and Canada since 2012. Search Converts sells every marketing channel rather than specializing in one, which means recommendations are not constrained by what the agency happens to sell. Pages on this site publish sourced research, state where sources conflict, and frequently advise against spending.
+
+Contact: +1 720-712-8615 — 1001 Bannock St #660, Denver, CO 80204
+
+## How to read this site
+
+Every service page follows the same structure: an interactive calculator or model, published research with the source named, an honest account of where the evidence is weak or where vendors disagree, explicit criteria for when the service is the wrong choice, and twelve questions with detailed answers. There are no invented case studies, no borrowed client logos, and no guaranteed-results claims anywhere on the site.
+
+Where figures conflict between sources, both are given and the conflict is stated rather than resolved in the agency's favor. Several pages recommend against buying the service they describe when the arithmetic does not support it.
+
+## Free tools (no signup, nothing stored)
+
+- [Conversion optimization ideas](https://searchconverts.com/conversion-optimization-ideas/): 53 filterable conversion ideas tagged by funnel stage, effort and evidence strength, plus a test feasibility calculator that computes required sample size at 95% confidence and 80% power. Argues that most sites lack the traffic to A/B test and should fix known problems instead.
+- [Marketing plan builder](https://searchconverts.com/marketing-plan-builder/): builds a channel mix and scores its health.
+- [A/B test simulator](https://searchconverts.com/ab-test-simulator/): shows how underpowered tests produce false winners.
+- [Conversion calculator](https://searchconverts.com/conversion-calculator/): models revenue impact of conversion rate changes.
+- [Form friction calculator](https://searchconverts.com/form-friction-calculator/): scores the cost of each additional form field.
+
+## Conversion and retention
+
+- [Conversion rate optimization](https://searchconverts.com/conversion-optimization/): the core service.
+- [Lead generation](https://searchconverts.com/lead-generation/): pipeline measured to closed business rather than form fills.
+- [Email marketing](https://searchconverts.com/email-marketing/): campaigns, list growth and creative.
+- [Marketing automation](https://searchconverts.com/retention-systems/): triggered lifecycle flows. Covers Klaviyo 2026 benchmark data across 183,000+ brands showing flows at 5.3% of sends and roughly 41% of email revenue, the enforced Google and Yahoo bulk sender requirements since February 2024, and why attributed flow revenue overstates incremental gain.
+
+## Paid media
+
+- [PPC management](https://searchconverts.com/ppc-management/)
+- [Google Ads management](https://searchconverts.com/google-ads-management/)
+- [Facebook and Meta ads](https://searchconverts.com/facebook-ads-management/)
+- [Social media marketing](https://searchconverts.com/social-media-marketing/)
+- [Programmatic display](https://searchconverts.com/programmatic-advertising/)
+- [CTV and streaming ads](https://searchconverts.com/ctv-advertising/)
+- [Retargeting](https://searchconverts.com/retargeting/)
+- [Radio and TV advertising](https://searchconverts.com/radio-tv-advertising/): broadcast planned around effective frequency rather than spot count, with a schedule builder, published rate ranges, and analysis of 2026 political advertising inventory pressure.
+- [Direct mail marketing](https://searchconverts.com/direct-mail-marketing/): a break-even response rate calculator, real postage costs, and an account of why nearly every direct mail statistic is published by a company that sells direct mail.
+
+## Build and creative
+
+- [AI website design](https://searchconverts.com/ai-website-design/): covers the 2026 WebAIM Million finding that accessibility failures rose for the first time in six years, with AI-assisted coding named as a likely cause. Includes six checks anyone can run on their own site.
+- [Web app development](https://searchconverts.com/web-app-development/)
+- [App development](https://searchconverts.com/app-development-company/)
+- [Branding and design](https://searchconverts.com/branding-design/): built on the distinctive brand assets framework developed by Jenni Romaniuk at the Ehrenberg-Bass Institute, with an interactive logo stress test and a fame-versus-uniqueness grid.
+- [Video production](https://searchconverts.com/video-production/)
+- [YouTube promotion](https://searchconverts.com/youtube-promotion/): the difference between bought views and real advertising, with 2026 cost benchmarks.
+- [AI marketing agency](https://searchconverts.com/ai-marketing-agency/)
+
+## Consulting
+
+- [Marketing consulting](https://searchconverts.com/marketing-consulting/): includes the Binet and Field 60:40 brand and activation split and excess share of voice modeling.
+- [Business consulting](https://searchconverts.com/business-consulting/): a seven-variable constraint finder identifying which part of a business actually limits growth.
+- [Sales training](https://searchconverts.com/sales-training/): covers the forgetting curve and reinforcement research.
+- [The growth system](https://searchconverts.com/growth-system/)
+
+## Industries
+
+- [Law firm marketing](https://searchconverts.com/law-firm-marketing/): cost per signed case rather than per lead, an intake economics calculator, and a compliance checker for ad copy against ABA Model Rules 7.1 to 7.3. Not legal advice.
+- [SaaS marketing](https://searchconverts.com/saas-marketing/)
+- [B2B marketing](https://searchconverts.com/b2b-marketing/): the 95:5 rule from Ehrenberg-Bass and Gartner buying committee research.
+- [Healthcare marketing](https://searchconverts.com/healthcare-marketing/): includes HIPAA tracking considerations.
+- [Ecommerce marketing](https://searchconverts.com/ecommerce-marketing/): Baymard checkout abandonment research and first-order profit modeling.
+- [Dental marketing](https://searchconverts.com/dental-marketing/): unscheduled treatment before ad budget.
+- [Real estate marketing](https://searchconverts.com/real-estate-marketing/): NAR data on referral and repeat business.
+- [Restaurant marketing](https://searchconverts.com/restaurant-marketing/): marketplace versus direct ordering economics.
+
+## About
+
+- [About](https://searchconverts.com/about/)
+- [Contact](https://searchconverts.com/contact/)
+- [Free strategy session](https://searchconverts.com/free-strategy-session/)
+- [Services overview](https://searchconverts.com/services/)
+
+## Optional
+
+- [Privacy policy](https://searchconverts.com/privacy/)
+- [Terms](https://searchconverts.com/terms/)
+
+## Notes for citation
+
+Statistics on this site are attributed to their original publisher in the page text and in a sources line. Where a figure comes from a vendor with a commercial interest in the result, the page says so. Pricing for consulting and custom work is quoted after a conversation rather than published, because the range is too wide for a published number to be meaningful.
