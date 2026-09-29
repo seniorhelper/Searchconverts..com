@@ -43,3 +43,35 @@ if(deck){var slides=deck.querySelectorAll('.slide'),i=0,dots=deck.querySelector(
  D.addEventListener('keydown',function(e){var r=deck.getBoundingClientRect();if(r.top>innerHeight||r.bottom<0)return;if(e.key==='ArrowRight')go(i+1);if(e.key==='ArrowLeft')go(i-1);});
  var sx=0;deck.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;},{passive:true});deck.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40)go(dx<0?i+1:i-1);},{passive:true});go(0);}
 })();
+
+/* ===== v3.2: slim header on scroll + contrast guard ===== */
+(function(){'use strict';var D=document,W=window;
+var hdr=D.querySelector('.hdr');if(hdr){var tk=false;function sh(){tk=false;hdr.classList.toggle('slim',W.pageYOffset>60)}W.addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(sh)}},{passive:true});sh()}
+function P(c){var m=c&&c.match(/rgba?\(([^)]+)\)/);if(!m)return null;var p=m[1].split(/[ ,\/]+/).filter(Boolean).map(parseFloat);return{r:p[0],g:p[1],b:p[2],a:p.length>3?p[3]:1}}
+function H(h){h=h.replace('#','');if(h.length===3)h=h.split('').map(function(x){return x+x}).join('');return{r:parseInt(h.slice(0,2),16),g:parseInt(h.slice(2,4),16),b:parseInt(h.slice(4,6),16),a:1}}
+function L(c){function f(v){v/=255;return v<=.03928?v/12.92:Math.pow((v+.055)/1.055,2.4)}return .2126*f(c.r)+.7152*f(c.g)+.0722*f(c.b)}
+function R(a,b){var x=L(a),y=L(b);return(Math.max(x,y)+.05)/(Math.min(x,y)+.05)}
+function mix(c,t,k){return{r:Math.round(c.r+(t.r-c.r)*k),g:Math.round(c.g+(t.g-c.g)*k),b:Math.round(c.b+(t.b-c.b)*k),a:1}}
+function css(c){return'rgb('+c.r+','+c.g+','+c.b+')'}
+var WHITE={r:255,g:255,b:255,a:1},INK={r:11,g:18,b:32,a:1};
+function bgOf(el){var e=el;while(e&&e.nodeType===1){var s=getComputedStyle(e),bi=s.backgroundImage;if(bi&&bi!=='none'){if(/url\(/.test(bi))return null;var cs=bi.match(/rgba?\([^)]+\)|#[0-9a-f]{3,6}\b/gi);if(cs){var list=cs.map(function(x){return x[0]==='#'?H(x):P(x)}).filter(function(c){return c&&c.a>.35});if(list.length)return{cols:list,own:e}}}var b=P(s.backgroundColor);if(b&&b.a>.5)return{cols:[b],own:e};e=e.parentElement}return{cols:[WHITE],own:D.body}}
+function guard(){var w=D.createTreeWalker(D.body,NodeFilter.SHOW_TEXT),n,done=new Set();
+ while((n=w.nextNode())){if(n.textContent.trim().length<2)continue;var el=n.parentElement;if(!el||done.has(el)||el.closest('svg,script,style,noscript,#sc-panel,#sc-bub,[data-noguard]'))continue;done.add(el);
+  var s=getComputedStyle(el);if(s.visibility==='hidden'||s.display==='none')continue;var r=el.getBoundingClientRect();if(!r.width||!r.height)continue;
+  if(s.backgroundClip==='text'||s.webkitBackgroundClip==='text')continue;var fg=P(s.color);if(!fg||fg.a<.1)continue;
+  var bg=bgOf(el);if(!bg)continue;var sz=parseFloat(s.fontSize),bold=parseInt(s.fontWeight,10)>=700,need=(sz>=24||(sz>=18.66&&bold))?3.1:4.6;
+  function worst(f){return Math.min.apply(null,bg.cols.map(function(c){return R(f,c)}))}
+  if(worst(fg)>=need)continue;
+  var avg=bg.cols.reduce(function(a,c){return a+L(c)},0)/bg.cols.length,dark=avg<.2,tgt=dark?WHITE:INK,k=0,f2=fg;
+  while(k<=1&&worst(f2)<need){k+=.1;f2=mix(fg,tgt,Math.min(1,k))}
+  if(worst(f2)>=need){el.style.setProperty('color',css(f2),'important');continue}
+  var o=bg.own,ob=P(getComputedStyle(o).backgroundColor);
+  if(L(fg)>.6&&o!==D.body&&ob&&ob.a>.5&&bg.cols.length===1){var b2=ob,j=0;while(j<1&&R(fg,b2)<need){j+=.08;b2=mix(ob,INK,j)}o.style.setProperty('background-color',css(b2),'important');o.style.setProperty('background-image','none','important');continue}
+  var alt=R(WHITE,bg.cols[0])>R(INK,bg.cols[0])?WHITE:INK;el.style.setProperty('color',css(alt),'important');}
+}
+var t;function soon(ms){clearTimeout(t);t=setTimeout(function(){try{guard()}catch(e){}},ms||120)}
+if(D.readyState==='complete')soon(50);else W.addEventListener('load',function(){soon(50)});
+setTimeout(soon,1500);['input','change','click'].forEach(function(ev){D.addEventListener(ev,function(){soon(250)},true)});
+var st;W.addEventListener('scroll',function(){clearTimeout(st);st=setTimeout(function(){soon(0)},400)},{passive:true});
+W.SCguard=guard;
+})();
