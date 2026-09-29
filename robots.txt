@@ -75,3 +75,4 @@ User-agent: DotBot
 Disallow: /
 
 Sitemap: https://searchconverts.com/sitemap.xml
+Sitemap: https://searchconverts.com/blog/feed.xml
