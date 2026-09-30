@@ -46,7 +46,7 @@ if(deck){var slides=deck.querySelectorAll('.slide'),i=0,dots=deck.querySelector(
 
 /* ===== v3.2: slim header on scroll + contrast guard ===== */
 (function(){'use strict';var D=document,W=window;
-var hdr=D.querySelector('.hdr');if(hdr){var tk=false;function sh(){tk=false;hdr.classList.toggle('slim',W.pageYOffset>60)}W.addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(sh)}},{passive:true});sh()}
+var hdr=D.querySelector('.hdr');if(hdr){var tk=false;var sl=false;function sh(){tk=false;var y=W.pageYOffset;if(!sl&&y>140){sl=true;hdr.classList.add('slim')}else if(sl&&y<10){sl=false;hdr.classList.remove('slim')}}W.addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(sh)}},{passive:true});sh()}
 function P(c){var m=c&&c.match(/rgba?\(([^)]+)\)/);if(!m)return null;var p=m[1].split(/[ ,\/]+/).filter(Boolean).map(parseFloat);return{r:p[0],g:p[1],b:p[2],a:p.length>3?p[3]:1}}
 function H(h){h=h.replace('#','');if(h.length===3)h=h.split('').map(function(x){return x+x}).join('');return{r:parseInt(h.slice(0,2),16),g:parseInt(h.slice(2,4),16),b:parseInt(h.slice(4,6),16),a:1}}
 function L(c){function f(v){v/=255;return v<=.03928?v/12.92:Math.pow((v+.055)/1.055,2.4)}return .2126*f(c.r)+.7152*f(c.g)+.0722*f(c.b)}

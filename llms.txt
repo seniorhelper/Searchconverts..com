@@ -23,6 +23,7 @@ Every page opens with a direct-answer capsule (the paragraph beginning 'Direct a
 ### Conversion
 - [Conversion Rate Optimization Services](https://searchconverts.com/conversion-rate-optimization-services/): Conversion rate optimization services: audits, landing pages, shorter forms, A/B testing, speed fixes and lead follow-up, quoted to the business. Includes a funnel tool that finds your weakest stage.
 - [Ecommerce Conversion Rate Optimization](https://searchconverts.com/ecommerce-conversion-rate-optimization/): Ecommerce and Shopify conversion rate optimization: product pages, cart and checkout fixes, speed and follow-up. Includes a store drop-off tool.
+- [Conversion Copywriting](https://searchconverts.com/conversion-copywriting/): Conversion copywriting for businesses that sell by phone, form and booking: homepages, service pages, ads, follow-up. Includes a free copy grader.
 - [Sales Funnel Agency](https://searchconverts.com/sales-funnel-agency/): Funnel building from first click to closed deal: offers, landing pages, lead capture, fast follow-up and sales handoff, measured stage by stage.
 - [What Is Conversion Optimization? The Complete Guide](https://searchconverts.com/conversion-optimization/): What is conversion optimization? A plain-English guide to conversion rate optimization: how the process works, what a good conversion rate is, common conversion killers, and when t
 - [Landing Page Optimization Services](https://searchconverts.com/landing-page-optimization/): Landing page optimization services from a conversion rate optimization agency: one page, one promise, one action. We rebuild the page your ads and search send people to — headline,
@@ -108,6 +109,7 @@ Every page opens with a direct-answer capsule (the paragraph beginning 'Direct a
 - USA Business Search directory: https://usabusinesssearch.com/
 
 ### New in September 2026
+- [Homepage headlines for service businesses](https://searchconverts.com/blog/homepage-headlines-for-service-businesses/): Twelve before-and-after headline rewrites and the formula behind them.
 - [Where your website leaks leads](https://searchconverts.com/blog/where-your-website-leaks-leads/): The five places websites lose leads and how to check each.
 - [The 5-second homepage test](https://searchconverts.com/blog/the-5-second-homepage-test/): How to test whether visitors understand your homepage in five seconds.
 - [Where ecommerce checkouts lose buyers](https://searchconverts.com/blog/ecommerce-checkout-leaks/): The fixable reasons carts are abandoned, with Baymard Institute data.
