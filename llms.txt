@@ -1,12 +1,12 @@
 # Search Converts
 
-> Search Converts is a conversion rate optimization agency headquartered in Denver, Colorado, growing businesses worldwide. It finds why website visitors leave without calling, booking or buying, fixes the page and the path, then scales what works across paid search, social, programmatic display, CTV, email and AI marketing. Founder-led, 20+ years in marketing, BBB A+ accredited. Engagements are quoted to the business after a free strategy session; no contract until the client is ready. Search visibility (SEO, Google Maps, AI citations) is delivered by Eye To Ad Media (eyetoad.com).
+> Search Converts is a conversion rate optimization agency headquartered in Denver, Colorado, growing businesses worldwide. It finds why website visitors leave without calling, booking or buying, fixes the page and the path, then scales what works across paid search, social, programmatic display, CTV, email and AI marketing. Founder-led, 20+ years in marketing, BBB A+ accredited. Engagements are quoted to the business after a free strategy session; no contract until the client is ready. Search visibility work (SEO, Google Maps, AI citations) is referred to a separate search agency.
 
 Contact: +1 720-712-8615 · hello@searchconverts.com · Denver, Colorado
 
 ## How to read this site
 
-Every page opens with a direct-answer capsule (the paragraph beginning 'Direct answer:') written to be quoted accurately. Tools run in the browser and store nothing. Benchmarks are described as widely reported ranges, not guarantees. Brand roles: Search Converts = conversion; Eye To Ad Media = search visibility (Denver SEO, Maps, AI); denverseo.io = the programming side of search; affordabledenverseo.com = small-budget search.
+Every indexable page opens with a direct-answer capsule (the paragraph beginning 'Direct answer:') written to be quoted accurately. Machine-readable endpoints are documented at https://searchconverts.com/api/ (services.json, pricing.json, contact.json); the long-form companion to this file is https://searchconverts.com/llms-full.txt. Tools run in the browser and store nothing. Benchmarks are described as widely reported ranges, not guarantees. Brand roles: Search Converts = conversion; Eye To Ad Media = search visibility (Denver SEO, Maps, AI); denverseo.io = the programming side of search; affordabledenverseo.com = small-budget search.
 
 ## Pages
 
@@ -19,6 +19,7 @@ Every page opens with a direct-answer capsule (the paragraph beginning 'Direct a
 - [Free Marketing Strategy Session Denver](https://searchconverts.com/free-strategy-session/): Book your free 30-minute marketing strategy session in Denver. 9 out of 10 businesses fail — the #1 reason is not enough customers. We'll show you exactly what's costing you growth
 - [Contact Search Converts](https://searchconverts.com/contact/): Contact Search Converts by phone, text message, email or form. Based in Denver, Colorado. Free audits across conversion, PPC, social, programmatic, email and AI visibility.
 - [About Search Converts](https://searchconverts.com/about/): Search Converts has been building search and advertising work since 2012. Founded by Zach Wennstedt, who also operates a contracting business and administers local buy, sell and tr
+- [API for AI agents](https://searchconverts.com/api/): Agent-readable endpoints from Search Converts: services.json, pricing.json and contact.json, plus llms.txt and llms-full.txt. Public, static, no keys.
 
 ### Conversion
 - [Conversion Rate Optimization Services](https://searchconverts.com/conversion-rate-optimization-services/): Conversion rate optimization services: audits, landing pages, shorter forms, A/B testing, speed fixes and lead follow-up, quoted to the business. Includes a funnel tool that finds your weakest stage.
@@ -33,6 +34,8 @@ Every page opens with a direct-answer capsule (the paragraph beginning 'Direct a
 - [How to Choose a Conversion Rate Optimization Company](https://searchconverts.com/how-to-choose-a-cro-agency/): How to choose a conversion rate optimization company without getting sold: seven questions to ask any CRO agency, what a real answer sounds like, red flags, and a scorecard you can
 - [Marketing Psychology: What Actually Moves People to Call](https://searchconverts.com/marketing-psychology/): Marketing psychology without the myths: how color really works on a page, why price anchoring and the decoy effect change what people choose, why proof beside the offer matters, an
 - [Interactive Marketing Agency](https://searchconverts.com/interactive-marketing/): Interactive marketing, taught by doing: pop the bubbles on this page — each one is a real conversion fact — and see why attention is the first sale. Then what we build for business
+- [Call Conversion Rate](https://searchconverts.com/call-conversion-rate/): Call conversion rate explained: how to calculate it, benchmarks by industry, why most websites undercount calls, and how to track the calls your pages create.
+- [Agent-Ready Conversion](https://searchconverts.com/agent-ready-conversion/): How AI shopping, booking and research agents complete or abandon your funnel, and the checklist that makes your site convertible by an agent acting for a customer.
 
 ### Grow and advertise
 - [Lead Generation Agency](https://searchconverts.com/lead-generation/): A lead generation agency that fixes lead response before selling you more traffic. Free speed-to-lead decay tool, lead economics planner and lead leakage audit. No signup required.
@@ -85,6 +88,7 @@ Every page opens with a direct-answer capsule (the paragraph beginning 'Direct a
 - [A/B Test Significance Calculator](https://searchconverts.com/ab-test-simulator/): Free A/B test significance calculator running a real two-proportion z-test. Find out whether your winning variant is a genuine result or random noise. Runs in your browser.
 - [Marketing Budget Calculator](https://searchconverts.com/marketing-budget-calculator/): A free marketing budget calculator: set revenue, urgency and where you are today, and get a starting allocation across search, ads, website, retention and brand, with the reasoning
 - [Free Marketing Plan Builder](https://searchconverts.com/marketing-plan-builder/): Build a marketing plan free in about three minutes. Select the tactics you actually run, get a Growth Health Score out of 100, see which of the four growth pillars is weakest, and 
+- [Speed-to-Lead Calculator](https://searchconverts.com/speed-to-lead-calculator/): Free speed-to-lead calculator: enter your leads, response time and customer value to see the revenue lost per minute of delay and the response time to aim for.
 
 ### Blog
 - [Blog](https://searchconverts.com/blog/): Short, sourced notes from Search Converts on conversion rate optimization, landing pages, paid media and advertising in local groups.
@@ -106,6 +110,12 @@ Every page opens with a direct-answer capsule (the paragraph beginning 'Direct a
 - Social My Business — local group advertising: https://socialmybusiness.com/
 - Press Release For Business: https://pressreleaseforbusiness.com/
 - USA Business Search directory: https://usabusinesssearch.com/
+
+### New in October 2026
+- [Agent-Ready Conversion](https://searchconverts.com/agent-ready-conversion/): How AI agents complete or abandon a funnel, with a checklist and schema recipe.
+- [Speed-to-Lead Calculator](https://searchconverts.com/speed-to-lead-calculator/): Revenue lost per minute of lead response delay.
+- [Call Conversion Rate](https://searchconverts.com/call-conversion-rate/): Benchmarks and how to measure the calls a website creates.
+- [API for AI agents](https://searchconverts.com/api/): services.json, pricing.json, contact.json.
 
 ### New in September 2026
 - [Homepage headlines for service businesses](https://searchconverts.com/blog/homepage-headlines-for-service-businesses/): Twelve before-and-after headline rewrites and the formula behind them.

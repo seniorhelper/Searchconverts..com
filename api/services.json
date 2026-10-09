@@ -20,6 +20,11 @@
  },
  "pages": [
   {
+   "name": "Conversion Rate Optimization Agency | Search Converts — A Website Without Conversion Is a Store With the Doors Locked",
+   "url": "https://searchconverts.com/",
+   "summary": "Search Converts is a conversion rate optimization agency headquartered in Denver, growing businesses worldwide. We find why your traffic isn&#x27;t calling, fix it, then scale it across paid search, social, programmatic, email and AI marketing. Founder-led, 20+ years in marketing, quoted to your business. Free conversion audit."
+  },
+  {
    "name": "A/B Test Significance Calculator | Free, No Signup",
    "url": "https://searchconverts.com/ab-test-simulator/",
    "summary": "Free A/B test significance calculator running a real two-proportion z-test. Find out whether your winning variant is a genuine result or random noise. Runs in your browser."
@@ -33,6 +38,11 @@
    "name": "About Search Converts | Denver, Colorado",
    "url": "https://searchconverts.com/about/",
    "summary": "Search Converts has been building search and advertising work since 2012. Founded by Zach Wennstedt, who also operates a contracting business and administers local buy, sell and trade communities across the United States."
+  },
+  {
+   "name": "Agent-Ready Conversion",
+   "url": "https://searchconverts.com/agent-ready-conversion/",
+   "summary": "How AI shopping, booking and research agents complete or abandon your funnel, and the checklist that makes your site convertible by an agent acting for a customer."
   },
   {
    "name": "AI Marketing Agency",
@@ -50,6 +60,11 @@
    "summary": "An interactive walk-through of a conversion, step by step: the search, the first screen, the offer, the proof, the action, the follow-up — with a working page you can break and fix, and the funnel that ends with actually starting."
   },
   {
+   "name": "API for AI Agents",
+   "url": "https://searchconverts.com/api/",
+   "summary": "Agent-readable endpoints from Search Converts: services.json, pricing.json and contact.json, plus llms.txt and llms-full.txt. Public, static, no keys."
+  },
+  {
    "name": "App Development Company",
    "url": "https://searchconverts.com/app-development-company/",
    "summary": "An app development company that tells you first whether you need an app. Native, cross-platform, progressive web app or web app — with published cost, retention and app store data, and a live tool that gives you an answer in 60 seconds."
@@ -58,6 +73,66 @@
    "name": "B2B Marketing Agency | B2B SaaS, Buying Committees and Long Cycles",
    "url": "https://searchconverts.com/b2b-marketing/",
    "summary": "A B2B marketing agency that plans for the 95% of buyers who are not in market yet. Ehrenberg-Bass and Gartner data on buying committees, the 17% of time buyers spend with vendors, and a market model that shows how many accounts are actually buying this quarter."
+  },
+  {
+   "name": "Blog | Conversion and Traffic Notes",
+   "url": "https://searchconverts.com/blog/",
+   "summary": "Short, sourced notes from Search Converts on conversion rate optimization, landing pages, paid media and advertising in local groups."
+  },
+  {
+   "name": "12 Ways Your Website Talks People Out of Hiring You",
+   "url": "https://searchconverts.com/blog/12-ways-your-website-talks-people-out-of-hiring-you/",
+   "summary": "Twelve specific ways a website talks people out of calling, the fix for each, and a ten-minute self-check for your own site."
+  },
+  {
+   "name": "Advertise in Local Facebook Groups",
+   "url": "https://searchconverts.com/blog/advertise-in-local-facebook-groups/",
+   "summary": "The seven ways businesses get removed from local buy, sell and trade groups, the seven ways that work, and how to measure group sponsorship."
+  },
+  {
+   "name": "Color Psychology in Marketing, Tested",
+   "url": "https://searchconverts.com/blog/color-psychology-in-marketing-tested/",
+   "summary": "The red-means-urgency chart is mostly folklore. What color reliably does on a page, what our button color tests showed, and a contrast checker."
+  },
+  {
+   "name": "Conversion Rate Benchmarks by Industry",
+   "url": "https://searchconverts.com/blog/conversion-rate-benchmarks/",
+   "summary": "What a good landing page conversion rate is by industry and traffic source, what benchmark reports say, and seven fixes that move a page from 2% to 5%."
+  },
+  {
+   "name": "Where Ecommerce Checkouts Lose Buyers",
+   "url": "https://searchconverts.com/blog/ecommerce-checkout-leaks/",
+   "summary": "Why online shoppers abandon carts and checkouts, the fixable causes like surprise costs and forced accounts, and how to recover more orders."
+  },
+  {
+   "name": "Hand-Coded vs WordPress vs Shopify vs Webflow",
+   "url": "https://searchconverts.com/blog/hand-coded-vs-wordpress-vs-shopify-vs-webflow/",
+   "summary": "The honest trade-offs of hand-coded, WordPress, Shopify, Webflow, Wix and Squarespace: speed, who can edit, custom tools and when to graduate."
+  },
+  {
+   "name": "Homepage Headlines for Service Businesses: 12 Rewrites",
+   "url": "https://searchconverts.com/blog/homepage-headlines-for-service-businesses/",
+   "summary": "Twelve homepage headline rewrites for roofers, dentists, plumbers, law firms and other service businesses, plus the three-part formula behind them."
+  },
+  {
+   "name": "The 5-Second Homepage Test",
+   "url": "https://searchconverts.com/blog/the-5-second-homepage-test/",
+   "summary": "How to run a 5-second test on your homepage, what visitors should be able to answer after five seconds, and how to fix a homepage that fails."
+  },
+  {
+   "name": "Traffic but No Sales: Nine Landing Page Leaks",
+   "url": "https://searchconverts.com/blog/traffic-but-no-sales/",
+   "summary": "Visitors arrive and nobody calls. Before buying more traffic, find which of nine landing-page leaks you have: headline, phone, form, proof, speed."
+  },
+  {
+   "name": "What a 1% Conversion Lift Is Worth",
+   "url": "https://searchconverts.com/blog/what-a-1-percent-conversion-lift-is-worth/",
+   "summary": "One more point of website conversion is usually worth more than most marketing you buy. The arithmetic, three examples and a cost-of-waiting calculator."
+  },
+  {
+   "name": "Where Your Website Leaks Leads",
+   "url": "https://searchconverts.com/blog/where-your-website-leaks-leads/",
+   "summary": "Most websites lose leads in the same few places: speed, headline, offer, form and follow-up. How to find each leak on your own site in an afternoon."
   },
   {
    "name": "Branding Agency | Recognition Beats Taste",
@@ -70,6 +145,11 @@
    "summary": "Business consulting services that start by finding the actual bottleneck. Run the constraint finder, see what the failure data really says, and get an honest answer about whether more leads would help you at all."
   },
   {
+   "name": "Call Conversion Rate: Benchmarks and Measurement",
+   "url": "https://searchconverts.com/call-conversion-rate/",
+   "summary": "Call conversion rate explained: how to calculate it, benchmarks by industry, why most websites undercount calls, and how to track the calls your pages create."
+  },
+  {
    "name": "Contact Search Converts | Denver, Colorado",
    "url": "https://searchconverts.com/contact/",
    "summary": "Contact Search Converts by phone, text message, email or form. Based in Denver, Colorado. Free audits across conversion, PPC, social, programmatic, email and AI visibility."
@@ -78,6 +158,11 @@
    "name": "Conversion Rate Calculator | Free, No Signup",
    "url": "https://searchconverts.com/conversion-calculator/",
    "summary": "Free conversion rate calculator. See what a one-point improvement is worth per year in real money, and how much traffic you would have to buy to match it. Runs in your browser."
+  },
+  {
+   "name": "Conversion Copywriting Services for Service Businesses",
+   "url": "https://searchconverts.com/conversion-copywriting/",
+   "summary": "Conversion copywriting for homepages, service pages, ads and follow-up, with a free copy grader."
   },
   {
    "name": "53 Conversion Optimization Ideas, Sorted by Whether You Can Test Them",
@@ -170,11 +255,6 @@
    "summary": "How to choose a conversion rate optimization company without getting sold: seven questions to ask any CRO agency, what a real answer sounds like, red flags, and a scorecard you can use on us or anyone else. Honest, no competitor bashing."
   },
   {
-   "name": "Conversion Rate Optimization Agency | Search Converts — A Website Without Conversion Is a Store With the Doors Locked",
-   "url": "https://searchconverts.com/",
-   "summary": "Search Converts is a conversion rate optimization agency headquartered in Denver, growing businesses worldwide. We find why your traffic isn&#x27;t calling, fix it, then scale it across paid search, social, programmatic, email and AI marketing. Founder-led, 20+ years in marketing, quoted to your business. Free conversion audit."
-  },
-  {
    "name": "Interactive Marketing Agency — Pop the Bubbles, Learn Why Interactive Content Converts",
    "url": "https://searchconverts.com/interactive-marketing/",
    "summary": "Interactive marketing, taught by doing: pop the bubbles on this page — each one is a real conversion fact — and see why attention is the first sale. Then what we build for businesses: games, calculators, configurators, 3D showrooms and assistants that keep people on the page and turn them into calls."
@@ -228,6 +308,11 @@
    "name": "The Pitch — Nine Slides on Why Your Traffic Isn't Calling, and What We'd Do About It",
    "url": "https://searchconverts.com/pitch/",
    "summary": "Nine slides, no fluff: the locked door, what waiting costs, the three jobs (found, chosen, called), the live work, how we&#x27;re quoted, and a yes-or-not-yet at the end. Arrow keys or swipe."
+  },
+  {
+   "name": "Privacy Policy",
+   "url": "https://searchconverts.com/privacy/",
+   "summary": "How Search Converts LLC collects, uses and protects information submitted through searchconverts.com, including Colorado Privacy Act and CCPA rights."
   },
   {
    "name": "Programmatic Advertising Agency | Display Media Buying",
@@ -290,9 +375,19 @@
    "summary": "A social media marketing agency covering strategy, done-for-you posting, Facebook groups and Marketplace, Meta Pixel setup and social media conversion optimization. Free engagement rate calculator, platform picker and sourced 2026 benchmark data."
   },
   {
+   "name": "Speed to Lead Calculator",
+   "url": "https://searchconverts.com/speed-to-lead-calculator/",
+   "summary": "Free speed-to-lead calculator: enter your leads, response time and customer value to see the revenue lost per minute of delay and the response time to aim for."
+  },
+  {
    "name": "Squarespace Web Designer — Beautiful Is Not the Same as Converting",
    "url": "https://searchconverts.com/squarespace-web-designer/",
    "summary": "A Squarespace web designer who keeps the beauty and adds the conversion: a first screen that sells, the phone number where a thumb reaches it, proof beside the offer, a short form and speed — inside Squarespace, with honest advice on when to move."
+  },
+  {
+   "name": "Terms of Service",
+   "url": "https://searchconverts.com/terms/",
+   "summary": "Terms governing use of searchconverts.com and engagement with Search Converts LLC, including ownership, results, liability and governing law."
   },
   {
    "name": "Video Production Company | Corporate &amp;amp; Performance Video",
@@ -328,11 +423,6 @@
    "name": "YouTube Promotion | Watch Time, Real Ads and No Bought Views",
    "url": "https://searchconverts.com/youtube-promotion/",
    "summary": "YouTube promotion done with real advertising rather than purchased views. See why bought views damage a channel under YouTube&#x27;s fake engagement policy, model watch time as the area under your retention curve, and get 2026 CPV and view rate benchmarks."
-  },
-  {
-   "name": "Conversion Copywriting Services for Service Businesses",
-   "url": "https://searchconverts.com/conversion-copywriting/",
-   "summary": "Conversion copywriting for homepages, service pages, ads and follow-up, with a free copy grader."
   }
  ],
  "version": "2026-10-09",

@@ -21,200 +21,7 @@
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;500;600;700;800&family=Caveat:wght@600;700&display=swap"></noscript>
 <link rel="stylesheet" href="/sc.css">
 
-<style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    img { max-width: 100%; }
-    a:focus-visible, button:focus-visible { outline: 3px solid #ea580c; outline-offset: 3px; }
-    :root {
-      --orange: #f97316; --orange-deep: #ea580c; --border: #e2e8f0;
-      --ink: #0d1220; --ink-2: #334155; --grey: #64748b; --grey-2: #94a3b8;
-      --rule: #e2e8f0; --paper: #ffffff; --wash: #f8fafc;
-    }
-    body { font-family: 'Inter', system-ui, sans-serif; background: var(--paper); color: var(--ink); font-size: 17.5px; line-height: 1.72; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
-    h1, h2, h3 { font-family: 'Inter', sans-serif; font-weight: 800; letter-spacing: -0.03em; }
-    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
-    .band { padding: 76px 0; }
-    .band-wash { background: var(--wash); border-top: 1px solid var(--rule); }
-    .e404 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(96px, 20vw, 200px); font-weight: 900; line-height: .84; color: var(--orange); letter-spacing: -0.03em; margin-bottom: 12px; }
-    .h1 { font-size: clamp(30px, 4.6vw, 48px); line-height: 1.08; margin-bottom: 16px; max-width: 20ch; }
-    .lede { font-size: 19.5px; line-height: 1.62; color: var(--ink-2); max-width: 58ch; margin-bottom: 28px; }
-    .btn { display: inline-flex; align-items: center; gap: 10px; font-size: 16px; font-weight: 700; padding: 15px 28px; text-decoration: none; background: var(--orange); color: #fff; border: none; cursor: pointer; transition: background .18s, transform .18s; }
-    .btn:hover { background: var(--orange-deep); transform: translateY(-1px); }
-    .btn-ghost { background: transparent; color: var(--ink); border: 2px solid var(--ink); }
-    .btn-ghost:hover { background: var(--ink); color: #fff; transform: none; }
-    .cta-row { display: flex; gap: 14px; flex-wrap: wrap; }
-    .cols { display: grid; grid-template-columns: repeat(4, 1fr); gap: 34px; margin-top: 8px; }
-    @media (max-width: 900px) { .cols { grid-template-columns: 1fr 1fr; gap: 28px; } }
-    @media (max-width: 520px) { .cols { grid-template-columns: 1fr; } }
-    .col h2 { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: #b45309; margin-bottom: 14px; }
-    .col ul { list-style: none; }
-    .col li { margin-bottom: 8px; }
-    .col a { font-size: 15px; color: var(--ink-2); text-decoration: none; }
-    .col a:hover { color: var(--orange); text-decoration: underline; }
-    .tools { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 26px; }
-    @media (max-width: 860px) { .tools { grid-template-columns: 1fr 1fr; } }
-    @media (max-width: 520px) { .tools { grid-template-columns: 1fr; } }
-    .tool-card { display: block; text-decoration: none; padding: 18px; border: 1px solid var(--rule); background: var(--paper); transition: border-color .2s, transform .2s; }
-    .tool-card:hover { border-color: var(--orange); transform: translateY(-2px); }
-    .tool-card b { display: block; font-size: 17px; font-weight: 800; color: var(--ink); margin-bottom: 3px; letter-spacing: -0.02em; }
-    .tool-card span { font-size: 14.5px; color: var(--grey); line-height: 1.45; }
-    .helper { margin-top: 30px; padding: 18px 20px; background: var(--wash); border-left: 4px solid var(--orange); max-width: 70ch; font-size: 15.5px; color: var(--ink-2); line-height: 1.6; }
-    .helper b { color: var(--ink); }
-    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; } }
-    /* ══════ SHARED SITE CHROME ══════ */
-    .ann-bar {
-      position: relative; z-index: 1;
-      background: linear-gradient(90deg, var(--orange-deep), var(--orange), #fb923c);
-      color: #fff; text-align: center; padding: 10px 20px;
-      font-family: 'Barlow Condensed', sans-serif; font-size: 15px; font-weight: 700;
-      letter-spacing: 0.08em; text-transform: uppercase;
-    }
-    .ann-bar a { color: #fff; text-decoration: underline; }
-    .site-header {
-      position: sticky; top: 0; z-index: 1000; background: #fff;
-      border-bottom: 3px solid var(--orange); box-shadow: 0 2px 24px rgba(0,0,0,0.10);
-    }
-    .header-inner {
-      max-width: 1460px; margin: 0 auto; padding: 0 22px;
-      display: flex; align-items: center; justify-content: space-between;
-      gap: 18px; height: 110px; flex-wrap: nowrap;
-    }
-    .header-logo { position: relative; z-index: 30; display: block; line-height: 0; }
-    .header-logo img {
-      height: 200px; width: auto; max-width: 250px; object-fit: contain; display: block;
-      filter: drop-shadow(0 5px 10px rgba(0,0,0,0.30)) drop-shadow(0 1px 2px rgba(0,0,0,0.18));
-    }
-    .header-nav { display: flex; align-items: center; gap: 15px; list-style: none; flex-wrap: nowrap; }
-    .header-nav > li { position: relative; }
-    .header-nav a, .nav-toggle {
-      font-family: 'Barlow Condensed', sans-serif; font-size: 14px; font-weight: 700;
-      letter-spacing: 0.04em; text-transform: uppercase; color: #0d1220;
-      text-decoration: none; white-space: nowrap; transition: color .2s;
-      background: none; border: none; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;
-    }
-    .header-nav a:hover, .nav-toggle:hover { color: var(--orange); }
-    .nav-toggle .caret {
-      width: 0; height: 0; border-left: 4px solid transparent;
-      border-right: 4px solid transparent; border-top: 5px solid currentColor; transition: transform .25s;
-    }
-    .header-nav li.open .nav-toggle .caret { transform: rotate(180deg); }
-    .header-nav .nav-cta {
-      background: var(--orange); color: #fff !important; padding: 10px 15px;
-      border-radius: 4px; transition: background .2s, transform .2s !important;
-    }
-    .header-nav .nav-cta:hover { background: var(--orange-deep); transform: translateY(-1px); }
-    .nav-drop {
-      position: absolute; top: calc(100% + 14px); left: 50%;
-      transform: translateX(-50%) translateY(-8px); background: #fff;
-      border: 1.5px solid var(--border); border-top: 4px solid var(--orange);
-      border-radius: 10px; box-shadow: 0 28px 70px rgba(13,18,32,0.22);
-      padding: 24px 26px; opacity: 0; visibility: hidden;
-      transition: opacity .22s ease, transform .22s ease, visibility .22s; z-index: 1200;
-    }
-    .header-nav li.open .nav-drop { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
-    .nav-drop-cols { display: flex; gap: 34px; }
-    .nav-drop-col { min-width: 176px; }
-    .nav-drop-title {
-      font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 800;
-      letter-spacing: 0.14em; text-transform: uppercase; color: #b45309;
-      margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid var(--border);
-    }
-    .nav-drop a {
-      display: block; font-family: 'Inter', sans-serif; font-size: 14.5px; font-weight: 400;
-      text-transform: none; letter-spacing: 0; color: #334155; padding: 6px 0; white-space: nowrap;
-    }
-    .nav-drop a:hover { color: var(--orange); }
-    .nav-drop-wide { min-width: 640px; }
-    .header-call { display: flex; align-items: center; gap: 10px; white-space: nowrap; }
-    .header-phone {
-      font-family: 'Barlow Condensed', sans-serif; font-size: 31px; font-weight: 900;
-      color: var(--orange); text-decoration: none; letter-spacing: 0.01em;
-      line-height: 1; transition: color .2s, transform .2s;
-    }
-    .header-phone:hover { color: var(--orange-deep); transform: translateY(-1px); }
-    .wa-link {
-      display: inline-flex; align-items: center; justify-content: center;
-      width: 40px; height: 40px; border-radius: 50%; background: #25D366; flex-shrink: 0;
-      transition: transform .2s, box-shadow .2s; box-shadow: 0 4px 14px rgba(37,211,102,0.35);
-    }
-    .wa-link:hover { transform: translateY(-2px) scale(1.05); box-shadow: 0 8px 22px rgba(37,211,102,0.5); }
-    .wa-link svg { width: 23px; height: 23px; display: block; }
-    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
-    .hamburger span { display: block; width: 26px; height: 3px; background: #0d1220; border-radius: 2px; transition: all .3s; }
-    .mobile-nav {
-      display: none; background: #fff; border-top: 1px solid var(--border);
-      padding: 12px 24px 20px; max-height: 78vh; overflow-y: auto;
-    }
-    .mobile-nav.open { display: block; }
-    .mobile-nav a {
-      display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 17px;
-      font-weight: 700; text-transform: uppercase; color: #0d1220; text-decoration: none;
-      padding: 9px 0; border-bottom: 1px solid var(--border); letter-spacing: 0.05em;
-    }
-    .mobile-nav a:hover { color: var(--orange); }
-    .mobile-nav .m-group {
-      font-family: 'Barlow Condensed', sans-serif; font-size: 12px; font-weight: 800;
-      letter-spacing: 0.14em; text-transform: uppercase; color: #b45309; margin: 16px 0 4px;
-    }
-    .mobile-nav .m-sub {
-      font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 400;
-      text-transform: none; letter-spacing: 0; color: #334155; padding: 6px 0;
-    }
-    @media (max-width: 1360px) {
-      .header-nav { display: none; }
-      .hamburger { display: flex; }
-      .header-logo img { height: 150px; }
-      .header-inner { height: 112px; }
-    }
-    @media (max-width: 1340px) { .header-phone { font-size: 28px; } .wa-link { width: 36px; height: 36px; } .wa-link svg { width: 21px; height: 21px; } }
-    @media (max-width: 600px) {
-      .header-logo img { height: 124px; max-width: 196px; }
-      .header-inner { height: 96px; padding: 0 14px; }
-      .header-phone { font-size: 16px; }
-      .ann-bar { font-size: 13px; }
-      .wa-link { width: 32px; height: 32px; } .wa-link svg { width: 18px; height: 18px; }
-      .header-call { gap: 6px; }
-    }
-    @media (max-width: 430px) {
-      .header-logo img { height: 104px; max-width: 164px; }
-      .header-inner { height: 86px; }
-      .header-phone { font-size: 19px; }
-      .wa-link { width: 29px; height: 29px; } .wa-link svg { width: 17px; height: 17px; }
-    }
-    .site-footer { background: #fff; border-top: 4px solid var(--orange); padding: 60px 0 30px; }
-    .footer-inner { max-width: 1240px; margin: 0 auto; padding: 0 24px; }
-    .footer-top {
-      display: grid; grid-template-columns: 260px 1fr 1fr 1fr; gap: 44px;
-      padding-bottom: 48px; border-bottom: 1px solid var(--border);
-    }
-    @media (max-width: 900px) { .footer-top { grid-template-columns: 1fr 1fr; gap: 36px; } }
-    @media (max-width: 560px) { .footer-top { grid-template-columns: 1fr; } }
-    .footer-brand-logo { display: inline-block; margin-bottom: 16px; }
-    .footer-brand-logo img { height: 80px; width: auto; display: block; }
-    .footer-brand-desc { font-family: 'Inter', sans-serif; font-size: 14.5px; color: #374151; line-height: 1.7; margin-bottom: 16px; }
-    .footer-contact-link {
-      display: block; font-family: 'Inter', sans-serif; font-size: 14.5px; color: #374151;
-      text-decoration: none; margin-bottom: 6px; transition: color .2s;
-    }
-    .footer-contact-link:hover { color: var(--orange); }
-    .footer-col-title {
-      font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 800;
-      letter-spacing: 0.14em; text-transform: uppercase; color: #b45309; margin-bottom: 16px;
-    }
-    .footer-links { list-style: none; padding: 0; }
-    .footer-links li { margin-bottom: 9px; }
-    .footer-links a { font-family: 'Inter', sans-serif; font-size: 14.5px; color: #374151; text-decoration: none; transition: color .2s; }
-    .footer-links a:hover { color: var(--orange); }
-    .footer-bottom {
-      display: flex; justify-content: space-between; align-items: center;
-      padding-top: 28px; flex-wrap: wrap; gap: 12px; border-top: 1px solid var(--border);
-    }
-    .footer-bottom p { font-family: 'Inter', sans-serif; font-size: 13px; color: #374151; line-height: 1.5; max-width: none; }
-    .footer-bottom a { color: #b45309; text-decoration: none; }
-    .footer-bottom a:hover { text-decoration: underline; }
-    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
-    </style>
+<style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}:root{--orange:#f97316;--orange-deep:#ea580c;--border:#e2e8f0;--ink:#0d1220;--ink-2:#334155;--grey:#64748b;--grey-2:#94a3b8;--rule:#e2e8f0;--paper:#ffffff;--wash:#f8fafc}body{font-family:'Inter',system-ui,sans-serif;background:var(--paper);color:var(--ink);font-size:17.5px;line-height:1.72;overflow-x:hidden;-webkit-font-smoothing:antialiased}h1,h2,h3{font-family:'Inter',sans-serif;font-weight:800;letter-spacing:-0.03em}.wrap{max-width:1180px;margin:0 auto;padding:0 24px}.h1{font-size:clamp(30px,4.6vw,48px);line-height:1.08;margin-bottom:16px;max-width:20ch}.lede{font-size:19.5px;line-height:1.62;color:var(--ink-2);max-width:58ch;margin-bottom:28px}.btn{display:inline-flex;align-items:center;gap:10px;font-size:16px;font-weight:700;padding:15px 28px;text-decoration:none;background:var(--orange);color:#fff;border:none;cursor:pointer;transition:background .18s,transform .18s}.btn:hover{background:var(--orange-deep);transform:translateY(-1px)}.btn-ghost{background:transparent;color:var(--ink);border:2px solid var(--ink)}.btn-ghost:hover{background:var(--ink);color:#fff;transform:none}.site-header{position:sticky;top:0;z-index:1000;background:#fff;border-bottom:3px solid var(--orange);box-shadow:0 2px 24px rgba(0,0,0,0.10)}.header-inner{max-width:1460px;margin:0 auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between;gap:18px;height:110px;flex-wrap:nowrap}.header-logo{position:relative;z-index:30;display:block;line-height:0}.header-logo img{height:200px;width:auto;max-width:250px;object-fit:contain;display:block;filter:drop-shadow(0 5px 10px rgba(0,0,0,0.30)) drop-shadow(0 1px 2px rgba(0,0,0,0.18))}.header-nav{display:flex;align-items:center;gap:15px;list-style:none;flex-wrap:nowrap}.header-nav>li{position:relative}.header-nav a,.nav-toggle{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:#0d1220;text-decoration:none;white-space:nowrap;transition:color .2s;background:none;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:5px}.header-nav a:hover,.nav-toggle:hover{color:var(--orange)}.nav-toggle .caret{width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid currentColor;transition:transform .25s}.header-nav li.open .nav-toggle .caret{transform:rotate(180deg)}.header-nav .nav-cta{background:var(--orange);color:#fff !important;padding:10px 15px;border-radius:4px;transition:background .2s,transform .2s !important}.header-nav .nav-cta:hover{background:var(--orange-deep);transform:translateY(-1px)}.nav-drop{position:absolute;top:calc(100% + 14px);left:50%;transform:translateX(-50%) translateY(-8px);background:#fff;border:1.5px solid var(--border);border-top:4px solid var(--orange);border-radius:10px;box-shadow:0 28px 70px rgba(13,18,32,0.22);padding:24px 26px;opacity:0;visibility:hidden;transition:opacity .22s ease,transform .22s ease,visibility .22s;z-index:1200}.header-nav li.open .nav-drop{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}.nav-drop-cols{display:flex;gap:34px}.nav-drop-col{min-width:176px}.nav-drop-title{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:#b45309;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--border)}.nav-drop a{display:block;font-family:'Inter',sans-serif;font-size:14.5px;font-weight:400;text-transform:none;letter-spacing:0;color:#334155;padding:6px 0;white-space:nowrap}.nav-drop a:hover{color:var(--orange)}.nav-drop-wide{min-width:640px}.header-call{display:flex;align-items:center;gap:10px;white-space:nowrap}.header-phone{font-family:'Barlow Condensed',sans-serif;font-size:31px;font-weight:900;color:var(--orange);text-decoration:none;letter-spacing:0.01em;line-height:1;transition:color .2s,transform .2s}.header-phone:hover{color:var(--orange-deep);transform:translateY(-1px)}</style><link rel="stylesheet" href="/css/404.min.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": ["Organization", "ProfessionalService"], "@id": "https://searchconverts.com/#organization", "name": "Search Converts", "legalName": "Search Converts LLC", "url": "https://searchconverts.com/", "logo": {"@type": "ImageObject", "url": "https://searchconverts.com/images/search-converts-favicon.png", "width": 512, "height": 512}, "image": "https://searchconverts.com/images/Generative-engine-optimization-experts.png", "description": "A conversion rate optimization agency headquartered in Denver, Colorado, growing businesses worldwide: CRO, landing page optimization, lead generation, paid media, AI marketing and conversion-first website design.", "telephone": "+1-720-712-8615", "email": "hello@searchconverts.com", "foundingDate": "2012", "foundingLocation": {"@type": "Place", "name": "Denver, Colorado, United States"}, "areaServed": [{"@type": "Country", "name": "United States"}, {"@type": "Country", "name": "Canada"}], "founder": {"@type": "Person", "name": "Zachary Tye Wennstedt", "jobTitle": "Founder"}, "contactPoint": [{"@type": "ContactPoint", "telephone": "+1-720-712-8615", "email": "hello@searchconverts.com", "contactType": "sales", "availableLanguage": "English", "areaServed": "US"}], "hasCredential": {"@type": "EducationalOccupationalCredential", "name": "BBB Accredited Business, A+ rating", "url": "https://www.bbb.org/us/co/denver/profile/advertising-agencies/search-converts-llc-1296-90228702/"}, "sameAs": ["https://www.bbb.org/us/co/denver/profile/advertising-agencies/search-converts-llc-1296-90228702/"], "potentialAction": [{"@type": "CommunicateAction", "name": "Call Search Converts", "target": "tel:+17207128615"}]}, {"@type": "WebSite", "@id": "https://searchconverts.com/#website", "url": "https://searchconverts.com/", "name": "Search Converts", "publisher": {"@id": "https://searchconverts.com/#organization"}, "inLanguage": "en-US"}]}</script>
 <link rel="alternate" type="application/json" href="/api/services.json" title="Search Converts services (JSON)">
 </head>
@@ -223,7 +30,7 @@
 <div class="cstrip" aria-hidden="true"></div>
 <header class="hdr"><div class="hdr-in">
   <a class="brand" href="/" aria-label="Search Converts home"><img src="/images/search-converts-logo-color.avif" alt="Search Converts" width="64" height="64"><span>Search <b>Converts</b></span></a>
-  <a class="bbb-hdr" href="https://www.bbb.org/us/co/denver/profile/advertising-agencies/search-converts-llc-1296-90228702/#sealclick" target="_blank" rel="nofollow noopener" aria-label="BBB Accredited Business — A+ rating"><img src="https://seal-alaskaoregonwesternwashington.bbb.org/seals/blue-seal-200-65-bbb-90228702.png" width="200" height="65" alt="Search Converts LLC BBB Business Review" loading="eager" fetchpriority="low" decoding="async"></a>
+  <a class="bbb-hdr" href="https://www.bbb.org/us/co/denver/profile/advertising-agencies/search-converts-llc-1296-90228702/#sealclick" target="_blank" rel="nofollow noopener" aria-label="BBB Accredited Business — A+ rating"><img src="https://seal-alaskaoregonwesternwashington.bbb.org/seals/blue-seal-200-65-bbb-90228702.png" width="200" height="65" alt="Search Converts LLC BBB Business Review" loading="lazy" fetchpriority="low" decoding="async"></a>
   <ul class="nav"><li><button aria-haspopup="true" aria-expanded="false">Convert <i class="caret"></i></button><div class="drop wide"><div><h5>Conversion</h5><a href="/conversion-optimization/">Conversion Optimization</a><a href="/cro-audit/">Free Conversion Audit</a><a href="/landing-page-optimization/">Landing Page Optimization</a><a href="/conversion-rate-optimization-services/">CRO Services</a><a href="/conversion-copywriting/">Conversion Copywriting</a><a href="/ecommerce-conversion-rate-optimization/">Ecommerce CRO</a><a href="/website-conversion-rate/">Website Conversion Rate</a><a href="/call-conversion-rate/">Call Conversion Rate</a><a href="/agent-ready-conversion/">Agent-Ready Conversion</a><a href="/ab-testing/">A/B Testing</a><a href="/anatomy-of-a-conversion/">Anatomy of a Conversion</a><a href="/conversion-optimization-ideas/">53 CRO Ideas</a></div><div><h5>Grow</h5><a href="/lead-generation/">Lead Generation</a><a href="/sales-funnel-agency/">Sales Funnels</a><a href="/growth-marketing-agency/">Growth Marketing</a><a href="/performance-marketing-agency/">Performance Marketing</a><a href="/ai-marketing-agency/">AI Marketing</a><a href="/email-marketing/">Email Marketing</a><a href="/retention-systems/">Marketing Automation</a><a href="/growth-system/">The Growth System</a></div><div><h5>Advertise</h5><a href="/google-ads-management/">Google Ads</a><a href="/facebook-ads-management/">Facebook & Meta Ads</a><a href="/social-media-marketing/">Social Media</a><a href="/programmatic-advertising/">Programmatic Display</a><a href="/ctv-advertising/">CTV & Streaming</a><a href="/retargeting/">Retargeting</a><a href="/radio-tv-advertising/">Radio & TV</a><a href="/direct-mail-marketing/">Direct Mail</a></div><div><h5>Build</h5><a href="/web-app-development/">Web App Development</a><a href="/app-development-company/">App Development</a><a href="/ai-website-design/">AI Website Design</a><a href="/shopify-web-designer/">Shopify Designer</a><a href="/wordpress-web-designer/">WordPress Designer</a><a href="/webflow-web-designer/">Webflow Designer</a><a href="/wix-web-designer/">Wix Designer</a><a href="/squarespace-web-designer/">Squarespace Designer</a><a href="/video-production/">Video Production</a><a href="/youtube-promotion/">YouTube Promotion</a><a href="/branding-design/">Branding & Design</a><a href="/interactive-marketing/">Interactive Marketing</a></div></div></li><li><button aria-haspopup="true" aria-expanded="false">Industries <i class="caret"></i></button><div class="drop"><div><h5>Who we serve</h5><a href="/law-firm-marketing/">Law Firms</a><a href="/healthcare-marketing/">Healthcare</a><a href="/dental-marketing/">Dental</a><a href="/real-estate-marketing/">Real Estate</a><a href="/restaurant-marketing/">Restaurants</a><a href="/ecommerce-marketing/">Ecommerce</a><a href="/saas-marketing/">SaaS</a><a href="/b2b-marketing/">B2B & Enterprise</a></div></div></li><li><button aria-haspopup="true" aria-expanded="false">Consulting <i class="caret"></i></button><div class="drop"><div><h5>Advisory</h5><a href="/marketing-consulting/">Marketing Consulting</a><a href="/business-consulting/">Business Consulting</a><a href="/sales-training/">Sales Training</a><a href="/marketing-psychology/">Marketing Psychology</a><a href="/how-to-choose-a-cro-agency/">How to Choose a CRO Agency</a></div></div></li><li><button aria-haspopup="true" aria-expanded="false">Tools <i class="caret"></i></button><div class="drop"><div><h5>Free tools</h5><a href="/cro-audit/">Conversion Audit</a><a href="/conversion-calculator/">Conversion Rate Calculator</a><a href="/website-conversion-rate/">Conversion Gauge</a><a href="/form-friction-calculator/">Form Friction Calculator</a><a href="/speed-to-lead-calculator/">Speed-to-Lead Calculator</a><a href="/ab-test-simulator/">A/B Significance</a><a href="/marketing-budget-calculator/">Budget Calculator</a><a href="/marketing-plan-builder/">Plan Builder</a></div></div></li><li><a href="/our-work/">Our Work</a></li><li><a href="/pitch/">The Pitch</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li></ul>
   <a class="hdr-tel" href="tel:+17207128615">&#9742; 720-712-8615</a>
   <a class="hdr-cta" href="/free-strategy-session/">Free Strategy Session</a>
@@ -349,6 +156,6 @@
   <div class="bot"><span>&copy; 2026 Search Converts LLC. All rights reserved.</span><span>Hand-coded. No page builders were harmed.</span><span class="agents">For AI agents: <a href="/api/">API</a> · <a href="/api/services.json">services.json</a> · <a href="/llms.txt">llms.txt</a> · <a href="/llms-full.txt">llms-full.txt</a></span></div>
 </div></footer>
 <script src="/sc.js" defer></script>
-<script>addEventListener("load",function(){setTimeout(function(){var s=document.createElement("script");s.src="/scout.js";document.body.appendChild(s)},1200)})</script>
+<script>(function(){var d=0;function l(){if(d)return;d=1;var s=document.createElement("script");s.src="/scout.js";document.body.appendChild(s)}["pointerdown","keydown","touchstart","scroll"].forEach(function(e){addEventListener(e,l,{once:true,passive:true})});addEventListener("load",function(){("requestIdleCallback"in window)?requestIdleCallback(l,{timeout:10000}):setTimeout(l,8000)})})()</script>
 <a class="callpill" href="tel:+17207128615" aria-label="Call Search Converts at 720-712-8615"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.4 11.4 0 00.57 3.6 1 1 0 01-.25 1z"/></svg>Call 720-712-8615</a></body>
 </html>
