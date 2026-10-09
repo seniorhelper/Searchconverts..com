@@ -59,7 +59,7 @@ FAQ:
 
 ## Agent-Ready Conversion
 URL: https://searchconverts.com/agent-ready-conversion/
-Summary: How AI shopping, booking and research agents complete or abandon your funnel, and the checklist that makes your site convertible by an agent acting for a customer.
+Summary: How AI shopping, booking and research agents complete or abandon your funnel, plus the checklist that makes a site convertible by an agent acting for a buyer.
 Direct answer: Agent-ready conversion is the practice of making a website convertible by software acting for a customer: an AI assistant that researches, compares, books or buys on a person's behalf. Agents complete a funnel when the offer, price, availability and next step are stated in machine-readable form and the form or booking endpoint is simple; they abandon it when the facts live in images, chat widgets or multi-step forms. The fix is a short checklist, not a rebuild.
 Sections: Who the new visitor is | Where agents abandon | The agent-ready checklist | A schema recipe for a bookable service | What this does to human conversion | Questions people ask | Want your site checked against the list?
 FAQ:
@@ -391,7 +391,7 @@ FAQ:
 - Q: Should I fix pricing or get more customers?
   A: Almost always pricing first, and the arithmetic is not close. A few points of margin flow straight to the bottom line with no additional delivery cost, while equivalent revenue from new customers requires acquisition spend, capacity and time. Pricing is also the least examined lever in most small businesses, because raising prices feels risky and running an ad feels productive. We look at pricing early in nearly every engagement, and it is frequently where the first real money is found.
 
-## Call Conversion Rate: Benchmarks and Measurement
+## Call Conversion Rate: Benchmarks and Tracking
 URL: https://searchconverts.com/call-conversion-rate/
 Summary: Call conversion rate explained: how to calculate it, benchmarks by industry, why most websites undercount calls, and how to track the calls your pages create.
 Direct answer: Call conversion rate is the share of website sessions that produce a phone call, or, measured downstream, the share of calls that become customers. For local service businesses, calls are typically 55% to 75% of all website conversions and convert to customers at two to four times the rate of form leads, yet most analytics setups count only forms. Measuring calls needs dynamic number insertion by source, call tracking down to the page, and a definition of a qualified call that excludes spam and existing customers.
@@ -1296,7 +1296,7 @@ FAQ:
 
 ## Speed to Lead Calculator
 URL: https://searchconverts.com/speed-to-lead-calculator/
-Summary: Free speed-to-lead calculator: enter your leads, response time and customer value to see the revenue lost per minute of delay and the response time to aim for.
+Summary: Free speed-to-lead calculator: enter your leads, response time and customer value to see revenue lost per minute of delay and the response time to aim for.
 Direct answer: Speed to lead is the time between a lead arriving and a human responding. Published studies put a lead contacted within five minutes at several times the connect and qualification rate of one contacted after thirty, and the odds keep falling by the hour. This calculator takes your monthly leads, current response time, close rate and customer value and shows what the delay is costing in customers and revenue each month, with no signup and nothing stored.
 Sections: How the model works | Why response time decays so fast | What a good speed-to-lead target looks like | How to measure your own response time this week | Questions people ask | Want the response system built, not just measured?
 FAQ:
