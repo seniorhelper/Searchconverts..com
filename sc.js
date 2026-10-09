@@ -27,7 +27,7 @@ D.querySelectorAll('form[data-sc]').forEach(function(f){
     var fd=new FormData(f);fd.delete('_honey');fd.set('_captcha','false');fd.set('_template','table');
     if(!fd.get('_subject'))fd.set('_subject','searchconverts.com — '+(f.getAttribute('data-sc')||'lead'));
     fd.set('page',location.pathname);fd.set('page_title',D.title.slice(0,120));fd.set('tool',f.getAttribute('data-tool')||'');fd.set('source_site','searchconverts.com');fd.set('referrer',(D.referrer||'').slice(0,200));
-    fetch('https://form'+'submit.co/ajax/'+dest(),{method:'POST',headers:{'Accept':'application/json'},body:fd}).then(function(r){return r.json();}).then(function(j){if(j&&(j.success==='true'||j.success===true)){say(f,'ok','Got it. A real person will call or reply within one business day. If it can\'t wait: 720-712-8615.');f.reset();}else{say(f,'err','Something went wrong. Call 720-712-8615 and we\'ll take it by phone.');if(b)b.disabled=false;}}).catch(function(){say(f,'err','Something went wrong. Call 720-712-8615 and we\'ll take it by phone.');if(b)b.disabled=false;});
+    fetch('https://form'+'submit.co/ajax/'+dest(),{method:'POST',headers:{'Accept':'application/json'},body:fd}).then(function(r){return r.json();}).then(function(j){if(j&&(j.success==='true'||j.success===true)){say(f,'ok','Got it. A real person will call or reply within one business day. If it can\'t wait: 720-712-8615.');f.reset();location.href='/thank-you/';}else{say(f,'err','Something went wrong. Call 720-712-8615 and we\'ll take it by phone.');if(b)b.disabled=false;}}).catch(function(){say(f,'err','Something went wrong. Call 720-712-8615 and we\'ll take it by phone.');if(b)b.disabled=false;});
   });
 });
 /* runtime email */
