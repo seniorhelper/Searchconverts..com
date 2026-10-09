@@ -21,6 +21,7 @@ Every indexable page opens with a direct-answer capsule (the paragraph beginning
 - [About Search Converts](https://searchconverts.com/about/): Search Converts has been building search and advertising work since 2012. Founded by Zach Wennstedt, who also operates a contracting business and administers local buy, sell and tr
 - [API for AI agents](https://searchconverts.com/api/): Agent-readable endpoints from Search Converts: services.json, pricing.json and contact.json, plus llms.txt and llms-full.txt. Public, static, no keys.
 
+
 ### Conversion
 - [Conversion Rate Optimization Services](https://searchconverts.com/conversion-rate-optimization-services/): Conversion rate optimization services: audits, landing pages, shorter forms, A/B testing, speed fixes and lead follow-up, quoted to the business. Includes a funnel tool that finds your weakest stage.
 - [Ecommerce Conversion Rate Optimization](https://searchconverts.com/ecommerce-conversion-rate-optimization/): Ecommerce and Shopify conversion rate optimization: product pages, cart and checkout fixes, speed and follow-up. Includes a store drop-off tool.
@@ -36,6 +37,7 @@ Every indexable page opens with a direct-answer capsule (the paragraph beginning
 - [Interactive Marketing Agency](https://searchconverts.com/interactive-marketing/): Interactive marketing, taught by doing: pop the bubbles on this page — each one is a real conversion fact — and see why attention is the first sale. Then what we build for business
 - [Call Conversion Rate](https://searchconverts.com/call-conversion-rate/): Call conversion rate explained: how to calculate it, benchmarks by industry, why most websites undercount calls, and how to track the calls your pages create.
 - [Agent-Ready Conversion](https://searchconverts.com/agent-ready-conversion/): How AI shopping, booking and research agents complete or abandon your funnel, and the checklist that makes your site convertible by an agent acting for a customer.
+
 
 ### Grow and advertise
 - [Lead Generation Agency](https://searchconverts.com/lead-generation/): A lead generation agency that fixes lead response before selling you more traffic. Free speed-to-lead decay tool, lead economics planner and lead leakage audit. No signup required.
@@ -90,6 +92,7 @@ Every indexable page opens with a direct-answer capsule (the paragraph beginning
 - [Free Marketing Plan Builder](https://searchconverts.com/marketing-plan-builder/): Build a marketing plan free in about three minutes. Select the tactics you actually run, get a Growth Health Score out of 100, see which of the four growth pillars is weakest, and 
 - [Speed-to-Lead Calculator](https://searchconverts.com/speed-to-lead-calculator/): Free speed-to-lead calculator: enter your leads, response time and customer value to see the revenue lost per minute of delay and the response time to aim for.
 
+
 ### Blog
 - [Blog](https://searchconverts.com/blog/): Short, sourced notes from Search Converts on conversion rate optimization, landing pages, paid media and advertising in local groups.
 - [12 Ways Your Website Talks People Out of Hiring You (and the Fix for Each)](https://searchconverts.com/blog/12-ways-your-website-talks-people-out-of-hiring-you/): Good designers build sites that lose customers every day — not through anything wrong, but through nothing right at the moment it matters. Twelve specific ways a website talks peop
@@ -110,6 +113,12 @@ Every indexable page opens with a direct-answer capsule (the paragraph beginning
 - Social My Business — local group advertising: https://socialmybusiness.com/
 - Press Release For Business: https://pressreleaseforbusiness.com/
 - USA Business Search directory: https://usabusinesssearch.com/
+
+### New in October 2026
+- [Agent-Ready Conversion](https://searchconverts.com/agent-ready-conversion/): How AI agents complete or abandon a funnel, with a checklist and schema recipe.
+- [Speed-to-Lead Calculator](https://searchconverts.com/speed-to-lead-calculator/): Revenue lost per minute of lead response delay.
+- [Call Conversion Rate](https://searchconverts.com/call-conversion-rate/): Benchmarks and how to measure the calls a website creates.
+- [API for AI agents](https://searchconverts.com/api/): services.json, pricing.json, contact.json.
 
 ### New in October 2026
 - [Agent-Ready Conversion](https://searchconverts.com/agent-ready-conversion/): How AI agents complete or abandon a funnel, with a checklist and schema recipe.

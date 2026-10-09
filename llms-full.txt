@@ -8,7 +8,7 @@ Each entry below gives the page title, URL, the direct answer written on the pag
 URL: https://searchconverts.com/ab-test-simulator/
 Summary: Free A/B test significance calculator running a real two-proportion z-test. See whether your winning variant is real or noise. No signup.
 Direct answer: This calculator runs a two-proportion z-test on your control and variant visitors and conversions and reports whether the difference clears 95% confidence. If it does not, the variant is not a winner yet, however good the lift looks. It runs in your browser and stores nothing.
-Sections: The maths,stated plainly | How much traffica test actually needs | The other twocalculators | Significance testingquestions
+Sections: The maths, stated plainly | How much traffic a test actually needs | The other two calculators | Significance testing questions
 FAQ:
 - Q: How does this significance calculator work?
   A: It runs a two-proportion two-tailed z-test. Both variants are pooled to estimate a shared conversion rate, the standard error of the difference is calculated, and the resulting z-score is converted to a p-value against the standard normal distribution. Confidence is one minus that p-value. The error function uses the Abramowitz and Stegun approximation, accurate to roughly one part in ten million.
@@ -42,7 +42,7 @@ FAQ:
 URL: https://searchconverts.com/about/
 Summary: Search Converts has built search and advertising work since 2012. Founded by Zach Wennstedt, who also runs a contracting business and local trade groups.
 Direct answer: Search Converts LLC is a conversion rate optimization agency founded in 2012 by Zachary Tye Wennstedt and headquartered in Denver, Colorado, working with businesses across the United States and Canada. It fixes why website visitors leave without calling, then scales what works across paid search, social, programmatic, email and AI marketing. BBB accredited with an A+ rating; engagements are quoted per business after a free strategy session.
-Sections: 160 leads, overnight,from three posts | Fourteen years,in order | We are alsosomebody else's client | Six things we dothat cost us money | Headquartered in Denver.Growing businesses everywhere. | About thecompany | Start a conversation
+Sections: 160 leads, overnight, from three posts | Fourteen years, in order | We are also somebody else's client | Six things we do that cost us money | Headquartered in Denver. Growing businesses everywhere. | About the company | Start a conversation
 FAQ:
 - Q: How long has Search Converts been operating?
   A: The work goes back to 2012, when Eye To Ad Media was founded in Denver building search optimization, keyword domains and hand-built websites. Search Converts LLC is the entity behind the broader agency work — conversion, paid media, creative, AI systems and consulting. Fourteen years is genuinely unusual in this industry, where a great many agencies offering the same services did not exist five years ago.
@@ -79,7 +79,7 @@ FAQ:
 ## AI Marketing Agency
 URL: https://searchconverts.com/ai-marketing-agency/
 Summary: AI marketing agency covering visibility inside AI answers and AI used in marketing operations. Free citation simulator and readiness tools.
-Sections: What is an AI marketing agency? | Watch an assistantdecide who to name | One strategy cannotcover both engines | Test your own sitewith real tools | What AI actually does well,and what is theatre | Where we start,and in what order | Where AI visibilitymatters most right now | AI marketingquestions, answered | Free AI visibility check
+Sections: What is an AI marketing agency? | Watch an assistant decide who to name | One strategy cannot cover both engines | Test your own site with real tools | What AI actually does well, and what is theatre | Where we start, and in what order | Where AI visibility matters most right now | AI marketing questions, answered | Free AI visibility check
 FAQ:
 - Q: What does an AI marketing agency actually do?
   A: Two separable things. The first is making a business visible inside AI systems, so it gets named when someone asks an assistant for a recommendation. The second is deploying AI inside the marketing operation — instant lead response, qualification agents, creative production at volume. Most agencies claiming the label do only the second. Be direct in asking which one is on offer, because a language model in the copywriting workflow is useful but it is not a strategy.
@@ -414,7 +414,7 @@ FAQ:
 URL: https://searchconverts.com/contact/
 Summary: Contact Search Converts by phone, text, email or form. Based in Denver, Colorado. Free audits across conversion, PPC, social, email and AI visibility.
 Direct answer: Reach Search Converts by phone or text at 720-712-8615, by email at hello@searchconverts.com, or through the form on this page; a real person replies within one business day. Based in Denver, Colorado, working with businesses across the United States and Canada. Free audits are available for conversion, PPC, social, programmatic, email and AI visibility.
-Sections: Tell us what is not working | Nine audits we runwhether or not you hire us | Denver, Colorado.Clients everywhere else. | A few thingsworth knowing
+Sections: Tell us what is not working | Nine audits we run whether or not you hire us | Denver, Colorado. Clients everywhere else. | A few things worth knowing
 FAQ:
 - Q: How fast will you actually reply?
   A: Within one business day, and usually much sooner during Mountain Time working hours. We are strict about this for a reason: our lead generation page argues that response speed is the single biggest lever most businesses have, and it would be difficult to make that argument while taking three days to answer an email. If you need something immediately, call.
@@ -433,7 +433,7 @@ FAQ:
 URL: https://searchconverts.com/conversion-calculator/
 Summary: Free conversion rate calculator. See what a one-point improvement is worth per year, and how much traffic you would have to buy to match it.
 Direct answer: Enter your monthly visitors, conversions and average customer value, and this calculator shows your current conversion rate, what one more percentage point is worth per year, and how much extra traffic you would have to buy to match that gain. It runs in your browser with no signup and nothing stored.
-Sections: Half a point sounds like nothing.It rarely is. | Where half a pointusually comes from | The other twocalculators | Conversion calculatorquestions
+Sections: Half a point sounds like nothing. It rarely is. | Where half a point usually comes from | The other two calculators | Conversion calculator questions
 FAQ:
 - Q: How do I calculate conversion rate?
   A: Divide conversions by visitors and multiply by one hundred. Two hundred conversions from ten thousand visitors is a 2% conversion rate. The harder question is which conversions count — a newsletter signup and a purchase should not be measured together, because optimizing toward the wrong one produces more of the wrong one.
@@ -488,7 +488,7 @@ FAQ:
 URL: https://searchconverts.com/conversion-optimization/
 Summary: What is conversion optimization? A plain-English guide: how the process works, what a good rate is, common conversion killers and when to hire help.
 Direct answer: Conversion optimization, or conversion rate optimization (CRO), is the practice of increasing the share of website visitors who take a valuable action such as calling, booking or buying, by diagnosing why they leave and fixing the page, offer and follow-up. A typical website converts 2% to 5% of visitors; the process is measure, find the biggest leak, fix it, test when traffic allows, and repeat.
-Sections: What is conversion optimization? | Why one percentage point matters so much | How the conversion optimization process works | A/B test significance calculator | Types of conversion optimization | What is a good conversion rate? | Calculate your own conversion rate | The most common conversion killers | Examples of conversion optimization | See form friction compound | Test yourself: spot the conversion killer | Conversion optimization vs SEO vs paid advertising | AI search traffic converts better than organic search | What a conversion rate optimization specialist does | When to do it yourself and when to hire | Conversion optimizationquestions, answered | Find out where your funnel is leaking
+Sections: What is conversion optimization? | Why one percentage point matters so much | How the conversion optimization process works | A/B test significance calculator | Types of conversion optimization | What is a good conversion rate? | Calculate your own conversion rate | The most common conversion killers | Examples of conversion optimization | See form friction compound | Test yourself: spot the conversion killer | Conversion optimization vs SEO vs paid advertising | AI search traffic converts better than organic search | What a conversion rate optimization specialist does | When to do it yourself and when to hire | Conversion optimization questions, answered | Find out where your funnel is leaking
 FAQ:
 - Q: What is conversion optimization in digital marketing?
   A: In digital marketing, conversion optimization is the discipline responsible for what happens after the click. Search, social and paid advertising are measured on how many people they deliver to the site. Conversion optimization is measured on what share of those people become customers. It sits between traffic acquisition and revenue, and because it multiplies the return on every acquisition channel at once, it is usually the highest-leverage place to work in a digital marketing program.
@@ -545,7 +545,7 @@ FAQ:
 URL: https://searchconverts.com/ctv-advertising/
 Summary: CTV advertising and connected TV media buying with transparent working media reporting. Free reach planner and sourced 2026 CTV CPM benchmarks.
 Direct answer: CTV advertising places video ads on streaming TV apps and smart TVs, bought programmatically with reach and frequency controls, at 2026 CPMs that typically run $20 to $45 for premium inventory. We buy it with transparent working-media reporting, so you see how much of each dollar reached a real screen, and we measure it by calls, visits and sales rather than impressions.
-Sections: What is CTV advertising? | What CTV advertisingactually costs right now | Where your CTV dollaractually goes | Reach and frequency:the planning most buyers skip | The bit traditional TVcould never do | How to judge CTVwithout a click to count | You need an actualtelevision commercial | Running a connected TVcampaign properly | Who connected TVactually works for | CTV advertisingquestions, answered | Free CTV media plan
+Sections: What is CTV advertising? | What CTV advertising actually costs right now | Where your CTV dollar actually goes | Reach and frequency: the planning most buyers skip | The bit traditional TV could never do | How to judge CTV without a click to count | You need an actual television commercial | Running a connected TV campaign properly | Who connected TV actually works for | CTV advertising questions, answered | Free CTV media plan
 FAQ:
 - Q: What is CTV advertising?
   A: CTV advertising means buying video ads that play inside streaming content on internet-connected televisions, including smart TVs, Roku, Fire Stick, Apple TV and game consoles. Unlike traditional television, connected TV ads are bought programmatically and delivered to specific households selected by location, demographics, interests or prior website visits. That addressability is the whole difference: a broadcast spot reaches everyone in the transmission area and you pay for all of them, whereas CTV lets a business serving a fifteen-mile radius pay only to reach households inside it.
@@ -652,7 +652,7 @@ FAQ:
 URL: https://searchconverts.com/email-marketing/
 Summary: Email marketing agency focused on deliverability and automated flows rather than open rates. Free delivery visualiser and sender compliance checker.
 Direct answer: Email marketing earns most of its revenue from automated flows (welcome, abandoned cart, post-purchase, winback) and from landing in the inbox at all, not from open rates. We set up authentication and sender compliance, build the flows, and report revenue per email and per flow rather than opens.
-Sections: What does an email marketing agency do? | Send 1,000 emails.Watch what happens. | The rules changed.Nobody told most senders. | 41% of the revenuefrom 5.3% of the sends | What we actuallydo for you | The order mattersmore than the ideas | Email works differentlydepending on what you sell | Email marketingquestions, answered | Free deliverability audit
+Sections: What does an email marketing agency do? | Send 1,000 emails. Watch what happens. | The rules changed. Nobody told most senders. | 41% of the revenue from 5.3% of the sends | What we actually do for you | The order matters more than the ideas | Email works differently depending on what you sell | Email marketing questions, answered | Free deliverability audit
 FAQ:
 - Q: Are open rates still worth tracking?
   A: As a scoreboard, no. As a smoke alarm, yes. Apple Mail Privacy Protection pre-loads tracking pixels for Apple Mail users, which means roughly half of all reported opens are machines rather than people. Reported averages sit at 42 to 44%, inflated by an estimated 15 to 20 percentage points. What open rate is still good for is spotting a sudden drop, which usually means a deliverability problem. Lead with click rate instead, which nothing has corrupted, then click-to-open rate, then revenue per email sent.
@@ -675,7 +675,7 @@ FAQ:
 URL: https://searchconverts.com/facebook-ads-management/
 Summary: Facebook ads agency built around creative production volume rather than audience settings. Free creative testing simulator and 2026 placement cost data.
 Direct answer: Facebook and Instagram ads in 2026 are won by creative volume and testing, because Meta's automated targeting does the audience work better than manual settings. We produce and test a steady stream of ad creative, measure cost per lead and cost per sale by placement, and fix the landing page so the clicks you pay for become calls and orders.
-Sections: What does a Facebook ads agency do now? | Twenty-four ads in.Two come out. | How many ads canyour budget actually test? | About that"32% lower cost" claim | Not all placementscost the same | We administer local buy, selland trade communities | Building an accountaround production | Where this channelearns its place | Facebook and Meta adsquestions, answered | Free creative and account audit
+Sections: What does a Facebook ads agency do now? | Twenty-four ads in. Two come out. | How many ads can your budget actually test? | About that "32% lower cost" claim | Not all placements cost the same | We administer local buy, sell and trade communities | Building an account around production | Where this channel earns its place | Facebook and Meta ads questions, answered | Free creative and account audit
 FAQ:
 - Q: What does a Facebook ads agency actually do in 2026?
   A: Far more creative production and far less audience building than it used to. Detailed targeting for cold audiences has been progressively deprecated and broad targeting now routinely outperforms narrow segments, so the algorithm decides who sees your ads. What it decides with is your creative, which makes concept production, testing volume and measurement the levers that actually move performance. A Facebook ads agency should be running a repeatable creative pipeline, verifying conversion tracking, keeping structure simple enough for the system to learn, and reporting on cost per customer rather than cost per click.
@@ -698,7 +698,7 @@ FAQ:
 URL: https://searchconverts.com/form-friction-calculator/
 Summary: Free form friction calculator. Model compound drop-off per field and see how many leads each extra question costs you. Runs in your browser, no signup.
 Direct answer: Enter the number of fields on your form and your current conversions, and this calculator models compound drop-off per field to show how many leads each extra question costs you. Most service businesses need only name, phone and one question; it runs in your browser with no signup.
-Sections: Nine fields is notthree times worse than three | Fields ranked bywhat they actually cost | The other twocalculators | Form frictionquestions
+Sections: Nine fields is not three times worse than three | Fields ranked by what they actually cost | The other two calculators | Form friction questions
 FAQ:
 - Q: How much does each form field cost me?
   A: Published estimates vary widely because it depends heavily on which field. A first name costs almost nothing; a phone number costs a great deal; a budget question costs more still. This calculator uses a compound model with an adjustable per-field rate, defaulting to a deliberately moderate 7%. The important mechanic is that losses multiply rather than add, so nine fields is far worse than three times as bad as three.
@@ -715,16 +715,16 @@ FAQ:
 URL: https://searchconverts.com/free-strategy-session/
 Summary: Book a free 30-minute marketing strategy session with Search Converts in Denver. We show you what is costing you growth. No obligation. Call 720-712-8615.
 Direct answer: A free strategy session is a 30-minute conversation with a real person at Search Converts about your site, your traffic and your numbers, ending with a plain statement of what would move them and what it would cost. No obligation, no contract until you are ready; call 720-712-8615 or use the form on this page.
-Sections: Every Year Without
-        a Real Marketing System
-        Costs You Compounding Ground. | What's Your Business'sGrowth Readiness Score? | 30 Minutes That CouldChange Your Business Trajectory. | Tell Us About
+Sections: Every Year Without 
+        a Real Marketing System 
+        Costs You Compounding Ground. | What's Your Business's Growth Readiness Score? | 30 Minutes That Could Change Your Business Trajectory. | Tell Us About 
         Your Business & Goals. | You're In. Talk Soon. | Common Questions
 
 ## Google Ads Management | PPC Agency
 URL: https://searchconverts.com/google-ads-management/
 Summary: Google Ads management from a PPC agency that fixes account structure before bidding. Free match type simulator, Quality Score diagnostic and account audit.
 Direct answer: Google Ads management from Search Converts fixes account structure, match types, negatives and conversion tracking before touching bids, because most wasted spend is structural. Fees are quoted to the business after a free account audit; you keep ownership of the account and see cost per lead and cost per sale, not just clicks.
-Sections: What is Google Ads management? | Match types:what you are actually buying | Which Google Adscampaign type do you need? | Quality Score has three parts.Only one is about your ads. | What we find in almostevery Google Ads audit | Google PPC and organic searchare not alternatives | What happens in thefirst ninety days | Google is the start,not the whole plan | The same click costs$3 or $300 | Google Ads managementquestions, answered | Free Google Ads account audit
+Sections: What is Google Ads management? | Match types: what you are actually buying | Which Google Ads campaign type do you need? | Quality Score has three parts. Only one is about your ads. | What we find in almost every Google Ads audit | Google PPC and organic search are not alternatives | What happens in the first ninety days | Google is the start, not the whole plan | The same click costs $3 or $300 | Google Ads management questions, answered | Free Google Ads account audit
 FAQ:
 - Q: What does a Google Ads agency actually do?
   A: A Google Ads agency structures, runs and continuously improves your campaigns so spend produces profitable customers. In practice that means choosing the right campaign types, building account architecture tight enough that each ad matches a narrow set of searches, managing match types and negative keywords, writing and testing ads, verifying conversion tracking, aligning landing pages, and reviewing the search terms report to see what the account is really buying. The platform will run ads without any of this. What it will not do is tell you when your budget is being spent on searches that never become revenue.
@@ -766,7 +766,7 @@ FAQ:
 URL: https://searchconverts.com/growth-system/
 Summary: Our framework for connecting SEO, AI visibility, paid ads, branding, conversion and retention so each lowers the cost of the next, and when not to buy it.
 Direct answer: The Growth System is our framework for connecting six pillars, search visibility, AI visibility, paid advertising, branding, conversion and retention, in an order where each one lowers the cost of the next. It is built around fixing conversion and lead response first, so every later dollar of traffic is worth more; it is the wrong purchase for a business whose constraint is capacity, not customers.
-Sections: Disconnected marketing versus a sequence | Six parts. One sequence. | How one pillar lowers the cost of another | From audit to compounding | When this is the wrong thing to buy | About the Growth System | Find out whichpillar to fund
+Sections: Disconnected marketing versus a sequence | Six parts. One sequence. | How one pillar lowers the cost of another | From audit to compounding | When this is the wrong thing to buy | About the Growth System | Find out which pillar to fund
 FAQ:
 - Q: What is the Growth System?
   A: It is our name for a way of sequencing marketing rather than a product you buy. Six pillars: search and AI visibility, conversion optimization, paid advertising, branding and web, retention and referrals, and response systems. The argument is that these are usually bought in isolation and measured in isolation, when each one changes the economics of the others. The system is the order you build them in and the connections between them, not a bundle.
@@ -898,7 +898,7 @@ FAQ:
 URL: https://searchconverts.com/lead-generation/
 Summary: Lead generation agency that fixes lead response before selling you more traffic. Free speed-to-lead decay tool, lead economics planner and leakage audit.
 Direct answer: Lead generation from Search Converts fixes lead response before adding traffic: a lead contacted within five minutes is many times more likely to connect than one contacted after an hour. We audit where your leads leak, set up fast follow-up, then generate more leads through search, social and landing pages, measured to booked appointments and sales.
-Sections: What is lead generation? | Every minute you wait,the lead is worth less | Work backwards fromthe revenue, not the budget | Where leads actually dieafter the form fires | Where leads actuallycome from | The order we do things in,and why it is that order | Speed matters morein some industries than others | Lead generationquestions, answered | Free lead leak audit
+Sections: What is lead generation? | Every minute you wait, the lead is worth less | Work backwards from the revenue, not the budget | Where leads actually die after the form fires | Where leads actually come from | The order we do things in, and why it is that order | Speed matters more in some industries than others | Lead generation questions, answered | Free lead leak audit
 FAQ:
 - Q: What does a lead generation agency actually do?
   A: A lead generation agency builds and runs the systems that produce inquiries — across paid search, paid social, email, organic search, referral and traditional media — and connects those inquiries to whatever happens next. The second half matters more than most people expect. A lead that arrives and is never contacted is indistinguishable from one you never generated, except that you paid for the first. We start by testing what currently happens to an inquiry before recommending anything that produces more of them.
@@ -1038,7 +1038,7 @@ Sections: 1. Who we are | 2. What we collect | 3. How we use it | 4. Who we shar
 URL: https://searchconverts.com/programmatic-advertising/
 Summary: Programmatic advertising agency focused on inventory quality rather than cheap CPMs. Free RTB visualiser, viewable impression calculator, 2026 benchmarks.
 Direct answer: Programmatic advertising buys display, video and audio impressions through real-time auctions; the cheapest CPMs are usually the worst inventory, so we buy on viewability, human traffic and site quality instead. The result is reported as true cost per viewable human impression and, more importantly, as the calls and sales those impressions produced.
-Sections: What is programmatic advertising? | Watch one impressionget bought | The cheapest CPMis usually the most expensive | Open exchange, PMPor guaranteed? | What good actuallylooks like | What a programmatic advertisingagency should be doing | Running programmaticwithout wasting half of it | Where programmaticearns its place | Programmatic advertisingquestions, answered | Free programmatic audit
+Sections: What is programmatic advertising? | Watch one impression get bought | The cheapest CPM is usually the most expensive | Open exchange, PMP or guaranteed? | What good actually looks like | What a programmatic advertising agency should be doing | Running programmatic without wasting half of it | Where programmatic earns its place | Programmatic advertising questions, answered | Free programmatic audit
 FAQ:
 - Q: What is programmatic advertising?
   A: Programmatic advertising is the automated buying and selling of digital ad space through real-time auctions. Rather than negotiating with individual publishers, an advertiser sets targeting and bidding rules in a demand-side platform and software decides in milliseconds which individual impressions to buy and what to pay. It now accounts for roughly 91% of US display spend, so if you run display, native, video, audio or connected TV advertising you are almost certainly buying programmatically already. The visualiser on this page shows a single auction play out across its full 100 milliseconds.
@@ -1130,7 +1130,7 @@ FAQ:
 URL: https://searchconverts.com/retargeting/
 Summary: Retargeting agency that measures incrementality instead of reporting inflated ROAS. Free holdout test demo, incremental ROAS and audience pool calculators.
 Direct answer: Retargeting shows ads to people who already visited your site; it looks cheap because it takes credit for sales that would have happened anyway. We measure incrementality with holdout tests, cap frequency, size the audience pool honestly, and report incremental ROAS rather than platform-attributed ROAS.
-Sections: What is retargeting? | The test that settles it,in about forty seconds | What your reported ROASis probably worth | Do you even haveenough people to retarget? | What a retargeting agencyshould actually be doing | Running retargetingso the numbers mean something | The point where retargetingstarts working against you | Where retargetinggenuinely earns its place | Retargetingquestions, answered | Free incrementality review
+Sections: What is retargeting? | The test that settles it, in about forty seconds | What your reported ROAS is probably worth | Do you even have enough people to retarget? | What a retargeting agency should actually be doing | Running retargeting so the numbers mean something | The point where retargeting starts working against you | Where retargeting genuinely earns its place | Retargeting questions, answered | Free incrementality review
 FAQ:
 - Q: What is retargeting and how does it work?
   A: Retargeting, also called remarketing, shows ads specifically to people who have already interacted with your business — visited the site, viewed a product, abandoned a cart or opened an email. A tracking pixel records the visit and adds that person to an audience, and ads then follow them across other websites, social platforms and connected TV until they convert or the audience window expires. It consistently reports the best performance in an advertising account, partly because it genuinely works and partly because it targets people who already intended to buy.
@@ -1237,7 +1237,7 @@ FAQ:
 URL: https://searchconverts.com/services/
 Summary: Every service from a Denver advertising company: conversion optimization, paid media across nine channels, creative, AI marketing and consulting.
 Direct answer: Search Converts offers conversion rate optimization, landing page optimization, A/B testing and copywriting; paid media across Google Ads, Meta, programmatic, CTV, retargeting, radio, TV and direct mail; email and marketing automation; video, branding, web and app builds; AI marketing; consulting and sales training; and eight industry specialties. Every service is quoted to the business after a free audit or strategy session.
-Sections: Twelve calculatorsthat run in your browser | We will talk you out ofmost of this list | About workingwith us | Tell us what is going wrong
+Sections: Twelve calculators that run in your browser | We will talk you out of most of this list | About working with us | Tell us what is going wrong
 FAQ:
 - Q: Do I have to buy a bundle?
   A: No, and most engagements start as one thing. A conversion review, one campaign rebuilt, a deliverability repair. Bundles suit agencies more than clients because they make revenue predictable and results hard to attribute. If one service would fix your problem, that is what we will propose.
@@ -1275,7 +1275,7 @@ FAQ:
 URL: https://searchconverts.com/social-media-marketing/
 Summary: Social media marketing agency covering strategy, done-for-you posting, Facebook groups and Marketplace, Meta Pixel setup and social conversion.
 Direct answer: Social media marketing from Search Converts covers strategy, done-for-you posting, local Facebook groups and Marketplace, Meta Pixel and conversion setup, and the landing pages social traffic lands on. We measure it by calls, leads and sales rather than followers, and use sourced 2026 engagement benchmarks to set honest targets.
-Sections: What is social media marketing? | Why every benchmark reportdisagrees with the last one | Where the platformsactually stand right now | Which platforms areactually worth your time? | Organic and paid socialare different businesses | What a social media marketingagency should actually deliver | The channel local businessesconsistently overlook | The Meta Pixel is where mostsocial budgets quietly break | What the firstninety days look like | Social works very differentlydepending on what you sell | Social media marketingquestions, answered | Free social media audit
+Sections: What is social media marketing? | Why every benchmark report disagrees with the last one | Where the platforms actually stand right now | Which platforms are actually worth your time? | Organic and paid social are different businesses | What a social media marketing agency should actually deliver | The channel local businesses consistently overlook | The Meta Pixel is where most social budgets quietly break | What the first ninety days look like | Social works very differently depending on what you sell | Social media marketing questions, answered | Free social media audit
 FAQ:
 - Q: What does a social media marketing agency actually do?
   A: A social media marketing agency handles strategy and channel selection, content production, community management, paid social buying, creator partnerships and measurement. The visible part is posting, which is also the part that matters least. Most of the value sits in deciding which platforms deserve investment, producing content built for each platform's native format rather than one asset resized repeatedly, and connecting the activity to leads and revenue rather than to follower counts.
@@ -1340,7 +1340,7 @@ Sections: 1. Accepting these terms | 2. Using this website | 3. The free tools |
 URL: https://searchconverts.com/video-production/
 Summary: Video production company built around testing volume rather than single films. Free placement format tool, tier calculator and 2026 cost benchmarks.
 Direct answer: Video production for marketing works on testing volume: several short variants cut for each placement outperform one polished film. We plan formats by placement, produce in tiers from phone-shot to studio, and measure each video by cost per lead or sale against 2026 video cost benchmarks.
-Sections: What a video productioncompany does now | The expensive shootis often the wrong purchase | What your budgetactually produces | What videoactually costs | What we produce,and who it is for | Production as a pipeline,not a project | Where videopays for itself fastest | Video productionquestions, answered | Free creative review
+Sections: What a video production company does now | The expensive shoot is often the wrong purchase | What your budget actually produces | What video actually costs | What we produce, and who it is for | Production as a pipeline, not a project | Where video pays for itself fastest | Video production questions, answered | Free creative review
 FAQ:
 - Q: How much does video production cost?
   A: It depends entirely on what the video is for. 2026 reporting puts performance video for paid social at roughly $100 to $500 per ad, creator deliverables averaging around $198, and traditional brand or corporate video production at $5,000 to $15,000. Those are not competing prices for the same thing — they are different products. A thirty-second broadcast spot for connected TV and a vertical creator video for Reels have almost nothing in common except the word video. Start from where it will run and the budget follows.
