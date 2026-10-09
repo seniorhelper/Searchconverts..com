@@ -98,6 +98,29 @@ FAQ:
 - Q: Have I accidentally blocked AI crawlers?
   A: Possibly, and it is worth thirty seconds to check. Visit yoursite.com/robots.txt and look for disallow rules aimed at AI user agents. A great many sites blocked them in 2023 when the question first arose and never revisited the decision, which means they have opted out of the channel entirely without anyone noticing. There are legitimate reasons to block crawlers, but it should be a decision rather than an inheritance.
 
+## AI Sales Agents
+URL: https://searchconverts.com/ai-sales-agents/
+Summary: AI sales agents that answer, qualify and follow up every lead in seconds, 24/7, then book the call your team closes. With an after-hours revenue calculator.
+Direct answer: An AI sales agent is software that works your inbound leads the moment they arrive. It replies by text or email within seconds, asks the qualifying questions your best rep would ask, books a time on a real calendar, chases no-shows and writes everything back to the CRM. It never sets prices, offers discounts or agrees terms; those go to a person. We build each one custom, wired into the tools you already run, and judge it on booked calls and revenue per lead rather than message counts.
+Sections: The money leaks in the hour after a lead arrives | What the sales agent does | Leads you lose after hours: the calculator | How it plugs into the stack you already have | How we measure it | Humans in the loop, and the rules for texting leads | Why most sales agents disappoint, and how ours are built | What an AI sales agent costs | AI sales agent questions | Get a free workflow audit
+FAQ:
+- Q: What is an AI sales agent?
+  A: Software that handles the first steps of selling to an inbound lead: an instant reply by text or email, a few qualifying questions, booking a time on a real calendar, reminders and follow-up, and logging everything in the CRM. A person still runs the sales conversation and makes every decision about price and terms.
+- Q: Will an AI sales agent replace my sales team?
+  A: No. It takes the repetitive first touch and the chasing off their plate so they spend more of the day in real conversations with qualified buyers. Pricing, negotiation, contracts and relationships stay with people. Most owners use the time it frees to close more, or to get evenings back.
+- Q: How fast does it reply to a new lead?
+  A: Usually within seconds of the form, ad lead or missed call, at any hour. We report the median reply time and the share of leads answered inside a minute so you can check it rather than take our word for it.
+- Q: Does it work with my CRM?
+  A: We regularly connect HubSpot, GoHighLevel, Salesforce, Calendly, Twilio, Gmail and Outlook. Other CRMs and schedulers usually expose the same basics through an API. The agent writes every message, answer and booking back to the contact record.
+- Q: Is it legal to text leads automatically?
+  A: It can be, when it is done properly: consent captured on your form with wording that covers automated texts, opt-outs such as STOP honoured immediately, quiet hours for outreach and registered A2P 10DLC numbers. The TCPA sets the rules in the US. We are not lawyers, so for regulated industries we review the setup with your counsel before launch.
+- Q: What happens when a lead asks about price or a discount?
+  A: The agent can share the published price range you give it, nothing more. Any request for a final quote, a discount, a refund or different terms is flagged to a person, and the lead is told someone will confirm.
+- Q: How long does it take to launch?
+  A: A single-task agent usually goes from audit to live in a few weeks. We map your current follow-up, build it, test it on your own team, then run it in shadow mode where a person approves each message before it sends. It goes fully live once the messages are consistently right.
+- Q: What does an AI sales agent cost?
+  A: Agency-published 2026 ranges run about $5,000 to $25,000 for a simple single-task agent and $15,000 to $75,000 for a custom integrated one, plus roughly $50 to $300 a month to run. Every Search Converts agent is quoted as a fixed price after a free 30-minute workflow audit, with no hourly meter.
+
 ## AI Website Design
 URL: https://searchconverts.com/ai-website-design/
 Summary: AI website design done properly: what AI defaults produce, why WebAIM found accessibility failures rising in 2026, and how to build for people and machines.
