@@ -1,7 +1,7 @@
 {
  "name": "Search Converts",
  "url": "https://searchconverts.com/",
- "updated": "2026-09-29",
+ "updated": "2026-10-09",
  "description": "Conversion rate optimization agency headquartered in Denver, Colorado, growing businesses worldwide.",
  "contact": {
   "phone": "+1-720-712-8615",
@@ -334,5 +334,14 @@
    "url": "https://searchconverts.com/conversion-copywriting/",
    "summary": "Conversion copywriting for homepages, service pages, ads and follow-up, with a free copy grader."
   }
- ]
+ ],
+ "version": "2026-10-09",
+ "endpoints": {
+  "services": "https://searchconverts.com/api/services.json",
+  "pricing": "https://searchconverts.com/api/pricing.json",
+  "contact": "https://searchconverts.com/api/contact.json",
+  "llms": "https://searchconverts.com/llms.txt",
+  "llms_full": "https://searchconverts.com/llms-full.txt",
+  "docs": "https://searchconverts.com/api/"
+ }
 }

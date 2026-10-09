@@ -1,0 +1,39 @@
+{
+ "$schema": "https://searchconverts.com/api/pricing.json",
+ "version": "2026-10-09",
+ "name": "Search Converts pricing",
+ "url": "https://searchconverts.com/",
+ "currency": "USD",
+ "model": "Every engagement is quoted to the business after one conversation (a free strategy session). There is no contract until the client is ready to sign one.",
+ "ranges": [
+  {
+   "service": "Managed campaigns (conversion optimization, paid media, email, AI marketing)",
+   "billing": "monthly",
+   "typical_min": 500,
+   "typical_max": 3000,
+   "note": "Most campaigns run $500 to $3,000 a month; scope and spend decide the fee."
+  },
+  {
+   "service": "Conversion audit",
+   "billing": "free",
+   "typical_min": 0,
+   "typical_max": 0,
+   "note": "The 12-point self-check and the strategy session are free; a paid deep audit is quoted per site."
+  },
+  {
+   "service": "Landing page, conversion copy, website and app builds",
+   "billing": "per project",
+   "note": "Quoted per project after the brief. Web-designer pages (Shopify, WordPress, Webflow, Wix, Squarespace) are quoted per site."
+  },
+  {
+   "service": "Consulting and sales training",
+   "billing": "per engagement",
+   "note": "Quoted per engagement; one-on-one coaching and team programs priced on headcount and duration."
+  }
+ ],
+ "guarantees": "No ranking, traffic or revenue guarantees. The client owns every account and asset.",
+ "how_to_get_a_quote": {
+  "free_strategy_session": "https://searchconverts.com/free-strategy-session/",
+  "phone": "+1-720-712-8615"
+ }
+}

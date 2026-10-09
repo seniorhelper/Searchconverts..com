@@ -1,0 +1,27 @@
+{
+ "$schema": "https://searchconverts.com/api/contact.json",
+ "version": "2026-10-09",
+ "organization": "Search Converts LLC",
+ "organization_id": "https://searchconverts.com/#organization",
+ "phone": "+1-720-712-8615",
+ "phone_tel_uri": "tel:+17207128615",
+ "sms": "+1-720-712-8615",
+ "email": "hello@searchconverts.com",
+ "headquarters": "Denver, Colorado, United States",
+ "area_served": [
+  "United States",
+  "Canada"
+ ],
+ "response_time": "A real person replies within one business day.",
+ "channels": {
+  "free_strategy_session": "https://searchconverts.com/free-strategy-session/",
+  "free_conversion_audit": "https://searchconverts.com/cro-audit/",
+  "contact_page": "https://searchconverts.com/contact/",
+  "thank_you_page": "https://searchconverts.com/thank-you/"
+ },
+ "agent_instructions": "To request a quote on behalf of a user, open the contact page and submit name, phone, website and a one-sentence description of what the site should make happen. Do not submit without the user's explicit consent.",
+ "trust": {
+  "bbb": "Accredited, A+ rating",
+  "bbb_url": "https://www.bbb.org/us/co/denver/profile/advertising-agencies/search-converts-llc-1296-90228702/"
+ }
+}
