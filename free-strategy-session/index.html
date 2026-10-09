@@ -2207,6 +2207,7 @@ document.querySelectorAll('.faq-q').forEach(btn => {
 
 // ── FORMSUBMIT AJAX ──
 (function() {
+  const ssLoaded = Date.now();
   const form    = document.getElementById('ss-form');
   const btn     = document.getElementById('ss-submit-btn');
   const msg     = document.getElementById('ss-form-msg');
@@ -2216,6 +2217,12 @@ document.querySelectorAll('.faq-q').forEach(btn => {
 
   form.addEventListener('submit', async function(e) {
     e.preventDefault();
+    const hp = form.querySelector('[name="_honey"]');
+    if (hp && hp.value) return;
+    if (Date.now() - ssLoaded < 3500) {
+      if (msg) { msg.style.color = '#ef4444'; msg.textContent = 'Give the form a moment, then send again.'; }
+      return;
+    }
     const name  = form.querySelector('[name="user_name"]').value.trim();
     const phone = form.querySelector('[name="user_phone"]').value.trim();
     const biz   = form.querySelector('[name="business_name"]').value.trim();
@@ -2232,7 +2239,7 @@ document.querySelectorAll('.faq-q').forEach(btn => {
     data.append('_subject', 'FREE SESSION REQUEST — ' + name + ' — ' + biz);
 
     try {
-      const res = await fetch('https://formsubmit.co/info@eyetoad.com', {
+      const res = await fetch('https://formsubmit.co/ajax/' + atob('aW5mbw==') + String.fromCharCode(64) + atob('ZXlldG9hZC5jb20='), {
         method: 'POST',
         body: data,
         headers: { 'Accept': 'application/json' }
