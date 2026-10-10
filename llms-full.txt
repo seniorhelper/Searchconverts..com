@@ -327,6 +327,40 @@ FAQ:
 - Q: Can I run the test myself?
   A: Yes. Friends, customers or a free online testing tool work. The key is testers who do not already know your business.
 
+## Offline Conversion Imports: Feed Google Ads Real Sales
+URL: https://searchconverts.com/blog/offline-conversion-imports/
+Summary: Google Ads optimizes for whatever you call a conversion. How to import offline conversions so bidding chases booked jobs and sales, not junk form fills.
+Direct answer: An offline conversion import sends outcomes that happen after the click, such as a qualified call, a booked appointment or a closed sale, back into Google Ads. You capture the Google click ID (GCLID) or customer details with each lead, record what happened in your CRM, and upload it on a schedule. Automated bidding then optimizes toward leads that actually turn into revenue.
+Sections: The problem: the ad platform only knows what you tell it | How it works, in plain terms | Enhanced conversions for leads | Which stages to import | Calls count too | A one-week setup plan | Common mistakes | Beyond Google: the same idea everywhere | What results to expect
+FAQ:
+- Q: What is an offline conversion import?
+  A: A way to send outcomes that happen after the click, such as qualified calls, appointments and sales, back to Google Ads so automated bidding can optimize toward them.
+- Q: What is a GCLID?
+  A: The Google click identifier that Google Ads adds to your landing page URL when auto-tagging is on. Storing it with each lead lets you match later outcomes back to the ad click.
+- Q: Do I need a CRM to import offline conversions?
+  A: A CRM makes it easier, but a consistently updated spreadsheet with the click ID, stage, date and value can work for a small business using scheduled uploads.
+- Q: What are enhanced conversions for leads?
+  A: Google's upgraded form of offline conversion import that also matches hashed first-party data, such as an email address, to improve matching when a click ID is missing.
+- Q: How often should I upload offline conversions?
+  A: At least weekly, ideally daily. Frequent uploads give bidding faster feedback and keep imports within Google's allowed time window.
+
+## Stop Form Spam Without Losing Real Leads
+URL: https://searchconverts.com/blog/stop-form-spam-without-losing-leads/
+Summary: Bot and junk submissions waste staff time and poison ad bidding. Layered defenses that block spam without puzzles that cost you real customers.
+Direct answer: Stop form spam with layers that real visitors never notice: a hidden honeypot field, a minimum time-on-page check, server-side validation of email and phone formats, rate limits, and simple content rules such as rejecting links in the message field. Add an invisible risk score only if spam gets through, and keep visible puzzles as a last resort, because they block some real customers too.
+Sections: Why spam is a conversion problem, not just an annoyance | Know which spam you have | The invisible layers, in the order to add them | When to add a risk score | Visible challenges: last resort only | Protect your ad data separately | Do not make the form itself the barrier | Tell the team what changed | A simple checklist
+FAQ:
+- Q: What is a honeypot field?
+  A: A form field hidden from real visitors. Bots tend to fill in every field, so any submission with a value in the honeypot can be discarded without affecting people.
+- Q: Do CAPTCHAs hurt conversion rates?
+  A: Visible challenges add friction, and the W3C notes they exclude many people with disabilities. Use invisible checks first and keep visible puzzles as a last resort.
+- Q: Why does form spam matter for Google Ads?
+  A: If form submissions count as conversions, spam submissions teach automated bidding to find more of the traffic that produced them. Fire conversions only after server acceptance and import qualified leads.
+- Q: Can I stop human spammers?
+  A: Bot checks will not stop people, but content rules, such as rejecting links in messages, and routing obvious sales pitches to a separate folder reduce the time they waste.
+- Q: What reCAPTCHA v3 score should I use?
+  A: Google suggests 0.5 as a default threshold, then tuning it from your own traffic. Start in observe-only mode before blocking anything.
+
 ## Traffic but No Sales: Nine Landing Page Leaks
 URL: https://searchconverts.com/blog/traffic-but-no-sales/
 Summary: Visitors arrive and nobody calls. Before buying more traffic, find which of nine landing-page leaks you have: headline, phone, form, proof, speed.
