@@ -542,7 +542,7 @@
       <div class="form-card-inner" id="ssFormWrap">
         <form id="ss-form" novalidate>
           <input type="hidden" name="source_site" value="searchconverts.com - Free Strategy Session">
-          <input type="hidden" name="_honey" id="ss-honey" style="display:none">
+          <input type="text" name="_honey" id="ss-honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
           <input type="hidden" name="quiz_score" id="ssQuizScore" value="Not taken">
           <input type="hidden" name="goals" id="ssGoals" value="">
           <input type="hidden" name="timeline" id="ssTimeline" value="">
@@ -1149,7 +1149,7 @@ document.querySelectorAll('.faq-q').forEach(btn => {
     const data = new FormData(form);
     data.append('_captcha', 'false');
     data.append('_template', 'table');
-    data.append('_subject', 'FREE SESSION REQUEST — ' + name + ' — ' + biz);
+    data.append('_subject', 'searchconverts.com — FREE SESSION REQUEST — ' + name + ' — ' + biz);
 
     try {
       const res = await fetch('https://formsubmit.co/ajax/' + atob('aW5mbw==') + String.fromCharCode(64) + atob('ZXlldG9hZC5jb20='), {
