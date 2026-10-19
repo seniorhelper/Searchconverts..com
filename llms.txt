@@ -26,6 +26,7 @@ Every indexable page opens with a direct-answer capsule (the paragraph beginning
 
 ### Conversion
 - [Conversion Rate Optimization Services](https://searchconverts.com/conversion-rate-optimization-services/): Conversion rate optimization services: audits, landing pages, shorter forms, A/B testing, speed fixes and lead follow-up, quoted to the business. Includes a funnel tool that finds your weakest stage.
+- [AI Traffic Conversion Optimization](https://searchconverts.com/ai-traffic-conversion-optimization/): Conversion optimization for visitors referred by ChatGPT, Perplexity and Google AI answers, who convert at roughly double the rate of ordinary organic traffic: match the page to the answer, remove steps, keep facts consistent, reply in minutes.
 - [Ecommerce Conversion Rate Optimization](https://searchconverts.com/ecommerce-conversion-rate-optimization/): Ecommerce and Shopify conversion rate optimization: product pages, cart and checkout fixes, speed and follow-up. Includes a store drop-off tool.
 - [Conversion Copywriting](https://searchconverts.com/conversion-copywriting/): Conversion copywriting for businesses that sell by phone, form and booking: homepages, service pages, ads, follow-up. Includes a free copy grader.
 - [Sales Funnel Agency](https://searchconverts.com/sales-funnel-agency/): Funnel building from first click to closed deal: offers, landing pages, lead capture, fast follow-up and sales handoff, measured stage by stage.
@@ -150,6 +151,10 @@ Every indexable page opens with a direct-answer capsule (the paragraph beginning
 
 ### New in September 2026
 - [Homepage headlines for service businesses](https://searchconverts.com/blog/homepage-headlines-for-service-businesses/): Twelve before-and-after headline rewrites and the formula behind them.
+- [Form fields vs completion: what the data says (and the 2012 myth)](https://searchconverts.com/blog/form-fields-vs-completion-rate/): Zuko puts completion near 52% once started; Unbounce's median page converts at 6.6%. The three-field rule is one 2012 test. A field-by-field way to decide.
+- [Paid CTR drops when an AI Overview appears and you are not cited](https://searchconverts.com/blog/paid-search-landing-pages-ai-overviews/): Seer's 2026 data: paid click-through falls from 19.75% to 11.19%. The ad, page and bid fixes that recover cost per lead.
+- [A conversion model for fewer, warmer visitors](https://searchconverts.com/blog/cro-math-for-fewer-warmer-visitors/): Cited pages get twice the clicks per impression but 38% fewer than before AI Overviews. The arithmetic that turns fewer visits into more revenue.
+- [The speed-to-lead stats everyone cites are from 2011](https://searchconverts.com/blog/speed-to-lead-stats-are-from-2011/): What the original Harvard Business Review study found, which famous figures have no source, and how to measure your own response time in an afternoon.
 - [Where your website leaks leads](https://searchconverts.com/blog/where-your-website-leaks-leads/): The five places websites lose leads and how to check each.
 - [The 5-second homepage test](https://searchconverts.com/blog/the-5-second-homepage-test/): How to test whether visitors understand your homepage in five seconds.
 - [Where ecommerce checkouts lose buyers](https://searchconverts.com/blog/ecommerce-checkout-leaks/): The fixable reasons carts are abandoned, with Baymard Institute data.
