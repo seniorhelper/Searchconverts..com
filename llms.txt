@@ -151,6 +151,8 @@ Every indexable page opens with a direct-answer capsule (the paragraph beginning
 
 ### New in September 2026
 - [Homepage headlines for service businesses](https://searchconverts.com/blog/homepage-headlines-for-service-businesses/): Twelve before-and-after headline rewrites and the formula behind them.
+- [Does page speed affect conversion rate? What the studies show](https://searchconverts.com/blog/page-speed-and-conversion-rate/): Shopify 2026 data, the Deloitte study, Portent and Google’s A/B tests, sorted by how much they prove. Which famous stats have no source, and a calculator for your numbers.
+- [Trust signals that actually increase conversions](https://searchconverts.com/blog/trust-signals-that-increase-conversions/): Reviews, clear costs and seals have evidence; the “42% badge lift” does not. Plus the review tactics the FTC now fines $53,088 per violation, and an audit tool.
 - [Form fields vs completion: what the data says (and the 2012 myth)](https://searchconverts.com/blog/form-fields-vs-completion-rate/): Zuko puts completion near 52% once started; Unbounce's median page converts at 6.6%. The three-field rule is one 2012 test. A field-by-field way to decide.
 - [Paid CTR drops when an AI Overview appears and you are not cited](https://searchconverts.com/blog/paid-search-landing-pages-ai-overviews/): Seer's 2026 data: paid click-through falls from 19.75% to 11.19%. The ad, page and bid fixes that recover cost per lead.
 - [A conversion model for fewer, warmer visitors](https://searchconverts.com/blog/cro-math-for-fewer-warmer-visitors/): Cited pages get twice the clicks per impression but 38% fewer than before AI Overviews. The arithmetic that turns fewer visits into more revenue.
