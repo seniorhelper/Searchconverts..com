@@ -124,6 +124,10 @@ Every indexable page opens with a direct-answer capsule (the paragraph beginning
 - Press Release For Business: https://pressreleaseforbusiness.com/
 - USA Business Search directory: https://usabusinesssearch.com/
 
+### New in November 2026
+- [Does video on a landing page increase conversions?](https://searchconverts.com/blog/does-video-on-landing-page-increase-conversions/): Unbounce's 35,000-page comparison and a 2011 vendor test sorted by how much they prove, when video hurts speed, and how to A/B test it.
+- [CRO agency vs in-house vs tools: what to hire in 2026](https://searchconverts.com/blog/cro-agency-vs-in-house-vs-tools/): Sourced cost ranges for agencies, in-house hires and testing tools, the traffic you need first, and questions to ask before you sign.
+
 ### New in October 2026
 - [AI Sales Agents](https://searchconverts.com/ai-sales-agents/): Instant lead reply, qualification, booking and follow-up agents, with an after-hours revenue calculator.
 - [Agent-Ready Conversion](https://searchconverts.com/agent-ready-conversion/): How AI agents complete or abandon a funnel, with a checklist and schema recipe.
