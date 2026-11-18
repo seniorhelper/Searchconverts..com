@@ -51,6 +51,7 @@ Every indexable page opens with a direct-answer capsule (the paragraph beginning
 - [The Growth System](https://searchconverts.com/growth-system/): Our framework for connecting SEO, AI visibility, paid advertising, branding, conversion and retention so each one lowers the cost of the next. What it is, how it is built, and when
 - [AI Marketing Agency](https://searchconverts.com/ai-marketing-agency/): An AI marketing agency covering visibility inside AI answers and AI deployed inside marketing operations. Free citation simulator, platform divergence data and external readiness t
 - [AI Sales Agents](https://searchconverts.com/ai-sales-agents/): AI sales agents that answer, qualify and follow up every lead in seconds, 24/7, then book the call for a person to close. Includes an after-hours revenue calculator, the approval rules and published cost ranges.
+- [AI Agents for Small Business](https://searchconverts.com/ai-agents-for-small-business/): AI agents that handle lead replies, booking, quote and invoice follow-up, review requests and data entry within written rules, with a person approving money and exceptions. Fixed price after a free 30-minute workflow audit. Includes an hours-back calculator.
 - [Google Ads Management &amp; Google PPC Agency](https://searchconverts.com/google-ads-management/): Google Ads management from a Google PPC agency that fixes account structure before bidding. Free match type simulator, campaign type selector, Quality Score diagnostic and a free a
 - [Facebook Ads Agency](https://searchconverts.com/facebook-ads-management/): A Facebook ads agency built around creative production volume rather than audience settings. Free creative testing simulator, volume calculator and 2026 placement cost data.
 - [Social Media Marketing Agency](https://searchconverts.com/social-media-marketing/): A social media marketing agency covering strategy, done-for-you posting, Facebook groups and Marketplace, Meta Pixel setup and social media conversion optimization. Free engagement
@@ -74,6 +75,7 @@ Every indexable page opens with a direct-answer capsule (the paragraph beginning
 - [Webflow Web Designer](https://searchconverts.com/webflow-web-designer/): A Webflow web designer who treats Webflow as what it is — the fastest visual platform for a marketing site — and builds the conversion layer into it: selling first screens, proof b
 - [Wix Web Designer](https://searchconverts.com/wix-web-designer/): A Wix web designer who's honest about Wix: we fix the first screen, the offer, the proof and the phone path on your existing Wix site, tell you plainly what the platform can and ca
 - [Squarespace Web Designer](https://searchconverts.com/squarespace-web-designer/): A Squarespace web designer who keeps the beauty and adds the conversion: a first screen that sells, the phone number where a thumb reaches it, proof beside the offer, a short form 
+- [Website Redesign Services](https://searchconverts.com/website-redesign-services/): Website redesign that starts with a URL inventory and 301 redirect map, rewrites the money pages first, launches with call and form tracking, and watches leads for 90 days. Includes a redesign-or-fix checker.
 
 ### Industries
 - [Law Firm Marketing](https://searchconverts.com/law-firm-marketing/): Law firm marketing measured to signed cases rather than leads, with an intake economics calculator, a compliance checker for ad copy against ABA Model Rules 7.1 to 7.3, and honest 
@@ -125,6 +127,8 @@ Every indexable page opens with a direct-answer capsule (the paragraph beginning
 - USA Business Search directory: https://usabusinesssearch.com/
 
 ### New in November 2026
+- [Website Redesign Services](https://searchconverts.com/website-redesign-services/): Redesign, refresh or fix, with the redirect plan that protects rankings.
+- [AI Agents for Small Business](https://searchconverts.com/ai-agents-for-small-business/): Back-office agents with guardrails and an hours-back calculator.
 - [Does video on a landing page increase conversions?](https://searchconverts.com/blog/does-video-on-landing-page-increase-conversions/): Unbounce's 35,000-page comparison and a 2011 vendor test sorted by how much they prove, when video hurts speed, and how to A/B test it.
 - [CRO agency vs in-house vs tools: what to hire in 2026](https://searchconverts.com/blog/cro-agency-vs-in-house-vs-tools/): Sourced cost ranges for agencies, in-house hires and testing tools, the traffic you need first, and questions to ask before you sign.
 
